@@ -1427,7 +1427,7 @@
     "name": "2018 Serpent",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/2018_Serpent.png",
-    "baseValue": 28369,
+    "baseValue": 18332,
     "demand": 9,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -1437,7 +1437,7 @@
     "name": "2020 Blast",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b7/2020_Blast.png",
-    "baseValue": 23489,
+    "baseValue": 26485,
     "demand": 10,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -5708,7 +5708,7 @@
     "name": "2018 Angel",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1b/2018_Angel.png",
-    "baseValue": 26807,
+    "baseValue": 18163,
     "demand": 3,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -5718,7 +5718,7 @@
     "name": "2018 Dragon",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/39/2018_Dragon.png",
-    "baseValue": 26095,
+    "baseValue": 16603,
     "demand": 3,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -5728,7 +5728,7 @@
     "name": "2020 Split",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/be/2020_Split.png",
-    "baseValue": 21144,
+    "baseValue": 27565,
     "demand": 2,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -5738,7 +5738,7 @@
     "name": "2020 Sprite",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/65/2020_Sprite.png",
-    "baseValue": 28714,
+    "baseValue": 26561,
     "demand": 2,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -7949,7 +7949,7 @@
     "name": "2018 Fox",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/32/2018_Fox.png",
-    "baseValue": 21399,
+    "baseValue": 21958,
     "demand": 2,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -9233,7 +9233,7 @@
     "name": "2018 Bunny",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c8/2018_Bunny.png",
-    "baseValue": 22311,
+    "baseValue": 15008,
     "demand": 1,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -9243,7 +9243,7 @@
     "name": "2018 Mouse",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bc/2018_Mouse.png",
-    "baseValue": 19807,
+    "baseValue": 27533,
     "demand": 2,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -9253,7 +9253,7 @@
     "name": "2020 Doggy",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0c/2020_Doggy.png",
-    "baseValue": 27410,
+    "baseValue": 23562,
     "demand": 2,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -9263,7 +9263,7 @@
     "name": "2020 Kitty",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/81/2020_Kitty.png",
-    "baseValue": 25811,
+    "baseValue": 18873,
     "demand": 1,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -11545,7 +11545,7 @@
     "name": "2018 Bat",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/80/2018_Bat.png",
-    "baseValue": 26491,
+    "baseValue": 21808,
     "demand": 9,
     "trend": "stable",
     "category": "Legendary Pets"
@@ -11555,7 +11555,7 @@
     "name": "2020 Bunny",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e0/2020_Bunny.png",
-    "baseValue": 22032,
+    "baseValue": 24045,
     "demand": 9,
     "trend": "stable",
     "category": "Legendary Pets"
