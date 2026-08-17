@@ -1,0 +1,32 @@
+[
+  {
+    "id": "user_owner",
+    "username": "Owner_Admin",
+    "robloxUsername": "BGS_Owner_Official",
+    "discord": "owner#0001",
+    "role": "owner",
+    "rank": "Owner & Developer",
+    "isVerified": true,
+    "createdAt": "2026-08-17T20:00:00.000Z"
+  },
+  {
+    "id": "user_mod1",
+    "username": "Staff_Alex",
+    "robloxUsername": "Alex_BGSTrader",
+    "discord": "alex#1234",
+    "role": "mod",
+    "rank": "Head Moderator",
+    "isVerified": true,
+    "createdAt": "2026-08-17T20:00:00.000Z"
+  },
+  {
+    "id": "user_mod2",
+    "username": "ValueEditor_Sam",
+    "robloxUsername": "Sam_Values",
+    "discord": "sam#5678",
+    "role": "mod",
+    "rank": "Value Editor",
+    "isVerified": true,
+    "createdAt": "2026-08-17T20:00:00.000Z"
+  }
+]

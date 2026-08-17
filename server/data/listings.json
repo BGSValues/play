@@ -1,0 +1,54 @@
+[
+  {
+    "id": "list_1",
+    "traderName": "BubbleKing_99",
+    "discord": "bubbleking#1234",
+    "type": "sell",
+    "offering": [
+      {
+        "name": "The Overlord",
+        "variant": "Shiny",
+        "value": 525000,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Mythic_The_Overlord.png/revision/latest?cb=20260731212356"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Dominus Aureus",
+        "variant": "Normal",
+        "value": 200000,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d3/Dominus_Aureus.png/revision/latest?cb=20200612140523"
+      },
+      {
+        "name": "Sunlord",
+        "variant": "Normal",
+        "value": 120000,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/87/Sunlord.png/revision/latest?cb=20200815143321"
+      }
+    ],
+    "createdAt": "2026-08-17T19:00:00.000Z"
+  },
+  {
+    "id": "list_2",
+    "traderName": "FrostyTrader",
+    "discord": "frosty#5678",
+    "type": "buy",
+    "offering": [
+      {
+        "name": "Demonic Peppermint",
+        "variant": "Shiny",
+        "value": 272000,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/7b/Demonic_Peppermint.png/revision/latest?cb=20201219154320"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Dark Lord",
+        "variant": "Normal",
+        "value": 175000,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8c/Dark_Lord.png/revision/latest?cb=20200704152010"
+      }
+    ],
+    "createdAt": "2026-08-17T18:30:00.000Z"
+  }
+]

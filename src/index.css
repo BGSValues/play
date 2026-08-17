@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-dark: #060709;
+  --bg-card: #0c0d12;
+  --bg-card-hover: #12131c;
+  --glass-border: #1a1c29;
+  --glass-border-hover: #2e324a;
+  --primary-gold: #ffcc00;
+  --primary-purple: #8b5cf6;
+  --accent-cyan: #06b6d4;
+  --accent-pink: #ec4899;
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Classic Header matching reference */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #08090d;
+  border-bottom: 1px solid var(--glass-border);
+  padding: 0.85rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.4rem;
+  background: #0d0e14;
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 9px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.nav-btn:hover {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-btn.active {
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.login-header-btn {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.login-header-btn:hover {
+  background: #6d28d9;
+}
+
+/* Glass Card Container */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+/* CLASSIC PREMIUM BLACK GRID CARDS */
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.15rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.pet-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.pet-card:hover {
+  transform: translateY(-4px);
+  background: var(--bg-card-hover);
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.pet-card-image-wrap {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.4rem 0;
+  position: relative;
+}
+
+.pet-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Classic Variant Selector (e.g. Regular / Permanent) */
+.value-multi-select {
+  display: flex;
+  gap: 4px;
+  background: #08090d;
+  padding: 3px;
+  border-radius: 9px;
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--glass-border);
+}
+
+.multi-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.73rem;
+  font-weight: 700;
+  padding: 4px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.multi-btn.active {
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+/* Classic Key Stats Row (Value, Trend, Demand) */
+.stats-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.stat-val-bold {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.stat-val-gold {
+  font-weight: 900;
+  color: var(--primary-gold);
+}
+
+.stat-val-green {
+  font-weight: 800;
+  color: var(--accent-green);
+}
+
+/* Rarity Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.badge-secret { background: #831843; color: #f472b6; border: 1px solid #9d174d; }
+.badge-legendary { background: #78350f; color: #fbbf24; border: 1px solid #92400e; }
+.badge-epic { background: #1e3a8a; color: #60a5fa; border: 1px solid #1e40af; }
+.badge-rare { background: #065f46; color: #34d399; border: 1px solid #047857; }
+.badge-common { background: #1f2937; color: #9ca3af; border: 1px solid #374151; }
+
+/* Status Pill */
+.status-pill {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+}
+
+.status-rising { color: #10b981; }
+.status-hyped { color: #ef4444; }
+.status-stable { color: #94a3b8; }
+.status-dropping { color: #f59e0b; }
+
+/* Classic Controls Bar */
+.controls-bar {
+  max-width: 1440px;
+  margin: 1.25rem auto 1.15rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input-box {
+  width: 100%;
+  background: #0c0d12;
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  padding: 0.75rem 1.1rem;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.search-input-box:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.25);
+}
+
+.filter-group {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #0c0d12;
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  padding: 0.5rem 0.9rem;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  background: #14151f;
+  color: var(--text-main);
+}
+
+.filter-btn.active {
+  background: #7c3aed;
+  color: #ffffff;
+  border-color: #7c3aed;
+  font-weight: 800;
+}
+
+/* 3x3 GRID TRADE CALCULATOR STYLES */
+.calc-3x3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+}
+
+.calc-slot {
+  aspect-ratio: 1;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.calc-slot.empty {
+  background: #08090d;
+  border: 1px solid var(--glass-border);
+  opacity: 0.6;
+}
+
+.calc-slot.add-btn-slot {
+  background: rgba(124, 58, 237, 0.08);
+  border: 2px dashed #7c3aed;
+  cursor: pointer;
+}
+
+.calc-slot.add-btn-slot:hover {
+  background: rgba(124, 58, 237, 0.18);
+  transform: scale(1.03);
+}
+
+.calc-slot.filled {
+  background: #0d0e14;
+  border: 1px solid var(--glass-border);
+}
+
+.calc-slot-remove {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.calc-slot-name {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 2px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calc-slot-variant-select {
+  background: #000;
+  color: #a78bfa;
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 4px;
+  margin: 2px 0;
+  width: 85%;
+  font-family: inherit;
+}
+
+.calc-slot-val {
+  font-size: 0.72rem;
+  font-weight: 900;
+  color: var(--primary-gold);
+}
+
+/* Modal Form Styles */
+.form-group {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.form-input {
+  width: 100%;
+  background: #08090d;
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  padding: 0.7rem 0.95rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.btn-primary {
+  background: #7c3aed;
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #6d28d9;
+}
+
+.btn-secondary {
+  background: #14151f;
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+}
