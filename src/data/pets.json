@@ -60,7 +60,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0a/Angelic_Shard.png",
     "baseValue": 155857,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 8,
@@ -69,16 +70,19 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2d/Mythic_Angelic_Spirit.png",
     "baseValue": 230310,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 9,
     "name": "Archangel",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/73/Mythic_Archangel.png",
-    "baseValue": 172255,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 130000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 10,
@@ -240,7 +244,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/61/Shiny_Dark_Lord.png",
     "baseValue": 145943,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 28,
@@ -249,7 +254,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/06/Dark_Lord_Shock.png",
     "baseValue": 235529,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 29,
@@ -294,7 +300,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c2/Demonic_Dogcat.png",
     "baseValue": 116721,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 34,
@@ -303,7 +310,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/25/Demonic_One.png",
     "baseValue": 111905,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 35,
@@ -312,7 +320,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/82/Demonic_Sentinel.png",
     "baseValue": 227802,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 36,
@@ -411,7 +420,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2f/Shiny_Elite_Challenger.png",
     "baseValue": 209775,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 47,
@@ -429,7 +439,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Elite_Lord_Shock.png",
     "baseValue": 125777,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 49,
@@ -445,9 +456,11 @@
     "name": "Elite Sentinel",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/79/Elite_Sentinel.png",
-    "baseValue": 118999,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 222515,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 51,
@@ -508,9 +521,11 @@
     "name": "Fallen Angel",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d6/Mythic_Fallen_Angel.webp",
-    "baseValue": 210043,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 224655,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 58,
@@ -528,7 +543,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/af/ShinyFrostSentinel.png",
     "baseValue": 206000,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 60,
@@ -627,16 +643,19 @@
     "image": "",
     "baseValue": 161541,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 71,
     "name": "Godly Shamrock",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/04/Godly_Shamrock.png",
-    "baseValue": 158994,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 222602,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 72,
@@ -744,7 +763,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Mythic_Infinity_Gem.png",
     "baseValue": 190420,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 84,
@@ -832,9 +852,11 @@
     "name": "Leviathan",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/35/Shiny_Leviathan.png",
-    "baseValue": 176172,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 120000,
+    "demand": 8,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 94,
@@ -843,7 +865,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/33/Shiny_Lord_Shock.png",
     "baseValue": 238118,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 95,
@@ -870,7 +893,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Mythic_Lucid_Leaf.png",
     "baseValue": 101494,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 98,
@@ -933,7 +957,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/74/Mythic_Overlord_Plushie.png",
     "baseValue": 217169,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 105,
@@ -960,7 +985,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8b/Mythic_Peppermint_Leviathan.png",
     "baseValue": 117165,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 108,
@@ -969,7 +995,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/31/Phantom_Shiny.png",
     "baseValue": 240986,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 109,
@@ -1050,7 +1077,8 @@
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Radiant_Challenger.webp",
     "baseValue": 104597,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 118,
@@ -1102,9 +1130,11 @@
     "name": "Rainbow Leviathan",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/21/Rainbow_Leviathan.png",
-    "baseValue": 117196,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 145000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 124,
@@ -1129,9 +1159,11 @@
     "name": "Shadow Challenger",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/78/Shadow_Challenger.png",
-    "baseValue": 228731,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 223593,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 127,
@@ -1264,9 +1296,11 @@
     "name": "The Overlord",
     "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Mythic_The_Overlord.png",
-    "baseValue": 241209,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 150000,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 142,
@@ -1370,47 +1404,54 @@
   {
     "id": 153,
     "name": "1B Paragon",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9c/1B_Paragon.png",
-    "baseValue": 55899,
+    "baseValue": 183374,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 154,
     "name": "2018 Overlord",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e4/Shiny_2018_Overlord.png",
-    "baseValue": 151778,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 35000,
+    "demand": 8,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Legendary Pets"
   },
   {
     "id": 155,
     "name": "2018 Serpent",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/2018_Serpent.png",
-    "baseValue": 74492,
+    "baseValue": 18332,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 156,
     "name": "2020 Blast",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b7/2020_Blast.png",
-    "baseValue": 122103,
+    "baseValue": 26485,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 157,
     "name": "2020 Overlord",
     "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4a/2020_Overlord.png",
-    "baseValue": 65197,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 24500,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 158,
@@ -1514,11 +1555,13 @@
   {
     "id": 169,
     "name": "Alien Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/19/Alien_Overlord.png",
-    "baseValue": 54362,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 185000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 170,
@@ -1559,20 +1602,24 @@
   {
     "id": 174,
     "name": "Angel of Darkness",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Angel_of_Darkness.png",
-    "baseValue": 106994,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 195000,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 175,
     "name": "Angelic Bear",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ed/Angelic_Bear.png",
-    "baseValue": 99919,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 175000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 176,
@@ -1631,11 +1678,13 @@
   {
     "id": 182,
     "name": "Atlantis Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Atlantis_Overlord.png",
-    "baseValue": 187172,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 190000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 183,
@@ -1721,11 +1770,12 @@
   {
     "id": 192,
     "name": "Beta Dominus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Beta_Dominus.png",
-    "baseValue": 61470,
+    "baseValue": 162523,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 193,
@@ -1784,11 +1834,12 @@
   {
     "id": 199,
     "name": "Brick Dominus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Brick_Dominus.png",
-    "baseValue": 51320,
+    "baseValue": 147838,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 200,
@@ -2045,11 +2096,13 @@
   {
     "id": 228,
     "name": "Citrus Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Mythic_Citrus_Overlord.png",
-    "baseValue": 117262,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 165000,
+    "demand": 8,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 229,
@@ -2360,38 +2413,44 @@
   {
     "id": 263,
     "name": "Demonic Bunny",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/42/Demonic_Bunny.png",
     "baseValue": 83639,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 264,
     "name": "Demonic Fireplace",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/09/Demonic_Fireplace.png",
     "baseValue": 132769,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 265,
     "name": "Demonic Hydra",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/10/Shiny_Demonic_Hydra.png",
-    "baseValue": 51352,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 170000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 266,
     "name": "Demonic Peppermint",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ec/Mythic_Demonic_Peppermint.png",
-    "baseValue": 83050,
+    "baseValue": 180000,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 267,
@@ -2441,11 +2500,12 @@
   {
     "id": 272,
     "name": "Diamond Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Shiny_Diamond_Overlord.png",
     "baseValue": 112837,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 273,
@@ -2477,11 +2537,13 @@
   {
     "id": 276,
     "name": "Dominus Hydra",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/14/Dominus_Hydra.png",
-    "baseValue": 73508,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 210000,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 277,
@@ -2576,11 +2638,13 @@
   {
     "id": 287,
     "name": "Easter Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/95/ShinyEasterOverlord.png",
-    "baseValue": 56911,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 206234,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 288,
@@ -2684,11 +2748,13 @@
   {
     "id": 299,
     "name": "Emerald Golem",
-    "rarity": "Legendary",
+    "rarity": "Epic",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1a/Shiny_Emerald_Golem.png",
-    "baseValue": 152331,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 5625,
+    "demand": 5,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Epic Pets"
   },
   {
     "id": 300,
@@ -2945,11 +3011,12 @@
   {
     "id": 328,
     "name": "Frost Dominus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e7/Frost_Dominus.png",
     "baseValue": 166985,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 329,
@@ -3107,11 +3174,12 @@
   {
     "id": 346,
     "name": "Gem Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/24/Mythic_Gem_Overlord.png",
     "baseValue": 153256,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 347,
@@ -3341,11 +3409,13 @@
   {
     "id": 372,
     "name": "Gummy Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Gummy_Overlord.png",
-    "baseValue": 181014,
+    "baseValue": 180000,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 373,
@@ -3575,11 +3645,13 @@
   {
     "id": 398,
     "name": "Ice Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/52/Ice_Overlord.png",
-    "baseValue": 194092,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 175000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 399,
@@ -3701,11 +3773,12 @@
   {
     "id": 412,
     "name": "Jelly Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Shiny_Jelly_Overlord.png",
     "baseValue": 183988,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 413,
@@ -3746,11 +3819,13 @@
   {
     "id": 417,
     "name": "King Leviathan",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c8/Shiny_King_Leviathan_FIXED.png",
-    "baseValue": 193869,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 195000,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 418,
@@ -3800,11 +3875,13 @@
   {
     "id": 423,
     "name": "Krampus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8f/Krampus.png",
-    "baseValue": 102384,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 140000,
+    "demand": 8,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 424,
@@ -3917,11 +3994,12 @@
   {
     "id": 436,
     "name": "Lucid Potion",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/72/Lucid_Potion.png",
     "baseValue": 77924,
     "demand": 7,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 437,
@@ -3944,11 +4022,12 @@
   {
     "id": 439,
     "name": "Lucky Dominus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3e/Lucky_Dominus.png",
     "baseValue": 127950,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 440,
@@ -3998,11 +4077,12 @@
   {
     "id": 445,
     "name": "Lucky Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/62/Lucky_Overlord.png",
     "baseValue": 194548,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 446,
@@ -4259,11 +4339,13 @@
   {
     "id": 474,
     "name": "Nebula Valkyrie",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Nebula_Valkyrie.png",
-    "baseValue": 113321,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 215000,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 475,
@@ -4376,11 +4458,13 @@
   {
     "id": 487,
     "name": "Paragon",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Mythic_Paragon.png",
-    "baseValue": 190306,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 160000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 488,
@@ -4457,20 +4541,23 @@
   {
     "id": 496,
     "name": "Peppermint Heart",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/80/Pogchamp_Peppermint_Heart.png",
     "baseValue": 185120,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 497,
     "name": "Peppermint Hydra",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/26/Peppermint_Hydra.png",
-    "baseValue": 61433,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 174926,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 498,
@@ -4520,11 +4607,13 @@
   {
     "id": 503,
     "name": "Platinum Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f5/Platinum_Overlord.png",
-    "baseValue": 98760,
-    "demand": 10,
-    "trend": "stable"
+    "baseValue": 181676,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 504,
@@ -4538,11 +4627,12 @@
   {
     "id": 505,
     "name": "Prismatic Paragon",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Mythic_Prismatic_Paragon.png",
     "baseValue": 169191,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 506,
@@ -4592,11 +4682,12 @@
   {
     "id": 511,
     "name": "Queen Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d8/Shiny_Queen_Overlord.png",
-    "baseValue": 61144,
+    "baseValue": 180017,
     "demand": 7,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 512,
@@ -4682,11 +4773,13 @@
   {
     "id": 521,
     "name": "Rainbow Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Rainbow_Overlord.png",
-    "baseValue": 72762,
+    "baseValue": 200000,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 522,
@@ -4889,11 +4982,13 @@
   {
     "id": 544,
     "name": "Shadow Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9a/Shadow_Overlord.png",
-    "baseValue": 127551,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 205000,
+    "demand": 10,
+    "trend": "stable",
+    "status": "Hyped",
+    "category": "Secret Pets"
   },
   {
     "id": 545,
@@ -4943,11 +5038,13 @@
   {
     "id": 550,
     "name": "Slime Overlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Slime_Overlord.png",
-    "baseValue": 137971,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 155230,
+    "demand": 8,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 551,
@@ -5132,11 +5229,13 @@
   {
     "id": 571,
     "name": "Sunlord",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sunlord.png",
-    "baseValue": 128529,
+    "baseValue": 175000,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 572,
@@ -5339,11 +5438,12 @@
   {
     "id": 594,
     "name": "Twitter Dominus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1e/Twitter_Dominus.png",
     "baseValue": 75813,
     "demand": 10,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 595,
@@ -5393,11 +5493,12 @@
   {
     "id": 600,
     "name": "Valentine Dominus",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/Valentine_Dominus.png",
     "baseValue": 81413,
     "demand": 7,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 601,
@@ -5483,29 +5584,34 @@
   {
     "id": 610,
     "name": "Wispful Heart",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/27/Wispful_Heart.png",
-    "baseValue": 168360,
-    "demand": 8,
-    "trend": "stable"
+    "baseValue": 160000,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Secret Pets"
   },
   {
     "id": 611,
     "name": "Wispful Phoenix",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/52/Wispful_Phoenix.png",
-    "baseValue": 122287,
+    "baseValue": 185000,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 612,
     "name": "Wispful Spirit",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/56/Wispful_Spirit.png",
     "baseValue": 136481,
     "demand": 7,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 613,
@@ -5600,38 +5706,42 @@
   {
     "id": 623,
     "name": "2018 Angel",
-    "rarity": "Epic",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1b/2018_Angel.png",
-    "baseValue": 407,
+    "baseValue": 18163,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 624,
     "name": "2018 Dragon",
-    "rarity": "Epic",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/39/2018_Dragon.png",
-    "baseValue": 211,
+    "baseValue": 16603,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 625,
     "name": "2020 Split",
-    "rarity": "Epic",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/be/2020_Split.png",
-    "baseValue": 372,
+    "baseValue": 27565,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 626,
     "name": "2020 Sprite",
-    "rarity": "Epic",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/65/2020_Sprite.png",
-    "baseValue": 319,
+    "baseValue": 26561,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 627,
@@ -5663,74 +5773,83 @@
   {
     "id": 630,
     "name": "Angel",
-    "rarity": "Epic",
+    "rarity": "Common",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Angel.png",
-    "baseValue": 73,
-    "demand": 2,
-    "trend": "stable"
+    "baseValue": 583,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Common Pets"
   },
   {
     "id": 631,
     "name": "Angelic Bunny",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/69/Angelic_Bunny.png",
-    "baseValue": 73,
+    "baseValue": 159772,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 632,
     "name": "Angelic Crab",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fc/Angelic_Crab.png",
-    "baseValue": 546,
+    "baseValue": 169460,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 633,
     "name": "Angelic Demon",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ca/Angelic_Demon.png",
-    "baseValue": 799,
+    "baseValue": 167197,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 634,
     "name": "Angelic Dominus",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Angelic_Dominus.png",
-    "baseValue": 479,
+    "baseValue": 111707,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 635,
     "name": "Angelic Ghost",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/40/Angelic_Ghost.png",
-    "baseValue": 569,
+    "baseValue": 159520,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 636,
     "name": "Angelic Shock",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2f/Angelic_Shock.png",
-    "baseValue": 405,
+    "baseValue": 134957,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 637,
     "name": "Angelic Wisp",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/df/Angelic_Wisp.png",
-    "baseValue": 798,
+    "baseValue": 164073,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 638,
@@ -5969,11 +6088,13 @@
   {
     "id": 664,
     "name": "Candy Dragon",
-    "rarity": "Epic",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/00/Candy_Dragon.png",
-    "baseValue": 689,
-    "demand": 2,
-    "trend": "stable"
+    "baseValue": 21500,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 665,
@@ -6158,11 +6279,13 @@
   {
     "id": 685,
     "name": "Dark Dragon",
-    "rarity": "Epic",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/33/Dark_Dragon.png",
-    "baseValue": 515,
-    "demand": 2,
-    "trend": "stable"
+    "baseValue": 24500,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 686,
@@ -6203,65 +6326,72 @@
   {
     "id": 690,
     "name": "Demonic Angel",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bb/Demonic_Angel.png",
-    "baseValue": 309,
+    "baseValue": 183915,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 691,
     "name": "Demonic Dominus",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/89/Demonic_Dominus.png",
-    "baseValue": 375,
+    "baseValue": 170230,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 692,
     "name": "Demonic Fiend",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2d/Demonic_Fiend.png",
-    "baseValue": 475,
+    "baseValue": 122501,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 693,
     "name": "Demonic Gum Drop",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Demonic_Gum_Drop.png",
-    "baseValue": 203,
+    "baseValue": 150955,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 694,
     "name": "Demonic Shock",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/21/Demonic_Shock.png",
-    "baseValue": 553,
+    "baseValue": 130098,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 695,
     "name": "Demonic Unicorn",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Demonic_Unicorn.png",
-    "baseValue": 326,
+    "baseValue": 134933,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 696,
     "name": "Demonic Wisp",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/42/Demonic_Wisp.png",
-    "baseValue": 200,
+    "baseValue": 150243,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 697,
@@ -7742,11 +7872,13 @@
   {
     "id": 861,
     "name": "Void Dragon",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fb/Void_Dragon.png",
-    "baseValue": 686,
-    "demand": 2,
-    "trend": "stable"
+    "baseValue": 205369,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Rising",
+    "category": "Secret Pets"
   },
   {
     "id": 862,
@@ -7787,11 +7919,12 @@
   {
     "id": 866,
     "name": "Wispful Fairy",
-    "rarity": "Epic",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Wispful_Fairy.png",
-    "baseValue": 339,
+    "baseValue": 181821,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 867,
@@ -7814,11 +7947,12 @@
   {
     "id": 869,
     "name": "2018 Fox",
-    "rarity": "Rare",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/32/2018_Fox.png",
-    "baseValue": 44,
+    "baseValue": 21958,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 870,
@@ -8030,11 +8164,13 @@
   {
     "id": 893,
     "name": "Cocoa Dragon",
-    "rarity": "Rare",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d5/Cocoa_Dragon.png",
-    "baseValue": 38,
-    "demand": 2,
-    "trend": "stable"
+    "baseValue": 22000,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 894,
@@ -8120,11 +8256,12 @@
   {
     "id": 903,
     "name": "Demonic Golem",
-    "rarity": "Rare",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3e/Demonic_Golem.png",
-    "baseValue": 117,
+    "baseValue": 156247,
     "demand": 3,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 904,
@@ -8327,11 +8464,12 @@
   {
     "id": 926,
     "name": "Gloomy Dominus",
-    "rarity": "Rare",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4e/Gloomy_Dominus.png",
-    "baseValue": 294,
+    "baseValue": 117255,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 927,
@@ -9065,11 +9203,12 @@
   {
     "id": 1008,
     "name": "Wispful Deer",
-    "rarity": "Rare",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4a/Wispful_Deer.png",
-    "baseValue": 98,
+    "baseValue": 141418,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1009,
@@ -9092,38 +9231,42 @@
   {
     "id": 1011,
     "name": "2018 Bunny",
-    "rarity": "Common",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c8/2018_Bunny.png",
-    "baseValue": 211,
+    "baseValue": 15008,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1012,
     "name": "2018 Mouse",
-    "rarity": "Common",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bc/2018_Mouse.png",
-    "baseValue": 206,
+    "baseValue": 27533,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1013,
     "name": "2020 Doggy",
-    "rarity": "Common",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0c/2020_Doggy.png",
-    "baseValue": 236,
+    "baseValue": 23562,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1014,
     "name": "2020 Kitty",
-    "rarity": "Common",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/81/2020_Kitty.png",
-    "baseValue": 197,
+    "baseValue": 18873,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1015,
@@ -9382,9 +9525,11 @@
     "name": "Bunny",
     "rarity": "Common",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e7/Shiny_Bunny.png",
-    "baseValue": 143,
-    "demand": 1,
-    "trend": "stable"
+    "baseValue": 419,
+    "demand": 4,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Common Pets"
   },
   {
     "id": 1044,
@@ -9713,20 +9858,22 @@
   {
     "id": 1080,
     "name": "Demonic Bat",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/69/Demonic_Bat.png",
-    "baseValue": 223,
+    "baseValue": 120242,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1081,
     "name": "Demonic Doggy",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ce/Demonic_Doggy.png",
-    "baseValue": 129,
+    "baseValue": 125654,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1082,
@@ -9751,9 +9898,11 @@
     "name": "Doggy",
     "rarity": "Common",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e4/Shiny_Doggy.png",
-    "baseValue": 159,
-    "demand": 2,
-    "trend": "stable"
+    "baseValue": 259,
+    "demand": 4,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Common Pets"
   },
   {
     "id": 1085,
@@ -10586,11 +10735,12 @@
   {
     "id": 1177,
     "name": "Orange Dominus",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Orange_Dominus.png",
-    "baseValue": 24,
+    "baseValue": 139105,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1178,
@@ -10685,20 +10835,22 @@
   {
     "id": 1188,
     "name": "Peppermint Doggy",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/09/Peppermint_Doggy.png",
-    "baseValue": 74,
+    "baseValue": 149923,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1189,
     "name": "Peppermint Piggy",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/43/Peppermint_Piggy.png",
-    "baseValue": 153,
+    "baseValue": 147134,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1190,
@@ -10919,20 +11071,22 @@
   {
     "id": 1214,
     "name": "Shamrock Doggy",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a2/Shamrock_Doggy.png",
-    "baseValue": 70,
+    "baseValue": 143806,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1215,
     "name": "Shamrock Kitty",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/18/Shamrock_Kitty.png",
-    "baseValue": 46,
+    "baseValue": 114238,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1216,
@@ -11279,20 +11433,22 @@
   {
     "id": 1254,
     "name": "Wispful Bunny",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4f/Wispful_Bunny.png",
-    "baseValue": 53,
+    "baseValue": 139356,
     "demand": 1,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1255,
     "name": "Wispful Doggy",
-    "rarity": "Common",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f1/Wispful_Doggy.png",
-    "baseValue": 201,
+    "baseValue": 126626,
     "demand": 2,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1256,
@@ -11387,20 +11543,22 @@
   {
     "id": 1266,
     "name": "2018 Bat",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/80/2018_Bat.png",
-    "baseValue": 51570,
+    "baseValue": 21808,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1267,
     "name": "2020 Bunny",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e0/2020_Bunny.png",
-    "baseValue": 118865,
+    "baseValue": 24045,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1268,
@@ -11495,11 +11653,13 @@
   {
     "id": 1278,
     "name": "Bear",
-    "rarity": "Unique",
+    "rarity": "Epic",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a4/Bear.png",
-    "baseValue": 54566,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 7318,
+    "demand": 5,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Epic Pets"
   },
   {
     "id": 1279,
@@ -11711,29 +11871,34 @@
   {
     "id": 1302,
     "name": "Demon Bear",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8f/Demon_Bear.png",
-    "baseValue": 32784,
+    "baseValue": 32311,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1303,
     "name": "Demon Boi",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b1/Demon_Boi.png",
-    "baseValue": 125189,
-    "demand": 6,
-    "trend": "stable"
+    "baseValue": 38640,
+    "demand": 8,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1304,
     "name": "Demonic Split",
-    "rarity": "Unique",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Demonic_Split.png",
     "baseValue": 105041,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1305,
@@ -11945,11 +12110,12 @@
   {
     "id": 1328,
     "name": "Grape Dominus",
-    "rarity": "Unique",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Grape_Dominus.png",
-    "baseValue": 43733,
+    "baseValue": 165463,
     "demand": 7,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1329,
@@ -11972,29 +12138,35 @@
   {
     "id": 1331,
     "name": "Green Gummy Bear",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cd/Green_Gummy_Bear.png",
-    "baseValue": 140644,
-    "demand": 7,
-    "trend": "stable"
+    "baseValue": 29864,
+    "demand": 9,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1332,
     "name": "Gummy Kitty",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/17/Gummy_Kitty.png",
-    "baseValue": 109646,
-    "demand": 9,
-    "trend": "stable"
+    "baseValue": 39383,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1333,
     "name": "Hell Dragon",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f8/Hell_Dragon.png",
-    "baseValue": 62113,
-    "demand": 6,
-    "trend": "stable"
+    "baseValue": 57021,
+    "demand": 7,
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1334,
@@ -12332,11 +12504,13 @@
   {
     "id": 1371,
     "name": "Red Gummy Bear",
-    "rarity": "Unique",
+    "rarity": "Legendary",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5d/Red_Gummy_Bear.png",
-    "baseValue": 64237,
+    "baseValue": 28500,
     "demand": 8,
-    "trend": "stable"
+    "trend": "stable",
+    "status": "Stable",
+    "category": "Legendary Pets"
   },
   {
     "id": 1372,
@@ -12395,20 +12569,22 @@
   {
     "id": 1378,
     "name": "Shamrock Bunny",
-    "rarity": "Unique",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/15/Shamrock_Bunny.png",
     "baseValue": 134784,
     "demand": 7,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1379,
     "name": "Shamrock Spirit",
-    "rarity": "Unique",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c7/Shamrock_Spirit.png",
     "baseValue": 90897,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1380,
@@ -12656,11 +12832,12 @@
   {
     "id": 1407,
     "name": "Wispful Unicorn",
-    "rarity": "Unique",
+    "rarity": "Secret",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0e/Wispful_Unicorn.png",
-    "baseValue": 51152,
+    "baseValue": 167931,
     "demand": 9,
-    "trend": "stable"
+    "trend": "stable",
+    "category": "Secret Pets"
   },
   {
     "id": 1408,
@@ -13102,10 +13279,10 @@
   },
   {
     "name": "Demonic Immortal Sword",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "itemType": "Hat",
-    "category": "Hats",
-    "baseValue": 58446,
+    "category": "Secret Pets",
+    "baseValue": 175769,
     "demand": 6,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3d/Demonic_Immortal_Sword.png",
@@ -13146,10 +13323,10 @@
   },
   {
     "name": "Godly Wings",
-    "rarity": "Legendary",
+    "rarity": "Secret",
     "itemType": "Hat",
-    "category": "Hats",
-    "baseValue": 64957,
+    "category": "Secret Pets",
+    "baseValue": 123289,
     "demand": 7,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bf/Godly_Wings.png",
