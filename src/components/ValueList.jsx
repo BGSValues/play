@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Search, Sparkles, TrendingUp, Star, PlusCircle, Filter, Edit3, Save, ChevronLeft, ChevronRight, ArrowUpDown, HardHat, SlidersHorizontal } from 'lucide-react';
+import { Search, Sparkles, TrendingUp, Star, PlusCircle, Filter, Edit3, Save, ChevronLeft, ChevronRight, ArrowUpDown, HardHat, SlidersHorizontal, Info } from 'lucide-react';
 import PetAvatar from './PetAvatar';
+import PetDetailsModal from './PetDetailsModal';
 
 const PETS_PER_PAGE = 100;
 
@@ -50,6 +51,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   const [sortOrder, setSortOrder] = useState('highest');
   const [selectedVariants, setSelectedVariants] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedPetForModal, setSelectedPetForModal] = useState(null);
 
   // Staff Editing
   const [editingPetId, setEditingPetId] = useState(null);
@@ -143,8 +145,15 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   };
 
   return (
-    <div style={{ paddingBottom: '3.5rem' }}>
-      {/* Staff Banner */}
+    <div style={{ paddingBottom: '4rem' }}>
+      <PetDetailsModal
+        isOpen={!!selectedPetForModal}
+        onClose={() => setSelectedPetForModal(null)}
+        pet={selectedPetForModal}
+        onAddToTrade={onAddToTrade}
+      />
+
+      {/* SEARCH AND FILTERS */}
       {isStaff && (
         <div style={{ maxWidth: '1440px', margin: '0 auto 1.25rem auto', padding: '0 1.5rem' }}>
           <div style={{ background: '#1e1b4b', border: '1px solid #4338ca', padding: '0.65rem 1.2rem', borderRadius: '12px', color: '#a78bfa', fontSize: '0.88rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -238,13 +247,25 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   {getRarityBadge(item.rarity)}
                 </div>
 
-                {/* Center 3D Avatar */}
-                <div className="pet-card-image-wrap">
+                {/* Center 3D Avatar (Clickable to view full stats) */}
+                <div
+                  className="pet-card-image-wrap"
+                  onClick={() => setSelectedPetForModal(item)}
+                  style={{ cursor: 'pointer' }}
+                  title="Click to view full in-game stats & details"
+                >
                   <PetAvatar name={item.name} rarity={item.rarity} image={item.image} size={110} />
                 </div>
 
-                {/* Item Name */}
-                <h3 className="pet-name">{item.name}</h3>
+                {/* Item Name (Clickable) */}
+                <h3
+                  className="pet-name"
+                  onClick={() => setSelectedPetForModal(item)}
+                  style={{ cursor: 'pointer' }}
+                  title="Click to view full in-game stats & details"
+                >
+                  {item.name}
+                </h3>
 
                 {/* Variant Selector (Pets only - Hats don't have Shiny/Mythic variants) */}
                 {!isHat ? (
