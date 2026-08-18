@@ -54,6 +54,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
     const badges = {
       Secret: <span className="badge badge-secret">SECRET</span>,
       Legendary: <span className="badge badge-legendary">LEGENDARY</span>,
+      Unique: <span className="badge badge-unique" style={{ background: '#7c3aed', color: '#fff', border: '1px solid #a78bfa' }}>UNIQUE</span>,
       Epic: <span className="badge badge-epic">EPIC</span>,
       Rare: <span className="badge badge-rare">RARE</span>,
     };
@@ -78,16 +79,19 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   // Filter & Sort
   const filteredPets = pets
     .filter((item) => {
+      const isHat = item.type === 'hat' || item.category === 'Hats';
       const matchesSearch = matchesSearchTerm(item.name, search);
-      const matchesType = typeFilter === 'All' ? true : typeFilter === 'Hats' ? item.itemType === 'Hat' : item.itemType !== 'Hat';
+      const matchesType = typeFilter === 'All' ? true : typeFilter === 'Hats' ? isHat : !isHat;
       const matchesRarity = rarityFilter === 'All' ? true : item.rarity === rarityFilter;
       return matchesSearch && matchesType && matchesRarity;
     })
     .sort((a, b) => {
-      if (sortOrder === 'highest') return b.baseValue - a.baseValue;
-      if (sortOrder === 'lowest') return a.baseValue - b.baseValue;
+      const valA = (typeof a.baseValue === 'number' && !isNaN(a.baseValue) && a.baseValue > 0) ? a.baseValue : -1;
+      const valB = (typeof b.baseValue === 'number' && !isNaN(b.baseValue) && b.baseValue > 0) ? b.baseValue : -1;
+      if (sortOrder === 'highest') return valB - valA;
+      if (sortOrder === 'lowest') return (valA === -1 ? 999999999 : valA) - (valB === -1 ? 999999999 : valB);
       if (sortOrder === 'name') return a.name.localeCompare(b.name);
-      return b.baseValue - a.baseValue;
+      return valB - valA;
     });
 
   // Pagination
@@ -159,7 +163,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
 
         {/* RARITY FILTER */}
         <div className="filter-group">
-          {['All', 'Secret', 'Legendary', 'Epic', 'Rare', 'Common'].map((r) => (
+          {['All', 'Secret', 'Legendary', 'Unique', 'Epic', 'Rare', 'Common'].map((r) => (
             <button
               key={r}
               className={`filter-btn ${rarityFilter === r ? 'active' : ''}`}
@@ -202,9 +206,11 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
           </div>
         ) : (
           paginatedPets.map((item) => {
+            const isHat = item.type === 'hat' || item.category === 'Hats';
+            const hasValue = typeof item.baseValue === 'number' && !isNaN(item.baseValue) && item.baseValue > 0;
             const currentVariant = selectedVariants[item.id] || 'Normal';
-            const mult = getVariantMultiplier(item, currentVariant);
-            const calculatedValue = Math.round(item.baseValue * mult);
+            const mult = isHat ? 1 : getVariantMultiplier(item, currentVariant);
+            const calculatedValue = hasValue ? Math.round(item.baseValue * mult) : null;
 
             return (
               <div key={item.id} className="pet-card">
@@ -221,20 +227,28 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                 {/* Item Name */}
                 <h3 className="pet-name">{item.name}</h3>
 
-                {/* Variant Selector */}
-                <div className="value-multi-select">
-                  {['Normal', 'Shiny', 'Mythic', 'ShinyMythic'].map((v) => (
-                    <button key={v} className={`multi-btn ${currentVariant === v ? 'active' : ''}`} onClick={() => handleVariantChange(item.id, v)}>
-                      {v === 'ShinyMythic' ? 'S.Myth' : v}
-                    </button>
-                  ))}
-                </div>
+                {/* Variant Selector (Pets only - Hats don't have Shiny/Mythic variants) */}
+                {!isHat ? (
+                  <div className="value-multi-select">
+                    {['Normal', 'Shiny', 'Mythic', 'ShinyMythic'].map((v) => (
+                      <button key={v} className={`multi-btn ${currentVariant === v ? 'active' : ''}`} onClick={() => handleVariantChange(item.id, v)}>
+                        {v === 'ShinyMythic' ? 'S.Myth' : v}
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div style={{ height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 700 }}>HAT ITEM</span>
+                  </div>
+                )}
 
                 {/* Key Stats Table */}
                 <div className="stats-table">
                   <div className="stat-row">
                     <span className="stat-label">Value</span>
-                    <span className="stat-val-bold">⚡ {calculatedValue.toLocaleString()}</span>
+                    <span className="stat-val-bold">
+                      {calculatedValue !== null ? `⚡ ${calculatedValue.toLocaleString()}` : <span style={{ color: '#94a3b8' }}>N/A</span>}
+                    </span>
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Trend</span>

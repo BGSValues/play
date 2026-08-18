@@ -9,7 +9,10 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
   const [copiedSummary, setCopiedSummary] = useState(false);
 
   const calculateTotalVal = (items) => {
-    return items.reduce((sum, item) => sum + (item.calculatedValue || item.baseValue || 0), 0);
+    return items.reduce((sum, item) => {
+      const val = typeof item.calculatedValue === 'number' ? item.calculatedValue : (typeof item.baseValue === 'number' ? item.baseValue : 0);
+      return sum + (isNaN(val) ? 0 : val);
+    }, 0);
   };
 
   const calculateAvgDemand = (items) => {
@@ -89,9 +92,11 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
   }
 
   const handleAddPetToSide = (pet) => {
+    const isHat = pet.type === 'hat' || pet.category === 'Hats';
     const defaultVariant = 'Normal';
-    const mult = getVariantMultiplier(pet, defaultVariant);
-    const calculatedValue = Math.round(pet.baseValue * mult);
+    const hasVal = typeof pet.baseValue === 'number' && !isNaN(pet.baseValue) && pet.baseValue > 0;
+    const mult = isHat ? 1 : getVariantMultiplier(pet, defaultVariant);
+    const calculatedValue = hasVal ? Math.round(pet.baseValue * mult) : null;
 
     const item = {
       ...pet,
@@ -114,11 +119,13 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
     const updater = (prevItems) =>
       prevItems.map((item) => {
         if (item.slotId === slotId) {
-          const mult = getVariantMultiplier(item, variant);
+          const isHat = item.type === 'hat' || item.category === 'Hats';
+          const hasVal = typeof item.baseValue === 'number' && !isNaN(item.baseValue) && item.baseValue > 0;
+          const mult = isHat ? 1 : getVariantMultiplier(item, variant);
           return {
             ...item,
             selectedVariant: variant,
-            calculatedValue: Math.round(item.baseValue * mult),
+            calculatedValue: hasVal ? Math.round(item.baseValue * mult) : null,
           };
         }
         return item;
@@ -193,28 +200,37 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
 
           {/* Trade Item Grid (8 Slots) */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.75rem', flex: 1, minHeight: '260px' }}>
-            {sideA.map((item) => (
-              <div key={item.slotId} style={{ background: '#08090d', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '0.65rem', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
-                <button style={{ position: 'absolute', top: '4px', right: '4px', background: '#ef4444', color: '#fff', border: 'none', width: '18px', height: '18px', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleRemoveItem('A', item.slotId)}>
-                  <X size={12} />
-                </button>
-                <PetAvatar name={item.name} rarity={item.rarity} image={item.image} size={55} />
-                <div style={{ fontSize: '0.8rem', fontWeight: 800, marginTop: '4px', textAlign: 'center', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.name}</div>
-                
-                <select
-                  style={{ background: '#000', color: '#a78bfa', border: '1px solid var(--glass-border)', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 700, padding: '2px 6px', margin: '4px 0', width: '90%', fontFamily: 'inherit' }}
-                  value={item.selectedVariant}
-                  onChange={(e) => handleVariantSelect('A', item.slotId, e.target.value)}
-                >
-                  <option value="Normal">Normal</option>
-                  <option value="Shiny">Shiny</option>
-                  <option value="Mythic">Mythic</option>
-                  <option value="ShinyMythic">S.Myth</option>
-                </select>
+            {sideA.map((item) => {
+              const isHat = item.type === 'hat' || item.category === 'Hats';
+              return (
+                <div key={item.slotId} style={{ background: '#08090d', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '0.65rem', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
+                  <button style={{ position: 'absolute', top: '4px', right: '4px', background: '#ef4444', color: '#fff', border: 'none', width: '18px', height: '18px', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleRemoveItem('A', item.slotId)}>
+                    <X size={12} />
+                  </button>
+                  <PetAvatar name={item.name} rarity={item.rarity} image={item.image} size={55} />
+                  <div style={{ fontSize: '0.8rem', fontWeight: 800, marginTop: '4px', textAlign: 'center', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.name}</div>
+                  
+                  {!isHat ? (
+                    <select
+                      style={{ background: '#000', color: '#a78bfa', border: '1px solid var(--glass-border)', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 700, padding: '2px 6px', margin: '4px 0', width: '90%', fontFamily: 'inherit' }}
+                      value={item.selectedVariant}
+                      onChange={(e) => handleVariantSelect('A', item.slotId, e.target.value)}
+                    >
+                      <option value="Normal">Normal</option>
+                      <option value="Shiny">Shiny</option>
+                      <option value="Mythic">Mythic</option>
+                      <option value="ShinyMythic">S.Myth</option>
+                    </select>
+                  ) : (
+                    <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700, margin: '6px 0' }}>HAT</div>
+                  )}
 
-                <div style={{ fontSize: '0.78rem', fontWeight: 900, color: 'var(--primary-gold)' }}>⚡ {item.calculatedValue.toLocaleString()}</div>
-              </div>
-            ))}
+                  <div style={{ fontSize: '0.78rem', fontWeight: 900, color: 'var(--primary-gold)' }}>
+                    {item.calculatedValue ? `⚡ ${item.calculatedValue.toLocaleString()}` : <span style={{ color: '#94a3b8' }}>N/A</span>}
+                  </div>
+                </div>
+              );
+            })}
 
             {sideA.length < 8 && (
               <button
@@ -222,7 +238,7 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
                 onClick={() => setActiveSide('A')}
               >
                 <PlusCircle size={28} color="#7c3aed" />
-                <span style={{ fontSize: '0.8rem', color: '#a78bfa', fontWeight: 800, marginTop: '6px' }}>+ Add Pet</span>
+                <span style={{ fontSize: '0.8rem', color: '#a78bfa', fontWeight: 800, marginTop: '6px' }}>+ Add Item</span>
               </button>
             )}
           </div>
@@ -254,28 +270,37 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
 
           {/* Trade Item Grid (8 Slots) */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.75rem', flex: 1, minHeight: '260px' }}>
-            {sideB.map((item) => (
-              <div key={item.slotId} style={{ background: '#08090d', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '0.65rem', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
-                <button style={{ position: 'absolute', top: '4px', right: '4px', background: '#ef4444', color: '#fff', border: 'none', width: '18px', height: '18px', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleRemoveItem('B', item.slotId)}>
-                  <X size={12} />
-                </button>
-                <PetAvatar name={item.name} rarity={item.rarity} image={item.image} size={55} />
-                <div style={{ fontSize: '0.8rem', fontWeight: 800, marginTop: '4px', textAlign: 'center', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.name}</div>
-                
-                <select
-                  style={{ background: '#000', color: '#ffcc00', border: '1px solid var(--glass-border)', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 700, padding: '2px 6px', margin: '4px 0', width: '90%', fontFamily: 'inherit' }}
-                  value={item.selectedVariant}
-                  onChange={(e) => handleVariantSelect('B', item.slotId, e.target.value)}
-                >
-                  <option value="Normal">Normal</option>
-                  <option value="Shiny">Shiny</option>
-                  <option value="Mythic">Mythic</option>
-                  <option value="ShinyMythic">S.Myth</option>
-                </select>
+            {sideB.map((item) => {
+              const isHat = item.type === 'hat' || item.category === 'Hats';
+              return (
+                <div key={item.slotId} style={{ background: '#08090d', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '0.65rem', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
+                  <button style={{ position: 'absolute', top: '4px', right: '4px', background: '#ef4444', color: '#fff', border: 'none', width: '18px', height: '18px', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => handleRemoveItem('B', item.slotId)}>
+                    <X size={12} />
+                  </button>
+                  <PetAvatar name={item.name} rarity={item.rarity} image={item.image} size={55} />
+                  <div style={{ fontSize: '0.8rem', fontWeight: 800, marginTop: '4px', textAlign: 'center', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.name}</div>
+                  
+                  {!isHat ? (
+                    <select
+                      style={{ background: '#000', color: '#ffcc00', border: '1px solid var(--glass-border)', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 700, padding: '2px 6px', margin: '4px 0', width: '90%', fontFamily: 'inherit' }}
+                      value={item.selectedVariant}
+                      onChange={(e) => handleVariantSelect('B', item.slotId, e.target.value)}
+                    >
+                      <option value="Normal">Normal</option>
+                      <option value="Shiny">Shiny</option>
+                      <option value="Mythic">Mythic</option>
+                      <option value="ShinyMythic">S.Myth</option>
+                    </select>
+                  ) : (
+                    <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700, margin: '6px 0' }}>HAT</div>
+                  )}
 
-                <div style={{ fontSize: '0.78rem', fontWeight: 900, color: 'var(--primary-gold)' }}>⚡ {item.calculatedValue.toLocaleString()}</div>
-              </div>
-            ))}
+                  <div style={{ fontSize: '0.78rem', fontWeight: 900, color: 'var(--primary-gold)' }}>
+                    {item.calculatedValue ? `⚡ ${item.calculatedValue.toLocaleString()}` : <span style={{ color: '#94a3b8' }}>N/A</span>}
+                  </div>
+                </div>
+              );
+            })}
 
             {sideB.length < 8 && (
               <button
@@ -283,7 +308,7 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
                 onClick={() => setActiveSide('B')}
               >
                 <PlusCircle size={28} color="#ffcc00" />
-                <span style={{ fontSize: '0.8rem', color: '#ffcc00', fontWeight: 800, marginTop: '6px' }}>+ Add Pet</span>
+                <span style={{ fontSize: '0.8rem', color: '#ffcc00', fontWeight: 800, marginTop: '6px' }}>+ Add Item</span>
               </button>
             )}
           </div>
@@ -345,7 +370,7 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
             />
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '0.85rem' }}>
-              {filteredPickerPets.slice(0, 100).map((p) => (
+              {filteredPickerPets.slice(0, 150).map((p) => (
                 <div
                   key={p.id}
                   className="glass-card"
@@ -356,7 +381,9 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
                 >
                   <PetAvatar name={p.name} rarity={p.rarity} image={p.image} size={55} />
                   <div style={{ fontSize: '0.8rem', fontWeight: 900, marginTop: '0.4rem', textAlign: 'center', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{p.name}</div>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 900, color: 'var(--primary-gold)', marginTop: '2px' }}>⚡ {p.baseValue.toLocaleString()}</div>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 900, color: 'var(--primary-gold)', marginTop: '2px' }}>
+                    {p.baseValue ? `⚡ ${p.baseValue.toLocaleString()}` : <span style={{ color: '#94a3b8' }}>N/A</span>}
+                  </div>
                 </div>
               ))}
             </div>
