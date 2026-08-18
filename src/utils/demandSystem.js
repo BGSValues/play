@@ -21,11 +21,12 @@ export const TREND_SYSTEM = {
   'Unstable': { label: 'Unstable', symbol: '🔄', color: '#f59e0b' },
   'Dropping': { label: 'Dropping', symbol: '⬇', color: '#ff4d4d' },
   'Dropping Fast': { label: 'Dropping Fast', symbol: '⬇⬇', color: '#ff1744' },
+  'N/A': { label: 'N/A', symbol: '—', color: '#64748b' },
 };
 
 export function getDemandInfo(demand) {
   if (demand === null || demand === undefined || typeof demand !== 'number') {
-    return { label: 'N/A', bg: '#64748b', color: '#cbd5e1', border: '#475569', text: 'N/A' };
+    return { label: 'N/A', bg: 'rgba(100, 116, 139, 0.15)', color: '#94a3b8', border: 'rgba(100, 116, 139, 0.3)', text: 'N/A' };
   }
   const item = DEMAND_SYSTEM[demand] || DEMAND_SYSTEM[5];
   return {
@@ -37,6 +38,9 @@ export function getDemandInfo(demand) {
 
 export function getTrendInfo(trend) {
   const norm = (trend || 'Stable').trim();
+  if (norm === 'N/A' || !norm) {
+    return { label: 'N/A', symbol: '—', color: '#64748b' };
+  }
   const item = TREND_SYSTEM[norm] || { label: norm, symbol: '↔', color: '#00e5ff' };
   return item;
 }

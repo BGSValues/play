@@ -2639,9 +2639,9 @@
     "id": "pet_giant_robot",
     "name": "Giant Robot",
     "rarity": "Secret",
-    "baseValue": 69,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": null,
+    "demand": null,
+    "status": "N/A",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cd/Shiny_Giant_Robot.png/revision/latest?cb=20190209093848",
     "multipliers": {
@@ -2650,8 +2650,9 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Robot).",
     "existence": {
-      "normal": "255",
-      "shiny": "4"
+      "normal": "0",
+      "shiny": "0",
+      "note": "Unobtainable"
     },
     "stats": {
       "buffs": {
@@ -3265,9 +3266,9 @@
     "id": "pet_infinity_gem",
     "name": "Infinity Gem",
     "rarity": "Secret",
-    "baseValue": 11000,
-    "demand": 7,
-    "status": "Stable",
+    "baseValue": null,
+    "demand": null,
+    "status": "N/A",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Mythic_Infinity_Gem.png/revision/latest?cb=20210101213734",
     "multipliers": {
@@ -3278,15 +3279,14 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Infinity Gem).",
     "existence": {
-      "normal": "332",
-      "shiny": "2",
-      "mythic": "0",
-      "shinyMythic": "0"
+      "normal": "0",
+      "shiny": "0",
+      "note": "Unobtainable / Unhatched in game"
     },
     "customValues": {
-      "shiny": 50000,
-      "mythic": 50000,
-      "shinyMythic": 5
+      "shiny": null,
+      "mythic": null,
+      "shinyMythic": null
     },
     "stats": {
       "buffs": {
@@ -3307,7 +3307,8 @@
     ],
     "shinyValue": 50000,
     "mythicValue": 14500,
-    "shinyMythicValue": 70000
+    "shinyMythicValue": 70000,
+    "isUnobtainable": true
   },
   {
     "id": "pet_king_dogcat",
@@ -6000,7 +6001,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Dropping",
+    "status": "N/A",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a4/1B_Cake_Spirit.png/revision/latest?cb=20210101214058",
     "multipliers": {
@@ -6025,7 +6026,12 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "existence": {
+      "normal": "0",
+      "shiny": "0",
+      "note": "Unobtainable"
+    }
   },
   {
     "id": "pet_1b_marshmallow",
