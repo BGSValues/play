@@ -765,6 +765,50 @@ app.delete('/api/listings/:id', async (req, res) => {
   }
 });
 
+// ---------------- SYSTEM SETTINGS & MAINTENANCE API ----------------
+const SYSTEM_FILE = path.join(DATA_DIR, 'system_settings.json');
+
+app.get('/api/system/settings', async (req, res) => {
+  try {
+    const settings = await getData(SYSTEM_FILE);
+    res.json({ success: true, settings });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+app.post('/api/system/settings', async (req, res) => {
+  try {
+    const userId = req.headers['x-user-id'];
+    const users = await getData(USERS_FILE);
+    const authUser = users.find((u) => u.id === userId);
+
+    if (!authUser || (authUser.role !== 'owner' && authUser.role !== 'mod')) {
+      // Also allow if it's the owner session
+      if (userId !== 'user_owner') {
+        return res.status(403).json({ success: false, error: 'Unauthorized: Only Staff/Admins can modify system safeguards.' });
+      }
+    }
+
+    const updates = req.body;
+    const currentSettings = await getData(SYSTEM_FILE);
+    const newSettings = {
+      ...currentSettings,
+      ...updates,
+      announcement: {
+        ...currentSettings.announcement,
+        ...(updates.announcement || {}),
+        updatedAt: new Date().toISOString(),
+      },
+    };
+
+    await saveData(SYSTEM_FILE, newSettings);
+    res.json({ success: true, message: 'System safeguards updated successfully!', settings: newSettings });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 // ---------------- SCRAPER API ----------------
 app.post('/api/scrape', async (req, res) => {
   try {

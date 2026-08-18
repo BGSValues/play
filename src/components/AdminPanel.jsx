@@ -78,7 +78,6 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   const [scraping, setScraping] = useState(false);
   const [msg, setMsg] = useState(null);
 
-  // Pet search, filter, pagination
   const [searchQuery, setSearchQuery] = useState('');
   const [filterRarity, setFilterRarity] = useState('all');
   const [filterType, setFilterType] = useState('all'); // 'all', 'pet', 'hat'
@@ -86,6 +85,53 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   const [sortDir, setSortDir] = useState('asc');
   const [page, setPage] = useState(1);
   const pageSize = 25;
+
+  const [sysSettings, setSysSettings] = useState({
+    maintenanceMode: false,
+    maintenanceMessage: '',
+    freezeMarketplace: false,
+    freezeTradingCalculator: false,
+    announcement: {
+      enabled: true,
+      type: 'event',
+      title: '',
+      message: '',
+    },
+  });
+  const [savingSettings, setSavingSettings] = useState(false);
+
+  useEffect(() => {
+    fetch('/api/system/settings')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.settings) {
+          setSysSettings(data.settings);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const handleSaveSafeguards = async (e) => {
+    if (e) e.preventDefault();
+    setSavingSettings(true);
+    try {
+      const res = await fetch('/api/system/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-user-id': currentUser?.id },
+        body: JSON.stringify(sysSettings),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: 'System safeguards & global announcement updated successfully!' });
+      } else {
+        setMsg({ type: 'error', text: data.error });
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to save system safeguards.' });
+    } finally {
+      setSavingSettings(false);
+    }
+  };
 
   const isStaff = currentUser && (currentUser.role === 'owner' || currentUser.role === 'mod');
   const isOwner = currentUser && currentUser.role === 'owner';
@@ -694,7 +740,7 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
         <button
           className={`filter-btn ${adminTab === 'pets' ? 'active' : ''}`}
           onClick={() => setAdminTab('pets')}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.8rem', fontSize: '1rem', fontWeight: 900 }}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.6rem', fontSize: '0.95rem', fontWeight: 900 }}
         >
           <Database size={18} /> Pet & Hat Database Studio ({pets.length})
         </button>
@@ -702,9 +748,17 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
         <button
           className={`filter-btn ${adminTab === 'users' ? 'active' : ''}`}
           onClick={() => setAdminTab('users')}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.8rem', fontSize: '1rem', fontWeight: 900 }}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.6rem', fontSize: '0.95rem', fontWeight: 900 }}
         >
           <Users size={18} /> User Moderation & Live Sessions ({usersList.length})
+        </button>
+
+        <button
+          className={`filter-btn ${adminTab === 'safeguards' ? 'active' : ''}`}
+          onClick={() => setAdminTab('safeguards')}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.6rem', fontSize: '0.95rem', fontWeight: 900 }}
+        >
+          <ShieldAlert size={18} /> Global Safeguards & Maintenance Center
         </button>
       </div>
 
@@ -1143,6 +1197,199 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                 )}
               </tbody>
             </table>
+          </div>
+        </div>
+      )}
+
+      {/* ============================================================== */}
+      {/* TAB 3: GLOBAL SAFEGUARDS & MAINTENANCE BROADCAST CENTER       */}
+      {/* ============================================================== */}
+      {adminTab === 'safeguards' && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(420px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+          {/* Card A: Global Announcement Studio */}
+          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(124, 58, 237, 0.4)', background: 'linear-gradient(180deg, rgba(124, 58, 237, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.5rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '1rem' }}>
+              <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: 'rgba(124, 58, 237, 0.2)', border: '1px solid #7c3aed', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#a78bfa' }}>
+                <Sparkles size={22} />
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>Global Announcement Studio</h3>
+                <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Broadcast banner message across the entire website</span>
+              </div>
+            </div>
+
+            <form onSubmit={handleSaveSafeguards}>
+              {/* Enable Switch */}
+              <div style={{ background: '#0a0b10', padding: '0.85rem 1rem', borderRadius: '10px', border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
+                <div>
+                  <div style={{ fontWeight: 800, color: '#fff', fontSize: '0.95rem' }}>Enable Global Broadcast Banner</div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748b' }}>Show message at top of all pages for every visitor</div>
+                </div>
+                <input
+                  type="checkbox"
+                  checked={sysSettings.announcement?.enabled}
+                  onChange={(e) =>
+                    setSysSettings({
+                      ...sysSettings,
+                      announcement: { ...sysSettings.announcement, enabled: e.target.checked },
+                    })
+                  }
+                  style={{ width: '22px', height: '22px', accentColor: '#7c3aed', cursor: 'pointer' }}
+                />
+              </div>
+
+              {/* Type Select */}
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Broadcast Style / Category
+                </label>
+                <select
+                  value={sysSettings.announcement?.type || 'event'}
+                  onChange={(e) =>
+                    setSysSettings({
+                      ...sysSettings,
+                      announcement: { ...sysSettings.announcement, type: e.target.value },
+                    })
+                  }
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                >
+                  <option value="event">🌟 Event / Hype Release (Purple & Pink Glow)</option>
+                  <option value="alert">🚨 Security Alert / Anti-Dupe Warning (Red Glow)</option>
+                  <option value="info">ℹ️ Market / Value Update Notice (Neon Cyan Glow)</option>
+                </select>
+              </div>
+
+              {/* Headline */}
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Announcement Headline
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g. 🌟 Official Market Synchronization Complete"
+                  value={sysSettings.announcement?.title || ''}
+                  onChange={(e) =>
+                    setSysSettings({
+                      ...sysSettings,
+                      announcement: { ...sysSettings.announcement, title: e.target.value },
+                    })
+                  }
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              {/* Full Message */}
+              <div style={{ marginBottom: '1.5rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Broadcast Message Body
+                </label>
+                <textarea
+                  rows="3"
+                  placeholder="Enter the message you want all active traders to see..."
+                  value={sysSettings.announcement?.message || ''}
+                  onChange={(e) =>
+                    setSysSettings({
+                      ...sysSettings,
+                      announcement: { ...sysSettings.announcement, message: e.target.value },
+                    })
+                  }
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px', fontSize: '0.9rem', resize: 'vertical' }}
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={savingSettings}
+                className="btn-primary"
+                style={{ width: '100%', padding: '0.85rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontWeight: 900 }}
+              >
+                <Save size={16} /> {savingSettings ? 'Deploying Broadcast...' : 'Deploy Global Announcement'}
+              </button>
+            </form>
+          </div>
+
+          {/* Card B: Safeguards & Maintenance Lockdown */}
+          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 23, 68, 0.4)', background: 'linear-gradient(180deg, rgba(255, 23, 68, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.5rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '1rem' }}>
+              <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: 'rgba(255, 23, 68, 0.2)', border: '1px solid #ff1744', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ff1744' }}>
+                <ShieldAlert size={22} />
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>System Safeguards & Maintenance</h3>
+                <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Protect values, freeze markets, or lock platform</span>
+              </div>
+            </div>
+
+            <form onSubmit={handleSaveSafeguards}>
+              {/* Full Maintenance Mode Switch */}
+              <div style={{ background: '#0a0b10', padding: '0.85rem 1rem', borderRadius: '10px', border: sysSettings.maintenanceMode ? '1px solid #ff1744' : '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
+                <div>
+                  <div style={{ fontWeight: 800, color: sysSettings.maintenanceMode ? '#ff1744' : '#fff', fontSize: '0.95rem' }}>
+                    🚨 Website Maintenance Mode
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748b' }}>
+                    Locks regular visitors to safeguard screen (Staff still access /admin)
+                  </div>
+                </div>
+                <input
+                  type="checkbox"
+                  checked={sysSettings.maintenanceMode}
+                  onChange={(e) => setSysSettings({ ...sysSettings, maintenanceMode: e.target.checked })}
+                  style={{ width: '22px', height: '22px', accentColor: '#ff1744', cursor: 'pointer' }}
+                />
+              </div>
+
+              {/* Maintenance Reason Message */}
+              <div style={{ marginBottom: '1.25rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Maintenance Banner Notice
+                </label>
+                <textarea
+                  rows="2"
+                  placeholder="Reason for maintenance shown to users..."
+                  value={sysSettings.maintenanceMessage || ''}
+                  onChange={(e) => setSysSettings({ ...sysSettings, maintenanceMessage: e.target.value })}
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              {/* Freeze Marketplace */}
+              <div style={{ background: '#0a0b10', padding: '0.85rem 1rem', borderRadius: '10px', border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                <div>
+                  <div style={{ fontWeight: 800, color: '#fff', fontSize: '0.9rem' }}>Freeze Marketplace Listings</div>
+                  <div style={{ fontSize: '0.72rem', color: '#64748b' }}>Temporarily block new trade postings during market volatility</div>
+                </div>
+                <input
+                  type="checkbox"
+                  checked={sysSettings.freezeMarketplace}
+                  onChange={(e) => setSysSettings({ ...sysSettings, freezeMarketplace: e.target.checked })}
+                  style={{ width: '20px', height: '20px', accentColor: '#ffcc00', cursor: 'pointer' }}
+                />
+              </div>
+
+              {/* Freeze Trade Calculator */}
+              <div style={{ background: '#0a0b10', padding: '0.85rem 1rem', borderRadius: '10px', border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+                <div>
+                  <div style={{ fontWeight: 800, color: '#fff', fontSize: '0.9rem' }}>Freeze Trade Calculator</div>
+                  <div style={{ fontSize: '0.72rem', color: '#64748b' }}>Temporarily pause trade calculations during major value updates</div>
+                </div>
+                <input
+                  type="checkbox"
+                  checked={sysSettings.freezeTradingCalculator}
+                  onChange={(e) => setSysSettings({ ...sysSettings, freezeTradingCalculator: e.target.checked })}
+                  style={{ width: '20px', height: '20px', accentColor: '#ffcc00', cursor: 'pointer' }}
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={savingSettings}
+                className="btn-primary"
+                style={{ width: '100%', padding: '0.85rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontWeight: 900, background: '#ff1744', borderColor: '#ff1744' }}
+              >
+                <Save size={16} /> {savingSettings ? 'Deploying Safeguards...' : 'Save & Deploy Safeguards'}
+              </button>
+            </form>
           </div>
         </div>
       )}

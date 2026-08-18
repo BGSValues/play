@@ -25,6 +25,8 @@ import EggsList from './components/EggsList';
 import PetDetailsPage from './components/PetDetailsPage';
 import LoginModal from './components/LoginModal';
 import UserSettingsModal from './components/UserSettingsModal';
+import GlobalAnnouncementBanner from './components/GlobalAnnouncementBanner';
+import MaintenanceScreen from './components/MaintenanceScreen';
 import BgsLogo from './components/BgsLogo';
 
 import initialPetsData from './data/pets.json';
@@ -43,6 +45,26 @@ export default function App() {
     const saved = localStorage.getItem('bgs_user');
     return saved ? JSON.parse(saved) : null;
   });
+
+  const [systemSettings, setSystemSettings] = useState(null);
+
+  // Fetch System Settings & Announcement
+  const fetchSystemSettings = () => {
+    fetch('/api/system/settings')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.settings) {
+          setSystemSettings(data.settings);
+        }
+      })
+      .catch(() => {});
+  };
+
+  useEffect(() => {
+    fetchSystemSettings();
+    const interval = setInterval(fetchSystemSettings, 15000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Dynamic Live Active Users Counter (Realistic slow shift, kept between 29 and 45)
   const [activeUsersCount, setActiveUsersCount] = useState(() => {
@@ -154,8 +176,27 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const isStaff = currentUser && (currentUser.role === 'owner' || currentUser.role === 'mod');
+  const isMaintenanceActive = systemSettings?.maintenanceMode && !isStaff && activeTab !== 'admin';
+
+  if (isMaintenanceActive) {
+    return (
+      <MaintenanceScreen
+        message={systemSettings?.maintenanceMessage}
+        onStaffLoginClick={() => {
+          setActiveTab('admin');
+        }}
+      />
+    );
+  }
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+      {/* ━━━━ GLOBAL BROADCAST BANNER ━━━━ */}
+      {systemSettings?.announcement && (
+        <GlobalAnnouncementBanner announcement={systemSettings.announcement} />
+      )}
+
       {toast && (
         <div style={{ position: 'fixed', bottom: '28px', right: '28px', background: 'var(--primary-gold)', color: '#07090e', padding: '0.85rem 1.6rem', borderRadius: '14px', fontWeight: 900, boxShadow: '0 10px 30px rgba(255,204,0,0.5)', zIndex: 9999, fontSize: '0.95rem' }}>
           {toast}
