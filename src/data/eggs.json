@@ -5,7 +5,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/hellishegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/25/Hellish_Egg.png/revision/latest?cb=20211023050824",
     "pets": [
       {
         "id": "pet_hellshard",
@@ -182,7 +182,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 275000,
     "costCurrency": "Treats",
-    "image": "/eggs/costumeegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f8/Costume_Egg.png/revision/latest?cb=20201009233218",
     "pets": [
       {
         "id": "pet_luminance",
@@ -360,7 +360,7 @@
     "location": "Easter 2021 Area",
     "costAmount": 4500000,
     "costCurrency": "Gems",
-    "image": "/eggs/cosmicegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/19/Cosmic_Egg.png/revision/latest?cb=20210402225723",
     "pets": [
       {
         "id": "pet_easter_robot",
@@ -539,7 +539,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 225000,
     "costCurrency": "Flowers",
-    "image": "/eggs/vineegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fc/Vine_Egg.png/revision/latest?cb=20200522190600",
     "pets": [
       {
         "id": "pet_shard",
@@ -716,7 +716,7 @@
     "location": "Mystic Forest",
     "costAmount": 185000,
     "costCurrency": "Crystals",
-    "image": "/eggs/mythicalegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a9/Mythical_Egg.png/revision/latest?cb=20200328033524",
     "pets": [
       {
         "id": "pet_prisma",
@@ -892,7 +892,7 @@
     "location": "Overworld",
     "costAmount": 3000000,
     "costCurrency": "Gems",
-    "image": "/eggs/1begg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/73/1B_Egg.png/revision/latest?cb=20210101214048",
     "pets": [
       {
         "id": "pet_infinity_gem",
@@ -1054,7 +1054,7 @@
     "location": "Shadow Realm",
     "costAmount": 2500000,
     "costCurrency": "Gems",
-    "image": "/eggs/corruptedegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/25/Corrupted_Egg.png/revision/latest?cb=20210430234810",
     "pets": [
       {
         "id": "pet_hellfire",
@@ -1217,7 +1217,7 @@
     "location": "Overworld",
     "costAmount": 20000000,
     "costCurrency": "Coins",
-    "image": "/eggs/2020egg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/08/2020_Egg.png/revision/latest?cb=20210101213643",
     "pets": [
       {
         "id": "pet_firecracker",
@@ -1379,7 +1379,7 @@
     "location": "2020 Easter Event",
     "costAmount": 250000,
     "costCurrency": "Gems",
-    "image": "/eggs/heavenlyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3a/Heavenly_Egg.png/revision/latest?cb=20200417203055",
     "pets": [
       {
         "id": "pet_godly_gem",
@@ -1541,7 +1541,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/summeregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8f/Summer_Egg-0.png/revision/latest?cb=20190525165301",
     "pets": [
       {
         "id": "pet_lord_shock",
@@ -1697,7 +1697,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 90000,
     "costCurrency": "Bells",
-    "image": "/eggs/blizzardegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/14/Blizzard_Egg.png/revision/latest?cb=20201204233153",
     "pets": [
       {
         "id": "pet_soulflake",
@@ -1860,7 +1860,7 @@
     "location": "Carnival",
     "costAmount": 250000,
     "costCurrency": "Tokens",
-    "image": "/eggs/stuffedegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ea/Stuffed_Egg.png/revision/latest?cb=20200731211958",
     "pets": [
       {
         "id": "pet_overlord_plushie",
@@ -2022,7 +2022,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/july4thegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5a/Red_Egg.png/revision/latest?cb=20190622232015",
     "pets": [
       {
         "id": "pet_patriotic_robot",
@@ -2178,7 +2178,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 185000,
     "costCurrency": "Treats",
-    "image": "/eggs/sinisteregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e8/Sinister_Egg.png/revision/latest?cb=20201002231054",
     "pets": [
       {
         "id": "pet_sinister_lord_2_0",
@@ -2340,7 +2340,7 @@
     "location": "Overworld",
     "costAmount": 850000,
     "costCurrency": "Gems",
-    "image": "/eggs/vacationegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/06/Vacation_Egg.png/revision/latest?cb=20200814184822",
     "pets": [
       {
         "id": "pet_candy_hybrid",
@@ -2501,7 +2501,7 @@
     "location": "Christmas Starter Area (2021)",
     "costAmount": 10000,
     "costCurrency": "Snowflakes",
-    "image": "/eggs/candycaneegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/95/Candycane_Egg.png/revision/latest?cb=20260719180057",
     "pets": [
       {
         "id": "pet_santa_hat",
@@ -2663,7 +2663,7 @@
     "location": "Overworld",
     "costAmount": 50000,
     "costCurrency": "Gems",
-    "image": "/eggs/lunaregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Lunar_Egg.png/revision/latest?cb=20181226025115",
     "pets": [
       {
         "id": "pet_electra",
@@ -2815,7 +2815,7 @@
     "location": "Shadow Realm",
     "costAmount": 4500000,
     "costCurrency": "Gems",
-    "image": "/eggs/golfegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/33/Golf_Egg.png/revision/latest?cb=20210611194455",
     "pets": [
       {
         "id": "pet_ace",
@@ -2962,7 +2962,7 @@
     "location": "Overworld",
     "costAmount": 450000,
     "costCurrency": "Gems",
-    "image": "/eggs/autumnegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/73/Autumn_Egg.png/revision/latest?cb=20200912012324",
     "pets": [
       {
         "id": "pet_koi",
@@ -3109,7 +3109,7 @@
     "location": "Overworld",
     "costAmount": 2000000,
     "costCurrency": "Gems",
-    "image": "/eggs/900megg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8f/900M_Egg.png/revision/latest?cb=20201023231851",
     "pets": [
       {
         "id": "pet_bgs_plaque",
@@ -3255,7 +3255,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 500000,
     "costCurrency": "Bells",
-    "image": "/eggs/christmasyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0b/Christmasy_Egg.png/revision/latest?cb=20201218224938",
     "pets": [
       {
         "id": "pet_christmas_robot",
@@ -3403,7 +3403,7 @@
     "location": "Shadow Realm",
     "costAmount": 2500000,
     "costCurrency": "Gems",
-    "image": "/eggs/splitegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ca/Split_Egg.png/revision/latest?cb=20201107013301",
     "pets": [
       {
         "id": "pet_dice_split",
@@ -3549,7 +3549,7 @@
     "location": "Overworld",
     "costAmount": 100000,
     "costCurrency": "Gems",
-    "image": "/eggs/easteregg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Easter_Egg.png",
     "pets": [
       {
         "id": "pet_easter_basket",
@@ -3690,7 +3690,7 @@
     "location": "Underworld",
     "costAmount": 225000,
     "costCurrency": "Magma",
-    "image": "/eggs/sparklyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fa/Sparkly_Egg.png/revision/latest?cb=20190927191723",
     "pets": [
       {
         "id": "pet_fallen_angel",
@@ -3836,7 +3836,7 @@
     "location": "2020 Easter Event",
     "costAmount": 185000,
     "costCurrency": "Gems",
-    "image": "/eggs/bunnyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4d/Bunny_Egg.png/revision/latest?cb=20200410204758",
     "pets": [
       {
         "id": "pet_giant_choco_chicken",
@@ -3982,7 +3982,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 185000,
     "costCurrency": "Gifts",
-    "image": "/eggs/treeegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/da/Tree_Egg.png/revision/latest?cb=20191224081124",
     "pets": [
       {
         "id": "pet_holy_bell",
@@ -4130,7 +4130,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/400megg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/400m_Egg.png",
     "pets": [
       {
         "id": "pet_kraken",
@@ -4272,7 +4272,7 @@
     "location": "Overworld",
     "costAmount": 225000,
     "costCurrency": "Gems",
-    "image": "/eggs/50thupdateegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ef/50th_Update_Egg.png/revision/latest?cb=20200501201935",
     "pets": [
       {
         "id": "pet_pyramidium",
@@ -4413,7 +4413,7 @@
     "location": "Overworld",
     "costAmount": 350000,
     "costCurrency": "Gems",
-    "image": "/eggs/nightmareegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/43/Nightmare_Egg.png/revision/latest?cb=20181228010745",
     "pets": [
       {
         "id": "pet_the_overlord",
@@ -4550,7 +4550,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/valentine.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Valentine.png",
     "pets": [
       {
         "id": "pet_valentine_shock",
@@ -4691,7 +4691,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/valentineegg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Valentine_Egg.png",
     "pets": [
       {
         "id": "pet_valentium",
@@ -4832,7 +4832,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/luck.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Luck.png",
     "pets": [
       {
         "id": "pet_holy_crab",
@@ -4979,7 +4979,7 @@
     "location": "Shadow Realm",
     "costAmount": 1000000,
     "costCurrency": "Gems",
-    "image": "/eggs/coreegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/09/Core_Egg.png/revision/latest?cb=20200613043226",
     "pets": [
       {
         "id": "pet_galaxium",
@@ -5124,7 +5124,7 @@
     "location": "Mystic Forest",
     "costAmount": 225000,
     "costCurrency": "Crystals",
-    "image": "/eggs/mushroomegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2c/Mushroom_Egg.png/revision/latest?cb=20200403212147",
     "pets": [
       {
         "id": "pet_demon_snake",
@@ -5269,7 +5269,7 @@
     "location": "Underworld",
     "costAmount": 175000,
     "costCurrency": "Magma",
-    "image": "/eggs/evilegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b2/Evil_Egg.png/revision/latest?cb=20190927192334",
     "pets": [
       {
         "id": "pet_devil",
@@ -5414,7 +5414,7 @@
     "location": "Carnival",
     "costAmount": 185000,
     "costCurrency": "Tokens",
-    "image": "/eggs/exoticegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/19/Exotic_Egg.png/revision/latest?cb=20200725040506",
     "pets": [
       {
         "id": "pet_shadow_hunter",
@@ -5560,7 +5560,7 @@
     "location": "St Patrick",
     "costAmount": 300000,
     "costCurrency": "Silver",
-    "image": "/eggs/jackpotegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Jackpot_Egg.png/revision/latest?cb=20210307011148",
     "pets": [
       {
         "id": "pet_almighty_hexarium",
@@ -5693,7 +5693,7 @@
     "location": "Easter 2021 Area",
     "costAmount": 1250000,
     "costCurrency": "Gems",
-    "image": "/eggs/easteryegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/33/Eastery_Egg.png/revision/latest?cb=20210402230130",
     "pets": [
       {
         "id": "pet_cardinal_bunny",
@@ -5825,7 +5825,7 @@
     "location": "Mystic Forest",
     "costAmount": 300000,
     "costCurrency": "Crystals",
-    "image": "/eggs/pastelegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cc/Pastel_Egg.png/revision/latest?cb=20200605191901",
     "pets": [
       {
         "id": "pet_crystal_teddy",
@@ -5956,7 +5956,7 @@
     "location": "Overworld",
     "costAmount": 250000,
     "costCurrency": "Gems",
-    "image": "/eggs/600megg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/600m_Egg.png",
     "pets": [
       {
         "id": "pet_immortal_one",
@@ -6085,7 +6085,7 @@
     "location": "Shadow Realm",
     "costAmount": 2000000,
     "costCurrency": "Gems",
-    "image": "/eggs/royaltyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/15/Royalty_Egg.png/revision/latest?cb=20210122214601",
     "pets": [
       {
         "id": "pet_king_kitty",
@@ -6218,7 +6218,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 185000,
     "costCurrency": "Flowers",
-    "image": "/eggs/blossomegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b3/Blossom_Egg.png/revision/latest?cb=20200515215842",
     "pets": [
       {
         "id": "pet_duality",
@@ -6349,7 +6349,7 @@
     "location": "Easter 2021 Area",
     "costAmount": 550000,
     "costCurrency": "Gems",
-    "image": "/eggs/crackedegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cd/Cracked_Egg.png/revision/latest?cb=20210402225916",
     "pets": [
       {
         "id": "pet_easter_spirit",
@@ -6480,7 +6480,7 @@
     "location": "St. Patricks 2020 Event",
     "costAmount": 225000,
     "costCurrency": "Rainbows",
-    "image": "/eggs/cloveregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4d/Clover_Egg.png/revision/latest?cb=20200320161239",
     "pets": [
       {
         "id": "pet_frost_sentinel",
@@ -6612,7 +6612,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/ghostegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c5/Ghost_Egg.png/revision/latest?cb=20211023050708",
     "pets": [
       {
         "id": "pet_ghosdeeri",
@@ -6744,7 +6744,7 @@
     "location": "Atlantis",
     "costAmount": 200000,
     "costCurrency": "Pearls",
-    "image": "/eggs/coralegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ce/Coral_Egg.png/revision/latest?cb=20190427032925",
     "pets": [
       {
         "id": "pet_giant_pearl",
@@ -6875,7 +6875,7 @@
     "location": "Atlantis",
     "costAmount": 300000,
     "costCurrency": "Pearls",
-    "image": "/eggs/ancientegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/dc/Ancient_Egg.png/revision/latest?cb=20190510160627",
     "pets": [
       {
         "id": "pet_gryphon",
@@ -7004,7 +7004,7 @@
     "location": "Overworld",
     "costAmount": 2500000,
     "costCurrency": "Gems",
-    "image": "/eggs/heartfulegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ca/Heartful_Egg.png/revision/latest?cb=20210213003247",
     "pets": [
       {
         "id": "pet_harmonic_harp",
@@ -7136,7 +7136,7 @@
     "location": "Overworld",
     "costAmount": 200000,
     "costCurrency": "Gems",
-    "image": "/eggs/700megg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/24/700M_Egg.png/revision/latest?cb=20200424192432",
     "pets": [
       {
         "id": "pet_immortal_trophy",
@@ -7264,7 +7264,7 @@
     "location": "St Patrick",
     "costAmount": 1200,
     "costCurrency": "Silver",
-    "image": "/eggs/goldenegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/97/Golden_Egg.png/revision/latest?cb=20210307010152",
     "pets": [
       {
         "id": "pet_prisma_cube",
@@ -7394,7 +7394,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 175000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/mutantegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3d/Mutant_Egg.png/revision/latest?cb=20191012015704",
     "pets": [
       {
         "id": "pet_radiance",
@@ -7518,7 +7518,7 @@
     "location": "Overworld",
     "costAmount": 500000,
     "costCurrency": "Gems",
-    "image": "/eggs/800megg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9e/800M_Egg.png/revision/latest?cb=20200626204121",
     "pets": [
       {
         "id": "pet_radiant_one",
@@ -7651,7 +7651,7 @@
     "location": "Rainbow Land",
     "costAmount": 150000,
     "costCurrency": "Stars",
-    "image": "/eggs/colorfulegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Colorful_Egg.png/revision/latest?cb=20190622220757",
     "pets": [
       {
         "id": "pet_rainbow_dogcat",
@@ -7782,7 +7782,7 @@
     "location": "St. Patricks 2020 Event",
     "costAmount": 185000,
     "costCurrency": "Rainbows",
-    "image": "/eggs/leprechaunegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Leprechaun_Egg.png/revision/latest?cb=20200306215611",
     "pets": [
       {
         "id": "pet_robot_2_0",
@@ -7913,7 +7913,7 @@
     "location": "Beach World",
     "costAmount": 275000,
     "costCurrency": "Shells",
-    "image": "/eggs/wateregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/71/Water_Egg.png/revision/latest?cb=20190309071852",
     "pets": [
       {
         "id": "pet_sea_star",
@@ -8044,7 +8044,7 @@
     "location": "Overworld",
     "costAmount": 3250000,
     "costCurrency": "Gems",
-    "image": "/eggs/lovelyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Lovely_Egg.png/revision/latest?cb=20210213003237",
     "pets": [
       {
         "id": "pet_shattered_soul",
@@ -8175,7 +8175,7 @@
     "location": "Mystic Forest",
     "costAmount": 1200,
     "costCurrency": "Lollipops",
-    "image": "/eggs/wispegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Wisp_Egg.png/revision/latest?cb=20211023051351",
     "pets": [
       {
         "id": "pet_wisplord",
@@ -8306,7 +8306,7 @@
     "location": "Overworld",
     "costAmount": 75000,
     "costCurrency": "Gems",
-    "image": "/eggs/newyearegg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/New_Year_Egg.png",
     "pets": [
       {
         "id": "pet_2018_overlord",
@@ -8429,7 +8429,7 @@
     "location": "Underworld",
     "costAmount": 175000,
     "costCurrency": "Magma",
-    "image": "/eggs/darkegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2c/Dark_Egg.png/revision/latest?cb=20190927192324",
     "pets": [
       {
         "id": "pet_night_dweller",
@@ -8559,7 +8559,7 @@
     "location": "Candy Land",
     "costAmount": 200000,
     "costCurrency": "Candy",
-    "image": "/eggs/slushyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/35/Slushy_Egg.png/revision/latest?cb=20190105141254",
     "pets": [
       {
         "id": "pet_rainbow_marshmallow",
@@ -8689,7 +8689,7 @@
     "location": "Rainbow Land",
     "costAmount": 65000,
     "costCurrency": "Stars",
-    "image": "/eggs/orangeegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/45/Orange_Egg.png/revision/latest?cb=20190622223146",
     "pets": [
       {
         "id": "pet_winged_horse",
@@ -8820,7 +8820,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/luckyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/72/Lucky_Egg.png/revision/latest?cb=20190315192058",
     "pets": [
       {
         "id": "pet_lucky_overlord",
@@ -8948,7 +8948,7 @@
     "location": "2020 Easter Event",
     "costAmount": 65000,
     "costCurrency": "Gems",
-    "image": "/eggs/basketegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/de/Basket_Egg.png/revision/latest?cb=20200410204739",
     "pets": [
       {
         "id": "pet_twitter_dominus",
@@ -9079,7 +9079,7 @@
     "location": "Underworld",
     "costAmount": 125000,
     "costCurrency": "Magma",
-    "image": "/eggs/fireegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/81/Fire_Egg.png/revision/latest?cb=20190927192315",
     "pets": [
       {
         "id": "pet_fire_elemental",
@@ -9209,7 +9209,7 @@
     "location": "Christmas Starter Area (2021)",
     "costAmount": 1000000,
     "costCurrency": "Snowflakes",
-    "image": "/eggs/frostedegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Frosted_Egg2021.png/revision/latest?cb=20220112193135",
     "pets": [
       {
         "id": "pet_frosted_duality",
@@ -9341,7 +9341,7 @@
     "location": "Atlantis",
     "costAmount": 65000,
     "costCurrency": "Pearls",
-    "image": "/eggs/oceanegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cc/Ocean_Egg.png/revision/latest?cb=20190413094509",
     "pets": [
       {
         "id": "pet_ocean_hydra",
@@ -9472,7 +9472,7 @@
     "location": "Beach World",
     "costAmount": 300000,
     "costCurrency": "Shells",
-    "image": "/eggs/crabegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Crab_Egg.png/revision/latest?cb=20190329231326",
     "pets": [
       {
         "id": "pet_king_crab",
@@ -9602,7 +9602,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 65000,
     "costCurrency": "Treats",
-    "image": "/eggs/candycornegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ce/Candycorn_Egg.png/revision/latest?cb=20201002215635",
     "pets": [
       {
         "id": "pet_plushies",
@@ -9717,7 +9717,7 @@
     "location": "Shadow Realm",
     "costAmount": 350000,
     "costCurrency": "Gems",
-    "image": "/eggs/fruityegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f9/Fruity_Egg.png/revision/latest?cb=20200828225006",
     "pets": [
       {
         "id": "pet_dragonfruit",
@@ -9835,7 +9835,7 @@
     "location": "Shadow Realm",
     "costAmount": 1250000,
     "costCurrency": "Gems",
-    "image": "/eggs/elementegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/49/Element_Egg.png/revision/latest?cb=20200711193339",
     "pets": [
       {
         "id": "pet_galactic_paladin",
@@ -9952,7 +9952,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 550,
     "costCurrency": "Treats",
-    "image": "/eggs/slimeegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d8/Slime_Egg.png/revision/latest?cb=20201026120107",
     "pets": [
       {
         "id": "pet_king_slime",
@@ -10068,7 +10068,7 @@
     "location": "Rainbow Land",
     "costAmount": 175000,
     "costCurrency": "Stars",
-    "image": "/eggs/fancyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Fancy_Egg.png/revision/latest?cb=20190719165620",
     "pets": [
       {
         "id": "pet_rainbow_leviathan",
@@ -10183,7 +10183,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 160000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/skellyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/dd/Skelly_Egg.png/revision/latest?cb=20191012025122",
     "pets": [
       {
         "id": "pet_sinister_lord",
@@ -10294,7 +10294,7 @@
     "location": "Candy Land",
     "costAmount": 325000,
     "costCurrency": "Candy",
-    "image": "/eggs/dominusegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Dominus_Egg.png/revision/latest?cb=20190118072106",
     "pets": [
       {
         "id": "pet_the_owolord",
@@ -10410,7 +10410,7 @@
     "location": "Overworld",
     "costAmount": 200000,
     "costCurrency": "Gems",
-    "image": "/eggs/300megg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/300m_Egg.png",
     "pets": [
       {
         "id": "pet_trophy",
@@ -10521,7 +10521,7 @@
     "location": "Overworld",
     "costAmount": 175000,
     "costCurrency": "Gems",
-    "image": "/eggs/500megg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/500m_Egg.png",
     "pets": [
       {
         "id": "pet_ultimate_trophy",
@@ -10634,7 +10634,7 @@
     "location": "Beach World",
     "costAmount": 150000,
     "costCurrency": "Shells",
-    "image": "/eggs/beachegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cd/Beach_Egg.png/revision/latest?cb=20190302150118",
     "pets": [
       {
         "id": "pet_beach_hydra",
@@ -10749,7 +10749,7 @@
     "location": "Toy Land",
     "costAmount": 75000,
     "costCurrency": "Blocks",
-    "image": "/eggs/blockegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/11/Block_Egg.png/revision/latest?cb=20190202120204",
     "pets": [
       {
         "id": "pet_brick_stack",
@@ -10865,7 +10865,7 @@
     "location": "Overworld",
     "costAmount": 200000,
     "costCurrency": "Gems",
-    "image": "/eggs/voidshardegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/75/Void_Shard_Egg.png/revision/latest?cb=20181201131211",
     "pets": [
       {
         "id": "pet_dark_phoenix",
@@ -10973,7 +10973,7 @@
     "location": "Overworld",
     "costAmount": 17500,
     "costCurrency": "Gems",
-    "image": "/eggs/crystalegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6d/Crystal_Egg.png/revision/latest?cb=20181202233627",
     "pets": [
       {
         "id": "pet_flying_pig",
@@ -11082,7 +11082,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 65000,
     "costCurrency": "Gifts",
-    "image": "/eggs/giftegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/37/Gift_Egg.png/revision/latest?cb=20191224091605",
     "pets": [
       {
         "id": "pet_frost_serpent",
@@ -11197,7 +11197,7 @@
     "location": "Overworld",
     "costAmount": 650000,
     "costCurrency": "Gems",
-    "image": "/eggs/rainbowegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3f/Rainbow_Egg.png/revision/latest?cb=20181228151239",
     "pets": [
       {
         "id": "pet_rainbow_shock",
@@ -11305,7 +11305,7 @@
     "location": "Toy Land",
     "costAmount": 250000,
     "costCurrency": "Blocks",
-    "image": "/eggs/beeegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/eb/Bee_Egg.png/revision/latest?cb=20190223042559",
     "pets": [
       {
         "id": "pet_queen_bee",
@@ -11420,7 +11420,7 @@
     "location": "St Patrick",
     "costAmount": 125000,
     "costCurrency": "Silver",
-    "image": "/eggs/stpatricksegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/St._Patricks_Egg.png/revision/latest?cb=20210307011416",
     "pets": [
       {
         "id": "pet_lucky_horseshoe",
@@ -11536,7 +11536,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 125000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/christmasegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2c/Christmas_Egg.png/revision/latest?cb=20181223123245",
     "pets": [
       {
         "id": "pet_minty_hydra",
@@ -11646,7 +11646,7 @@
     "location": "Shadow Realm",
     "costAmount": 5000000,
     "costCurrency": "Gems",
-    "image": "/eggs/shadowegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6b/Shadow_Egg.png/revision/latest?cb=20260718121325",
     "pets": [
       {
         "id": "pet_shadow_imp",
@@ -11761,7 +11761,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 300000,
     "costCurrency": "Bells",
-    "image": "/eggs/hollyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/49/Holly_Egg.png/revision/latest?cb=20201204233347",
     "pets": [
       {
         "id": "pet_archangel",
@@ -11862,7 +11862,7 @@
     "location": "Candy Land",
     "costAmount": 300000,
     "costCurrency": "Candy",
-    "image": "/eggs/jellyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/ff/Jelly_Egg.png/revision/latest?cb=20190112082453",
     "pets": [
       {
         "id": "pet_dogcat",
@@ -11962,7 +11962,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 2000,
     "costCurrency": "Bells",
-    "image": "/eggs/gingerbreadegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/19/Gingerbread_Egg.png/revision/latest?cb=20201204233237",
     "pets": [
       {
         "id": "pet_gingerbread_shard",
@@ -12063,7 +12063,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 350000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/frostegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c3/Frost_Egg.png/revision/latest?cb=20181222203827",
     "pets": [
       {
         "id": "pet_leviathan",
@@ -12159,7 +12159,7 @@
     "location": "Atlantis",
     "costAmount": 150000,
     "costCurrency": "Pearls",
-    "image": "/eggs/darknessegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a9/Darkness_Egg.png/revision/latest?cb=20190413094543",
     "pets": [
       {
         "id": "pet_dark_jellyfish",
@@ -12259,7 +12259,7 @@
     "location": "Beach World",
     "costAmount": 200000,
     "costCurrency": "Shells",
-    "image": "/eggs/balloonegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/be/Balloon_Egg.png/revision/latest?cb=20190309072844",
     "pets": [
       {
         "id": "pet_balloon_phoenix",
@@ -12359,7 +12359,7 @@
     "location": "Circus Event",
     "costAmount": 185000,
     "costCurrency": "Tickets",
-    "image": "/eggs/magicegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e7/Magic_Egg.png/revision/latest?cb=20200118035405",
     "pets": [
       {
         "id": "pet_dark_omen",
@@ -12460,7 +12460,7 @@
     "location": "Beach World",
     "costAmount": 65000,
     "costCurrency": "Shells",
-    "image": "/eggs/sandegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fd/Sand_Egg.png/revision/latest?cb=20190302155123",
     "pets": [
       {
         "id": "pet_octopus",
@@ -12560,7 +12560,7 @@
     "location": "Overworld",
     "costAmount": 250000,
     "costCurrency": "Gems",
-    "image": "/eggs/leafegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b3/Leaf_Egg.png/revision/latest?cb=20200912012444",
     "pets": [
       {
         "id": "pet_crystal_acorn",
@@ -12660,7 +12660,7 @@
     "location": "Heaven",
     "costAmount": 300000,
     "costCurrency": "Halos",
-    "image": "/eggs/demonicegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Demonic_Egg.webp/revision/latest?cb=20260731215359",
     "pets": [
       {
         "id": "pet_demonic_crawler",
@@ -12760,7 +12760,7 @@
     "location": "Toy Land",
     "costAmount": 175000,
     "costCurrency": "Blocks",
-    "image": "/eggs/toyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f6/Toy_Egg.png/revision/latest?cb=20190202125211",
     "pets": [
       {
         "id": "pet_penguin",
@@ -12860,7 +12860,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 250000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/hotcocoaegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d0/Hot_Cocoa_Egg.png/revision/latest?cb=20181222163617",
     "pets": [
       {
         "id": "pet_gold_marshmallow",
@@ -12957,7 +12957,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 65000,
     "costCurrency": "Flowers",
-    "image": "/eggs/floweregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Flower_Egg.png/revision/latest?cb=20200515211637",
     "pets": [
       {
         "id": "pet_flower_queen",
@@ -13058,7 +13058,7 @@
     "location": "Circus Event",
     "costAmount": 65000,
     "costCurrency": "Tickets",
-    "image": "/eggs/cannonegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0a/Cannon_Egg.png/revision/latest?cb=20200118035320",
     "pets": [
       {
         "id": "pet_golden_balloon",
@@ -13158,7 +13158,7 @@
     "location": "Overworld",
     "costAmount": 2000,
     "costCurrency": "Gems",
-    "image": "/eggs/magmaegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/63/Magma_Egg.png/revision/latest?cb=20181202010020",
     "pets": [
       {
         "id": "pet_inferno_dragon",
@@ -13252,7 +13252,7 @@
     "location": "Candy Land",
     "costAmount": 75000,
     "costCurrency": "Candy",
-    "image": "/eggs/gummyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Gummy_Egg.png/revision/latest?cb=20190105133726",
     "pets": [
       {
         "id": "pet_mutant_bear",
@@ -13352,7 +13352,7 @@
     "location": "Toy Land",
     "costAmount": 200000,
     "costCurrency": "Blocks",
-    "image": "/eggs/rubberegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ea/Rubber_Egg.png/revision/latest?cb=20190223045722",
     "pets": [
       {
         "id": "pet_pink_ducky",
@@ -13452,7 +13452,7 @@
     "location": "Underworld",
     "costAmount": 65000,
     "costCurrency": "Magma",
-    "image": "/eggs/obsidianegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/72/Obsidian_Egg.png/revision/latest?cb=20190927192047",
     "pets": [
       {
         "id": "pet_obsidian_serpent",
@@ -13552,7 +13552,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 200000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/globeegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/af/Globe_Egg.png/revision/latest?cb=20181228010646",
     "pets": [
       {
         "id": "pet_winter_phoenix",
@@ -13648,7 +13648,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 375,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/snowmanegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b0/Snowman_Egg.png/revision/latest?cb=20181215051906",
     "pets": [
       {
         "id": "pet_christmas_bull",
@@ -13742,7 +13742,7 @@
     "location": "Overworld",
     "costAmount": 100000,
     "costCurrency": "Gems",
-    "image": "/eggs/100kegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1d/100K_Egg.png/revision/latest?cb=20190209030204",
     "pets": [
       {
         "id": "pet_silver_bat",
@@ -13836,7 +13836,7 @@
     "location": "Overworld",
     "costAmount": 150,
     "costCurrency": "Coins",
-    "image": "/eggs/commonegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Common_Egg.png/revision/latest?cb=20181124224727",
     "pets": [
       {
         "id": "pet_king_doggy",
@@ -13918,7 +13918,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/eggo.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Egg_O.png",
     "pets": [
       {
         "id": "pet_doggy_pile",
@@ -14003,7 +14003,7 @@
     "location": "Overworld",
     "costAmount": 35000,
     "costCurrency": "Coins",
-    "image": "/eggs/spikeyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/93/Spikey_Egg.png/revision/latest?cb=20181201181542",
     "pets": [
       {
         "id": "pet_emerald_golem",
@@ -14083,7 +14083,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/spiritegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/02/Spirit_Egg.png/revision/latest?cb=20200328033533",
     "pets": [
       {
         "id": "pet_essence_dragon",
@@ -14168,7 +14168,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 65000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/festiveegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c6/Festive_Egg.png/revision/latest?cb=20181215172131",
     "pets": [
       {
         "id": "pet_festive_serpent",
@@ -14249,7 +14249,7 @@
     "location": "Overworld",
     "costAmount": 300000,
     "costCurrency": "Gems",
-    "image": "/eggs/hellegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a2/Hell_Egg.png/revision/latest?cb=20181228141815",
     "pets": [
       {
         "id": "pet_virus",
@@ -14329,7 +14329,7 @@
     "location": "Carnival",
     "costAmount": 65000,
     "costCurrency": "Tokens",
-    "image": "/eggs/sugaregg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6a/Sugar_Egg.png/revision/latest?cb=20200725025626",
     "pets": [
       {
         "id": "pet_sugar_heart",
@@ -14414,7 +14414,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 135000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/twilightegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c3/Twilight_Egg2.webp/revision/latest?cb=20221114022143",
     "pets": [
       {
         "id": "pet_twilight_serpent",
@@ -14494,7 +14494,7 @@
     "location": "Overworld",
     "costAmount": 250,
     "costCurrency": "Gems",
-    "image": "/eggs/iceshardegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/88/Ice_Shard_Egg-1.png/revision/latest?cb=20181201051725",
     "pets": [
       {
         "id": "pet_piggy",
@@ -14574,7 +14574,7 @@
     "location": "Overworld",
     "costAmount": 200,
     "costCurrency": "Coins",
-    "image": "/eggs/spottedegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6f/Spotted_Egg.png/revision/latest?cb=20181127041533",
     "pets": [
       {
         "id": "pet_polar_bear",
@@ -14654,7 +14654,7 @@
     "location": "Underworld",
     "costAmount": 450,
     "costCurrency": "Magma",
-    "image": "/eggs/stoneegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d0/Stone_Egg.png/revision/latest?cb=20190927191036",
     "pets": [
       {
         "id": "pet_stone_bear",
@@ -14739,7 +14739,7 @@
     "location": "Toy Land",
     "costAmount": 425,
     "costCurrency": "Blocks",
-    "image": "/eggs/windupegg.png",
+    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Wind-up_Egg.png",
     "pets": [
       {
         "id": "pet_wind_up_bear",
@@ -14824,7 +14824,7 @@
     "location": "Heaven",
     "costAmount": 225000,
     "costCurrency": "Halos",
-    "image": "/eggs/wispfulegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c4/Wispful_Egg.png/revision/latest?cb=20260725211534",
     "pets": [
       {
         "id": "pet_wispful_unicorn",
@@ -14909,7 +14909,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 100000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/halloweenegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1d/Halloween_Egg.png/revision/latest?cb=20191012035619",
     "pets": [
       {
         "id": "pet_evil_snowman",
@@ -14989,7 +14989,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 550,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/chocolateegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Chocolate_Egg_Halloween.png/revision/latest?cb=20191012015234",
     "pets": [
       {
         "id": "pet_sundae_champions",
@@ -15056,7 +15056,7 @@
     "location": "Heaven",
     "costAmount": 45000,
     "costCurrency": "Halos",
-    "image": "/eggs/haloegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2a/Halo_Egg.png/revision/latest?cb=20260725211151",
     "pets": [
       {
         "id": "pet_holy_hydra",
@@ -15126,7 +15126,7 @@
     "location": "Atlantis",
     "costAmount": 450,
     "costCurrency": "Pearls",
-    "image": "/eggs/kelpegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cd/Kelp_Egg.png/revision/latest?cb=20190413100503",
     "pets": [
       {
         "id": "pet_king_soul",
@@ -15197,7 +15197,7 @@
     "location": "Candy Land",
     "costAmount": 400,
     "costCurrency": "Candy",
-    "image": "/eggs/icecreamegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Ice_Cream_Egg.png/revision/latest?cb=20190105125227",
     "pets": [
       {
         "id": "pet_magma_hybrid",
@@ -15267,7 +15267,7 @@
     "location": "Alien Invasion Starter Area",
     "costAmount": 40000,
     "costCurrency": "Alien Coins",
-    "image": "/eggs/alienegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6c/Alien_Egg.png/revision/latest?cb=20260814223042",
     "pets": [
       {
         "id": "pet_alien_bee",
@@ -15333,7 +15333,7 @@
     "location": "Heaven",
     "costAmount": 550,
     "costCurrency": "Halos",
-    "image": "/eggs/heavenegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e9/Heaven_Egg.png/revision/latest?cb=20260725211402",
     "pets": [
       {
         "id": "pet_angel_panda",
@@ -15403,7 +15403,7 @@
     "location": "Circus Event",
     "costAmount": 550,
     "costCurrency": "Tickets",
-    "image": "/eggs/clownegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/7a/Clown_Egg.png/revision/latest?cb=20200118035343",
     "pets": [
       {
         "id": "pet_clown_bunny",
@@ -15473,7 +15473,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 550,
     "costCurrency": "Flowers",
-    "image": "/eggs/earthegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/11/Earth_Egg.png/revision/latest?cb=20200515211606",
     "pets": [
       {
         "id": "pet_grasshopper",
@@ -15543,7 +15543,7 @@
     "location": "St. Patricks 2020 Event",
     "costAmount": 550,
     "costCurrency": "Rainbows",
-    "image": "/eggs/shamrockegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/04/Shamrock_Egg.png/revision/latest?cb=20200306215626",
     "pets": [
       {
         "id": "pet_lucky_bear",
@@ -15613,7 +15613,7 @@
     "location": "Beach World",
     "costAmount": 450,
     "costCurrency": "Shells",
-    "image": "/eggs/coconutegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6e/Coconut_Egg.png/revision/latest?cb=20190302161310",
     "pets": [
       {
         "id": "pet_palm_deer",
@@ -15683,7 +15683,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 40000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/pumpkinegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b2/Pumpkin_Egg.png/revision/latest?cb=20191012041122",
     "pets": [
       {
         "id": "pet_pumpkin_bear",
@@ -15749,7 +15749,7 @@
     "location": "Rainbow Land",
     "costAmount": 450,
     "costCurrency": "Stars",
-    "image": "/eggs/redegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5a/Red_Egg.png/revision/latest?cb=20190622232015",
     "pets": [
       {
         "id": "pet_red_angel",
@@ -15819,7 +15819,7 @@
     "location": "2020 Easter Event",
     "costAmount": 550,
     "costCurrency": "Gems",
-    "image": "/eggs/paintedegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c3/Painted_Egg.png/revision/latest?cb=20200410204727",
     "pets": [
       {
         "id": "pet_basilisks",
@@ -15874,7 +15874,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 550,
     "costCurrency": "Gifts",
-    "image": "/eggs/candyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/26/Candy_Egg_%28Christmas_Event_2019%29.png/revision/latest?cb=20191224093000",
     "pets": [
       {
         "id": "pet_gummy_winged_hydra",
@@ -15930,7 +15930,7 @@
     "location": "Mystic Forest",
     "costAmount": 550,
     "costCurrency": "Crystals",
-    "image": "/eggs/mossyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d3/Mossy_Egg.png/revision/latest?cb=20200328032843",
     "pets": [
       {
         "id": "pet_mossy_wolf",
@@ -15985,7 +15985,7 @@
     "location": "Alien Invasion Starter Area",
     "costAmount": 1500,
     "costCurrency": "Alien Coins",
-    "image": "/eggs/spacecrystalegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/61/Space_Crystal_Egg.png/revision/latest?cb=20260814223235",
     "pets": [
       {
         "id": "pet_space_crystal_panda",
@@ -16037,7 +16037,7 @@
     "location": "Carnival",
     "costAmount": 550,
     "costCurrency": "Tokens",
-    "image": "/eggs/popcornegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/40/Popcorn_Egg.png/revision/latest?cb=20200725030323",
     "pets": [
       {
         "id": "pet_popcorn_kernel",
@@ -16092,7 +16092,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/holyegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Holy_Egg.png/revision/latest?cb=20210402230105",
     "pets": [
       {
         "id": "pet_holy_egg",
@@ -16113,7 +16113,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/uncommonegg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a7/Uncommon_Egg.png/revision/latest?cb=20190420015424",
     "pets": [
       {
         "id": "pet_uncommon_egg",

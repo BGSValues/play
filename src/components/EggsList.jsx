@@ -58,10 +58,10 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
               <img
                 src={selectedEgg.image}
                 alt={selectedEgg.name}
+                referrerPolicy="no-referrer"
                 style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6))' }}
                 onError={(e) => {
                   e.target.style.display = 'none';
-                  e.target.parentElement.innerText = '🥚';
                 }}
               />
             ) : (
@@ -255,6 +255,8 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
                     <img
                       src={egg.image}
                       alt={egg.name}
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
                       style={{
                         width: '100%',
                         height: '100%',
@@ -264,7 +266,6 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
                       }}
                       onError={(e) => {
                         e.target.style.display = 'none';
-                        e.target.parentElement.innerText = '🥚';
                       }}
                     />
                   ) : (
