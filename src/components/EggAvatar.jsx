@@ -8,18 +8,17 @@ export default function EggAvatar({ egg, size = 110, className = '' }) {
 
   const rawUrl = egg.image || '';
   const isHttp = rawUrl.startsWith('http');
+  const hasImage = Boolean(rawUrl);
 
-  // If initial load failed, try backend proxy
-  const imageSrc = useProxy
+  // If initial load failed and it was a remote URL, try backend proxy
+  const imageSrc = useProxy && isHttp
     ? `/api/proxy-image?url=${encodeURIComponent(rawUrl)}`
     : rawUrl;
 
   const handleError = () => {
     if (!useProxy && isHttp) {
-      // Try proxy on first failure
       setUseProxy(true);
     } else {
-      // Both direct and proxy failed
       setLoadFailed(true);
     }
   };
@@ -43,7 +42,7 @@ export default function EggAvatar({ egg, size = 110, className = '' }) {
         padding: '6px',
       }}
     >
-      {isHttp && !loadFailed ? (
+      {hasImage && !loadFailed ? (
         <img
           src={imageSrc}
           alt={egg.name}

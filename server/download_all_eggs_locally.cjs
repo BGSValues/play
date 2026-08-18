@@ -1,57 +1,37 @@
 const https = require('https');
-const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const SRC_EGGS_PATH = path.join(__dirname, '..', 'src', 'data', 'eggs.json');
-const SERVER_EGGS_PATH = path.join(__dirname, 'data', 'eggs.json');
+const EGGS_PATH = path.join(__dirname, '..', 'src', 'data', 'eggs.json');
 const PUBLIC_EGGS_DIR = path.join(__dirname, '..', 'public', 'eggs');
 
 if (!fs.existsSync(PUBLIC_EGGS_DIR)) {
   fs.mkdirSync(PUBLIC_EGGS_DIR, { recursive: true });
 }
 
-function fetchJson(url) {
+function downloadImage(url, destPath) {
   return new Promise((resolve) => {
-    https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } }, res => {
-      let data = '';
-      res.on('data', c => data += c);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch (e) {
-          resolve(null);
-        }
-      });
-    }).on('error', () => resolve(null));
-  });
-}
-
-function downloadFile(url, destPath) {
-  return new Promise((resolve) => {
-    const cleanUrl = url.split('/revision/latest')[0] + '/revision/latest';
-    const client = cleanUrl.startsWith('https') ? https : http;
-
-    client.get(cleanUrl, {
+    https.get(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+        'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+        'Referer': 'https://bubble-gum-simulator.fandom.com/',
       }
     }, res => {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return downloadFile(res.headers.location, destPath).then(resolve);
+        return downloadImage(res.headers.location, destPath).then(resolve);
       }
       if (res.statusCode !== 200) {
         return resolve(false);
       }
-      const fileStream = fs.createWriteStream(destPath);
-      res.pipe(fileStream);
-      fileStream.on('finish', () => {
-        fileStream.close();
-        if (fs.existsSync(destPath) && fs.statSync(destPath).size > 500) {
+      const chunks = [];
+      res.on('data', c => chunks.push(c));
+      res.on('end', () => {
+        const buf = Buffer.concat(chunks);
+        if (buf.length > 500) { // Valid image size
+          fs.writeFileSync(destPath, buf);
           resolve(true);
         } else {
-          try { fs.unlinkSync(destPath); } catch (e) {}
           resolve(false);
         }
       });
@@ -59,94 +39,42 @@ function downloadFile(url, destPath) {
   });
 }
 
+function sanitizeFilename(name) {
+  return name.replace(/[^a-zA-Z0-9_-]/g, '_').toLowerCase();
+}
+
 async function run() {
-  console.log('=== FAST PARALLEL DOWNLOAD FOR ALL 140 EGG ASSETS ===\n');
+  console.log('=== DOWNLOADING ALL 140 EGG IMAGES DIRECTLY TO LOCAL PUBLIC/EGGS ASSETS ===\n');
 
-  const eggs = JSON.parse(fs.readFileSync(SRC_EGGS_PATH, 'utf-8'));
-  console.log(`Processing ${eggs.length} eggs...`);
+  const eggs = JSON.parse(fs.readFileSync(EGGS_PATH, 'utf-8'));
+  let successCount = 0;
 
-  // Query MediaWiki imageinfo / pageimages in batch
-  const eggNames = eggs.map(e => e.name.replace(/\s+/g, '_'));
-  const chunkSize = 40;
-  const imageMap = new Map();
+  for (let i = 0; i < eggs.length; i++) {
+    const egg = eggs[i];
+    const safeName = sanitizeFilename(egg.name) + '.png';
+    const localPath = path.join(PUBLIC_EGGS_DIR, safeName);
+    const localWebPath = `/eggs/${safeName}`;
 
-  for (let i = 0; i < eggNames.length; i += chunkSize) {
-    const chunk = eggNames.slice(i, i + chunkSize);
-    const titlesParam = encodeURIComponent(chunk.join('|'));
-    const url = `https://bubble-gum-simulator.fandom.com/api.php?action=query&titles=${titlesParam}&prop=pageimages&format=json`;
+    // Download if not already downloaded or empty
+    let downloaded = fs.existsSync(localPath) && fs.statSync(localPath).size > 1000;
 
-    const res = await fetchJson(url);
-    if (res && res.query && res.query.pages) {
-      for (const pid in res.query.pages) {
-        const p = res.query.pages[pid];
-        if (p.thumbnail && p.thumbnail.source) {
-          const cleanKey = p.title.toLowerCase().replace(/[^a-z0-9]/g, '');
-          imageMap.set(cleanKey, p.thumbnail.source);
-        }
-      }
+    if (!downloaded && egg.image && egg.image.startsWith('http')) {
+      downloaded = await downloadImage(egg.image, localPath);
+    }
+
+    if (downloaded) {
+      egg.image = localWebPath;
+      successCount++;
+      console.log(`[${i + 1}/${eggs.length}] ✅ ${egg.name} -> ${localWebPath} (${(fs.statSync(localPath).size / 1024).toFixed(1)} KB)`);
+    } else {
+      console.log(`[${i + 1}/${eggs.length}] ⚠️ Failed to download: ${egg.name}`);
     }
   }
 
-  // Also query File: namespace
-  const fileTitles = eggs.map(e => `File:${e.name.replace(/\s+/g, '_')}.png`);
-  for (let i = 0; i < fileTitles.length; i += chunkSize) {
-    const chunk = fileTitles.slice(i, i + chunkSize);
-    const titlesParam = encodeURIComponent(chunk.join('|'));
-    const url = `https://bubble-gum-simulator.fandom.com/api.php?action=query&titles=${titlesParam}&prop=imageinfo&iiprop=url&format=json`;
+  // Save updated local asset paths to eggs.json
+  fs.writeFileSync(EGGS_PATH, JSON.stringify(eggs, null, 2), 'utf-8');
 
-    const res = await fetchJson(url);
-    if (res && res.query && res.query.pages) {
-      for (const pid in res.query.pages) {
-        const p = res.query.pages[pid];
-        if (p.imageinfo && p.imageinfo[0]) {
-          const rawName = p.title.replace(/^File:/, '').replace(/\.png$/i, '');
-          const cleanKey = rawName.toLowerCase().replace(/[^a-z0-9]/g, '');
-          imageMap.set(cleanKey, p.imageinfo[0].url);
-        }
-      }
-    }
-  }
-
-  console.log(`Resolved ${imageMap.size} image URLs.`);
-
-  // Parallel download with concurrency limit of 15
-  const CONCURRENCY = 15;
-  let index = 0;
-  let downloadedCount = 0;
-
-  async function worker() {
-    while (index < eggs.length) {
-      const current = index++;
-      const egg = eggs[current];
-      const cleanKey = egg.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-      const filename = `${cleanKey}.png`;
-      const localPath = path.join(PUBLIC_EGGS_DIR, filename);
-
-      const sourceUrl = imageMap.get(cleanKey) || egg.image;
-
-      if (sourceUrl && (!fs.existsSync(localPath) || fs.statSync(localPath).size < 500)) {
-        const ok = await downloadFile(sourceUrl, localPath);
-        if (ok) downloadedCount++;
-      } else if (fs.existsSync(localPath) && fs.statSync(localPath).size > 500) {
-        downloadedCount++;
-      }
-
-      if (fs.existsSync(localPath) && fs.statSync(localPath).size > 500) {
-        egg.image = `/eggs/${filename}`;
-      }
-    }
-  }
-
-  const workers = Array.from({ length: CONCURRENCY }, () => worker());
-  await Promise.all(workers);
-
-  console.log(`\nSuccessfully downloaded and verified ${downloadedCount}/${eggs.length} eggs in public/eggs/!`);
-
-  // Save updated local paths to src and server
-  fs.writeFileSync(SRC_EGGS_PATH, JSON.stringify(eggs, null, 2), 'utf-8');
-  fs.writeFileSync(SERVER_EGGS_PATH, JSON.stringify(eggs, null, 2), 'utf-8');
-
-  console.log('Saved local asset paths to eggs.json.');
+  console.log(`\n🎉 Successfully downloaded and bundled ${successCount} / ${eggs.length} egg images locally in /public/eggs/!`);
 }
 
 run().catch(console.error);
