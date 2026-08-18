@@ -44,8 +44,8 @@ const imageCache = new Map();
 const MAX_CACHE_SIZE = 500;
 
 app.get('/api/proxy-image', async (req, res) => {
+  const imageUrl = req.query.url;
   try {
-    const imageUrl = req.query.url;
     if (!imageUrl || !imageUrl.startsWith('http')) {
       return res.status(400).send('Invalid Image URL');
     }

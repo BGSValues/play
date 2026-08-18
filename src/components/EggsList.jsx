@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, MapPin, Sparkles, ChevronRight, ArrowLeft, PlusCircle, Award, Layers, DollarSign, Egg } from 'lucide-react';
 import PetAvatar from './PetAvatar';
+import EggAvatar from './EggAvatar';
 import eggsData from '../data/eggs.json';
 
 export default function EggsList({ onSelectPet, onAddToTrade }) {
@@ -40,34 +41,7 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
 
         {/* Selected Egg Hero Header */}
         <div className="glass-card" style={{ padding: '1.75rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
-          <div
-            style={{
-              width: '100px',
-              height: '100px',
-              borderRadius: '22px',
-              background: 'linear-gradient(135deg, rgba(0, 229, 255, 0.25), rgba(124, 58, 237, 0.25))',
-              border: '2px solid rgba(255, 255, 255, 0.15)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-              padding: '8px',
-            }}
-          >
-            {selectedEgg.image ? (
-              <img
-                src={selectedEgg.image}
-                alt={selectedEgg.name}
-                referrerPolicy="no-referrer"
-                style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6))' }}
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                }}
-              />
-            ) : (
-              <span style={{ fontSize: '3.5rem' }}>🥚</span>
-            )}
-          </div>
+          <EggAvatar egg={selectedEgg} size={100} />
 
           <div style={{ flex: 1, minWidth: '240px' }}>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.4rem' }}>
@@ -241,36 +215,8 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
                 </div>
 
                 {/* Center 3D Egg Image */}
-                <div
-                  className="pet-card-image-wrap"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    background: 'radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, rgba(124, 58, 237, 0.05) 70%, transparent 100%)',
-                    padding: '8px',
-                  }}
-                >
-                  {egg.image ? (
-                    <img
-                      src={egg.image}
-                      alt={egg.name}
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'contain',
-                        filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6))',
-                        transition: 'transform 0.3s ease',
-                      }}
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                      }}
-                    />
-                  ) : (
-                    <span style={{ fontSize: '4.5rem' }}>🥚</span>
-                  )}
+                <div className="pet-card-image-wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent' }}>
+                  <EggAvatar egg={egg} size={110} />
                 </div>
 
                 {/* Egg Name */}
