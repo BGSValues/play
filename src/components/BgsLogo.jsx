@@ -89,7 +89,7 @@ export default function BgsLogo({ onClick }) {
           BUBBLE GUM
         </div>
 
-        {/* Bottom Text: VALUES + [SIMULATOR] Badge */}
+        {/* Bottom Text: VALUES + [2026] Badge */}
         <div
           style={{
             display: 'flex',
@@ -125,7 +125,7 @@ export default function BgsLogo({ onClick }) {
               display: 'inline-block',
             }}
           >
-            SIMULATOR
+            2026
           </span>
         </div>
       </div>
