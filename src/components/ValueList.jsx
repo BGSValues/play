@@ -154,14 +154,6 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
       />
 
       {/* SEARCH AND FILTERS */}
-      {isStaff && (
-        <div style={{ maxWidth: '1440px', margin: '0 auto 1.25rem auto', padding: '0 1.5rem' }}>
-          <div style={{ background: '#1e1b4b', border: '1px solid #4338ca', padding: '0.65rem 1.2rem', borderRadius: '12px', color: '#a78bfa', fontSize: '0.88rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span>🛡️ Staff Mode Active — Click any item's "Staff Update" to edit values live</span>
-            <span style={{ fontSize: '0.78rem', background: '#4338ca', color: '#fff', padding: '3px 10px', borderRadius: '6px', fontWeight: 800 }}>{currentUser.role.toUpperCase()}</span>
-          </div>
-        </div>
-      )}
 
       {/* Controls Bar */}
       <div className="controls-bar">
@@ -314,27 +306,6 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   )}
                 </div>
 
-                {/* Staff Edit Panel */}
-                {editingPetId === item.id ? (
-                  <div style={{ background: '#08090d', padding: '0.6rem', borderRadius: '8px', width: '100%', margin: '0.4rem 0' }}>
-                    <div style={{ fontSize: '0.75rem', color: '#a78bfa', fontWeight: 800, marginBottom: '4px' }}>Staff Edit</div>
-                    <input type="number" style={{ width: '100%', background: '#000', color: '#fff', border: '1px solid #4338ca', padding: '4px 8px', borderRadius: '6px', fontSize: '0.85rem' }} value={editForm.baseValue} onChange={(e) => setEditForm({ ...editForm, baseValue: e.target.value })} />
-                    <div style={{ display: 'flex', gap: '4px', marginTop: '6px' }}>
-                      <select style={{ flex: 1, background: '#000', color: '#fff', fontSize: '0.75rem' }} value={editForm.demand} onChange={(e) => setEditForm({ ...editForm, demand: Number(e.target.value) })}>
-                        {[1,2,3,4,5,6,7,8,9,10].map(d => <option key={d} value={d}>Demand {d}</option>)}
-                      </select>
-                      <button style={{ background: '#4338ca', color: '#fff', border: 'none', padding: '4px 8px', fontSize: '0.75rem', fontWeight: 800, borderRadius: '6px', cursor: 'pointer' }} onClick={() => saveStaffEdit(item.id)}>
-                        Save
-                      </button>
-                    </div>
-                  </div>
-                ) : null}
-
-                {isStaff && editingPetId !== item.id && (
-                  <button style={{ background: '#1e1b4b', border: '1px solid #4338ca', color: '#a78bfa', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, width: '100%', padding: '5px', cursor: 'pointer', marginBottom: '6px' }} onClick={() => startStaffEdit(item)}>
-                    Staff Update
-                  </button>
-                )}
 
                 {/* Add to Trade Button */}
                 {onAddToTrade && (
