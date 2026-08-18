@@ -31,6 +31,7 @@ import {
   Zap,
   Tag,
   Globe,
+  ShoppingCart,
 } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 import eggsData from '../data/eggs.json';
@@ -56,6 +57,12 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   const [userSearch, setUserSearch] = useState('');
   const [userRoleFilter, setUserRoleFilter] = useState('all');
   const [userStatusFilter, setUserStatusFilter] = useState('all');
+
+  // Trade Listings Moderation State
+  const [adminListings, setAdminListings] = useState([]);
+  const [adminListingsLoading, setAdminListingsLoading] = useState(false);
+  const [tradeSearch, setTradeSearch] = useState('');
+  const [tradeStatusFilter, setTradeStatusFilter] = useState('all');
 
   // Detailed Pet / Hat Modal State
   const [isEditorOpen, setIsEditorOpen] = useState(false);
@@ -506,6 +513,51 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
       }
     } catch {
       setMsg({ type: 'error', text: 'Failed to delete user.' });
+    }
+  };
+
+  // ---------------- TRADE LISTINGS MODERATION ACTIONS ----------------
+  const fetchAdminListings = () => {
+    setAdminListingsLoading(true);
+    fetch('/api/listings')
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data)) setAdminListings(data);
+      })
+      .catch(() => {})
+      .finally(() => setAdminListingsLoading(false));
+  };
+
+  const handleAdminDeleteListing = async (listId) => {
+    if (!window.confirm(`Permanently delete trade offer #${listId.slice(-6)}? This will remove it from the live marketplace.`)) return;
+    setAdminListings((prev) => prev.filter((l) => l.id !== listId));
+    try {
+      const res = await fetch(`/api/listings/${listId}`, { method: 'DELETE' });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: `Trade #${listId.slice(-6)} successfully deleted.` });
+      } else {
+        setMsg({ type: 'error', text: data.error || 'Failed to delete listing.' });
+      }
+    } catch (e) {
+      setMsg({ type: 'error', text: 'Server error deleting trade.' });
+    }
+  };
+
+  const handleAdminStatusListing = async (listId, newStatus) => {
+    setAdminListings((prev) => prev.map((l) => (l.id === listId ? { ...l, status: newStatus } : l)));
+    try {
+      const res = await fetch(`/api/listings/${listId}/status`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status: newStatus }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: `Trade status updated to ${newStatus}!` });
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to update trade status.' });
     }
   };
 
@@ -1446,6 +1498,174 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                 )}
               </tbody>
             </table>
+          </div>
+
+          {/* Marketplace Trades Moderation (One-by-One) */}
+          <div style={{ marginTop: '2.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '1rem' }}>
+              <div>
+                <h3 style={{ fontSize: '1.35rem', fontWeight: 900, color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <ShoppingCart size={22} color="var(--primary-gold)" /> Live Marketplace Trades Moderation
+                </h3>
+                <span style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
+                  View, filter, edit status, or delete public trade listings one-by-one directly from the database.
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <div style={{ position: 'relative' }}>
+                  <Search size={14} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: '#64748b' }} />
+                  <input
+                    type="text"
+                    placeholder="Search trader or item..."
+                    value={tradeSearch}
+                    onChange={(e) => setTradeSearch(e.target.value)}
+                    style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.45rem 0.85rem 0.45rem 2rem', borderRadius: '8px', fontSize: '0.82rem', width: '200px' }}
+                  />
+                </div>
+
+                <select
+                  value={tradeStatusFilter}
+                  onChange={(e) => setTradeStatusFilter(e.target.value)}
+                  style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.45rem 0.85rem', borderRadius: '8px', fontSize: '0.82rem' }}
+                >
+                  <option value="all">All Statuses</option>
+                  <option value="open">🟢 Open Trades</option>
+                  <option value="completed">🟡 Completed Deals</option>
+                  <option value="cancelled">🔴 Cancelled Deals</option>
+                </select>
+
+                <button className="filter-btn" onClick={fetchAdminListings} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <RefreshCw size={14} className={adminListingsLoading ? 'spin' : ''} /> Refresh Trades
+                </button>
+              </div>
+            </div>
+
+            <div className="glass-card" style={{ padding: '1.25rem', overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.88rem' }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid var(--glass-border)', color: '#94a3b8', textAlign: 'left' }}>
+                    <th style={{ padding: '0.75rem 1rem' }}>Trade ID & Trader</th>
+                    <th style={{ padding: '0.75rem 1rem' }}>Offering (Give)</th>
+                    <th style={{ padding: '0.75rem 1rem' }}>Requesting (Want)</th>
+                    <th style={{ padding: '0.75rem 1rem' }}>Status</th>
+                    <th style={{ padding: '0.75rem 1rem', textAlign: 'right' }}>Admin Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {adminListings.filter(l => {
+                    const q = tradeSearch.toLowerCase();
+                    const matchQ = !q || l.traderName?.toLowerCase().includes(q) || l.robloxUsername?.toLowerCase().includes(q)
+                      || l.offering?.some(i => i.name.toLowerCase().includes(q))
+                      || l.requesting?.some(i => i.name.toLowerCase().includes(q));
+                    const matchSt = tradeStatusFilter === 'all' || l.status === tradeStatusFilter;
+                    return matchQ && matchSt;
+                  }).length === 0 ? (
+                    <tr>
+                      <td colSpan="5" style={{ textAlign: 'center', padding: '3rem', color: '#64748b' }}>
+                        No trade listings found matching your search.
+                      </td>
+                    </tr>
+                  ) : (
+                    adminListings.filter(l => {
+                      const q = tradeSearch.toLowerCase();
+                      const matchQ = !q || l.traderName?.toLowerCase().includes(q) || l.robloxUsername?.toLowerCase().includes(q)
+                        || l.offering?.some(i => i.name.toLowerCase().includes(q))
+                        || l.requesting?.some(i => i.name.toLowerCase().includes(q));
+                      const matchSt = tradeStatusFilter === 'all' || l.status === tradeStatusFilter;
+                      return matchQ && matchSt;
+                    }).map((list) => (
+                      <tr key={list.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)', transition: 'background 0.2s' }}>
+                        <td style={{ padding: '0.75rem 1rem' }}>
+                          <div style={{ fontWeight: 800, color: '#fff' }}>@{list.traderName || list.robloxUsername}</div>
+                          <div style={{ fontSize: '0.72rem', color: '#ffcc00', fontFamily: 'monospace' }}>#{list.id.slice(-6)}</div>
+                          <div style={{ fontSize: '0.72rem', color: '#64748b' }}>Roblox: {list.robloxUsername || 'N/A'}</div>
+                        </td>
+
+                        <td style={{ padding: '0.75rem 1rem' }}>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                            {list.offering?.map((it, idx) => (
+                              <span key={idx} style={{ background: 'rgba(255,255,255,0.06)', padding: '2px 6px', borderRadius: '5px', fontSize: '0.75rem', color: '#e2e8f0' }}>
+                                {it.name} <strong style={{ color: 'var(--primary-gold)' }}>⚡{it.value ? (it.value >= 1000 ? (it.value/1000).toFixed(0)+'K' : it.value) : '0'}</strong>
+                              </span>
+                            ))}
+                          </div>
+                        </td>
+
+                        <td style={{ padding: '0.75rem 1rem' }}>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                            {list.requesting?.map((it, idx) => (
+                              <span key={idx} style={{ background: 'rgba(255,255,255,0.06)', padding: '2px 6px', borderRadius: '5px', fontSize: '0.75rem', color: '#00e5ff' }}>
+                                {it.name} <strong style={{ color: '#00e5ff' }}>⚡{it.value ? (it.value >= 1000 ? (it.value/1000).toFixed(0)+'K' : it.value) : '0'}</strong>
+                              </span>
+                            ))}
+                          </div>
+                        </td>
+
+                        <td style={{ padding: '0.75rem 1rem' }}>
+                          <span
+                            style={{
+                              fontSize: '0.75rem',
+                              fontWeight: 800,
+                              padding: '3px 8px',
+                              borderRadius: '6px',
+                              background: list.status === 'cancelled' ? 'rgba(255,23,68,0.15)' : list.status === 'completed' ? 'rgba(255,204,0,0.15)' : 'rgba(16,185,129,0.15)',
+                              color: list.status === 'cancelled' ? '#ff1744' : list.status === 'completed' ? '#ffcc00' : '#10b981',
+                              border: list.status === 'cancelled' ? '1px solid rgba(255,23,68,0.3)' : list.status === 'completed' ? '1px solid rgba(255,204,0,0.3)' : '1px solid rgba(16,185,129,0.3)',
+                            }}
+                          >
+                            {list.status === 'cancelled' ? '🔴 Cancelled' : list.status === 'completed' ? '🟡 Completed' : '🟢 Open'}
+                          </span>
+                        </td>
+
+                        <td style={{ padding: '0.75rem 1rem', textAlign: 'right' }}>
+                          <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end', alignItems: 'center' }}>
+                            {list.status !== 'completed' && (
+                              <button
+                                onClick={() => handleAdminStatusListing(list.id, 'completed')}
+                                style={{ background: 'rgba(255,204,0,0.15)', border: '1px solid #ffcc00', color: '#ffcc00', padding: '4px 8px', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 800, cursor: 'pointer' }}
+                                title="Mark Completed"
+                              >
+                                Mark Done
+                              </button>
+                            )}
+
+                            {list.status !== 'cancelled' && (
+                              <button
+                                onClick={() => handleAdminStatusListing(list.id, 'cancelled')}
+                                style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid #ff1744', color: '#ff1744', padding: '4px 8px', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 800, cursor: 'pointer' }}
+                                title="Cancel Trade"
+                              >
+                                Cancel
+                              </button>
+                            )}
+
+                            {list.status !== 'open' && (
+                              <button
+                                onClick={() => handleAdminStatusListing(list.id, 'open')}
+                                style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid #10b981', color: '#10b981', padding: '4px 8px', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 800, cursor: 'pointer' }}
+                                title="Re-open Trade"
+                              >
+                                Re-open
+                              </button>
+                            )}
+
+                            {/* REMOVE ONE BY ONE BUTTON */}
+                            <button
+                              onClick={() => handleAdminDeleteListing(list.id)}
+                              style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid #ef4444', color: '#ef4444', padding: '4px 8px', borderRadius: '6px', fontSize: '0.72rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '3px' }}
+                              title="Permanently remove this trade"
+                            >
+                              <Trash2 size={13} /> Remove
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))
+                  )}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       )}

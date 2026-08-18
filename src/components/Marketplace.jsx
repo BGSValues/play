@@ -472,6 +472,29 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
                         🔄 Re-open Trade
                       </button>
                     )}
+
+                    {/* STAFF / ADMIN MODERATION: Remove trade one-by-one */}
+                    {isStaffOrOwner && (
+                      <button
+                        style={{
+                          background: 'rgba(239, 68, 68, 0.12)',
+                          border: '1px solid rgba(239, 68, 68, 0.35)',
+                          color: '#ef4444',
+                          padding: '0.35rem 0.75rem',
+                          borderRadius: '8px',
+                          fontSize: '0.73rem',
+                          fontWeight: 800,
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                        }}
+                        onClick={() => handleDeleteListing(list.id)}
+                        title="Admin Action: Remove this trade from database"
+                      >
+                        <Trash2 size={13} /> Remove (Admin)
+                      </button>
+                    )}
                   </div>
 
                   <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700, marginLeft: 'auto' }}>
