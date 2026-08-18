@@ -12,6 +12,7 @@ import {
   Award,
   BarChart3,
   LogOut,
+  Egg,
 } from 'lucide-react';
 
 import ValueList from './components/ValueList';
@@ -19,6 +20,8 @@ import TradeCalculator from './components/TradeCalculator';
 import AdminPanel from './components/AdminPanel';
 import Marketplace from './components/Marketplace';
 import Guides from './components/Guides';
+import EggsList from './components/EggsList';
+import PetDetailsPage from './components/PetDetailsPage';
 import LoginModal from './components/LoginModal';
 import BgsLogo from './components/BgsLogo';
 
@@ -27,6 +30,7 @@ import initialPetsData from './data/pets.json';
 export default function App() {
   const isAdminRoute = window.location.pathname === '/admin';
   const [activeTab, setActiveTab] = useState(isAdminRoute ? 'admin' : 'values');
+  const [selectedPet, setSelectedPet] = useState(null);
   const [pets, setPets] = useState(initialPetsData && initialPetsData.length > 0 ? initialPetsData : []);
   const [sideA, setSideA] = useState([]);
   const [sideB, setSideB] = useState([]);
@@ -117,6 +121,12 @@ export default function App() {
   const legendaryCount = pets.filter(p => p.rarity === 'Legendary').length;
   const risingCount = pets.filter(p => p.status === 'Rising' || p.status === 'Hyped').length;
 
+  const handleSelectPet = (pet) => {
+    setSelectedPet(pet);
+    setActiveTab('pet-details');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
       {toast && (
@@ -135,6 +145,9 @@ export default function App() {
         <nav className="nav-tabs">
           <button className={`nav-btn ${activeTab === 'values' ? 'active' : ''}`} onClick={() => setActiveTab('values')}>
             <ListFilter size={17} /> Value List
+          </button>
+          <button className={`nav-btn ${activeTab === 'eggs' ? 'active' : ''}`} onClick={() => setActiveTab('eggs')}>
+            <Egg size={17} /> Eggs & Hatches
           </button>
           <button className={`nav-btn ${activeTab === 'market' ? 'active' : ''}`} onClick={() => setActiveTab('market')}>
             <ShoppingCart size={17} /> Market
@@ -201,7 +214,13 @@ export default function App() {
       {/* ━━━━ MAIN CONTENT ROUTER ━━━━ */}
       <main style={{ flex: 1, zIndex: 10 }}>
         {activeTab === 'values' && (
-          <ValueList pets={pets} currentUser={currentUser} onAddToTrade={handleAddToTrade} onUpdatePetValue={handleUpdatePetValue} />
+          <ValueList pets={pets} currentUser={currentUser} onAddToTrade={handleAddToTrade} onUpdatePetValue={handleUpdatePetValue} onSelectPet={handleSelectPet} />
+        )}
+        {activeTab === 'eggs' && (
+          <EggsList onSelectPet={handleSelectPet} onAddToTrade={handleAddToTrade} />
+        )}
+        {activeTab === 'pet-details' && (
+          <PetDetailsPage pet={selectedPet} onBack={() => setActiveTab('values')} onAddToTrade={handleAddToTrade} onSelectPet={handleSelectPet} />
         )}
         {activeTab === 'market' && (
           <Marketplace pets={pets} currentUser={currentUser} onOpenLogin={() => setIsLoginOpen(true)} />

@@ -44,7 +44,7 @@ export function getVariantMultiplier(item, variant) {
   }
 }
 
-export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePetValue }) {
+export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePetValue, onSelectPet }) {
   const [search, setSearch] = useState('');
   const [rarityFilter, setRarityFilter] = useState('All');
   const [typeFilter, setTypeFilter] = useState('All');
@@ -247,10 +247,13 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   {getRarityBadge(item.rarity)}
                 </div>
 
-                {/* Center 3D Avatar (Clickable to view full stats) */}
+                {/* Center 3D Avatar (Clickable to view full stats on dedicated page) */}
                 <div
                   className="pet-card-image-wrap"
-                  onClick={() => setSelectedPetForModal(item)}
+                  onClick={() => {
+                    if (onSelectPet) onSelectPet(item);
+                    else setSelectedPetForModal(item);
+                  }}
                   style={{ cursor: 'pointer' }}
                   title="Click to view full in-game stats & details"
                 >
@@ -260,7 +263,10 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                 {/* Item Name (Clickable) */}
                 <h3
                   className="pet-name"
-                  onClick={() => setSelectedPetForModal(item)}
+                  onClick={() => {
+                    if (onSelectPet) onSelectPet(item);
+                    else setSelectedPetForModal(item);
+                  }}
                   style={{ cursor: 'pointer' }}
                   title="Click to view full in-game stats & details"
                 >
