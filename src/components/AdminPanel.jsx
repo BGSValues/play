@@ -700,14 +700,85 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   // ---------------- AUTHENTICATED ADMIN PANEL ----------------
   return (
     <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '1rem 1.5rem 5rem 1.5rem' }}>
-      {/* Header Banner */}
-      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '2.4rem', fontWeight: 900, color: '#fff' }}>
-          Admin & Moderation <span style={{ color: 'var(--primary-gold)' }}>Control Center</span>
-        </h1>
-        <p style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '0.3rem' }}>
-          Add & edit new pets and hats, set custom images, adjust in-game stats, manage user sessions, and sync Wiki updates.
-        </p>
+      {/* ━━━━ COMMAND CENTER TELEMETRY & HERO HEADER ━━━━ */}
+      <div
+        className="glass-card"
+        style={{
+          padding: '1.75rem 2rem',
+          marginBottom: '2rem',
+          border: '1px solid rgba(255, 204, 0, 0.35)',
+          background: 'linear-gradient(135deg, rgba(255, 204, 0, 0.06) 0%, rgba(124, 58, 237, 0.08) 50%, rgba(10, 11, 16, 0.95) 100%)',
+          boxShadow: '0 20px 60px rgba(0, 0, 0, 0.7)',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.25rem' }}>
+          {/* Staff Identity Block */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div
+              style={{
+                width: '52px',
+                height: '52px',
+                borderRadius: '16px',
+                background: currentUser.role === 'owner' ? 'linear-gradient(135deg, #ffcc00, #ff9100)' : 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                color: currentUser.role === 'owner' ? '#000' : '#fff',
+                fontSize: '1.5rem',
+                fontWeight: 900,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: currentUser.role === 'owner' ? '0 0 25px rgba(255,204,0,0.4)' : '0 0 25px rgba(124,58,237,0.4)',
+              }}
+            >
+              {currentUser.role === 'owner' ? '👑' : '🛡️'}
+            </div>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <h1 style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', margin: 0 }}>
+                  Admin & Moderation <span style={{ color: 'var(--primary-gold)' }}>Command Center</span>
+                </h1>
+                <span
+                  style={{
+                    background: currentUser.role === 'owner' ? 'rgba(255,204,0,0.2)' : 'rgba(124,58,237,0.2)',
+                    border: currentUser.role === 'owner' ? '1px solid #ffcc00' : '1px solid #7c3aed',
+                    color: currentUser.role === 'owner' ? '#ffcc00' : '#a78bfa',
+                    padding: '2px 8px',
+                    borderRadius: '6px',
+                    fontSize: '0.72rem',
+                    fontWeight: 900,
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {currentUser.role === 'owner' ? 'Root Owner' : 'Staff Moderator'}
+                </span>
+              </div>
+              <p style={{ color: '#94a3b8', fontSize: '0.85rem', margin: '4px 0 0 0' }}>
+                Logged in as <strong style={{ color: '#fff' }}>{currentUser.username}</strong> • Roblox: <strong style={{ color: '#00e5ff' }}>{currentUser.robloxUsername || 'Official'}</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* Telemetry Status Strip */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+            <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', padding: '0.5rem 1rem', borderRadius: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: sysSettings.maintenanceMode ? '#ff1744' : '#10b981', boxShadow: sysSettings.maintenanceMode ? '0 0 10px #ff1744' : '0 0 10px #10b981' }} />
+              <span style={{ fontSize: '0.8rem', fontWeight: 800, color: sysSettings.maintenanceMode ? '#ff1744' : '#10b981' }}>
+                {sysSettings.maintenanceMode ? 'Maintenance Mode Active' : 'All Systems Live'}
+              </span>
+            </div>
+
+            <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', padding: '0.5rem 1rem', borderRadius: '10px', fontSize: '0.8rem', color: '#94a3b8' }}>
+              Database: <strong style={{ color: 'var(--primary-gold)' }}>{pets.length} Items</strong>
+            </div>
+
+            <button
+              onClick={onBackToValues}
+              className="filter-btn"
+              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.5rem 1rem', fontSize: '0.82rem' }}
+            >
+              Public Hub
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Toast Alert */}
@@ -735,30 +806,139 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
         </div>
       )}
 
-      {/* Main Admin Navigation Switcher */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '2rem' }}>
+      {/* ━━━━ HIGH-TECH SEGMENTED COMMAND TAB DOCK ━━━━ */}
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '1rem',
+          marginBottom: '2.5rem',
+        }}
+      >
+        {/* Tab 1: Database Studio */}
         <button
-          className={`filter-btn ${adminTab === 'pets' ? 'active' : ''}`}
           onClick={() => setAdminTab('pets')}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.6rem', fontSize: '0.95rem', fontWeight: 900 }}
+          style={{
+            background: adminTab === 'pets'
+              ? 'linear-gradient(135deg, rgba(124, 58, 237, 0.25), rgba(79, 70, 229, 0.15))'
+              : 'rgba(255, 255, 255, 0.02)',
+            border: adminTab === 'pets' ? '1px solid #7c3aed' : '1px solid var(--glass-border)',
+            borderRadius: '14px',
+            padding: '1.25rem 1.5rem',
+            cursor: 'pointer',
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '14px',
+            transition: 'all 0.25s ease',
+            boxShadow: adminTab === 'pets' ? '0 10px 30px rgba(124, 58, 237, 0.25)' : 'none',
+          }}
         >
-          <Database size={18} /> Pet & Hat Database Studio ({pets.length})
+          <div
+            style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: adminTab === 'pets' ? '#7c3aed' : 'rgba(255, 255, 255, 0.05)',
+              color: adminTab === 'pets' ? '#fff' : '#a78bfa',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
+            <Database size={22} />
+          </div>
+          <div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>Pet & Hat Studio</div>
+            <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '2px' }}>
+              {pets.length} items • Multipliers & Stats
+            </div>
+          </div>
         </button>
 
+        {/* Tab 2: User Moderation */}
         <button
-          className={`filter-btn ${adminTab === 'users' ? 'active' : ''}`}
           onClick={() => setAdminTab('users')}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.6rem', fontSize: '0.95rem', fontWeight: 900 }}
+          style={{
+            background: adminTab === 'users'
+              ? 'linear-gradient(135deg, rgba(255, 204, 0, 0.25), rgba(255, 145, 0, 0.15))'
+              : 'rgba(255, 255, 255, 0.02)',
+            border: adminTab === 'users' ? '1px solid #ffcc00' : '1px solid var(--glass-border)',
+            borderRadius: '14px',
+            padding: '1.25rem 1.5rem',
+            cursor: 'pointer',
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '14px',
+            transition: 'all 0.25s ease',
+            boxShadow: adminTab === 'users' ? '0 10px 30px rgba(255, 204, 0, 0.25)' : 'none',
+          }}
         >
-          <Users size={18} /> User Moderation & Live Sessions ({usersList.length})
+          <div
+            style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: adminTab === 'users' ? '#ffcc00' : 'rgba(255, 255, 255, 0.05)',
+              color: adminTab === 'users' ? '#000' : '#ffcc00',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
+            <Users size={22} />
+          </div>
+          <div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>User Moderation</div>
+            <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '2px' }}>
+              {usersList.length} accounts • Ban & Kick Center
+            </div>
+          </div>
         </button>
 
+        {/* Tab 3: Safeguards & Maintenance */}
         <button
-          className={`filter-btn ${adminTab === 'safeguards' ? 'active' : ''}`}
           onClick={() => setAdminTab('safeguards')}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.6rem', fontSize: '0.95rem', fontWeight: 900 }}
+          style={{
+            background: adminTab === 'safeguards'
+              ? 'linear-gradient(135deg, rgba(255, 23, 68, 0.25), rgba(220, 38, 38, 0.15))'
+              : 'rgba(255, 255, 255, 0.02)',
+            border: adminTab === 'safeguards' ? '1px solid #ff1744' : '1px solid var(--glass-border)',
+            borderRadius: '14px',
+            padding: '1.25rem 1.5rem',
+            cursor: 'pointer',
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '14px',
+            transition: 'all 0.25s ease',
+            boxShadow: adminTab === 'safeguards' ? '0 10px 30px rgba(255, 23, 68, 0.25)' : 'none',
+          }}
         >
-          <ShieldAlert size={18} /> Global Safeguards & Maintenance Center
+          <div
+            style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: adminTab === 'safeguards' ? '#ff1744' : 'rgba(255, 255, 255, 0.05)',
+              color: adminTab === 'safeguards' ? '#fff' : '#ff1744',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
+            <ShieldAlert size={22} />
+          </div>
+          <div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>Safeguards & Broadcast</div>
+            <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '2px' }}>
+              Global Banners • Maintenance Lockdown
+            </div>
+          </div>
         </button>
       </div>
 

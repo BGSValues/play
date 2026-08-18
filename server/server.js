@@ -766,7 +766,7 @@ app.delete('/api/listings/:id', async (req, res) => {
 });
 
 // ---------------- SYSTEM SETTINGS & MAINTENANCE API ----------------
-const SYSTEM_FILE = path.join(DATA_DIR, 'system_settings.json');
+const SYSTEM_FILE = path.join(__dirname, 'data', 'system_settings.json');
 
 app.get('/api/system/settings', async (req, res) => {
   try {
