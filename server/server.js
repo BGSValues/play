@@ -813,12 +813,12 @@ app.post('/api/system/settings', async (req, res) => {
 });
 
 // ---------------- SCRAPER API ----------------
-app.post('/api/scrape', async (req, res) => {
+app.post(['/api/scrape', '/api/pets/scrape'], async (req, res) => {
   try {
     const result = await scrapeFandomPets();
-    res.json({ success: true, message: 'Wiki scrape completed!', ...result });
+    res.json({ success: true, message: 'Wiki sync completed safely!', ...result });
   } catch (err) {
-    res.status(500).json({ success: false, error: 'Failed to scrape Fandom Wiki: ' + err.message });
+    res.status(500).json({ success: false, error: 'Failed to sync Fandom Wiki: ' + err.message });
   }
 });
 

@@ -489,7 +489,7 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
       const res = await fetch('/api/pets/scrape', { method: 'POST' });
       const data = await res.json();
       if (data.success) {
-        setMsg({ type: 'success', text: `Sync complete! Added ${data.added} pets. Total: ${data.total}` });
+        setMsg({ type: 'success', text: `Sync complete! Synced ${data.total} items (${data.updatedRarities || 0} rarities verified, values preserved).` });
         if (onRefreshPets) onRefreshPets();
       } else {
         setMsg({ type: 'error', text: data.error || 'Scrape failed' });
