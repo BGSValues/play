@@ -1,0 +1,13 @@
+{{Pets_Infobox|image1 = Giant Robot.png|image2 = Shiny Giant Robot.png}}The '''Giant Robot''' is a [[Secret Pets|secret]] Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It was obtained by opening a [[100K Egg]]. The chance of hatching it was 1 in 100 million '''(0.000001%)''', or 1 in 50 million '''(0.000002%)''' with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+
+== Trivia ==
+* This was the second secret pet hidden in an event [[Eggs|egg]], the first one being the [[Leviathan]].
+* The size of the Giant Robot was originally slightly larger than the average pet and bigger than the [[Penguin]]. This was changed in Update 16 to be roughly the same size as the [[Dogcat]].
+* The Giant Robot has a reskin named the [[Patriotic Robot]].
+* This pet was intended to have a rarity of 1 in 10 million but was mistakenly put to 1 in 100 million in the game's code.
+[[Category:Pets]]
+[[Category:Legendary Pets]]
+[[Category:Unobtainable]]
+[[Category:Robot]]
+[[Category:Secret Pets]]
+[[Category:Secret Items]]

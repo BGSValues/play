@@ -1,0 +1,6 @@
+{{Pets_Infobox|image1 = Sinister Lord.png|image2 = ShinySinister.png}}The '''Sinister Lord''' is a secret Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It could have been obtained by opening a [[Skelly Egg]]. The chance of hatching it was 1 in 6.25 million '''(0.000016%)''', or 1 in 3.125 million '''(0.000032%)''' with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+[[Category:Secret Pets]]
+[[Category:Secret Items]]
+[[Category:Halloween]]
+[[Category:Halloween Pets]]
+[[Category:Unobtainable]]

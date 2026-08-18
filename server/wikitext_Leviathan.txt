@@ -1,0 +1,16 @@
+{{Pets Infobox|image1 = Leviathan.png|image2 = Shiny Leviathan.png}}The '''Leviathan''' is a [[Secret Pets|secret]] Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It was obtained by opening a [[Frost Egg]]. The chance of hatching it was 1 in 8 million '''(0.0000125%)''', or 1 in 4 million '''(0.000025%)''' with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+
+== Trivia ==
+* This pet was hinted at in one of Isaac's [[Category:Articles using external links]] [https://twitter.com/isaacrblx/status/1076936494927949824?s=21 tweets].
+* This was the first [[Secret Pets|secret pet]] hidden in an event egg.
+* This was the second secret pet to be added to the game.
+* This pet has 6 reskins, which are [[Sylently's Pet]], [[Gryphon]], [[Rainbow Gryphon]], [[King Leviathan]], [[Peppermint Leviathan]], and [[Rainbow Leviathan]].
+* The Leviathan is featured in [[Tophats|Tophat (F)]] and [[Trophy]].
+* In Update 44, this pet's size was increased due to previously being a lot smaller than other [[:Category:Secret Items|secret pets]] that came in the later updates.
+[[Category:Pets]]
+[[Category:Legendary Pets]]
+[[Category:Secret Pets]]
+[[Category:Unobtainable]]
+[[Category:Secret Items]]
+[[Category:Christmas 2018]]
+[[Category:Christmas 2018 Pets]]

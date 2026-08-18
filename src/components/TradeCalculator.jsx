@@ -210,10 +210,9 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
                       value={item.selectedVariant}
                       onChange={(e) => handleVariantSelect('A', item.slotId, e.target.value)}
                     >
-                      <option value="Normal">Normal</option>
-                      <option value="Shiny">Shiny</option>
-                      <option value="Mythic">Mythic</option>
-                      <option value="ShinyMythic">S.Myth</option>
+                      {(item.variants || (item.multipliers?.Mythic ? ['Normal', 'Shiny', 'Mythic', 'ShinyMythic'] : ['Normal', 'Shiny'])).map((v) => (
+                        <option key={v} value={v}>{v === 'ShinyMythic' ? 'S.Myth' : v}</option>
+                      ))}
                     </select>
                   ) : (
                     <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700, margin: '6px 0' }}>HAT</div>
@@ -280,10 +279,9 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
                       value={item.selectedVariant}
                       onChange={(e) => handleVariantSelect('B', item.slotId, e.target.value)}
                     >
-                      <option value="Normal">Normal</option>
-                      <option value="Shiny">Shiny</option>
-                      <option value="Mythic">Mythic</option>
-                      <option value="ShinyMythic">S.Myth</option>
+                      {(item.variants || (item.multipliers?.Mythic ? ['Normal', 'Shiny', 'Mythic', 'ShinyMythic'] : ['Normal', 'Shiny'])).map((v) => (
+                        <option key={v} value={v}>{v === 'ShinyMythic' ? 'S.Myth' : v}</option>
+                      ))}
                     </select>
                   ) : (
                     <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700, margin: '6px 0' }}>HAT</div>

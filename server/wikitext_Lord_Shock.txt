@@ -1,0 +1,7 @@
+{{Pets Infobox|image1 = Lord Shock.png|image2 = Shiny Lord Shock.png}}'''Lord Shock''' is a [[Secret Pets|secret]] Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It was obtained by opening a [[Summer Egg]]. The chance of hatching it was 1 in 8 million ('''0.0000125%'''), or 1 in 4 million ('''0.000025%''') with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+[[Category:Pets]]
+[[Category:Legendary Pets]]
+[[Category:Secret Pets]]
+[[Category:Secret Items]]
+[[Category:Shocks]]
+[[Category:Unobtainable]]

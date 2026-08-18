@@ -342,7 +342,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                 {/* Variant Selector (Pets only - Hats don't have Shiny/Mythic variants) */}
                 {!isHat ? (
                   <div className="value-multi-select">
-                    {['Normal', 'Shiny', 'Mythic', 'ShinyMythic'].map((v) => (
+                    {(item.variants || (item.multipliers?.Mythic ? ['Normal', 'Shiny', 'Mythic', 'ShinyMythic'] : ['Normal', 'Shiny'])).map((v) => (
                       <button key={v} className={`multi-btn ${currentVariant === v ? 'active' : ''}`} onClick={() => handleVariantChange(item.id, v)}>
                         {v === 'ShinyMythic' ? 'S.Myth' : v}
                       </button>

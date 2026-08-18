@@ -1,0 +1,7 @@
+{{Pets_Infobox|image1 = Godly Gem.png|image2 = }}The '''Godly Gem''' is a [[Secret Pets|secret]] Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It could have been obtained by opening a [[Heavenly Egg]]. The chance of hatching it was 1 in 100 million '''(0.000001%)''', or 1 in 50 million '''(0.000002%)''' with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+[[Category:Gem]]
+[[Category:Easter 2020]]
+[[Category:Easter 2020 Pets]]
+[[Category:Secret Pets]]
+[[Category:Secret Items]]
+[[Category:Unobtainable]]

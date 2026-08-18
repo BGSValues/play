@@ -207,8 +207,15 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
               <div style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.6rem' }}>
                 Select Pet Variant:
               </div>
-              <div className="value-multi-select" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem' }}>
-                {['Normal', 'Shiny', 'Mythic', 'ShinyMythic'].map((v) => (
+              <div
+                className="value-multi-select"
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: `repeat(${(pet.variants || (pet.multipliers?.Mythic ? ['Normal', 'Shiny', 'Mythic', 'ShinyMythic'] : ['Normal', 'Shiny'])).length}, 1fr)`,
+                  gap: '0.5rem',
+                }}
+              >
+                {(pet.variants || (pet.multipliers?.Mythic ? ['Normal', 'Shiny', 'Mythic', 'ShinyMythic'] : ['Normal', 'Shiny'])).map((v) => (
                   <button
                     key={v}
                     className={`multi-btn ${selectedVariant === v ? 'active' : ''}`}

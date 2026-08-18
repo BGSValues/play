@@ -1,0 +1,19 @@
+{{Pets Infobox|image1 = Demonic Hydra.png|image2 = Shiny Demonic Hydra.png}}The '''Demonic Hydra''' is a Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It can be obtained by opening a [[Nightmare Egg]]. The chance of hatching it is '''0.005%''' (1 in 20,000), or '''0.01%''' (1 in 10,000) with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+
+It can also be obtained in the following ways:
+* Opening '''50,000''' [[:Category:Eggs|eggs]] and/or [[:Category:Boxes|boxes]] and claiming the [[Prizes|prize]].
+* Purchasing the '''115th''' slot at the [[Rewards Island]].
+* Purchasing the '''153rd''' slot at the [[Sea Rewards]].
+* Purchasing the '''158th''' slot at the [[Atlantis Rewards]].
+* Purchasing the '''156th''' slot at the [[Magma Rewards]].
+* Purchasing the '''156th''' slot at the [[Crystal Rewards]].
+* Purchasing the '''156th''' slot at the [[Heaven Rewards]].
+[[Category:Pets]]
+[[Category:Legendary Pets]]
+[[Category:Hydras]]
+[[Category:Egg Prizes]]
+[[Category:Atlantis Rewards]]
+[[Category:Sea Rewards]]
+[[Category:Rewards Island Pets]]
+[[Category:Magma Rewards]]
+[[Category:Crystal Rewards]]

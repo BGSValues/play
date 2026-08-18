@@ -1,0 +1,13 @@
+{{for|Category of all Doggy pets, [[:Category:Doggy]]}}
+{{Pets Infobox 2|image1 = Doggy.png|image2 = Shiny Doggy.png}}
+The '''Doggy''' is a Common [[Pets|pet]] in Bubble Gum Simulator. It can be obtained by opening a [[Common Egg]]. The chance of hatching it is '''40%'''.
+
+It can also be obtained by purchasing the '''198th''' slot in the [[Sea Rewards]].
+
+== '''Trivia''' ==
+* This pet is also a part of the [[Dogcat]], [[Classic Trio]], [[Split]], [[Gloom Split]], and [[Tophat (A)]].
+* This is the weakest pet in the game.
+[[Category:Pets]]
+[[Category:Common Pets]]
+[[Category:Doggy]]
+[[Category:Sea Rewards]]

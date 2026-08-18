@@ -1,0 +1,15 @@
+{{Pets Infobox|image1 = The Overlord.png|image2 = Shiny The Overlord.png|image3 = Mythic The Overlord.png}}'''The Overlord''' is a [[:Category:Secret Pets|secret]] Legendary [[:Category:Pets|pet]] in Bubble Gum Simulator. It can be obtained by opening a [[Nightmare Egg]]. The chance of hatching it is 1 in 4 million '''(0.000025%)''', or 1 in 2 million '''(0.00005%)''' with the {{RLinkGP|5446881|Lucky Chances}} [[Gamepasses|gamepass]].
+
+== Trivia ==
+* This was the best pet in the game until the [[Festivus]] came out in Update 4.
+* This pet was first hinted at on Isaac’s tweet on [[Category:Articles using external links]] [https://twitter.com/IsaacRBLX Twitter] saying, “And you thought there were only 9 pets in this new egg....”
+* As of Update 82, this pet has 25 reskins, [[2018 Overlord]], [[Jelly Overlord]], [[The OwOlord]], [[Gummy Overlord]], [[Diamond Overlord]], [[Lucky Overlord]], [[Queen Overlord]], [[Atlantis Overlord]], [[Platinum Overlord]], [[Rainbow Overlord]], [[Dual Lord]], [[Dark Lord]], [[Easter Overlord]], [[Sakuralord]], [[Gem Overlord]], [[Citrus Overlord]], [[Slime Overlord]], [[Candycorn Lord]], [[Ghostlord]], [[Ice Overlord]],[[2020 Overlord]], [[Golflord]], [[Shadow Overlord]], [[Infernolord]], and [[Alien Overlord]].
+* This is the only secret pet to not have a 4th multiplier.
+* In Update 44, this pet's size was increased due to previously being considerably smaller than other [[:Category:Secret Items|secret pets]] that came in the later updates.
+* In update 81, this pet, along with multiple other permanent [[:Category:Secret Items|secret pets]] were given mythic variants. This was apart of the first wave of old permanent secrets getting mythic variants.
+
+[[Category:Pets]]
+[[Category:Legendary Pets]]
+[[Category:Overlord]]
+[[Category:Secret Pets]]
+[[Category:Secret Items]]
