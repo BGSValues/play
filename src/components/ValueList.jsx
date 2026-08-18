@@ -4,7 +4,28 @@ import PetAvatar from './PetAvatar';
 
 const PETS_PER_PAGE = 100;
 
-// Universal BGS Variant Multiplier Helper
+// Universal BGS Variant Value & Multiplier Helper
+export function getPetVariantValue(item, variant) {
+  if (!item || typeof item.baseValue !== 'number' || isNaN(item.baseValue) || item.baseValue <= 0) {
+    return null;
+  }
+  const isHat = item.type === 'hat' || item.category === 'Hats';
+  if (isHat) return item.baseValue;
+
+  switch (variant) {
+    case 'Shiny':
+      return item.shinyValue || Math.round(item.baseValue * 2.5);
+    case 'Mythic':
+      return Math.round(item.baseValue * 10);
+    case 'ShinyMythic':
+    case 'S.Myth':
+      return Math.round((item.shinyValue || (item.baseValue * 2.5)) * 10);
+    case 'Normal':
+    default:
+      return item.baseValue;
+  }
+}
+
 export function getVariantMultiplier(item, variant) {
   if (item && item.multipliers && item.multipliers[variant]) {
     return item.multipliers[variant];
@@ -207,10 +228,8 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
         ) : (
           paginatedPets.map((item) => {
             const isHat = item.type === 'hat' || item.category === 'Hats';
-            const hasValue = typeof item.baseValue === 'number' && !isNaN(item.baseValue) && item.baseValue > 0;
             const currentVariant = selectedVariants[item.id] || 'Normal';
-            const mult = isHat ? 1 : getVariantMultiplier(item, currentVariant);
-            const calculatedValue = hasValue ? Math.round(item.baseValue * mult) : null;
+            const calculatedValue = getPetVariantValue(item, currentVariant);
 
             return (
               <div key={item.id} className="pet-card">

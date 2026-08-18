@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PlusCircle, Trash2, ShieldCheck, AlertTriangle, Sparkles, CheckCircle2, X, RefreshCw, Scale, Copy, Check, ArrowRight, Zap, TrendingUp } from 'lucide-react';
 import PetAvatar from './PetAvatar';
-import { getVariantMultiplier } from './ValueList';
+import { getPetVariantValue } from './ValueList';
 
 export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB }) {
   const [activeSide, setActiveSide] = useState(null); // 'A' or 'B'
@@ -92,11 +92,8 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
   }
 
   const handleAddPetToSide = (pet) => {
-    const isHat = pet.type === 'hat' || pet.category === 'Hats';
     const defaultVariant = 'Normal';
-    const hasVal = typeof pet.baseValue === 'number' && !isNaN(pet.baseValue) && pet.baseValue > 0;
-    const mult = isHat ? 1 : getVariantMultiplier(pet, defaultVariant);
-    const calculatedValue = hasVal ? Math.round(pet.baseValue * mult) : null;
+    const calculatedValue = getPetVariantValue(pet, defaultVariant);
 
     const item = {
       ...pet,
@@ -119,13 +116,10 @@ export default function TradeCalculator({ pets, sideA, setSideA, sideB, setSideB
     const updater = (prevItems) =>
       prevItems.map((item) => {
         if (item.slotId === slotId) {
-          const isHat = item.type === 'hat' || item.category === 'Hats';
-          const hasVal = typeof item.baseValue === 'number' && !isNaN(item.baseValue) && item.baseValue > 0;
-          const mult = isHat ? 1 : getVariantMultiplier(item, variant);
           return {
             ...item,
             selectedVariant: variant,
-            calculatedValue: hasVal ? Math.round(item.baseValue * mult) : null,
+            calculatedValue: getPetVariantValue(item, variant),
           };
         }
         return item;
