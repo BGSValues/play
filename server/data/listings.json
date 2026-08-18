@@ -1,5 +1,34 @@
 [
   {
+    "id": "list_1787044146367",
+    "traderName": "Owner_Admin",
+    "robloxUsername": "we",
+    "discord": "ew",
+    "email": "",
+    "picture": "",
+    "type": "sell",
+    "offering": [
+      {
+        "name": "Basilisks",
+        "value": 0,
+        "demand": 5,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1c/Mythic_Air_Basilisk.png/revision/latest?cb=20200725034055",
+        "rarity": "Secret"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "BGS Plaque",
+        "value": 70,
+        "demand": 2,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Mythic_BGS_Plaque.png/revision/latest?cb=20201023232005",
+        "rarity": "Secret"
+      }
+    ],
+    "isVerified": true,
+    "createdAt": "2026-08-18T09:09:06.367Z"
+  },
+  {
     "id": "list_1787041071896",
     "traderName": "Owner_Admin",
     "robloxUsername": "COOINGBEN123456",

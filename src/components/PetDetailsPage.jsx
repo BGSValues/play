@@ -25,16 +25,32 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
   const isHat = pet.type === 'hat' || pet.category === 'Hats';
   const currentVal = getPetVariantValue(pet, selectedVariant);
 
-  // Variant stat multiplier for in-game stats: Normal: 1x, Shiny: 2x, Mythic: 5x, ShinyMythic: 10x
-  const variantStatMultiplier = selectedVariant === 'Shiny' ? 2 : selectedVariant === 'Mythic' ? 5 : selectedVariant === 'ShinyMythic' || selectedVariant === 'S.Myth' ? 10 : 1;
+  // ━━━━ OFFICIAL BUBBLE GUM SIMULATOR WIKI FORMULA ━━━━
+  const BGS_WIKI_CONFIG = {
+    minLevel: 1,
+    maxLevel: 25,
+    minEnchant: 0,
+    maxEnchant: 40,
+    maxShadowEnchant: 50,
+    maxLevelEffect: 1.5,
+    maxShadowEnchantEffect: 2,
+  };
 
-  // Level multiplier: (1 + (level - 1) * 0.05) -> Level 25 = 2.2x (+120%)
-  const levelMultiplier = 1 + (Math.min(25, Math.max(1, level)) - 1) * 0.05;
+  const calculateWikiStat = (baseStat, variant, lvl, enc) => {
+    if (typeof baseStat !== 'number' || isNaN(baseStat)) return baseStat;
+    const variantMultiplier = variant === 'Shiny' ? 2 : variant === 'Mythic' ? 1.5 : (variant === 'ShinyMythic' || variant === 'S.Myth') ? 3 : 1;
+    let val = baseStat * variantMultiplier;
 
-  // Enchant multiplier: (1 + enchant * 0.02) -> Max 50 = 2.0x (+100%). Shadow Enchant = 2.5x
-  const enchantMultiplier = isShadowEnchant ? 2.5 : 1 + Math.min(50, Math.max(0, enchant)) * 0.02;
+    // Level scaling: stat + (stat * 1.5 - stat) * (lvl - 1) / (24)
+    const clampedLvl = Math.min(25, Math.max(1, Number(lvl) || 1));
+    val = val + (val * BGS_WIKI_CONFIG.maxLevelEffect - val) * (clampedLvl - BGS_WIKI_CONFIG.minLevel) / (BGS_WIKI_CONFIG.maxLevel - BGS_WIKI_CONFIG.minLevel);
 
-  const totalStatMultiplier = variantStatMultiplier * levelMultiplier * enchantMultiplier;
+    // Enchant scaling: stat + (stat * 2 - stat) * (enc - 0) / (50)
+    const clampedEnc = Math.min(50, Math.max(0, Number(enc) || 0));
+    val = val + (val * BGS_WIKI_CONFIG.maxShadowEnchantEffect - val) * (clampedEnc - BGS_WIKI_CONFIG.minEnchant) / (BGS_WIKI_CONFIG.maxShadowEnchant - BGS_WIKI_CONFIG.minEnchant);
+
+    return Math.round(val);
+  };
 
   // Ensure buffs is populated
   const defaultRarityBuffs = {
@@ -58,7 +74,7 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
 
   const formatBuff = (key, val) => {
     if (typeof val !== 'number') return val;
-    const multiplied = Math.round(val * totalStatMultiplier);
+    const multiplied = calculateWikiStat(val, selectedVariant, level, enchant);
     if (key === 'Bubbles') return `+${multiplied.toLocaleString()}`;
     return `x${multiplied.toLocaleString()}`;
   };
@@ -81,11 +97,11 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
 
   const handleMaxLevel = () => setLevel(25);
   const handleMaxEnchant = () => {
-    setEnchant(50);
+    setEnchant(40);
     setIsShadowEnchant(false);
   };
   const handleMaxShadowEnchant = () => {
-    setEnchant(40);
+    setEnchant(50);
     setIsShadowEnchant(true);
   };
   const handleResetStats = () => {

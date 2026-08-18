@@ -14,8 +14,8 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
   const hasValue = typeof pet.baseValue === 'number' && !isNaN(pet.baseValue) && pet.baseValue > 0;
   const currentVal = getPetVariantValue(pet, selectedVariant);
 
-  // Variant stat multiplier for in-game stats: Normal: 1x, Shiny: 2x, Mythic: 5x, ShinyMythic: 10x
-  const statMultiplier = selectedVariant === 'Shiny' ? 2 : selectedVariant === 'Mythic' ? 5 : selectedVariant === 'ShinyMythic' || selectedVariant === 'S.Myth' ? 10 : 1;
+  // Variant stat multiplier for in-game stats according to BGS Wiki: Normal: 1x, Shiny: 2x, Mythic: 1.5x, ShinyMythic: 3x
+  const statMultiplier = selectedVariant === 'Shiny' ? 2 : selectedVariant === 'Mythic' ? 1.5 : (selectedVariant === 'ShinyMythic' || selectedVariant === 'S.Myth') ? 3 : 1;
 
   const buffs = pet.stats?.buffs || {};
   const eggName = pet.stats?.egg || (pet.description?.includes('Egg') ? pet.description.match(/([a-zA-Z0-9\s]+Egg)/)?.[0] : null);
