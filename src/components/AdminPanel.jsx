@@ -1,22 +1,58 @@
-import React, { useState, useMemo } from 'react';
-import { PlusCircle, RefreshCw, Trash2, Edit3, Save, Database, Download, ShieldCheck, Award, Search, Filter, BarChart3, X, ChevronLeft, ChevronRight, Image } from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import {
+  PlusCircle,
+  RefreshCw,
+  Trash2,
+  Edit3,
+  Save,
+  Database,
+  Download,
+  ShieldCheck,
+  ShieldAlert,
+  Award,
+  Search,
+  Filter,
+  BarChart3,
+  X,
+  ChevronLeft,
+  ChevronRight,
+  Users,
+  UserX,
+  UserCheck,
+  LogOut,
+  AlertTriangle,
+  Clock,
+  Sparkles,
+  Lock,
+  ArrowRight,
+} from 'lucide-react';
 import PetAvatar from './PetAvatar';
 
-export default function AdminPanel({ pets, currentUser, onRefreshPets }) {
+export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLogin, onBackToValues }) {
+  const [adminTab, setAdminTab] = useState('users'); // 'users' or 'pets'
+  const [usersList, setUsersList] = useState([]);
+  const [usersLoading, setUsersLoading] = useState(false);
+  const [userSearch, setUserSearch] = useState('');
+  const [userRoleFilter, setUserRoleFilter] = useState('all');
+  const [userStatusFilter, setUserStatusFilter] = useState('all');
+
+  // Pet database form state
   const [formData, setFormData] = useState({
-    name: '', rarity: 'Legendary', baseValue: '', demand: 5, status: 'Stable', image: '',
+    name: '',
+    rarity: 'Legendary',
+    baseValue: '',
+    demand: 5,
+    status: 'Stable',
+    image: '',
   });
 
-  const [staffUsername, setStaffUsername] = useState('');
-  const [staffRoblox, setStaffRoblox] = useState('');
-  const [staffRank, setStaffRank] = useState('Value Editor');
   const [loading, setLoading] = useState(false);
   const [scraping, setScraping] = useState(false);
   const [msg, setMsg] = useState(null);
   const [editingId, setEditingId] = useState(null);
   const [editValues, setEditValues] = useState({});
 
-  // Optimized search, filter, pagination state
+  // Pet search, filter, pagination
   const [searchQuery, setSearchQuery] = useState('');
   const [filterRarity, setFilterRarity] = useState('all');
   const [sortField, setSortField] = useState('name');
@@ -24,14 +60,39 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets }) {
   const [page, setPage] = useState(1);
   const pageSize = 25;
 
+  const isStaff = currentUser && (currentUser.role === 'owner' || currentUser.role === 'mod');
   const isOwner = currentUser && currentUser.role === 'owner';
 
-  // Database Stats (memoized)
+  // Fetch Users List
+  const fetchUsers = async () => {
+    setUsersLoading(true);
+    try {
+      const res = await fetch('/api/admin/users');
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && data.users) {
+          setUsersList(data.users);
+        }
+      }
+    } catch (err) {
+      console.error('Failed to load users:', err);
+    } finally {
+      setUsersLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isStaff) {
+      fetchUsers();
+    }
+  }, [isStaff]);
+
+  // Database Stats
   const dbStats = useMemo(() => {
     const counts = {};
     let totalValue = 0;
     let withImages = 0;
-    pets.forEach(p => {
+    pets.forEach((p) => {
       counts[p.rarity] = (counts[p.rarity] || 0) + 1;
       totalValue += p.baseValue || 0;
       if (p.image && p.image.startsWith('http')) withImages++;
@@ -39,358 +100,736 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets }) {
     return { counts, totalValue, withImages, total: pets.length };
   }, [pets]);
 
-  // Filtered & sorted pets (memoized)
+  // Filtered & Sorted Pets
   const filteredPets = useMemo(() => {
     let result = [...pets];
-
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      result = result.filter(p => p.name.toLowerCase().includes(q));
+      result = result.filter((p) => p.name.toLowerCase().includes(q));
     }
-
     if (filterRarity !== 'all') {
-      result = result.filter(p => p.rarity === filterRarity);
+      result = result.filter((p) => p.rarity === filterRarity);
     }
-
     result.sort((a, b) => {
       let va, vb;
-      if (sortField === 'name') { va = a.name.toLowerCase(); vb = b.name.toLowerCase(); }
-      else if (sortField === 'value') { va = a.baseValue; vb = b.baseValue; }
-      else if (sortField === 'demand') { va = a.demand; vb = b.demand; }
-      else if (sortField === 'rarity') { va = a.rarity; vb = b.rarity; }
-      else { va = a.name; vb = b.name; }
-
+      if (sortField === 'name') {
+        va = a.name.toLowerCase();
+        vb = b.name.toLowerCase();
+      } else if (sortField === 'value') {
+        va = a.baseValue;
+        vb = b.baseValue;
+      } else if (sortField === 'demand') {
+        va = a.demand;
+        vb = b.demand;
+      } else if (sortField === 'rarity') {
+        va = a.rarity;
+        vb = b.rarity;
+      } else {
+        va = a.name;
+        vb = b.name;
+      }
       if (va < vb) return sortDir === 'asc' ? -1 : 1;
       if (va > vb) return sortDir === 'asc' ? 1 : -1;
       return 0;
     });
-
     return result;
   }, [pets, searchQuery, filterRarity, sortField, sortDir]);
 
   const totalPages = Math.ceil(filteredPets.length / pageSize);
   const paginatedPets = filteredPets.slice((page - 1) * pageSize, page * pageSize);
 
+  // Filtered Users
+  const filteredUsers = useMemo(() => {
+    return usersList.filter((u) => {
+      const q = userSearch.toLowerCase();
+      const matchSearch =
+        !q ||
+        u.username.toLowerCase().includes(q) ||
+        u.robloxUsername?.toLowerCase().includes(q) ||
+        u.discord?.toLowerCase().includes(q);
+      const matchRole = userRoleFilter === 'all' || u.role === userRoleFilter;
+      const matchStatus = userStatusFilter === 'all' || u.status === userStatusFilter;
+      return matchSearch && matchRole && matchStatus;
+    });
+  }, [usersList, userSearch, userRoleFilter, userStatusFilter]);
+
+  // ---------------- USER MODERATION ACTIONS ----------------
+  const handleBanUser = async (userId, username) => {
+    if (!window.confirm(`Are you sure you want to BAN @${username}? Their listings will be removed.`)) return;
+    try {
+      const res = await fetch(`/api/admin/users/${userId}/ban`, { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: data.message });
+        fetchUsers();
+      } else {
+        setMsg({ type: 'error', text: data.error });
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to ban user.' });
+    }
+  };
+
+  const handleUnbanUser = async (userId, username) => {
+    try {
+      const res = await fetch(`/api/admin/users/${userId}/unban`, { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: data.message });
+        fetchUsers();
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to unban user.' });
+    }
+  };
+
+  const handleKickUser = async (userId, username) => {
+    try {
+      const res = await fetch(`/api/admin/users/${userId}/kick`, { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: data.message });
+        fetchUsers();
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to kick user.' });
+    }
+  };
+
+  const handleToggleRole = async (user) => {
+    const nextRole = user.role === 'mod' ? 'member' : 'mod';
+    const nextRank = nextRole === 'mod' ? 'Head Moderator' : 'Verified Trader';
+    try {
+      const res = await fetch(`/api/admin/users/${user.id}/role`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ role: nextRole, rank: nextRank }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: data.message });
+        fetchUsers();
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to update role.' });
+    }
+  };
+
+  const handleDeleteUser = async (userId, username) => {
+    if (!window.confirm(`Permanently delete @${username}'s account? This action cannot be undone.`)) return;
+    try {
+      const res = await fetch(`/api/admin/users/${userId}`, { method: 'DELETE' });
+      const data = await res.json();
+      if (data.success) {
+        setMsg({ type: 'success', text: data.message });
+        fetchUsers();
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to delete user.' });
+    }
+  };
+
+  // ---------------- PET MANAGEMENT ACTIONS ----------------
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleAssignStaffRank = async (e) => {
-    e.preventDefault();
-    if (!staffUsername || !staffRank) return;
-    try {
-      const res = await fetch('/api/staff', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username: staffUsername, robloxUsername: staffRoblox, rank: staffRank }),
-      });
-      const data = await res.json();
-      setMsg(data.success ? { type: 'success', text: data.message } : { type: 'error', text: data.error });
-      if (data.success) { setStaffUsername(''); setStaffRoblox(''); }
-    } catch { setMsg({ type: 'error', text: 'Failed to assign staff rank.' }); }
-  };
-
   const handleCreatePet = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.baseValue) {
-      setMsg({ type: 'error', text: 'Pet Name and Base Value are required.' }); return;
+      setMsg({ type: 'error', text: 'Pet Name and Base Value are required.' });
+      return;
     }
-    setLoading(true); setMsg(null);
+    setLoading(true);
+    setMsg(null);
     try {
       const res = await fetch('/api/pets', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          rarity: formData.rarity,
+          baseValue: Number(formData.baseValue),
+          demand: Number(formData.demand),
+          status: formData.status,
+          image: formData.image,
+        }),
       });
       const data = await res.json();
       if (data.success) {
-        setMsg({ type: 'success', text: `Added "${data.pet.name}"!` });
+        setMsg({ type: 'success', text: `Created pet: ${formData.name}` });
         setFormData({ name: '', rarity: 'Legendary', baseValue: '', demand: 5, status: 'Stable', image: '' });
         if (onRefreshPets) onRefreshPets();
-      } else { setMsg({ type: 'error', text: data.error }); }
-    } catch (err) { setMsg({ type: 'error', text: 'Failed: ' + err.message }); }
-    finally { setLoading(false); }
+      } else {
+        setMsg({ type: 'error', text: data.error || 'Failed to create pet' });
+      }
+    } catch (err) {
+      setMsg({ type: 'error', text: 'Server error while creating pet.' });
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const handleScrapeWiki = async () => {
-    setScraping(true); setMsg(null);
+  const handleSyncWiki = async () => {
+    setScraping(true);
+    setMsg(null);
     try {
-      const res = await fetch('/api/scrape', { method: 'POST' });
+      const res = await fetch('/api/pets/scrape', { method: 'POST' });
       const data = await res.json();
-      setMsg(data.success
-        ? { type: 'success', text: `Scraped! Added ${data.added} new pets. Total: ${data.total}.` }
-        : { type: 'error', text: data.error });
-      if (data.success && onRefreshPets) onRefreshPets();
-    } catch (err) { setMsg({ type: 'error', text: 'Scraper failed: ' + err.message }); }
-    finally { setScraping(false); }
+      if (data.success) {
+        setMsg({ type: 'success', text: `Sync complete! Added ${data.added} pets. Total: ${data.total}` });
+        if (onRefreshPets) onRefreshPets();
+      } else {
+        setMsg({ type: 'error', text: data.error || 'Scrape failed' });
+      }
+    } catch (err) {
+      setMsg({ type: 'error', text: 'Server error during Wiki sync.' });
+    } finally {
+      setScraping(false);
+    }
   };
 
   const handleDeletePet = async (id, name) => {
-    if (!window.confirm(`Delete "${name}"?`)) return;
+    if (!window.confirm(`Delete "${name}" from database?`)) return;
     try {
       const res = await fetch(`/api/pets/${id}`, { method: 'DELETE' });
       const data = await res.json();
-      if (data.success) { setMsg({ type: 'success', text: `Deleted "${name}".` }); if (onRefreshPets) onRefreshPets(); }
-    } catch { setMsg({ type: 'error', text: 'Failed to delete pet.' }); }
+      if (data.success) {
+        setMsg({ type: 'success', text: `Deleted "${name}"` });
+        if (onRefreshPets) onRefreshPets();
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to delete pet.' });
+    }
   };
 
-  const startEdit = (pet) => {
+  const handleStartEdit = (pet) => {
     setEditingId(pet.id);
-    setEditValues({ baseValue: pet.baseValue, demand: pet.demand, status: pet.status || 'Stable', rarity: pet.rarity, image: pet.image || '' });
+    setEditValues({
+      baseValue: pet.baseValue,
+      demand: pet.demand,
+      status: pet.status,
+      rarity: pet.rarity,
+    });
   };
 
-  const saveEdit = async (id) => {
+  const handleSaveEdit = async (id) => {
     try {
       const res = await fetch(`/api/pets/${id}`, {
-        method: 'PUT', headers: { 'Content-Type': 'application/json' },
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editValues),
       });
       const data = await res.json();
-      if (data.success) { setEditingId(null); if (onRefreshPets) onRefreshPets(); }
-    } catch { setMsg({ type: 'error', text: 'Failed to update pet.' }); }
+      if (data.success) {
+        setEditingId(null);
+        setMsg({ type: 'success', text: 'Pet updated successfully.' });
+        if (onRefreshPets) onRefreshPets();
+      }
+    } catch {
+      setMsg({ type: 'error', text: 'Failed to update pet.' });
+    }
   };
 
-  const handleSort = (field) => {
-    if (sortField === field) setSortDir(sortDir === 'asc' ? 'desc' : 'asc');
-    else { setSortField(field); setSortDir('asc'); }
-  };
+  // ---------------- STRICT AUTHENTICATION GUARD ----------------
+  if (!isStaff) {
+    return (
+      <div style={{ maxWidth: '620px', margin: '4rem auto', padding: '0 1.5rem' }}>
+        <div
+          className="glass-card"
+          style={{
+            padding: '3rem 2rem',
+            textAlign: 'center',
+            border: '1px solid #ff1744',
+            boxShadow: '0 20px 60px rgba(255, 23, 68, 0.15)',
+          }}
+        >
+          <div
+            style={{
+              width: '72px',
+              height: '72px',
+              borderRadius: '20px',
+              background: 'rgba(255, 23, 68, 0.15)',
+              border: '1px solid rgba(255, 23, 68, 0.4)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: '0 auto 1.5rem auto',
+            }}
+          >
+            <Lock size={36} color="#ff1744" />
+          </div>
 
-  const rarityColor = { Secret: '#b967ff', Legendary: '#ffcc00', Epic: '#00e5ff', Rare: '#00e676', Common: '#94a3b8', Unique: '#ff9100' };
+          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#fff', marginBottom: '0.6rem' }}>
+            Admin Access Restricted
+          </h2>
 
+          <p style={{ color: '#94a3b8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
+            The Admin Control Panel is strictly reserved for authorized Lead Developers and Head Staff Moderators.
+            Please sign in with your staff credentials.
+          </p>
+
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+            <button
+              className="btn-primary"
+              onClick={onOpenLogin}
+              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.85rem 1.6rem' }}
+            >
+              <ShieldCheck size={18} /> Staff Sign In
+            </button>
+            <button
+              className="filter-btn"
+              onClick={onBackToValues}
+              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.85rem 1.4rem' }}
+            >
+              Return to Value List
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ---------------- AUTHENTICATED ADMIN PANEL ----------------
   return (
-    <div style={{ paddingBottom: '4rem', maxWidth: '1400px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '1rem 1.5rem 5rem 1.5rem' }}>
+      {/* Header Banner */}
       <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <h2 style={{ fontSize: '2.2rem', fontWeight: '900' }}>
-          Admin <span style={{ color: '#ffcc00' }}>Control Panel</span>
-        </h2>
-        <p style={{ color: '#94a3b8', fontSize: '0.95rem', marginTop: '0.3rem' }}>
-          Manage pets, staff ranks, sync wiki data, and monitor database health.
+        <h1 style={{ fontSize: '2.4rem', fontWeight: 900, color: '#fff' }}>
+          Admin & Moderation <span style={{ color: 'var(--primary-gold)' }}>Control Center</span>
+        </h1>
+        <p style={{ color: '#94a3b8', fontSize: '1rem', marginTop: '0.3rem' }}>
+          Manage user sessions, active trades, database values, and server security.
         </p>
       </div>
 
+      {/* Toast Alert */}
       {msg && (
-        <div style={{ padding: '0.85rem 1rem', borderRadius: '10px', marginBottom: '1.5rem', background: msg.type === 'success' ? 'rgba(0,230,118,0.12)' : 'rgba(255,23,68,0.12)', border: `1px solid ${msg.type === 'success' ? '#00e676' : '#ff1744'}`, color: msg.type === 'success' ? '#00e676' : '#ff1744', fontWeight: 700, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          {msg.text}
-          <button style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer' }} onClick={() => setMsg(null)}>✕</button>
+        <div
+          style={{
+            maxWidth: '800px',
+            margin: '0 auto 1.5rem auto',
+            padding: '0.85rem 1.2rem',
+            borderRadius: '12px',
+            fontWeight: 800,
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            background: msg.type === 'success' ? 'rgba(16, 185, 129, 0.15)' : 'rgba(255, 23, 68, 0.15)',
+            border: msg.type === 'success' ? '1px solid #10b981' : '1px solid #ff1744',
+            color: msg.type === 'success' ? '#10b981' : '#ff1744',
+          }}
+        >
+          <span>{msg.text}</span>
+          <button onClick={() => setMsg(null)} style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer' }}>
+            <X size={16} />
+          </button>
         </div>
       )}
 
-      {/* DATABASE STATS DASHBOARD */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
-        <div className="glass-card" style={{ padding: '1rem', textAlign: 'center' }}>
-          <div style={{ fontSize: '2rem', fontWeight: 900, color: '#fff' }}>{dbStats.total}</div>
-          <div style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 700 }}>Total Pets</div>
-        </div>
-        {Object.entries(dbStats.counts).sort((a,b) => b[1]-a[1]).map(([rarity, count]) => (
-          <div key={rarity} className="glass-card" style={{ padding: '1rem', textAlign: 'center', borderTop: `3px solid ${rarityColor[rarity] || '#94a3b8'}` }}>
-            <div style={{ fontSize: '1.6rem', fontWeight: 900, color: rarityColor[rarity] || '#fff' }}>{count}</div>
-            <div style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 700 }}>{rarity}</div>
-          </div>
-        ))}
-        <div className="glass-card" style={{ padding: '1rem', textAlign: 'center', borderTop: '3px solid #10b981' }}>
-          <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#10b981' }}>{dbStats.withImages}</div>
-          <div style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 700 }}>With Images</div>
-        </div>
+      {/* Main Admin Navigation Switcher */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '2rem' }}>
+        <button
+          className={`filter-btn ${adminTab === 'users' ? 'active' : ''}`}
+          onClick={() => setAdminTab('users')}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.8rem', fontSize: '1rem', fontWeight: 900 }}
+        >
+          <Users size={18} /> User Moderation & Live Sessions ({usersList.length})
+        </button>
+
+        <button
+          className={`filter-btn ${adminTab === 'pets' ? 'active' : ''}`}
+          onClick={() => setAdminTab('pets')}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.8rem', fontSize: '1rem', fontWeight: 900 }}
+        >
+          <Database size={18} /> Pet Database & Wiki Sync ({pets.length})
+        </button>
       </div>
 
-      {/* ACTION CARDS ROW */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.25rem', marginBottom: '2rem' }}>
-        
-        {/* WIKI SCRAPER */}
-        <div className="glass-card" style={{ borderLeft: '4px solid #ffcc00' }}>
-          <h3 style={{ fontSize: '1.1rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-            <Download size={18} color="#ffcc00" /> Sync Fandom Wiki
-          </h3>
-          <p style={{ color: '#94a3b8', fontSize: '0.82rem', marginBottom: '0.75rem' }}>
-            Pull latest pets from the official BGS Wiki (Category:Pets).
-          </p>
-          <button className="btn-primary" onClick={handleScrapeWiki} disabled={scraping} style={{ width: '100%', justifyContent: 'center' }}>
-            <RefreshCw size={15} className={scraping ? 'spin' : ''} />
-            {scraping ? 'Syncing...' : 'Run Wiki Sync'}
-          </button>
-        </div>
+      {/* ============================================================== */}
+      {/* TAB 1: USER MANAGEMENT & MODERATION CENTER                     */}
+      {/* ============================================================== */}
+      {adminTab === 'users' && (
+        <div>
+          {/* User Metrics Banner */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+            <div className="glass-card" style={{ padding: '1.25rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Total Registered Users</div>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#00e5ff', marginTop: '4px' }}>{usersList.length}</div>
+            </div>
+            <div className="glass-card" style={{ padding: '1.25rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Active Traders</div>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#10b981', marginTop: '4px' }}>
+                {usersList.filter((u) => u.status !== 'banned').length}
+              </div>
+            </div>
+            <div className="glass-card" style={{ padding: '1.25rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Banned Accounts</div>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#ff1744', marginTop: '4px' }}>
+                {usersList.filter((u) => u.status === 'banned').length}
+              </div>
+            </div>
+            <div className="glass-card" style={{ padding: '1.25rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Staff Moderators</div>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#ffcc00', marginTop: '4px' }}>
+                {usersList.filter((u) => u.role === 'owner' || u.role === 'mod').length}
+              </div>
+            </div>
+          </div>
 
-        {/* STAFF RANK (Owner Only) */}
-        {isOwner && (
-          <div className="glass-card" style={{ borderLeft: '4px solid #b967ff' }}>
-            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-              <Award size={18} color="#b967ff" /> Assign Staff Rank
-            </h3>
-            <form onSubmit={handleAssignStaffRank}>
-              <input type="text" className="form-input" placeholder="Username" value={staffUsername} onChange={(e) => setStaffUsername(e.target.value)} required style={{ marginBottom: '0.4rem' }} />
-              <input type="text" className="form-input" placeholder="Roblox Handle" value={staffRoblox} onChange={(e) => setStaffRoblox(e.target.value)} style={{ marginBottom: '0.4rem' }} />
-              <select className="form-input" value={staffRank} onChange={(e) => setStaffRank(e.target.value)} style={{ marginBottom: '0.5rem' }}>
-                <option value="Head Moderator">Head Moderator</option>
-                <option value="Value Editor">Value Editor</option>
-                <option value="Junior Moderator">Junior Moderator</option>
+          {/* User Controls & Filter Bar */}
+          <div className="controls-bar" style={{ marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', gap: '0.75rem', flex: 1, minWidth: '280px', flexWrap: 'wrap' }}>
+              <div style={{ position: 'relative', flex: 1, minWidth: '220px' }}>
+                <Search size={16} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: '#94a3b8' }} />
+                <input
+                  type="text"
+                  className="search-input-box"
+                  style={{ paddingLeft: '2.2rem', margin: 0 }}
+                  placeholder="Search username, Roblox ID, or Discord..."
+                  value={userSearch}
+                  onChange={(e) => setUserSearch(e.target.value)}
+                />
+              </div>
+
+              <select className="search-input-box" style={{ width: '150px', margin: 0 }} value={userRoleFilter} onChange={(e) => setUserRoleFilter(e.target.value)}>
+                <option value="all">All Roles</option>
+                <option value="owner">Owners 👑</option>
+                <option value="mod">Staff Mods 🛡️</option>
+                <option value="member">Traders</option>
               </select>
-              <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center', background: 'linear-gradient(135deg, #b967ff, #ff4081)' }}>
-                Assign Rank
+
+              <select className="search-input-box" style={{ width: '150px', margin: 0 }} value={userStatusFilter} onChange={(e) => setUserStatusFilter(e.target.value)}>
+                <option value="all">All Statuses</option>
+                <option value="active">Active 🟢</option>
+                <option value="banned">Banned 🔴</option>
+                <option value="kicked">Kicked 🟡</option>
+              </select>
+
+              <button className="filter-btn" onClick={fetchUsers} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <RefreshCw size={14} className={usersLoading ? 'spin' : ''} /> Refresh
               </button>
-            </form>
-          </div>
-        )}
-      </div>
-
-      {/* ADD PET FORM (Collapsible) */}
-      <details className="glass-card" style={{ marginBottom: '2rem' }}>
-        <summary style={{ fontSize: '1.15rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#00e5ff' }}>
-          <PlusCircle size={20} /> Add New Pet Manually
-        </summary>
-        <form onSubmit={handleCreatePet} style={{ marginTop: '1rem' }}>
-          <div className="form-grid">
-            <div className="form-group">
-              <label>Pet Name *</label>
-              <input type="text" name="name" className="form-input" placeholder="e.g. Overlord Dragon" value={formData.name} onChange={handleInputChange} required />
-            </div>
-            <div className="form-group">
-              <label>Base Value (⚡) *</label>
-              <input type="number" name="baseValue" className="form-input" placeholder="e.g. 150000" value={formData.baseValue} onChange={handleInputChange} required />
-            </div>
-            <div className="form-group">
-              <label>Rarity</label>
-              <select name="rarity" className="form-input" value={formData.rarity} onChange={handleInputChange}>
-                <option value="Secret">Secret</option>
-                <option value="Legendary">Legendary</option>
-                <option value="Unique">Unique</option>
-                <option value="Epic">Epic</option>
-                <option value="Rare">Rare</option>
-                <option value="Common">Common</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label>Demand (1-10)</label>
-              <input type="number" name="demand" min="1" max="10" className="form-input" value={formData.demand} onChange={handleInputChange} />
-            </div>
-            <div className="form-group">
-              <label>Trend</label>
-              <select name="status" className="form-input" value={formData.status} onChange={handleInputChange}>
-                <option value="Rising">Rising</option>
-                <option value="Hyped">Hyped</option>
-                <option value="Stable">Stable</option>
-                <option value="Dropping">Dropping</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label>Image URL</label>
-              <input type="url" name="image" className="form-input" placeholder="https://static.wikia.nocookie.net/..." value={formData.image} onChange={handleInputChange} />
             </div>
           </div>
-          <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '1rem' }} disabled={loading}>
-            {loading ? 'Adding...' : 'Save New Pet'}
-          </button>
-        </form>
-      </details>
 
-      {/* PET DATABASE TABLE WITH SEARCH/FILTER/SORT/PAGINATION */}
-      <div className="glass-card">
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
-          <h3 style={{ fontSize: '1.2rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
-            <Database size={20} color="#b967ff" /> Pet Database ({filteredPets.length}/{pets.length})
-          </h3>
-
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ position: 'relative' }}>
-              <Search size={15} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: '#64748b' }} />
-              <input type="text" className="search-input-box" placeholder="Search pets..." value={searchQuery} onChange={(e) => { setSearchQuery(e.target.value); setPage(1); }} style={{ paddingLeft: '2rem', margin: 0, width: '200px', fontSize: '0.85rem' }} />
-            </div>
-            <select className="search-input-box" value={filterRarity} onChange={(e) => { setFilterRarity(e.target.value); setPage(1); }} style={{ margin: 0, width: '130px', fontSize: '0.85rem' }}>
-              <option value="all">All Rarity</option>
-              <option value="Secret">Secret ({dbStats.counts.Secret || 0})</option>
-              <option value="Legendary">Legendary ({dbStats.counts.Legendary || 0})</option>
-              <option value="Unique">Unique ({dbStats.counts.Unique || 0})</option>
-              <option value="Epic">Epic ({dbStats.counts.Epic || 0})</option>
-              <option value="Rare">Rare ({dbStats.counts.Rare || 0})</option>
-              <option value="Common">Common ({dbStats.counts.Common || 0})</option>
-            </select>
-          </div>
-        </div>
-
-        <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.88rem' }}>
-            <thead>
-              <tr style={{ borderBottom: '2px solid var(--glass-border)', color: '#94a3b8' }}>
-                <th style={{ padding: '0.6rem', cursor: 'pointer' }} onClick={() => handleSort('name')}>Pet {sortField === 'name' ? (sortDir === 'asc' ? '↑' : '↓') : ''}</th>
-                <th style={{ padding: '0.6rem', cursor: 'pointer' }} onClick={() => handleSort('rarity')}>Rarity {sortField === 'rarity' ? (sortDir === 'asc' ? '↑' : '↓') : ''}</th>
-                <th style={{ padding: '0.6rem', cursor: 'pointer' }} onClick={() => handleSort('value')}>Value {sortField === 'value' ? (sortDir === 'asc' ? '↑' : '↓') : ''}</th>
-                <th style={{ padding: '0.6rem', cursor: 'pointer' }} onClick={() => handleSort('demand')}>Demand {sortField === 'demand' ? (sortDir === 'asc' ? '↑' : '↓') : ''}</th>
-                <th style={{ padding: '0.6rem' }}>Image</th>
-                <th style={{ padding: '0.6rem', textAlign: 'right' }}>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {paginatedPets.map((p) => (
-                <tr key={p.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)', transition: 'background 0.15s' }} onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(124,58,237,0.08)'} onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}>
-                  <td style={{ padding: '0.6rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <PetAvatar name={p.name} rarity={p.rarity} image={p.image} size={30} />
-                      <span style={{ fontWeight: 700, fontSize: '0.88rem' }}>{p.name}</span>
-                    </div>
-                  </td>
-                  <td style={{ padding: '0.6rem' }}>
-                    {editingId === p.id ? (
-                      <select style={{ background: '#0a0b10', color: '#fff', border: '1px solid #7c3aed', padding: '3px 6px', borderRadius: '6px', fontSize: '0.82rem' }}
-                        value={editValues.rarity} onChange={(e) => setEditValues({ ...editValues, rarity: e.target.value })}>
-                        <option>Secret</option><option>Legendary</option><option>Unique</option><option>Epic</option><option>Rare</option><option>Common</option>
-                      </select>
-                    ) : (
-                      <span style={{ color: rarityColor[p.rarity] || '#fff', fontWeight: 800, fontSize: '0.82rem' }}>{p.rarity}</span>
-                    )}
-                  </td>
-                  <td style={{ padding: '0.6rem', color: '#ffcc00', fontWeight: 700 }}>
-                    {editingId === p.id ? (
-                      <input type="number" style={{ width: '90px', background: '#0a0b10', color: '#ffcc00', border: '1px solid #ffcc00', padding: '3px 6px', borderRadius: '6px', fontSize: '0.82rem' }}
-                        value={editValues.baseValue} onChange={(e) => setEditValues({ ...editValues, baseValue: Number(e.target.value) })} />
-                    ) : (
-                      `⚡ ${(p.baseValue || 0).toLocaleString()}`
-                    )}
-                  </td>
-                  <td style={{ padding: '0.6rem' }}>
-                    {editingId === p.id ? (
-                      <input type="number" min="1" max="10" style={{ width: '55px', background: '#0a0b10', color: '#fff', border: '1px solid #7c3aed', padding: '3px 6px', borderRadius: '6px', fontSize: '0.82rem' }}
-                        value={editValues.demand} onChange={(e) => setEditValues({ ...editValues, demand: Number(e.target.value) })} />
-                    ) : (
-                      <span style={{ fontWeight: 700 }}>{p.demand}/10</span>
-                    )}
-                  </td>
-                  <td style={{ padding: '0.6rem' }}>
-                    {p.image && p.image.startsWith('http')
-                      ? <span style={{ color: '#10b981', fontSize: '0.78rem', fontWeight: 700 }}>✓ Yes</span>
-                      : <span style={{ color: '#ff1744', fontSize: '0.78rem', fontWeight: 700 }}>✗ Missing</span>}
-                  </td>
-                  <td style={{ padding: '0.6rem', textAlign: 'right', whiteSpace: 'nowrap' }}>
-                    {editingId === p.id ? (
-                      <>
-                        <button style={{ background: 'none', border: 'none', color: '#10b981', cursor: 'pointer', marginRight: '6px' }} onClick={() => saveEdit(p.id)} title="Save"><Save size={15} /></button>
-                        <button style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer' }} onClick={() => setEditingId(null)} title="Cancel"><X size={15} /></button>
-                      </>
-                    ) : (
-                      <>
-                        <button style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', marginRight: '6px' }} onClick={() => startEdit(p)} title="Edit"><Edit3 size={15} /></button>
-                        <button style={{ background: 'none', border: 'none', color: '#ff1744', cursor: 'pointer' }} onClick={() => handleDeletePet(p.id, p.name)} title="Delete"><Trash2 size={15} /></button>
-                      </>
-                    )}
-                  </td>
+          {/* Users Moderation Table */}
+          <div className="glass-card" style={{ padding: '1.25rem', overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.88rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--glass-border)', color: '#94a3b8', textAlign: 'left' }}>
+                  <th style={{ padding: '0.75rem 1rem' }}>User Profile</th>
+                  <th style={{ padding: '0.75rem 1rem' }}>Roblox & Discord</th>
+                  <th style={{ padding: '0.75rem 1rem' }}>Role & Rank</th>
+                  <th style={{ padding: '0.75rem 1rem' }}>Status</th>
+                  <th style={{ padding: '0.75rem 1rem' }}>Last Active</th>
+                  <th style={{ padding: '0.75rem 1rem' }}>Trades</th>
+                  <th style={{ padding: '0.75rem 1rem', textAlign: 'right' }}>Moderation Actions</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredUsers.length === 0 ? (
+                  <tr>
+                    <td colSpan="7" style={{ textAlign: 'center', padding: '3rem', color: '#64748b' }}>
+                      No users found matching your filters.
+                    </td>
+                  </tr>
+                ) : (
+                  filteredUsers.map((user) => (
+                    <tr key={user.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)', transition: 'background 0.2s' }}>
+                      <td style={{ padding: '0.75rem 1rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                          <div
+                            style={{
+                              width: '36px',
+                              height: '36px',
+                              borderRadius: '50%',
+                              background: user.role === 'owner' ? '#ffcc00' : user.role === 'mod' ? '#7c3aed' : 'rgba(255,255,255,0.1)',
+                              color: user.role === 'owner' ? '#000' : '#fff',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontWeight: 900,
+                            }}
+                          >
+                            {user.username.charAt(0).toUpperCase()}
+                          </div>
+                          <div>
+                            <div style={{ fontWeight: 800, color: '#fff' }}>{user.username}</div>
+                            <div style={{ fontSize: '0.72rem', color: '#64748b' }}>ID: {user.id}</div>
+                          </div>
+                        </div>
+                      </td>
 
-        {/* PAGINATION CONTROLS */}
-        {totalPages > 1 && (
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.75rem', marginTop: '1.25rem', padding: '0.75rem 0' }}>
-            <button className="filter-btn" disabled={page <= 1} onClick={() => setPage(p => Math.max(1, p - 1))} style={{ padding: '0.4rem 0.75rem' }}>
-              <ChevronLeft size={16} /> Prev
-            </button>
-            <span style={{ fontSize: '0.88rem', fontWeight: 700, color: '#a78bfa' }}>
-              Page {page} of {totalPages}
-            </span>
-            <button className="filter-btn" disabled={page >= totalPages} onClick={() => setPage(p => Math.min(totalPages, p + 1))} style={{ padding: '0.4rem 0.75rem' }}>
-              Next <ChevronRight size={16} />
-            </button>
+                      <td style={{ padding: '0.75rem 1rem' }}>
+                        <div style={{ color: '#cbd5e1', fontWeight: 600 }}>🎮 {user.robloxUsername || 'Not set'}</div>
+                        <div style={{ fontSize: '0.75rem', color: '#94a3b8' }}>💬 {user.discord || 'None'}</div>
+                      </td>
+
+                      <td style={{ padding: '0.75rem 1rem' }}>
+                        <span
+                          style={{
+                            fontSize: '0.75rem',
+                            fontWeight: 800,
+                            padding: '3px 8px',
+                            borderRadius: '6px',
+                            background: user.role === 'owner' ? 'rgba(255,204,0,0.15)' : user.role === 'mod' ? 'rgba(124,58,237,0.2)' : 'rgba(255,255,255,0.06)',
+                            color: user.role === 'owner' ? '#ffcc00' : user.role === 'mod' ? '#a78bfa' : '#94a3b8',
+                            border: user.role === 'owner' ? '1px solid rgba(255,204,0,0.4)' : user.role === 'mod' ? '1px solid rgba(124,58,237,0.4)' : '1px solid var(--glass-border)',
+                          }}
+                        >
+                          {user.role === 'owner' ? '👑 Owner' : user.role === 'mod' ? '🛡️ Moderator' : 'Trader'}
+                        </span>
+                      </td>
+
+                      <td style={{ padding: '0.75rem 1rem' }}>
+                        <span
+                          style={{
+                            fontSize: '0.75rem',
+                            fontWeight: 800,
+                            padding: '3px 8px',
+                            borderRadius: '6px',
+                            background: user.status === 'banned' ? 'rgba(255,23,68,0.15)' : user.status === 'kicked' ? 'rgba(234,179,8,0.15)' : 'rgba(16,185,129,0.15)',
+                            color: user.status === 'banned' ? '#ff1744' : user.status === 'kicked' ? '#eab308' : '#10b981',
+                          }}
+                        >
+                          {user.status === 'banned' ? '🔴 Banned' : user.status === 'kicked' ? '🟡 Kicked' : '🟢 Active'}
+                        </span>
+                      </td>
+
+                      <td style={{ padding: '0.75rem 1rem', color: '#94a3b8', fontSize: '0.78rem' }}>
+                        {user.lastLogin ? new Date(user.lastLogin).toLocaleString() : 'Never'}
+                      </td>
+
+                      <td style={{ padding: '0.75rem 1rem', fontWeight: 800, color: '#fff' }}>
+                        {user.listingsCount || 0}
+                      </td>
+
+                      <td style={{ padding: '0.75rem 1rem', textAlign: 'right' }}>
+                        <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end' }}>
+                          {/* Ban / Unban Button */}
+                          {user.status === 'banned' ? (
+                            <button
+                              onClick={() => handleUnbanUser(user.id, user.username)}
+                              style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid #10b981', color: '#10b981', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                              title="Unban Account"
+                            >
+                              <UserCheck size={14} /> Unban
+                            </button>
+                          ) : (
+                            <button
+                              onClick={() => handleBanUser(user.id, user.username)}
+                              style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid #ff1744', color: '#ff1744', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                              title="Ban and delete trades"
+                            >
+                              <UserX size={14} /> Ban
+                            </button>
+                          )}
+
+                          {/* Kick Button */}
+                          <button
+                            onClick={() => handleKickUser(user.id, user.username)}
+                            style={{ background: 'rgba(234,179,8,0.15)', border: '1px solid #eab308', color: '#eab308', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                            title="Force Logout / Kick Session"
+                          >
+                            <LogOut size={14} /> Kick
+                          </button>
+
+                          {/* Promote/Demote Role (Owner only) */}
+                          {isOwner && user.role !== 'owner' && (
+                            <button
+                              onClick={() => handleToggleRole(user)}
+                              style={{ background: 'rgba(124,58,237,0.15)', border: '1px solid #7c3aed', color: '#a78bfa', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                              title={user.role === 'mod' ? 'Demote to Member' : 'Promote to Moderator'}
+                            >
+                              {user.role === 'mod' ? 'Demote' : 'Promote Mod'}
+                            </button>
+                          )}
+
+                          {/* Delete Account (Owner only) */}
+                          {isOwner && user.role !== 'owner' && (
+                            <button
+                              onClick={() => handleDeleteUser(user.id, user.username)}
+                              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid var(--glass-border)', color: '#64748b', padding: '4px 6px', borderRadius: '6px', cursor: 'pointer' }}
+                              title="Delete Account"
+                            >
+                              <Trash2 size={14} />
+                            </button>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
           </div>
-        )}
-      </div>
+        </div>
+      )}
+
+      {/* ============================================================== */}
+      {/* TAB 2: PET DATABASE & WIKI SYNC                                */}
+      {/* ============================================================== */}
+      {adminTab === 'pets' && (
+        <div>
+          {/* Quick Actions & Wiki Sync Bar */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem', marginBottom: '2rem' }}>
+            <div className="glass-card" style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#fff', margin: '0 0 0.4rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Download size={18} color="#00e5ff" /> Sync with Official Fandom Wiki
+                </h3>
+                <p style={{ color: '#94a3b8', fontSize: '0.85rem', margin: '0 0 1rem 0' }}>
+                  Extract latest pets, images, and base statistics from the BGS MediaWiki API.
+                </p>
+              </div>
+              <button className="btn-primary" onClick={handleSyncWiki} disabled={scraping} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '0.75rem' }}>
+                <RefreshCw size={16} className={scraping ? 'spin' : ''} /> {scraping ? 'Syncing Wiki Data...' : 'Run Wiki Sync'}
+              </button>
+            </div>
+
+            {/* Create Pet Form */}
+            <div className="glass-card" style={{ padding: '1.25rem' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#fff', margin: '0 0 0.85rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <PlusCircle size={18} color="#10b981" /> Add New Item Manually
+              </h3>
+              <form onSubmit={handleCreatePet} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem' }}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Pet Name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  style={{ gridColumn: '1 / -1', background: '#000', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.5rem', borderRadius: '8px', fontSize: '0.85rem' }}
+                />
+                <select
+                  name="rarity"
+                  value={formData.rarity}
+                  onChange={handleInputChange}
+                  style={{ background: '#000', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.5rem', borderRadius: '8px', fontSize: '0.85rem' }}
+                >
+                  {['Common', 'Unique', 'Rare', 'Epic', 'Legendary', 'Secret'].map((r) => (
+                    <option key={r} value={r}>{r}</option>
+                  ))}
+                </select>
+                <input
+                  type="number"
+                  name="baseValue"
+                  placeholder="Value (e.g. 500)"
+                  value={formData.baseValue}
+                  onChange={handleInputChange}
+                  style={{ background: '#000', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.5rem', borderRadius: '8px', fontSize: '0.85rem' }}
+                />
+                <button type="submit" disabled={loading} className="btn-primary" style={{ gridColumn: '1 / -1', padding: '0.6rem', fontSize: '0.85rem' }}>
+                  {loading ? 'Adding...' : 'Create Item'}
+                </button>
+              </form>
+            </div>
+          </div>
+
+          {/* Database Items Table */}
+          <div className="glass-card" style={{ padding: '1.25rem', overflowX: 'auto' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#fff', margin: 0 }}>
+                Pet Database ({filteredPets.length} / {pets.length})
+              </h3>
+              <input
+                type="text"
+                placeholder="Search database..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                style={{ background: '#000', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.4rem 0.8rem', borderRadius: '8px', fontSize: '0.85rem', width: '220px' }}
+              />
+            </div>
+
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--glass-border)', color: '#94a3b8', textAlign: 'left' }}>
+                  <th style={{ padding: '0.6rem 0.8rem' }}>Item</th>
+                  <th style={{ padding: '0.6rem 0.8rem' }}>Rarity</th>
+                  <th style={{ padding: '0.6rem 0.8rem' }}>Value</th>
+                  <th style={{ padding: '0.6rem 0.8rem' }}>Demand</th>
+                  <th style={{ padding: '0.6rem 0.8rem', textAlign: 'right' }}>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {paginatedPets.map((p) => (
+                  <tr key={p.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
+                    <td style={{ padding: '0.6rem 0.8rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <PetAvatar name={p.name} rarity={p.rarity} image={p.image} size={30} />
+                        <span style={{ fontWeight: 800, color: '#fff' }}>{p.name}</span>
+                      </div>
+                    </td>
+                    <td style={{ padding: '0.6rem 0.8rem' }}>
+                      <span className={`rarity-badge rarity-${p.rarity.toLowerCase()}`} style={{ fontSize: '0.7rem', padding: '2px 6px' }}>
+                        {p.rarity}
+                      </span>
+                    </td>
+                    <td style={{ padding: '0.6rem 0.8rem', fontWeight: 800, color: '#ffcc00' }}>
+                      {editingId === p.id ? (
+                        <input
+                          type="number"
+                          value={editValues.baseValue || ''}
+                          onChange={(e) => setEditValues({ ...editValues, baseValue: Number(e.target.value) })}
+                          style={{ width: '80px', background: '#000', color: '#fff', border: '1px solid #7c3aed', padding: '2px 4px', borderRadius: '4px' }}
+                        />
+                      ) : (
+                        p.baseValue !== null ? `⚡ ${p.baseValue.toLocaleString()}` : 'N/A'
+                      )}
+                    </td>
+                    <td style={{ padding: '0.6rem 0.8rem', color: '#10b981', fontWeight: 800 }}>
+                      {editingId === p.id ? (
+                        <select
+                          value={editValues.demand || 5}
+                          onChange={(e) => setEditValues({ ...editValues, demand: Number(e.target.value) })}
+                          style={{ background: '#000', color: '#fff', border: '1px solid #7c3aed', padding: '2px' }}
+                        >
+                          {[1,2,3,4,5,6,7,8,9,10,11].map(d => <option key={d} value={d}>{d}</option>)}
+                        </select>
+                      ) : (
+                        `${p.demand || 5} / 11`
+                      )}
+                    </td>
+                    <td style={{ padding: '0.6rem 0.8rem', textAlign: 'right' }}>
+                      {editingId === p.id ? (
+                        <button onClick={() => handleSaveEdit(p.id)} style={{ background: '#10b981', color: '#000', border: 'none', padding: '4px 8px', borderRadius: '6px', fontWeight: 800, cursor: 'pointer' }}>
+                          Save
+                        </button>
+                      ) : (
+                        <div style={{ display: 'flex', gap: '4px', justifyContent: 'flex-end' }}>
+                          <button onClick={() => handleStartEdit(p)} style={{ background: 'none', border: 'none', color: '#a78bfa', cursor: 'pointer', padding: '4px' }}>
+                            <Edit3 size={14} />
+                          </button>
+                          <button onClick={() => handleDeletePet(p.id, p.name)} style={{ background: 'none', border: 'none', color: '#ff1744', cursor: 'pointer', padding: '4px' }}>
+                            <Trash2 size={14} />
+                          </button>
+                        </div>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', marginTop: '1.25rem' }}>
+                <button className="filter-btn" disabled={page === 1} onClick={() => setPage((p) => Math.max(1, p - 1))}>
+                  <ChevronLeft size={14} /> Prev
+                </button>
+                <span style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
+                  Page <strong>{page}</strong> of <strong>{totalPages}</strong>
+                </span>
+                <button className="filter-btn" disabled={page === totalPages} onClick={() => setPage((p) => Math.min(totalPages, p + 1))}>
+                  Next <ChevronRight size={14} />
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

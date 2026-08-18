@@ -191,6 +191,15 @@ app.post('/api/auth/login', async (req, res) => {
       return res.status(401).json({ success: false, error: 'Invalid Username or Password.' });
     }
 
+    if (user.status === 'banned') {
+      return res.status(403).json({ success: false, error: 'This account is suspended/banned by an administrator.' });
+    }
+
+    // Update last login timestamp and status to active
+    user.lastLogin = new Date().toISOString();
+    user.status = 'active';
+    await saveData(USERS_FILE, users);
+
     res.json({
       success: true,
       user: {
@@ -200,10 +209,163 @@ app.post('/api/auth/login', async (req, res) => {
         discord: user.discord,
         role: user.role,
         rank: user.rank || 'Verified Trader',
+        status: user.status || 'active',
         isVerified: true,
         badge: user.role === 'owner' ? '👑 Owner' : user.role === 'mod' ? '🛡️ Staff Mod' : 'Verified Trader ✓',
       },
     });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Verify user session status (banned/kicked check)
+app.get('/api/auth/verify', async (req, res) => {
+  try {
+    const { id } = req.query;
+    if (!id) return res.json({ success: true, status: 'active' });
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+    if (!user) return res.json({ success: true, status: 'active' });
+
+    if (user.status === 'banned') {
+      return res.status(403).json({ success: false, status: 'banned', error: 'You have been suspended by an administrator.' });
+    }
+    if (user.status === 'kicked') {
+      user.status = 'active';
+      await saveData(USERS_FILE, users);
+      return res.status(401).json({ success: false, status: 'kicked', error: 'You were kicked from the active session.' });
+    }
+    res.json({ success: true, status: user.status || 'active', role: user.role });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// ---------------- ADMIN USER MODERATION API ----------------
+app.get('/api/admin/users', async (req, res) => {
+  try {
+    const users = await getData(USERS_FILE);
+    const listings = await getData(LISTINGS_FILE);
+
+    // Calculate listing counts per user
+    const formatted = users.map((u) => {
+      const userListings = listings.filter((l) => l.seller?.username === u.username || l.userId === u.id);
+      return {
+        id: u.id,
+        username: u.username,
+        robloxUsername: u.robloxUsername,
+        discord: u.discord || 'None',
+        role: u.role || 'member',
+        rank: u.rank || 'Verified Trader',
+        status: u.status || 'active',
+        createdAt: u.createdAt || new Date().toISOString(),
+        lastLogin: u.lastLogin || u.createdAt || 'Never',
+        listingsCount: userListings.length,
+      };
+    });
+
+    res.json({ success: true, users: formatted });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Ban User
+app.post('/api/admin/users/:id/ban', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+    if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    user.status = 'banned';
+    user.bannedAt = new Date().toISOString();
+    await saveData(USERS_FILE, users);
+
+    // Delete active trade listings for this banned user
+    const listings = await getData(LISTINGS_FILE);
+    const filteredListings = listings.filter((l) => l.seller?.username !== user.username && l.userId !== user.id);
+    await saveData(LISTINGS_FILE, filteredListings);
+
+    res.json({ success: true, message: `User @${user.username} has been banned and their listings removed.` });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Unban User
+app.post('/api/admin/users/:id/unban', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+    if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    user.status = 'active';
+    delete user.bannedAt;
+    await saveData(USERS_FILE, users);
+
+    res.json({ success: true, message: `User @${user.username} has been unbanned.` });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Kick User (Force Logout)
+app.post('/api/admin/users/:id/kick', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+    if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    user.status = 'kicked';
+    user.kickedAt = new Date().toISOString();
+    await saveData(USERS_FILE, users);
+
+    res.json({ success: true, message: `User @${user.username} has been kicked from their active session.` });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Update Role (Promote/Demote)
+app.put('/api/admin/users/:id/role', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { role, rank } = req.body;
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+    if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    user.role = role || user.role;
+    user.rank = rank || (role === 'owner' ? 'Owner & Lead Dev' : role === 'mod' ? 'Head Moderator' : 'Verified Trader');
+    await saveData(USERS_FILE, users);
+
+    res.json({ success: true, message: `User @${user.username} updated to ${user.role} (${user.rank}).` });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Delete User
+app.delete('/api/admin/users/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+    if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    const updatedUsers = users.filter((u) => u.id !== id);
+    await saveData(USERS_FILE, updatedUsers);
+
+    // Delete listings
+    const listings = await getData(LISTINGS_FILE);
+    const filteredListings = listings.filter((l) => l.seller?.username !== user.username && l.userId !== user.id);
+    await saveData(LISTINGS_FILE, filteredListings);
+
+    res.json({ success: true, message: `User @${user.username} was permanently deleted.` });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }

@@ -67,8 +67,32 @@ export default function App() {
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.removeItem('bgs_user');
-    showToast('Logged out.');
+    if (activeTab === 'admin') {
+      setActiveTab('values');
+    }
+    showToast('Logged out. Staff session locked.');
   };
+
+  // Real-time verification of user status (kick/ban enforcement)
+  useEffect(() => {
+    if (!currentUser || !currentUser.id || currentUser.id.startsWith('user_owner')) return;
+    const verifySession = async () => {
+      try {
+        const res = await fetch(`/api/auth/verify?id=${currentUser.id}`);
+        if (res.ok) {
+          const data = await res.json();
+          if (!data.success) {
+            setCurrentUser(null);
+            localStorage.removeItem('bgs_user');
+            if (activeTab === 'admin') setActiveTab('values');
+            showToast(data.error || 'Your session has ended.');
+          }
+        }
+      } catch (e) {}
+    };
+    const interval = setInterval(verifySession, 10000);
+    return () => clearInterval(interval);
+  }, [currentUser, activeTab]);
 
   const fetchPets = async () => {
     try {
@@ -230,7 +254,13 @@ export default function App() {
         )}
         {activeTab === 'guides' && <Guides />}
         {activeTab === 'admin' && (
-          <AdminPanel pets={pets} currentUser={currentUser} onRefreshPets={fetchPets} />
+          <AdminPanel
+            pets={pets}
+            currentUser={currentUser}
+            onRefreshPets={fetchPets}
+            onOpenLogin={() => setIsLoginOpen(true)}
+            onBackToValues={() => setActiveTab('values')}
+          />
         )}
       </main>
 
