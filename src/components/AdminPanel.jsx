@@ -195,6 +195,7 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
       baseValue: '',
       shinyValue: '',
       mythicValue: '',
+      shinyMythicValue: '',
       demand: 5,
       status: 'Stable',
       image: '',
@@ -233,7 +234,8 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
       category: item.category || (isHat ? 'Hats' : `${item.rarity} Pets`),
       baseValue: item.baseValue !== null && item.baseValue !== undefined ? String(item.baseValue) : '',
       shinyValue: item.customValues?.shiny ? String(item.customValues.shiny) : '',
-      mythicValue: item.customValues?.mythic ? String(item.customValues.mythic) : '',
+      mythicValue: item.customValues?.mythic ? String(item.customValues.mythic) : item.mythicValue ? String(item.mythicValue) : '',
+      shinyMythicValue: item.customValues?.shinyMythic ? String(item.customValues.shinyMythic) : item.shinyMythicValue ? String(item.shinyMythicValue) : '',
       demand: item.demand !== undefined ? item.demand : 5,
       status: item.status || 'Stable',
       image: item.image || '',
@@ -312,10 +314,11 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
         existence,
       };
 
-      if (itemForm.shinyValue || itemForm.mythicValue) {
+      if (itemForm.shinyValue || itemForm.mythicValue || itemForm.shinyMythicValue) {
         payload.customValues = {
           shiny: itemForm.shinyValue ? Number(itemForm.shinyValue) : null,
           mythic: itemForm.mythicValue ? Number(itemForm.mythicValue) : null,
+          shinyMythic: itemForm.shinyMythicValue ? Number(itemForm.shinyMythicValue) : null,
         };
       }
 
@@ -1946,12 +1949,34 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>Custom Shiny Value (⚡)</label>
+                    <label style={{ fontSize: '0.75rem', color: '#ffcc00', fontWeight: 700 }}>✨ Custom Shiny Value (⚡)</label>
                     <input
                       type="number"
                       placeholder="Auto (2.5x)"
                       value={itemForm.shinyValue}
                       onChange={(e) => setItemForm({ ...itemForm, shinyValue: e.target.value })}
+                      style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontSize: '0.75rem', color: '#00e5ff', fontWeight: 700 }}>⚡ Custom Mythic Value (⚡)</label>
+                    <input
+                      type="number"
+                      placeholder="Auto (10x)"
+                      value={itemForm.mythicValue}
+                      onChange={(e) => setItemForm({ ...itemForm, mythicValue: e.target.value })}
+                      style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontSize: '0.75rem', color: '#ff007f', fontWeight: 700 }}>✨⚡ Custom S.Myth Value (⚡)</label>
+                    <input
+                      type="number"
+                      placeholder="Auto (25x)"
+                      value={itemForm.shinyMythicValue}
+                      onChange={(e) => setItemForm({ ...itemForm, shinyMythicValue: e.target.value })}
                       style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
                     />
                   </div>
@@ -2109,12 +2134,34 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>✨ Shiny Hatched Exist</label>
+                    <label style={{ fontSize: '0.75rem', color: '#ffcc00', fontWeight: 700 }}>✨ Shiny Hatched Exist</label>
                     <input
                       type="text"
                       placeholder="e.g. 5"
                       value={itemForm.existShiny}
                       onChange={(e) => setItemForm({ ...itemForm, existShiny: e.target.value })}
+                      style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontSize: '0.75rem', color: '#00e5ff', fontWeight: 700 }}>⚡ Mythic Hatched Exist</label>
+                    <input
+                      type="text"
+                      placeholder="e.g. 10"
+                      value={itemForm.existMythic}
+                      onChange={(e) => setItemForm({ ...itemForm, existMythic: e.target.value })}
+                      style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontSize: '0.75rem', color: '#ff007f', fontWeight: 700 }}>✨⚡ Shiny Mythic Exist</label>
+                    <input
+                      type="text"
+                      placeholder="e.g. 1"
+                      value={itemForm.existShinyMythic}
+                      onChange={(e) => setItemForm({ ...itemForm, existShinyMythic: e.target.value })}
                       style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
                     />
                   </div>
