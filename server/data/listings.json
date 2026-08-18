@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "id": "list_1787041071896",
+    "traderName": "Owner_Admin",
+    "robloxUsername": "COOINGBEN123456",
+    "discord": "Scab#0001",
+    "email": "",
+    "picture": "",
+    "type": "sell",
+    "offering": [
+      {
+        "name": "Axolotl Plushie",
+        "value": 25,
+        "demand": 5,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c0/Mythic_Axolotl_Plushie.png/revision/latest?cb=20200731212020",
+        "rarity": "Legendary"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "BGS Plaque",
+        "value": 70,
+        "demand": 3,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Mythic_BGS_Plaque.png/revision/latest?cb=20201023232005",
+        "rarity": "Secret"
+      }
+    ],
+    "isVerified": true,
+    "createdAt": "2026-08-18T08:17:51.896Z"
+  }
+]

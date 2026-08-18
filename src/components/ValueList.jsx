@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Search, Sparkles, TrendingUp, Star, PlusCircle, Filter, Edit3, Save, ChevronLeft, ChevronRight, ArrowUpDown, HardHat, SlidersHorizontal, Info, Shuffle } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 import PetDetailsModal from './PetDetailsModal';
+import { getDemandInfo, getTrendInfo } from '../utils/demandSystem';
 
 const PETS_PER_PAGE = 100;
 
@@ -374,13 +375,39 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Trend</span>
-                    <span className={getTrendColor(item.status)}>{item.status}</span>
+                    {(() => {
+                      const t = getTrendInfo(item.status);
+                      return (
+                        <span style={{ fontWeight: 800, color: t.color, display: 'flex', alignItems: 'center', gap: '3px' }}>
+                          <span>{t.symbol}</span> <span>{t.label}</span>
+                        </span>
+                      );
+                    })()}
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Demand</span>
-                    <span style={{ fontWeight: 800, color: getDemandColor(item.demand) }}>
-                      {item.demand !== null && item.demand !== undefined ? `${item.demand}/11` : 'N/A'}
-                    </span>
+                    {(() => {
+                      const d = getDemandInfo(item.demand);
+                      return (
+                        <span
+                          style={{
+                            fontWeight: 800,
+                            color: d.color,
+                            background: d.bg,
+                            border: `1px solid ${d.border}`,
+                            padding: '1px 6px',
+                            borderRadius: '4px',
+                            fontSize: '0.72rem',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                          }}
+                        >
+                          <span>{d.text}</span>
+                          {d.label !== 'N/A' && <span style={{ opacity: 0.9 }}>{d.label}</span>}
+                        </span>
+                      );
+                    })()}
                   </div>
                   {item.existence && (item.existence.normal || item.existence.shiny || item.existence.hats) && (
                     <div className="stat-row">
