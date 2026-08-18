@@ -5,7 +5,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/hellish_egg.png",
+    "image": "/eggs/hellishegg.png",
     "pets": [
       {
         "id": "pet_hellshard",
@@ -182,7 +182,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 275000,
     "costCurrency": "Treats",
-    "image": "/eggs/costume_egg.png",
+    "image": "/eggs/costumeegg.png",
     "pets": [
       {
         "id": "pet_luminance",
@@ -360,7 +360,7 @@
     "location": "Easter 2021 Area",
     "costAmount": 4500000,
     "costCurrency": "Gems",
-    "image": "/eggs/cosmic_egg.png",
+    "image": "/eggs/cosmicegg.png",
     "pets": [
       {
         "id": "pet_easter_robot",
@@ -539,7 +539,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 225000,
     "costCurrency": "Flowers",
-    "image": "/eggs/vine_egg.png",
+    "image": "/eggs/vineegg.png",
     "pets": [
       {
         "id": "pet_shard",
@@ -716,7 +716,7 @@
     "location": "Mystic Forest",
     "costAmount": 185000,
     "costCurrency": "Crystals",
-    "image": "/eggs/mythical_egg.png",
+    "image": "/eggs/mythicalegg.png",
     "pets": [
       {
         "id": "pet_prisma",
@@ -892,7 +892,7 @@
     "location": "Overworld",
     "costAmount": 3000000,
     "costCurrency": "Gems",
-    "image": "/eggs/1b_egg.png",
+    "image": "/eggs/1begg.png",
     "pets": [
       {
         "id": "pet_infinity_gem",
@@ -1054,7 +1054,7 @@
     "location": "Shadow Realm",
     "costAmount": 2500000,
     "costCurrency": "Gems",
-    "image": "/eggs/corrupted_egg.png",
+    "image": "/eggs/corruptedegg.png",
     "pets": [
       {
         "id": "pet_hellfire",
@@ -1217,7 +1217,7 @@
     "location": "Overworld",
     "costAmount": 20000000,
     "costCurrency": "Coins",
-    "image": "/eggs/2020_egg.png",
+    "image": "/eggs/2020egg.png",
     "pets": [
       {
         "id": "pet_firecracker",
@@ -1379,7 +1379,7 @@
     "location": "2020 Easter Event",
     "costAmount": 250000,
     "costCurrency": "Gems",
-    "image": "/eggs/heavenly_egg.png",
+    "image": "/eggs/heavenlyegg.png",
     "pets": [
       {
         "id": "pet_godly_gem",
@@ -1541,7 +1541,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/summer_egg.png",
+    "image": "/eggs/summeregg.png",
     "pets": [
       {
         "id": "pet_lord_shock",
@@ -1697,7 +1697,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 90000,
     "costCurrency": "Bells",
-    "image": "/eggs/blizzard_egg.png",
+    "image": "/eggs/blizzardegg.png",
     "pets": [
       {
         "id": "pet_soulflake",
@@ -1860,7 +1860,7 @@
     "location": "Carnival",
     "costAmount": 250000,
     "costCurrency": "Tokens",
-    "image": "/eggs/stuffed_egg.png",
+    "image": "/eggs/stuffedegg.png",
     "pets": [
       {
         "id": "pet_overlord_plushie",
@@ -2022,7 +2022,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/july_4th_egg.png",
+    "image": "/eggs/july4thegg.png",
     "pets": [
       {
         "id": "pet_patriotic_robot",
@@ -2178,7 +2178,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 185000,
     "costCurrency": "Treats",
-    "image": "/eggs/sinister_egg.png",
+    "image": "/eggs/sinisteregg.png",
     "pets": [
       {
         "id": "pet_sinister_lord_2_0",
@@ -2340,7 +2340,7 @@
     "location": "Overworld",
     "costAmount": 850000,
     "costCurrency": "Gems",
-    "image": "/eggs/vacation_egg.png",
+    "image": "/eggs/vacationegg.png",
     "pets": [
       {
         "id": "pet_candy_hybrid",
@@ -2501,7 +2501,7 @@
     "location": "Christmas Starter Area (2021)",
     "costAmount": 10000,
     "costCurrency": "Snowflakes",
-    "image": "/eggs/candycane_egg.png",
+    "image": "/eggs/candycaneegg.png",
     "pets": [
       {
         "id": "pet_santa_hat",
@@ -2663,7 +2663,7 @@
     "location": "Overworld",
     "costAmount": 50000,
     "costCurrency": "Gems",
-    "image": "/eggs/lunar_egg.png",
+    "image": "/eggs/lunaregg.png",
     "pets": [
       {
         "id": "pet_electra",
@@ -2815,7 +2815,7 @@
     "location": "Shadow Realm",
     "costAmount": 4500000,
     "costCurrency": "Gems",
-    "image": "/eggs/golf_egg.png",
+    "image": "/eggs/golfegg.png",
     "pets": [
       {
         "id": "pet_ace",
@@ -2962,7 +2962,7 @@
     "location": "Overworld",
     "costAmount": 450000,
     "costCurrency": "Gems",
-    "image": "/eggs/autumn_egg.png",
+    "image": "/eggs/autumnegg.png",
     "pets": [
       {
         "id": "pet_koi",
@@ -3109,7 +3109,7 @@
     "location": "Overworld",
     "costAmount": 2000000,
     "costCurrency": "Gems",
-    "image": "/eggs/900m_egg.png",
+    "image": "/eggs/900megg.png",
     "pets": [
       {
         "id": "pet_bgs_plaque",
@@ -3255,7 +3255,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 500000,
     "costCurrency": "Bells",
-    "image": "/eggs/christmasy_egg.png",
+    "image": "/eggs/christmasyegg.png",
     "pets": [
       {
         "id": "pet_christmas_robot",
@@ -3403,7 +3403,7 @@
     "location": "Shadow Realm",
     "costAmount": 2500000,
     "costCurrency": "Gems",
-    "image": "/eggs/split_egg.png",
+    "image": "/eggs/splitegg.png",
     "pets": [
       {
         "id": "pet_dice_split",
@@ -3549,7 +3549,7 @@
     "location": "Overworld",
     "costAmount": 100000,
     "costCurrency": "Gems",
-    "image": "/eggs/easter_egg.png",
+    "image": "/eggs/easteregg.png",
     "pets": [
       {
         "id": "pet_easter_basket",
@@ -3690,7 +3690,7 @@
     "location": "Underworld",
     "costAmount": 225000,
     "costCurrency": "Magma",
-    "image": "/eggs/sparkly_egg.png",
+    "image": "/eggs/sparklyegg.png",
     "pets": [
       {
         "id": "pet_fallen_angel",
@@ -3836,7 +3836,7 @@
     "location": "2020 Easter Event",
     "costAmount": 185000,
     "costCurrency": "Gems",
-    "image": "/eggs/bunny_egg.png",
+    "image": "/eggs/bunnyegg.png",
     "pets": [
       {
         "id": "pet_giant_choco_chicken",
@@ -3982,7 +3982,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 185000,
     "costCurrency": "Gifts",
-    "image": "/eggs/tree_egg.png",
+    "image": "/eggs/treeegg.png",
     "pets": [
       {
         "id": "pet_holy_bell",
@@ -4130,7 +4130,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/400m_Egg.png",
+    "image": "/eggs/400megg.png",
     "pets": [
       {
         "id": "pet_kraken",
@@ -4272,7 +4272,7 @@
     "location": "Overworld",
     "costAmount": 225000,
     "costCurrency": "Gems",
-    "image": "/eggs/50th_update_egg.png",
+    "image": "/eggs/50thupdateegg.png",
     "pets": [
       {
         "id": "pet_pyramidium",
@@ -4413,7 +4413,7 @@
     "location": "Overworld",
     "costAmount": 350000,
     "costCurrency": "Gems",
-    "image": "/eggs/nightmare_egg.png",
+    "image": "/eggs/nightmareegg.png",
     "pets": [
       {
         "id": "pet_the_overlord",
@@ -4691,7 +4691,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/valentine_egg.png",
+    "image": "/eggs/valentineegg.png",
     "pets": [
       {
         "id": "pet_valentium",
@@ -4979,7 +4979,7 @@
     "location": "Shadow Realm",
     "costAmount": 1000000,
     "costCurrency": "Gems",
-    "image": "/eggs/core_egg.png",
+    "image": "/eggs/coreegg.png",
     "pets": [
       {
         "id": "pet_galaxium",
@@ -5124,7 +5124,7 @@
     "location": "Mystic Forest",
     "costAmount": 225000,
     "costCurrency": "Crystals",
-    "image": "/eggs/mushroom_egg.png",
+    "image": "/eggs/mushroomegg.png",
     "pets": [
       {
         "id": "pet_demon_snake",
@@ -5269,7 +5269,7 @@
     "location": "Underworld",
     "costAmount": 175000,
     "costCurrency": "Magma",
-    "image": "/eggs/evil_egg.png",
+    "image": "/eggs/evilegg.png",
     "pets": [
       {
         "id": "pet_devil",
@@ -5414,7 +5414,7 @@
     "location": "Carnival",
     "costAmount": 185000,
     "costCurrency": "Tokens",
-    "image": "/eggs/exotic_egg.png",
+    "image": "/eggs/exoticegg.png",
     "pets": [
       {
         "id": "pet_shadow_hunter",
@@ -5560,7 +5560,7 @@
     "location": "St Patrick",
     "costAmount": 300000,
     "costCurrency": "Silver",
-    "image": "/eggs/jackpot_egg.png",
+    "image": "/eggs/jackpotegg.png",
     "pets": [
       {
         "id": "pet_almighty_hexarium",
@@ -5693,7 +5693,7 @@
     "location": "Easter 2021 Area",
     "costAmount": 1250000,
     "costCurrency": "Gems",
-    "image": "/eggs/eastery_egg.png",
+    "image": "/eggs/easteryegg.png",
     "pets": [
       {
         "id": "pet_cardinal_bunny",
@@ -5825,7 +5825,7 @@
     "location": "Mystic Forest",
     "costAmount": 300000,
     "costCurrency": "Crystals",
-    "image": "/eggs/pastel_egg.png",
+    "image": "/eggs/pastelegg.png",
     "pets": [
       {
         "id": "pet_crystal_teddy",
@@ -5956,7 +5956,7 @@
     "location": "Overworld",
     "costAmount": 250000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/600m_Egg.png",
+    "image": "/eggs/600megg.png",
     "pets": [
       {
         "id": "pet_immortal_one",
@@ -6085,7 +6085,7 @@
     "location": "Shadow Realm",
     "costAmount": 2000000,
     "costCurrency": "Gems",
-    "image": "/eggs/royalty_egg.png",
+    "image": "/eggs/royaltyegg.png",
     "pets": [
       {
         "id": "pet_king_kitty",
@@ -6218,7 +6218,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 185000,
     "costCurrency": "Flowers",
-    "image": "/eggs/blossom_egg.png",
+    "image": "/eggs/blossomegg.png",
     "pets": [
       {
         "id": "pet_duality",
@@ -6349,7 +6349,7 @@
     "location": "Easter 2021 Area",
     "costAmount": 550000,
     "costCurrency": "Gems",
-    "image": "/eggs/cracked_egg.png",
+    "image": "/eggs/crackedegg.png",
     "pets": [
       {
         "id": "pet_easter_spirit",
@@ -6480,7 +6480,7 @@
     "location": "St. Patricks 2020 Event",
     "costAmount": 225000,
     "costCurrency": "Rainbows",
-    "image": "/eggs/clover_egg.png",
+    "image": "/eggs/cloveregg.png",
     "pets": [
       {
         "id": "pet_frost_sentinel",
@@ -6612,7 +6612,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/ghost_egg.png",
+    "image": "/eggs/ghostegg.png",
     "pets": [
       {
         "id": "pet_ghosdeeri",
@@ -6744,7 +6744,7 @@
     "location": "Atlantis",
     "costAmount": 200000,
     "costCurrency": "Pearls",
-    "image": "/eggs/coral_egg.png",
+    "image": "/eggs/coralegg.png",
     "pets": [
       {
         "id": "pet_giant_pearl",
@@ -6875,7 +6875,7 @@
     "location": "Atlantis",
     "costAmount": 300000,
     "costCurrency": "Pearls",
-    "image": "/eggs/ancient_egg.png",
+    "image": "/eggs/ancientegg.png",
     "pets": [
       {
         "id": "pet_gryphon",
@@ -7004,7 +7004,7 @@
     "location": "Overworld",
     "costAmount": 2500000,
     "costCurrency": "Gems",
-    "image": "/eggs/heartful_egg.png",
+    "image": "/eggs/heartfulegg.png",
     "pets": [
       {
         "id": "pet_harmonic_harp",
@@ -7136,7 +7136,7 @@
     "location": "Overworld",
     "costAmount": 200000,
     "costCurrency": "Gems",
-    "image": "/eggs/700m_egg.png",
+    "image": "/eggs/700megg.png",
     "pets": [
       {
         "id": "pet_immortal_trophy",
@@ -7264,7 +7264,7 @@
     "location": "St Patrick",
     "costAmount": 1200,
     "costCurrency": "Silver",
-    "image": "/eggs/golden_egg.png",
+    "image": "/eggs/goldenegg.png",
     "pets": [
       {
         "id": "pet_prisma_cube",
@@ -7394,7 +7394,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 175000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/mutant_egg.png",
+    "image": "/eggs/mutantegg.png",
     "pets": [
       {
         "id": "pet_radiance",
@@ -7518,7 +7518,7 @@
     "location": "Overworld",
     "costAmount": 500000,
     "costCurrency": "Gems",
-    "image": "/eggs/800m_egg.png",
+    "image": "/eggs/800megg.png",
     "pets": [
       {
         "id": "pet_radiant_one",
@@ -7651,7 +7651,7 @@
     "location": "Rainbow Land",
     "costAmount": 150000,
     "costCurrency": "Stars",
-    "image": "/eggs/colorful_egg.png",
+    "image": "/eggs/colorfulegg.png",
     "pets": [
       {
         "id": "pet_rainbow_dogcat",
@@ -7782,7 +7782,7 @@
     "location": "St. Patricks 2020 Event",
     "costAmount": 185000,
     "costCurrency": "Rainbows",
-    "image": "/eggs/leprechaun_egg.png",
+    "image": "/eggs/leprechaunegg.png",
     "pets": [
       {
         "id": "pet_robot_2_0",
@@ -7913,7 +7913,7 @@
     "location": "Beach World",
     "costAmount": 275000,
     "costCurrency": "Shells",
-    "image": "/eggs/water_egg.png",
+    "image": "/eggs/wateregg.png",
     "pets": [
       {
         "id": "pet_sea_star",
@@ -8044,7 +8044,7 @@
     "location": "Overworld",
     "costAmount": 3250000,
     "costCurrency": "Gems",
-    "image": "/eggs/lovely_egg.png",
+    "image": "/eggs/lovelyegg.png",
     "pets": [
       {
         "id": "pet_shattered_soul",
@@ -8175,7 +8175,7 @@
     "location": "Mystic Forest",
     "costAmount": 1200,
     "costCurrency": "Lollipops",
-    "image": "/eggs/wisp_egg.png",
+    "image": "/eggs/wispegg.png",
     "pets": [
       {
         "id": "pet_wisplord",
@@ -8306,7 +8306,7 @@
     "location": "Overworld",
     "costAmount": 75000,
     "costCurrency": "Gems",
-    "image": "/eggs/new_year_egg.png",
+    "image": "/eggs/newyearegg.png",
     "pets": [
       {
         "id": "pet_2018_overlord",
@@ -8429,7 +8429,7 @@
     "location": "Underworld",
     "costAmount": 175000,
     "costCurrency": "Magma",
-    "image": "/eggs/dark_egg.png",
+    "image": "/eggs/darkegg.png",
     "pets": [
       {
         "id": "pet_night_dweller",
@@ -8559,7 +8559,7 @@
     "location": "Candy Land",
     "costAmount": 200000,
     "costCurrency": "Candy",
-    "image": "/eggs/slushy_egg.png",
+    "image": "/eggs/slushyegg.png",
     "pets": [
       {
         "id": "pet_rainbow_marshmallow",
@@ -8689,7 +8689,7 @@
     "location": "Rainbow Land",
     "costAmount": 65000,
     "costCurrency": "Stars",
-    "image": "/eggs/orange_egg.png",
+    "image": "/eggs/orangeegg.png",
     "pets": [
       {
         "id": "pet_winged_horse",
@@ -8820,7 +8820,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "/eggs/lucky_egg.png",
+    "image": "/eggs/luckyegg.png",
     "pets": [
       {
         "id": "pet_lucky_overlord",
@@ -8948,7 +8948,7 @@
     "location": "2020 Easter Event",
     "costAmount": 65000,
     "costCurrency": "Gems",
-    "image": "/eggs/basket_egg.png",
+    "image": "/eggs/basketegg.png",
     "pets": [
       {
         "id": "pet_twitter_dominus",
@@ -9079,7 +9079,7 @@
     "location": "Underworld",
     "costAmount": 125000,
     "costCurrency": "Magma",
-    "image": "/eggs/fire_egg.png",
+    "image": "/eggs/fireegg.png",
     "pets": [
       {
         "id": "pet_fire_elemental",
@@ -9209,7 +9209,7 @@
     "location": "Christmas Starter Area (2021)",
     "costAmount": 1000000,
     "costCurrency": "Snowflakes",
-    "image": "/eggs/frosted_egg.png",
+    "image": "/eggs/frostedegg.png",
     "pets": [
       {
         "id": "pet_frosted_duality",
@@ -9341,7 +9341,7 @@
     "location": "Atlantis",
     "costAmount": 65000,
     "costCurrency": "Pearls",
-    "image": "/eggs/ocean_egg.png",
+    "image": "/eggs/oceanegg.png",
     "pets": [
       {
         "id": "pet_ocean_hydra",
@@ -9472,7 +9472,7 @@
     "location": "Beach World",
     "costAmount": 300000,
     "costCurrency": "Shells",
-    "image": "/eggs/crab_egg.png",
+    "image": "/eggs/crabegg.png",
     "pets": [
       {
         "id": "pet_king_crab",
@@ -9602,7 +9602,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 65000,
     "costCurrency": "Treats",
-    "image": "/eggs/candycorn_egg.png",
+    "image": "/eggs/candycornegg.png",
     "pets": [
       {
         "id": "pet_plushies",
@@ -9717,7 +9717,7 @@
     "location": "Shadow Realm",
     "costAmount": 350000,
     "costCurrency": "Gems",
-    "image": "/eggs/fruity_egg.png",
+    "image": "/eggs/fruityegg.png",
     "pets": [
       {
         "id": "pet_dragonfruit",
@@ -9835,7 +9835,7 @@
     "location": "Shadow Realm",
     "costAmount": 1250000,
     "costCurrency": "Gems",
-    "image": "/eggs/element_egg.png",
+    "image": "/eggs/elementegg.png",
     "pets": [
       {
         "id": "pet_galactic_paladin",
@@ -9952,7 +9952,7 @@
     "location": "Halloween Area (2020)",
     "costAmount": 550,
     "costCurrency": "Treats",
-    "image": "/eggs/slime_egg.png",
+    "image": "/eggs/slimeegg.png",
     "pets": [
       {
         "id": "pet_king_slime",
@@ -10068,7 +10068,7 @@
     "location": "Rainbow Land",
     "costAmount": 175000,
     "costCurrency": "Stars",
-    "image": "/eggs/fancy_egg.png",
+    "image": "/eggs/fancyegg.png",
     "pets": [
       {
         "id": "pet_rainbow_leviathan",
@@ -10183,7 +10183,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 160000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/skelly_egg.png",
+    "image": "/eggs/skellyegg.png",
     "pets": [
       {
         "id": "pet_sinister_lord",
@@ -10294,7 +10294,7 @@
     "location": "Candy Land",
     "costAmount": 325000,
     "costCurrency": "Candy",
-    "image": "/eggs/dominus_egg.png",
+    "image": "/eggs/dominusegg.png",
     "pets": [
       {
         "id": "pet_the_owolord",
@@ -10410,7 +10410,7 @@
     "location": "Overworld",
     "costAmount": 200000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/300m_Egg.png",
+    "image": "/eggs/300megg.png",
     "pets": [
       {
         "id": "pet_trophy",
@@ -10521,7 +10521,7 @@
     "location": "Overworld",
     "costAmount": 175000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/500m_Egg.png",
+    "image": "/eggs/500megg.png",
     "pets": [
       {
         "id": "pet_ultimate_trophy",
@@ -10634,7 +10634,7 @@
     "location": "Beach World",
     "costAmount": 150000,
     "costCurrency": "Shells",
-    "image": "/eggs/beach_egg.png",
+    "image": "/eggs/beachegg.png",
     "pets": [
       {
         "id": "pet_beach_hydra",
@@ -10749,7 +10749,7 @@
     "location": "Toy Land",
     "costAmount": 75000,
     "costCurrency": "Blocks",
-    "image": "/eggs/block_egg.png",
+    "image": "/eggs/blockegg.png",
     "pets": [
       {
         "id": "pet_brick_stack",
@@ -10865,7 +10865,7 @@
     "location": "Overworld",
     "costAmount": 200000,
     "costCurrency": "Gems",
-    "image": "/eggs/void_shard_egg.png",
+    "image": "/eggs/voidshardegg.png",
     "pets": [
       {
         "id": "pet_dark_phoenix",
@@ -10973,7 +10973,7 @@
     "location": "Overworld",
     "costAmount": 17500,
     "costCurrency": "Gems",
-    "image": "/eggs/crystal_egg.png",
+    "image": "/eggs/crystalegg.png",
     "pets": [
       {
         "id": "pet_flying_pig",
@@ -11082,7 +11082,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 65000,
     "costCurrency": "Gifts",
-    "image": "/eggs/gift_egg.png",
+    "image": "/eggs/giftegg.png",
     "pets": [
       {
         "id": "pet_frost_serpent",
@@ -11197,7 +11197,7 @@
     "location": "Overworld",
     "costAmount": 650000,
     "costCurrency": "Gems",
-    "image": "/eggs/rainbow_egg.png",
+    "image": "/eggs/rainbowegg.png",
     "pets": [
       {
         "id": "pet_rainbow_shock",
@@ -11305,7 +11305,7 @@
     "location": "Toy Land",
     "costAmount": 250000,
     "costCurrency": "Blocks",
-    "image": "/eggs/bee_egg.png",
+    "image": "/eggs/beeegg.png",
     "pets": [
       {
         "id": "pet_queen_bee",
@@ -11420,7 +11420,7 @@
     "location": "St Patrick",
     "costAmount": 125000,
     "costCurrency": "Silver",
-    "image": "/eggs/st__patricks_egg.png",
+    "image": "/eggs/stpatricksegg.png",
     "pets": [
       {
         "id": "pet_lucky_horseshoe",
@@ -11536,7 +11536,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 125000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/christmas_egg.png",
+    "image": "/eggs/christmasegg.png",
     "pets": [
       {
         "id": "pet_minty_hydra",
@@ -11646,7 +11646,7 @@
     "location": "Shadow Realm",
     "costAmount": 5000000,
     "costCurrency": "Gems",
-    "image": "/eggs/shadow_egg.png",
+    "image": "/eggs/shadowegg.png",
     "pets": [
       {
         "id": "pet_shadow_imp",
@@ -11761,7 +11761,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 300000,
     "costCurrency": "Bells",
-    "image": "/eggs/holly_egg.png",
+    "image": "/eggs/hollyegg.png",
     "pets": [
       {
         "id": "pet_archangel",
@@ -11862,7 +11862,7 @@
     "location": "Candy Land",
     "costAmount": 300000,
     "costCurrency": "Candy",
-    "image": "/eggs/jelly_egg.png",
+    "image": "/eggs/jellyegg.png",
     "pets": [
       {
         "id": "pet_dogcat",
@@ -11962,7 +11962,7 @@
     "location": "Christmas 2020 Event",
     "costAmount": 2000,
     "costCurrency": "Bells",
-    "image": "/eggs/gingerbread_egg.png",
+    "image": "/eggs/gingerbreadegg.png",
     "pets": [
       {
         "id": "pet_gingerbread_shard",
@@ -12063,7 +12063,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 350000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/frost_egg.png",
+    "image": "/eggs/frostegg.png",
     "pets": [
       {
         "id": "pet_leviathan",
@@ -12159,7 +12159,7 @@
     "location": "Atlantis",
     "costAmount": 150000,
     "costCurrency": "Pearls",
-    "image": "/eggs/darkness_egg.png",
+    "image": "/eggs/darknessegg.png",
     "pets": [
       {
         "id": "pet_dark_jellyfish",
@@ -12259,7 +12259,7 @@
     "location": "Beach World",
     "costAmount": 200000,
     "costCurrency": "Shells",
-    "image": "/eggs/balloon_egg.png",
+    "image": "/eggs/balloonegg.png",
     "pets": [
       {
         "id": "pet_balloon_phoenix",
@@ -12359,7 +12359,7 @@
     "location": "Circus Event",
     "costAmount": 185000,
     "costCurrency": "Tickets",
-    "image": "/eggs/magic_egg.png",
+    "image": "/eggs/magicegg.png",
     "pets": [
       {
         "id": "pet_dark_omen",
@@ -12460,7 +12460,7 @@
     "location": "Beach World",
     "costAmount": 65000,
     "costCurrency": "Shells",
-    "image": "/eggs/sand_egg.png",
+    "image": "/eggs/sandegg.png",
     "pets": [
       {
         "id": "pet_octopus",
@@ -12560,7 +12560,7 @@
     "location": "Overworld",
     "costAmount": 250000,
     "costCurrency": "Gems",
-    "image": "/eggs/leaf_egg.png",
+    "image": "/eggs/leafegg.png",
     "pets": [
       {
         "id": "pet_crystal_acorn",
@@ -12660,7 +12660,7 @@
     "location": "Heaven",
     "costAmount": 300000,
     "costCurrency": "Halos",
-    "image": "/eggs/demonic_egg.png",
+    "image": "/eggs/demonicegg.png",
     "pets": [
       {
         "id": "pet_demonic_crawler",
@@ -12760,7 +12760,7 @@
     "location": "Toy Land",
     "costAmount": 175000,
     "costCurrency": "Blocks",
-    "image": "/eggs/toy_egg.png",
+    "image": "/eggs/toyegg.png",
     "pets": [
       {
         "id": "pet_penguin",
@@ -12860,7 +12860,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 250000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/hot_cocoa_egg.png",
+    "image": "/eggs/hotcocoaegg.png",
     "pets": [
       {
         "id": "pet_gold_marshmallow",
@@ -12957,7 +12957,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 65000,
     "costCurrency": "Flowers",
-    "image": "/eggs/flower_egg.png",
+    "image": "/eggs/floweregg.png",
     "pets": [
       {
         "id": "pet_flower_queen",
@@ -13058,7 +13058,7 @@
     "location": "Circus Event",
     "costAmount": 65000,
     "costCurrency": "Tickets",
-    "image": "/eggs/cannon_egg.png",
+    "image": "/eggs/cannonegg.png",
     "pets": [
       {
         "id": "pet_golden_balloon",
@@ -13158,7 +13158,7 @@
     "location": "Overworld",
     "costAmount": 2000,
     "costCurrency": "Gems",
-    "image": "/eggs/magma_egg.png",
+    "image": "/eggs/magmaegg.png",
     "pets": [
       {
         "id": "pet_inferno_dragon",
@@ -13252,7 +13252,7 @@
     "location": "Candy Land",
     "costAmount": 75000,
     "costCurrency": "Candy",
-    "image": "/eggs/gummy_egg.png",
+    "image": "/eggs/gummyegg.png",
     "pets": [
       {
         "id": "pet_mutant_bear",
@@ -13352,7 +13352,7 @@
     "location": "Toy Land",
     "costAmount": 200000,
     "costCurrency": "Blocks",
-    "image": "/eggs/rubber_egg.png",
+    "image": "/eggs/rubberegg.png",
     "pets": [
       {
         "id": "pet_pink_ducky",
@@ -13452,7 +13452,7 @@
     "location": "Underworld",
     "costAmount": 65000,
     "costCurrency": "Magma",
-    "image": "/eggs/obsidian_egg.png",
+    "image": "/eggs/obsidianegg.png",
     "pets": [
       {
         "id": "pet_obsidian_serpent",
@@ -13552,7 +13552,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 200000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/globe_egg.png",
+    "image": "/eggs/globeegg.png",
     "pets": [
       {
         "id": "pet_winter_phoenix",
@@ -13648,7 +13648,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 375,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/snowman_egg.png",
+    "image": "/eggs/snowmanegg.png",
     "pets": [
       {
         "id": "pet_christmas_bull",
@@ -13742,7 +13742,7 @@
     "location": "Overworld",
     "costAmount": 100000,
     "costCurrency": "Gems",
-    "image": "/eggs/100k_egg.png",
+    "image": "/eggs/100kegg.png",
     "pets": [
       {
         "id": "pet_silver_bat",
@@ -13836,7 +13836,7 @@
     "location": "Overworld",
     "costAmount": 150,
     "costCurrency": "Coins",
-    "image": "/eggs/common_egg.png",
+    "image": "/eggs/commonegg.png",
     "pets": [
       {
         "id": "pet_king_doggy",
@@ -13918,7 +13918,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Egg_O.png",
+    "image": "/eggs/eggo.png",
     "pets": [
       {
         "id": "pet_doggy_pile",
@@ -14003,7 +14003,7 @@
     "location": "Overworld",
     "costAmount": 35000,
     "costCurrency": "Coins",
-    "image": "/eggs/spikey_egg.png",
+    "image": "/eggs/spikeyegg.png",
     "pets": [
       {
         "id": "pet_emerald_golem",
@@ -14083,7 +14083,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/spirit_egg.png",
+    "image": "/eggs/spiritegg.png",
     "pets": [
       {
         "id": "pet_essence_dragon",
@@ -14168,7 +14168,7 @@
     "location": "Christmas 2018 Event",
     "costAmount": 65000,
     "costCurrency": "Candy Canes",
-    "image": "/eggs/festive_egg.png",
+    "image": "/eggs/festiveegg.png",
     "pets": [
       {
         "id": "pet_festive_serpent",
@@ -14249,7 +14249,7 @@
     "location": "Overworld",
     "costAmount": 300000,
     "costCurrency": "Gems",
-    "image": "/eggs/hell_egg.png",
+    "image": "/eggs/hellegg.png",
     "pets": [
       {
         "id": "pet_virus",
@@ -14329,7 +14329,7 @@
     "location": "Carnival",
     "costAmount": 65000,
     "costCurrency": "Tokens",
-    "image": "/eggs/sugar_egg.png",
+    "image": "/eggs/sugaregg.png",
     "pets": [
       {
         "id": "pet_sugar_heart",
@@ -14414,7 +14414,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 135000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/twilight_egg.png",
+    "image": "/eggs/twilightegg.png",
     "pets": [
       {
         "id": "pet_twilight_serpent",
@@ -14494,7 +14494,7 @@
     "location": "Overworld",
     "costAmount": 250,
     "costCurrency": "Gems",
-    "image": "/eggs/ice_shard_egg.png",
+    "image": "/eggs/iceshardegg.png",
     "pets": [
       {
         "id": "pet_piggy",
@@ -14574,7 +14574,7 @@
     "location": "Overworld",
     "costAmount": 200,
     "costCurrency": "Coins",
-    "image": "/eggs/spotted_egg.png",
+    "image": "/eggs/spottedegg.png",
     "pets": [
       {
         "id": "pet_polar_bear",
@@ -14654,7 +14654,7 @@
     "location": "Underworld",
     "costAmount": 450,
     "costCurrency": "Magma",
-    "image": "/eggs/stone_egg.png",
+    "image": "/eggs/stoneegg.png",
     "pets": [
       {
         "id": "pet_stone_bear",
@@ -14739,7 +14739,7 @@
     "location": "Toy Land",
     "costAmount": 425,
     "costCurrency": "Blocks",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Wind-up_Egg.png",
+    "image": "/eggs/windupegg.png",
     "pets": [
       {
         "id": "pet_wind_up_bear",
@@ -14824,7 +14824,7 @@
     "location": "Heaven",
     "costAmount": 225000,
     "costCurrency": "Halos",
-    "image": "/eggs/wispful_egg.png",
+    "image": "/eggs/wispfulegg.png",
     "pets": [
       {
         "id": "pet_wispful_unicorn",
@@ -14909,7 +14909,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 100000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/halloween_egg.png",
+    "image": "/eggs/halloweenegg.png",
     "pets": [
       {
         "id": "pet_evil_snowman",
@@ -14989,7 +14989,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 550,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/chocolate_egg.png",
+    "image": "/eggs/chocolateegg.png",
     "pets": [
       {
         "id": "pet_sundae_champions",
@@ -15056,7 +15056,7 @@
     "location": "Heaven",
     "costAmount": 45000,
     "costCurrency": "Halos",
-    "image": "/eggs/halo_egg.png",
+    "image": "/eggs/haloegg.png",
     "pets": [
       {
         "id": "pet_holy_hydra",
@@ -15126,7 +15126,7 @@
     "location": "Atlantis",
     "costAmount": 450,
     "costCurrency": "Pearls",
-    "image": "/eggs/kelp_egg.png",
+    "image": "/eggs/kelpegg.png",
     "pets": [
       {
         "id": "pet_king_soul",
@@ -15197,7 +15197,7 @@
     "location": "Candy Land",
     "costAmount": 400,
     "costCurrency": "Candy",
-    "image": "/eggs/ice_cream_egg.png",
+    "image": "/eggs/icecreamegg.png",
     "pets": [
       {
         "id": "pet_magma_hybrid",
@@ -15267,7 +15267,7 @@
     "location": "Alien Invasion Starter Area",
     "costAmount": 40000,
     "costCurrency": "Alien Coins",
-    "image": "/eggs/alien_egg.png",
+    "image": "/eggs/alienegg.png",
     "pets": [
       {
         "id": "pet_alien_bee",
@@ -15333,7 +15333,7 @@
     "location": "Heaven",
     "costAmount": 550,
     "costCurrency": "Halos",
-    "image": "/eggs/heaven_egg.png",
+    "image": "/eggs/heavenegg.png",
     "pets": [
       {
         "id": "pet_angel_panda",
@@ -15403,7 +15403,7 @@
     "location": "Circus Event",
     "costAmount": 550,
     "costCurrency": "Tickets",
-    "image": "/eggs/clown_egg.png",
+    "image": "/eggs/clownegg.png",
     "pets": [
       {
         "id": "pet_clown_bunny",
@@ -15473,7 +15473,7 @@
     "location": "Spring 2020 Event",
     "costAmount": 550,
     "costCurrency": "Flowers",
-    "image": "/eggs/earth_egg.png",
+    "image": "/eggs/earthegg.png",
     "pets": [
       {
         "id": "pet_grasshopper",
@@ -15543,7 +15543,7 @@
     "location": "St. Patricks 2020 Event",
     "costAmount": 550,
     "costCurrency": "Rainbows",
-    "image": "/eggs/shamrock_egg.png",
+    "image": "/eggs/shamrockegg.png",
     "pets": [
       {
         "id": "pet_lucky_bear",
@@ -15613,7 +15613,7 @@
     "location": "Beach World",
     "costAmount": 450,
     "costCurrency": "Shells",
-    "image": "/eggs/coconut_egg.png",
+    "image": "/eggs/coconutegg.png",
     "pets": [
       {
         "id": "pet_palm_deer",
@@ -15683,7 +15683,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 40000,
     "costCurrency": "Candy Corn",
-    "image": "/eggs/pumpkin_egg.png",
+    "image": "/eggs/pumpkinegg.png",
     "pets": [
       {
         "id": "pet_pumpkin_bear",
@@ -15749,7 +15749,7 @@
     "location": "Rainbow Land",
     "costAmount": 450,
     "costCurrency": "Stars",
-    "image": "/eggs/red_egg.png",
+    "image": "/eggs/redegg.png",
     "pets": [
       {
         "id": "pet_red_angel",
@@ -15819,7 +15819,7 @@
     "location": "2020 Easter Event",
     "costAmount": 550,
     "costCurrency": "Gems",
-    "image": "/eggs/painted_egg.png",
+    "image": "/eggs/paintedegg.png",
     "pets": [
       {
         "id": "pet_basilisks",
@@ -15874,7 +15874,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 550,
     "costCurrency": "Gifts",
-    "image": "/eggs/candy_egg.png",
+    "image": "/eggs/candyegg.png",
     "pets": [
       {
         "id": "pet_gummy_winged_hydra",
@@ -15930,7 +15930,7 @@
     "location": "Mystic Forest",
     "costAmount": 550,
     "costCurrency": "Crystals",
-    "image": "/eggs/mossy_egg.png",
+    "image": "/eggs/mossyegg.png",
     "pets": [
       {
         "id": "pet_mossy_wolf",
@@ -15985,7 +15985,7 @@
     "location": "Alien Invasion Starter Area",
     "costAmount": 1500,
     "costCurrency": "Alien Coins",
-    "image": "/eggs/space_crystal_egg.png",
+    "image": "/eggs/spacecrystalegg.png",
     "pets": [
       {
         "id": "pet_space_crystal_panda",
@@ -16037,7 +16037,7 @@
     "location": "Carnival",
     "costAmount": 550,
     "costCurrency": "Tokens",
-    "image": "/eggs/popcorn_egg.png",
+    "image": "/eggs/popcornegg.png",
     "pets": [
       {
         "id": "pet_popcorn_kernel",
@@ -16092,7 +16092,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/holy_egg.png",
+    "image": "/eggs/holyegg.png",
     "pets": [
       {
         "id": "pet_holy_egg",
@@ -16113,7 +16113,7 @@
     "location": "Event / Overworld",
     "costAmount": 0,
     "costCurrency": "Coins",
-    "image": "/eggs/uncommon_egg.png",
+    "image": "/eggs/uncommonegg.png",
     "pets": [
       {
         "id": "pet_uncommon_egg",
