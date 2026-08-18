@@ -7,6 +7,8 @@ import { getDemandInfo, getTrendInfo } from '../utils/demandSystem';
 
 export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) {
   const [selectedVariant, setSelectedVariant] = useState('Normal');
+  const [level, setLevel] = useState(1);
+  const [enchant, setEnchant] = useState(0);
 
   if (!isOpen || !pet) return null;
 
@@ -14,8 +16,30 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
   const hasValue = typeof pet.baseValue === 'number' && !isNaN(pet.baseValue) && pet.baseValue > 0;
   const currentVal = getPetVariantValue(pet, selectedVariant);
 
-  // Variant stat multiplier for in-game stats according to BGS Wiki: Normal: 1x, Shiny: 2x, Mythic: 1.5x, ShinyMythic: 3x
-  const statMultiplier = selectedVariant === 'Shiny' ? 2 : selectedVariant === 'Mythic' ? 1.5 : (selectedVariant === 'ShinyMythic' || selectedVariant === 'S.Myth') ? 3 : 1;
+  // ━━━━ OFFICIAL BUBBLE GUM SIMULATOR WIKI FORMULA ━━━━
+  const BGS_WIKI_CONFIG = {
+    minLevel: 1,
+    maxLevel: 25,
+    minEnchant: 0,
+    maxEnchant: 40,
+    maxShadowEnchant: 50,
+    maxLevelEffect: 2.0,
+    maxShadowEnchantEffect: 2.0,
+  };
+
+  const calculateWikiStat = (baseStat, variant, lvl, enc) => {
+    if (typeof baseStat !== 'number' || isNaN(baseStat)) return baseStat;
+    const variantMultiplier = variant === 'Shiny' ? 2 : variant === 'Mythic' ? 1.5 : (variant === 'ShinyMythic' || variant === 'S.Myth') ? 3 : 1;
+    let val = baseStat * variantMultiplier;
+
+    const clampedLvl = Math.min(25, Math.max(1, Number(lvl) || 1));
+    val = val + (val * BGS_WIKI_CONFIG.maxLevelEffect - val) * (clampedLvl - BGS_WIKI_CONFIG.minLevel) / (BGS_WIKI_CONFIG.maxLevel - BGS_WIKI_CONFIG.minLevel);
+
+    const clampedEnc = Math.min(50, Math.max(0, Number(enc) || 0));
+    val = val + (val * BGS_WIKI_CONFIG.maxShadowEnchantEffect - val) * (clampedEnc - BGS_WIKI_CONFIG.minEnchant) / (BGS_WIKI_CONFIG.maxShadowEnchant - BGS_WIKI_CONFIG.minEnchant);
+
+    return Math.round(val);
+  };
 
   const buffs = pet.stats?.buffs || {};
   const eggName = pet.stats?.egg || (pet.description?.includes('Egg') ? pet.description.match(/([a-zA-Z0-9\s]+Egg)/)?.[0] : null);
@@ -25,7 +49,7 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
 
   const formatBuff = (key, val) => {
     if (typeof val !== 'number') return val;
-    const multiplied = Math.round(val * statMultiplier);
+    const multiplied = calculateWikiStat(val, selectedVariant, level, enchant);
     if (key === 'Bubbles') return `+${multiplied.toLocaleString()}`;
     return `x${multiplied.toLocaleString()}`;
   };
