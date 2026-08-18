@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Search, Sparkles, TrendingUp, Star, PlusCircle, Filter, Edit3, Save, ChevronLeft, ChevronRight, ArrowUpDown, HardHat, SlidersHorizontal, Info } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, Sparkles, TrendingUp, Star, PlusCircle, Filter, Edit3, Save, ChevronLeft, ChevronRight, ArrowUpDown, HardHat, SlidersHorizontal, Info, Shuffle } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 import PetDetailsModal from './PetDetailsModal';
 
@@ -28,9 +28,7 @@ export function getPetVariantValue(item, variant) {
 }
 
 export function getVariantMultiplier(item, variant) {
-  if (item && item.multipliers && item.multipliers[variant]) {
-    return item.multipliers[variant];
-  }
+  if (item?.type === 'hat' || item?.category === 'Hats') return 1.0;
   switch (variant) {
     case 'Shiny':
       return 2.5;
@@ -48,7 +46,8 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   const [search, setSearch] = useState('');
   const [rarityFilter, setRarityFilter] = useState('All');
   const [typeFilter, setTypeFilter] = useState('All');
-  const [sortOrder, setSortOrder] = useState('highest');
+  const [sortOrder, setSortOrder] = useState('showcase');
+  const [rotationSeed, setRotationSeed] = useState(() => Math.floor(Math.random() * 100000));
   const [selectedVariants, setSelectedVariants] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedPetForModal, setSelectedPetForModal] = useState(null);
@@ -99,23 +98,71 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
     return words.every((w) => normName.includes(w));
   };
 
+  // Simple deterministic hash for session rotation
+  const getRotationScore = (item, seed) => {
+    let hash = 0;
+    const str = `${item.id}_${item.name}_${seed}`;
+    for (let i = 0; i < str.length; i++) {
+      hash = ((hash << 5) - hash) + str.charCodeAt(i);
+      hash |= 0;
+    }
+    return Math.abs(hash % 1000000);
+  };
+
   // Filter & Sort
-  const filteredPets = pets
-    .filter((item) => {
-      const isHat = item.type === 'hat' || item.category === 'Hats';
-      const matchesSearch = matchesSearchTerm(item.name, search);
-      const matchesType = typeFilter === 'All' ? true : typeFilter === 'Hats' ? isHat : !isHat;
-      const matchesRarity = rarityFilter === 'All' ? true : item.rarity === rarityFilter;
-      return matchesSearch && matchesType && matchesRarity;
-    })
-    .sort((a, b) => {
-      const valA = (typeof a.baseValue === 'number' && !isNaN(a.baseValue) && a.baseValue > 0) ? a.baseValue : -1;
-      const valB = (typeof b.baseValue === 'number' && !isNaN(b.baseValue) && b.baseValue > 0) ? b.baseValue : -1;
-      if (sortOrder === 'highest') return valB - valA;
-      if (sortOrder === 'lowest') return (valA === -1 ? 999999999 : valA) - (valB === -1 ? 999999999 : valB);
-      if (sortOrder === 'name') return a.name.localeCompare(b.name);
-      return valB - valA;
-    });
+  const filteredPets = useMemo(() => {
+    return pets
+      .filter((item) => {
+        const isHat = item.type === 'hat' || item.category === 'Hats';
+        const matchesSearch = matchesSearchTerm(item.name, search);
+        const matchesType = typeFilter === 'All' ? true : typeFilter === 'Hats' ? isHat : !isHat;
+        const matchesRarity = rarityFilter === 'All' ? true : item.rarity === rarityFilter;
+        return matchesSearch && matchesType && matchesRarity;
+      })
+      .sort((a, b) => {
+        const valA = (typeof a.baseValue === 'number' && !isNaN(a.baseValue) && a.baseValue > 0) ? a.baseValue : -1;
+        const valB = (typeof b.baseValue === 'number' && !isNaN(b.baseValue) && b.baseValue > 0) ? b.baseValue : -1;
+
+        if (sortOrder === 'showcase') {
+          // Dynamic Showcase Rotation: Group by rarity/tier, then rotate items on every session/shuffle
+          const rarityRank = { Secret: 5, Legendary: 4, Unique: 3, Epic: 2, Rare: 1, Common: 0 };
+          const rankA = rarityRank[a.rarity] || 0;
+          const rankB = rarityRank[b.rarity] || 0;
+          if (rankA !== rankB) return rankB - rankA;
+
+          return getRotationScore(a, rotationSeed) - getRotationScore(b, rotationSeed);
+        }
+
+        if (sortOrder === 'demand') {
+          const demA = typeof a.demand === 'number' ? a.demand : -1;
+          const demB = typeof b.demand === 'number' ? b.demand : -1;
+          if (demA !== demB) return demB - demA;
+          return valB - valA;
+        }
+
+        if (sortOrder === 'secrets') {
+          const isSecA = a.rarity === 'Secret' ? 1 : 0;
+          const isSecB = b.rarity === 'Secret' ? 1 : 0;
+          if (isSecA !== isSecB) return isSecB - isSecA;
+          return valB - valA;
+        }
+
+        if (sortOrder === 'highest') {
+          if (valA !== valB) return valB - valA;
+          return getRotationScore(a, rotationSeed) - getRotationScore(b, rotationSeed);
+        }
+
+        if (sortOrder === 'lowest') {
+          return (valA === -1 ? 999999999 : valA) - (valB === -1 ? 999999999 : valB);
+        }
+
+        if (sortOrder === 'name') {
+          return a.name.localeCompare(b.name);
+        }
+
+        return valB - valA;
+      });
+  }, [pets, search, typeFilter, rarityFilter, sortOrder, rotationSeed]);
 
   // Pagination
   const totalPages = Math.ceil(filteredPets.length / PETS_PER_PAGE);
@@ -126,6 +173,12 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   const handleRarityChange = (val) => { setRarityFilter(val); setCurrentPage(1); };
   const handleTypeChange = (val) => { setTypeFilter(val); setCurrentPage(1); };
   const handleSortChange = (val) => { setSortOrder(val); setCurrentPage(1); };
+
+  const handleShuffleRotation = () => {
+    setRotationSeed(Math.floor(Math.random() * 100000));
+    setSortOrder('showcase');
+    setCurrentPage(1);
+  };
 
   const getPageNumbers = () => {
     const pages = [];
@@ -196,15 +249,36 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
           ))}
         </div>
 
-        {/* SORT DROPDOWN */}
+        {/* ROTATE / SHUFFLE BUTTON & SORT DROPDOWN */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <button
+            className="filter-btn"
+            onClick={handleShuffleRotation}
+            style={{
+              background: sortOrder === 'showcase' ? 'linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(0, 229, 255, 0.2))' : undefined,
+              borderColor: sortOrder === 'showcase' ? '#7c3aed' : undefined,
+              color: '#fff',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              fontWeight: 800,
+              padding: '0.5rem 0.85rem',
+            }}
+            title="Rotate & Shuffle inventory showcase"
+          >
+            <Shuffle size={15} color="#00e5ff" /> Rotate
+          </button>
+
           <select
             className="filter-btn"
             style={{ padding: '0.5rem 0.8rem', fontWeight: 800, color: '#a78bfa' }}
             value={sortOrder}
             onChange={(e) => handleSortChange(e.target.value)}
           >
+            <option value="showcase">🎲 Rotated Showcase</option>
             <option value="highest">⚡ Highest Value</option>
+            <option value="demand">🔥 Most In-Demand</option>
+            <option value="secrets">👑 Secrets First</option>
             <option value="lowest">⚡ Lowest Value</option>
             <option value="name">🔤 Name (A-Z)</option>
           </select>
