@@ -19,6 +19,7 @@ import {
   HeartHandshake,
   Star,
 } from 'lucide-react';
+import DemandSystemChart from './DemandSystemChart';
 
 export default function Guides() {
   const [activeSection, setActiveSection] = useState('about'); // 'about' | 'sources' | 'rules' | 'stsc'
@@ -375,52 +376,57 @@ export default function Guides() {
 
       {/* ━━━━ SECTION 3: STSC & DEMAND GUIDE ━━━━ */}
       {activeSection === 'stsc' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          {/* Card 1: How STSC Works */}
-          <div className="glass-card" style={{ border: '1px solid rgba(0, 229, 255, 0.3)' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-              <Scale size={24} />
-            </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#00e5ff' }}>1. How STSC Works</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', marginBottom: '0.75rem', fontWeight: 600 }}>
-              <strong>STSC</strong> = Secret to Shinies Conversions (The Universal BGS Standard):
-            </p>
-            <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-              <li><strong style={{ color: '#00e5ff' }}>⚡ Secret Value:</strong> Item valuation in Secret Units (e.g. <em>The Overlord = 50</em>, <em>Luminance = 3,000</em>, <em>Soul Heart = 7,000</em>).</li>
-              <li><strong style={{ color: '#ffcc00' }}>⭐ Normal Value:</strong> Valuation in regular Shiny Tier-3s or limiteds.</li>
-              <li><strong style={{ color: '#a78bfa' }}>Ratio:</strong> 1 Secret Unit roughly equals 200 - 250 in Shiny T3 limited value.</li>
-            </ul>
-          </div>
+        <div>
+          {/* Official BGS Demand System Chart Banner */}
+          <DemandSystemChart />
 
-          {/* Card 2: 0 - 11 Demand System */}
-          <div className="glass-card" style={{ border: '1px solid rgba(16, 185, 129, 0.3)' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(16, 185, 129, 0.15)', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-              <TrendingUp size={24} />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+            {/* Card 1: How STSC Works */}
+            <div className="glass-card" style={{ border: '1px solid rgba(0, 229, 255, 0.3)' }}>
+              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                <Scale size={24} />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#00e5ff' }}>1. How STSC Works</h3>
+              <p style={{ color: '#cbd5e1', fontSize: '0.88rem', marginBottom: '0.75rem', fontWeight: 600 }}>
+                <strong>STSC</strong> = Secret to Shinies Conversions (The Universal BGS Standard):
+              </p>
+              <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
+                <li><strong style={{ color: '#00e5ff' }}>⚡ Secret Value:</strong> Item valuation in Secret Units (e.g. <em>The Overlord = 50</em>, <em>Luminance = 3,000</em>, <em>Soul Heart = 7,000</em>).</li>
+                <li><strong style={{ color: '#ffcc00' }}>⭐ Normal Value:</strong> Valuation in regular Shiny Tier-3s or limiteds.</li>
+                <li><strong style={{ color: '#a78bfa' }}>Ratio:</strong> 1 Secret Unit roughly equals 200 - 250 in Shiny T3 limited value.</li>
+              </ul>
             </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#10b981' }}>2. Official Demand (0 – 11 Scale)</h3>
-            <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-              <li><strong>0 / 11:</strong> Uncirculated or 0 in known existence.</li>
-              <li><strong>1 – 3 / 11:</strong> Terrible / Low demand (demands underpays).</li>
-              <li><strong>4 – 6 / 11:</strong> Average / Decent market liquidity.</li>
-              <li><strong>7 – 9 / 11:</strong> High / Fast-moving demand.</li>
-              <li><strong>10 / 11:</strong> Maximum standard trade demand.</li>
-              <li><strong>11 / 11:</strong> <span style={{ color: '#ff007f', fontWeight: 900 }}>HYPED</span> (Peak hype new release).</li>
-            </ul>
-          </div>
 
-          {/* Card 3: Variant Multipliers */}
-          <div className="glass-card" style={{ border: '1px solid rgba(185, 103, 255, 0.3)' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(185, 103, 255, 0.15)', color: '#b967ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-              <Sparkles size={24} />
+            {/* Card 2: 0 - 11 Demand System */}
+            <div className="glass-card" style={{ border: '1px solid rgba(16, 185, 129, 0.3)' }}>
+              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(16, 185, 129, 0.15)', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                <TrendingUp size={24} />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#10b981' }}>2. Official Demand (0 – 11 Scale)</h3>
+              <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
+                <li><strong>0 / 11:</strong> Uncirculated or 0 in known existence.</li>
+                <li><strong>1 – 3 / 11:</strong> Terrible / Low demand (demands underpays).</li>
+                <li><strong>4 – 6 / 11:</strong> Average / Decent market liquidity.</li>
+                <li><strong>7 – 9 / 11:</strong> High / Fast-moving demand.</li>
+                <li><strong>10 / 11:</strong> Maximum standard trade demand.</li>
+                <li><strong>11 / 11:</strong> <span style={{ color: '#ff007f', fontWeight: 900 }}>HYPED</span> (Peak hype new release).</li>
+              </ul>
             </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#b967ff' }}>3. Variant Multipliers</h3>
-            <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-              <li><strong>Normal Variant:</strong> Base Secret Value (<strong>1.0x</strong>).</li>
-              <li><strong>Shiny Variant:</strong> <strong>2.5x</strong> (or exact listed Collab shiny value).</li>
-              <li><strong>Mythic Variant:</strong> <strong>10.0x</strong> base value.</li>
-              <li><strong>Shiny Mythic (S.Myth):</strong> <strong>25.0x</strong> base value!</li>
-              <li><em style={{ color: '#a78bfa' }}>Hats do not have variant multipliers.</em></li>
-            </ul>
+
+            {/* Card 3: Variant Multipliers */}
+            <div className="glass-card" style={{ border: '1px solid rgba(185, 103, 255, 0.3)' }}>
+              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(185, 103, 255, 0.15)', color: '#b967ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                <Sparkles size={24} />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#b967ff' }}>3. Variant Multipliers</h3>
+              <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
+                <li><strong>Normal Variant:</strong> Base Secret Value (<strong>1.0x</strong>).</li>
+                <li><strong>Shiny Variant:</strong> <strong>2.5x</strong> (or exact listed Collab shiny value).</li>
+                <li><strong>Mythic Variant:</strong> <strong>10.0x</strong> base value.</li>
+                <li><strong>Shiny Mythic (S.Myth):</strong> <strong>25.0x</strong> base value!</li>
+                <li><em style={{ color: '#a78bfa' }}>Hats do not have variant multipliers.</em></li>
+              </ul>
+            </div>
           </div>
         </div>
       )}
