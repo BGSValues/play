@@ -9,6 +9,7 @@ import { scrapeFandomPets } from './scraper.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PETS_FILE = path.join(__dirname, 'data', 'pets.json');
+const SRC_PETS_FILE = path.join(__dirname, '..', 'src', 'data', 'pets.json');
 const LISTINGS_FILE = path.join(__dirname, 'data', 'listings.json');
 const USERS_FILE = path.join(__dirname, 'data', 'users.json');
 
@@ -28,9 +29,14 @@ async function getData(filePath) {
   }
 }
 
-// Helper function to save database files
+// Helper function to save database files (with dual-save for pets)
 async function saveData(filePath, data) {
   await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
+  if (filePath === PETS_FILE) {
+    try {
+      await fs.writeFile(SRC_PETS_FILE, JSON.stringify(data, null, 2), 'utf-8');
+    } catch (e) {}
+  }
 }
 
 // ---------------- BACKEND IMAGE PROXY WITH CACHE (BYPASSES FANDOM HOTLINK BLOCKS) ----------------
