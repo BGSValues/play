@@ -319,8 +319,13 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
 
             return (
               <div key={item.id} className="pet-card">
-                {/* Top Right Badge */}
-                <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', marginBottom: '0.2rem' }}>
+                {/* Top Header Strip with Rarity and 10-Star Sparkle */}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '0.2rem' }}>
+                  {item.demand >= 9 || (item.baseValue && item.baseValue >= 5000) ? (
+                    <span className="star-badge-10" title="Top Tier 10-Star Item">
+                      ⭐ 10★
+                    </span>
+                  ) : <span />}
                   {getRarityBadge(item.rarity)}
                 </div>
 

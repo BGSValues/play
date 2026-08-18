@@ -30,6 +30,7 @@ import MaintenanceScreen from './components/MaintenanceScreen';
 import BgsLogo from './components/BgsLogo';
 import Footer from './components/Footer';
 import LiveStatsTicker from './components/LiveStatsTicker';
+import StarfieldBackground from './components/StarfieldBackground';
 
 import initialPetsData from './data/pets.json';
 
@@ -205,7 +206,10 @@ export default function App() {
   }
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', position: 'relative' }}>
+      {/* ━━━━ 10-STAR AMBIENT STARFIELD CANVAS ━━━━ */}
+      <StarfieldBackground />
+
       {/* ━━━━ GLOBAL BROADCAST BANNER ━━━━ */}
       {systemSettings?.announcement && (
         <GlobalAnnouncementBanner announcement={systemSettings.announcement} />
