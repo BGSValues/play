@@ -329,7 +329,7 @@ export default function App() {
       </main>
 
       {/* ━━━━ GLOBAL WEBSITE FOOTER ━━━━ */}
-      <Footer onNavigate={handleTabChange} />
+      <Footer onNavigate={handleTabChange} socials={systemSettings?.socials} />
     </div>
   );
 }

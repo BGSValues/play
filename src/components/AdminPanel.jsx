@@ -30,6 +30,7 @@ import {
   Layers,
   Zap,
   Tag,
+  Globe,
 } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 
@@ -96,6 +97,14 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
       type: 'event',
       title: '',
       message: '',
+    },
+    socials: {
+      discord: 'https://discord.gg/',
+      twitter: 'https://x.com/',
+      youtube: 'https://youtube.com/',
+      robloxGroup: 'https://www.roblox.com/groups/4311180/Rumble-Studios',
+      collabList: 'https://sites.google.com/view/bgs-collab-value-list/',
+      fandomWiki: 'https://bubble-gum-simulator.fandom.com/wiki/Bubble_Gum_Simulator_Wiki',
     },
   });
   const [savingSettings, setSavingSettings] = useState(false);
@@ -940,6 +949,48 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
             </div>
           </div>
         </button>
+
+        {/* Tab 4: Socials & External Links Studio */}
+        <button
+          onClick={() => setAdminTab('socials')}
+          style={{
+            background: adminTab === 'socials'
+              ? 'linear-gradient(135deg, rgba(0, 229, 255, 0.25), rgba(59, 130, 246, 0.15))'
+              : 'rgba(255, 255, 255, 0.02)',
+            border: adminTab === 'socials' ? '1px solid #00e5ff' : '1px solid var(--glass-border)',
+            borderRadius: '14px',
+            padding: '1.25rem 1.5rem',
+            cursor: 'pointer',
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '14px',
+            transition: 'all 0.25s ease',
+            boxShadow: adminTab === 'socials' ? '0 10px 30px rgba(0, 229, 255, 0.25)' : 'none',
+          }}
+        >
+          <div
+            style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: adminTab === 'socials' ? '#00e5ff' : 'rgba(255, 255, 255, 0.05)',
+              color: adminTab === 'socials' ? '#000' : '#00e5ff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
+            <Globe size={22} />
+          </div>
+          <div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>Socials & Links</div>
+            <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '2px' }}>
+              Discord • YouTube • X • Roblox Group
+            </div>
+          </div>
+        </button>
       </div>
 
       {/* ============================================================== */}
@@ -1568,6 +1619,154 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                 style={{ width: '100%', padding: '0.85rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontWeight: 900, background: '#ff1744', borderColor: '#ff1744' }}
               >
                 <Save size={16} /> {savingSettings ? 'Deploying Safeguards...' : 'Save & Deploy Safeguards'}
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* ============================================================== */}
+      {/* TAB 4: SOCIAL MEDIA & EXTERNAL LINKS STUDIO                    */}
+      {/* ============================================================== */}
+      {adminTab === 'socials' && (
+        <div style={{ maxWidth: '800px', margin: '0 auto 3rem auto' }}>
+          <div className="glass-card" style={{ padding: '2.5rem', border: '1px solid rgba(0, 229, 255, 0.4)', background: 'linear-gradient(180deg, rgba(0, 229, 255, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '1.2rem' }}>
+              <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.2)', border: '1px solid #00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#00e5ff' }}>
+                <Globe size={24} />
+              </div>
+              <div>
+                <h3 style={{ fontSize: '1.35rem', fontWeight: 900, color: '#fff', margin: 0 }}>Social Media & Portal Links Studio</h3>
+                <span style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
+                  Update Discord, X/Twitter, YouTube, and Roblox Group URLs anytime. Changes apply globally across the website footer and community buttons.
+                </span>
+              </div>
+            </div>
+
+            <form onSubmit={handleSaveSafeguards}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '2rem' }}>
+                {/* Discord Invite URL */}
+                <div>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#5865F2', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    🎮 Discord Server Invite URL
+                  </label>
+                  <input
+                    type="url"
+                    placeholder="https://discord.gg/yourserver"
+                    value={sysSettings.socials?.discord || ''}
+                    onChange={(e) =>
+                      setSysSettings({
+                        ...sysSettings,
+                        socials: { ...(sysSettings.socials || {}), discord: e.target.value },
+                      })
+                    }
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                  />
+                </div>
+
+                {/* X / Twitter Profile URL */}
+                <div>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#fff', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    🐦 X (Twitter) Profile URL
+                  </label>
+                  <input
+                    type="url"
+                    placeholder="https://x.com/yourprofile"
+                    value={sysSettings.socials?.twitter || ''}
+                    onChange={(e) =>
+                      setSysSettings({
+                        ...sysSettings,
+                        socials: { ...(sysSettings.socials || {}), twitter: e.target.value },
+                      })
+                    }
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                  />
+                </div>
+
+                {/* YouTube Channel URL */}
+                <div>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#ff0000', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    ▶️ YouTube Channel URL
+                  </label>
+                  <input
+                    type="url"
+                    placeholder="https://youtube.com/@yourchannel"
+                    value={sysSettings.socials?.youtube || ''}
+                    onChange={(e) =>
+                      setSysSettings({
+                        ...sysSettings,
+                        socials: { ...(sysSettings.socials || {}), youtube: e.target.value },
+                      })
+                    }
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                  />
+                </div>
+
+                {/* Roblox Group URL */}
+                <div>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#00e5ff', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    🧱 Roblox Community / Group URL
+                  </label>
+                  <input
+                    type="url"
+                    placeholder="https://www.roblox.com/groups/..."
+                    value={sysSettings.socials?.robloxGroup || ''}
+                    onChange={(e) =>
+                      setSysSettings({
+                        ...sysSettings,
+                        socials: { ...(sysSettings.socials || {}), robloxGroup: e.target.value },
+                      })
+                    }
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                  />
+                </div>
+
+                {/* Collab Value List URL */}
+                <div>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: 'var(--primary-gold)', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    📊 Official Collab Value List URL
+                  </label>
+                  <input
+                    type="url"
+                    placeholder="https://sites.google.com/view/bgs-collab-value-list/"
+                    value={sysSettings.socials?.collabList || ''}
+                    onChange={(e) =>
+                      setSysSettings({
+                        ...sysSettings,
+                        socials: { ...(sysSettings.socials || {}), collabList: e.target.value },
+                      })
+                    }
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                  />
+                </div>
+
+                {/* Fandom Wiki URL */}
+                <div>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#a78bfa', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    📖 Bubble Gum Simulator Fandom Wiki URL
+                  </label>
+                  <input
+                    type="url"
+                    placeholder="https://bubble-gum-simulator.fandom.com/wiki/..."
+                    value={sysSettings.socials?.fandomWiki || ''}
+                    onChange={(e) =>
+                      setSysSettings({
+                        ...sysSettings,
+                        socials: { ...(sysSettings.socials || {}), fandomWiki: e.target.value },
+                      })
+                    }
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={savingSettings}
+                className="btn-primary"
+                style={{ width: '100%', padding: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontWeight: 900, fontSize: '1rem', background: 'linear-gradient(135deg, #00e5ff, #7c3aed)', border: 'none' }}
+              >
+                <Save size={18} /> {savingSettings ? 'Saving Social Links...' : 'Save & Publish Social Links Globally'}
               </button>
             </form>
           </div>

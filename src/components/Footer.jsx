@@ -1,13 +1,20 @@
 import React from 'react';
 import BgsLogo from './BgsLogo';
 
-export default function Footer({ onNavigate }) {
+export default function Footer({ onNavigate, socials }) {
   const handleNav = (tab, section) => {
     if (onNavigate) {
       onNavigate(tab, section);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
+
+  const discordUrl = socials?.discord || 'https://discord.gg/';
+  const twitterUrl = socials?.twitter || 'https://x.com/';
+  const youtubeUrl = socials?.youtube || 'https://youtube.com/';
+  const robloxGroupUrl = socials?.robloxGroup || 'https://www.roblox.com/groups/4311180/Rumble-Studios';
+  const collabListUrl = socials?.collabList || 'https://sites.google.com/view/bgs-collab-value-list/';
+  const fandomWikiUrl = socials?.fandomWiki || 'https://bubble-gum-simulator.fandom.com/wiki/Bubble_Gum_Simulator_Wiki';
 
   return (
     <footer
@@ -108,7 +115,7 @@ export default function Footer({ onNavigate }) {
           </ul>
         </div>
 
-        {/* Column 2: Socials */}
+        {/* Column 2: Socials (Configurable via Admin Panel) */}
         <div>
           <h4 style={{ color: '#fff', fontSize: '0.95rem', fontWeight: 900, marginBottom: '1.2rem', textTransform: 'capitalize' }}>
             Socials
@@ -116,7 +123,7 @@ export default function Footer({ onNavigate }) {
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li>
               <a
-                href="https://discord.gg/"
+                href={discordUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -128,7 +135,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <a
-                href="https://x.com/"
+                href={twitterUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -140,7 +147,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <a
-                href="https://youtube.com/"
+                href={youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -152,7 +159,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <a
-                href="https://www.roblox.com/groups/4311180/Rumble-Studios"
+                href={robloxGroupUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -222,7 +229,7 @@ export default function Footer({ onNavigate }) {
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li>
               <a
-                href="https://sites.google.com/view/bgs-collab-value-list/"
+                href={collabListUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -234,7 +241,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <a
-                href="https://bubble-gum-simulator.fandom.com/wiki/Bubble_Gum_Simulator_Wiki"
+                href={fandomWikiUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
