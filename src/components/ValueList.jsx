@@ -304,6 +304,14 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                     <span className="stat-label">Demand</span>
                     <span className="stat-val-green">{item.demand}/10</span>
                   </div>
+                  {item.existence && (item.existence.normal || item.existence.shiny || item.existence.hats) && (
+                    <div className="stat-row">
+                      <span className="stat-label">Hatched</span>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ffcc00' }}>
+                        {item.existence.normal ? `🥚 ${item.existence.normal}` : ''} {item.existence.shiny ? `✨ ${item.existence.shiny}` : ''} {item.existence.hats ? `📦 ${item.existence.hats}` : ''}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Staff Edit Panel */}

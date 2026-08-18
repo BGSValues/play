@@ -27,6 +27,12 @@
         "Gems": 236700,
         "Coins": 218290
       }
+    },
+    "existence": {
+      "shiny": "26",
+      "mythic": "10",
+      "normal": "2,078",
+      "shinyMythic": "0"
     }
   },
   {
@@ -57,7 +63,8 @@
         "Gems": 329600,
         "Coins": 325520
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_alien_kraken",
@@ -105,6 +112,11 @@
         "Gems": 433350,
         "Coins": 399650
       }
+    },
+    "existence": {
+      "shiny": "2",
+      "shinyMythic": "2",
+      "mythic": "3"
     }
   },
   {
@@ -135,6 +147,12 @@
         "Gems": 630000,
         "Coins": 560000
       }
+    },
+    "existence": {
+      "shiny": "2",
+      "mythic": "0",
+      "normal": "166",
+      "shinyMythic": "0"
     }
   },
   {
@@ -164,6 +182,12 @@
         "Gems": 104500,
         "Coins": 108630
       }
+    },
+    "existence": {
+      "shiny": "50",
+      "mythic": "22",
+      "normal": "3,730",
+      "shinyMythic": "2"
     }
   },
   {
@@ -212,6 +236,12 @@
         "Treats": 30000,
         "Coins": 128350
       }
+    },
+    "existence": {
+      "shiny": "41",
+      "mythic": "19",
+      "normal": "3,339",
+      "shinyMythic": "1"
     }
   },
   {
@@ -242,6 +272,12 @@
         "Bells": 43120,
         "Coins": 162680
       }
+    },
+    "existence": {
+      "shiny": "155",
+      "mythic": "78",
+      "normal": "7,015",
+      "shinyMythic": "3"
     }
   },
   {
@@ -301,6 +337,12 @@
         "Treats": 32500,
         "Coins": 132050
       }
+    },
+    "existence": {
+      "shiny": "898",
+      "mythic": "445",
+      "normal": "90,000",
+      "shinyMythic": "14"
     }
   },
   {
@@ -330,6 +372,12 @@
         "Treats": 21000,
         "Coins": 113500
       }
+    },
+    "existence": {
+      "shiny": "12",
+      "mythic": "14",
+      "normal": "1,835",
+      "shinyMythic": "1"
     }
   },
   {
@@ -360,6 +408,12 @@
         "Gems": 345600,
         "Coins": 307200
       }
+    },
+    "existence": {
+      "shiny": "32",
+      "mythic": "17",
+      "normal": "2,053",
+      "shinyMythic": "0"
     }
   },
   {
@@ -419,6 +473,12 @@
         "Bells": 42000,
         "Coins": 155550
       }
+    },
+    "existence": {
+      "shiny": "187",
+      "mythic": "104",
+      "normal": "9,816",
+      "shinyMythic": "2"
     }
   },
   {
@@ -449,6 +509,12 @@
         "Bells": 57550,
         "Coins": 228250
       }
+    },
+    "existence": {
+      "shiny": "22",
+      "mythic": "8",
+      "normal": "968",
+      "shinyMythic": "0"
     }
   },
   {
@@ -479,6 +545,12 @@
         "Gems": 309600,
         "Coins": 285520
       }
+    },
+    "existence": {
+      "shiny": "197",
+      "mythic": "212",
+      "normal": "17,441",
+      "shinyMythic": "3"
     }
   },
   {
@@ -537,6 +609,12 @@
         "Crystals": 20250,
         "Coins": 63500
       }
+    },
+    "existence": {
+      "shiny": "9",
+      "mythic": "5",
+      "normal": "823",
+      "shinyMythic": "0"
     }
   },
   {
@@ -621,6 +699,10 @@
         "Gems": 31500,
         "Coins": 25000
       }
+    },
+    "existence": {
+      "normal": "1,386",
+      "shiny": "20"
     }
   },
   {
@@ -640,7 +722,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Lord).",
     "type": "pet",
-    "shinyValue": 350
+    "shinyValue": 350,
+    "existence": {}
   },
   {
     "id": "pet_dark_lord_shock",
@@ -677,7 +760,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Radiance).",
     "type": "pet",
-    "shinyValue": 350
+    "shinyValue": 350,
+    "existence": {}
   },
   {
     "id": "pet_dementor",
@@ -772,7 +856,8 @@
         "Bells": 75000,
         "Coins": 175000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_demonic_one",
@@ -791,7 +876,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic One).",
     "type": "pet",
-    "shinyValue": 900
+    "shinyValue": 900,
+    "existence": {}
   },
   {
     "id": "pet_demonic_sentinel",
@@ -868,6 +954,12 @@
         "Gems": 243000,
         "Coins": 224100
       }
+    },
+    "existence": {
+      "shiny": "164",
+      "mythic": "81",
+      "normal": "7,890",
+      "shinyMythic": "0"
     }
   },
   {
@@ -898,6 +990,12 @@
         "Gems": 139990,
         "Coins": 138650
       }
+    },
+    "existence": {
+      "shiny": "441",
+      "mythic": "215",
+      "normal": "44,000",
+      "shinyMythic": "3"
     }
   },
   {
@@ -927,6 +1025,10 @@
         "Candy": 3500,
         "Coins": 8250
       }
+    },
+    "existence": {
+      "normal": "356",
+      "shiny": "5"
     }
   },
   {
@@ -957,6 +1059,12 @@
         "Gems": 99150,
         "Coins": 87500
       }
+    },
+    "existence": {
+      "shiny": "23",
+      "mythic": "17",
+      "normal": "1,436",
+      "shinyMythic": "0"
     }
   },
   {
@@ -976,7 +1084,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dream Catcher).",
     "type": "pet",
-    "shinyValue": 2250
+    "shinyValue": 2250,
+    "existence": {
+      "shiny": "62",
+      "mythic": "28",
+      "normal": "4,671",
+      "shinyMythic": "1"
+    }
   },
   {
     "id": "pet_duality",
@@ -1006,6 +1120,12 @@
         "Flowers": 18250,
         "Coins": 57800
       }
+    },
+    "existence": {
+      "shiny": "10",
+      "mythic": "7",
+      "normal": "833",
+      "shinyMythic": "0"
     }
   },
   {
@@ -1036,6 +1156,10 @@
         "Pearls": 4750,
         "Coins": 14200
       }
+    },
+    "existence": {
+      "normal": "243",
+      "shiny": "3"
     }
   },
   {
@@ -1066,6 +1190,12 @@
         "Gems": 742500,
         "Coins": 660000
       }
+    },
+    "existence": {
+      "shiny": "7",
+      "mythic": "3",
+      "normal": "309",
+      "shinyMythic": "0"
     }
   },
   {
@@ -1096,6 +1226,12 @@
         "Gems": 237600,
         "Coins": 211200
       }
+    },
+    "existence": {
+      "shiny": "484",
+      "mythic": "193",
+      "normal": "23,900",
+      "shinyMythic": "5"
     }
   },
   {
@@ -1256,6 +1392,12 @@
         "Gems": 297000,
         "Coins": 264000
       }
+    },
+    "existence": {
+      "shiny": "209",
+      "mythic": "74",
+      "normal": "10,080",
+      "shinyMythic": "3"
     }
   },
   {
@@ -1286,6 +1428,12 @@
         "Gems": 90000,
         "Coins": 80000
       }
+    },
+    "existence": {
+      "shiny": "108",
+      "mythic": "47",
+      "normal": "6,038",
+      "shinyMythic": "1"
     }
   },
   {
@@ -1305,7 +1453,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Heart).",
     "type": "pet",
-    "shinyValue": 2400
+    "shinyValue": 2400,
+    "existence": {
+      "normal": "1,990",
+      "shiny": "23"
+    }
   },
   {
     "id": "pet_eternal_star",
@@ -1324,7 +1476,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Star).",
     "type": "pet",
-    "shinyValue": 8500
+    "shinyValue": 8500,
+    "existence": {
+      "normal": "118",
+      "shiny": "2"
+    }
   },
   {
     "id": "pet_fairy_koi",
@@ -1371,6 +1527,10 @@
         "Magma": 7000,
         "Coins": 21750
       }
+    },
+    "existence": {
+      "normal": "645",
+      "shiny": "15"
     }
   },
   {
@@ -1401,6 +1561,12 @@
         "Gems": 162900,
         "Coins": 150230
       }
+    },
+    "existence": {
+      "shiny": "102",
+      "mythic": "44",
+      "normal": "5,552",
+      "shinyMythic": "1"
     }
   },
   {
@@ -1431,6 +1597,10 @@
         "Rainbows": 13500,
         "Coins": 41500
       }
+    },
+    "existence": {
+      "normal": "897",
+      "shiny": "9"
     }
   },
   {
@@ -1479,6 +1649,12 @@
         "Gems": 69950,
         "Coins": 64255
       }
+    },
+    "existence": {
+      "shiny": "27",
+      "mythic": "13",
+      "normal": "1,483",
+      "shinyMythic": "1"
     }
   },
   {
@@ -1509,6 +1685,11 @@
         "Gems": 515700,
         "Coins": 475590
       }
+    },
+    "existence": {
+      "shiny": "0",
+      "mythic": "4",
+      "shinyMythic": "0"
     }
   },
   {
@@ -1557,6 +1738,10 @@
         "Gems": 52500,
         "Coins": 47500
       }
+    },
+    "existence": {
+      "normal": "1,005",
+      "shiny": "15"
     }
   },
   {
@@ -1587,6 +1772,10 @@
         "Pearls": 4275,
         "Coins": 13250
       }
+    },
+    "existence": {
+      "normal": "475",
+      "shiny": "6"
     }
   },
   {
@@ -1605,7 +1794,11 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Robot).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {
+      "normal": "7",
+      "shiny": "1"
+    }
   },
   {
     "id": "pet_gingerbread_shard",
@@ -1635,6 +1828,12 @@
         "Bells": 32670,
         "Coins": 123255
       }
+    },
+    "existence": {
+      "shiny": "1,169",
+      "mythic": "565",
+      "normal": "92,000",
+      "shinyMythic": "10"
     }
   },
   {
@@ -1665,6 +1864,10 @@
         "Gems": 75000,
         "Coins": 66666
       }
+    },
+    "existence": {
+      "normal": "64",
+      "shiny": "0"
     }
   },
   {
@@ -1684,7 +1887,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Godly Shamrock).",
     "type": "pet",
-    "shinyValue": 7500
+    "shinyValue": 7500,
+    "existence": {
+      "shiny": "10",
+      "mythic": "6",
+      "normal": "1,180",
+      "shinyMythic": "0"
+    }
   },
   {
     "id": "pet_golf_balls",
@@ -1731,6 +1940,10 @@
         "Pearls": 5150,
         "Coins": 15000
       }
+    },
+    "existence": {
+      "normal": "472",
+      "shiny": "7"
     }
   },
   {
@@ -1761,6 +1974,12 @@
         "Gems": 243450,
         "Coins": 216400
       }
+    },
+    "existence": {
+      "shiny": "23",
+      "mythic": "10",
+      "normal": "1,791",
+      "shinyMythic": "0"
     }
   },
   {
@@ -1791,6 +2010,12 @@
         "Gems": 433350,
         "Coins": 399645
       }
+    },
+    "existence": {
+      "shiny": "26",
+      "mythic": "42",
+      "normal": "2,865",
+      "shinyMythic": "0"
     }
   },
   {
@@ -1821,6 +2046,11 @@
         "Gems": 850500,
         "Coins": 784350
       }
+    },
+    "existence": {
+      "shiny": "0",
+      "mythic": "3",
+      "shinyMythic": "0"
     }
   },
   {
@@ -1851,6 +2081,10 @@
         "Gifts": 8500,
         "Coins": 23500
       }
+    },
+    "existence": {
+      "normal": "593",
+      "shiny": "6"
     }
   },
   {
@@ -1870,7 +2104,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Holy Egg).",
     "type": "pet",
-    "shinyValue": 1250
+    "shinyValue": 1250,
+    "existence": {
+      "shiny": "121",
+      "mythic": "54",
+      "normal": "6,303",
+      "shinyMythic": "1"
+    }
   },
   {
     "id": "pet_holy_star",
@@ -1918,6 +2158,10 @@
         "Gems": 47500,
         "Coins": 34000
       }
+    },
+    "existence": {
+      "normal": "554",
+      "shiny": "7"
     }
   },
   {
@@ -1948,6 +2192,10 @@
         "Gems": 61555,
         "Coins": 54365
       }
+    },
+    "existence": {
+      "normal": "727",
+      "shiny": "13"
     }
   },
   {
@@ -1996,6 +2244,12 @@
         "Gems": 403200,
         "Coins": 371840
       }
+    },
+    "existence": {
+      "shiny": "2",
+      "mythic": "0",
+      "normal": "332",
+      "shinyMythic": "0"
     }
   },
   {
@@ -2074,6 +2328,12 @@
         "Gems": 500000,
         "Coins": 450000
       }
+    },
+    "existence": {
+      "shiny": "6",
+      "mythic": "6",
+      "normal": "414",
+      "shinyMythic": "0"
     }
   },
   {
@@ -2093,7 +2353,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Mush).",
     "type": "pet",
-    "shinyValue": 280
+    "shinyValue": 280,
+    "existence": {
+      "normal": "1397",
+      "shiny": "14"
+    }
   },
   {
     "id": "pet_king_penguin",
@@ -2159,6 +2423,12 @@
         "Treats": 14425,
         "Coins": 85150
       }
+    },
+    "existence": {
+      "shiny": "372",
+      "mythic": "227",
+      "normal": "37,200",
+      "shinyMythic": "2"
     }
   },
   {
@@ -2189,6 +2459,12 @@
         "Gems": 107575,
         "Coins": 111500
       }
+    },
+    "existence": {
+      "shiny": "27",
+      "mythic": "12",
+      "normal": "1,499",
+      "shinyMythic": "0"
     }
   },
   {
@@ -2219,6 +2495,10 @@
         "Pearls": 5975,
         "Coins": 17750
       }
+    },
+    "existence": {
+      "normal": "386",
+      "shiny": "1"
     }
   },
   {
@@ -2247,6 +2527,10 @@
         "Gems": 11111,
         "Coins": 7777
       }
+    },
+    "existence": {
+      "normal": "13",
+      "shiny": "0"
     }
   },
   {
@@ -2277,6 +2561,10 @@
         "Pearls": 5555,
         "Coins": 14900
       }
+    },
+    "existence": {
+      "normal": "312",
+      "shiny": "3"
     }
   },
   {
@@ -2307,6 +2595,12 @@
         "Gems": 243450,
         "Coins": 216400
       }
+    },
+    "existence": {
+      "shiny": "17",
+      "mythic": "17",
+      "normal": "1,604",
+      "shinyMythic": "0"
     }
   },
   {
@@ -2326,7 +2620,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lovely Rose).",
     "type": "pet",
-    "shinyValue": 1200
+    "shinyValue": 1200,
+    "existence": {
+      "shiny": "677",
+      "mythic": "514",
+      "normal": "52,600",
+      "shinyMythic": "8"
+    }
   },
   {
     "id": "pet_lucid_leaf",
@@ -2345,7 +2645,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lucid Leaf).",
     "type": "pet",
-    "shinyValue": 750
+    "shinyValue": 750,
+    "existence": {
+      "shiny": "177",
+      "mythic": "90",
+      "normal": "11,700",
+      "shinyMythic": "3"
+    }
   },
   {
     "id": "pet_lucky_pyramidium",
@@ -2363,7 +2669,12 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lucky Pyramidium).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {
+      "shiny": "0",
+      "mythic": "6",
+      "shinyMythic": "0"
+    }
   },
   {
     "id": "pet_luminance",
@@ -2393,6 +2704,12 @@
         "Treats": 39500,
         "Coins": 150000
       }
+    },
+    "existence": {
+      "shiny": "11",
+      "mythic": "6",
+      "normal": "699",
+      "shinyMythic": "0"
     }
   },
   {
@@ -2423,7 +2740,8 @@
         "Gems": 45550,
         "Coins": 32535
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_money_mouth",
@@ -2453,6 +2771,12 @@
         "Gems": 344250,
         "Coins": 306000
       }
+    },
+    "existence": {
+      "shiny": "23",
+      "mythic": "13",
+      "normal": "1,182",
+      "shinyMythic": "1"
     }
   },
   {
@@ -2483,6 +2807,12 @@
         "Bells": 39380,
         "Coins": 148570
       }
+    },
+    "existence": {
+      "shiny": "131",
+      "mythic": "69",
+      "normal": "11,500",
+      "shinyMythic": "2"
     }
   },
   {
@@ -2502,7 +2832,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (New Year Champion).",
     "type": "pet",
-    "shinyValue": 25000
+    "shinyValue": 25000,
+    "existence": {
+      "shiny": "7",
+      "mythic": "3",
+      "normal": "467",
+      "shinyMythic": "0"
+    }
   },
   {
     "id": "hat_obscureentity",
@@ -2514,7 +2850,10 @@
     "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c6/ObscureEntity.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {
+      "hats": "2,228"
+    }
   },
   {
     "id": "pet_overlord_plushie",
@@ -2544,6 +2883,12 @@
         "Gems": 78350,
         "Coins": 69555
       }
+    },
+    "existence": {
+      "shiny": "26",
+      "mythic": "16",
+      "normal": "2,394",
+      "shinyMythic": "1"
     }
   },
   {
@@ -2574,6 +2919,10 @@
         "Stars": 6250,
         "Coins": 20000
       }
+    },
+    "existence": {
+      "normal": "331",
+      "shiny": "4"
     }
   },
   {
@@ -2604,6 +2953,12 @@
         "Gems": 429300,
         "Coins": 381600
       }
+    },
+    "existence": {
+      "shiny": "32",
+      "mythic": "13",
+      "normal": "1,431",
+      "shinyMythic": "2"
     }
   },
   {
@@ -2623,7 +2978,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Peppermint Leviathan).",
     "type": "pet",
-    "shinyValue": 15000
+    "shinyValue": 15000,
+    "existence": {
+      "shiny": "10",
+      "mythic": "7",
+      "normal": "677",
+      "shinyMythic": "0"
+    }
   },
   {
     "id": "pet_phantom",
@@ -2652,7 +3013,8 @@
         "Gems": 37550,
         "Coins": 27500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_pixie_queen",
@@ -2689,7 +3051,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Plasma Wolflord).",
     "type": "pet",
-    "shinyValue": 8000
+    "shinyValue": 8000,
+    "existence": {
+      "shiny": "30",
+      "mythic": "4",
+      "normal": "1,165",
+      "shinyMythic": "0"
+    }
   },
   {
     "id": "pet_plushies",
@@ -2737,7 +3105,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pot O' Doggy).",
     "type": "pet",
-    "shinyValue": 4000
+    "shinyValue": 4000,
+    "existence": {
+      "shiny": "52",
+      "mythic": "30",
+      "normal": "3,428",
+      "shinyMythic": "3"
+    }
   },
   {
     "id": "pet_pot_o__gold",
@@ -2756,7 +3130,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pot O' Gold).",
     "type": "pet",
-    "shinyValue": 14000
+    "shinyValue": 14000,
+    "existence": {
+      "normal": "350",
+      "shiny": "3"
+    }
   },
   {
     "id": "pet_prisma_cube",
@@ -2786,6 +3164,12 @@
         "Gems": 231750,
         "Coins": 206000
       }
+    },
+    "existence": {
+      "shiny": "610",
+      "mythic": "327",
+      "normal": "37,600",
+      "shinyMythic": "5"
     }
   },
   {
@@ -2816,6 +3200,12 @@
         "Gems": 63455,
         "Coins": 57500
       }
+    },
+    "existence": {
+      "shiny": "8",
+      "mythic": "3",
+      "normal": "515",
+      "shinyMythic": "0"
     }
   },
   {
@@ -2845,6 +3235,10 @@
         "Bubbles": 7000,
         "Coins": 23500
       }
+    },
+    "existence": {
+      "normal": "199",
+      "shiny": "2"
     }
   },
   {
@@ -2904,6 +3298,12 @@
         "Gems": 65500,
         "Coins": 59995
       }
+    },
+    "existence": {
+      "shiny": "15",
+      "mythic": "5",
+      "normal": "1,487",
+      "shinyMythic": "1"
     }
   },
   {
@@ -2970,6 +3370,10 @@
         "Stars": 5315,
         "Coins": 16666
       }
+    },
+    "existence": {
+      "normal": "608",
+      "shiny": "5"
     }
   },
   {
@@ -2988,7 +3392,11 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Rainbow Gryphon).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {
+      "normal": "336",
+      "shiny": "4"
+    }
   },
   {
     "id": "pet_rainbow_leviathan",
@@ -3058,7 +3466,10 @@
     "status": "Dropping",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ae/Santa_Paws.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {
+      "hats": "3,248"
+    }
   },
   {
     "id": "pet_sea_star",
@@ -3088,6 +3499,10 @@
         "Coins": 7950,
         "Shells": 3425
       }
+    },
+    "existence": {
+      "normal": "657",
+      "shiny": "6"
     }
   },
   {
@@ -3135,7 +3550,8 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Luminance).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {}
   },
   {
     "id": "pet_shadow_sundae_champion",
@@ -3154,7 +3570,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Sundae Champion).",
     "type": "pet",
-    "shinyValue": 20000
+    "shinyValue": 20000,
+    "existence": {}
   },
   {
     "id": "pet_shadow_wolflord",
@@ -3173,7 +3590,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Wolflord).",
     "type": "pet",
-    "shinyValue": 35000
+    "shinyValue": 35000,
+    "existence": {}
   },
   {
     "id": "pet_shard",
@@ -3203,6 +3621,12 @@
         "Flowers": 19500,
         "Coins": 60000
       }
+    },
+    "existence": {
+      "shiny": "17",
+      "mythic": "6",
+      "normal": "1,273",
+      "shinyMythic": "0"
     }
   },
   {
@@ -3233,6 +3657,12 @@
         "Gems": 295650,
         "Coins": 262800
       }
+    },
+    "existence": {
+      "shiny": "34",
+      "mythic": "32",
+      "normal": "2,683",
+      "shinyMythic": "0"
     }
   },
   {
@@ -3262,6 +3692,10 @@
         "Bubbles": 6150,
         "Coins": 22500
       }
+    },
+    "existence": {
+      "normal": "63",
+      "shiny": "3"
     }
   },
   {
@@ -3292,6 +3726,12 @@
         "Treats": 36666,
         "Coins": 140000
       }
+    },
+    "existence": {
+      "shiny": "5",
+      "mythic": "0",
+      "normal": "411",
+      "shinyMythic": "0"
     }
   },
   {
@@ -3321,6 +3761,12 @@
         "Treats": 22500,
         "Coins": 115290
       }
+    },
+    "existence": {
+      "shiny": "45",
+      "mythic": "37",
+      "normal": "4,180",
+      "shinyMythic": "0"
     }
   },
   {
@@ -3369,7 +3815,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Soul Heart).",
     "type": "pet",
-    "shinyValue": 15000
+    "shinyValue": 15000,
+    "existence": {
+      "normal": "400",
+      "shiny": "4"
+    }
   },
   {
     "id": "pet_soulflake",
@@ -3399,6 +3849,12 @@
         "Bells": 47520,
         "Coins": 179280
       }
+    },
+    "existence": {
+      "shiny": "41",
+      "mythic": "28",
+      "normal": "2,068",
+      "shinyMythic": "1"
     }
   },
   {
@@ -3487,7 +3943,10 @@
     "status": "Hyped",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4d/Sylently%27s_Hat.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {
+      "hats": "366"
+    }
   },
   {
     "id": "pet_the_overlord",
@@ -3516,6 +3975,10 @@
         "Gems": 6666,
         "Coins": 4085
       }
+    },
+    "existence": {
+      "normal": "2519",
+      "shiny": "37"
     }
   },
   {
@@ -3546,6 +4009,10 @@
         "Candy": 2150,
         "Coins": 5000
       }
+    },
+    "existence": {
+      "normal": "759",
+      "shiny": "14"
     }
   },
   {
@@ -3623,6 +4090,10 @@
         "Coins": 12500,
         "Shells": 4225
       }
+    },
+    "existence": {
+      "normal": "255",
+      "shiny": "4"
     }
   },
   {
@@ -3660,7 +4131,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ultimate Clover).",
     "type": "pet",
-    "shinyValue": 3333
+    "shinyValue": 3333,
+    "existence": {
+      "normal": "1,469",
+      "shiny": "13"
+    }
   },
   {
     "id": "pet_ultimate_trophy",
@@ -3690,6 +4165,10 @@
         "Magma": 8000,
         "Coins": 21500
       }
+    },
+    "existence": {
+      "normal": "795",
+      "shiny": "5"
     }
   },
   {
@@ -3702,7 +4181,10 @@
     "status": "Dropping",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f6/Vibe_Check.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {
+      "hats": "1,366"
+    }
   },
   {
     "id": "hat_white_hat",
@@ -3744,7 +4226,8 @@
         "Gems": 362250,
         "Coins": 334075
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_wolflord",
@@ -3774,6 +4257,10 @@
         "Gems": 56555,
         "Coins": 50000
       }
+    },
+    "existence": {
+      "normal": "581",
+      "shiny": "9"
     }
   },
   {
@@ -3879,7 +4366,8 @@
         "Gems": 5555,
         "Coins": 3885
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_2018_serpent",
@@ -3966,7 +4454,8 @@
         "Gems": 68000,
         "Coins": 57500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_300m_elemental",
@@ -4350,7 +4839,8 @@
         "Gems": 48715,
         "Coins": 44525
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_ancient_elemental",
@@ -4438,7 +4928,8 @@
         "Rainbows": 5450,
         "Coins": 16750
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_angelic_bear",
@@ -4590,7 +5081,8 @@
         "Pearls": 1015,
         "Coins": 3250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_atlantis_hybrid",
@@ -4760,7 +5252,8 @@
     "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1a/Autumn_Tophat.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {}
   },
   {
     "id": "pet_autumnal_master",
@@ -4819,7 +5312,8 @@
         "Gems": 34275,
         "Coins": 31050
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_bacon_hair",
@@ -4994,7 +5488,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Beta TV).",
     "type": "pet",
-    "shinyValue": 25000
+    "shinyValue": 25000,
+    "existence": {}
   },
   {
     "id": "pet_bgs_bucket",
@@ -5024,7 +5519,8 @@
         "Gems": 41415,
         "Coins": 37550
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_blocky_hybrid",
@@ -5228,7 +5724,8 @@
         "Gifts": 2200,
         "Coins": 7075
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_bruh_bandit",
@@ -5499,7 +5996,8 @@
         "Candy": 585,
         "Coins": 2500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_candycorn_lord",
@@ -5595,7 +6093,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Cartoon Hexarium).",
     "type": "pet",
-    "shinyValue": 150
+    "shinyValue": 150,
+    "existence": {}
   },
   {
     "id": "pet_catmouse",
@@ -5701,7 +6200,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Chocolate Bunny).",
     "type": "pet",
-    "shinyValue": 600
+    "shinyValue": 600,
+    "existence": {}
   },
   {
     "id": "pet_chocolate_chicken",
@@ -5749,7 +6249,8 @@
         "Gems": 81525,
         "Coins": 65000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_chocolate_trio",
@@ -5807,7 +6308,8 @@
         "Gems": 1105,
         "Coins": 1255
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_christmas_marshmallow",
@@ -5895,7 +6397,8 @@
         "Crystals": 4250,
         "Coins": 8000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_circus_stack",
@@ -5954,7 +6457,8 @@
         "Gems": 43115,
         "Coins": 39150
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_classic_trio",
@@ -6013,7 +6517,8 @@
         "Gems": 70330,
         "Coins": 62400
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_clout_goggles",
@@ -6131,7 +6636,8 @@
     "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b5/Clown_Hat.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {}
   },
   {
     "id": "pet_cobalt_guardian",
@@ -6323,7 +6829,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crazy Cat Stack).",
     "type": "pet",
-    "shinyValue": 400
+    "shinyValue": 400,
+    "existence": {}
   },
   {
     "id": "pet_crimson_bell",
@@ -6353,7 +6860,8 @@
         "Gems": 42915,
         "Coins": 38150
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_crimson_demon",
@@ -6628,7 +7136,8 @@
         "Tickets": 3280,
         "Coins": 7850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_dark_phoenix",
@@ -6685,7 +7194,8 @@
         "Gems": 1125,
         "Coins": 1000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_dark_soul",
@@ -6715,7 +7225,8 @@
         "Tickets": 4450,
         "Coins": 14850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_darkness_rose",
@@ -6932,7 +7443,8 @@
         "Crystals": 2215,
         "Coins": 8850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_demonic_bunny",
@@ -7020,7 +7532,8 @@
         "Bells": 13000,
         "Coins": 53050
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_demonic_hydra",
@@ -7079,7 +7592,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic Peppermint).",
     "type": "pet",
-    "shinyValue": 200
+    "shinyValue": 200,
+    "existence": {}
   },
   {
     "id": "pet_demonium",
@@ -7138,7 +7652,8 @@
         "Gems": 112500,
         "Coins": 100000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_demonocity",
@@ -7245,7 +7760,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Diamond Overlord).",
     "type": "pet",
-    "shinyValue": 1000
+    "shinyValue": 1000,
+    "existence": {}
   },
   {
     "id": "pet_diamond_serpent",
@@ -7293,7 +7809,8 @@
         "Magma": 3150,
         "Coins": 7500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_doggy_pile",
@@ -7380,7 +7897,8 @@
         "Gems": 1500,
         "Coins": 1500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_dragon_golf_ball",
@@ -7469,7 +7987,8 @@
         "Stars": 3525,
         "Coins": 10500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_ducky",
@@ -7528,7 +8047,8 @@
         "Gems": 97000,
         "Coins": 86000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_easter_defender",
@@ -7594,7 +8114,8 @@
         "Gems": 12150,
         "Coins": 11115
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_easter_hawk",
@@ -7731,7 +8252,8 @@
         "Gems": 24550,
         "Coins": 21605
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_egg_carton",
@@ -7843,7 +8365,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Electra Hydra).",
     "type": "pet",
-    "shinyValue": 15000
+    "shinyValue": 15000,
+    "existence": {}
   },
   {
     "id": "pet_element_hydra",
@@ -7977,7 +8500,8 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Enraged Phoenix).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {}
   },
   {
     "id": "pet_equinox",
@@ -8083,7 +8607,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Contrast).",
     "type": "pet",
-    "shinyValue": 200
+    "shinyValue": 200,
+    "existence": {}
   },
   {
     "id": "pet_eternal_darkness",
@@ -8113,7 +8638,8 @@
         "Treats": 10300,
         "Coins": 47350
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_eternal_pumpkin",
@@ -8143,7 +8669,8 @@
         "Gems": 44455,
         "Coins": 40550
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_evil_eye",
@@ -8266,7 +8793,8 @@
         "Gems": 11500,
         "Coins": 8555
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_eye_poppers",
@@ -8431,7 +8959,8 @@
         "Gems": 345,
         "Coins": 545
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_festivus",
@@ -8460,7 +8989,8 @@
         "Gems": 6150,
         "Coins": 4500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_fiery_horns",
@@ -8683,7 +9213,8 @@
         "Gems": 79250,
         "Coins": 69420
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_flying_pig",
@@ -8886,7 +9417,8 @@
         "Gems": 2705,
         "Coins": 3255
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_frost_wings",
@@ -8928,7 +9460,8 @@
         "Bells": 10750,
         "Coins": 53000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_frosted_bond",
@@ -9045,7 +9578,8 @@
         "Snowflakes": 112000,
         "Coins": 422500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_frosted_duality",
@@ -9075,7 +9609,8 @@
         "Snowflakes": 210000,
         "Coins": 783000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_frosted_guardian",
@@ -9210,7 +9745,8 @@
         "Gems": 9450,
         "Coins": 9535
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_galactic_demon",
@@ -9327,7 +9863,8 @@
         "Gems": 22150,
         "Coins": 19735
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_gem_dragon",
@@ -9375,7 +9912,8 @@
         "Gems": 24500,
         "Coins": 21500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_gem_shock",
@@ -9499,7 +10037,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Giant Fall Turkey).",
     "type": "pet",
-    "shinyValue": 800
+    "shinyValue": 800,
+    "existence": {}
   },
   {
     "id": "pet_gift_mimic",
@@ -9548,7 +10087,8 @@
         "Gems": 56800,
         "Coins": 52550
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_glitch",
@@ -9578,7 +10118,8 @@
         "Gems": 14280,
         "Coins": 13250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_gloom_shock",
@@ -9695,7 +10236,8 @@
         "Gems": 2095,
         "Coins": 2885
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_gold_overseer",
@@ -9794,7 +10336,8 @@
         "Gems": 1750,
         "Coins": 3115
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_golden_lion",
@@ -9841,7 +10384,8 @@
         "Gems": 1005,
         "Coins": 1155
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_golden_slime",
@@ -9871,7 +10415,8 @@
         "Gems": 95625,
         "Coins": 82875
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_golden_snowball",
@@ -9959,7 +10504,8 @@
         "Gems": 112500,
         "Coins": 110000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_green_hydra",
@@ -10075,7 +10621,8 @@
         "Rainbows": 3980,
         "Coins": 8350
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_gummy_overlord",
@@ -10134,7 +10681,8 @@
         "Candy": 4250,
         "Coins": 8000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_gummy_winged_hydra",
@@ -10164,7 +10712,8 @@
         "Candy": 1955,
         "Coins": 4755
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_hallowed_spirit",
@@ -10520,7 +11069,8 @@
         "Shells": 4250,
         "Coins": 8000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_holy_dualcorn",
@@ -10614,7 +11164,8 @@
         "Gems": 13337,
         "Coins": 9555
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_holy_soul",
@@ -10774,7 +11325,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ice Overlord).",
     "type": "pet",
-    "shinyValue": 250
+    "shinyValue": 250,
+    "existence": {}
   },
   {
     "id": "pet_ice_sprite",
@@ -10821,7 +11373,8 @@
         "Gems": 3225,
         "Coins": 3565
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_immortal_pumpkin",
@@ -10869,7 +11422,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Infernal Master).",
     "type": "pet",
-    "shinyValue": 300
+    "shinyValue": 300,
+    "existence": {}
   },
   {
     "id": "pet_inferno_cube",
@@ -11001,7 +11555,8 @@
         "Gems": 999,
         "Coins": 850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_iridium_prisma",
@@ -11031,7 +11586,8 @@
         "Gems": 13910,
         "Coins": 12550
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_isaac_s_creation_2_0",
@@ -11259,7 +11815,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Leviathan).",
     "type": "pet",
-    "shinyValue": 150
+    "shinyValue": 150,
+    "existence": {}
   },
   {
     "id": "pet_king_pufferfish",
@@ -11289,7 +11846,8 @@
         "Pearls": 4250,
         "Coins": 8000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_king_snowman",
@@ -11319,7 +11877,8 @@
         "Gifts": 3150,
         "Coins": 7850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_king_soul",
@@ -11349,7 +11908,8 @@
         "Magma": 5200,
         "Coins": 14250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_kiwi_dragon",
@@ -11503,7 +12063,8 @@
         "Magma": 3800,
         "Coins": 11850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_light_phoenix",
@@ -11588,7 +12149,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Love Soul).",
     "type": "pet",
-    "shinyValue": 150
+    "shinyValue": 150,
+    "existence": {}
   },
   {
     "id": "pet_lovely_marshmallow",
@@ -11723,7 +12285,8 @@
         "Gems": 105260,
         "Coins": 93200
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_lucid_potion",
@@ -11793,7 +12356,8 @@
     "status": "Dropping",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/28/Lucky_Clout_Goggles.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {}
   },
   {
     "id": "pet_lucky_crystal",
@@ -11851,7 +12415,8 @@
         "Gems": 1777,
         "Coins": 777
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_lucky_fiend",
@@ -11910,7 +12475,8 @@
         "Gems": 90000,
         "Coins": 80000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_lucky_jester",
@@ -12016,7 +12582,8 @@
         "Coins": 5975,
         "Shells": 1375
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_lucky_phoenix",
@@ -12478,7 +13045,8 @@
         "Gems": 1345,
         "Coins": 1735
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_masked_rabbit",
@@ -12526,7 +13094,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Merry Marshmallow).",
     "type": "pet",
-    "shinyValue": 1600
+    "shinyValue": 1600,
+    "existence": {}
   },
   {
     "id": "pet_midas",
@@ -12556,7 +13125,8 @@
         "Gems": 14935,
         "Coins": 13425
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_minty_hydra",
@@ -12585,7 +13155,8 @@
         "Gems": 415,
         "Coins": 666
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_minty_serpent",
@@ -12614,7 +13185,8 @@
         "Gems": 395,
         "Coins": 605
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_mistletoe_fiend",
@@ -12644,7 +13216,8 @@
     "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0b/MLG.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {}
   },
   {
     "id": "pet_molten_split",
@@ -12704,7 +13277,8 @@
         "Gems": 108500,
         "Coins": 100750
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_mr_snowman_s_top_hat",
@@ -12716,7 +13290,8 @@
     "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Mr._Snowman%27s_Top_Hat.png/revision/latest",
-    "description": "Legendary hat from Bubble Gum Simulator."
+    "description": "Legendary hat from Bubble Gum Simulator.",
+    "existence": {}
   },
   {
     "id": "pet_mutant_bear",
@@ -12822,7 +13397,8 @@
         "Gems": 97777,
         "Coins": 92500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_neon_elemental",
@@ -12969,7 +13545,8 @@
         "Gems": 23150,
         "Coins": 15850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_obsidian_serpent",
@@ -13104,7 +13681,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (OG Box).",
     "type": "pet",
-    "shinyValue": 800
+    "shinyValue": 800,
+    "existence": {}
   },
   {
     "id": "pet_ornamentium",
@@ -13220,7 +13798,8 @@
         "Gems": 425,
         "Coins": 295
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_partner_unicorn",
@@ -13248,7 +13827,8 @@
         "Gems": 425,
         "Coins": 295
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_pastel_hexarium",
@@ -13394,7 +13974,8 @@
         "Stars": 2750,
         "Coins": 8985
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_penguin",
@@ -13453,7 +14034,8 @@
         "Snowflakes": 98000,
         "Coins": 368500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_peppermint_hydra",
@@ -13482,7 +14064,8 @@
         "Gems": 1235,
         "Coins": 1655
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_phoenix_hybrid",
@@ -13646,7 +14229,8 @@
         "Pearls": 2575,
         "Coins": 8150
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_poseidon",
@@ -13746,7 +14330,8 @@
         "Gifts": 4300,
         "Coins": 13850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_pumpkin_burst",
@@ -13871,7 +14456,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Queen Overlord).",
     "type": "pet",
-    "shinyValue": 200
+    "shinyValue": 200,
+    "existence": {}
   },
   {
     "id": "pet_queen_snowman",
@@ -13961,7 +14547,8 @@
         "Gems": 9240,
         "Coins": 8250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_radioactive_bear",
@@ -14136,7 +14723,8 @@
         "Stars": 4250,
         "Coins": 8000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_rainbow_overlord",
@@ -14224,7 +14812,8 @@
         "Gems": 18450,
         "Coins": 15210
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_rainbow_serpent",
@@ -14382,7 +14971,8 @@
         "Gems": 76250,
         "Coins": 62550
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_ruby_god",
@@ -14471,7 +15061,8 @@
         "Flowers": 7295,
         "Coins": 15050
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_sandcastle_dragon",
@@ -14530,7 +15121,8 @@
         "Snowflakes": 130000,
         "Coins": 491250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_scorpio",
@@ -14688,7 +15280,8 @@
         "Coins": 3115,
         "Shells": 925
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_shade_demon",
@@ -14718,7 +15311,8 @@
         "Magma": 3400,
         "Coins": 10850
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_shadow_equinox",
@@ -14766,7 +15360,8 @@
         "Gems": 29195,
         "Coins": 28530
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_shadow_imp",
@@ -14813,7 +15408,8 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow One).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {}
   },
   {
     "id": "pet_shadow_overlord",
@@ -14861,7 +15457,8 @@
         "Gems": 28100,
         "Coins": 25000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_sircfenner",
@@ -14921,7 +15518,8 @@
         "Treats": 8150,
         "Coins": 45910
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_sky_imp",
@@ -15005,7 +15603,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Soul Flower).",
     "type": "pet",
-    "shinyValue": 250
+    "shinyValue": 250,
+    "existence": {}
   },
   {
     "id": "pet_space_crystal_hexarium",
@@ -15136,7 +15735,8 @@
         "Gems": 112500,
         "Coins": 100000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_spirit_of_wealth",
@@ -15332,7 +15932,8 @@
         "Gems": 75995,
         "Coins": 64450
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_stocking",
@@ -15362,7 +15963,8 @@
         "Bells": 16500,
         "Coins": 59420
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_stuffed_imp",
@@ -15439,7 +16041,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Summer Bond).",
     "type": "pet",
-    "shinyValue": 1050
+    "shinyValue": 1050,
+    "existence": {}
   },
   {
     "id": "pet_summer_cerberus",
@@ -15469,7 +16072,8 @@
         "Pearls": 2125,
         "Coins": 7450
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_summer_rift",
@@ -15586,7 +16190,8 @@
         "Gems": 100955,
         "Coins": 99500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_sunshine",
@@ -15644,7 +16249,8 @@
         "Bubbles": 3725,
         "Coins": 9500
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_sylently_s_pet",
@@ -15703,7 +16309,8 @@
         "Blocks": 4250,
         "Coins": 8000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_tetranium",
@@ -15770,7 +16377,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (The Keeper).",
     "type": "pet",
-    "shinyValue": 1400
+    "shinyValue": 1400,
+    "existence": {}
   },
   {
     "id": "pet_topaz_soul",
@@ -15800,7 +16408,8 @@
         "Gems": 26550,
         "Coins": 22475
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_tormentor",
@@ -15830,7 +16439,8 @@
         "Treats": 2500,
         "Coins": 14250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_toxic_cube",
@@ -15908,7 +16518,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Toxic Elemental).",
     "type": "pet",
-    "shinyValue": 500
+    "shinyValue": 500,
+    "existence": {}
   },
   {
     "id": "pet_toxic_shock",
@@ -15938,7 +16549,8 @@
         "Rainbows": 4270,
         "Coins": 9150
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_toxic_terror",
@@ -16074,7 +16686,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Trick O' Treat).",
     "type": "pet",
-    "shinyValue": 100
+    "shinyValue": 100,
+    "existence": {}
   },
   {
     "id": "pet_trickster",
@@ -16133,7 +16746,8 @@
         "Gems": 101250,
         "Coins": 90000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "hat_triton_crown",
@@ -16203,7 +16817,8 @@
         "Bells": 10000,
         "Coins": 50250
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_twitter_dominus",
@@ -16338,7 +16953,8 @@
         "Gems": 95625,
         "Coins": 85000
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_uranium_hybrid",
@@ -16426,7 +17042,8 @@
         "Gems": 8400,
         "Coins": 7950
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_valentium",
@@ -16456,7 +17073,8 @@
         "Blocks": 1250,
         "Coins": 5555
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_vectorlord",
@@ -16571,7 +17189,8 @@
         "Bubbles": 455,
         "Coins": 2655
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_wisp_elemental",
@@ -16731,7 +17350,8 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Witches Pot).",
     "type": "pet",
-    "shinyValue": 250
+    "shinyValue": 250,
+    "existence": {}
   },
   {
     "id": "hat_workclock_ultimate",
@@ -16872,7 +17492,8 @@
         "Gems": 31500,
         "Coins": 18550
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_zebra",
@@ -20604,7 +21225,8 @@
         "Gems": 11,
         "Coins": 14
       }
-    }
+    },
+    "existence": {}
   },
   {
     "id": "pet_twitch_kitty",
@@ -35296,7 +35918,8 @@
       "ShinyMythic": 25
     },
     "description": "Official Common companion pet from BGS Collab Value List (Index Reward Pets).",
-    "type": "pet"
+    "type": "pet",
+    "existence": {}
   },
   {
     "id": "pet_jackalope_split",

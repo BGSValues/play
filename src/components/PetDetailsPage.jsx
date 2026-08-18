@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ExternalLink, PlusCircle, Sparkles, TrendingUp, Zap, Award, Activity, ShieldCheck, Heart, Layers, MapPin, DollarSign, RotateCcw, Sliders } from 'lucide-react';
+import { ArrowLeft, ExternalLink, PlusCircle, Sparkles, TrendingUp, Zap, Award, Activity, ShieldCheck, Heart, Layers, MapPin, DollarSign, RotateCcw, Sliders, Hash } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 import { getPetVariantValue } from './ValueList';
 
@@ -37,6 +37,7 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
   const buffs = pet.stats?.buffs || {};
   const eggName = pet.stats?.egg || (pet.description?.includes('Egg') ? pet.description.match(/([a-zA-Z0-9\s]+Egg)/)?.[0] : null);
   const movementType = pet.stats?.movementType || (isHat ? 'Hat Accessory' : 'Walk');
+  const existence = pet.existence || null;
 
   const wikiUrl = `https://bubble-gum-simulator.fandom.com/wiki/${encodeURIComponent(pet.name.replace(/\s+/g, '_'))}`;
 
@@ -344,7 +345,63 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
         </div>
       </div>
 
-      {/* Bottom Section: Egg Origin & Hatch Details */}
+      {/* Bottom Section 1: Official Existence & Hatched Serial Counts */}
+      {existence && Object.keys(existence).length > 0 && (
+        <div className="glass-card" style={{ padding: '1.5rem', marginBottom: '2rem', border: '1px solid rgba(255, 204, 0, 0.25)', background: 'linear-gradient(180deg, rgba(255, 204, 0, 0.04) 0%, rgba(10, 11, 16, 0.95) 100%)' }}>
+          <h3 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#ffcc00', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem' }}>
+            <span>📈</span> Verified In-Game Existence & Hatched Amounts
+          </h3>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+            {existence.normal && (
+              <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>🥚 NORMAL HATCHED</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#fff', marginTop: '4px' }}>
+                  {existence.normal} in existence
+                </div>
+              </div>
+            )}
+
+            {existence.shiny && (
+              <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#ffcc00', fontWeight: 700 }}>✨ SHINY HATCHED</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#ffcc00', marginTop: '4px' }}>
+                  {existence.shiny} in existence
+                </div>
+              </div>
+            )}
+
+            {existence.mythic && (
+              <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#a78bfa', fontWeight: 700 }}>⚡ MYTHIC HATCHED</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#a78bfa', marginTop: '4px' }}>
+                  {existence.mythic} in existence
+                </div>
+              </div>
+            )}
+
+            {existence.shinyMythic && (
+              <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#ff007f', fontWeight: 700 }}>✨⚡ SHINY MYTHIC</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#ff007f', marginTop: '4px' }}>
+                  {existence.shinyMythic} in existence
+                </div>
+              </div>
+            )}
+
+            {existence.hats && (
+              <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#00e5ff', fontWeight: 700 }}>📦 TOTAL UNBOXED</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#00e5ff', marginTop: '4px' }}>
+                  {existence.hats} unboxed
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Bottom Section 2: Egg Origin & Hatch Details */}
       {eggName && (
         <div className="glass-card" style={{ padding: '1.5rem' }}>
           <h3 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#fff', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem' }}>
