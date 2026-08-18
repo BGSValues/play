@@ -1159,7 +1159,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/18/Godly_Gem.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -2089,7 +2089,7 @@
     "demand": 3,
     "status": "Dropping",
     "category": "Secret Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f7/Rainbow_Dogcat.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -2610,24 +2610,6 @@
     "type": "pet"
   },
   {
-    "id": "pet_user_blog_thelastguesthies_secret",
-    "name": "User blog:Thelastguesthies/Secret",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": null,
-    "demand": 8,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/User_blog:Thelastguesthies/Secret.png/revision/latest",
-    "description": "Official Secret Pet from Bubble Gum Simulator.",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    }
-  },
-  {
     "id": "hat_vibe_check",
     "name": "Vibe Check",
     "type": "hat",
@@ -3133,7 +3115,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Angel_of_Darkness.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -3679,7 +3661,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/19/Bruh.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -3715,7 +3697,7 @@
     "demand": 8,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Bruh_Moment.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -4333,7 +4315,7 @@
     "demand": 8,
     "status": "Hyped",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/be/Overseer.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -4351,7 +4333,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/34/Comet_in_a_Bottle.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -5113,7 +5095,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/26/Diamond_Tamer.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -5401,7 +5383,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c5/Eclipse.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -7687,7 +7669,7 @@
     "demand": 8,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f5/Isaac%27s_Creation_2.0.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -8491,7 +8473,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/13/Luna.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -9619,7 +9601,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Rabbit_Plushie.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -9691,7 +9673,7 @@
     "demand": 7,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Rainbow_Bunny.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -10549,7 +10531,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d5/Spring_Dragon.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -10837,7 +10819,7 @@
     "demand": 7,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/00/Tetranium.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -10891,7 +10873,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/55/Topaz_Soul.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -19008,24 +18990,6 @@
     "type": "pet"
   },
   {
-    "id": "pet_user_blog_truxxk_hello",
-    "name": "User blog:Truxxk/Hello",
-    "rarity": "Epic",
-    "baseValue": null,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Epic Pets",
-    "image": "",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Epic companion pet from BGS Collab Value List (User blog:Truxxk/Hello).",
-    "type": "pet"
-  },
-  {
     "id": "pet_vine_crawler",
     "name": "Vine Crawler",
     "rarity": "Epic",
@@ -26298,24 +26262,6 @@
     "type": "pet"
   },
   {
-    "id": "pet_thread_beckaaa__comment_37561754_20190329201318",
-    "name": "Thread:Beckaaa/@comment-37561754-20190329201318",
-    "rarity": "Common",
-    "baseValue": null,
-    "demand": 3,
-    "status": "Stable",
-    "category": "Common Pets",
-    "image": "",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Common companion pet from BGS Collab Value List (Thread:Beckaaa/@comment-37561754-20190329201318).",
-    "type": "pet"
-  },
-  {
     "id": "pet_three",
     "name": "Three",
     "rarity": "Common",
@@ -26367,24 +26313,6 @@
       "ShinyMythic": 25
     },
     "description": "Official Common companion pet from BGS Collab Value List (Unikitty).",
-    "type": "pet"
-  },
-  {
-    "id": "pet_user_blog_theodorcork_bgs_pets_in_2_year_will_be____",
-    "name": "User blog:TheodorCork/BGS pets in 2 year will be ...",
-    "rarity": "Common",
-    "baseValue": null,
-    "demand": 3,
-    "status": "Stable",
-    "category": "Common Pets",
-    "image": "",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Common companion pet from BGS Collab Value List (User blog:TheodorCork/BGS pets in 2 year will be ...).",
     "type": "pet"
   },
   {
@@ -26581,7 +26509,7 @@
     "demand": 3,
     "status": "Stable",
     "category": "Common Pets",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a1/Winged_Doggy.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
