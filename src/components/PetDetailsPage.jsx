@@ -389,12 +389,40 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
               </div>
             )}
 
+            {existence.special && (
+              <div style={{ background: '#0a0b10', border: '1px solid #ff007f', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#ff007f', fontWeight: 800 }}>🎉 EVENT / SPECIAL SERIAL</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#fff', marginTop: '4px' }}>
+                  {existence.special} in existence
+                </div>
+                {existence.note && (
+                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '4px' }}>
+                    {existence.note}
+                  </div>
+                )}
+              </div>
+            )}
+
             {existence.hats && (
               <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
                 <div style={{ fontSize: '0.75rem', color: '#00e5ff', fontWeight: 700 }}>📦 TOTAL UNBOXED</div>
                 <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#00e5ff', marginTop: '4px' }}>
                   {existence.hats} unboxed
                 </div>
+              </div>
+            )}
+
+            {existence.hatchRate && (
+              <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: '#00e5ff', fontWeight: 700 }}>🎯 HATCH CHANCE</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#00e5ff', marginTop: '4px' }}>
+                  {existence.hatchRate}
+                </div>
+                {existence.eggOrigin && (
+                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '4px' }}>
+                    from {existence.eggOrigin}
+                  </div>
+                )}
               </div>
             )}
           </div>
