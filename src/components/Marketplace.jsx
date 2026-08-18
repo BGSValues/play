@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { PlusCircle, Search, Copy, Check, ArrowRight, MessageSquare, Lock, MessageCircle, CheckCircle2, XCircle, Clock, Trash2, ShieldAlert } from 'lucide-react';
+import { PlusCircle, Search, Copy, Check, ArrowRight, Lock, MessageCircle, CheckCircle2, XCircle, Clock, Trash2 } from 'lucide-react';
 import PetAvatar from './PetAvatar';
-import LiveChatModal from './LiveChatModal';
 
 export default function Marketplace({ pets, currentUser, onOpenLogin }) {
   const [listings, setListings] = useState(() => {
@@ -13,7 +12,6 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [copiedRobloxId, setCopiedRobloxId] = useState(null);
   const [copiedDiscordId, setCopiedDiscordId] = useState(null);
-  const [chatTraderTarget, setChatTraderTarget] = useState(null);
   const [offeringItems, setOfferingItems] = useState([]);
   const [requestingItems, setRequestingItems] = useState([]);
   const [itemPickerTarget, setItemPickerTarget] = useState(null);
@@ -243,8 +241,6 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
 
   return (
     <div style={{ paddingBottom: '4rem' }}>
-      <LiveChatModal isOpen={!!chatTraderTarget} onClose={() => setChatTraderTarget(null)} targetTrader={chatTraderTarget} currentUser={currentUser} />
-
       <div style={{ textAlign: 'center', margin: '1rem 0 1.5rem 0' }}>
         <h2 style={{ fontSize: '2rem', fontWeight: '900' }}>
           Live Roblox BGS <span style={{ color: '#7c3aed' }}>Trade Marketplace</span>
@@ -388,13 +384,6 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
                     >
                       {copiedRobloxId === list.id ? <Check size={12} color="#10b981" /> : <Copy size={12} />}
                       {copiedRobloxId === list.id ? 'Copied!' : 'Roblox'}
-                    </button>
-                    <button
-                      className="btn-primary"
-                      style={{ padding: '0.3rem 0.7rem', fontSize: '0.75rem' }}
-                      onClick={() => handleOpenChat(list)}
-                    >
-                      <MessageSquare size={12} /> Chat
                     </button>
                   </div>
                 </div>

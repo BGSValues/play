@@ -1,54 +1,31 @@
 [
   {
-    "id": "list_1",
-    "traderName": "BubbleKing_99",
-    "discord": "bubbleking#1234",
+    "id": "list_1787022018708",
+    "traderName": "BGS_Owner_Official",
+    "robloxUsername": "dd",
+    "discord": "dwwdd",
+    "email": "",
+    "picture": "",
     "type": "sell",
     "offering": [
       {
-        "name": "The Overlord",
-        "variant": "Shiny",
-        "value": 525000,
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Mythic_The_Overlord.png/revision/latest?cb=20260731212356"
+        "name": "Archangel",
+        "value": 130000,
+        "demand": 9,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/73/Mythic_Archangel.png/revision/latest",
+        "rarity": "Secret"
       }
     ],
     "requesting": [
       {
-        "name": "Dominus Aureus",
-        "variant": "Normal",
-        "value": 200000,
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d3/Dominus_Aureus.png/revision/latest?cb=20200612140523"
-      },
-      {
-        "name": "Sunlord",
-        "variant": "Normal",
-        "value": 120000,
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/87/Sunlord.png/revision/latest?cb=20200815143321"
+        "name": "Basilisks",
+        "value": 178632,
+        "demand": 8,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1c/Mythic_Air_Basilisk.png/revision/latest",
+        "rarity": "Secret"
       }
     ],
-    "createdAt": "2026-08-17T19:00:00.000Z"
-  },
-  {
-    "id": "list_2",
-    "traderName": "FrostyTrader",
-    "discord": "frosty#5678",
-    "type": "buy",
-    "offering": [
-      {
-        "name": "Demonic Peppermint",
-        "variant": "Shiny",
-        "value": 272000,
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/7b/Demonic_Peppermint.png/revision/latest?cb=20201219154320"
-      }
-    ],
-    "requesting": [
-      {
-        "name": "Dark Lord",
-        "variant": "Normal",
-        "value": 175000,
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8c/Dark_Lord.png/revision/latest?cb=20200704152010"
-      }
-    ],
-    "createdAt": "2026-08-17T18:30:00.000Z"
+    "isVerified": true,
+    "createdAt": "2026-08-18T03:00:18.708Z"
   }
 ]
