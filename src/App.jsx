@@ -28,6 +28,7 @@ import UserSettingsModal from './components/UserSettingsModal';
 import GlobalAnnouncementBanner from './components/GlobalAnnouncementBanner';
 import MaintenanceScreen from './components/MaintenanceScreen';
 import BgsLogo from './components/BgsLogo';
+import LiveStatsTicker from './components/LiveStatsTicker';
 
 import initialPetsData from './data/pets.json';
 
@@ -273,29 +274,14 @@ export default function App() {
         </div>
       </header>
 
-      {/* ━━━━ LIVE STATS BAR WITH SLOW UNHURRIED ONLINE TRADERS COUNTER ━━━━ */}
-      <div style={{ background: 'rgba(255,255,255,0.02)', borderBottom: '1px solid var(--glass-border)', padding: '0.75rem 2rem', display: 'flex', justifyContent: 'center', gap: '2.5rem', flexWrap: 'wrap', zIndex: 10 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-          <Zap size={16} color="#ffcc00" />
-          <span style={{ fontWeight: 900, color: 'var(--primary-gold)' }}>{pets.length.toLocaleString()}</span> Total Items
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-          <Award size={16} color="#ff007f" />
-          <span style={{ fontWeight: 900, color: '#ff007f' }}>{secretCount}</span> Secret Items 👑
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-          <BarChart3 size={16} color="#ffcc00" />
-          <span style={{ fontWeight: 900, color: '#ffcc00' }}>{legendaryCount}</span> Legendary ⚡
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-          <TrendingUp size={16} color="#00e676" />
-          <span style={{ fontWeight: 900, color: '#00e676' }}>{risingCount}</span> High Demand
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-          <Users size={16} color="#00e5ff" />
-          <span style={{ fontWeight: 900, color: '#00e5ff', transition: 'all 0.5s ease' }}>{activeUsersCount} Online</span> Traders Active 🟢
-        </div>
-      </div>
+      {/* ━━━━ LIVE TELEMETRY MOVING TICKER STREAM ━━━━ */}
+      <LiveStatsTicker
+        totalItems={pets.length}
+        secretCount={secretCount}
+        legendaryCount={legendaryCount}
+        risingCount={risingCount}
+        activeUsersCount={activeUsersCount}
+      />
 
       {/* ━━━━ MAIN CONTENT ROUTER ━━━━ */}
       <main style={{ flex: 1, zIndex: 10 }}>
