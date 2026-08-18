@@ -719,6 +719,7 @@ app.post('/api/listings', async (req, res) => {
       email: email || '',
       picture: picture || '',
       type: type || 'sell',
+      status: req.body.status || 'open',
       offering: offering || [],
       requesting: requesting || [],
       isVerified: isVerified !== undefined ? isVerified : true,

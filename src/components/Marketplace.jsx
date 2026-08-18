@@ -302,10 +302,12 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
             const offerDemand = calcDemand(list.offering);
             const reqVal = calcVal(list.requesting);
             const reqDemand = calcDemand(list.requesting);
-            const st = statusConfig[list.status] || statusConfig.open;
+            const currentStatus = list.status || 'open';
+            const st = statusConfig[currentStatus] || statusConfig.open;
             const tg = tagColors[list.tag] || tagColors.FAIR;
             const isOwn = currentUser && (list.traderName === currentUser.username);
-            const isClosed = list.status === 'completed' || list.status === 'cancelled';
+            const isClosed = currentStatus === 'completed' || currentStatus === 'cancelled';
+            const isOpen = currentStatus === 'open';
             const canDelete = isOwn || isStaffOrOwner || isClosed;
 
             return (
@@ -443,7 +445,7 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.4rem' }}>
                   <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
                     {/* Status Management */}
-                    {list.status === 'open' && (
+                    {isOpen && (
                       <>
                         <button
                           style={{ background: 'rgba(255,204,0,0.15)', border: '1px solid rgba(255,204,0,0.4)', color: '#ffcc00', padding: '0.3rem 0.65rem', borderRadius: '8px', fontSize: '0.73rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '3px' }}

@@ -7,6 +7,7 @@
     "email": "",
     "picture": "",
     "type": "sell",
+    "status": "open",
     "offering": [
       {
         "name": "Basilisks",
@@ -36,6 +37,7 @@
     "email": "",
     "picture": "",
     "type": "sell",
+    "status": "open",
     "offering": [
       {
         "name": "Axolotl Plushie",
