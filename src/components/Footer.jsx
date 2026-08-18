@@ -2,6 +2,13 @@ import React from 'react';
 import BgsLogo from './BgsLogo';
 
 export default function Footer({ onNavigate }) {
+  const handleNav = (tab, section) => {
+    if (onNavigate) {
+      onNavigate(tab, section);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer
       style={{
@@ -28,7 +35,7 @@ export default function Footer({ onNavigate }) {
         {/* Brand & Disclaimer Column */}
         <div style={{ paddingRight: '1rem' }}>
           <div style={{ marginBottom: '1.25rem', display: 'inline-block' }}>
-            <BgsLogo />
+            <BgsLogo onClick={() => handleNav('values')} />
           </div>
 
           <p style={{ margin: '0 0 0.75rem 0', color: '#cbd5e1', fontSize: '0.85rem', fontWeight: 600, lineHeight: 1.6 }}>
@@ -50,7 +57,7 @@ export default function Footer({ onNavigate }) {
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li>
               <button
-                onClick={() => onNavigate && onNavigate('values')}
+                onClick={() => handleNav('values')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
                 onMouseEnter={(e) => (e.target.style.color = '#fff')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
@@ -60,7 +67,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <button
-                onClick={() => onNavigate && onNavigate('eggs')}
+                onClick={() => handleNav('eggs')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
                 onMouseEnter={(e) => (e.target.style.color = '#fff')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
@@ -70,7 +77,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <button
-                onClick={() => onNavigate && onNavigate('market')}
+                onClick={() => handleNav('market')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
                 onMouseEnter={(e) => (e.target.style.color = '#fff')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
@@ -80,7 +87,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <button
-                onClick={() => onNavigate && onNavigate('calculator')}
+                onClick={() => handleNav('calculator')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
                 onMouseEnter={(e) => (e.target.style.color = '#fff')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
@@ -90,7 +97,7 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <button
-                onClick={() => onNavigate && onNavigate('guides')}
+                onClick={() => handleNav('guides', 'stsc')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
                 onMouseEnter={(e) => (e.target.style.color = '#fff')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
@@ -165,24 +172,44 @@ export default function Footer({ onNavigate }) {
           </h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li>
-              <span style={{ color: '#94a3b8', cursor: 'pointer' }} onMouseEnter={(e) => (e.target.style.color = '#fff')} onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}>
+              <button
+                onClick={() => handleNav('guides', 'privacy')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#00e5ff')}
+                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
+              >
                 Privacy Policy
-              </span>
+              </button>
             </li>
             <li>
-              <span style={{ color: '#94a3b8', cursor: 'pointer' }} onMouseEnter={(e) => (e.target.style.color = '#fff')} onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}>
+              <button
+                onClick={() => handleNav('guides', 'terms')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#a78bfa')}
+                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
+              >
                 Terms of Service
-              </span>
+              </button>
             </li>
             <li>
-              <span style={{ color: '#94a3b8', cursor: 'pointer' }} onMouseEnter={(e) => (e.target.style.color = '#fff')} onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}>
+              <button
+                onClick={() => handleNav('guides', 'rules')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#ff1744')}
+                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
+              >
                 Anti-Scam Standards
-              </span>
+              </button>
             </li>
             <li>
-              <span style={{ color: '#94a3b8', cursor: 'pointer' }} onMouseEnter={(e) => (e.target.style.color = '#fff')} onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}>
+              <button
+                onClick={() => handleNav('guides', 'dupe')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#ff007f')}
+                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
+              >
                 Dupe Disclaimer
-              </span>
+              </button>
             </li>
           </ul>
         </div>
@@ -219,18 +246,23 @@ export default function Footer({ onNavigate }) {
             </li>
             <li>
               <button
-                onClick={() => onNavigate && onNavigate('guides')}
+                onClick={() => handleNav('guides', 'stsc')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.target.style.color = '#fff')}
+                onMouseEnter={(e) => (e.target.style.color = '#10b981')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
               >
-                Demand 0-11 Scale
+                Demand 0–11 Scale
               </button>
             </li>
             <li>
-              <span style={{ color: '#94a3b8', cursor: 'pointer' }} onMouseEnter={(e) => (e.target.style.color = '#fff')} onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}>
+              <button
+                onClick={() => handleNav('guides', 'faq')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#ffcc00')}
+                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
+              >
                 FAQ & Help
-              </span>
+              </button>
             </li>
           </ul>
         </div>

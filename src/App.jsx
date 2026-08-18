@@ -38,14 +38,20 @@ export default function App() {
   const isAdminRoute = window.location.pathname.toLowerCase() === '/admin';
   const [activeTab, setActiveTab] = useState(isAdminRoute ? 'admin' : 'values');
 
+  const [guidesSection, setGuidesSection] = useState('about');
+
   // Sync browser URL when tab changes so refreshing on public tabs stays on values
-  const handleTabChange = (newTab) => {
+  const handleTabChange = (newTab, subSection) => {
     setActiveTab(newTab);
+    if (subSection) {
+      setGuidesSection(subSection);
+    }
     if (newTab === 'admin') {
       window.history.replaceState({}, '', '/admin');
     } else {
       window.history.replaceState({}, '', '/');
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const [selectedPet, setSelectedPet] = useState(null);
@@ -310,7 +316,7 @@ export default function App() {
         {activeTab === 'calculator' && (
           <TradeCalculator pets={pets} sideA={sideA} setSideA={setSideA} sideB={sideB} setSideB={setSideB} />
         )}
-        {activeTab === 'guides' && <Guides />}
+        {activeTab === 'guides' && <Guides initialSection={guidesSection} />}
         {activeTab === 'admin' && (
           <AdminPanel
             pets={pets}

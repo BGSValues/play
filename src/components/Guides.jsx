@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   ShieldCheck,
   Award,
@@ -21,8 +21,14 @@ import {
 } from 'lucide-react';
 import DemandSystemChart from './DemandSystemChart';
 
-export default function Guides() {
-  const [activeSection, setActiveSection] = useState('about'); // 'about' | 'sources' | 'rules' | 'stsc'
+export default function Guides({ initialSection = 'about' }) {
+  const [activeSection, setActiveSection] = useState(initialSection || 'about');
+
+  useEffect(() => {
+    if (initialSection) {
+      setActiveSection(initialSection);
+    }
+  }, [initialSection]);
 
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '1.5rem 1.5rem 5rem 1.5rem' }}>
@@ -461,6 +467,87 @@ export default function Guides() {
             <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>3. Verified Account Security</h3>
             <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
               Keep your Roblox username and Discord tag updated in your <strong>Account Settings</strong>. Never share your password or security PINs with anyone.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* ━━━━ SECTION 5: PRIVACY POLICY ━━━━ */}
+      {activeSection === 'privacy' && (
+        <div className="glass-card" style={{ padding: '2.5rem', marginBottom: '3rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#00e5ff', marginBottom: '1rem' }}>Privacy Policy</h2>
+          <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>Last updated: 2026</p>
+          <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <p>
+              At <strong>BGS Values</strong>, your privacy is our top priority. We only collect the minimal information necessary to deliver verified peer-to-peer trading capabilities and value listings.
+            </p>
+            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>1. Information We Collect</h4>
+            <p>
+              When you create an account, we store your chosen username, Roblox handle, optional Discord tag, and trade listing preferences. We never ask for, collect, or store your Roblox passwords or billing details.
+            </p>
+            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. How Information is Used</h4>
+            <p>
+              Account data is exclusively used to enable trade offer negotiations, marketplace listing moderation, and account reputation badges. We do not sell or monetize personal user data to third parties.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* ━━━━ SECTION 6: TERMS OF SERVICE ━━━━ */}
+      {activeSection === 'terms' && (
+        <div className="glass-card" style={{ padding: '2.5rem', marginBottom: '3rem', border: '1px solid rgba(124, 58, 237, 0.3)' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#a78bfa', marginBottom: '1rem' }}>Terms of Service</h2>
+          <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>Last updated: 2026</p>
+          <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <p>
+              By accessing or using <strong>BGS Values</strong>, you agree to comply with all community trading standards and Roblox platform terms.
+            </p>
+            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>1. Fair Market Conduct</h4>
+            <p>
+              Users agree not to engage in phishing, trade scams, price manipulation, cross-trading prohibited by Roblox terms, or posting misleading trade offers.
+            </p>
+            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. Third-Party Disclaimer</h4>
+            <p>
+              BGS Values is an independent community project and is not affiliated with Roblox Corporation or Rumble Studios. All in-game assets are the property of their respective creators.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* ━━━━ SECTION 7: FAQ & HELP CENTER ━━━━ */}
+      {activeSection === 'faq' && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.3)' }}>
+            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>❓ How are Pet Values Determined?</h3>
+            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+              All values are synchronized directly with the official <strong>BGS Collab Value List</strong> and verified recent in-game trade transactions.
+            </p>
+          </div>
+          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
+            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#00e5ff', marginBottom: '0.75rem' }}>❓ What is the 0–11 Demand System?</h3>
+            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+              The demand scale rates how easily an item can be traded from <strong>1 (Garbage)</strong> up to <strong>11 (Hyped)</strong> based on player trade frequency.
+            </p>
+          </div>
+          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
+            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#10b981', marginBottom: '0.75rem' }}>❓ How Does the Trade Calculator Work?</h3>
+            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+              Select items for Side A and Side B to see instant value totals, variant multipliers, and fair trade ratings (Win, Fair, Lose).
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* ━━━━ SECTION 8: DUPE & CLEAN VALUE DISCLAIMER ━━━━ */}
+      {activeSection === 'dupe' && (
+        <div className="glass-card" style={{ padding: '2.5rem', marginBottom: '3rem', border: '1px solid rgba(255, 0, 127, 0.35)' }}>
+          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#ff007f', marginBottom: '1rem' }}>Clean & Non-Duped Value Policy</h2>
+          <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <p>
+              In 2022, mass-duplication exploits affected various legacy pets in Bubble Gum Simulator. <strong>BGS Values maintains a strict zero-dupe valuation standard.</strong>
+            </p>
+            <p>
+              Every trade value, demand tier, and hatch count listed on our platform tracks <strong>100% clean, un-duped items</strong> to protect collectors and active traders from manipulated prices.
             </p>
           </div>
         </div>
