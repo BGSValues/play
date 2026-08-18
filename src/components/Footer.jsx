@@ -22,8 +22,9 @@ export default function Footer({ onNavigate, socials }) {
         padding: '4rem 2rem 3rem 2rem',
         color: '#94a3b8',
         fontSize: '0.88rem',
+        marginTop: 'auto',
         position: 'relative',
-        zIndex: 20,
+        zIndex: 1,
         userSelect: 'none',
       }}
     >

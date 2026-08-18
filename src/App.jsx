@@ -328,8 +328,10 @@ export default function App() {
         )}
       </main>
 
-      {/* ━━━━ GLOBAL WEBSITE FOOTER ━━━━ */}
-      <Footer onNavigate={handleTabChange} socials={systemSettings?.socials} />
+      {/* ━━━━ GLOBAL WEBSITE FOOTER (HIDDEN IN ADMIN VIEW) ━━━━ */}
+      {activeTab !== 'admin' && (
+        <Footer onNavigate={handleTabChange} socials={systemSettings?.socials} />
+      )}
     </div>
   );
 }

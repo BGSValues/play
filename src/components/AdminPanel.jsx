@@ -1786,7 +1786,7 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            zIndex: 1000,
+            zIndex: 99999,
             padding: '1.5rem',
             overflowY: 'auto',
           }}
