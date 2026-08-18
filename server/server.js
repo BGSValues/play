@@ -377,13 +377,36 @@ app.post('/api/listings', async (req, res) => {
   }
 });
 
+app.put('/api/listings/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updates = req.body;
+    let listings = await getData(LISTINGS_FILE);
+    const index = listings.findIndex((l) => l.id === id);
+
+    if (index === -1) {
+      return res.status(404).json({ success: false, error: 'Listing not found' });
+    }
+
+    listings[index] = {
+      ...listings[index],
+      ...updates,
+    };
+
+    await saveData(LISTINGS_FILE, listings);
+    res.json({ success: true, listing: listings[index] });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 app.delete('/api/listings/:id', async (req, res) => {
   try {
     const { id } = req.params;
     let listings = await getData(LISTINGS_FILE);
     listings = listings.filter((l) => l.id !== id);
     await saveData(LISTINGS_FILE, listings);
-    res.json({ success: true });
+    res.json({ success: true, message: 'Listing deleted successfully' });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
