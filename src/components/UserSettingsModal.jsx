@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Settings,
   User,
@@ -24,6 +24,14 @@ export default function UserSettingsModal({ isOpen, onClose, currentUser, onUpda
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState(null);
 
+  useEffect(() => {
+    if (currentUser) {
+      setRobloxUsername(currentUser.robloxUsername || '');
+      setDiscord(currentUser.discord || '');
+      setBio(currentUser.bio || '');
+    }
+  }, [currentUser, isOpen]);
+
   if (!isOpen || !currentUser) return null;
 
   const handleSubmit = async (e) => {
@@ -45,9 +53,13 @@ export default function UserSettingsModal({ isOpen, onClose, currentUser, onUpda
     try {
       const res = await fetch('/api/users/profile', {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json', 'x-user-id': currentUser.id },
+        headers: {
+          'Content-Type': 'application/json',
+          'x-user-id': currentUser.id || 'user_owner',
+        },
         body: JSON.stringify({
-          id: currentUser.id,
+          id: currentUser.id || 'user_owner',
+          username: currentUser.username,
           robloxUsername: robloxUsername.trim(),
           discord: discord.trim(),
           bio: bio.trim(),
@@ -64,10 +76,10 @@ export default function UserSettingsModal({ isOpen, onClose, currentUser, onUpda
         setNewPassword('');
         setConfirmPassword('');
       } else {
-        setMsg({ type: 'error', text: data.error });
+        setMsg({ type: 'error', text: data.error || 'Failed to update settings.' });
       }
     } catch (err) {
-      setMsg({ type: 'error', text: 'Failed to update settings.' });
+      setMsg({ type: 'error', text: 'Connection error while saving settings.' });
     } finally {
       setLoading(false);
     }

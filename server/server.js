@@ -305,17 +305,14 @@ app.post('/api/auth/staff-login', async (req, res) => {
 // Update User Profile Settings (Discord, Roblox, Password, Bio)
 app.put('/api/users/profile', async (req, res) => {
   try {
-    const { id, robloxUsername, discord, bio, password, newPassword } = req.body;
+    const { id, username, robloxUsername, discord, bio, password, newPassword } = req.body;
 
-    if (!id) {
-      return res.status(400).json({ success: false, error: 'User ID is required.' });
-    }
-
+    const targetId = id || req.headers['x-user-id'];
     const users = await getData(USERS_FILE);
-    const user = users.find((u) => u.id === id);
+    const user = users.find((u) => u.id === targetId || (username && u.username.toLowerCase() === username.toLowerCase()) || (targetId && u.username.toLowerCase() === targetId.toLowerCase()));
 
     if (!user) {
-      return res.status(404).json({ success: false, error: 'User account not found.' });
+      return res.status(404).json({ success: false, error: 'User account not found in database.' });
     }
 
     // If changing password, verify current password
@@ -326,7 +323,7 @@ app.put('/api/users/profile', async (req, res) => {
       user.password = newPassword;
     }
 
-    if (robloxUsername) user.robloxUsername = robloxUsername;
+    if (robloxUsername !== undefined) user.robloxUsername = robloxUsername;
     if (discord !== undefined) user.discord = discord;
     if (bio !== undefined) user.bio = bio;
 
