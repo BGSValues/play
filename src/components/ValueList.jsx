@@ -302,7 +302,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Demand</span>
-                    <span className="stat-val-green">{item.demand}/10</span>
+                    <span className="stat-val-green">{item.demand}/11</span>
                   </div>
                   {item.existence && (item.existence.normal || item.existence.shiny || item.existence.hats) && (
                     <div className="stat-row">

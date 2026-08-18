@@ -82,7 +82,7 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1rem 1.5rem 5rem 1.5rem' }}>
       {/* Top Back Navigation */}
-      <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', marginBottom: '2rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <button
           onClick={onBack}
           className="filter-btn"
@@ -90,6 +90,18 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
         >
           <ArrowLeft size={18} /> Back to Value List
         </button>
+
+        <div style={{ display: 'flex', gap: '0.75rem' }}>
+          <a
+            href={wikiUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="filter-btn"
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.6rem 1.2rem', fontSize: '0.9rem', textDecoration: 'none', color: '#a78bfa' }}
+          >
+            <ExternalLink size={16} /> Official Wiki Page
+          </a>
+        </div>
       </div>
 
       {/* Main Container */}

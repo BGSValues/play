@@ -97,53 +97,6 @@ export default function App() {
     return () => clearInterval(interval);
   }, [currentUser, activeTab]);
 
-  // Asset Protection: Disable Right Click, Image Drag, and Inspect Shortcuts
-  useEffect(() => {
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-      return false;
-    };
-
-    const handleKeyDown = (e) => {
-      // Block F12
-      if (e.key === 'F12' || e.keyCode === 123) {
-        e.preventDefault();
-        return false;
-      }
-      // Block Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (DevTools)
-      if (
-        e.ctrlKey &&
-        e.shiftKey &&
-        ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key)
-      ) {
-        e.preventDefault();
-        return false;
-      }
-      // Block Ctrl+U (View Source) and Ctrl+S (Save Page)
-      if (e.ctrlKey && ['u', 'U', 's', 'S'].includes(e.key)) {
-        e.preventDefault();
-        return false;
-      }
-    };
-
-    const handleDragStart = (e) => {
-      if (e.target && e.target.tagName === 'IMG') {
-        e.preventDefault();
-        return false;
-      }
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('dragstart', handleDragStart);
-
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('dragstart', handleDragStart);
-    };
-  }, []);
-
   const fetchPets = async () => {
     try {
       const res = await fetch('/api/pets');

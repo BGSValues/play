@@ -766,13 +766,12 @@ app.delete('/api/listings/:id', async (req, res) => {
 });
 
 // ---------------- SCRAPER API ----------------
-app.post(['/api/pets/scrape', '/api/scrape'], async (req, res) => {
+app.post('/api/scrape', async (req, res) => {
   try {
     const result = await scrapeFandomPets();
     res.json({ success: true, message: 'Wiki scrape completed!', ...result });
   } catch (err) {
-    console.error('[Scraper Error]', err);
-    res.status(500).json({ success: false, error: 'Failed to sync Wiki: ' + err.message });
+    res.status(500).json({ success: false, error: 'Failed to scrape Fandom Wiki: ' + err.message });
   }
 });
 
