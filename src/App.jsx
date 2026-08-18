@@ -253,7 +253,12 @@ export default function App() {
           <EggsList onSelectPet={handleSelectPet} onAddToTrade={handleAddToTrade} />
         )}
         {activeTab === 'pet-details' && (
-          <PetDetailsPage pet={selectedPet} onBack={() => setActiveTab('values')} onAddToTrade={handleAddToTrade} onSelectPet={handleSelectPet} />
+          <PetDetailsPage
+            pet={pets.find(p => p.id === selectedPet?.id || p.name === selectedPet?.name) || selectedPet}
+            onBack={() => setActiveTab('values')}
+            onAddToTrade={handleAddToTrade}
+            onSelectPet={handleSelectPet}
+          />
         )}
         {activeTab === 'market' && (
           <Marketplace pets={pets} currentUser={currentUser} onOpenLogin={() => setIsLoginOpen(true)} />

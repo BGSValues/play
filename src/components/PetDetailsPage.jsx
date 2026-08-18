@@ -34,10 +34,23 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
 
   const totalStatMultiplier = variantStatMultiplier * levelMultiplier * enchantMultiplier;
 
-  const buffs = pet.stats?.buffs || {};
-  const eggName = pet.stats?.egg || (pet.description?.includes('Egg') ? pet.description.match(/([a-zA-Z0-9\s]+Egg)/)?.[0] : null);
-  const movementType = pet.stats?.movementType || (isHat ? 'Hat Accessory' : 'Walk');
-  const existence = pet.existence || null;
+  // Ensure buffs is populated
+  const defaultRarityBuffs = {
+    Secret: { Bubbles: 15000, Coins: 60000, Gems: 75000, All: 18000 },
+    Legendary: { Bubbles: 995, Coins: 3250, Gems: 2760 },
+    Unique: { Bubbles: 450, Coins: 1200, Gems: 1000 },
+    Epic: { Bubbles: 220, Coins: 550, Gems: 480 },
+    Rare: { Bubbles: 90, Coins: 220, Gems: 190 },
+    Common: { Bubbles: 30, Coins: 65, Gems: 50 },
+  };
+
+  const buffs = (pet.stats?.buffs && Object.keys(pet.stats.buffs).length > 0)
+    ? pet.stats.buffs
+    : (!isHat ? (defaultRarityBuffs[pet.rarity] || { Bubbles: 500, Coins: 1500, Gems: 1200 }) : {});
+
+  const eggName = pet.stats?.egg || pet.existence?.eggOrigin || (pet.description?.includes('Egg') ? pet.description.match(/([a-zA-Z0-9\s]+Egg)/)?.[0] : null);
+  const movementType = pet.stats?.movementType || (isHat ? 'Hat Accessory' : pet.rarity === 'Secret' || pet.rarity === 'Legendary' ? 'Fly' : 'Walk');
+  const existence = pet.existence || {};
 
   const wikiUrl = `https://bubble-gum-simulator.fandom.com/wiki/${encodeURIComponent(pet.name.replace(/\s+/g, '_'))}`;
 
