@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ExternalLink, PlusCircle, Sparkles, TrendingUp, Zap, Award, Activity, ShieldCheck, Heart, Layers, MapPin, DollarSign, RotateCcw, Sliders, Hash } from 'lucide-react';
 import PetAvatar from './PetAvatar';
+import BgsStatIcon from './BgsStatIcon';
 import { getPetVariantValue } from './ValueList';
 
 export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet }) {
@@ -340,8 +341,8 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
                       justifyContent: 'space-between',
                     }}
                   >
-                    <span style={{ color: '#cbd5e1', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 600 }}>
-                      <span style={{ fontSize: '1.1rem' }}>{getBuffIcon(key)}</span> {key}
+                    <span style={{ color: '#cbd5e1', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 700 }}>
+                      <BgsStatIcon stat={key} size={24} /> {key}
                     </span>
                     <span style={{ color: '#00e5ff', fontWeight: 900, fontSize: '1.15rem' }}>
                       {formatBuff(key, val)}

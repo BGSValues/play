@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, ExternalLink, PlusCircle, Sparkles, TrendingUp, Zap, HelpCircle, Activity, Award, ShieldCheck, Heart } from 'lucide-react';
 import PetAvatar from './PetAvatar';
+import BgsStatIcon from './BgsStatIcon';
 import { getPetVariantValue } from './ValueList';
 
 export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) {
@@ -172,8 +173,8 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
                     justifyContent: 'space-between',
                   }}
                 >
-                  <span style={{ color: '#cbd5e1', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 600 }}>
-                    <span>{getBuffIcon(key)}</span> {key}
+                  <span style={{ color: '#cbd5e1', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700 }}>
+                    <BgsStatIcon stat={key} size={20} /> {key}
                   </span>
                   <span style={{ color: '#00e5ff', fontWeight: 800, fontSize: '0.9rem' }}>
                     {formatBuff(key, val)}
