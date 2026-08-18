@@ -202,39 +202,39 @@ export default function Guides({ initialSection = 'about' }) {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2rem' }}>
               {/* Staff 1: Owner & Lead Architect */}
               <div className="holo-staff-card" style={{ border: '1px solid rgba(255, 204, 0, 0.4)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1rem' }}>
                   <div
                     style={{
-                      width: '56px',
-                      height: '56px',
-                      borderRadius: '18px',
+                      width: '52px',
+                      height: '52px',
+                      borderRadius: '16px',
                       background: 'linear-gradient(135deg, #ffcc00, #ff9100)',
                       color: '#000',
-                      fontSize: '1.6rem',
+                      fontSize: '1.5rem',
                       fontWeight: 900,
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      boxShadow: '0 0 25px rgba(255, 204, 0, 0.4)',
+                      boxShadow: '0 0 20px rgba(255, 204, 0, 0.35)',
                     }}
                   >
                     👑
                   </div>
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Owner_Admin</h3>
-                      <span style={{ background: '#ffcc00', color: '#000', fontSize: '0.7rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', textTransform: 'uppercase' }}>
-                        FOUNDER & OWNER
+                      <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>Owner_Admin</h3>
+                      <span style={{ background: '#ffcc00', color: '#000', fontSize: '0.68rem', fontWeight: 900, padding: '2px 6px', borderRadius: '5px', textTransform: 'uppercase' }}>
+                        OWNER
                       </span>
                     </div>
                     <div style={{ fontSize: '0.8rem', color: '#ffcc00', fontWeight: 800, marginTop: '2px' }}>
-                      Head Developer & Systems Architect
+                      Lead Developer & Platform Creator
                     </div>
                   </div>
                 </div>
 
-                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                  Oversees platform infrastructure, database synchronization, database security protocols, and ensures all trade metrics adhere strictly to true market consensus.
+                <p style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.5, marginBottom: '1rem' }}>
+                  Lead developer and platform creator.
                 </p>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -242,46 +242,46 @@ export default function Guides({ initialSection = 'about' }) {
                     🎮 Roblox: <strong>BGS_Owner_Official</strong>
                   </span>
                   <span style={{ fontSize: '0.75rem', background: 'rgba(255, 204, 0, 0.1)', border: '1px solid rgba(255, 204, 0, 0.3)', padding: '3px 8px', borderRadius: '6px', color: '#ffcc00', fontWeight: 800 }}>
-                    🛡️ Root Permissions
+                    👑 Creator
                   </span>
                 </div>
               </div>
 
               {/* Staff 2: Head Moderator & Curator */}
               <div className="holo-staff-card" style={{ border: '1px solid rgba(124, 58, 237, 0.4)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1rem' }}>
                   <div
                     style={{
-                      width: '56px',
-                      height: '56px',
-                      borderRadius: '18px',
+                      width: '52px',
+                      height: '52px',
+                      borderRadius: '16px',
                       background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
                       color: '#fff',
-                      fontSize: '1.6rem',
+                      fontSize: '1.5rem',
                       fontWeight: 900,
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      boxShadow: '0 0 25px rgba(124, 58, 237, 0.4)',
+                      boxShadow: '0 0 20px rgba(124, 58, 237, 0.35)',
                     }}
                   >
                     🛡️
                   </div>
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Staff_Mod</h3>
-                      <span style={{ background: '#7c3aed', color: '#fff', fontSize: '0.7rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', textTransform: 'uppercase' }}>
-                        HEAD MODERATOR
+                      <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>Staff_Mod</h3>
+                      <span style={{ background: '#7c3aed', color: '#fff', fontSize: '0.68rem', fontWeight: 900, padding: '2px 6px', borderRadius: '5px', textTransform: 'uppercase' }}>
+                        MODERATOR
                       </span>
                     </div>
                     <div style={{ fontSize: '0.8rem', color: '#a78bfa', fontWeight: 800, marginTop: '2px' }}>
-                      Head Value Curator & Safety Lead
+                      Head Community Moderator
                     </div>
                   </div>
                 </div>
 
-                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                  Manages real-time market reports, verifies trade listings, enforces anti-scam measures, and cross-audits daily pet stability trends across all categories.
+                <p style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.5, marginBottom: '1rem' }}>
+                  Community manager and platform moderator.
                 </p>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -289,54 +289,54 @@ export default function Guides({ initialSection = 'about' }) {
                     🎮 Roblox: <strong>Staff_Mod_Roblox</strong>
                   </span>
                   <span style={{ fontSize: '0.75rem', background: 'rgba(124, 58, 237, 0.1)', border: '1px solid rgba(124, 58, 237, 0.3)', padding: '3px 8px', borderRadius: '6px', color: '#a78bfa', fontWeight: 800 }}>
-                    ⚔️ Trade Moderator
+                    🛡️ Moderator
                   </span>
                 </div>
               </div>
 
               {/* Staff 3: Community Council */}
               <div className="holo-staff-card" style={{ border: '1px solid rgba(0, 229, 255, 0.4)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1rem' }}>
                   <div
                     style={{
-                      width: '56px',
-                      height: '56px',
-                      borderRadius: '18px',
+                      width: '52px',
+                      height: '52px',
+                      borderRadius: '16px',
                       background: 'linear-gradient(135deg, #00e5ff, #00b0ff)',
                       color: '#000',
-                      fontSize: '1.6rem',
+                      fontSize: '1.5rem',
                       fontWeight: 900,
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      boxShadow: '0 0 25px rgba(0, 229, 255, 0.4)',
+                      boxShadow: '0 0 20px rgba(0, 229, 255, 0.35)',
                     }}
                   >
                     🤝
                   </div>
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Community Council</h3>
-                      <span style={{ background: '#00e5ff', color: '#000', fontSize: '0.7rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', textTransform: 'uppercase' }}>
-                        VERIFIED TRADERS
+                      <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>Community Council</h3>
+                      <span style={{ background: '#00e5ff', color: '#000', fontSize: '0.68rem', fontWeight: 900, padding: '2px 6px', borderRadius: '5px', textTransform: 'uppercase' }}>
+                        COMMUNITY
                       </span>
                     </div>
                     <div style={{ fontSize: '0.8rem', color: '#00e5ff', fontWeight: 800, marginTop: '2px' }}>
-                      Active Players & Market Contributors
+                      Verified Community Members
                     </div>
                   </div>
                 </div>
 
-                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                  All registered and verified players actively trading on our Marketplace and Calculator. Community feedback and real trade proof continuously validate market accuracy.
+                <p style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.5, marginBottom: '1rem' }}>
+                  Active players and community trading members.
                 </p>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                   <span style={{ fontSize: '0.75rem', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.3)', padding: '3px 8px', borderRadius: '6px', color: '#10b981', fontWeight: 800 }}>
-                    🟢 Verified Trader Badge
+                    🟢 Verified Member
                   </span>
                   <span style={{ fontSize: '0.75rem', background: '#0a0b10', border: '1px solid var(--glass-border)', padding: '3px 8px', borderRadius: '6px', color: '#94a3b8' }}>
-                    💬 Discord Connected
+                    💬 Community
                   </span>
                 </div>
               </div>
