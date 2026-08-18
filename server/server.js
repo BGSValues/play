@@ -417,31 +417,55 @@ app.get('/api/pets', async (req, res) => {
 
 app.post('/api/pets', async (req, res) => {
   try {
-    const { name, rarity, baseValue, demand, status, category, image, description } = req.body;
+    const {
+      name,
+      type,
+      rarity,
+      baseValue,
+      customValues,
+      demand,
+      status,
+      category,
+      image,
+      description,
+      stats,
+      existence,
+    } = req.body;
 
-    if (!name || !baseValue) {
-      return res.status(400).json({ success: false, error: 'Name and baseValue are required fields.' });
+    if (!name) {
+      return res.status(400).json({ success: false, error: 'Item Name is required.' });
     }
 
     const pets = await getData(PETS_FILE);
-    const id = 'pet_' + Date.now();
+    const id = (type === 'hat' ? 'hat_' : 'pet_') + Date.now();
+
+    const isHat = type === 'hat' || category?.toLowerCase().includes('hat');
 
     const newPet = {
       id,
       name,
+      type: isHat ? 'hat' : 'pet',
       rarity: rarity || 'Common',
-      baseValue: Number(baseValue),
+      baseValue: baseValue !== '' && baseValue !== null && !isNaN(baseValue) ? Number(baseValue) : null,
+      customValues: customValues || null,
       demand: Number(demand) || 5,
       status: status || 'Stable',
-      category: category || (rarity ? `${rarity} Pets` : 'Custom Pets'),
+      category: category || (isHat ? 'Hats' : rarity ? `${rarity} Pets` : 'Custom Pets'),
       image: image || '',
-      multipliers: {
-        Normal: 1.0,
-        Shiny: 3.5,
-        Mythic: 10.0,
-        ShinyMythic: 35.0,
-      },
-      description: description || 'Custom added Bubble Gum Simulator pet.',
+      multipliers: isHat
+        ? null
+        : {
+            Normal: 1.0,
+            Shiny: 2.5,
+            Mythic: 10.0,
+            ShinyMythic: 25.0,
+          },
+      description: description || (isHat ? 'Equippable Hat Accessory in Bubble Gum Simulator.' : 'Companion Pet in Bubble Gum Simulator.'),
+      stats: stats || (isHat ? null : {
+        buffs: { Bubbles: 100, Coins: 250, Gems: 200 },
+        movementType: 'Walk',
+      }),
+      existence: existence || {},
     };
 
     pets.unshift(newPet);
