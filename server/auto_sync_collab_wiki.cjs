@@ -50,7 +50,7 @@ const collabEntries = new Map();
 for (const file of pageFiles) {
   if (!fs.existsSync(file)) continue;
   const html = fs.readFileSync(file, 'utf-8');
-  const textMatches = html.match(/>([^<]{1,80})</g) || [];
+  const textMatches = html.match(/>([^<]{1,100})</g) || [];
   const tokens = textMatches
     .map(t => t.slice(1, -1).replace(/&amp;/g, '&').replace(/&#39;/g, "'").trim())
     .filter(t => t.length > 0);
@@ -69,7 +69,8 @@ for (const file of pageFiles) {
     });
 
     if (matchedPet) {
-      const slice = tokens.slice(i, i + 15);
+      // Collect slice of tokens for this pet row
+      const slice = tokens.slice(i, i + 35);
       
       let baseVal = null;
       let shinyVal = null;
@@ -83,8 +84,9 @@ for (const file of pageFiles) {
 
       for (let j = 1; j < slice.length; j++) {
         const item = slice[j];
+        const prevItem = slice[j - 1] || '';
 
-        // Trend
+        // Stability Trend
         if (item.includes('⬆⬆') || item.toLowerCase().includes('rising fast')) trend = 'Rising Fast';
         else if (item.includes('⬆') || item.toLowerCase() === 'rising') trend = 'Rising';
         else if (item.includes('↔') || item.toLowerCase() === 'stable') trend = 'Stable';
@@ -92,27 +94,47 @@ for (const file of pageFiles) {
         else if (item.includes('⬇⬇') || item.toLowerCase().includes('dropping fast')) trend = 'Dropping Fast';
         else if (item.includes('⬇') || item.toLowerCase() === 'dropping') trend = 'Dropping';
 
-        // Demand (e.g. 2, 8, 10/11)
+        // Demand (e.g. 11, 2, 8)
         const demMatch = item.match(/^(\d{1,2})(?:\s*\/\s*11)?$/);
-        if (demMatch && !item.includes('🥚') && !item.includes('✨') && !item.includes('⚡') && !item.includes('+')) {
+        if (demMatch && !item.includes('🥚') && !item.includes('✨') && !item.includes('⚡') && !item.includes('+') && !item.includes(',')) {
           const dNum = parseInt(demMatch[1], 10);
           if (dNum >= 1 && dNum <= 11 && demand === null) {
             demand = dNum;
           }
         }
 
-        // Hatched existence
+        // Hatched existence handling (both same-token and previous-token)
         if (item.includes('🥚')) {
-          existence.normal = item.replace(/[^0-9+~]/g, '');
+          const digits = item.replace(/[^0-9+~?]/g, '');
+          if (digits.length > 0) {
+            existence.normal = digits;
+          } else if (prevItem) {
+            existence.normal = prevItem.trim();
+          }
         }
         if (item.includes('✨') && !item.includes('⚡')) {
-          existence.shiny = item.replace(/[^0-9+~]/g, '');
+          const digits = item.replace(/[^0-9+~?]/g, '');
+          if (digits.length > 0) {
+            existence.shiny = digits;
+          } else if (prevItem) {
+            existence.shiny = prevItem.trim();
+          }
         }
         if (item.includes('⚡') && !item.includes('✨')) {
-          existence.mythic = item.replace(/[^0-9+~]/g, '');
+          const digits = item.replace(/[^0-9+~?]/g, '');
+          if (digits.length > 0) {
+            existence.mythic = digits;
+          } else if (prevItem) {
+            existence.mythic = prevItem.trim();
+          }
         }
         if (item.includes('✨⚡') || (item.includes('✨') && item.includes('⚡'))) {
-          existence.shinyMythic = item.replace(/[^0-9+~]/g, '');
+          const digits = item.replace(/[^0-9+~?]/g, '');
+          if (digits.length > 0) {
+            existence.shinyMythic = digits;
+          } else if (prevItem) {
+            existence.shinyMythic = prevItem.trim();
+          }
         }
 
         // Numeric values
@@ -147,12 +169,7 @@ for (const file of pageFiles) {
 
 console.log(`Parsed ${collabEntries.size} items from Collab Value List!`);
 
-// Special manual mapping for Angelic Golf Ball / Golf Balls
-const golfBallData = collabEntries.get(normalize('golf balls')) || collabEntries.get(normalize('angelic golf ball'));
-if (golfBallData) {
-  console.log('Golf Balls data found in Collab:', golfBallData);
-}
-
+// Update database
 let updated = 0;
 for (const p of pets) {
   const key = normalize(p.name);
@@ -183,8 +200,7 @@ for (const p of pets) {
   }
 }
 
-console.log(`Updated ${updated} pets with full Collab data!`);
+console.log(`Updated ${updated} pets with full Collab data & accurate Hatched Existence!`);
 
 fs.writeFileSync('src/data/pets.json', JSON.stringify(pets, null, 2));
 fs.writeFileSync('server/data/pets.json', JSON.stringify(pets, null, 2));
-console.log('Saved to src/data/pets.json and server/data/pets.json');

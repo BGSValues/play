@@ -257,7 +257,7 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
 
         {/* EGG ORIGIN & HATCH DETAILS */}
         {eggName && (
-          <div style={{ marginBottom: '1.5rem', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid var(--glass-border)', borderRadius: '14px', padding: '0.85rem 1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ marginBottom: '1rem', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid var(--glass-border)', borderRadius: '14px', padding: '0.85rem 1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '1.2rem' }}>🥚</span>
               <div>
@@ -274,6 +274,32 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
                 </div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* HATCHED EXISTENCE */}
+        {pet.existence && (pet.existence.normal || pet.existence.shiny || pet.existence.mythic) && (
+          <div style={{ marginBottom: '1.5rem', background: 'rgba(255, 204, 0, 0.04)', border: '1px solid rgba(255, 204, 0, 0.2)', borderRadius: '14px', padding: '0.75rem 1rem' }}>
+            <div style={{ fontSize: '0.72rem', color: '#ffcc00', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
+              📈 Verified Hatched Existence
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', fontSize: '0.82rem' }}>
+              {pet.existence.normal && (
+                <span style={{ background: '#0a0b10', padding: '3px 8px', borderRadius: '6px', border: '1px solid var(--glass-border)', color: '#fff', fontWeight: 800 }}>
+                  🥚 {pet.existence.normal} Normal
+                </span>
+              )}
+              {pet.existence.shiny && (
+                <span style={{ background: '#0a0b10', padding: '3px 8px', borderRadius: '6px', border: '1px solid var(--glass-border)', color: '#ffcc00', fontWeight: 800 }}>
+                  ✨ {pet.existence.shiny} Shiny
+                </span>
+              )}
+              {pet.existence.mythic && (
+                <span style={{ background: '#0a0b10', padding: '3px 8px', borderRadius: '6px', border: '1px solid var(--glass-border)', color: '#00e5ff', fontWeight: 800 }}>
+                  ⚡ {pet.existence.mythic} Mythic
+                </span>
+              )}
+            </div>
           </div>
         )}
 
