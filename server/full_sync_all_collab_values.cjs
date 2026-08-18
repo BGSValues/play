@@ -19,7 +19,7 @@ function fetchUrl(url) {
 
 function parseVal(valStr) {
   if (!valStr) return null;
-  valStr = valStr.toString().trim().toLowerCase().replace(/,/g, '');
+  valStr = valStr.toString().trim().toLowerCase().replace(/,/g, '').replace(/%/g, '');
   if (['n/a', '-', 'none', '?', 'free', 'worthless', 'unobtainable', 'untraded'].includes(valStr)) return null;
   if (valStr.endsWith('m')) {
     return parseFloat(valStr) * 1000000;
@@ -37,14 +37,20 @@ function parseVal(valStr) {
 function parseDemand(demStr) {
   if (!demStr) return 5;
   demStr = demStr.toString().trim().toUpperCase();
-  if (demStr.includes('GARBAGE') || demStr.includes('TERRIBLE') || demStr.includes('AWFUL') || demStr.includes('VERY LOW')) return 1;
-  if (demStr.includes('LOW')) return 3;
-  if (demStr.includes('AVERAGE') || demStr.includes('DECENT') || demStr.includes('NORMAL') || demStr.includes('MEDIUM')) return 5;
-  if (demStr.includes('HIGH') || demStr.includes('GOOD')) return 8;
-  if (demStr.includes('GREAT') || demStr.includes('HYPED') || demStr.includes('EXTREME') || demStr.includes('INSANE') || demStr.includes('AMAZING')) return 10;
-  
+  if (demStr === 'GARBAGE' || demStr.includes('GARBAGE') || demStr === 'TERRIBLE') return 1;
+  if (demStr === 'VERY BAD' || demStr === 'AWFUL' || demStr.includes('VERY LOW')) return 2;
+  if (demStr === 'BAD' || demStr.includes('BAD')) return 3;
+  if (demStr === 'LOW' || demStr.includes('LOW')) return 4;
+  if (demStr === 'AVERAGE' || demStr.includes('AVERAGE') || demStr === 'NORMAL' || demStr === 'MEDIUM') return 5;
+  if (demStr === 'DECENT' || demStr.includes('DECENT')) return 6;
+  if (demStr === 'GOOD' || demStr.includes('GOOD')) return 7;
+  if (demStr === 'HIGH' || demStr.includes('HIGH')) return 8;
+  if (demStr === 'VERY HIGH' || demStr === 'GREAT') return 9;
+  if (demStr === 'EXTREME' || demStr.includes('EXTREME') || demStr === 'AMAZING' || demStr === 'INSANE') return 10;
+  if (demStr === 'HYPED' || demStr.includes('HYPED')) return 11;
+
   const m = demStr.match(/(\d+)\s*\/\s*1[01]/);
-  if (m) return parseInt(m[1]);
+  if (m) return Math.min(11, Math.max(1, parseInt(m[1])));
   return 5;
 }
 
@@ -86,6 +92,8 @@ async function run() {
     petMap.set(p.name.toLowerCase().trim(), idx);
   });
 
+  const DEMAND_WORDS = ['GARBAGE', 'TERRIBLE', 'AWFUL', 'VERY BAD', 'BAD', 'VERY LOW', 'LOW', 'AVERAGE', 'NORMAL', 'MEDIUM', 'DECENT', 'GOOD', 'HIGH', 'VERY HIGH', 'GREAT', 'EXTREME', 'AMAZING', 'INSANE', 'HYPED'];
+
   const scrapedItems = [];
 
   for (const pageUrl of pages) {
@@ -118,14 +126,13 @@ async function run() {
           let trend = 'Stable';
           let origin = '';
 
-          // Look at subsequent tokens up to 10 positions
-          const nextTokens = spans.slice(i + 1, i + 12);
+          const nextTokens = spans.slice(i + 1, i + 14);
           
           for (let j = 0; j < nextTokens.length; j++) {
             const tok = nextTokens[j];
-            const nextTok = nextTokens[j + 1];
+            const upperTok = tok.toUpperCase().trim();
 
-            // If we encounter another pet name, stop looking
+            // Stop if another known pet name is encountered
             if (petMap.has(tok.toLowerCase()) && j > 0) {
               break;
             }
@@ -137,11 +144,13 @@ async function run() {
             }
 
             // Demand words
-            if (['GOOD', 'AVERAGE', 'HIGH', 'LOW', 'GARBAGE', 'GREAT', 'HYPED', 'TERRIBLE', 'EXTREME'].includes(tok.toUpperCase())) {
+            if (DEMAND_WORDS.includes(upperTok)) {
               if (normalVal !== null && shinyVal === null) {
-                normalDemand = parseDemand(tok);
+                normalDemand = parseDemand(upperTok);
               } else if (shinyVal !== null) {
-                shinyDemand = parseDemand(tok);
+                shinyDemand = parseDemand(upperTok);
+              } else {
+                normalDemand = parseDemand(upperTok);
               }
               continue;
             }
@@ -230,9 +239,9 @@ async function run() {
   fs.writeFileSync(petsPath, JSON.stringify(pets, null, 2));
   console.log(`\n🎉 Successfully applied ${appliedCount} updated pet values to pets.json!`);
 
-  // Verify Summer Bond, Monochrome, Leviathan, Eternal Cucumber
+  // Verify Lovely Rose, Prisma Cube, Summer Bond, Monochrome, Leviathan
   console.log('\n--- VERIFICATION SAMPLES ---');
-  ['Summer Bond', 'Monochrome', 'Leviathan', 'The Overlord', 'Dominus Astra', 'Dark Soul', 'Night Terror'].forEach(name => {
+  ['Lovely Rose', 'Prisma Cube', 'Summer Bond', 'Monochrome', 'Leviathan', 'The Overlord', 'Dominus Astra', 'Dark Soul'].forEach(name => {
     const p = pets.find(x => x.name === name);
     if (p) {
       console.log(`${p.name}: Value=${p.baseValue}, Shiny=${p.customValues?.shiny || 'Auto'}, Demand=${p.demand}/11, Trend=${p.status}, Note=${p.existence?.note || 'None'}`);
