@@ -4,6 +4,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import axios from 'axios';
 import { fileURLToPath } from 'url';
+import { exec } from 'child_process';
 import { scrapeFandomPets } from './scraper.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -813,8 +814,6 @@ app.post('/api/system/settings', async (req, res) => {
 });
 
 // ---------------- SCRAPER & COLLAB SYNC API ----------------
-const { exec } = require('child_process');
-
 app.post(['/api/scrape', '/api/pets/scrape', '/api/sync/collab'], async (req, res) => {
   try {
     const wikiResult = await scrapeFandomPets();
