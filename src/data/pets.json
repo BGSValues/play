@@ -3,8 +3,8 @@
     "id": "pet_1b_trophy",
     "name": "1B Trophy",
     "rarity": "Secret",
-    "baseValue": 40000,
-    "demand": 0,
+    "baseValue": 1200,
+    "demand": 3,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/02/Mythic_1B_Trophy.png/revision/latest",
@@ -22,7 +22,9 @@
       "mythic": "10"
     },
     "customValues": {
-      "shiny": 10
+      "shiny": 4000,
+      "mythic": 40000,
+      "shinyMythic": 10
     },
     "stats": {
       "buffs": {
@@ -40,7 +42,7 @@
     "id": "pet_ace",
     "name": "ACE",
     "rarity": "Secret",
-    "baseValue": 550,
+    "baseValue": 25,
     "demand": 0,
     "status": "Rising",
     "category": "Secret Pets",
@@ -54,7 +56,9 @@
     "description": "Official Secret companion pet from BGS Collab Value List (ACE).",
     "existence": {},
     "customValues": {
-      "shiny": 500
+      "shiny": 100,
+      "mythic": 550,
+      "shinyMythic": 500
     },
     "stats": {
       "buffs": {
@@ -95,8 +99,8 @@
     "id": "pet_all_seeing_eye",
     "name": "All Seeing Eye",
     "rarity": "Secret",
-    "baseValue": 17500,
-    "demand": 0,
+    "baseValue": 1500,
+    "demand": 8,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/78/All_Seeing_Eye.png/revision/latest",
@@ -109,10 +113,13 @@
     "description": "Official Secret companion pet from BGS Collab Value List (All Seeing Eye).",
     "existence": {
       "shinyMythic": "2",
-      "mythic": "3"
+      "mythic": "3",
+      "shiny": "2"
     },
     "customValues": {
-      "shiny": 42
+      "shiny": 4500,
+      "mythic": 17500,
+      "shinyMythic": 42
     },
     "stats": {
       "buffs": {
@@ -131,7 +138,7 @@
     "name": "Almighty Hexarium",
     "rarity": "Secret",
     "baseValue": 16000,
-    "demand": 0,
+    "demand": 8,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3b/Mythic_Almighty_Hexarium.png/revision/latest",
@@ -149,7 +156,8 @@
       "mythic": "0"
     },
     "customValues": {
-      "shiny": 80000
+      "shiny": 80000,
+      "mythic": 15000000000
     },
     "stats": {
       "buffs": {
@@ -186,7 +194,8 @@
       "mythic": "22"
     },
     "customValues": {
-      "shiny": 22
+      "shiny": 3730,
+      "shinyMythic": 22
     },
     "stats": {
       "buffs": {
@@ -229,7 +238,7 @@
     "id": "pet_angelic_spirit",
     "name": "Angelic Spirit",
     "rarity": "Secret",
-    "baseValue": 150000,
+    "baseValue": 550,
     "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
@@ -248,7 +257,9 @@
       "mythic": "19"
     },
     "customValues": {
-      "shiny": 19
+      "shiny": 2500,
+      "mythic": 150000,
+      "shinyMythic": 19
     },
     "stats": {
       "buffs": {
@@ -266,8 +277,8 @@
     "id": "pet_archangel",
     "name": "Archangel",
     "rarity": "Secret",
-    "baseValue": 20000,
-    "demand": 0,
+    "baseValue": 250,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/73/Mythic_Archangel.png/revision/latest",
@@ -285,7 +296,9 @@
       "mythic": "78"
     },
     "customValues": {
-      "shiny": 78
+      "shiny": 1250,
+      "mythic": 20000,
+      "shinyMythic": 78
     },
     "stats": {
       "buffs": {
@@ -331,7 +344,7 @@
     "id": "pet_bgs_plaque",
     "name": "BGS Plaque",
     "rarity": "Secret",
-    "baseValue": 2000,
+    "baseValue": 70,
     "demand": 3,
     "status": "Hyped",
     "category": "Secret Pets",
@@ -350,7 +363,9 @@
       "mythic": "445"
     },
     "customValues": {
-      "shiny": 445
+      "shiny": 300,
+      "mythic": 2000,
+      "shinyMythic": 445
     },
     "stats": {
       "buffs": {
@@ -368,7 +383,7 @@
     "id": "pet_candycorn_shard",
     "name": "Candycorn Shard",
     "rarity": "Secret",
-    "baseValue": 45000,
+    "baseValue": 750,
     "demand": 9,
     "status": "Rising",
     "category": "Secret Pets",
@@ -387,7 +402,9 @@
       "mythic": "14"
     },
     "customValues": {
-      "shiny": 1
+      "shiny": 1835,
+      "mythic": 45000,
+      "shinyMythic": 1
     },
     "stats": {
       "buffs": {
@@ -405,8 +422,8 @@
     "id": "pet_cardinal_bunny",
     "name": "Cardinal Bunny",
     "rarity": "Secret",
-    "baseValue": 35000,
-    "demand": 0,
+    "baseValue": 1200,
+    "demand": 5,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/33/Cardinal_Bunny.png/revision/latest",
@@ -424,7 +441,9 @@
       "mythic": "17"
     },
     "customValues": {
-      "shiny": 17
+      "shiny": 5500,
+      "mythic": 35000,
+      "shinyMythic": 17
     },
     "stats": {
       "buffs": {
@@ -469,7 +488,7 @@
     "id": "pet_christmas_bell",
     "name": "Christmas Bell",
     "rarity": "Secret",
-    "baseValue": 8500,
+    "baseValue": 150,
     "demand": 3,
     "status": "Hyped",
     "category": "Secret Pets",
@@ -488,7 +507,9 @@
       "mythic": "104"
     },
     "customValues": {
-      "shiny": 104
+      "shiny": 1100,
+      "mythic": 8500,
+      "shinyMythic": 104
     },
     "stats": {
       "buffs": {
@@ -507,7 +528,7 @@
     "name": "Christmas Robot",
     "rarity": "Secret",
     "baseValue": 2750,
-    "demand": 8,
+    "demand": 6,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Mythic_Christmas_Robot.png/revision/latest",
@@ -593,7 +614,7 @@
     "id": "pet_corrupt_glitch",
     "name": "Corrupt Glitch",
     "rarity": "Secret",
-    "baseValue": 2500,
+    "baseValue": 225,
     "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
@@ -612,7 +633,9 @@
       "mythic": "212"
     },
     "customValues": {
-      "shiny": 212
+      "shiny": 1350,
+      "mythic": 2500,
+      "shinyMythic": 212
     },
     "stats": {
       "buffs": {
@@ -655,8 +678,8 @@
     "id": "pet_crystal_teddy",
     "name": "Crystal Teddy",
     "rarity": "Secret",
-    "baseValue": 5500,
-    "demand": 3,
+    "baseValue": 200,
+    "demand": 1,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c0/Mythic_Crystal_Teddy.png/revision/latest",
@@ -674,7 +697,8 @@
       "mythic": "5"
     },
     "customValues": {
-      "shiny": 650
+      "shiny": 650,
+      "mythic": 5500
     },
     "stats": {
       "buffs": {
@@ -1093,7 +1117,7 @@
     "id": "pet_diamond_ring",
     "name": "Diamond Ring",
     "rarity": "Secret",
-    "baseValue": 14500,
+    "baseValue": 500,
     "demand": 5,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1112,7 +1136,8 @@
       "mythic": "81"
     },
     "customValues": {
-      "shiny": 2500
+      "shiny": 2500,
+      "mythic": 14500
     },
     "stats": {
       "buffs": {
@@ -1130,7 +1155,7 @@
     "id": "pet_dice_split",
     "name": "Dice Split",
     "rarity": "Secret",
-    "baseValue": 4500,
+    "baseValue": 80,
     "demand": 5,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1149,7 +1174,9 @@
       "mythic": "215"
     },
     "customValues": {
-      "shiny": 215
+      "shiny": 500,
+      "mythic": 4500,
+      "shinyMythic": 215
     },
     "stats": {
       "buffs": {
@@ -1202,8 +1229,8 @@
     "id": "pet_dragonfruit",
     "name": "Dragonfruit",
     "rarity": "Secret",
-    "baseValue": 1200000,
-    "demand": 0,
+    "baseValue": 2000,
+    "demand": 8,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e4/Mythic_Dragonfruit.png/revision/latest",
@@ -1221,7 +1248,9 @@
       "mythic": "17"
     },
     "customValues": {
-      "shiny": 17
+      "shiny": 6000,
+      "mythic": 1200000,
+      "shinyMythic": 17
     },
     "stats": {
       "buffs": {
@@ -1239,7 +1268,7 @@
     "id": "pet_dream_catcher",
     "name": "Dream Catcher",
     "rarity": "Secret",
-    "baseValue": 200000,
+    "baseValue": 450,
     "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1258,7 +1287,9 @@
       "mythic": "28"
     },
     "customValues": {
-      "shiny": 28
+      "shiny": 2250,
+      "mythic": 200000,
+      "shinyMythic": 28
     },
     "stats": {
       "buffs": {
@@ -1274,7 +1305,7 @@
     "id": "pet_duality",
     "name": "Duality",
     "rarity": "Secret",
-    "baseValue": 17500,
+    "baseValue": 1200,
     "demand": 0,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1293,7 +1324,9 @@
       "mythic": "7"
     },
     "customValues": {
-      "shiny": 7
+      "shiny": 4000,
+      "mythic": 17500,
+      "shinyMythic": 7
     },
     "stats": {
       "buffs": {
@@ -1347,7 +1380,7 @@
     "name": "Easter Robot",
     "rarity": "Secret",
     "baseValue": 6000,
-    "demand": 0,
+    "demand": 7,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4f/Easter_Robot.png/revision/latest",
@@ -1365,7 +1398,8 @@
       "mythic": "3"
     },
     "customValues": {
-      "shiny": 3
+      "shiny": 30000,
+      "shinyMythic": 3
     },
     "stats": {
       "buffs": {
@@ -1383,7 +1417,7 @@
     "id": "pet_easter_spirit",
     "name": "Easter Spirit",
     "rarity": "Secret",
-    "baseValue": 7000,
+    "baseValue": 80,
     "demand": 1,
     "status": "Hyped",
     "category": "Secret Pets",
@@ -1402,7 +1436,9 @@
       "mythic": "193"
     },
     "customValues": {
-      "shiny": 193
+      "shiny": 450,
+      "mythic": 7000,
+      "shinyMythic": 193
     },
     "stats": {
       "buffs": {
@@ -1574,7 +1610,7 @@
     "id": "pet_eternal_carrot",
     "name": "Eternal Carrot",
     "rarity": "Secret",
-    "baseValue": 7500,
+    "baseValue": 400,
     "demand": 3,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1593,7 +1629,9 @@
       "mythic": "74"
     },
     "customValues": {
-      "shiny": 74
+      "shiny": 1750,
+      "mythic": 7500,
+      "shinyMythic": 74
     },
     "stats": {
       "buffs": {
@@ -1611,8 +1649,8 @@
     "id": "pet_eternal_cucumber",
     "name": "Eternal Cucumber",
     "rarity": "Secret",
-    "baseValue": 15000,
-    "demand": 0,
+    "baseValue": 1000000,
+    "demand": 11,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Mythic_Eternal_Cucumber.png/revision/latest",
@@ -1630,7 +1668,9 @@
       "mythic": "47"
     },
     "customValues": {
-      "shiny": 47
+      "shiny": 1100,
+      "mythic": 15000,
+      "shinyMythic": 47
     },
     "stats": {
       "buffs": {
@@ -1773,7 +1813,7 @@
     "id": "pet_firecracker",
     "name": "Firecracker",
     "rarity": "Secret",
-    "baseValue": 12500,
+    "baseValue": 300,
     "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1792,7 +1832,9 @@
       "mythic": "44"
     },
     "customValues": {
-      "shiny": 1
+      "shiny": 1500,
+      "mythic": 12500,
+      "shinyMythic": 1
     },
     "stats": {
       "buffs": {
@@ -1868,7 +1910,7 @@
     "id": "pet_frosted_dreamer",
     "name": "Frosted Dreamer",
     "rarity": "Secret",
-    "baseValue": 700,
+    "baseValue": 100,
     "demand": 2,
     "status": "Rising",
     "category": "Secret Pets",
@@ -1882,7 +1924,9 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Frosted Dreamer).",
     "existence": {},
     "customValues": {
-      "shiny": 6000
+      "shiny": 350,
+      "mythic": 700,
+      "shinyMythic": 6000
     },
     "stats": {
       "buffs": {
@@ -1925,8 +1969,8 @@
     "id": "pet_galactic_paladin",
     "name": "Galactic Paladin",
     "rarity": "Secret",
-    "baseValue": 5000,
-    "demand": 6,
+    "baseValue": 3000,
+    "demand": 7,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e6/Mythic_Galactic_Paladin.png/revision/latest",
@@ -1944,7 +1988,9 @@
       "mythic": "13"
     },
     "customValues": {
-      "shiny": 13
+      "shiny": 9500,
+      "mythic": 5000,
+      "shinyMythic": 13
     },
     "stats": {
       "buffs": {
@@ -1963,7 +2009,7 @@
     "name": "Ghosdeeri",
     "rarity": "Secret",
     "baseValue": 2200,
-    "demand": 0,
+    "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Ghosdeeri.png/revision/latest",
@@ -1976,10 +2022,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Ghosdeeri).",
     "existence": {
       "shinyMythic": "0",
-      "mythic": "4"
+      "mythic": "4",
+      "shiny": "0"
     },
     "customValues": {
-      "shiny": 4
+      "shiny": 7000,
+      "shinyMythic": 4
     },
     "stats": {
       "buffs": {
@@ -2090,7 +2138,7 @@
     "id": "pet_giant_robot",
     "name": "Giant Robot",
     "rarity": "Secret",
-    "baseValue": 135568,
+    "baseValue": 0,
     "demand": 8,
     "status": "Rising",
     "category": "Secret Pets",
@@ -2120,7 +2168,7 @@
     "id": "pet_gingerbread_shard",
     "name": "Gingerbread Shard",
     "rarity": "Secret",
-    "baseValue": 500,
+    "baseValue": 60,
     "demand": 1,
     "status": "Rising",
     "category": "Secret Pets",
@@ -2139,7 +2187,9 @@
       "mythic": "565"
     },
     "customValues": {
-      "shiny": 565
+      "shiny": 300,
+      "mythic": 500,
+      "shinyMythic": 565
     },
     "stats": {
       "buffs": {
@@ -2192,8 +2242,8 @@
     "id": "pet_godly_shamrock",
     "name": "Godly Shamrock",
     "rarity": "Secret",
-    "baseValue": 10000,
-    "demand": 0,
+    "baseValue": 1500,
+    "demand": 5,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/04/Godly_Shamrock.png/revision/latest",
@@ -2211,7 +2261,9 @@
       "mythic": "6"
     },
     "customValues": {
-      "shiny": 6
+      "shiny": 7500,
+      "mythic": 10000,
+      "shinyMythic": 6
     },
     "stats": {
       "buffs": {
@@ -2288,8 +2340,8 @@
     "id": "pet_harmonic_harp",
     "name": "Harmonic Harp",
     "rarity": "Secret",
-    "baseValue": 550000,
-    "demand": 0,
+    "baseValue": 600,
+    "demand": 5,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ed/Mythic_Harmonic_Harp.png/revision/latest",
@@ -2307,7 +2359,9 @@
       "mythic": "10"
     },
     "customValues": {
-      "shiny": 10
+      "shiny": 3500,
+      "mythic": 550000,
+      "shinyMythic": 10
     },
     "stats": {
       "buffs": {
@@ -2325,8 +2379,8 @@
     "id": "pet_hellfire",
     "name": "Hellfire",
     "rarity": "Secret",
-    "baseValue": 15500,
-    "demand": 0,
+    "baseValue": 550,
+    "demand": 3,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4e/Hellfire.png/revision/latest",
@@ -2344,7 +2398,9 @@
       "mythic": "42"
     },
     "customValues": {
-      "shiny": 42
+      "shiny": 2400,
+      "mythic": 15500,
+      "shinyMythic": 42
     },
     "stats": {
       "buffs": {
@@ -2363,7 +2419,7 @@
     "name": "Hellshard",
     "rarity": "Secret",
     "baseValue": 3000,
-    "demand": 0,
+    "demand": 5,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Hellshard.png/revision/latest",
@@ -2376,10 +2432,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Hellshard).",
     "existence": {
       "shinyMythic": "0",
-      "mythic": "3"
+      "mythic": "3",
+      "shiny": "0"
     },
     "customValues": {
-      "shiny": 3
+      "shiny": 12500,
+      "shinyMythic": 3
     },
     "stats": {
       "buffs": {
@@ -2430,8 +2488,8 @@
     "id": "pet_holy_egg",
     "name": "Holy Egg",
     "rarity": "Secret",
-    "baseValue": 12500,
-    "demand": 0,
+    "baseValue": 250,
+    "demand": 2,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Holy_Egg.png/revision/latest",
@@ -2449,7 +2507,9 @@
       "mythic": "54"
     },
     "customValues": {
-      "shiny": 54
+      "shiny": 1250,
+      "mythic": 12500,
+      "shinyMythic": 54
     },
     "stats": {
       "buffs": {
@@ -2586,7 +2646,7 @@
     "name": "Infinity Gem",
     "rarity": "Secret",
     "baseValue": 11000,
-    "demand": 0,
+    "demand": 7,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Mythic_Infinity_Gem.png/revision/latest",
@@ -2676,7 +2736,7 @@
     "name": "King Kitty",
     "rarity": "Secret",
     "baseValue": 15000,
-    "demand": 6,
+    "demand": 8,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/13/Mythic_King_Kitty.png/revision/latest",
@@ -2795,7 +2855,7 @@
     "id": "pet_king_slime",
     "name": "King Slime",
     "rarity": "Secret",
-    "baseValue": 2000,
+    "baseValue": 100,
     "demand": 3,
     "status": "Hyped",
     "category": "Secret Pets",
@@ -2814,7 +2874,9 @@
       "mythic": "227"
     },
     "customValues": {
-      "shiny": 227
+      "shiny": 400,
+      "mythic": 2000,
+      "shinyMythic": 227
     },
     "stats": {
       "buffs": {
@@ -2833,7 +2895,7 @@
     "name": "Koi",
     "rarity": "Secret",
     "baseValue": 900,
-    "demand": 0,
+    "demand": 7,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1a/Mythic_Koi.png/revision/latest",
@@ -2851,7 +2913,8 @@
       "mythic": "12"
     },
     "customValues": {
-      "shiny": 12
+      "shiny": 3500,
+      "shinyMythic": 12
     },
     "stats": {
       "buffs": {
@@ -2904,7 +2967,7 @@
     "id": "pet_leviathan",
     "name": "Leviathan",
     "rarity": "Secret",
-    "baseValue": 120000,
+    "baseValue": 0,
     "demand": 8,
     "status": "Stable",
     "category": "Secret Pets",
@@ -2970,8 +3033,8 @@
     "id": "pet_love_thief",
     "name": "Love Thief",
     "rarity": "Secret",
-    "baseValue": 70000,
-    "demand": 0,
+    "baseValue": 650,
+    "demand": 6,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/62/Love_Thief.png/revision/latest",
@@ -2989,7 +3052,9 @@
       "mythic": "17"
     },
     "customValues": {
-      "shiny": 17
+      "shiny": 3750,
+      "mythic": 70000,
+      "shinyMythic": 17
     },
     "stats": {
       "buffs": {
@@ -3007,7 +3072,7 @@
     "id": "pet_lovely_rose",
     "name": "Lovely Rose",
     "rarity": "Secret",
-    "baseValue": 1250,
+    "baseValue": 225,
     "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
@@ -3026,7 +3091,9 @@
       "mythic": "514"
     },
     "customValues": {
-      "shiny": 514
+      "shiny": 1200,
+      "mythic": 1250,
+      "shinyMythic": 514
     },
     "stats": {
       "buffs": {
@@ -3042,8 +3109,8 @@
     "id": "pet_lucid_leaf",
     "name": "Lucid Leaf",
     "rarity": "Secret",
-    "baseValue": 15000,
-    "demand": 0,
+    "baseValue": 200,
+    "demand": 4,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Mythic_Lucid_Leaf.png/revision/latest",
@@ -3061,7 +3128,9 @@
       "mythic": "90"
     },
     "customValues": {
-      "shiny": 90
+      "shiny": 750,
+      "mythic": 15000,
+      "shinyMythic": 90
     },
     "stats": {
       "buffs": {
@@ -3077,7 +3146,7 @@
     "id": "pet_lucky_pyramidium",
     "name": "Lucky Pyramidium",
     "rarity": "Secret",
-    "baseValue": 131860,
+    "baseValue": 0,
     "demand": 0,
     "status": "Rising",
     "category": "Secret Pets",
@@ -3091,10 +3160,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Lucky Pyramidium).",
     "existence": {
       "shinyMythic": "0",
-      "mythic": "6"
+      "mythic": "6",
+      "shiny": "0"
     },
     "customValues": {
-      "shiny": 6
+      "shiny": 6,
+      "shinyMythic": 6
     },
     "stats": {
       "buffs": {
@@ -3110,8 +3181,8 @@
     "id": "pet_luminance",
     "name": "Luminance",
     "rarity": "Secret",
-    "baseValue": 8500000,
-    "demand": 0,
+    "baseValue": 3000,
+    "demand": 7,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Mythic_Luminance.png/revision/latest",
@@ -3129,7 +3200,9 @@
       "mythic": "6"
     },
     "customValues": {
-      "shiny": 6
+      "shiny": 9000,
+      "mythic": 8500000,
+      "shinyMythic": 6
     },
     "stats": {
       "buffs": {
@@ -3177,8 +3250,8 @@
     "id": "pet_money_mouth",
     "name": "Money Mouth",
     "rarity": "Secret",
-    "baseValue": 30000,
-    "demand": 0,
+    "baseValue": 1500,
+    "demand": 5,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d4/Money_Mouth.png/revision/latest",
@@ -3196,7 +3269,9 @@
       "mythic": "13"
     },
     "customValues": {
-      "shiny": 13
+      "shiny": 6250,
+      "mythic": 30000,
+      "shinyMythic": 13
     },
     "stats": {
       "buffs": {
@@ -3214,7 +3289,7 @@
     "id": "pet_morning_star",
     "name": "Morning Star",
     "rarity": "Secret",
-    "baseValue": 7000,
+    "baseValue": 200,
     "demand": 4,
     "status": "Rising",
     "category": "Secret Pets",
@@ -3233,7 +3308,9 @@
       "mythic": "69"
     },
     "customValues": {
-      "shiny": 2
+      "shiny": 1300,
+      "mythic": 7000,
+      "shinyMythic": 2
     },
     "stats": {
       "buffs": {
@@ -3252,7 +3329,7 @@
     "name": "New Year Champion",
     "rarity": "Secret",
     "baseValue": 5500,
-    "demand": 0,
+    "demand": 8,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9a/Mythic_New_Year_Champion.png/revision/latest",
@@ -3270,7 +3347,8 @@
       "mythic": "3"
     },
     "customValues": {
-      "shiny": 3
+      "shiny": 25000,
+      "shinyMythic": 3
     },
     "stats": {
       "buffs": {
@@ -3305,7 +3383,8 @@
       "mythic": "16"
     },
     "customValues": {
-      "shiny": 1
+      "shiny": 3000,
+      "shinyMythic": 1
     },
     "stats": {
       "buffs": {
@@ -3358,8 +3437,8 @@
     "id": "pet_patronus",
     "name": "Patronus",
     "rarity": "Secret",
-    "baseValue": 17500,
-    "demand": 0,
+    "baseValue": 1750,
+    "demand": 6,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bd/Mythic_Patronus.png/revision/latest",
@@ -3377,7 +3456,9 @@
       "mythic": "13"
     },
     "customValues": {
-      "shiny": 13
+      "shiny": 10500,
+      "mythic": 17500,
+      "shinyMythic": 13
     },
     "stats": {
       "buffs": {
@@ -3394,7 +3475,7 @@
     "name": "Peppermint Leviathan",
     "rarity": "Secret",
     "baseValue": 3000,
-    "demand": 0,
+    "demand": 7,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8b/Mythic_Peppermint_Leviathan.png/revision/latest",
@@ -3412,7 +3493,8 @@
       "mythic": "7"
     },
     "customValues": {
-      "shiny": 7
+      "shiny": 15000,
+      "shinyMythic": 7
     },
     "stats": {
       "buffs": {
@@ -3482,8 +3564,8 @@
     "id": "pet_plasma_wolflord",
     "name": "Plasma Wolflord",
     "rarity": "Secret",
-    "baseValue": 1000000,
-    "demand": 9,
+    "baseValue": 2200,
+    "demand": 7,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Mythic_Plasma_Wolflord.png/revision/latest",
@@ -3501,7 +3583,8 @@
       "mythic": "4"
     },
     "customValues": {
-      "shiny": 8000
+      "shiny": 8000,
+      "mythic": 1000000
     },
     "stats": {
       "buffs": {
@@ -3545,8 +3628,8 @@
     "id": "pet_pot_o__doggy",
     "name": "Pot O' Doggy",
     "rarity": "Secret",
-    "baseValue": 15000,
-    "demand": 0,
+    "baseValue": 750,
+    "demand": 7,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Pot_O%27_Doggy.png/revision/latest",
@@ -3564,7 +3647,9 @@
       "mythic": "30"
     },
     "customValues": {
-      "shiny": 30
+      "shiny": 4000,
+      "mythic": 15000,
+      "shinyMythic": 30
     },
     "stats": {
       "buffs": {
@@ -3613,7 +3698,7 @@
     "id": "pet_prisma_cube",
     "name": "Prisma Cube",
     "rarity": "Secret",
-    "baseValue": 1500,
+    "baseValue": 75,
     "demand": 2,
     "status": "Rising",
     "category": "Secret Pets",
@@ -3632,7 +3717,9 @@
       "mythic": "327"
     },
     "customValues": {
-      "shiny": 327
+      "shiny": 400,
+      "mythic": 1500,
+      "shinyMythic": 327
     },
     "stats": {
       "buffs": {
@@ -3651,7 +3738,7 @@
     "name": "Pyramidium",
     "rarity": "Secret",
     "baseValue": 4500,
-    "demand": 0,
+    "demand": 7,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b9/Shiny_Pyramidium.png/revision/latest",
@@ -3747,8 +3834,8 @@
     "id": "pet_radiant_one",
     "name": "Radiant One",
     "rarity": "Secret",
-    "baseValue": 5,
-    "demand": 1,
+    "baseValue": 4500,
+    "demand": 9,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Mythic_Radiant_One.png/revision/latest",
@@ -3766,7 +3853,9 @@
       "mythic": "5"
     },
     "customValues": {
-      "shiny": 5000
+      "shiny": 13500,
+      "mythic": 5,
+      "shinyMythic": 5000
     },
     "stats": {
       "buffs": {
@@ -4107,8 +4196,8 @@
     "id": "pet_shard",
     "name": "Shard",
     "rarity": "Secret",
-    "baseValue": 6000,
-    "demand": 0,
+    "baseValue": 800,
+    "demand": 7,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/35/Mythic_Shard.png/revision/latest",
@@ -4126,7 +4215,9 @@
       "mythic": "6"
     },
     "customValues": {
-      "shiny": 17500
+      "shiny": 3500,
+      "mythic": 6000,
+      "shinyMythic": 17500
     },
     "stats": {
       "buffs": {
@@ -4144,7 +4235,7 @@
     "id": "pet_shattered_soul",
     "name": "Shattered Soul",
     "rarity": "Secret",
-    "baseValue": 6000,
+    "baseValue": 1250,
     "demand": 5,
     "status": "Hyped",
     "category": "Secret Pets",
@@ -4163,7 +4254,8 @@
       "mythic": "32"
     },
     "customValues": {
-      "shiny": 8750
+      "shiny": 8750,
+      "mythic": 6000
     },
     "stats": {
       "buffs": {
@@ -4216,7 +4308,7 @@
     "name": "Sinister Lord 2.0",
     "rarity": "Secret",
     "baseValue": 5500,
-    "demand": 0,
+    "demand": 6,
     "status": "Rising",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/96/Mythic_Sinister_Lord_2.0.png/revision/latest",
@@ -4252,7 +4344,7 @@
     "id": "pet_sinister_shard",
     "name": "Sinister Shard",
     "rarity": "Secret",
-    "baseValue": 20000,
+    "baseValue": 400,
     "demand": 0,
     "status": "Rising",
     "category": "Secret Pets",
@@ -4271,7 +4363,9 @@
       "mythic": "37"
     },
     "customValues": {
-      "shiny": 37
+      "shiny": 4180,
+      "mythic": 20000,
+      "shinyMythic": 37
     },
     "stats": {
       "buffs": {
@@ -4347,7 +4441,7 @@
     "id": "pet_soulflake",
     "name": "Soulflake",
     "rarity": "Secret",
-    "baseValue": 12500,
+    "baseValue": 700,
     "demand": 5,
     "status": "Rising",
     "category": "Secret Pets",
@@ -4366,7 +4460,9 @@
       "mythic": "28"
     },
     "customValues": {
-      "shiny": 1
+      "shiny": 5000,
+      "mythic": 12500,
+      "shinyMythic": 1
     },
     "stats": {
       "buffs": {
@@ -14383,7 +14479,7 @@
     "id": "pet_peppermint_heart",
     "name": "Peppermint Heart",
     "rarity": "Legendary",
-    "baseValue": 1500,
+    "baseValue": 200,
     "demand": 1,
     "status": "Hyped",
     "category": "Legendary Pets",
@@ -14397,7 +14493,9 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Peppermint Heart).",
     "existence": {},
     "customValues": {
-      "shiny": 5000
+      "shiny": 700,
+      "mythic": 1500,
+      "shinyMythic": 5000
     },
     "stats": {
       "buffs": {
@@ -15425,8 +15523,8 @@
     "id": "pet_santa_hat",
     "name": "Santa Hat",
     "rarity": "Legendary",
-    "baseValue": 5000,
-    "demand": 0,
+    "baseValue": 250,
+    "demand": 4,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c8/Sant%27as_Hat.png/revision/latest",
@@ -15439,7 +15537,9 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Santa Hat).",
     "existence": {},
     "customValues": {
-      "shiny": 700
+      "shiny": 1000,
+      "mythic": 5000,
+      "shinyMythic": 700
     },
     "stats": {
       "buffs": {
@@ -39696,7 +39796,7 @@
     "type": "hat",
     "rarity": "Unique",
     "category": "Hats",
-    "baseValue": 500,
+    "baseValue": 200,
     "demand": 5,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Autumn_Tophat.png/revision/latest",
@@ -40057,7 +40157,7 @@
     "type": "hat",
     "rarity": "Unique",
     "category": "Hats",
-    "baseValue": 500,
+    "baseValue": 5000,
     "demand": 5,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Clown_Hat.png/revision/latest",
@@ -40068,6 +40168,9 @@
     },
     "existence": {
       "hats": "Unboxed"
+    },
+    "customValues": {
+      "shiny": 200
     }
   },
   {
@@ -40695,6 +40798,9 @@
     },
     "existence": {
       "hats": "Unboxed"
+    },
+    "customValues": {
+      "shiny": 3000
     }
   },
   {
@@ -40722,7 +40828,7 @@
     "type": "hat",
     "rarity": "Unique",
     "category": "Hats",
-    "baseValue": 500,
+    "baseValue": 3000,
     "demand": 5,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/MLG.png/revision/latest",
@@ -40790,6 +40896,9 @@
     },
     "existence": {
       "hats": "2,228"
+    },
+    "customValues": {
+      "shiny": 50000
     }
   },
   {
@@ -41064,7 +41173,7 @@
     "type": "hat",
     "rarity": "Unique",
     "category": "Hats",
-    "baseValue": 500,
+    "baseValue": 25000,
     "demand": 5,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Santa_Paws.png/revision/latest",
@@ -41075,6 +41184,9 @@
     },
     "existence": {
       "hats": "3,248"
+    },
+    "customValues": {
+      "shiny": 5000
     }
   },
   {
@@ -41425,7 +41537,7 @@
     "type": "hat",
     "rarity": "Unique",
     "category": "Hats",
-    "baseValue": 500,
+    "baseValue": 50000,
     "demand": 5,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sylently's_Hat.png/revision/latest",
@@ -41436,6 +41548,9 @@
     },
     "existence": {
       "hats": "366"
+    },
+    "customValues": {
+      "shiny": 25000
     }
   },
   {
@@ -41482,7 +41597,7 @@
     "type": "hat",
     "rarity": "Unique",
     "category": "Hats",
-    "baseValue": 500,
+    "baseValue": 35000,
     "demand": 5,
     "status": "Stable",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Vibe_Check.png/revision/latest",
@@ -41493,6 +41608,9 @@
     },
     "existence": {
       "hats": "1,366"
+    },
+    "customValues": {
+      "shiny": 500
     }
   },
   {
