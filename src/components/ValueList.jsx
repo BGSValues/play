@@ -86,8 +86,18 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   const getTrendColor = (status) => {
     if (status === 'Rising') return 'stat-val-green';
     if (status === 'Hyped') return 'stat-val-gold';
-    if (status === 'Dropping') return 'stat-val-bold';
+    if (status === 'Dropping') return 'stat-val-red';
+    if (status === 'Unstable') return 'stat-val-orange';
     return 'stat-label';
+  };
+
+  const getDemandColor = (demand) => {
+    if (demand === null || demand === undefined) return '#64748b';
+    if (demand >= 9) return '#ffcc00';
+    if (demand >= 7) return '#10b981';
+    if (demand >= 5) return '#00e5ff';
+    if (demand >= 3) return '#f59e0b';
+    return '#ef4444';
   };
 
   const matchesSearchTerm = (itemName, query) => {
@@ -368,7 +378,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Demand</span>
-                    <span className={item.demand !== null && item.demand !== undefined ? 'stat-val-green' : ''} style={{ color: item.demand === null || item.demand === undefined ? '#64748b' : undefined }}>
+                    <span style={{ fontWeight: 800, color: getDemandColor(item.demand) }}>
                       {item.demand !== null && item.demand !== undefined ? `${item.demand}/11` : 'N/A'}
                     </span>
                   </div>

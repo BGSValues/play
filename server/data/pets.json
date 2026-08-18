@@ -5,7 +5,7 @@
     "rarity": "Secret",
     "baseValue": 1200,
     "demand": 3,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/02/Mythic_1B_Trophy.png/revision/latest?cb=20210102050027",
     "multipliers": {
@@ -49,7 +49,7 @@
     "rarity": "Secret",
     "baseValue": 25,
     "demand": 0,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0e/Mythic_ACE.png/revision/latest?cb=20210611194155",
     "multipliers": {
@@ -87,7 +87,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f5/Alien_Kraken.png/revision/latest?cb=20260814223208",
     "multipliers": {
@@ -207,7 +207,7 @@
     "rarity": "Secret",
     "baseValue": 600,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/42/Mythic_Almighty_Pumpkin.png/revision/latest?cb=20200912013508",
     "multipliers": {
@@ -252,7 +252,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0a/Angelic_Shard.png/revision/latest?cb=20260725211425",
     "multipliers": {
@@ -374,7 +374,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1c/Mythic_Air_Basilisk.png/revision/latest?cb=20200725034055",
     "multipliers": {
@@ -409,7 +409,7 @@
     "rarity": "Secret",
     "baseValue": 70,
     "demand": 3,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Mythic_BGS_Plaque.png/revision/latest?cb=20201023232005",
     "multipliers": {
@@ -454,7 +454,7 @@
     "rarity": "Secret",
     "baseValue": 750,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e1/Mythic_Candycorn_Shard.png/revision/latest?cb=20201002215911",
     "multipliers": {
@@ -499,7 +499,7 @@
     "rarity": "Secret",
     "baseValue": 1200,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/33/Cardinal_Bunny.png/revision/latest?cb=20210402230205",
     "multipliers": {
@@ -543,7 +543,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Shiny_Dark_Champion.png/revision/latest?cb=20210219161051",
     "multipliers": {
@@ -573,7 +573,7 @@
     "rarity": "Secret",
     "baseValue": 150,
     "demand": 3,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/87/Mythic_Christmas_Bell.png/revision/latest?cb=20201218225156",
     "multipliers": {
@@ -618,7 +618,7 @@
     "rarity": "Secret",
     "baseValue": 2750,
     "demand": 6,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Mythic_Christmas_Robot.png/revision/latest?cb=20201218225229",
     "multipliers": {
@@ -663,7 +663,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f9/Cobalt_Guardian.png/revision/latest?cb=20260810210212",
     "multipliers": {
@@ -691,7 +691,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Cobalt_Overseer.png",
     "multipliers": {
@@ -764,7 +764,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Crimson_Paladin.png/revision/latest?cb=20260810210022",
     "multipliers": {
@@ -792,7 +792,7 @@
     "rarity": "Secret",
     "baseValue": 200,
     "demand": 1,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c0/Mythic_Crystal_Teddy.png/revision/latest?cb=20200605193558",
     "multipliers": {
@@ -837,7 +837,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ab/Curse_of_Kings.png/revision/latest?cb=20260801004040",
     "multipliers": {
@@ -869,7 +869,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Normal_Dark_Basilisk.webp/revision/latest?cb=20260725210934",
     "multipliers": {
@@ -901,7 +901,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/93/Dark_Dementor.png/revision/latest?cb=20260719235955",
     "multipliers": {
@@ -929,7 +929,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f3/Dark_Gryphon.webp/revision/latest?cb=20260814222959",
     "multipliers": {
@@ -1029,7 +1029,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/06/Dark_Lord_Shock.png/revision/latest?cb=20260725223146",
     "multipliers": {
@@ -1088,7 +1088,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b4/Dementor_Shiny.png/revision/latest?cb=20200417202856",
     "multipliers": {
@@ -1117,7 +1117,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Demon_Heart.webp/revision/latest?cb=20260814223006",
     "multipliers": {
@@ -1149,7 +1149,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/de/Demon_Reaper.png/revision/latest?cb=20260801004045",
     "multipliers": {
@@ -1242,7 +1242,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/82/Demonic_Sentinel.png/revision/latest?cb=20260725211932",
     "multipliers": {
@@ -1271,7 +1271,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/12/Developer_Trophy.webp/revision/latest?cb=20260725210948",
     "multipliers": {
@@ -1392,7 +1392,7 @@
     "rarity": "Secret",
     "baseValue": 900,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/55/Mythic_Dogcat.png/revision/latest?cb=20260731211703",
     "multipliers": {
@@ -1520,7 +1520,7 @@
     "rarity": "Secret",
     "baseValue": 1200,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0a/Mythic_Duality.png/revision/latest?cb=20200515210820",
     "multipliers": {
@@ -1647,7 +1647,7 @@
     "rarity": "Secret",
     "baseValue": 80,
     "demand": 1,
-    "status": "Hyped",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1d/Mythic_Easter_Spirit.png/revision/latest?cb=20210402225742",
     "multipliers": {
@@ -1692,7 +1692,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2f/Shiny_Elite_Challenger.png/revision/latest?cb=20200712013953",
     "multipliers": {
@@ -1721,7 +1721,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Elite_Fallen_Angel.png/revision/latest?cb=20200912031326",
     "multipliers": {
@@ -1750,7 +1750,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Elite_Lord_Shock.png/revision/latest?cb=20201204222509",
     "multipliers": {
@@ -1778,7 +1778,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/dc/Elite_Pot_O%27_Gold.png/revision/latest?cb=20210213003255",
     "multipliers": {
@@ -1807,7 +1807,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/79/Elite_Sentinel.png/revision/latest?cb=20210430231609",
     "multipliers": {
@@ -1836,7 +1836,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bc/Elite_Wolflord.png/revision/latest?cb=20201009233313",
     "multipliers": {
@@ -1864,7 +1864,7 @@
     "rarity": "Secret",
     "baseValue": 400,
     "demand": 3,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f6/Eternal_Carrot.png/revision/latest?cb=20210402225610",
     "multipliers": {
@@ -2023,7 +2023,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/65/Fairy_Koi.png/revision/latest?cb=20260725211456",
     "multipliers": {
@@ -2055,7 +2055,7 @@
     "rarity": "Secret",
     "baseValue": 950,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d6/Mythic_Fallen_Angel.webp/revision/latest?cb=20260801233512",
     "multipliers": {
@@ -2139,7 +2139,7 @@
     "rarity": "Secret",
     "baseValue": 3500,
     "demand": 6,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/af/ShinyFrostSentinel.png/revision/latest?cb=20200323162359",
     "multipliers": {
@@ -2176,7 +2176,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c8/Frost_Shard.png/revision/latest?cb=20211224034646",
     "multipliers": {
@@ -2208,7 +2208,7 @@
     "rarity": "Secret",
     "baseValue": 100,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9b/Frosted_Dreamer.png/revision/latest?cb=20211224034624",
     "multipliers": {
@@ -2248,7 +2248,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Galactic_Dementor.png/revision/latest?cb=20260814223227",
     "multipliers": {
@@ -2367,7 +2367,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e3/Mythic_Angelic_Ghost_Spirit.png/revision/latest?cb=20201023232017",
     "multipliers": {
@@ -2436,7 +2436,7 @@
     "rarity": "Secret",
     "baseValue": 700,
     "demand": 3,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/be/MythicGiantPearl.png/revision/latest?cb=20260801185859",
     "multipliers": {
@@ -2477,7 +2477,7 @@
     "rarity": "Secret",
     "baseValue": 0,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cd/Shiny_Giant_Robot.png/revision/latest?cb=20190209093848",
     "multipliers": {
@@ -2510,7 +2510,7 @@
     "rarity": "Secret",
     "baseValue": 60,
     "demand": 1,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ca/Mythic_Gingerbread_Shard.png/revision/latest?cb=20201204230635",
     "multipliers": {
@@ -2555,7 +2555,7 @@
     "rarity": "Secret",
     "baseValue": 30000,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/18/Godly_Gem.png/revision/latest?cb=20200417202943",
     "multipliers": {
@@ -2634,7 +2634,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/38/Angelic_Golf_Ball.png/revision/latest?cb=20210611194739",
     "multipliers": {
@@ -2667,7 +2667,7 @@
     "rarity": "Secret",
     "baseValue": 800,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b7/Mythic_Gryphon.png/revision/latest?cb=20260731211547",
     "multipliers": {
@@ -2752,7 +2752,7 @@
     "rarity": "Secret",
     "baseValue": 550,
     "demand": 3,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4e/Hellfire.png/revision/latest?cb=20210430231945",
     "multipliers": {
@@ -2875,7 +2875,7 @@
     "rarity": "Secret",
     "baseValue": 250,
     "demand": 2,
-    "status": "Hyped",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Holy_Egg.png/revision/latest?cb=20210402230105",
     "multipliers": {
@@ -2918,7 +2918,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/56/Holy_Star.png/revision/latest?cb=20260725223154",
     "multipliers": {
@@ -3020,7 +3020,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b0/Inferno_Gem.png/revision/latest?cb=20260801004055",
     "multipliers": {
@@ -3095,7 +3095,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/11/King_Dogcat.png/revision/latest?cb=20260725223139",
     "multipliers": {
@@ -3123,7 +3123,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/78/Mythic_King_Doggy.png/revision/latest?cb=20260731211831",
     "multipliers": {
@@ -3203,7 +3203,7 @@
     "rarity": "Secret",
     "baseValue": 40,
     "demand": 0,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/39/Shiny_King_Mush.png/revision/latest?cb=20200405144515",
     "multipliers": {
@@ -3237,7 +3237,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/7c/King_Penguin.png/revision/latest?cb=20260731211902",
     "multipliers": {
@@ -3270,7 +3270,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ac/King_Seal.png/revision/latest?cb=20260810205958",
     "multipliers": {
@@ -3302,7 +3302,7 @@
     "rarity": "Secret",
     "baseValue": 100,
     "demand": 3,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/82/Mythic_King_Slime.png/revision/latest?cb=20201002222132",
     "multipliers": {
@@ -3392,7 +3392,7 @@
     "rarity": "Secret",
     "baseValue": 6000,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b8/Shiny_Kraken.png/revision/latest?cb=20190612032113",
     "multipliers": {
@@ -3587,7 +3587,7 @@
     "rarity": "Secret",
     "baseValue": 200,
     "demand": 4,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Mythic_Lucid_Leaf.png/revision/latest?cb=20200912010101",
     "multipliers": {
@@ -3630,7 +3630,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ab/Mythic_Lucky_Pyramidium.png/revision/latest?cb=20210319204838",
     "multipliers": {
@@ -3715,7 +3715,7 @@
     "rarity": "Secret",
     "baseValue": 400,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2d/Shiny_Magic_Marshmallow.png/revision/latest?cb=20200614020236",
     "multipliers": {
@@ -3747,7 +3747,7 @@
     "rarity": "Secret",
     "baseValue": 1500,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d4/Money_Mouth.png/revision/latest?cb=20210307012321",
     "multipliers": {
@@ -4047,7 +4047,7 @@
     "rarity": "Secret",
     "baseValue": 50,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/31/Phantom_Shiny.png/revision/latest?cb=20210216142142",
     "multipliers": {
@@ -4079,7 +4079,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/86/Pixie_Queen.png/revision/latest?cb=20260725211509",
     "multipliers": {
@@ -4154,7 +4154,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/44/Mythic_sircfenner_Plushie.png/revision/latest?cb=20201204225047",
     "multipliers": {
@@ -4267,7 +4267,7 @@
     "rarity": "Secret",
     "baseValue": 75,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Mythic_Prisma_Cube.png/revision/latest?cb=20210307005856",
     "multipliers": {
@@ -4391,7 +4391,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Radiant_Challenger.webp/revision/latest?cb=20260719173843",
     "multipliers": {
@@ -4465,7 +4465,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ac/Radiant_Shard.webp/revision/latest?cb=20260719173832",
     "multipliers": {
@@ -4494,7 +4494,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4a/Radioactive_Radiance.png/revision/latest?cb=20260725211731",
     "multipliers": {
@@ -4522,7 +4522,7 @@
     "rarity": "Secret",
     "baseValue": 500,
     "demand": 3,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f7/Rainbow_Dogcat.png/revision/latest?cb=20190622221115",
     "multipliers": {
@@ -4559,7 +4559,7 @@
     "rarity": "Secret",
     "baseValue": 1500,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/46/ShinyRBGry.png/revision/latest?cb=20200126042144",
     "multipliers": {
@@ -4594,7 +4594,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/21/Rainbow_Leviathan.png/revision/latest?cb=20260725211516",
     "multipliers": {
@@ -4625,7 +4625,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4a/Shiny_Robot_2.0.png/revision/latest?cb=20200307090607",
     "multipliers": {
@@ -4656,7 +4656,7 @@
     "rarity": "Secret",
     "baseValue": 550,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bd/Mythic_Sea_Star.png/revision/latest?cb=20260731211554",
     "multipliers": {
@@ -4697,7 +4697,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/78/Shadow_Challenger.png/revision/latest?cb=20260720000005",
     "multipliers": {
@@ -4726,7 +4726,7 @@
     "rarity": "Secret",
     "baseValue": 2,
     "demand": 0,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/85/Shadow_Luminance.png/revision/latest?cb=20260718223950",
     "multipliers": {
@@ -4877,7 +4877,7 @@
     "rarity": "Secret",
     "baseValue": 1250,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e8/Shattered_Soul.png/revision/latest?cb=20210213145950",
     "multipliers": null,
@@ -4993,7 +4993,7 @@
     "rarity": "Secret",
     "baseValue": 400,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Mythic_Sinister_Shard.png/revision/latest?cb=20201002220810",
     "multipliers": {
@@ -5037,7 +5037,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/13/Mythic_Angelic_Skull.png/revision/latest?cb=20201002223816",
     "multipliers": {
@@ -5146,7 +5146,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/31/Space_Entity.png/revision/latest?cb=20260810210427",
     "multipliers": {
@@ -5178,7 +5178,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1f/Shiny_Spirit.png/revision/latest?cb=20200920195107",
     "multipliers": {
@@ -5207,7 +5207,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b4/Mythic_Vanilla_Sundae_Champion.png/revision/latest?cb=20200814192528",
     "multipliers": {
@@ -5242,7 +5242,7 @@
     "rarity": "Secret",
     "baseValue": 50,
     "demand": 5,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Mythic_The_Overlord.png/revision/latest?cb=20260731212356",
     "multipliers": {
@@ -5323,7 +5323,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/44/Tophat_G.webp/revision/latest?cb=20260725210943",
     "multipliers": null,
@@ -5348,7 +5348,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5a/Shiny_Tophat_%28F%29.png/revision/latest?cb=20200308232634",
     "multipliers": null,
@@ -5413,7 +5413,7 @@
     "rarity": "Secret",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/77/UFO.png/revision/latest?cb=20260814223242",
     "multipliers": {
@@ -5445,7 +5445,7 @@
     "rarity": "Secret",
     "baseValue": 777,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c4/Clover.png/revision/latest?cb=20200307091917",
     "multipliers": {
@@ -5516,7 +5516,7 @@
     "rarity": "Secret",
     "baseValue": 200,
     "demand": 2,
-    "status": "Hyped",
+    "status": "Dropping",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/85/Wisplord.png/revision/latest?cb=20211023051445",
     "multipliers": {
@@ -5655,7 +5655,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9c/1B_Paragon.png/revision/latest?cb=20210101213919",
     "multipliers": {
@@ -6174,7 +6174,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/19/Alien_Overlord.png/revision/latest?cb=20260814224130",
     "multipliers": {
@@ -6328,7 +6328,7 @@
     "rarity": "Legendary",
     "baseValue": 175,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Angel_of_Darkness.png/revision/latest?cb=20200320161239",
     "multipliers": {
@@ -6360,7 +6360,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ed/Angelic_Bear.png/revision/latest?cb=20200417202742",
     "multipliers": {
@@ -6514,7 +6514,7 @@
     "rarity": "Legendary",
     "baseValue": 80,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Atlantis_Guardian.png/revision/latest?cb=20190413092213",
     "multipliers": {
@@ -6579,7 +6579,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/16/Atlantis_Overlord.png/revision/latest?cb=20190413091120",
     "multipliers": {
@@ -6898,7 +6898,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Beta_Dominus.png/revision/latest?cb=20190105064116",
     "multipliers": {
@@ -6928,7 +6928,7 @@
     "rarity": "Legendary",
     "baseValue": 10,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Beta_TV.gif/revision/latest?cb=20200212135227",
     "multipliers": {
@@ -7123,7 +7123,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Brick_Dominus.png/revision/latest?cb=20190202091533",
     "multipliers": {
@@ -7500,7 +7500,7 @@
     "rarity": "Legendary",
     "baseValue": 100,
     "demand": 1,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0c/Candy_Winged_Hydra.png/revision/latest?cb=20190106003029",
     "multipliers": {
@@ -7760,7 +7760,7 @@
     "rarity": "Legendary",
     "baseValue": 650,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d4/Chocolate_Bunny.png/revision/latest?cb=20190506144331",
     "multipliers": {
@@ -7889,7 +7889,7 @@
     "rarity": "Legendary",
     "baseValue": 4,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Christmas_Elemental.png/revision/latest?cb=20181215154736",
     "multipliers": {
@@ -8816,7 +8816,7 @@
     "rarity": "Legendary",
     "baseValue": 30,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f1/Dark_Serpent.png/revision/latest?cb=20181210154601",
     "multipliers": {
@@ -8849,7 +8849,7 @@
     "rarity": "Legendary",
     "baseValue": 400,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4e/EasierSoul.png/revision/latest?cb=20200125060119",
     "multipliers": {
@@ -9135,7 +9135,7 @@
     "rarity": "Legendary",
     "baseValue": 400,
     "demand": 3,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f5/Demoncore.png/revision/latest?cb=20200328040350",
     "multipliers": {
@@ -9166,7 +9166,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/42/Demonic_Bunny.png/revision/latest?cb=20200410203102",
     "multipliers": {
@@ -9235,7 +9235,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/10/Shiny_Demonic_Hydra.png/revision/latest?cb=20190129032341",
     "multipliers": {
@@ -9460,7 +9460,7 @@
     "rarity": "Legendary",
     "baseValue": 600,
     "demand": 1,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Shiny_Diamond_Overlord.png/revision/latest?cb=20190209040531",
     "multipliers": {
@@ -9586,7 +9586,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/14/Dominus_Hydra.png/revision/latest?cb=20190118052343",
     "multipliers": {
@@ -9617,7 +9617,7 @@
     "rarity": "Legendary",
     "baseValue": 15,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Shiny_Dowodle.png/revision/latest?cb=20190127092515",
     "multipliers": {
@@ -9714,7 +9714,7 @@
     "rarity": "Legendary",
     "baseValue": 125,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/15/Dual_Lord.png/revision/latest?cb=20190817221442",
     "multipliers": {
@@ -9940,7 +9940,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/95/ShinyEasterOverlord.png/revision/latest?cb=20200411193025",
     "multipliers": {
@@ -10190,7 +10190,7 @@
     "rarity": "Legendary",
     "baseValue": 6,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Electra_Hydra.png/revision/latest?cb=20190118061037",
     "multipliers": {
@@ -10346,7 +10346,7 @@
     "rarity": "Legendary",
     "baseValue": 5,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Enraged_Phoenix.png/revision/latest?cb=20181223124941",
     "multipliers": {
@@ -10929,7 +10929,7 @@
     "rarity": "Legendary",
     "baseValue": 700,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e9/Festivus.png/revision/latest?cb=20190413052537",
     "multipliers": {
@@ -11243,7 +11243,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e7/Frost_Dominus.png/revision/latest?cb=20190405111110",
     "multipliers": {
@@ -11305,7 +11305,7 @@
     "rarity": "Legendary",
     "baseValue": 200,
     "demand": 1,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Shiny_Frost_Winged_Hydra.png/revision/latest?cb=20190129022108",
     "multipliers": {
@@ -12217,7 +12217,7 @@
     "rarity": "Legendary",
     "baseValue": 100,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/de/Gold_Marshmallow.png/revision/latest?cb=20181222165107",
     "multipliers": {
@@ -12310,7 +12310,7 @@
     "rarity": "Legendary",
     "baseValue": 500,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a1/Golden_Hybrid.png/revision/latest?cb=20181216232036",
     "multipliers": {
@@ -12372,7 +12372,7 @@
     "rarity": "Legendary",
     "baseValue": 50,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/61/Golden_Pegasus.png/revision/latest?cb=20181216173346",
     "multipliers": {
@@ -12661,7 +12661,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Gummy_Overlord.png/revision/latest?cb=20190202110841",
     "multipliers": {
@@ -12726,7 +12726,7 @@
     "rarity": "Legendary",
     "baseValue": 50,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fd/Gummy_Winged_Hydra.png/revision/latest?cb=20190123110204",
     "multipliers": {
@@ -13539,7 +13539,7 @@
     "rarity": "Legendary",
     "baseValue": 2,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/22/Ice_Winged_Hydra.png/revision/latest?cb=20181222190102",
     "multipliers": {
@@ -13762,7 +13762,7 @@
     "rarity": "Legendary",
     "baseValue": 10,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d2/Infernus.png/revision/latest?cb=20181229170411",
     "multipliers": {
@@ -13920,7 +13920,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Shiny_Jelly_Overlord.png/revision/latest?cb=20190126110947",
     "multipliers": {
@@ -14359,7 +14359,7 @@
     "rarity": "Legendary",
     "baseValue": 70,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/60/Light_Demon.png/revision/latest?cb=20191115203643",
     "multipliers": {
@@ -14682,7 +14682,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/72/Lucid_Potion.png/revision/latest?cb=20201009233246",
     "multipliers": {
@@ -14781,7 +14781,7 @@
     "rarity": "Legendary",
     "baseValue": 100,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3e/Lucky_Dominus.png/revision/latest?cb=20190315195000",
     "multipliers": {
@@ -14982,7 +14982,7 @@
     "rarity": "Legendary",
     "baseValue": 450,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/62/Lucky_Overlord.png/revision/latest?cb=20190315190901",
     "multipliers": {
@@ -15489,7 +15489,7 @@
     "rarity": "Legendary",
     "baseValue": 60,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a0/Marshmallow.png/revision/latest?cb=20181222175950",
     "multipliers": {
@@ -15557,7 +15557,7 @@
     "rarity": "Legendary",
     "baseValue": 200,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5c/Merry_Marshmallow.png/revision/latest?cb=20190105070342",
     "multipliers": {
@@ -15588,7 +15588,7 @@
     "rarity": "Legendary",
     "baseValue": 300,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d8/Midas.png/revision/latest?cb=20200424192434",
     "multipliers": {
@@ -15620,7 +15620,7 @@
     "rarity": "Legendary",
     "baseValue": 125,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Minty_Hydra.png/revision/latest?cb=20181223123028",
     "multipliers": {
@@ -15653,7 +15653,7 @@
     "rarity": "Legendary",
     "baseValue": 80,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Minty_Serpent.png/revision/latest?cb=20181223122551",
     "multipliers": {
@@ -16022,7 +16022,7 @@
     "rarity": "Legendary",
     "baseValue": 200,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0e/SNTerror.png/revision/latest?cb=20200226211313",
     "multipliers": {
@@ -16310,7 +16310,7 @@
     "rarity": "Legendary",
     "baseValue": 100,
     "demand": 0,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Partner_Serpent.png/revision/latest?cb=20190209051017",
     "multipliers": {
@@ -16341,7 +16341,7 @@
     "rarity": "Legendary",
     "baseValue": 100,
     "demand": 0,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2b/Partner_Unicorn.png/revision/latest?cb=20190209051114",
     "multipliers": {
@@ -16504,7 +16504,7 @@
     "rarity": "Legendary",
     "baseValue": 600,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8c/Patriotic_Penguin.png/revision/latest?cb=20190703231115",
     "multipliers": {
@@ -16569,7 +16569,7 @@
     "rarity": "Legendary",
     "baseValue": 200,
     "demand": 1,
-    "status": "Hyped",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/80/Pogchamp_Peppermint_Heart.png/revision/latest?cb=20220204025022",
     "multipliers": {
@@ -16609,7 +16609,7 @@
     "rarity": "Legendary",
     "baseValue": 350,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/26/Peppermint_Hydra.png/revision/latest?cb=20181215180625",
     "multipliers": {
@@ -16795,7 +16795,7 @@
     "rarity": "Legendary",
     "baseValue": 550,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f5/Platinum_Overlord.png/revision/latest?cb=20190607235015",
     "multipliers": {
@@ -16864,7 +16864,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Mythic_Prismatic_Paragon.png/revision/latest?cb=20200731212208",
     "multipliers": {
@@ -16899,7 +16899,7 @@
     "rarity": "Legendary",
     "baseValue": 90,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c5/Shiny_Pufferfish.png/revision/latest?cb=20200121132942",
     "multipliers": {
@@ -17057,7 +17057,7 @@
     "rarity": "Legendary",
     "baseValue": 500,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d8/Shiny_Queen_Overlord.png/revision/latest?cb=20190323025941",
     "multipliers": {
@@ -17366,7 +17366,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Rainbow_Overlord.png/revision/latest?cb=20190702223843",
     "multipliers": {
@@ -17428,7 +17428,7 @@
     "rarity": "Legendary",
     "baseValue": 200,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d1/Rainbow_Phoenix.png/revision/latest?cb=20200605191937",
     "multipliers": {
@@ -17939,7 +17939,7 @@
     "rarity": "Legendary",
     "baseValue": 80,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/26/Shade_Demon.png/revision/latest?cb=20190927220441",
     "multipliers": {
@@ -18115,7 +18115,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9a/Shadow_Overlord.png/revision/latest?cb=20260719005023",
     "multipliers": {
@@ -18320,7 +18320,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Slime_Overlord.png/revision/latest?cb=20201002215316",
     "multipliers": {
@@ -18856,7 +18856,7 @@
     "rarity": "Legendary",
     "baseValue": 150,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/ba/Summer_Cerberus.png/revision/latest?cb=20190525023352",
     "multipliers": {
@@ -19052,7 +19052,7 @@
     "rarity": "Legendary",
     "baseValue": 350,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fc/Shiny_Super_Hexarium.png/revision/latest?cb=20191012043610",
     "multipliers": {
@@ -19729,7 +19729,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1e/Twitter_Dominus.png/revision/latest?cb=20190118063550",
     "multipliers": {
@@ -19919,7 +19919,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/Valentine_Dominus.png/revision/latest?cb=20200214185930",
     "multipliers": {
@@ -19984,7 +19984,7 @@
     "rarity": "Legendary",
     "baseValue": 750,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0a/Shiny_Valentium.png/revision/latest?cb=20190215050422",
     "multipliers": {
@@ -20114,7 +20114,7 @@
     "rarity": "Legendary",
     "baseValue": 65,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8e/Winter_Phoenix.png/revision/latest?cb=20181215180802",
     "multipliers": {
@@ -20284,7 +20284,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/52/Wispful_Phoenix.png/revision/latest?cb=20260725211632",
     "multipliers": {
@@ -20316,7 +20316,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/56/Wispful_Spirit.png/revision/latest?cb=20260725211639",
     "multipliers": {
@@ -20470,7 +20470,7 @@
     "rarity": "Legendary",
     "baseValue": 150,
     "demand": 2,
-    "status": "Rising",
+    "status": "Dropping",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/74/ShinyYinYang.png/revision/latest?cb=20200419152313",
     "multipliers": {
@@ -20898,7 +20898,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/69/Angelic_Bunny.png/revision/latest?cb=20200410204709",
     "multipliers": {
@@ -20929,7 +20929,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fc/Angelic_Crab.png/revision/latest?cb=20190329210946",
     "multipliers": {
@@ -20960,7 +20960,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ca/Angelic_Demon.png/revision/latest?cb=20210430231925",
     "multipliers": {
@@ -20989,7 +20989,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Angelic_Dominus.png/revision/latest?cb=20190118061422",
     "multipliers": {
@@ -21020,7 +21020,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/40/Angelic_Ghost.png/revision/latest?cb=20211023050145",
     "multipliers": {
@@ -21051,7 +21051,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2f/Angelic_Shock.png/revision/latest?cb=20200613041626",
     "multipliers": {
@@ -21082,7 +21082,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/df/Angelic_Wisp.png/revision/latest?cb=20211023050157",
     "multipliers": {
@@ -22687,7 +22687,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bb/Demonic_Angel.png/revision/latest?cb=20210430231837",
     "multipliers": {
@@ -22718,7 +22718,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/89/Demonic_Dominus.png/revision/latest?cb=20190118061005",
     "multipliers": {
@@ -22749,7 +22749,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2d/Demonic_Fiend.png/revision/latest?cb=20260731233922",
     "multipliers": {
@@ -22780,7 +22780,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/84/Demonic_Gum_Drop.png/revision/latest?cb=20201204223303",
     "multipliers": {
@@ -22811,7 +22811,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/21/Demonic_Shock.png/revision/latest?cb=20200613041528",
     "multipliers": {
@@ -22842,7 +22842,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Demonic_Unicorn.png/revision/latest?cb=20260731233937",
     "multipliers": {
@@ -22873,7 +22873,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/42/Demonic_Wisp.png/revision/latest?cb=20211023050327",
     "multipliers": {
@@ -27882,7 +27882,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fb/Void_Dragon.png/revision/latest?cb=20190127071549",
     "multipliers": {
@@ -28034,7 +28034,7 @@
     "rarity": "Epic",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Epic Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Wispful_Fairy.png/revision/latest?cb=20260725211619",
     "multipliers": {
@@ -29156,7 +29156,7 @@
     "rarity": "Rare",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Rare Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3e/Demonic_Golem.png/revision/latest?cb=20260731233929",
     "multipliers": {
@@ -29854,7 +29854,7 @@
     "rarity": "Rare",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Rare Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4e/Gloomy_Dominus.png/revision/latest?cb=20190118061457",
     "multipliers": {
@@ -32351,7 +32351,7 @@
     "rarity": "Rare",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Rare Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4a/Wispful_Deer.png/revision/latest?cb=20260725211608",
     "multipliers": {
@@ -34542,7 +34542,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/69/Demonic_Bat.png/revision/latest?cb=20260731233902",
     "multipliers": {
@@ -34573,7 +34573,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ce/Demonic_Doggy.png/revision/latest?cb=20260731233916",
     "multipliers": {
@@ -37460,7 +37460,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Orange_Dominus.png/revision/latest?cb=20190118062031",
     "multipliers": {
@@ -37792,7 +37792,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/09/Peppermint_Doggy.png/revision/latest?cb=20181223121024",
     "multipliers": {
@@ -37822,7 +37822,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/43/Peppermint_Piggy.png/revision/latest?cb=20181223121840",
     "multipliers": {
@@ -38584,7 +38584,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a2/Shamrock_Doggy.png/revision/latest?cb=20210319204752",
     "multipliers": {
@@ -38613,7 +38613,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/18/Shamrock_Kitty.png/revision/latest?cb=20210319204743",
     "multipliers": {
@@ -39793,7 +39793,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4f/Wispful_Bunny.png/revision/latest?cb=20260725211558",
     "multipliers": {
@@ -39824,7 +39824,7 @@
     "rarity": "Common",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f1/Wispful_Doggy.png/revision/latest?cb=20260725211613",
     "multipliers": {
@@ -41338,7 +41338,7 @@
     "rarity": "Uncommon",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Uncommon Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a9/Demonic_Crawler.png/revision/latest?cb=20260731233909",
     "multipliers": {
@@ -41369,7 +41369,7 @@
     "rarity": "Unique",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Unique Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Demonic_Split.png/revision/latest?cb=20201107012734",
     "multipliers": {
@@ -42092,7 +42092,7 @@
     "rarity": "Unique",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Unique Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Grape_Dominus.png/revision/latest?cb=20190118061951",
     "multipliers": {
@@ -43644,7 +43644,7 @@
     "rarity": "Unique",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Unique Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/15/Shamrock_Bunny.png/revision/latest?cb=20210319204804",
     "multipliers": {
@@ -43675,7 +43675,7 @@
     "rarity": "Unique",
     "baseValue": null,
     "demand": null,
-    "status": "Hyped",
+    "status": "Stable",
     "category": "Unique Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c7/Shamrock_Spirit.png/revision/latest?cb=20210307011427",
     "multipliers": {
@@ -44550,7 +44550,7 @@
     "rarity": "Unique",
     "baseValue": null,
     "demand": null,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Unique Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0e/Wispful_Unicorn.png/revision/latest?cb=20260725211647",
     "multipliers": {

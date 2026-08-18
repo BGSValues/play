@@ -184,14 +184,28 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
 
               <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '10px', padding: '0.75rem', textAlign: 'center' }}>
                 <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Demand</div>
-                <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#10b981', marginTop: '2px' }}>
-                  {pet.demand ? `${pet.demand} / 11` : '5 / 11'}
+                <div
+                  style={{
+                    fontSize: '1.2rem',
+                    fontWeight: 900,
+                    color: pet.demand >= 9 ? '#ffcc00' : pet.demand >= 7 ? '#10b981' : pet.demand >= 5 ? '#00e5ff' : pet.demand >= 3 ? '#f59e0b' : '#ff1744',
+                    marginTop: '2px',
+                  }}
+                >
+                  {pet.demand !== null && pet.demand !== undefined ? `${pet.demand} / 11` : 'N/A'}
                 </div>
               </div>
 
               <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '10px', padding: '0.75rem', textAlign: 'center' }}>
                 <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Trend</div>
-                <div style={{ fontSize: '1.05rem', fontWeight: 800, color: pet.status === 'Rising' || pet.status === 'Hyped' ? '#10b981' : pet.status === 'Dropping' ? '#ff1744' : '#00e5ff', marginTop: '2px' }}>
+                <div
+                  style={{
+                    fontSize: '1.05rem',
+                    fontWeight: 800,
+                    color: pet.status === 'Rising' || pet.status === 'Hyped' ? '#10b981' : pet.status === 'Dropping' ? '#ff1744' : pet.status === 'Unstable' ? '#ff9100' : '#00e5ff',
+                    marginTop: '2px',
+                  }}
+                >
                   {pet.status || 'Stable'}
                 </div>
               </div>

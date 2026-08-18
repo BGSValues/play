@@ -214,15 +214,29 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
             {/* DEMAND */}
             <div style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.6rem', textAlign: 'center' }}>
               <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Demand</div>
-              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#10b981', marginTop: '2px' }}>
-                {pet.demand ? `${pet.demand} / 11` : '5 / 11'}
+              <div
+                style={{
+                  fontSize: '1.05rem',
+                  fontWeight: 900,
+                  color: pet.demand >= 9 ? '#ffcc00' : pet.demand >= 7 ? '#10b981' : pet.demand >= 5 ? '#00e5ff' : pet.demand >= 3 ? '#f59e0b' : '#ff1744',
+                  marginTop: '2px',
+                }}
+              >
+                {pet.demand !== null && pet.demand !== undefined ? `${pet.demand} / 11` : 'N/A'}
               </div>
             </div>
 
             {/* TREND */}
             <div style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.6rem', textAlign: 'center' }}>
               <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase' }}>Trend</div>
-              <div style={{ fontSize: '0.95rem', fontWeight: 800, color: pet.status === 'Rising' || pet.status === 'Hyped' ? '#10b981' : pet.status === 'Dropping' ? '#ff1744' : '#00e5ff', marginTop: '2px' }}>
+              <div
+                style={{
+                  fontSize: '0.95rem',
+                  fontWeight: 800,
+                  color: pet.status === 'Rising' || pet.status === 'Hyped' ? '#10b981' : pet.status === 'Dropping' ? '#ff1744' : pet.status === 'Unstable' ? '#ff9100' : '#00e5ff',
+                  marginTop: '2px',
+                }}
+              >
                 {pet.status || 'Stable'}
               </div>
             </div>
