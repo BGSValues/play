@@ -1541,7 +1541,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8f/Summer_Egg-0.png/revision/latest?cb=20190525165301",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/95/Summer_Egg.png/revision/latest?cb=20190525025013",
     "pets": [
       {
         "id": "pet_lord_shock",
@@ -3549,7 +3549,7 @@
     "location": "Overworld",
     "costAmount": 100000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Easter_Egg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Easter_Egg.png/revision/latest?cb=20190506144300",
     "pets": [
       {
         "id": "pet_easter_basket",
@@ -4691,7 +4691,7 @@
     "location": "Overworld",
     "costAmount": 125000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Valentine_Egg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/31/Valentine_Egg.png/revision/latest?cb=20190215041744",
     "pets": [
       {
         "id": "pet_valentium",
@@ -8306,7 +8306,7 @@
     "location": "Overworld",
     "costAmount": 75000,
     "costCurrency": "Gems",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/New_Year_Egg.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/7d/New_Year_Egg.png/revision/latest?cb=20181230055613",
     "pets": [
       {
         "id": "pet_2018_overlord",
@@ -9209,7 +9209,7 @@
     "location": "Christmas Starter Area (2021)",
     "costAmount": 1000000,
     "costCurrency": "Snowflakes",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Frosted_Egg2021.png/revision/latest?cb=20220112193135",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/15/Frosted_Egg.png/revision/latest?cb=20220101104507",
     "pets": [
       {
         "id": "pet_frosted_duality",
@@ -14414,7 +14414,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 135000,
     "costCurrency": "Candy Corn",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c3/Twilight_Egg2.webp/revision/latest?cb=20221114022143",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Twilight_Egg.png/revision/latest?cb=20191012031740",
     "pets": [
       {
         "id": "pet_twilight_serpent",
@@ -14494,7 +14494,7 @@
     "location": "Overworld",
     "costAmount": 250,
     "costCurrency": "Gems",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/88/Ice_Shard_Egg-1.png/revision/latest?cb=20181201051725",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/80/Ice_Shard_Egg.png/revision/latest?cb=20181128170057",
     "pets": [
       {
         "id": "pet_piggy",
@@ -14989,7 +14989,7 @@
     "location": "Halloween 2019 Event",
     "costAmount": 550,
     "costCurrency": "Candy Corn",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Chocolate_Egg_Halloween.png/revision/latest?cb=20191012015234",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/21/Chocolate_Egg.png/revision/latest?cb=20190422001437",
     "pets": [
       {
         "id": "pet_sundae_champions",
@@ -15874,7 +15874,7 @@
     "location": "Christmas Starter Area (2019)",
     "costAmount": 550,
     "costCurrency": "Gifts",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/26/Candy_Egg_%28Christmas_Event_2019%29.png/revision/latest?cb=20191224093000",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Candy_Egg.png/revision/latest?cb=20190422001139",
     "pets": [
       {
         "id": "pet_gummy_winged_hydra",
