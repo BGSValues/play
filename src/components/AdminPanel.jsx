@@ -33,11 +33,26 @@ import {
   Globe,
 } from 'lucide-react';
 import PetAvatar from './PetAvatar';
+import eggsData from '../data/eggs.json';
 
 export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLogin, onBackToValues }) {
   const [adminTab, setAdminTab] = useState('pets'); // 'pets' or 'users'
   const [usersList, setUsersList] = useState([]);
   const [usersLoading, setUsersLoading] = useState(false);
+
+  const allEggNames = useMemo(() => {
+    const eggSet = new Set();
+    if (Array.isArray(eggsData)) {
+      eggsData.forEach((e) => { if (e.name) eggSet.add(e.name); });
+    }
+    if (Array.isArray(pets)) {
+      pets.forEach((p) => {
+        if (p.stats?.egg) eggSet.add(p.stats.egg);
+        if (p.existence?.eggOrigin) eggSet.add(p.existence.eggOrigin);
+      });
+    }
+    return Array.from(eggSet).filter(Boolean).sort();
+  }, [pets]);
   const [userSearch, setUserSearch] = useState('');
   const [userRoleFilter, setUserRoleFilter] = useState('all');
   const [userStatusFilter, setUserStatusFilter] = useState('all');
@@ -2036,14 +2051,39 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '0.85rem', marginBottom: '0.85rem' }}>
                   <div>
-                    <label style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>🥚 Hatched From Egg</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. Cosmic Egg"
-                      value={itemForm.egg}
-                      onChange={(e) => setItemForm({ ...itemForm, egg: e.target.value })}
-                      style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', marginTop: '4px', fontSize: '0.85rem' }}
-                    />
+                    <label style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>🥚 Hatched From Egg (Search or Select)</label>
+                    <div style={{ display: 'flex', gap: '6px', marginTop: '4px' }}>
+                      <input
+                        type="text"
+                        list="bgs-egg-database-list"
+                        placeholder="Type or pick Egg..."
+                        value={itemForm.egg}
+                        onChange={(e) => setItemForm({ ...itemForm, egg: e.target.value })}
+                        style={{ flex: 1, background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.55rem', borderRadius: '8px', fontSize: '0.85rem' }}
+                      />
+                      <select
+                        value={allEggNames.includes(itemForm.egg) ? itemForm.egg : ''}
+                        onChange={(e) => {
+                          if (e.target.value) setItemForm({ ...itemForm, egg: e.target.value });
+                        }}
+                        style={{ width: '130px', background: '#12141e', border: '1px solid rgba(255, 204, 0, 0.3)', color: '#ffcc00', padding: '0.55rem 0.4rem', borderRadius: '8px', fontSize: '0.8rem', fontWeight: 800, cursor: 'pointer' }}
+                      >
+                        <option value="">▼ Pick Egg</option>
+                        {allEggNames.map((eName) => (
+                          <option key={eName} value={eName}>
+                            🥚 {eName}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <datalist id="bgs-egg-database-list">
+                      {allEggNames.map((eName) => (
+                        <option key={eName} value={eName}>
+                          🥚 {eName}
+                        </option>
+                      ))}
+                    </datalist>
                   </div>
 
                   <div>
