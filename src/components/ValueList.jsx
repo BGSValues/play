@@ -294,7 +294,9 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Demand</span>
-                    <span className="stat-val-green">{item.demand}/11</span>
+                    <span className={item.demand !== null && item.demand !== undefined ? 'stat-val-green' : ''} style={{ color: item.demand === null || item.demand === undefined ? '#64748b' : undefined }}>
+                      {item.demand !== null && item.demand !== undefined ? `${item.demand}/11` : 'N/A'}
+                    </span>
                   </div>
                   {item.existence && (item.existence.normal || item.existence.shiny || item.existence.hats) && (
                     <div className="stat-row">
