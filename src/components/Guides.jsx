@@ -18,6 +18,10 @@ import {
   Database,
   HeartHandshake,
   Star,
+  ChevronRight,
+  HelpCircle,
+  FileText,
+  AlertOctagon,
 } from 'lucide-react';
 import DemandSystemChart from './DemandSystemChart';
 
@@ -30,528 +34,571 @@ export default function Guides({ initialSection = 'about' }) {
     }
   }, [initialSection]);
 
+  const navTabs = [
+    { id: 'about', label: 'Leadership & Staff', icon: Users, color: '#ffcc00' },
+    { id: 'stsc', label: 'STSC & Demand Guide', icon: Scale, color: '#00e5ff' },
+    { id: 'sources', label: 'Trusted Data Sources', icon: Database, color: '#a78bfa' },
+    { id: 'rules', label: 'Anti-Scam & Fair Trade', icon: ShieldCheck, color: '#10b981' },
+    { id: 'faq', label: 'FAQ & Help', icon: HelpCircle, color: '#f472b6' },
+    { id: 'privacy', label: 'Privacy Policy', icon: Lock, color: '#38bdf8' },
+    { id: 'terms', label: 'Terms of Service', icon: FileText, color: '#fb923c' },
+    { id: 'dupe', label: 'Zero-Dupe Policy', icon: AlertOctagon, color: '#ff007f' },
+  ];
+
   return (
-    <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '1.5rem 1.5rem 5rem 1.5rem' }}>
-      {/* ━━━━ HERO BANNER ━━━━ */}
+    <div style={{ maxWidth: '1360px', margin: '0 auto', padding: '1rem 1.5rem 5rem 1.5rem' }}>
+      {/* ━━━━ HERO SHOWCASE BANNER WITH ANIMATED AURA ━━━━ */}
       <div
         className="glass-card"
         style={{
-          padding: '3rem 2.5rem',
+          padding: '3.5rem 2rem',
           textAlign: 'center',
           marginBottom: '2.5rem',
           position: 'relative',
           overflow: 'hidden',
-          background: 'radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.25) 0%, rgba(10, 11, 16, 0.95) 75%)',
+          borderRadius: '24px',
+          background: 'radial-gradient(ellipse at 50% -20%, rgba(124, 58, 237, 0.35) 0%, rgba(0, 229, 255, 0.1) 45%, rgba(6, 7, 11, 0.95) 85%)',
           border: '1px solid rgba(124, 58, 237, 0.4)',
-          boxShadow: '0 20px 60px rgba(0, 0, 0, 0.7)',
+          boxShadow: '0 25px 80px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
         }}
       >
+        {/* Glowing Badge */}
         <div
           style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
-            background: 'rgba(0, 229, 255, 0.12)',
-            border: '1px solid rgba(0, 229, 255, 0.35)',
+            background: 'linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(124, 58, 237, 0.15))',
+            border: '1px solid rgba(0, 229, 255, 0.4)',
             color: '#00e5ff',
-            padding: '0.45rem 1.2rem',
-            borderRadius: '30px',
+            padding: '0.5rem 1.4rem',
+            borderRadius: '999px',
             fontSize: '0.85rem',
-            fontWeight: 800,
+            fontWeight: 900,
             marginBottom: '1.25rem',
-            letterSpacing: '0.5px',
+            letterSpacing: '0.6px',
+            boxShadow: '0 0 20px rgba(0, 229, 255, 0.2)',
           }}
         >
-          <ShieldCheck size={16} /> #1 OFFICIAL VERIFIED BUBBLE GUM SIMULATOR TRADING HUB
+          <Sparkles size={16} color="#00e5ff" /> #1 OFFICIAL VERIFIED BUBBLE GUM SIMULATOR PLATFORM
         </div>
 
-        <h1 style={{ fontSize: '2.6rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem', lineHeight: 1.2 }}>
-          Trusted By Thousands Of <span style={{ color: 'var(--primary-gold)' }}>BGS Traders</span> Worldwide
+        {/* Large Gradient Title */}
+        <h1
+          style={{
+            fontSize: '2.8rem',
+            fontWeight: 900,
+            color: '#fff',
+            marginBottom: '1rem',
+            lineHeight: 1.15,
+            letterSpacing: '-0.5px',
+          }}
+        >
+          Community <span style={{ color: 'var(--primary-gold)' }}>Guides & Knowledge</span> Hub
         </h1>
 
-        <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '780px', margin: '0 auto 2rem auto', lineHeight: 1.6 }}>
-          The highest standard for Bubble Gum Simulator item values, real-time demand metrics, hatch counts, and verified player trades — backed directly by the <strong>BGS Collab Value List</strong> and <strong>Official Fandom Wiki</strong>.
+        <p
+          style={{
+            color: '#94a3b8',
+            fontSize: '1.05rem',
+            maxWidth: '740px',
+            margin: '0 auto 2.5rem auto',
+            lineHeight: 1.7,
+          }}
+        >
+          Master the Bubble Gum Simulator economy. Explore verified staff credentials, the official 0–11 demand scale, anti-scam protection protocols, and real-time live data mechanics.
         </p>
 
-        {/* TRUST METRICS STRIP */}
+        {/* Animated Metrics Bar */}
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))',
             gap: '1.25rem',
             maxWidth: '960px',
             margin: '0 auto',
           }}
         >
-          <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem' }}>
-            <div style={{ fontSize: '1.8rem', fontWeight: 900, color: 'var(--primary-gold)' }}>1,530+</div>
-            <div style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 700 }}>Clean Verified Items</div>
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 204, 0, 0.3)', borderRadius: '16px', padding: '1.2rem', transition: 'all 0.25s ease' }}>
+            <div style={{ fontSize: '1.9rem', fontWeight: 900, color: 'var(--primary-gold)' }}>1,530+</div>
+            <div style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700, marginTop: '2px' }}>Clean Verified Items</div>
           </div>
 
-          <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem' }}>
-            <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#00e5ff' }}>100%</div>
-            <div style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 700 }}>Accurate Collab Sync</div>
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(0, 229, 255, 0.3)', borderRadius: '16px', padding: '1.2rem', transition: 'all 0.25s ease' }}>
+            <div style={{ fontSize: '1.9rem', fontWeight: 900, color: '#00e5ff' }}>100%</div>
+            <div style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700, marginTop: '2px' }}>Accurate Collab Sync</div>
           </div>
 
-          <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem' }}>
-            <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#10b981' }}>0 – 11</div>
-            <div style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 700 }}>Official Demand Scale</div>
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(16, 185, 129, 0.3)', borderRadius: '16px', padding: '1.2rem', transition: 'all 0.25s ease' }}>
+            <div style={{ fontSize: '1.9rem', fontWeight: 900, color: '#10b981' }}>0 – 11</div>
+            <div style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700, marginTop: '2px' }}>Official Demand Scale</div>
           </div>
 
-          <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid var(--glass-border)', borderRadius: '12px', padding: '1rem' }}>
-            <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#ff007f' }}>Zero Dupe</div>
-            <div style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 700 }}>Anti-Exploit Values</div>
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 0, 127, 0.3)', borderRadius: '16px', padding: '1.2rem', transition: 'all 0.25s ease' }}>
+            <div style={{ fontSize: '1.9rem', fontWeight: 900, color: '#ff007f' }}>Zero Dupe</div>
+            <div style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700, marginTop: '2px' }}>Anti-Exploit Values</div>
           </div>
         </div>
       </div>
 
-      {/* ━━━━ NAVIGATION TABS ━━━━ */}
+      {/* ━━━━ SEGMENTED HIGH-TECH DOCK NAVIGATION ━━━━ */}
       <div
         style={{
           display: 'flex',
           justifyContent: 'center',
-          gap: '0.75rem',
+          gap: '0.6rem',
           marginBottom: '2.5rem',
           flexWrap: 'wrap',
         }}
       >
-        <button
-          className="filter-btn"
-          onClick={() => setActiveSection('about')}
-          style={{
-            background: activeSection === 'about' ? 'var(--primary-gold)' : 'rgba(255,255,255,0.03)',
-            color: activeSection === 'about' ? '#000' : '#fff',
-            fontWeight: 900,
-            padding: '0.75rem 1.4rem',
-            border: activeSection === 'about' ? '1px solid var(--primary-gold)' : '1px solid var(--glass-border)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-          }}
-        >
-          <Users size={17} /> About Us & Staff Team
-        </button>
-
-        <button
-          className="filter-btn"
-          onClick={() => setActiveSection('sources')}
-          style={{
-            background: activeSection === 'sources' ? 'var(--primary-gold)' : 'rgba(255,255,255,0.03)',
-            color: activeSection === 'sources' ? '#000' : '#fff',
-            fontWeight: 900,
-            padding: '0.75rem 1.4rem',
-            border: activeSection === 'sources' ? '1px solid var(--primary-gold)' : '1px solid var(--glass-border)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-          }}
-        >
-          <Database size={17} /> Trusted Data Sources
-        </button>
-
-        <button
-          className="filter-btn"
-          onClick={() => setActiveSection('stsc')}
-          style={{
-            background: activeSection === 'stsc' ? 'var(--primary-gold)' : 'rgba(255,255,255,0.03)',
-            color: activeSection === 'stsc' ? '#000' : '#fff',
-            fontWeight: 900,
-            padding: '0.75rem 1.4rem',
-            border: activeSection === 'stsc' ? '1px solid var(--primary-gold)' : '1px solid var(--glass-border)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-          }}
-        >
-          <Scale size={17} /> STSC & Demand Guide
-        </button>
-
-        <button
-          className="filter-btn"
-          onClick={() => setActiveSection('rules')}
-          style={{
-            background: activeSection === 'rules' ? 'var(--primary-gold)' : 'rgba(255,255,255,0.03)',
-            color: activeSection === 'rules' ? '#000' : '#fff',
-            fontWeight: 900,
-            padding: '0.75rem 1.4rem',
-            border: activeSection === 'rules' ? '1px solid var(--primary-gold)' : '1px solid var(--glass-border)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-          }}
-        >
-          <ShieldAlert size={17} /> Anti-Scam & Fair Trade
-        </button>
+        {navTabs.map((tab) => {
+          const Icon = tab.icon;
+          const isActive = activeSection === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveSection(tab.id)}
+              style={{
+                background: isActive ? `linear-gradient(135deg, ${tab.color}22, rgba(10, 11, 16, 0.95))` : 'rgba(255, 255, 255, 0.02)',
+                color: isActive ? '#fff' : '#94a3b8',
+                border: isActive ? `1.5px solid ${tab.color}` : '1px solid var(--glass-border)',
+                borderRadius: '12px',
+                padding: '0.65rem 1.15rem',
+                fontSize: '0.88rem',
+                fontWeight: 800,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.25s ease',
+                boxShadow: isActive ? `0 8px 25px ${tab.color}33` : 'none',
+              }}
+            >
+              <Icon size={16} color={isActive ? tab.color : '#64748b'} />
+              <span>{tab.label}</span>
+            </button>
+          );
+        })}
       </div>
 
-      {/* ━━━━ SECTION 1: ABOUT US & STAFF TEAM ━━━━ */}
-      {activeSection === 'about' && (
-        <div>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <h2 style={{ fontSize: '1.9rem', fontWeight: 900, color: '#fff' }}>
-              Meet The <span style={{ color: 'var(--primary-gold)' }}>Leadership & Staff</span>
-            </h2>
-            <p style={{ color: '#94a3b8', fontSize: '0.95rem' }}>
-              The dedicated team managing values, real-time market balances, and platform security.
-            </p>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-            {/* Owner Profile Card */}
-            <div
-              className="glass-card"
-              style={{
-                padding: '2rem',
-                border: '1px solid rgba(255, 204, 0, 0.4)',
-                background: 'linear-gradient(180deg, rgba(255, 204, 0, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%)',
-                position: 'relative',
-              }}
-            >
-              <div style={{ position: 'absolute', top: '1.25rem', right: '1.25rem', background: '#ffcc00', color: '#000', padding: '4px 10px', borderRadius: '8px', fontWeight: 900, fontSize: '0.75rem' }}>
-                👑 FOUNDER & OWNER
-              </div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#ffcc00', color: '#000', fontSize: '1.6rem', fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(255,204,0,0.4)' }}>
-                  👑
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Owner_Admin</h3>
-                  <div style={{ color: '#ffcc00', fontSize: '0.85rem', fontWeight: 800 }}>Lead Developer & Systems Architect</div>
-                </div>
-              </div>
-
-              <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                Oversees platform infrastructure, database synchronization, database security protocols, and ensures all trade metrics adhere strictly to true market consensus.
+      {/* ━━━━ SECTION CONTENT DISPLAY WITH ANIMATED ENTRANCE ━━━━ */}
+      <div key={activeSection} className="guide-section-fade">
+        {/* ============================================================== */}
+        {/* SECTION 1: LEADERSHIP & STAFF ROSTER                          */}
+        {/* ============================================================== */}
+        {activeSection === 'about' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                Meet The <span style={{ color: 'var(--primary-gold)' }}>Leadership & Staff</span>
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
+                The dedicated team managing values, real-time market balances, and platform security.
               </p>
-
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                <span style={{ background: 'rgba(255,255,255,0.06)', padding: '4px 10px', borderRadius: '6px', fontSize: '0.75rem', color: '#94a3b8' }}>🎮 Roblox: <strong>BGS_Owner_Official</strong></span>
-                <span style={{ background: 'rgba(255,255,255,0.06)', padding: '4px 10px', borderRadius: '6px', fontSize: '0.75rem', color: '#94a3b8' }}>🛡️ Root Permissions</span>
-              </div>
             </div>
 
-            {/* Head Moderator Card */}
-            <div
-              className="glass-card"
-              style={{
-                padding: '2rem',
-                border: '1px solid rgba(124, 58, 237, 0.4)',
-                background: 'linear-gradient(180deg, rgba(124, 58, 237, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%)',
-                position: 'relative',
-              }}
-            >
-              <div style={{ position: 'absolute', top: '1.25rem', right: '1.25rem', background: '#7c3aed', color: '#fff', padding: '4px 10px', borderRadius: '8px', fontWeight: 900, fontSize: '0.75rem' }}>
-                🛡️ HEAD MODERATOR
-              </div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#7c3aed', color: '#fff', fontSize: '1.6rem', fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(124,58,237,0.4)' }}>
-                  🛡️
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2rem' }}>
+              {/* Staff 1: Owner & Lead Architect */}
+              <div className="holo-staff-card" style={{ border: '1px solid rgba(255, 204, 0, 0.4)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.25rem' }}>
+                  <div
+                    style={{
+                      width: '56px',
+                      height: '56px',
+                      borderRadius: '18px',
+                      background: 'linear-gradient(135deg, #ffcc00, #ff9100)',
+                      color: '#000',
+                      fontSize: '1.6rem',
+                      fontWeight: 900,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 0 25px rgba(255, 204, 0, 0.4)',
+                    }}
+                  >
+                    👑
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Owner_Admin</h3>
+                      <span style={{ background: '#ffcc00', color: '#000', fontSize: '0.7rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', textTransform: 'uppercase' }}>
+                        FOUNDER & OWNER
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: '#ffcc00', fontWeight: 800, marginTop: '2px' }}>
+                      Head Developer & Systems Architect
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Staff_Mod</h3>
-                  <div style={{ color: '#a78bfa', fontSize: '0.85rem', fontWeight: 800 }}>Head Value Curator & Safety Lead</div>
-                </div>
-              </div>
 
-              <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                Manages real-time market reports, verifies trade listings, enforces anti-scam measures, and cross-audits daily pet stability trends across all categories.
-              </p>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  Oversees platform infrastructure, database synchronization, database security protocols, and ensures all trade metrics adhere strictly to true market consensus.
+                </p>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                <span style={{ background: 'rgba(255,255,255,0.06)', padding: '4px 10px', borderRadius: '6px', fontSize: '0.75rem', color: '#94a3b8' }}>🎮 Roblox: <strong>Staff_Mod_Roblox</strong></span>
-                <span style={{ background: 'rgba(255,255,255,0.06)', padding: '4px 10px', borderRadius: '6px', fontSize: '0.75rem', color: '#94a3b8' }}>⚔️ Trade Moderator</span>
-              </div>
-            </div>
-
-            {/* Community Traders Tier */}
-            <div
-              className="glass-card"
-              style={{
-                padding: '2rem',
-                border: '1px solid rgba(0, 229, 255, 0.4)',
-                background: 'linear-gradient(180deg, rgba(0, 229, 255, 0.08) 0%, rgba(10, 11, 16, 0.95) 100%)',
-                position: 'relative',
-              }}
-            >
-              <div style={{ position: 'absolute', top: '1.25rem', right: '1.25rem', background: '#00e5ff', color: '#000', padding: '4px 10px', borderRadius: '8px', fontWeight: 900, fontSize: '0.75rem' }}>
-                🌟 VERIFIED TRADERS
-              </div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#00e5ff', color: '#000', fontSize: '1.6rem', fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(0,229,255,0.4)' }}>
-                  🤝
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Community Council</h3>
-                  <div style={{ color: '#00e5ff', fontSize: '0.85rem', fontWeight: 800 }}>Active Players & Market Contributors</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  <span style={{ fontSize: '0.75rem', background: '#0a0b10', border: '1px solid var(--glass-border)', padding: '3px 8px', borderRadius: '6px', color: '#94a3b8' }}>
+                    🎮 Roblox: <strong>BGS_Owner_Official</strong>
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(255, 204, 0, 0.1)', border: '1px solid rgba(255, 204, 0, 0.3)', padding: '3px 8px', borderRadius: '6px', color: '#ffcc00', fontWeight: 800 }}>
+                    🛡️ Root Permissions
+                  </span>
                 </div>
               </div>
 
-              <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                All registered and verified players actively trading on our Marketplace and Calculator. Community feedback and real trade proof continuously validate market accuracy.
-              </p>
+              {/* Staff 2: Head Moderator & Curator */}
+              <div className="holo-staff-card" style={{ border: '1px solid rgba(124, 58, 237, 0.4)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.25rem' }}>
+                  <div
+                    style={{
+                      width: '56px',
+                      height: '56px',
+                      borderRadius: '18px',
+                      background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                      color: '#fff',
+                      fontSize: '1.6rem',
+                      fontWeight: 900,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 0 25px rgba(124, 58, 237, 0.4)',
+                    }}
+                  >
+                    🛡️
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Staff_Mod</h3>
+                      <span style={{ background: '#7c3aed', color: '#fff', fontSize: '0.7rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', textTransform: 'uppercase' }}>
+                        HEAD MODERATOR
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: '#a78bfa', fontWeight: 800, marginTop: '2px' }}>
+                      Head Value Curator & Safety Lead
+                    </div>
+                  </div>
+                </div>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                <span style={{ background: 'rgba(255,255,255,0.06)', padding: '4px 10px', borderRadius: '6px', fontSize: '0.75rem', color: '#94a3b8' }}>✅ Verified Trader Badge</span>
-                <span style={{ background: 'rgba(255,255,255,0.06)', padding: '4px 10px', borderRadius: '6px', fontSize: '0.75rem', color: '#94a3b8' }}>💬 Discord Connected</span>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  Manages real-time market reports, verifies trade listings, enforces anti-scam measures, and cross-audits daily pet stability trends across all categories.
+                </p>
+
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  <span style={{ fontSize: '0.75rem', background: '#0a0b10', border: '1px solid var(--glass-border)', padding: '3px 8px', borderRadius: '6px', color: '#94a3b8' }}>
+                    🎮 Roblox: <strong>Staff_Mod_Roblox</strong>
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(124, 58, 237, 0.1)', border: '1px solid rgba(124, 58, 237, 0.3)', padding: '3px 8px', borderRadius: '6px', color: '#a78bfa', fontWeight: 800 }}>
+                    ⚔️ Trade Moderator
+                  </span>
+                </div>
+              </div>
+
+              {/* Staff 3: Community Council */}
+              <div className="holo-staff-card" style={{ border: '1px solid rgba(0, 229, 255, 0.4)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.25rem' }}>
+                  <div
+                    style={{
+                      width: '56px',
+                      height: '56px',
+                      borderRadius: '18px',
+                      background: 'linear-gradient(135deg, #00e5ff, #00b0ff)',
+                      color: '#000',
+                      fontSize: '1.6rem',
+                      fontWeight: 900,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 0 25px rgba(0, 229, 255, 0.4)',
+                    }}
+                  >
+                    🤝
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>Community Council</h3>
+                      <span style={{ background: '#00e5ff', color: '#000', fontSize: '0.7rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', textTransform: 'uppercase' }}>
+                        VERIFIED TRADERS
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: '#00e5ff', fontWeight: 800, marginTop: '2px' }}>
+                      Active Players & Market Contributors
+                    </div>
+                  </div>
+                </div>
+
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  All registered and verified players actively trading on our Marketplace and Calculator. Community feedback and real trade proof continuously validate market accuracy.
+                </p>
+
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.3)', padding: '3px 8px', borderRadius: '6px', color: '#10b981', fontWeight: 800 }}>
+                    🟢 Verified Trader Badge
+                  </span>
+                  <span style={{ fontSize: '0.75rem', background: '#0a0b10', border: '1px solid var(--glass-border)', padding: '3px 8px', borderRadius: '6px', color: '#94a3b8' }}>
+                    💬 Discord Connected
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ━━━━ SECTION 2: TRUSTED DATA SOURCES ━━━━ */}
-      {activeSection === 'sources' && (
-        <div>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <h2 style={{ fontSize: '1.9rem', fontWeight: 900, color: '#fff' }}>
-              Official <span style={{ color: '#00e5ff' }}>Data Sources & Integrity</span>
-            </h2>
-            <p style={{ color: '#94a3b8', fontSize: '0.95rem' }}>
-              How our platform guarantees 100% authentic, non-duped, and mathematically verified values.
-            </p>
-          </div>
+        {/* ============================================================== */}
+        {/* SECTION 2: STSC & DEMAND GUIDE                                */}
+        {/* ============================================================== */}
+        {activeSection === 'stsc' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                Official <span style={{ color: '#00e5ff' }}>BGS Demand & STSC</span> System
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
+                Understanding how demand tiers and stability trends dictate fair trade values.
+              </p>
+            </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '1.75rem', marginBottom: '3rem' }}>
-            {/* Collab Source */}
-            <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.35)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.25rem' }}>
-                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 204, 0, 0.15)', color: '#ffcc00', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Scale size={24} />
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>BGS Collab Value List</h3>
-                  <span style={{ color: '#ffcc00', fontSize: '0.8rem', fontWeight: 700 }}>Primary Market Pricing & Demand Authority</span>
-                </div>
+            {/* Official Demand System Chart Recreated */}
+            <div style={{ marginBottom: '2.5rem' }}>
+              <DemandSystemChart />
+            </div>
+
+            {/* Explanatory Cards */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+              <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.3)' }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>
+                  What is STSC?
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7 }}>
+                  <strong>STSC</strong> stands for <em>Secret Trade Stability & Consensus</em>. In Bubble Gum Simulator, raw secret values fluctuate according to how easily players can trade them. High-demand pets often trade at significant overpays.
+                </p>
               </div>
 
-              <ul style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-                <li><strong>Clean Non-Duped Values:</strong> Every listed value is based on authentic, un-duped trade market transactions.</li>
-                <li><strong>STSC Secret Standards:</strong> Strict adherence to the standard Secret Pets unit values (The Overlord = 50, Soul Heart = 7,000).</li>
-                <li><strong>0 – 11 Demand System:</strong> Real-time demand scores reflecting exact player willingness to trade.</li>
-                <li><strong>Verified Hatched Counts:</strong> Precise tracking of Normal (🥚), Shiny (✨), and Mythic (⚡) hatched quantities.</li>
-              </ul>
+              <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 900, color: '#00e5ff', marginBottom: '0.75rem' }}>
+                  The 0–11 Demand Scale
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7 }}>
+                  Each item is rated from <strong>1/11 (Garbage)</strong> up to <strong>11/11 (Hyped)</strong>. Items with <strong>10/11 Extreme</strong> or <strong>11/11 Hyped</strong> demand command massive premiums in marketplace deals.
+                </p>
+              </div>
 
-              <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '1px solid var(--glass-border)' }}>
+              <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 900, color: '#10b981', marginBottom: '0.75rem' }}>
+                  Stability Indicators
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7 }}>
+                  <strong>⬆⬆ Rising Fast</strong>, <strong>↔ Stable</strong>, <strong>🔄 Unstable</strong>, and <strong>⬇ Dropping</strong>. Use stability symbols in conjunction with the Trade Calculator to avoid trading for depreciating pets.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ============================================================== */}
+        {/* SECTION 3: TRUSTED DATA SOURCES                                */}
+        {/* ============================================================== */}
+        {activeSection === 'sources' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                Trusted <span style={{ color: '#a78bfa' }}>Data Sources & Integrations</span>
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
+                Directly reconciled against authoritative community databases.
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '2rem' }}>
+              <div className="glass-card" style={{ padding: '2.5rem', border: '1px solid rgba(255, 204, 0, 0.35)' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(255, 204, 0, 0.15)', color: '#ffcc00', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+                  <Database size={26} />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>BGS Collab Value List</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+                  The premier community authority created by top BGS traders. We cross-audit all 13 distinct category tables (Limited Secrets, OGs, T3s, Mythic Secrets) daily.
+                </p>
                 <a
                   href="https://sites.google.com/view/bgs-collab-value-list/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#ffcc00', fontSize: '0.85rem', fontWeight: 800, textDecoration: 'none' }}
+                  className="btn-primary"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none', padding: '0.65rem 1.25rem', fontSize: '0.85rem' }}
                 >
-                  <ExternalLink size={15} /> Visit BGS Collab Value List
+                  <ExternalLink size={15} /> Visit Official Collab Value List
                 </a>
               </div>
-            </div>
 
-            {/* Wiki Source */}
-            <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(0, 229, 255, 0.35)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.25rem' }}>
-                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <BookOpen size={24} />
+              <div className="glass-card" style={{ padding: '2.5rem', border: '1px solid rgba(0, 229, 255, 0.35)' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+                  <Globe size={26} />
                 </div>
-                <div>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: 0 }}>Bubble Gum Simulator Fandom Wiki</h3>
-                  <span style={{ color: '#00e5ff', fontSize: '0.8rem', fontWeight: 700 }}>In-Game Metadata & Technical Multipliers</span>
-                </div>
-              </div>
-
-              <ul style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-                <li><strong>Lua Game Module Stats:</strong> Accurate Bubble, Coin, Gem, and Star in-game multipliers directly from game files.</li>
-                <li><strong>Drop Rates & Odds:</strong> Exact egg hatching percentages (e.g. <em>1 in 15M (0.00000667%)</em> for Godly Shamrock).</li>
-                <li><strong>Movement Physics:</strong> Accurate 🦅 Flying vs 🐾 Walking classifications.</li>
-                <li><strong>Authentic Renders:</strong> High-resolution transparent PNG artwork for all 1,530+ pets and hats.</li>
-              </ul>
-
-              <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '1px solid var(--glass-border)' }}>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>Bubble Gum Simulator Fandom Wiki</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+                  The comprehensive encyclopedia for all 1,530+ pets, egg hatch odds, in-game multipliers, and event history maintained by the community since 2018.
+                </p>
                 <a
                   href="https://bubble-gum-simulator.fandom.com/wiki/Bubble_Gum_Simulator_Wiki"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#00e5ff', fontSize: '0.85rem', fontWeight: 800, textDecoration: 'none' }}
+                  className="filter-btn"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none', padding: '0.65rem 1.25rem', fontSize: '0.85rem', color: '#00e5ff' }}
                 >
-                  <ExternalLink size={15} /> Visit Official BGS Fandom Wiki
+                  <ExternalLink size={15} /> Visit BGS Fandom Wiki
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ━━━━ SECTION 3: STSC & DEMAND GUIDE ━━━━ */}
-      {activeSection === 'stsc' && (
-        <div>
-          {/* Official BGS Demand System Chart Banner */}
-          <DemandSystemChart />
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-            {/* Card 1: How STSC Works */}
-            <div className="glass-card" style={{ border: '1px solid rgba(0, 229, 255, 0.3)' }}>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-                <Scale size={24} />
-              </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#00e5ff' }}>1. How STSC Works</h3>
-              <p style={{ color: '#cbd5e1', fontSize: '0.88rem', marginBottom: '0.75rem', fontWeight: 600 }}>
-                <strong>STSC</strong> = Secret to Shinies Conversions (The Universal BGS Standard):
+        {/* ============================================================== */}
+        {/* SECTION 4: ANTI-SCAM & FAIR TRADE                              */}
+        {/* ============================================================== */}
+        {activeSection === 'rules' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                Anti-Scam & <span style={{ color: '#10b981' }}>Fair Trading Protocols</span>
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
+                Essential guidelines to trade safely and protect your inventory.
               </p>
-              <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-                <li><strong style={{ color: '#00e5ff' }}>⚡ Secret Value:</strong> Item valuation in Secret Units (e.g. <em>The Overlord = 50</em>, <em>Luminance = 3,000</em>, <em>Soul Heart = 7,000</em>).</li>
-                <li><strong style={{ color: '#ffcc00' }}>⭐ Normal Value:</strong> Valuation in regular Shiny Tier-3s or limiteds.</li>
-                <li><strong style={{ color: '#a78bfa' }}>Ratio:</strong> 1 Secret Unit roughly equals 200 - 250 in Shiny T3 limited value.</li>
-              </ul>
             </div>
 
-            {/* Card 2: 0 - 11 Demand System */}
-            <div className="glass-card" style={{ border: '1px solid rgba(16, 185, 129, 0.3)' }}>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(16, 185, 129, 0.15)', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-                <TrendingUp size={24} />
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem' }}>
+              <div className="glass-card" style={{ border: '1px solid rgba(255, 23, 68, 0.35)', padding: '2rem' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 23, 68, 0.15)', color: '#ff1744', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                  <ShieldAlert size={26} />
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#ff1744', marginBottom: '0.75rem' }}>1. Avoid Dupe Exploits</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  Mass-duping occurred in 2022. Our values only track <strong>100% clean items</strong>. Never accept unverified pets or suspicious underpays in public trade servers.
+                </p>
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#10b981' }}>2. Official Demand (0 – 11 Scale)</h3>
-              <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-                <li><strong>0 / 11:</strong> Uncirculated or 0 in known existence.</li>
-                <li><strong>1 – 3 / 11:</strong> Terrible / Low demand (demands underpays).</li>
-                <li><strong>4 – 6 / 11:</strong> Average / Decent market liquidity.</li>
-                <li><strong>7 – 9 / 11:</strong> High / Fast-moving demand.</li>
-                <li><strong>10 / 11:</strong> Maximum standard trade demand.</li>
-                <li><strong>11 / 11:</strong> <span style={{ color: '#ff007f', fontWeight: 900 }}>HYPED</span> (Peak hype new release).</li>
-              </ul>
-            </div>
 
-            {/* Card 3: Variant Multipliers */}
-            <div className="glass-card" style={{ border: '1px solid rgba(185, 103, 255, 0.3)' }}>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(185, 103, 255, 0.15)', color: '#b967ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-                <Sparkles size={24} />
+              <div className="glass-card" style={{ border: '1px solid rgba(0, 229, 255, 0.35)', padding: '2rem' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                  <CheckCircle2 size={26} />
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#00e5ff', marginBottom: '0.75rem' }}>2. Use Live Trade Calculator</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  Use our live <strong>Trade Calculator</strong> to simulate both trade sides before accepting. The calculator factors in demand and stability to indicate <strong>Big Win (BW)</strong>, <strong>Fair (F)</strong>, or <strong>Big Lose (BL)</strong>.
+                </p>
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#b967ff' }}>3. Variant Multipliers</h3>
-              <ul style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.7, paddingLeft: '1.2rem', margin: 0 }}>
-                <li><strong>Normal Variant:</strong> Base Secret Value (<strong>1.0x</strong>).</li>
-                <li><strong>Shiny Variant:</strong> <strong>2.5x</strong> (or exact listed Collab shiny value).</li>
-                <li><strong>Mythic Variant:</strong> <strong>10.0x</strong> base value.</li>
-                <li><strong>Shiny Mythic (S.Myth):</strong> <strong>25.0x</strong> base value!</li>
-                <li><em style={{ color: '#a78bfa' }}>Hats do not have variant multipliers.</em></li>
-              </ul>
+
+              <div className="glass-card" style={{ border: '1px solid rgba(255, 204, 0, 0.35)', padding: '2rem' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 204, 0, 0.15)', color: '#ffcc00', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                  <Lock size={26} />
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>3. Verified Account Security</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  Keep your Roblox username and Discord tag updated in your <strong>Account Settings</strong>. Never share your password or security PINs with anyone.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ━━━━ SECTION 4: ANTI-SCAM & FAIR TRADE RULES ━━━━ */}
-      {activeSection === 'rules' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          <div className="glass-card" style={{ border: '1px solid rgba(255, 23, 68, 0.35)', padding: '2rem' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 23, 68, 0.15)', color: '#ff1744', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-              <ShieldAlert size={26} />
+        {/* ============================================================== */}
+        {/* SECTION 5: FAQ & HELP CENTER                                  */}
+        {/* ============================================================== */}
+        {activeSection === 'faq' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                Frequently Asked <span style={{ color: '#f472b6' }}>Questions</span>
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
+                Everything you need to know about BGS Values and trading.
+              </p>
             </div>
-            <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#ff1744', marginBottom: '0.75rem' }}>1. Avoid Dupe Exploits</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-              Mass-duping occurred in 2022. Our values only track <strong>100% clean items</strong>. Never accept unverified pets or suspicious underpays in public trade servers.
-            </p>
-          </div>
 
-          <div className="glass-card" style={{ border: '1px solid rgba(0, 229, 255, 0.35)', padding: '2rem' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-              <CheckCircle2 size={26} />
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem' }}>
+              <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.3)' }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>❓ How are Pet Values Determined?</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  All values are synchronized directly with the official <strong>BGS Collab Value List</strong> and verified recent in-game trade transactions.
+                </p>
+              </div>
+
+              <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#00e5ff', marginBottom: '0.75rem' }}>❓ What is the 0–11 Demand System?</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  The demand scale rates how easily an item can be traded from <strong>1 (Garbage)</strong> up to <strong>11 (Hyped)</strong> based on player trade frequency.
+                </p>
+              </div>
+
+              <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#10b981', marginBottom: '0.75rem' }}>❓ How Does the Trade Calculator Work?</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  Select items for Side A and Side B to see instant value totals, variant multipliers, and fair trade ratings (Win, Fair, Lose).
+                </p>
+              </div>
             </div>
-            <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#00e5ff', marginBottom: '0.75rem' }}>2. Always Double-Check Trade Calculator</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-              Use our live <strong>Trade Calculator</strong> to simulate both trade sides before accepting. The calculator factors in demand and stability to indicate <strong>Big Win (BW)</strong>, <strong>Fair (F)</strong>, or <strong>Big Lose (BL)</strong>.
-            </p>
           </div>
+        )}
 
-          <div className="glass-card" style={{ border: '1px solid rgba(255, 204, 0, 0.35)', padding: '2rem' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 204, 0, 0.15)', color: '#ffcc00', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-              <Lock size={26} />
+        {/* ============================================================== */}
+        {/* SECTION 6: PRIVACY POLICY                                     */}
+        {/* ============================================================== */}
+        {activeSection === 'privacy' && (
+          <div className="glass-card" style={{ padding: '3rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#00e5ff', marginBottom: '1rem' }}>Privacy Policy</h2>
+            <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>Last updated: 2026</p>
+            <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <p>
+                At <strong>BGS Values</strong>, your privacy is our top priority. We only collect the minimal information necessary to deliver verified peer-to-peer trading capabilities and value listings.
+              </p>
+              <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>1. Information We Collect</h4>
+              <p>
+                When you create an account, we store your chosen username, Roblox handle, optional Discord tag, and trade listing preferences. We never ask for, collect, or store your Roblox passwords or billing details.
+              </p>
+              <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. How Information is Used</h4>
+              <p>
+                Account data is exclusively used to enable trade offer negotiations, marketplace listing moderation, and account reputation badges. We do not sell or monetize personal user data to third parties.
+              </p>
             </div>
-            <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>3. Verified Account Security</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-              Keep your Roblox username and Discord tag updated in your <strong>Account Settings</strong>. Never share your password or security PINs with anyone.
-            </p>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ━━━━ SECTION 5: PRIVACY POLICY ━━━━ */}
-      {activeSection === 'privacy' && (
-        <div className="glass-card" style={{ padding: '2.5rem', marginBottom: '3rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#00e5ff', marginBottom: '1rem' }}>Privacy Policy</h2>
-          <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>Last updated: 2026</p>
-          <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <p>
-              At <strong>BGS Values</strong>, your privacy is our top priority. We only collect the minimal information necessary to deliver verified peer-to-peer trading capabilities and value listings.
-            </p>
-            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>1. Information We Collect</h4>
-            <p>
-              When you create an account, we store your chosen username, Roblox handle, optional Discord tag, and trade listing preferences. We never ask for, collect, or store your Roblox passwords or billing details.
-            </p>
-            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. How Information is Used</h4>
-            <p>
-              Account data is exclusively used to enable trade offer negotiations, marketplace listing moderation, and account reputation badges. We do not sell or monetize personal user data to third parties.
-            </p>
+        {/* ============================================================== */}
+        {/* SECTION 7: TERMS OF SERVICE                                   */}
+        {/* ============================================================== */}
+        {activeSection === 'terms' && (
+          <div className="glass-card" style={{ padding: '3rem', border: '1px solid rgba(124, 58, 237, 0.3)' }}>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#a78bfa', marginBottom: '1rem' }}>Terms of Service</h2>
+            <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>Last updated: 2026</p>
+            <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <p>
+                By accessing or using <strong>BGS Values</strong>, you agree to comply with all community trading standards and Roblox platform terms.
+              </p>
+              <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>1. Fair Market Conduct</h4>
+              <p>
+                Users agree not to engage in phishing, trade scams, price manipulation, cross-trading prohibited by Roblox terms, or posting misleading trade offers.
+              </p>
+              <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. Third-Party Disclaimer</h4>
+              <p>
+                BGS Values is an independent community project and is not affiliated with Roblox Corporation or Rumble Studios. All in-game assets are the property of their respective creators.
+              </p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* ━━━━ SECTION 6: TERMS OF SERVICE ━━━━ */}
-      {activeSection === 'terms' && (
-        <div className="glass-card" style={{ padding: '2.5rem', marginBottom: '3rem', border: '1px solid rgba(124, 58, 237, 0.3)' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#a78bfa', marginBottom: '1rem' }}>Terms of Service</h2>
-          <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>Last updated: 2026</p>
-          <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <p>
-              By accessing or using <strong>BGS Values</strong>, you agree to comply with all community trading standards and Roblox platform terms.
-            </p>
-            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>1. Fair Market Conduct</h4>
-            <p>
-              Users agree not to engage in phishing, trade scams, price manipulation, cross-trading prohibited by Roblox terms, or posting misleading trade offers.
-            </p>
-            <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. Third-Party Disclaimer</h4>
-            <p>
-              BGS Values is an independent community project and is not affiliated with Roblox Corporation or Rumble Studios. All in-game assets are the property of their respective creators.
-            </p>
+        {/* ============================================================== */}
+        {/* SECTION 8: ZERO DUPE POLICY                                   */}
+        {/* ============================================================== */}
+        {activeSection === 'dupe' && (
+          <div className="glass-card" style={{ padding: '3rem', border: '1px solid rgba(255, 0, 127, 0.35)' }}>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#ff007f', marginBottom: '1rem' }}>Clean & Non-Duped Value Policy</h2>
+            <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <p>
+                In 2022, mass-duplication exploits affected various legacy pets in Bubble Gum Simulator. <strong>BGS Values maintains a strict zero-dupe valuation standard.</strong>
+              </p>
+              <p>
+                Every trade value, demand tier, and hatch count listed on our platform tracks <strong>100% clean, un-duped items</strong> to protect collectors and active traders from manipulated prices.
+              </p>
+            </div>
           </div>
-        </div>
-      )}
-
-      {/* ━━━━ SECTION 7: FAQ & HELP CENTER ━━━━ */}
-      {activeSection === 'faq' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.3)' }}>
-            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>❓ How are Pet Values Determined?</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-              All values are synchronized directly with the official <strong>BGS Collab Value List</strong> and verified recent in-game trade transactions.
-            </p>
-          </div>
-          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(0, 229, 255, 0.3)' }}>
-            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#00e5ff', marginBottom: '0.75rem' }}>❓ What is the 0–11 Demand System?</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-              The demand scale rates how easily an item can be traded from <strong>1 (Garbage)</strong> up to <strong>11 (Hyped)</strong> based on player trade frequency.
-            </p>
-          </div>
-          <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
-            <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#10b981', marginBottom: '0.75rem' }}>❓ How Does the Trade Calculator Work?</h3>
-            <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-              Select items for Side A and Side B to see instant value totals, variant multipliers, and fair trade ratings (Win, Fair, Lose).
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* ━━━━ SECTION 8: DUPE & CLEAN VALUE DISCLAIMER ━━━━ */}
-      {activeSection === 'dupe' && (
-        <div className="glass-card" style={{ padding: '2.5rem', marginBottom: '3rem', border: '1px solid rgba(255, 0, 127, 0.35)' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#ff007f', marginBottom: '1rem' }}>Clean & Non-Duped Value Policy</h2>
-          <div style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <p>
-              In 2022, mass-duplication exploits affected various legacy pets in Bubble Gum Simulator. <strong>BGS Values maintains a strict zero-dupe valuation standard.</strong>
-            </p>
-            <p>
-              Every trade value, demand tier, and hatch count listed on our platform tracks <strong>100% clean, un-duped items</strong> to protect collectors and active traders from manipulated prices.
-            </p>
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

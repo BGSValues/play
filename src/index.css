@@ -638,3 +638,50 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+/* ━━━━ GUIDES & SHOWCASE SMOOTH ANIMATIONS ━━━━ */
+.guide-section-fade {
+  animation: guideFadeSlide 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes guideFadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.holo-staff-card {
+  position: relative;
+  background: rgba(14, 16, 24, 0.7);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
+}
+
+.holo-staff-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transition: 0.6s;
+}
+
+.holo-staff-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 229, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 229, 255, 0.15);
+}
+
+.holo-staff-card:hover::after {
+  left: 100%;
+}
+
