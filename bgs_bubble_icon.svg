@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pinkBubble3D" cx="35%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#ff70c9" />
+      <stop offset="35%" stop-color="#ff1493" />
+      <stop offset="75%" stop-color="#d6006e" />
+      <stop offset="100%" stop-color="#80003b" />
+    </radialGradient>
+    <filter id="bubbleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="50" cy="50" r="44" fill="#ff007f" opacity="0.4" filter="url(#bubbleGlow)" />
+
+  <!-- Main 3D Sphere -->
+  <circle cx="50" cy="50" r="42" fill="url(#pinkBubble3D)" />
+
+  <!-- Soft Edge Shading -->
+  <circle cx="50" cy="50" r="41.5" fill="none" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.5" />
+
+  <!-- Specular Crisp White Highlight Dot -->
+  <ellipse cx="34" cy="30" rx="9" ry="6.5" fill="#ffffff" transform="rotate(-30 34 30)" opacity="0.95" />
+  <circle cx="28" cy="36" r="2.5" fill="#ffffff" opacity="0.8" />
+</svg>
