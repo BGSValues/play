@@ -13,6 +13,7 @@ import {
   BarChart3,
   LogOut,
   Egg,
+  Settings,
 } from 'lucide-react';
 
 import ValueList from './components/ValueList';
@@ -23,6 +24,7 @@ import Guides from './components/Guides';
 import EggsList from './components/EggsList';
 import PetDetailsPage from './components/PetDetailsPage';
 import LoginModal from './components/LoginModal';
+import UserSettingsModal from './components/UserSettingsModal';
 import BgsLogo from './components/BgsLogo';
 
 import initialPetsData from './data/pets.json';
@@ -36,6 +38,7 @@ export default function App() {
   const [sideB, setSideB] = useState([]);
   const [toast, setToast] = useState(null);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState(() => {
     const saved = localStorage.getItem('bgs_user');
     return saved ? JSON.parse(saved) : null;
@@ -160,6 +163,7 @@ export default function App() {
       )}
 
       <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} currentUser={currentUser} onLogin={handleLogin} onLogout={handleLogout} />
+      <UserSettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} currentUser={currentUser} onUpdateUser={(updated) => { setCurrentUser(updated); localStorage.setItem('bgs_user', JSON.stringify(updated)); }} />
 
       {/* ━━━━ HEADER NAV ━━━━ */}
       <header className="app-header">
@@ -190,13 +194,18 @@ export default function App() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           {currentUser ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-              {currentUser.picture ? (
-                <img src={currentUser.picture} alt="" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--primary-gold)' }} />
-              ) : (
-                <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'linear-gradient(135deg, #00e5ff, #7000ff)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', fontWeight: 900, color: '#fff' }}>{currentUser.username?.charAt(0)}</div>
-              )}
-              <span style={{ fontWeight: 800, fontSize: '0.9rem', maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{currentUser.username}</span>
-              <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#ff1744', cursor: 'pointer', display: 'flex', padding: '4px' }} title="Logout"><LogOut size={18} /></button>
+              <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: currentUser.role === 'owner' ? '#ffcc00' : currentUser.role === 'mod' ? '#7c3aed' : 'linear-gradient(135deg, #00e5ff, #7000ff)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', fontWeight: 900, color: currentUser.role === 'owner' ? '#000' : '#fff' }}>
+                {currentUser.username?.charAt(0)}
+              </div>
+              <span style={{ fontWeight: 800, fontSize: '0.9rem', maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                {currentUser.username}
+              </span>
+              <button onClick={() => setIsSettingsOpen(true)} style={{ background: 'none', border: 'none', color: '#00e5ff', cursor: 'pointer', display: 'flex', padding: '4px' }} title="Account Settings">
+                <Settings size={18} />
+              </button>
+              <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: '#ff1744', cursor: 'pointer', display: 'flex', padding: '4px' }} title="Logout">
+                <LogOut size={18} />
+              </button>
               {(currentUser.role === 'owner' || currentUser.role === 'mod') && (
                 <button style={{ background: 'rgba(255,204,0,0.15)', border: '1px solid #ffcc00', color: '#ffcc00', borderRadius: '10px', padding: '0.45rem 0.85rem', fontSize: '0.8rem', fontWeight: 900, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }} onClick={() => setActiveTab('admin')}>
                   <ShieldCheck size={15} /> Admin

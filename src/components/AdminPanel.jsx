@@ -469,60 +469,183 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
     }
   };
 
-  // ---------------- STRICT AUTHENTICATION GUARD ----------------
+  // ---------------- STRICT AUTHENTICATION GUARD & DEDICATED STAFF PORTAL ----------------
+  const [adminUsername, setAdminUsername] = useState('');
+  const [adminPassword, setAdminPassword] = useState('');
+  const [adminAuthError, setAdminAuthError] = useState(null);
+  const [adminAuthLoading, setAdminAuthLoading] = useState(false);
+
+  const handleAdminStaffLogin = async (e) => {
+    e.preventDefault();
+    setAdminAuthError(null);
+    setAdminAuthLoading(true);
+
+    try {
+      const res = await fetch('/api/auth/staff-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: adminUsername.trim(),
+          password: adminPassword,
+          pin: adminPassword,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.success && data.user) {
+        if (onOpenLogin) {
+          // Parent login handler
+        }
+        localStorage.setItem('bgs_user', JSON.stringify(data.user));
+        window.location.reload();
+      } else {
+        setAdminAuthError(data.error || 'Access Denied: Invalid Staff Credentials.');
+      }
+    } catch (err) {
+      setAdminAuthError('Server authentication error: ' + err.message);
+    } finally {
+      setAdminAuthLoading(false);
+    }
+  };
+
   if (!isStaff) {
     return (
-      <div style={{ maxWidth: '620px', margin: '4rem auto', padding: '0 1.5rem' }}>
+      <div style={{ maxWidth: '520px', margin: '4rem auto', padding: '0 1.5rem' }}>
         <div
           className="glass-card"
           style={{
-            padding: '3rem 2rem',
-            textAlign: 'center',
-            border: '1px solid #ff1744',
-            boxShadow: '0 20px 60px rgba(255, 23, 68, 0.15)',
+            padding: '2.5rem 2rem',
+            border: '1px solid rgba(255, 204, 0, 0.4)',
+            boxShadow: '0 25px 80px rgba(0, 0, 0, 0.9)',
+            position: 'relative',
           }}
         >
-          <div
-            style={{
-              width: '72px',
-              height: '72px',
-              borderRadius: '20px',
-              background: 'rgba(255, 23, 68, 0.15)',
-              border: '1px solid rgba(255, 23, 68, 0.4)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              margin: '0 auto 1.5rem auto',
-            }}
-          >
-            <Lock size={36} color="#ff1744" />
+          <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
+            <div
+              style={{
+                width: '68px',
+                height: '68px',
+                borderRadius: '18px',
+                background: 'rgba(255, 204, 0, 0.12)',
+                border: '1px solid rgba(255, 204, 0, 0.35)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 1.25rem auto',
+                boxShadow: '0 0 30px rgba(255, 204, 0, 0.2)',
+              }}
+            >
+              <Lock size={32} color="var(--primary-gold)" />
+            </div>
+
+            <h2 style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', marginBottom: '0.4rem' }}>
+              Staff Security <span style={{ color: 'var(--primary-gold)' }}>Gateway</span>
+            </h2>
+
+            <p style={{ color: '#94a3b8', fontSize: '0.88rem', margin: 0 }}>
+              Authorized Lead Developers & Head Moderators only. Sign in with database credentials.
+            </p>
           </div>
 
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#fff', marginBottom: '0.6rem' }}>
-            Admin Access Restricted
-          </h2>
-
-          <p style={{ color: '#94a3b8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
-            The Admin Control Panel is strictly reserved for authorized Lead Developers and Head Staff Moderators.
-            Please sign in with your staff credentials.
-          </p>
-
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-            <button
-              className="btn-primary"
-              onClick={onOpenLogin}
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.85rem 1.6rem' }}
+          {adminAuthError && (
+            <div
+              style={{
+                padding: '0.75rem 1rem',
+                borderRadius: '8px',
+                fontSize: '0.85rem',
+                fontWeight: 800,
+                marginBottom: '1.25rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: 'rgba(255, 23, 68, 0.15)',
+                border: '1px solid #ff1744',
+                color: '#ff1744',
+              }}
             >
-              <ShieldCheck size={18} /> Staff Sign In
-            </button>
+              <AlertTriangle size={16} />
+              <span>{adminAuthError}</span>
+            </div>
+          )}
+
+          <form onSubmit={handleAdminStaffLogin}>
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                Staff Security ID / Username
+              </label>
+              <input
+                type="text"
+                required
+                value={adminUsername}
+                onChange={(e) => setAdminUsername(e.target.value)}
+                placeholder="e.g. Owner_Admin or Staff_Mod"
+                style={{
+                  width: '100%',
+                  background: '#0a0b10',
+                  border: '1px solid var(--glass-border)',
+                  color: '#fff',
+                  padding: '0.75rem 1rem',
+                  borderRadius: '8px',
+                  fontSize: '0.9rem',
+                }}
+              />
+            </div>
+
+            <div style={{ marginBottom: '1.5rem' }}>
+              <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                Master Password or Staff PIN
+              </label>
+              <input
+                type="password"
+                required
+                value={adminPassword}
+                onChange={(e) => setAdminPassword(e.target.value)}
+                placeholder="Enter Staff Password or PIN"
+                style={{
+                  width: '100%',
+                  background: '#0a0b10',
+                  border: '1px solid var(--glass-border)',
+                  color: '#fff',
+                  padding: '0.75rem 1rem',
+                  borderRadius: '8px',
+                  fontSize: '0.9rem',
+                }}
+              />
+            </div>
+
             <button
+              type="submit"
+              disabled={adminAuthLoading}
+              className="btn-primary"
+              style={{
+                width: '100%',
+                padding: '0.85rem',
+                fontSize: '0.95rem',
+                fontWeight: 900,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                marginBottom: '1rem',
+              }}
+            >
+              <ShieldCheck size={18} /> {adminAuthLoading ? 'Verifying Security...' : 'Authenticate Staff Access'}
+            </button>
+
+            <button
+              type="button"
               className="filter-btn"
               onClick={onBackToValues}
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.85rem 1.4rem' }}
+              style={{
+                width: '100%',
+                padding: '0.75rem',
+                fontSize: '0.88rem',
+                justifyContent: 'center',
+              }}
             >
-              Return to Value List
+              Return to Public Trading Hub
             </button>
-          </div>
+          </form>
         </div>
       </div>
     );

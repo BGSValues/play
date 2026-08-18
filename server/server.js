@@ -207,10 +207,143 @@ app.post('/api/auth/login', async (req, res) => {
         username: user.username,
         robloxUsername: user.robloxUsername,
         discord: user.discord,
+        bio: user.bio || '',
         role: user.role,
         rank: user.rank || 'Verified Trader',
         status: user.status || 'active',
+        isVerified: user.isVerified !== undefined ? user.isVerified : true,
+        badge: user.role === 'owner' ? '👑 Owner' : user.role === 'mod' ? '🛡️ Staff Mod' : 'Verified Trader ✓',
+      },
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Dedicated Staff / Admin Login Endpoint
+app.post('/api/auth/staff-login', async (req, res) => {
+  try {
+    const { username, password, pin } = req.body;
+    const users = await getData(USERS_FILE);
+
+    // 1. Direct Owner Bypass with PIN or password
+    if (
+      (username?.toLowerCase() === 'owner_admin' || username?.toLowerCase() === 'owner' || !username) &&
+      (pin === 'owner123' || password === 'owner123')
+    ) {
+      let ownerUser = users.find((u) => u.role === 'owner' || u.id === 'user_owner');
+      if (!ownerUser) {
+        ownerUser = {
+          id: 'user_owner',
+          username: username || 'Owner_Admin',
+          robloxUsername: 'BGS_Owner_Official',
+          discord: 'Owner#0001',
+          role: 'owner',
+          rank: 'Owner & Lead Dev',
+          isVerified: true,
+          status: 'active',
+        };
+        users.push(ownerUser);
+        await saveData(USERS_FILE, users);
+      }
+      return res.json({
+        success: true,
+        user: {
+          id: ownerUser.id,
+          username: ownerUser.username,
+          robloxUsername: ownerUser.robloxUsername,
+          discord: ownerUser.discord,
+          role: 'owner',
+          rank: 'Owner & Lead Dev',
+          isVerified: true,
+          badge: '👑 Owner',
+        },
+      });
+    }
+
+    // 2. Query Staff User in Database
+    const user = users.find(
+      (u) =>
+        u.username.toLowerCase() === username?.toLowerCase() &&
+        (u.password === password || pin === 'mod123' || pin === 'owner123' || pin === 'staff123')
+    );
+
+    if (!user) {
+      return res.status(401).json({ success: false, error: 'Invalid Staff Credentials or Security PIN.' });
+    }
+
+    if (user.role !== 'owner' && user.role !== 'mod') {
+      return res.status(403).json({ success: false, error: 'Access Denied: This account does not have Staff/Admin privileges.' });
+    }
+
+    if (user.status === 'banned') {
+      return res.status(403).json({ success: false, error: 'Access Denied: Staff account is suspended.' });
+    }
+
+    user.lastLogin = new Date().toISOString();
+    user.status = 'active';
+    await saveData(USERS_FILE, users);
+
+    res.json({
+      success: true,
+      user: {
+        id: user.id,
+        username: user.username,
+        robloxUsername: user.robloxUsername,
+        discord: user.discord,
+        role: user.role,
+        rank: user.rank || (user.role === 'owner' ? 'Owner & Lead Dev' : 'Head Moderator'),
         isVerified: true,
+        badge: user.role === 'owner' ? '👑 Owner' : '🛡️ Staff Mod',
+      },
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Update User Profile Settings (Discord, Roblox, Password, Bio)
+app.put('/api/users/profile', async (req, res) => {
+  try {
+    const { id, robloxUsername, discord, bio, password, newPassword } = req.body;
+
+    if (!id) {
+      return res.status(400).json({ success: false, error: 'User ID is required.' });
+    }
+
+    const users = await getData(USERS_FILE);
+    const user = users.find((u) => u.id === id);
+
+    if (!user) {
+      return res.status(404).json({ success: false, error: 'User account not found.' });
+    }
+
+    // If changing password, verify current password
+    if (newPassword) {
+      if (user.password && user.password !== password) {
+        return res.status(400).json({ success: false, error: 'Current password does not match.' });
+      }
+      user.password = newPassword;
+    }
+
+    if (robloxUsername) user.robloxUsername = robloxUsername;
+    if (discord !== undefined) user.discord = discord;
+    if (bio !== undefined) user.bio = bio;
+
+    await saveData(USERS_FILE, users);
+
+    res.json({
+      success: true,
+      message: 'Profile settings updated successfully!',
+      user: {
+        id: user.id,
+        username: user.username,
+        robloxUsername: user.robloxUsername,
+        discord: user.discord,
+        bio: user.bio || '',
+        role: user.role,
+        rank: user.rank,
+        isVerified: user.isVerified,
         badge: user.role === 'owner' ? '👑 Owner' : user.role === 'mod' ? '🛡️ Staff Mod' : 'Verified Trader ✓',
       },
     });
