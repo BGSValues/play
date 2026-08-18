@@ -21,7 +21,8 @@
     },
     "customValues": {
       "shiny": 4000,
-      "mythic": 40000
+      "mythic": 40000,
+      "shinyMythic": 10
     },
     "stats": {
       "buffs": {
@@ -40,7 +41,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 4000
+    "shinyValue": 4000,
+    "mythicValue": 40000,
+    "shinyMythicValue": 10
   },
   {
     "id": "pet_ace",
@@ -82,7 +85,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 100
+    "shinyValue": 100,
+    "mythicValue": 550,
+    "shinyMythicValue": 500
   },
   {
     "id": "pet_alien_kraken",
@@ -181,7 +186,8 @@
     },
     "customValues": {
       "shiny": 80000,
-      "mythic": 15000000000
+      "mythic": 15000000000,
+      "shinyMythic": 200000
     },
     "stats": {
       "buffs": {
@@ -200,7 +206,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 80000
+    "shinyValue": 80000,
+    "mythicValue": 15000000000,
+    "shinyMythicValue": 200000
   },
   {
     "id": "pet_almighty_pumpkin",
@@ -225,7 +233,7 @@
     "customValues": {
       "shiny": 3730,
       "mythic": 22,
-      "shinyMythic": 12
+      "shinyMythic": 2
     },
     "stats": {
       "buffs": {
@@ -244,7 +252,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 2000
+    "shinyValue": 2000,
+    "mythicValue": 22,
+    "shinyMythicValue": 2
   },
   {
     "id": "pet_angelic_shard",
@@ -301,7 +311,7 @@
     "customValues": {
       "shiny": 2500,
       "mythic": 150000,
-      "shinyMythic": 19
+      "shinyMythic": 350000
     },
     "stats": {
       "buffs": {
@@ -320,7 +330,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 2500
+    "shinyValue": 2500,
+    "mythicValue": 150000,
+    "shinyMythicValue": 350000
   },
   {
     "id": "pet_archangel",
@@ -345,7 +357,7 @@
     "customValues": {
       "shiny": 1250,
       "mythic": 20000,
-      "shinyMythic": 3
+      "shinyMythic": 78
     },
     "stats": {
       "buffs": {
@@ -364,7 +376,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1250
+    "shinyValue": 1250,
+    "mythicValue": 20000,
+    "shinyMythicValue": 78
   },
   {
     "id": "pet_basilisks",
@@ -424,7 +438,7 @@
     "customValues": {
       "shiny": 300,
       "mythic": 2000,
-      "shinyMythic": 445
+      "shinyMythic": 5000
     },
     "stats": {
       "buffs": {
@@ -443,7 +457,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 300
+    "shinyValue": 300,
+    "mythicValue": 2000,
+    "shinyMythicValue": 5000
   },
   {
     "id": "pet_candycorn_shard",
@@ -468,7 +484,7 @@
     "customValues": {
       "shiny": 1835,
       "mythic": 45000,
-      "shinyMythic": 1
+      "shinyMythic": 14
     },
     "stats": {
       "buffs": {
@@ -487,7 +503,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 3000
+    "shinyValue": 3000,
+    "mythicValue": 45000,
+    "shinyMythicValue": 14
   },
   {
     "id": "pet_cardinal_bunny",
@@ -511,7 +529,8 @@
     },
     "customValues": {
       "shiny": 5500,
-      "mythic": 35000
+      "mythic": 35000,
+      "shinyMythic": 17
     },
     "stats": {
       "buffs": {
@@ -530,7 +549,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 5500
+    "shinyValue": 5500,
+    "mythicValue": 35000,
+    "shinyMythicValue": 17
   },
   {
     "id": "pet_champions",
@@ -585,7 +606,7 @@
     "customValues": {
       "shiny": 1100,
       "mythic": 8500,
-      "shinyMythic": 104
+      "shinyMythic": 4000
     },
     "stats": {
       "buffs": {
@@ -604,7 +625,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1100
+    "shinyValue": 1100,
+    "mythicValue": 8500,
+    "shinyMythicValue": 4000
   },
   {
     "id": "pet_christmas_robot",
@@ -648,7 +671,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 9000
+    "shinyValue": 9000,
+    "mythicValue": 8,
+    "shinyMythicValue": 12500
   },
   {
     "id": "pet_cobalt_guardian",
@@ -729,7 +754,7 @@
     "customValues": {
       "shiny": 1350,
       "mythic": 2500,
-      "shinyMythic": 212
+      "shinyMythic": 4000
     },
     "stats": {
       "buffs": {
@@ -748,7 +773,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1350
+    "shinyValue": 1350,
+    "mythicValue": 2500,
+    "shinyMythicValue": 4000
   },
   {
     "id": "pet_crimson_paladin",
@@ -801,7 +828,7 @@
     "customValues": {
       "shiny": 650,
       "mythic": 5500,
-      "shinyMythic": 5
+      "shinyMythic": 3
     },
     "stats": {
       "buffs": {
@@ -820,7 +847,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 650
+    "shinyValue": 650,
+    "mythicValue": 5500,
+    "shinyMythicValue": 3
   },
   {
     "id": "pet_curse_of_kings",
@@ -1314,7 +1343,8 @@
     },
     "customValues": {
       "shiny": 2500,
-      "mythic": 14500
+      "mythic": 14500,
+      "shinyMythic": 81
     },
     "stats": {
       "buffs": {
@@ -1333,7 +1363,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 2500
+    "shinyValue": 2500,
+    "mythicValue": 14500,
+    "shinyMythicValue": 81
   },
   {
     "id": "pet_dice_split",
@@ -1358,7 +1390,7 @@
     "customValues": {
       "shiny": 500,
       "mythic": 4500,
-      "shinyMythic": 215
+      "shinyMythic": 12000
     },
     "stats": {
       "buffs": {
@@ -1377,7 +1409,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 500
+    "shinyValue": 500,
+    "mythicValue": 4500,
+    "shinyMythicValue": 12000
   },
   {
     "id": "pet_dogcat",
@@ -1443,7 +1477,8 @@
     },
     "customValues": {
       "shiny": 6000,
-      "mythic": 1200000
+      "mythic": 1200000,
+      "shinyMythic": 17
     },
     "stats": {
       "buffs": {
@@ -1462,7 +1497,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 6000
+    "shinyValue": 6000,
+    "mythicValue": 1200000,
+    "shinyMythicValue": 17
   },
   {
     "id": "pet_dream_catcher",
@@ -1487,7 +1524,7 @@
     "customValues": {
       "shiny": 2250,
       "mythic": 200000,
-      "shinyMythic": 28
+      "shinyMythic": 500000
     },
     "stats": {
       "buffs": {
@@ -1504,7 +1541,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 2250
+    "shinyValue": 2250,
+    "mythicValue": 200000,
+    "shinyMythicValue": 500000
   },
   {
     "id": "pet_duality",
@@ -1529,7 +1568,7 @@
     "customValues": {
       "shiny": 4000,
       "mythic": 17500,
-      "shinyMythic": 11
+      "shinyMythic": 43750
     },
     "stats": {
       "buffs": {
@@ -1548,7 +1587,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 4000
+    "shinyValue": 4000,
+    "mythicValue": 17500,
+    "shinyMythicValue": 43750
   },
   {
     "id": "pet_easter_basket",
@@ -1630,7 +1671,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 30000
+    "shinyValue": 30000,
+    "mythicValue": 3,
+    "shinyMythicValue": 2
   },
   {
     "id": "pet_easter_spirit",
@@ -1655,7 +1698,7 @@
     "customValues": {
       "shiny": 450,
       "mythic": 7000,
-      "shinyMythic": 193
+      "shinyMythic": 16000
     },
     "stats": {
       "buffs": {
@@ -1674,7 +1717,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 450
+    "shinyValue": 450,
+    "mythicValue": 7000,
+    "shinyMythicValue": 16000
   },
   {
     "id": "pet_elite_challenger",
@@ -1877,7 +1922,7 @@
     "customValues": {
       "shiny": 1750,
       "mythic": 7500,
-      "shinyMythic": 74
+      "shinyMythic": 20000
     },
     "stats": {
       "buffs": {
@@ -1896,7 +1941,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1750
+    "shinyValue": 1750,
+    "mythicValue": 7500,
+    "shinyMythicValue": 20000
   },
   {
     "id": "pet_eternal_cucumber",
@@ -1921,7 +1968,7 @@
     "customValues": {
       "shiny": 11,
       "mythic": 15000,
-      "shinyMythic": 1
+      "shinyMythic": 47
     },
     "stats": {
       "buffs": {
@@ -1939,7 +1986,9 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "mythicValue": 15000,
+    "shinyMythicValue": 47
   },
   {
     "id": "pet_eternal_heart",
@@ -2109,7 +2158,7 @@
     "customValues": {
       "shiny": 1500,
       "mythic": 12500,
-      "shinyMythic": 1
+      "shinyMythic": 44
     },
     "stats": {
       "buffs": {
@@ -2126,7 +2175,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1500
+    "shinyValue": 1500,
+    "mythicValue": 12500,
+    "shinyMythicValue": 44
   },
   {
     "id": "pet_frost_sentinel",
@@ -2220,7 +2271,7 @@
     "customValues": {
       "shiny": 350,
       "mythic": 700,
-      "shinyMythic": 6000
+      "shinyMythic": 1500
     },
     "stats": {
       "buffs": {
@@ -2239,7 +2290,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 350
+    "shinyValue": 350,
+    "mythicValue": 700,
+    "shinyMythicValue": 1500
   },
   {
     "id": "pet_galactic_dementor",
@@ -2296,7 +2349,7 @@
     "customValues": {
       "shiny": 9500,
       "mythic": 5000,
-      "shinyMythic": 13
+      "shinyMythic": 6
     },
     "stats": {
       "buffs": {
@@ -2315,7 +2368,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 9500
+    "shinyValue": 9500,
+    "mythicValue": 5000,
+    "shinyMythicValue": 6
   },
   {
     "id": "pet_ghosdeeri",
@@ -2356,7 +2411,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 7000
+    "shinyValue": 7000,
+    "mythicValue": 4,
+    "shinyMythicValue": 17500
   },
   {
     "id": "pet_ghost_spirits",
@@ -2527,7 +2584,7 @@
     "customValues": {
       "shiny": 300,
       "mythic": 500,
-      "shinyMythic": 565
+      "shinyMythic": 1500
     },
     "stats": {
       "buffs": {
@@ -2546,7 +2603,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 300
+    "shinyValue": 300,
+    "mythicValue": 500,
+    "shinyMythicValue": 1500
   },
   {
     "id": "pet_godly_gem",
@@ -2608,7 +2667,8 @@
     },
     "customValues": {
       "shiny": 7500,
-      "mythic": 10000
+      "mythic": 10000,
+      "shinyMythic": 6
     },
     "stats": {
       "buffs": {
@@ -2625,7 +2685,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 7500
+    "shinyValue": 7500,
+    "mythicValue": 10000,
+    "shinyMythicValue": 6
   },
   {
     "id": "pet_golf_balls",
@@ -2724,7 +2786,8 @@
     },
     "customValues": {
       "shiny": 3500,
-      "mythic": 550000
+      "mythic": 550000,
+      "shinyMythic": 10
     },
     "stats": {
       "buffs": {
@@ -2743,7 +2806,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 3500
+    "shinyValue": 3500,
+    "mythicValue": 550000,
+    "shinyMythicValue": 10
   },
   {
     "id": "pet_hellfire",
@@ -2767,7 +2832,8 @@
     },
     "customValues": {
       "shiny": 2400,
-      "mythic": 15500
+      "mythic": 15500,
+      "shinyMythic": 42
     },
     "stats": {
       "buffs": {
@@ -2786,7 +2852,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 2400
+    "shinyValue": 2400,
+    "mythicValue": 15500,
+    "shinyMythicValue": 42
   },
   {
     "id": "pet_hellshard",
@@ -2890,7 +2958,7 @@
     "customValues": {
       "shiny": 1250,
       "mythic": 12500,
-      "shinyMythic": 1
+      "shinyMythic": 54
     },
     "stats": {
       "buffs": {
@@ -2907,7 +2975,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1250
+    "shinyValue": 1250,
+    "mythicValue": 12500,
+    "shinyMythicValue": 54
   },
   {
     "id": "pet_holy_star",
@@ -3066,7 +3136,9 @@
       "shiny": "✨"
     },
     "customValues": {
-      "shiny": 50000
+      "shiny": 50000,
+      "mythic": 14500,
+      "shinyMythic": 81
     },
     "stats": {
       "buffs": {
@@ -3085,7 +3157,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 50000
+    "shinyValue": 50000,
+    "mythicValue": 14500,
+    "shinyMythicValue": 81
   },
   {
     "id": "pet_king_dogcat",
@@ -3192,7 +3266,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 75000
+    "shinyValue": 75000,
+    "mythicValue": 6,
+    "shinyMythicValue": 70000
   },
   {
     "id": "pet_king_mush",
@@ -3317,7 +3393,7 @@
     "customValues": {
       "shiny": 400,
       "mythic": 2000,
-      "shinyMythic": 227
+      "shinyMythic": 5000
     },
     "stats": {
       "buffs": {
@@ -3336,7 +3412,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 400
+    "shinyValue": 400,
+    "mythicValue": 2000,
+    "shinyMythicValue": 5000
   },
   {
     "id": "pet_koi",
@@ -3380,7 +3458,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 3500
+    "shinyValue": 3500,
+    "mythicValue": 12,
+    "shinyMythicValue": 2000
   },
   {
     "id": "pet_kraken",
@@ -3515,7 +3595,8 @@
     },
     "customValues": {
       "shiny": 3750,
-      "mythic": 70000
+      "mythic": 70000,
+      "shinyMythic": 17
     },
     "stats": {
       "buffs": {
@@ -3534,7 +3615,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 3750
+    "shinyValue": 3750,
+    "mythicValue": 70000,
+    "shinyMythicValue": 17
   },
   {
     "id": "pet_lovely_rose",
@@ -3559,7 +3642,7 @@
     "customValues": {
       "shiny": 1200,
       "mythic": 1250,
-      "shinyMythic": 514
+      "shinyMythic": 2250
     },
     "stats": {
       "buffs": {
@@ -3576,7 +3659,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1200
+    "shinyValue": 1200,
+    "mythicValue": 1250,
+    "shinyMythicValue": 2250
   },
   {
     "id": "pet_lucid_leaf",
@@ -3601,7 +3686,7 @@
     "customValues": {
       "shiny": 750,
       "mythic": 15000,
-      "shinyMythic": 3
+      "shinyMythic": 90
     },
     "stats": {
       "buffs": {
@@ -3618,7 +3703,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 750
+    "shinyValue": 750,
+    "mythicValue": 15000,
+    "shinyMythicValue": 90
   },
   {
     "id": "pet_lucky_pyramidium",
@@ -3659,7 +3746,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 7000
+    "shinyValue": 7000,
+    "mythicValue": 6,
+    "shinyMythicValue": 7000
   },
   {
     "id": "pet_luminance",
@@ -3683,7 +3772,8 @@
     },
     "customValues": {
       "shiny": 9000,
-      "mythic": 8500000
+      "mythic": 8500000,
+      "shinyMythic": 6
     },
     "stats": {
       "buffs": {
@@ -3702,7 +3792,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 9000
+    "shinyValue": 9000,
+    "mythicValue": 8500000,
+    "shinyMythicValue": 6
   },
   {
     "id": "pet_magic_marshmallow",
@@ -3759,7 +3851,7 @@
     "customValues": {
       "shiny": 6250,
       "mythic": 30000,
-      "shinyMythic": 1
+      "shinyMythic": 13
     },
     "stats": {
       "buffs": {
@@ -3778,7 +3870,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 6250
+    "shinyValue": 6250,
+    "mythicValue": 30000,
+    "shinyMythicValue": 13
   },
   {
     "id": "pet_morning_star",
@@ -3803,7 +3897,7 @@
     "customValues": {
       "shiny": 1300,
       "mythic": 7000,
-      "shinyMythic": 2
+      "shinyMythic": 69
     },
     "stats": {
       "buffs": {
@@ -3822,7 +3916,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 1300
+    "shinyValue": 1300,
+    "mythicValue": 7000,
+    "shinyMythicValue": 69
   },
   {
     "id": "pet_new_year_champion",
@@ -3864,7 +3960,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 25000
+    "shinyValue": 25000,
+    "mythicValue": 3,
+    "shinyMythicValue": 1
   },
   {
     "id": "pet_overlord_plushie",
@@ -3889,7 +3987,7 @@
     "customValues": {
       "shiny": 3000,
       "mythic": 16,
-      "shinyMythic": 3
+      "shinyMythic": 1
     },
     "stats": {
       "buffs": {
@@ -3908,7 +4006,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 3000
+    "shinyValue": 3000,
+    "mythicValue": 16,
+    "shinyMythicValue": 1
   },
   {
     "id": "pet_patriotic_robot",
@@ -3971,7 +4071,7 @@
     "customValues": {
       "shiny": 10500,
       "mythic": 17500,
-      "shinyMythic": 2
+      "shinyMythic": 13
     },
     "stats": {
       "buffs": {
@@ -3988,7 +4088,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 10500
+    "shinyValue": 10500,
+    "mythicValue": 17500,
+    "shinyMythicValue": 13
   },
   {
     "id": "pet_peppermint_leviathan",
@@ -4029,7 +4131,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 15000
+    "shinyValue": 15000,
+    "mythicValue": 7,
+    "shinyMythicValue": 8500
   },
   {
     "id": "pet_phantom",
@@ -4118,7 +4222,7 @@
     "customValues": {
       "shiny": 8000,
       "mythic": 1000000,
-      "shinyMythic": 4
+      "shinyMythic": 9
     },
     "stats": {
       "buffs": {
@@ -4135,7 +4239,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 8000
+    "shinyValue": 8000,
+    "mythicValue": 1000000,
+    "shinyMythicValue": 9
   },
   {
     "id": "pet_plushies",
@@ -4195,7 +4301,7 @@
     "customValues": {
       "shiny": 4000,
       "mythic": 15000,
-      "shinyMythic": 3
+      "shinyMythic": 30
     },
     "stats": {
       "buffs": {
@@ -4212,7 +4318,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 4000
+    "shinyValue": 4000,
+    "mythicValue": 15000,
+    "shinyMythicValue": 30
   },
   {
     "id": "pet_pot_o__gold",
@@ -4273,7 +4381,7 @@
     "customValues": {
       "shiny": 400,
       "mythic": 1500,
-      "shinyMythic": 327
+      "shinyMythic": 2750
     },
     "stats": {
       "buffs": {
@@ -4292,7 +4400,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 400
+    "shinyValue": 400,
+    "mythicValue": 1500,
+    "shinyMythicValue": 2750
   },
   {
     "id": "pet_pyramidium",
@@ -4315,7 +4425,9 @@
       "shiny": "✨"
     },
     "customValues": {
-      "shiny": 22000
+      "shiny": 22000,
+      "mythic": 11,
+      "shinyMythic": 28
     },
     "stats": {
       "buffs": {
@@ -4334,7 +4446,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 7250
+    "shinyValue": 7250,
+    "mythicValue": 11,
+    "shinyMythicValue": 28
   },
   {
     "id": "pet_radiance",
@@ -4425,7 +4539,7 @@
     "customValues": {
       "shiny": 13500,
       "mythic": 5,
-      "shinyMythic": 5000
+      "shinyMythic": 1
     },
     "stats": {
       "buffs": {
@@ -4444,7 +4558,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 13500
+    "shinyValue": 13500,
+    "mythicValue": 5,
+    "shinyMythicValue": 1
   },
   {
     "id": "pet_radiant_shard",
@@ -4848,7 +4964,7 @@
     "customValues": {
       "shiny": 3500,
       "mythic": 6000,
-      "shinyMythic": 1000000
+      "shinyMythic": 17500
     },
     "stats": {
       "buffs": {
@@ -4867,7 +4983,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 7500
+    "shinyValue": 7500,
+    "mythicValue": 6000,
+    "shinyMythicValue": 17500
   },
   {
     "id": "pet_shattered_soul",
@@ -4886,7 +5004,8 @@
     },
     "customValues": {
       "shiny": 8750,
-      "mythic": 6000
+      "mythic": 6000,
+      "shinyMythic": 32
     },
     "stats": {
       "buffs": {
@@ -4901,9 +5020,13 @@
     },
     "type": "hat",
     "variants": [
-      "Normal"
+      "Normal",
+      "Mythic",
+      "ShinyMythic"
     ],
-    "shinyValue": 8750
+    "shinyValue": 8750,
+    "mythicValue": 6000,
+    "shinyMythicValue": 32
   },
   {
     "id": "pet_sinister_lord",
@@ -4963,7 +5086,9 @@
       "shiny": "✨"
     },
     "customValues": {
-      "shiny": 18000
+      "shiny": 18000,
+      "mythic": 150000,
+      "shinyMythic": 350000
     },
     "stats": {
       "buffs": {
@@ -4982,7 +5107,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 18000
+    "shinyValue": 18000,
+    "mythicValue": 150000,
+    "shinyMythicValue": 350000
   },
   {
     "id": "pet_sinister_shard",
@@ -5006,7 +5133,8 @@
     },
     "customValues": {
       "shiny": 4180,
-      "mythic": 20000
+      "mythic": 20000,
+      "shinyMythic": 37
     },
     "stats": {
       "buffs": {
@@ -5025,7 +5153,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 2000
+    "shinyValue": 2000,
+    "mythicValue": 20000,
+    "shinyMythicValue": 37
   },
   {
     "id": "pet_skulls",
@@ -5118,7 +5248,7 @@
     "customValues": {
       "shiny": 5000,
       "mythic": 12500,
-      "shinyMythic": 1
+      "shinyMythic": 28
     },
     "stats": {
       "buffs": {
@@ -5134,7 +5264,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 5000
+    "shinyValue": 5000,
+    "mythicValue": 12500,
+    "shinyMythicValue": 28
   },
   {
     "id": "pet_space_entity",
@@ -5532,7 +5664,9 @@
       "normal": "???🥚"
     },
     "customValues": {
-      "shiny": 700
+      "shiny": 700,
+      "mythic": 7000,
+      "shinyMythic": 4
     },
     "stats": {
       "buffs": {
@@ -5549,7 +5683,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 700
+    "shinyValue": 700,
+    "mythicValue": 7000,
+    "shinyMythicValue": 4
   },
   {
     "id": "pet_wolflord",
@@ -16687,7 +16823,7 @@
     "customValues": {
       "shiny": 700,
       "mythic": 1500,
-      "shinyMythic": 5000
+      "shinyMythic": 2250
     },
     "stats": {
       "buffs": {
@@ -16706,7 +16842,9 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "shinyValue": 700
+    "shinyValue": 700,
+    "mythicValue": 1500,
+    "shinyMythicValue": 2250
   },
   {
     "id": "pet_peppermint_hydra",
@@ -17876,7 +18014,7 @@
     "customValues": {
       "shiny": 1000,
       "mythic": 5000,
-      "shinyMythic": 1500
+      "shinyMythic": 700
     },
     "stats": {
       "buffs": {
@@ -17891,9 +18029,13 @@
     },
     "type": "hat",
     "variants": [
-      "Normal"
+      "Normal",
+      "Mythic",
+      "ShinyMythic"
     ],
-    "shinyValue": 1000
+    "shinyValue": 1000,
+    "mythicValue": 5000,
+    "shinyMythicValue": 700
   },
   {
     "id": "pet_scorpio",

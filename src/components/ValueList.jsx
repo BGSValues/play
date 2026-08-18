@@ -16,12 +16,12 @@ export function getPetVariantValue(item, variant) {
 
   switch (variant) {
     case 'Shiny':
-      return item.shinyValue || Math.round(item.baseValue * 2.5);
+      return item.customValues?.shiny || item.shinyValue || Math.round(item.baseValue * 2.5);
     case 'Mythic':
-      return Math.round(item.baseValue * 10);
+      return item.customValues?.mythic || item.mythicValue || Math.round(item.baseValue * 10);
     case 'ShinyMythic':
     case 'S.Myth':
-      return Math.round((item.shinyValue || (item.baseValue * 2.5)) * 10);
+      return item.customValues?.shinyMythic || item.shinyMythicValue || Math.round((item.shinyValue || (item.baseValue * 2.5)) * 10);
     case 'Normal':
     default:
       return item.baseValue;
