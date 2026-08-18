@@ -414,11 +414,14 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                       );
                     })()}
                   </div>
-                  {item.existence && (item.existence.normal || item.existence.shiny || item.existence.hats) && (
+                  {item.existence && (item.existence.normal || item.existence.shiny || item.existence.mythic || item.existence.hats) && (
                     <div className="stat-row">
                       <span className="stat-label">Hatched</span>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ffcc00' }}>
-                        {item.existence.normal ? `🥚 ${item.existence.normal}` : ''} {item.existence.shiny ? `✨ ${item.existence.shiny}` : ''} {item.existence.hats ? `📦 ${item.existence.hats}` : ''}
+                      <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ffcc00', display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'flex-end' }}>
+                        {item.existence.normal && item.existence.normal !== '~' && <span>🥚 {item.existence.normal}</span>}
+                        {item.existence.shiny && <span style={{ color: '#ffcc00' }}>✨ {item.existence.shiny}</span>}
+                        {item.existence.mythic && <span style={{ color: '#00e5ff' }}>⚡ {item.existence.mythic}</span>}
+                        {item.existence.hats && <span style={{ color: '#a78bfa' }}>📦 {item.existence.hats}</span>}
                       </span>
                     </div>
                   )}
