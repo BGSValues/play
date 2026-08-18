@@ -32,8 +32,19 @@ import BgsLogo from './components/BgsLogo';
 import initialPetsData from './data/pets.json';
 
 export default function App() {
-  const isAdminRoute = window.location.pathname === '/admin';
+  const isAdminRoute = window.location.pathname.toLowerCase() === '/admin';
   const [activeTab, setActiveTab] = useState(isAdminRoute ? 'admin' : 'values');
+
+  // Sync browser URL when tab changes so refreshing on public tabs stays on values
+  const handleTabChange = (newTab) => {
+    setActiveTab(newTab);
+    if (newTab === 'admin') {
+      window.history.replaceState({}, '', '/admin');
+    } else {
+      window.history.replaceState({}, '', '/');
+    }
+  };
+
   const [selectedPet, setSelectedPet] = useState(null);
   const [pets, setPets] = useState(initialPetsData && initialPetsData.length > 0 ? initialPetsData : []);
   const [sideA, setSideA] = useState([]);
@@ -124,43 +135,44 @@ export default function App() {
       const res = await fetch('/api/pets');
       if (res.ok) {
         const data = await res.json();
-        if (data.success && data.pets && data.pets.length > 0) {
+        if (data.success && Array.isArray(data.pets) && data.pets.length > 0) {
           setPets(data.pets);
         }
       }
     } catch (err) {
-      console.log('Using static pets data bundle');
+      console.log('Using local pets database');
     }
   };
 
   useEffect(() => { fetchPets(); }, []);
 
-  const handleUpdatePetValue = async (petId, editValues) => {
+  const handleUpdatePetValue = async (petId, field, value) => {
     try {
-      const res = await fetch(`/api/pets/${petId}`, {
+      const res = await fetch(`/api/pets/${petId}/value`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(editValues),
+        body: JSON.stringify({ field, value: Number(value) }),
       });
       const data = await res.json();
       if (data.success) {
-        showToast('Value updated!');
-        fetchPets();
-      } else {
-        setPets(prev => prev.map(p => p.id === petId ? { ...p, ...editValues } : p));
-        showToast('Value updated!');
+        setPets(pets.map(p => p.id === petId ? data.pet : p));
+        showToast('Value updated successfully!');
       }
     } catch (err) {
-      setPets(prev => prev.map(p => p.id === petId ? { ...p, ...editValues } : p));
-      showToast('Value updated!');
+      showToast('Error updating value');
     }
   };
 
-  const handleAddToTrade = (pet, variant, calculatedValue) => {
-    const item = { ...pet, slotId: Date.now() + Math.random(), selectedVariant: variant, calculatedValue };
-    setSideA((prev) => [...prev, item]);
+  const handleAddToTrade = (pet, variant = 'Normal', calculatedValue = null) => {
+    const tradeItem = {
+      ...pet,
+      selectedVariant: variant,
+      calculatedValue: calculatedValue || (pet.baseValue ? (variant === 'Shiny' ? Math.round(pet.baseValue * 2.5) : variant === 'Mythic' ? pet.baseValue * 10 : variant === 'ShinyMythic' ? pet.baseValue * 25 : pet.baseValue) : 0),
+      tradeId: 't_' + Date.now() + '_' + Math.random().toString(36).substr(2, 4),
+    };
+    setSideA([...sideA, tradeItem]);
     showToast(`Added ${variant} ${pet.name} to trade!`);
-    setActiveTab('calculator');
+    handleTabChange('calculator');
   };
 
   const showToast = (text) => { setToast(text); setTimeout(() => setToast(null), 3000); };
@@ -172,7 +184,7 @@ export default function App() {
 
   const handleSelectPet = (pet) => {
     setSelectedPet(pet);
-    setActiveTab('pet-details');
+    handleTabChange('pet-details');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -184,7 +196,7 @@ export default function App() {
       <MaintenanceScreen
         message={systemSettings?.maintenanceMessage}
         onStaffLoginClick={() => {
-          setActiveTab('admin');
+          handleTabChange('admin');
         }}
       />
     );
@@ -209,25 +221,25 @@ export default function App() {
       {/* ━━━━ HEADER NAV ━━━━ */}
       <header className="app-header">
         {/* CLEAN UNIQUE LOGO */}
-        <BgsLogo onClick={() => setActiveTab('values')} />
+        <BgsLogo onClick={() => handleTabChange('values')} />
 
         <nav className="nav-tabs">
-          <button className={`nav-btn ${activeTab === 'values' ? 'active' : ''}`} onClick={() => setActiveTab('values')}>
+          <button className={`nav-btn ${activeTab === 'values' ? 'active' : ''}`} onClick={() => handleTabChange('values')}>
             <ListFilter size={17} /> Value List
           </button>
-          <button className={`nav-btn ${activeTab === 'eggs' ? 'active' : ''}`} onClick={() => setActiveTab('eggs')}>
+          <button className={`nav-btn ${activeTab === 'eggs' ? 'active' : ''}`} onClick={() => handleTabChange('eggs')}>
             <Egg size={17} /> Eggs & Hatches
           </button>
-          <button className={`nav-btn ${activeTab === 'market' ? 'active' : ''}`} onClick={() => setActiveTab('market')}>
+          <button className={`nav-btn ${activeTab === 'market' ? 'active' : ''}`} onClick={() => handleTabChange('market')}>
             <ShoppingCart size={17} /> Market
           </button>
-          <button className={`nav-btn ${activeTab === 'calculator' ? 'active' : ''}`} onClick={() => setActiveTab('calculator')}>
+          <button className={`nav-btn ${activeTab === 'calculator' ? 'active' : ''}`} onClick={() => handleTabChange('calculator')}>
             <Calculator size={17} /> Calculator
             {(sideA.length > 0 || sideB.length > 0) && (
               <span style={{ background: '#ff007f', color: '#fff', borderRadius: '50%', width: '20px', height: '20px', fontSize: '0.75rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900 }}>{sideA.length + sideB.length}</span>
             )}
           </button>
-          <button className={`nav-btn ${activeTab === 'guides' ? 'active' : ''}`} onClick={() => setActiveTab('guides')}>
+          <button className={`nav-btn ${activeTab === 'guides' ? 'active' : ''}`} onClick={() => handleTabChange('guides')}>
             <BookOpen size={17} /> Guides
           </button>
         </nav>
@@ -296,7 +308,7 @@ export default function App() {
         {activeTab === 'pet-details' && (
           <PetDetailsPage
             pet={pets.find(p => p.id === selectedPet?.id || p.name === selectedPet?.name) || selectedPet}
-            onBack={() => setActiveTab('values')}
+            onBack={() => handleTabChange('values')}
             onAddToTrade={handleAddToTrade}
             onSelectPet={handleSelectPet}
           />
@@ -314,7 +326,7 @@ export default function App() {
             currentUser={currentUser}
             onRefreshPets={fetchPets}
             onOpenLogin={() => setIsLoginOpen(true)}
-            onBackToValues={() => setActiveTab('values')}
+            onBackToValues={() => handleTabChange('values')}
           />
         )}
       </main>
