@@ -16,7 +16,7 @@ export default function PetAvatar({ name = 'Pet', rarity = 'Common', image = '',
   const initial = name.charAt(0).toUpperCase();
 
   const isRemoteImage = image && typeof image === 'string' && image.startsWith('http') && !imgError;
-  const displaySrc = isRemoteImage ? image.replace(/\/revision\/latest.*$/, '') : image;
+  const displaySrc = isRemoteImage ? image : image;
 
   const containerStyle = {
     width: `${size}px`,
