@@ -234,28 +234,39 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
         </div>
 
         {/* TYPE FILTER */}
-        <div className="filter-group">
-          {['All', 'Pets', 'Hats'].map((t) => (
+        <div className="filter-group" style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '2px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+          {[
+            { id: 'All', label: 'All Items' },
+            { id: 'Pets', label: '🐾 Pets' },
+            { id: 'Hats', label: '🎩 Hats' }
+          ].map((t) => (
             <button
-              key={t}
-              className={`filter-btn ${typeFilter === t ? 'active' : ''}`}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
-              onClick={() => handleTypeChange(t)}
+              key={t.id}
+              className={`filter-btn ${typeFilter === t.id ? 'active' : ''}`}
+              onClick={() => handleTypeChange(t.id)}
             >
-              {t === 'Hats' && <HardHat size={14} />} {t}
+              {t.label}
             </button>
           ))}
         </div>
 
         {/* RARITY FILTER */}
-        <div className="filter-group">
-          {['All', 'Secret', 'Legendary', 'Unique', 'Epic', 'Rare', 'Common'].map((r) => (
+        <div className="filter-group" style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '2px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.06)' }}>
+          {[
+            { id: 'All', label: 'All Rarities' },
+            { id: 'Secret', label: 'Secret' },
+            { id: 'Legendary', label: 'Legendary' },
+            { id: 'Unique', label: 'Unique' },
+            { id: 'Epic', label: 'Epic' },
+            { id: 'Rare', label: 'Rare' },
+            { id: 'Common', label: 'Common' }
+          ].map((r) => (
             <button
-              key={r}
-              className={`filter-btn ${rarityFilter === r ? 'active' : ''}`}
-              onClick={() => handleRarityChange(r)}
+              key={r.id}
+              className={`filter-btn ${rarityFilter === r.id ? 'active' : ''}`}
+              onClick={() => handleRarityChange(r.id)}
             >
-              {r}
+              {r.label}
             </button>
           ))}
         </div>
