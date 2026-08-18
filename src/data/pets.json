@@ -39499,5 +39499,2247 @@
       },
       "movementType": "Walk"
     }
+  },
+  {
+    "id": "hat_1787027187024_r0iu9w",
+    "name": "8-Bit Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/8-Bit_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (8-Bit Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_ttz9lk",
+    "name": "Adurite Antlers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Antlers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Antlers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_he7lu6",
+    "name": "Adurite Bowler",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Bowler.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Bowler).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_th2a31",
+    "name": "Adurite Bucket",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Bucket.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Bucket).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_gxi8p3",
+    "name": "Adurite Crown",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Crown.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Crown).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_2vi0my",
+    "name": "Adurite Fedora",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Fedora.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Fedora).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_z7ytqo",
+    "name": "Adurite Shades",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Shades.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Shades).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_mvvdc3",
+    "name": "Adurite Top Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Adurite_Top_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Adurite Top Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_lwxfjv",
+    "name": "Atlantis Tiara",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Atlantis_Tiara.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Atlantis Tiara).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_s1xv99",
+    "name": "Autumn Antlers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Autumn_Antlers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Autumn Antlers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_zuhrvm",
+    "name": "Autumn Tophat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Autumn_Tophat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Autumn Tophat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_x77unf",
+    "name": "Bacon Hair",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Bacon_Hair.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Bacon Hair).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_bi0ctm",
+    "name": "Bandit",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Bandit.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Bandit).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_vcomwn",
+    "name": "Beach Ball",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Beach_Ball.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Beach Ball).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_ys89ih",
+    "name": "Bear Mask",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Bear_Mask.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Bear Mask).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_d9l1e4",
+    "name": "Blue Circlet",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Circlet.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Circlet).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_o3ddgo",
+    "name": "Blue Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_1b2klp",
+    "name": "Blue Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_r5jbrq",
+    "name": "Blue Hood",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Hood.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Hood).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_7lzxwr",
+    "name": "Blue Horns",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Horns.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Horns).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_wfcnrj",
+    "name": "Blue Pirate Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Pirate_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Pirate Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_2byzhs",
+    "name": "Blue Sparkle Time",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Sparkle_Time.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Sparkle Time).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_f4nuve",
+    "name": "Blue Top Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Blue_Top_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Blue Top Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_82w0ni",
+    "name": "Bluesteel Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Bluesteel_Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Bluesteel Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_jfwi8j",
+    "name": "Bucket",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Bucket.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Bucket).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_u0yc52",
+    "name": "Bunny Ears",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Bunny_Ears.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Bunny Ears).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_w6mmqv",
+    "name": "Chimney Santa",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Chimney_Santa.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Chimney Santa).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_444djq",
+    "name": "Clockwork Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Clockwork_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Clockwork Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_mufm8v",
+    "name": "Clout Goggles",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Clout_Goggles.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Clout Goggles).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_jtnz0x",
+    "name": "Clown Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Clown_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Clown Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_1x3c80",
+    "name": "Commander",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Commander.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Commander).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_4me6qy",
+    "name": "Cone",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Cone.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Cone).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_t4dstt",
+    "name": "Dare Devil Helmet",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Dare_Devil_Helmet.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Dare Devil Helmet).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_5vux19",
+    "name": "Deep Diver",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Deep_Diver.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Deep Diver).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_kn8gwc",
+    "name": "Demonic Immortal Sword",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Demonic_Immortal_Sword.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Demonic Immortal Sword).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_nfke36",
+    "name": "Devils Cowboy",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Devils_Cowboy.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Devils Cowboy).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_d2vd62",
+    "name": "Diamond Circlet",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Diamond_Circlet.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Diamond Circlet).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_gnwazx",
+    "name": "Dragon Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Dragon_Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Dragon Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_kswvnh",
+    "name": "Eye Poppers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Eye_Poppers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Eye Poppers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_hakby0",
+    "name": "Eyepatch",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Eyepatch.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Eyepatch).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_8ce8gl",
+    "name": "Fedora",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Fedora.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Fedora).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_p51g42",
+    "name": "Fiery Horns",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Fiery_Horns.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Fiery Horns).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_x3dw5r",
+    "name": "Fire Horns",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Fire_Horns.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Fire Horns).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_aqvnxh",
+    "name": "Fire Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Fire_Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Fire Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_kxt1au",
+    "name": "Fisherman",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Fisherman.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Fisherman).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_vtuccu",
+    "name": "Flaming Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Flaming_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Flaming Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_v79zuz",
+    "name": "Frost Horns",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Frost_Horns.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Frost Horns).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_6mxtoe",
+    "name": "Frost Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Frost_Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Frost Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_vt2z0g",
+    "name": "Gingerbread Scarf",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Gingerbread_Scarf.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Gingerbread Scarf).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_4167ke",
+    "name": "Godly Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Godly_Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Godly Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_ftb6hl",
+    "name": "Gold Antlers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Gold_Antlers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Gold Antlers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_tfq7s6",
+    "name": "Gold Crown",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Gold_Crown.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Gold Crown).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_49j6km",
+    "name": "Gold Sparkle Time",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Gold_Sparkle_Time.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Gold Sparkle Time).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_esq185",
+    "name": "Golden Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Golden_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Golden Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_lrrn8p",
+    "name": "Green Sparkle Time",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Green_Sparkle_Time.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Green Sparkle Time).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_eb02id",
+    "name": "Happy Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Happy_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Happy Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_832076",
+    "name": "Horned Headband",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Horned_Headband.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Horned Headband).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_swys4f",
+    "name": "Interstellar Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Interstellar_Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Interstellar Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_4vffzw",
+    "name": "Leaf Crown",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Leaf_Crown.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Leaf Crown).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_d1o39p",
+    "name": "Leaf Glasses",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Leaf_Glasses.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Leaf Glasses).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_gwi5vf",
+    "name": "Leaf Ninja",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Leaf_Ninja.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Leaf Ninja).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_a8o9zi",
+    "name": "Leaf Wizard",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Leaf_Wizard.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Leaf Wizard).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_uoxevz",
+    "name": "Lucky Clout Goggles",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Lucky_Clout_Goggles.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Lucky Clout Goggles).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_yg0n8z",
+    "name": "Mischief Horns",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Mischief_Horns.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Mischief Horns).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187024_ewa907",
+    "name": "MLG",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/MLG.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (MLG).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_rp3x1a",
+    "name": "Mr. Snowman's Top Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Mr._Snowman's_Top_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Mr. Snowman's Top Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_zjnirp",
+    "name": "Nert's Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Nert's_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Nert's Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_49zyc1",
+    "name": "ObscureEntity",
+    "type": "hat",
+    "rarity": "Secret",
+    "category": "Hats",
+    "baseValue": 1000,
+    "demand": 9,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/ObscureEntity.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (ObscureEntity).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "2,228"
+    }
+  },
+  {
+    "id": "hat_1787027187025_e5fnyk",
+    "name": "Ocean Guard",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Ocean_Guard.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Ocean Guard).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_gtznlq",
+    "name": "Ocean Sorcerer",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Ocean_Sorcerer.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Ocean Sorcerer).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_y3fjci",
+    "name": "Ornamental Antlers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Ornamental_Antlers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Ornamental Antlers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_ew0dop",
+    "name": "Pirate Captain",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Pirate_Captain.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Pirate Captain).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_7aezwv",
+    "name": "Poseidon",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Poseidon.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Poseidon).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_tvlvk2",
+    "name": "Pretty Bow",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Pretty_Bow.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Pretty Bow).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_n3exjz",
+    "name": "Purple Sparkle Time",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Purple_Sparkle_Time.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Purple Sparkle Time).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_jwi3qb",
+    "name": "Red Crown",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Red_Crown.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Red Crown).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_4qo02o",
+    "name": "Red Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Red_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Red Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_2sngob",
+    "name": "Red Sparkle Time",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Red_Sparkle_Time.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Red Sparkle Time).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_gy4eah",
+    "name": "Relaxed",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Relaxed.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Relaxed).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_8i0js1",
+    "name": "Rubber Ducky",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Rubber_Ducky.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Rubber Ducky).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_9yokwc",
+    "name": "Sand Wizard",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sand_Wizard.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sand Wizard).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_g5hd6c",
+    "name": "Santa Cop",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Santa_Cop.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Santa Cop).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_781hwz",
+    "name": "Santa Paws",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Santa_Paws.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Santa Paws).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "3,248"
+    }
+  },
+  {
+    "id": "hat_1787027187025_qyav46",
+    "name": "Sea Bucket",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sea_Bucket.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sea Bucket).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_xe8tmr",
+    "name": "Sea King",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sea_King.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sea King).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_zg8xv5",
+    "name": "Sea Prince",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sea_Prince.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sea Prince).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_kxx7c0",
+    "name": "Shades",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Shades.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Shades).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_jlgfka",
+    "name": "Shell Crown",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Shell_Crown.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Shell Crown).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_tnt408",
+    "name": "Silver Antlers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Silver_Antlers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Silver Antlers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_qbrzyx",
+    "name": "Sircfenner",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sircfenner.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sircfenner).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_9n4ln3",
+    "name": "Snorkel",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Snorkel.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Snorkel).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_ubkglv",
+    "name": "Sparkle Cone",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sparkle_Cone.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sparkle Cone).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_345lg0",
+    "name": "Sparkle Time Valkyrie",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sparkle_Time_Valkyrie.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sparkle Time Valkyrie).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_b19l09",
+    "name": "Sparkle Top Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sparkle_Top_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sparkle Top Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_uibmjt",
+    "name": "Sparky Domino",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sparky_Domino.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sparky Domino).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_dw3ues",
+    "name": "Spy Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Spy_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Spy Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_j2jozr",
+    "name": "Star Top",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Star_Top.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Star Top).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_0hgybf",
+    "name": "Sun Fedora",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sun_Fedora.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sun Fedora).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_mwahip",
+    "name": "Sun Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sun_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sun Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_d6yro2",
+    "name": "Sun Visor",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sun_Visor.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sun Visor).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_a15auc",
+    "name": "Sword Pack",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sword_Pack.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sword Pack).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_8okg4b",
+    "name": "Sylently's Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Sylently's_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sylently's Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "366"
+    }
+  },
+  {
+    "id": "hat_1787027187025_787cek",
+    "name": "Timeless Top Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Timeless_Top_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Timeless Top Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_b7vzfc",
+    "name": "Triton Crown",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Triton_Crown.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Triton Crown).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_g8zxx5",
+    "name": "Vibe Check",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Vibe_Check.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Vibe Check).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "1,366"
+    }
+  },
+  {
+    "id": "hat_1787027187025_3iy2e1",
+    "name": "Water Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Water_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Water Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_p7b90i",
+    "name": "White Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/White_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (White Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_sg84ex",
+    "name": "White Sparkle Time",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/White_Sparkle_Time.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (White Sparkle Time).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_hxwvcs",
+    "name": "Wings",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Wings.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Wings).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_vozf2o",
+    "name": "Wizard",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Wizard.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Wizard).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_qc44wz",
+    "name": "Workclock Headphones",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Workclock_Headphones.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Workclock Headphones).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_ruf5l7",
+    "name": "Workclock Ultimate",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Workclock_Ultimate.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Workclock Ultimate).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_wxfbad",
+    "name": "Yeehaw",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Yeehaw.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Yeehaw).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_l42rrr",
+    "name": "Yellow Top Hat",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Yellow_Top_Hat.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Yellow Top Hat).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_684shf",
+    "name": "Antlers",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Antlers.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Antlers).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_kptqml",
+    "name": "Atlantis Hats",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Atlantis_Hats.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Atlantis Hats).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_c15e4p",
+    "name": "Autumn Hats",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Autumn_Hats.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Autumn Hats).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
+  },
+  {
+    "id": "hat_1787027187025_nbzhpi",
+    "name": "Hats by stat rating",
+    "type": "hat",
+    "rarity": "Unique",
+    "category": "Hats",
+    "baseValue": 500,
+    "demand": 5,
+    "status": "Stable",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f0/Hats_by_stat_rating.png/revision/latest",
+    "description": "Equippable Hat accessory in Bubble Gum Simulator (Hats by stat rating).",
+    "multipliers": null,
+    "stats": {
+      "movementType": "Hat Accessory"
+    },
+    "existence": {
+      "hats": "Unboxed"
+    }
   }
 ]
