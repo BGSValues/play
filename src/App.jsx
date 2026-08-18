@@ -28,6 +28,7 @@ import UserSettingsModal from './components/UserSettingsModal';
 import GlobalAnnouncementBanner from './components/GlobalAnnouncementBanner';
 import MaintenanceScreen from './components/MaintenanceScreen';
 import BgsLogo from './components/BgsLogo';
+import Footer from './components/Footer';
 import LiveStatsTicker from './components/LiveStatsTicker';
 
 import initialPetsData from './data/pets.json';
@@ -317,11 +318,8 @@ export default function App() {
         )}
       </main>
 
-      {/* ━━━━ FOOTER ━━━━ */}
-      <footer style={{ borderTop: '1px solid var(--glass-border)', padding: '1.5rem', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.85rem', zIndex: 10, display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-        <span style={{ fontWeight: 800, color: 'var(--text-main)' }}>BGS Values — Bubble Gum Simulator Pet & Hat Trading Database</span>
-        <span>{pets.length.toLocaleString()} authentic items • Real-time values • Verified player trading</span>
-      </footer>
+      {/* ━━━━ GLOBAL WEBSITE FOOTER ━━━━ */}
+      <Footer onNavigate={handleTabChange} />
     </div>
   );
 }
