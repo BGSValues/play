@@ -123,15 +123,22 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
         </button>
 
         <div style={{ display: 'flex', gap: '0.75rem' }}>
-          <a
-            href={wikiUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="filter-btn"
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.6rem 1.2rem', fontSize: '0.9rem', textDecoration: 'none', color: '#a78bfa' }}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '0.6rem 1.2rem',
+              fontSize: '0.85rem',
+              fontWeight: 800,
+              background: 'rgba(0, 229, 255, 0.08)',
+              border: '1px solid rgba(0, 229, 255, 0.3)',
+              borderRadius: '10px',
+              color: '#00e5ff',
+            }}
           >
-            <ExternalLink size={16} /> Official Wiki Page
-          </a>
+            <ShieldCheck size={16} /> Verified Database Record
+          </div>
         </div>
       </div>
 

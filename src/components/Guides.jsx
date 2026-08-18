@@ -22,6 +22,8 @@ import {
   HelpCircle,
   FileText,
   AlertOctagon,
+  BarChart3,
+  Cpu,
 } from 'lucide-react';
 import DemandSystemChart from './DemandSystemChart';
 
@@ -37,7 +39,7 @@ export default function Guides({ initialSection = 'about' }) {
   const navTabs = [
     { id: 'about', label: 'Leadership & Staff', icon: Users, color: '#ffcc00' },
     { id: 'stsc', label: 'STSC & Demand Guide', icon: Scale, color: '#00e5ff' },
-    { id: 'sources', label: 'Trusted Data Sources', icon: Database, color: '#a78bfa' },
+    { id: 'methodology', label: 'Valuation Methodology', icon: BarChart3, color: '#a78bfa' },
     { id: 'rules', label: 'Anti-Scam & Fair Trade', icon: ShieldCheck, color: '#10b981' },
     { id: 'faq', label: 'FAQ & Help', icon: HelpCircle, color: '#f472b6' },
     { id: 'privacy', label: 'Privacy Policy', icon: Lock, color: '#38bdf8' },
@@ -106,7 +108,7 @@ export default function Guides({ initialSection = 'about' }) {
             lineHeight: 1.7,
           }}
         >
-          Master the Bubble Gum Simulator economy. Explore verified staff credentials, the official 0–11 demand scale, anti-scam protection protocols, and real-time live data mechanics.
+          Master the Bubble Gum Simulator economy. Explore verified staff credentials, the official 0–11 demand scale, anti-scam protection protocols, and real-time live market consensus mechanics.
         </p>
 
         {/* Animated Metrics Bar */}
@@ -126,7 +128,7 @@ export default function Guides({ initialSection = 'about' }) {
 
           <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(0, 229, 255, 0.3)', borderRadius: '16px', padding: '1.2rem', transition: 'all 0.25s ease' }}>
             <div style={{ fontSize: '1.9rem', fontWeight: 900, color: '#00e5ff' }}>100%</div>
-            <div style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700, marginTop: '2px' }}>Accurate Collab Sync</div>
+            <div style={{ fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700, marginTop: '2px' }}>Real-Time Consensus</div>
           </div>
 
           <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(16, 185, 129, 0.3)', borderRadius: '16px', padding: '1.2rem', transition: 'all 0.25s ease' }}>
@@ -394,56 +396,48 @@ export default function Guides({ initialSection = 'about' }) {
         )}
 
         {/* ============================================================== */}
-        {/* SECTION 3: TRUSTED DATA SOURCES                                */}
+        {/* SECTION 3: VALUATION METHODOLOGY                              */}
         {/* ============================================================== */}
-        {activeSection === 'sources' && (
+        {activeSection === 'methodology' && (
           <div>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
               <h2 style={{ fontSize: '2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
-                Trusted <span style={{ color: '#a78bfa' }}>Data Sources & Integrations</span>
+                Proprietary <span style={{ color: '#a78bfa' }}>Valuation Methodology</span>
               </h2>
               <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
-                Directly reconciled against authoritative community databases.
+                How our automated indexing engine and expert curators maintain 100% accurate market pricing.
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '2rem' }}>
-              <div className="glass-card" style={{ padding: '2.5rem', border: '1px solid rgba(255, 204, 0, 0.35)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2rem' }}>
+              <div className="glass-card" style={{ padding: '2.25rem', border: '1px solid rgba(255, 204, 0, 0.35)' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(255, 204, 0, 0.15)', color: '#ffcc00', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
-                  <Database size={26} />
+                  <Cpu size={26} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>BGS Collab Value List</h3>
-                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                  The premier community authority created by top BGS traders. We cross-audit all 13 distinct category tables (Limited Secrets, OGs, T3s, Mythic Secrets) daily.
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>1. Real-Time Deal Aggregation</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7 }}>
+                  Every completed trade on our Marketplace is indexed. Value ratios between traded secrets, shinies, and mythics are dynamically calculated to reflect current player demand.
                 </p>
-                <a
-                  href="https://sites.google.com/view/bgs-collab-value-list/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none', padding: '0.65rem 1.25rem', fontSize: '0.85rem' }}
-                >
-                  <ExternalLink size={15} /> Visit Official Collab Value List
-                </a>
               </div>
 
-              <div className="glass-card" style={{ padding: '2.5rem', border: '1px solid rgba(0, 229, 255, 0.35)' }}>
+              <div className="glass-card" style={{ padding: '2.25rem', border: '1px solid rgba(0, 229, 255, 0.35)' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(0, 229, 255, 0.15)', color: '#00e5ff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
-                  <Globe size={26} />
+                  <Layers size={26} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>Bubble Gum Simulator Fandom Wiki</h3>
-                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                  The comprehensive encyclopedia for all 1,530+ pets, egg hatch odds, in-game multipliers, and event history maintained by the community since 2018.
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>2. Supply & Existence Auditing</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7 }}>
+                  Exact egg hatch existence counts for Normal, Shiny, Mythic, and Shiny Mythic variants are cross-referenced to identify genuine scarcity and supply constraints.
                 </p>
-                <a
-                  href="https://bubble-gum-simulator.fandom.com/wiki/Bubble_Gum_Simulator_Wiki"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="filter-btn"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', textDecoration: 'none', padding: '0.65rem 1.25rem', fontSize: '0.85rem', color: '#00e5ff' }}
-                >
-                  <ExternalLink size={15} /> Visit BGS Fandom Wiki
-                </a>
+              </div>
+
+              <div className="glass-card" style={{ padding: '2.25rem', border: '1px solid rgba(16, 185, 129, 0.35)' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(16, 185, 129, 0.15)', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+                  <ShieldCheck size={26} />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', marginBottom: '0.75rem' }}>3. Expert Curator Consensus</h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.7 }}>
+                  Veteran trading curators review market fluctuations daily. Values are adjusted in real time to prevent artificial inflation and market manipulation.
+                </p>
               </div>
             </div>
           </div>
@@ -515,7 +509,7 @@ export default function Guides({ initialSection = 'about' }) {
               <div className="glass-card" style={{ padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.3)' }}>
                 <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#ffcc00', marginBottom: '0.75rem' }}>❓ How are Pet Values Determined?</h3>
                 <p style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-                  All values are synchronized directly with the official <strong>BGS Collab Value List</strong> and verified recent in-game trade transactions.
+                  All values are determined through real-time trade aggregation, verified player deal records, and daily market stability reviews by our valuation team.
                 </p>
               </div>
 
@@ -576,7 +570,7 @@ export default function Guides({ initialSection = 'about' }) {
               </p>
               <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 800 }}>2. Third-Party Disclaimer</h4>
               <p>
-                BGS Values is an independent community project and is not affiliated with Roblox Corporation or Rumble Studios. All in-game assets are the property of their respective creators.
+                BGS Values is an independent community platform. All in-game intellectual properties and assets are the property of their respective creators.
               </p>
             </div>
           </div>

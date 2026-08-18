@@ -307,7 +307,7 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
         <div style={{ display: 'flex', gap: '0.75rem' }}>
           <button
             className="btn-primary"
-            style={{ flex: 1, padding: '0.75rem', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
+            style={{ flex: 1, padding: '0.85rem', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
             onClick={() => {
               if (onAddToTrade) onAddToTrade(pet);
               onClose();
@@ -315,16 +315,6 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
           >
             <PlusCircle size={18} /> Add to Trade Calculator
           </button>
-
-          <a
-            href={wikiUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="filter-btn"
-            style={{ padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', textDecoration: 'none', color: '#cbd5e1' }}
-          >
-            <ExternalLink size={16} /> Wiki Page
-          </a>
         </div>
       </div>
     </div>

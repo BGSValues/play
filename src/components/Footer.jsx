@@ -13,8 +13,6 @@ export default function Footer({ onNavigate, socials }) {
   const twitterUrl = socials?.twitter || 'https://x.com/';
   const youtubeUrl = socials?.youtube || 'https://youtube.com/';
   const robloxGroupUrl = socials?.robloxGroup || 'https://www.roblox.com/groups/4311180/Rumble-Studios';
-  const collabListUrl = socials?.collabList || 'https://sites.google.com/view/bgs-collab-value-list/';
-  const fandomWikiUrl = socials?.fandomWiki || 'https://bubble-gum-simulator.fandom.com/wiki/Bubble_Gum_Simulator_Wiki';
 
   return (
     <footer
@@ -221,44 +219,40 @@ export default function Footer({ onNavigate, socials }) {
           </ul>
         </div>
 
-        {/* Column 4: Support & Data */}
+        {/* Column 4: Support & Valuation */}
         <div>
           <h4 style={{ color: '#fff', fontSize: '0.95rem', fontWeight: 900, marginBottom: '1.2rem', textTransform: 'capitalize' }}>
-            Support
+            Support & Info
           </h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <li>
-              <a
-                href={collabListUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.target.style.color = 'var(--primary-gold)')}
+              <button
+                onClick={() => handleNav('guides', 'methodology')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#a78bfa')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
               >
-                Collab Value List
-              </a>
-            </li>
-            <li>
-              <a
-                href={fandomWikiUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.target.style.color = '#00e5ff')}
-                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
-              >
-                Fandom Wiki
-              </a>
+                Valuation Methodology
+              </button>
             </li>
             <li>
               <button
                 onClick={() => handleNav('guides', 'stsc')}
                 style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => (e.target.style.color = '#10b981')}
+                onMouseEnter={(e) => (e.target.style.color = '#00e5ff')}
                 onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
               >
                 Demand 0–11 Scale
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleNav('calculator')}
+                style={{ background: 'none', border: 'none', padding: 0, color: '#94a3b8', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.88rem', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.target.style.color = '#10b981')}
+                onMouseLeave={(e) => (e.target.style.color = '#94a3b8')}
+              >
+                Live Trade Calculator
               </button>
             </li>
             <li>

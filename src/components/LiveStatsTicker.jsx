@@ -48,7 +48,7 @@ export default function LiveStatsTicker({
     },
     {
       icon: <ShieldCheck size={15} color="#10b981" />,
-      label: 'Collab Sync',
+      label: 'Consensus Sync',
       val: 'Verified 2026',
       color: '#10b981',
     },
