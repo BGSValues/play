@@ -15,8 +15,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (1B Trophy).",
-    "type": "pet",
-    "shinyValue": 4000
+    "type": "pet"
   },
   {
     "id": "pet_ace",
@@ -34,8 +33,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (ACE).",
-    "type": "pet",
-    "shinyValue": 100
+    "type": "pet"
   },
   {
     "id": "pet_alien_kraken",
@@ -71,8 +69,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (All Seeing Eye).",
-    "type": "pet",
-    "shinyValue": 4500
+    "type": "pet"
   },
   {
     "id": "pet_almighty_hexarium",
@@ -90,8 +87,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Almighty Hexarium).",
-    "type": "pet",
-    "shinyValue": 80000
+    "type": "pet"
   },
   {
     "id": "pet_almighty_pumpkin",
@@ -109,8 +105,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Almighty Pumpkin).",
-    "type": "pet",
-    "shinyValue": 3730
+    "type": "pet"
   },
   {
     "id": "pet_angelic_shard",
@@ -146,8 +141,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Angelic Spirit).",
-    "type": "pet",
-    "shinyValue": 2500
+    "type": "pet"
   },
   {
     "id": "pet_archangel",
@@ -165,8 +159,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Archangel).",
-    "type": "pet",
-    "shinyValue": 1250
+    "type": "pet"
   },
   {
     "id": "pet_basilisks",
@@ -202,8 +195,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (BGS Plaque).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_candycorn_shard",
@@ -221,8 +213,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Candycorn Shard).",
-    "type": "pet",
-    "shinyValue": 1835
+    "type": "pet"
   },
   {
     "id": "pet_cardinal_bunny",
@@ -240,8 +231,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Cardinal Bunny).",
-    "type": "pet",
-    "shinyValue": 5500
+    "type": "pet"
   },
   {
     "id": "pet_champions",
@@ -277,8 +267,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Christmas Bell).",
-    "type": "pet",
-    "shinyValue": 1100
+    "type": "pet"
   },
   {
     "id": "pet_christmas_robot",
@@ -296,8 +285,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Christmas Robot).",
-    "type": "pet",
-    "shinyValue": 9000
+    "type": "pet"
   },
   {
     "id": "pet_corrupt_glitch",
@@ -315,8 +303,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Corrupt Glitch).",
-    "type": "pet",
-    "shinyValue": 1350
+    "type": "pet"
   },
   {
     "id": "pet_crimson_paladin",
@@ -352,8 +339,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Crystal Teddy).",
-    "type": "pet",
-    "shinyValue": 650
+    "type": "pet"
   },
   {
     "id": "pet_curse_of_kings",
@@ -425,16 +411,15 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Guardian).",
-    "type": "pet",
-    "shinyValue": 9000
+    "type": "pet"
   },
   {
     "id": "pet_dark_lord",
     "name": "Dark Lord",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": 9,
-    "status": "Rising",
+    "baseValue": 600,
+    "demand": 5,
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/61/Shiny_Dark_Lord.png/revision/latest",
     "multipliers": {
@@ -468,9 +453,9 @@
     "id": "pet_dark_radiance",
     "name": "Dark Radiance",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": 9,
-    "status": "Rising",
+    "baseValue": 650,
+    "demand": 5,
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/da/Shiny_Dark_Radiance.png/revision/latest",
     "multipliers": {
@@ -498,8 +483,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dementor).",
-    "type": "pet",
-    "shinyValue": 25
+    "type": "pet"
   },
   {
     "id": "pet_demon_heart",
@@ -553,8 +537,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic Dogcat).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_demonic_one",
@@ -572,8 +555,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic One).",
-    "type": "pet",
-    "shinyValue": 900
+    "type": "pet"
   },
   {
     "id": "pet_demonic_sentinel",
@@ -627,8 +609,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Diamond Ring).",
-    "type": "pet",
-    "shinyValue": 2500
+    "type": "pet"
   },
   {
     "id": "pet_dice_split",
@@ -646,8 +627,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dice Split).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_dogcat",
@@ -665,8 +645,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dogcat).",
-    "type": "pet",
-    "shinyValue": 356
+    "type": "pet"
   },
   {
     "id": "pet_dragonfruit",
@@ -684,8 +663,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dragonfruit).",
-    "type": "pet",
-    "shinyValue": 6000
+    "type": "pet"
   },
   {
     "id": "pet_dream_catcher",
@@ -703,8 +681,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dream Catcher).",
-    "type": "pet",
-    "shinyValue": 2250
+    "type": "pet"
   },
   {
     "id": "pet_duality",
@@ -722,8 +699,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Duality).",
-    "type": "pet",
-    "shinyValue": 4000
+    "type": "pet"
   },
   {
     "id": "pet_easter_basket",
@@ -741,8 +717,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Basket).",
-    "type": "pet",
-    "shinyValue": 15500
+    "type": "pet"
   },
   {
     "id": "pet_easter_robot",
@@ -760,8 +735,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Robot).",
-    "type": "pet",
-    "shinyValue": 30000
+    "type": "pet"
   },
   {
     "id": "pet_easter_spirit",
@@ -779,16 +753,15 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Spirit).",
-    "type": "pet",
-    "shinyValue": 450
+    "type": "pet"
   },
   {
     "id": "pet_elite_challenger",
     "name": "Elite Challenger",
     "rarity": "Secret",
-    "baseValue": null,
+    "baseValue": 10000,
     "demand": 10,
-    "status": "Rising",
+    "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2f/Shiny_Elite_Challenger.png/revision/latest",
     "multipliers": {
@@ -804,8 +777,8 @@
     "id": "pet_elite_fallen_angel",
     "name": "Elite Fallen Angel",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": 8,
+    "baseValue": 7000,
+    "demand": 10,
     "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5b/Elite_Fallen_Angel.png/revision/latest",
@@ -822,9 +795,9 @@
     "id": "pet_elite_lord_shock",
     "name": "Elite Lord Shock",
     "rarity": "Secret",
-    "baseValue": null,
+    "baseValue": 4000,
     "demand": 10,
-    "status": "Rising",
+    "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/94/Elite_Lord_Shock.png/revision/latest",
     "multipliers": {
@@ -840,9 +813,9 @@
     "id": "pet_elite_pot_o__gold",
     "name": "Elite Pot O' Gold",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": 8,
-    "status": "Rising",
+    "baseValue": 2000,
+    "demand": 10,
+    "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/dc/Elite_Pot_O%27_Gold.png/revision/latest",
     "multipliers": {
@@ -858,9 +831,9 @@
     "id": "pet_elite_sentinel",
     "name": "Elite Sentinel",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": 9,
-    "status": "Rising",
+    "baseValue": 2000,
+    "demand": 10,
+    "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/79/Elite_Sentinel.png/revision/latest",
     "multipliers": {
@@ -876,7 +849,7 @@
     "id": "pet_elite_wolflord",
     "name": "Elite Wolflord",
     "rarity": "Secret",
-    "baseValue": null,
+    "baseValue": 8000,
     "demand": 10,
     "status": "Hyped",
     "category": "Secret Pets",
@@ -906,16 +879,15 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Carrot).",
-    "type": "pet",
-    "shinyValue": 1750
+    "type": "pet"
   },
   {
     "id": "pet_eternal_cucumber",
     "name": "Eternal Cucumber",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 1000000,
+    "demand": 10,
+    "status": "Hyped",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Mythic_Eternal_Cucumber.png/revision/latest",
     "multipliers": {
@@ -943,8 +915,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Heart).",
-    "type": "pet",
-    "shinyValue": 2400
+    "type": "pet"
   },
   {
     "id": "pet_eternal_star",
@@ -962,8 +933,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Star).",
-    "type": "pet",
-    "shinyValue": 8500
+    "type": "pet"
   },
   {
     "id": "pet_fairy_koi",
@@ -999,8 +969,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Fallen Angel).",
-    "type": "pet",
-    "shinyValue": 645
+    "type": "pet"
   },
   {
     "id": "pet_firecracker",
@@ -1018,8 +987,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Firecracker).",
-    "type": "pet",
-    "shinyValue": 1500
+    "type": "pet"
   },
   {
     "id": "pet_frost_sentinel",
@@ -1037,8 +1005,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Frost Sentinel).",
-    "type": "pet",
-    "shinyValue": 11000
+    "type": "pet"
   },
   {
     "id": "pet_galactic_dementor",
@@ -1074,8 +1041,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Galactic Paladin).",
-    "type": "pet",
-    "shinyValue": 9500
+    "type": "pet"
   },
   {
     "id": "pet_ghosdeeri",
@@ -1093,8 +1059,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ghosdeeri).",
-    "type": "pet",
-    "shinyValue": 7000
+    "type": "pet"
   },
   {
     "id": "pet_ghost_spirits",
@@ -1130,8 +1095,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Choco Chicken).",
-    "type": "pet",
-    "shinyValue": 13500
+    "type": "pet"
   },
   {
     "id": "pet_giant_pearl",
@@ -1149,8 +1113,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Pearl).",
-    "type": "pet",
-    "shinyValue": 5000
+    "type": "pet"
   },
   {
     "id": "pet_giant_robot",
@@ -1186,8 +1149,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Gingerbread Shard).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_godly_gem",
@@ -1205,8 +1167,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Godly Gem).",
-    "type": "pet",
-    "shinyValue": 65000
+    "type": "pet"
   },
   {
     "id": "pet_godly_shamrock",
@@ -1224,8 +1185,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Godly Shamrock).",
-    "type": "pet",
-    "shinyValue": 7500
+    "type": "pet"
   },
   {
     "id": "pet_golf_balls",
@@ -1261,8 +1221,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Gryphon).",
-    "type": "pet",
-    "shinyValue": 472
+    "type": "pet"
   },
   {
     "id": "pet_harmonic_harp",
@@ -1280,8 +1239,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Harmonic Harp).",
-    "type": "pet",
-    "shinyValue": 3500
+    "type": "pet"
   },
   {
     "id": "pet_hellfire",
@@ -1299,8 +1257,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Hellfire).",
-    "type": "pet",
-    "shinyValue": 2400
+    "type": "pet"
   },
   {
     "id": "pet_hellshard",
@@ -1318,8 +1275,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Hellshard).",
-    "type": "pet",
-    "shinyValue": 12500
+    "type": "pet"
   },
   {
     "id": "pet_holy_bell",
@@ -1337,8 +1293,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Holy Bell).",
-    "type": "pet",
-    "shinyValue": 10000
+    "type": "pet"
   },
   {
     "id": "pet_holy_egg",
@@ -1356,8 +1311,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Holy Egg).",
-    "type": "pet",
-    "shinyValue": 1250
+    "type": "pet"
   },
   {
     "id": "pet_holy_star",
@@ -1393,8 +1347,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Immortal One).",
-    "type": "pet",
-    "shinyValue": 20500
+    "type": "pet"
   },
   {
     "id": "pet_immortal_trophy",
@@ -1412,8 +1365,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Immortal Trophy).",
-    "type": "pet",
-    "shinyValue": 17000
+    "type": "pet"
   },
   {
     "id": "pet_inferno_gem",
@@ -1449,8 +1401,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Infinity Gem).",
-    "type": "pet",
-    "shinyValue": 50000
+    "type": "pet"
   },
   {
     "id": "pet_king_dogcat",
@@ -1486,8 +1437,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Doggy).",
-    "type": "pet",
-    "shinyValue": 7500
+    "type": "pet"
   },
   {
     "id": "pet_king_kitty",
@@ -1505,8 +1455,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Kitty).",
-    "type": "pet",
-    "shinyValue": 75000
+    "type": "pet"
   },
   {
     "id": "pet_king_mush",
@@ -1524,8 +1473,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Mush).",
-    "type": "pet",
-    "shinyValue": 280
+    "type": "pet"
   },
   {
     "id": "pet_king_penguin",
@@ -1579,8 +1527,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Slime).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_koi",
@@ -1598,8 +1545,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Koi).",
-    "type": "pet",
-    "shinyValue": 3500
+    "type": "pet"
   },
   {
     "id": "pet_kraken",
@@ -1617,8 +1563,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Kraken).",
-    "type": "pet",
-    "shinyValue": 12000
+    "type": "pet"
   },
   {
     "id": "pet_leviathan",
@@ -1654,8 +1599,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lord Shock).",
-    "type": "pet",
-    "shinyValue": 18000
+    "type": "pet"
   },
   {
     "id": "pet_love_thief",
@@ -1673,8 +1617,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Love Thief).",
-    "type": "pet",
-    "shinyValue": 3750
+    "type": "pet"
   },
   {
     "id": "pet_lovely_rose",
@@ -1692,8 +1635,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lovely Rose).",
-    "type": "pet",
-    "shinyValue": 1200
+    "type": "pet"
   },
   {
     "id": "pet_lucid_leaf",
@@ -1711,8 +1653,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lucid Leaf).",
-    "type": "pet",
-    "shinyValue": 750
+    "type": "pet"
   },
   {
     "id": "pet_lucky_pyramidium",
@@ -1748,8 +1689,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Luminance).",
-    "type": "pet",
-    "shinyValue": 9000
+    "type": "pet"
   },
   {
     "id": "pet_magic_marshmallow",
@@ -1767,8 +1707,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Magic Marshmallow).",
-    "type": "pet",
-    "shinyValue": 3000
+    "type": "pet"
   },
   {
     "id": "pet_money_mouth",
@@ -1786,8 +1725,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Money Mouth).",
-    "type": "pet",
-    "shinyValue": 6250
+    "type": "pet"
   },
   {
     "id": "pet_morning_star",
@@ -1805,8 +1743,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Morning Star).",
-    "type": "pet",
-    "shinyValue": 1300
+    "type": "pet"
   },
   {
     "id": "pet_new_year_champion",
@@ -1824,8 +1761,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (New Year Champion).",
-    "type": "pet",
-    "shinyValue": 25000
+    "type": "pet"
   },
   {
     "id": "hat_obscureentity",
@@ -1855,8 +1791,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Overlord Plushie).",
-    "type": "pet",
-    "shinyValue": 3000
+    "type": "pet"
   },
   {
     "id": "pet_patriotic_robot",
@@ -1874,8 +1809,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Patriotic Robot).",
-    "type": "pet",
-    "shinyValue": 15000
+    "type": "pet"
   },
   {
     "id": "pet_patronus",
@@ -1893,8 +1827,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Patronus).",
-    "type": "pet",
-    "shinyValue": 10500
+    "type": "pet"
   },
   {
     "id": "pet_peppermint_leviathan",
@@ -1912,8 +1845,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Peppermint Leviathan).",
-    "type": "pet",
-    "shinyValue": 15000
+    "type": "pet"
   },
   {
     "id": "pet_phantom",
@@ -1967,8 +1899,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Plasma Wolflord).",
-    "type": "pet",
-    "shinyValue": 8000
+    "type": "pet"
   },
   {
     "id": "pet_plushies",
@@ -2004,8 +1935,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pot O' Doggy).",
-    "type": "pet",
-    "shinyValue": 4000
+    "type": "pet"
   },
   {
     "id": "pet_pot_o__gold",
@@ -2023,8 +1953,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pot O' Gold).",
-    "type": "pet",
-    "shinyValue": 14000
+    "type": "pet"
   },
   {
     "id": "pet_prisma_cube",
@@ -2042,8 +1971,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Prisma Cube).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_pyramidium",
@@ -2061,8 +1989,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pyramidium).",
-    "type": "pet",
-    "shinyValue": 7250
+    "type": "pet"
   },
   {
     "id": "pet_radiance",
@@ -2080,8 +2007,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Radiance).",
-    "type": "pet",
-    "shinyValue": 20000
+    "type": "pet"
   },
   {
     "id": "pet_radiant_challenger",
@@ -2117,8 +2043,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Radiant One).",
-    "type": "pet",
-    "shinyValue": 13500
+    "type": "pet"
   },
   {
     "id": "pet_radiant_shard",
@@ -2172,8 +2097,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Rainbow Dogcat).",
-    "type": "pet",
-    "shinyValue": 750
+    "type": "pet"
   },
   {
     "id": "pet_rainbow_gryphon",
@@ -2191,8 +2115,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Rainbow Gryphon).",
-    "type": "pet",
-    "shinyValue": 336
+    "type": "pet"
   },
   {
     "id": "pet_rainbow_leviathan",
@@ -2258,8 +2181,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sea Star).",
-    "type": "pet",
-    "shinyValue": 1300
+    "type": "pet"
   },
   {
     "id": "pet_shadow_challenger",
@@ -2313,8 +2235,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Sundae Champion).",
-    "type": "pet",
-    "shinyValue": 20000
+    "type": "pet"
   },
   {
     "id": "pet_shadow_wolflord",
@@ -2332,8 +2253,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Wolflord).",
-    "type": "pet",
-    "shinyValue": 35000
+    "type": "pet"
   },
   {
     "id": "pet_shard",
@@ -2351,8 +2271,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shard).",
-    "type": "pet",
-    "shinyValue": 7500
+    "type": "pet"
   },
   {
     "id": "pet_shattered_soul",
@@ -2370,8 +2289,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shattered Soul).",
-    "type": "pet",
-    "shinyValue": 8750
+    "type": "pet"
   },
   {
     "id": "pet_sinister_lord",
@@ -2389,8 +2307,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sinister Lord).",
-    "type": "pet",
-    "shinyValue": 25000
+    "type": "pet"
   },
   {
     "id": "pet_sinister_lord_2_0",
@@ -2408,8 +2325,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sinister Lord 2.0).",
-    "type": "pet",
-    "shinyValue": 18000
+    "type": "pet"
   },
   {
     "id": "pet_sinister_shard",
@@ -2427,8 +2343,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sinister Shard).",
-    "type": "pet",
-    "shinyValue": 4180
+    "type": "pet"
   },
   {
     "id": "pet_skulls",
@@ -2464,8 +2379,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Soul Heart).",
-    "type": "pet",
-    "shinyValue": 15000
+    "type": "pet"
   },
   {
     "id": "pet_soulflake",
@@ -2483,8 +2397,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Soulflake).",
-    "type": "pet",
-    "shinyValue": 5000
+    "type": "pet"
   },
   {
     "id": "pet_space_entity",
@@ -2568,8 +2481,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (The Overlord).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_the_owolord",
@@ -2587,8 +2499,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (The OwOlord).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_tophat__g_",
@@ -2642,8 +2553,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Trophy).",
-    "type": "pet",
-    "shinyValue": 27500
+    "type": "pet"
   },
   {
     "id": "pet_ufo",
@@ -2679,8 +2589,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ultimate Clover).",
-    "type": "pet",
-    "shinyValue": 3333
+    "type": "pet"
   },
   {
     "id": "pet_ultimate_trophy",
@@ -2698,8 +2607,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ultimate Trophy).",
-    "type": "pet",
-    "shinyValue": 12500
+    "type": "pet"
   },
   {
     "id": "pet_user_blog_thelastguesthies_secret",
@@ -2759,8 +2667,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wisplord).",
-    "type": "pet",
-    "shinyValue": 700
+    "type": "pet"
   },
   {
     "id": "pet_wolflord",
@@ -2778,8 +2685,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wolflord).",
-    "type": "pet",
-    "shinyValue": 15000
+    "type": "pet"
   },
   {
     "id": "pet_1b_cake_spirit",
@@ -2839,9 +2745,9 @@
     "id": "pet_2018_overlord",
     "name": "2018 Overlord",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 8,
-    "status": "Rising",
+    "baseValue": 5000,
+    "demand": 5,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e4/Shiny_2018_Overlord.png/revision/latest",
     "multipliers": {
@@ -2905,8 +2811,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (2020 Overlord).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_300m_elemental",
@@ -3182,8 +3087,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Amethyst Dogcat).",
-    "type": "pet",
-    "shinyValue": 1.2
+    "type": "pet"
   },
   {
     "id": "pet_ancient_elemental",
@@ -3237,8 +3141,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Angel of Darkness).",
-    "type": "pet",
-    "shinyValue": 1.75
+    "type": "pet"
   },
   {
     "id": "pet_angelic_bear",
@@ -3508,8 +3411,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Axolotl Plushie).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "hat_bacon_hair",
@@ -3617,8 +3519,8 @@
     "id": "pet_beta_tv",
     "name": "Beta TV",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 8,
+    "baseValue": 10000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Beta_TV.gif/revision/latest",
@@ -3647,8 +3549,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (BGS Bucket).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_blocky_hybrid",
@@ -3804,8 +3705,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Bruh Bandit).",
-    "type": "pet",
-    "shinyValue": 50
+    "type": "pet"
   },
   {
     "id": "pet_bruh_moment",
@@ -3841,8 +3741,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Bruhette).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_bunny_of_discord",
@@ -3860,8 +3759,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Bunny of Discord).",
-    "type": "pet",
-    "shinyValue": 1.8
+    "type": "pet"
   },
   {
     "id": "pet_candy_cane_fox",
@@ -4005,8 +3903,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Carrot Defender).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_cartoon_eggy",
@@ -4042,8 +3939,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Cartoon Hexarium).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_catmouse",
@@ -4115,8 +4011,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Chocolate Bunny).",
-    "type": "pet",
-    "shinyValue": 600
+    "type": "pet"
   },
   {
     "id": "pet_chocolate_chicken",
@@ -4152,8 +4047,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Chocolate Gift).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_chocolate_trio",
@@ -4177,8 +4071,8 @@
     "id": "pet_christmas_elemental",
     "name": "Christmas Elemental",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 8,
+    "baseValue": 4000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Christmas_Elemental.png/revision/latest",
@@ -4243,8 +4137,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Chromatic Cube).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_circus_stack",
@@ -4280,8 +4173,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Citrus Overlord).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_classic_trio",
@@ -4317,8 +4209,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Clockwork).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "hat_clout_goggles",
@@ -4468,8 +4359,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Comet in a Bottle).",
-    "type": "pet",
-    "shinyValue": 700
+    "type": "pet"
   },
   {
     "id": "pet_core",
@@ -4541,8 +4431,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crazy Cat Stack).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_crimson_bell",
@@ -4560,8 +4449,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crimson Bell).",
-    "type": "pet",
-    "shinyValue": 1.2
+    "type": "pet"
   },
   {
     "id": "pet_crimson_demon",
@@ -4759,8 +4647,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Dark Omen).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_dark_phoenix",
@@ -4784,8 +4671,8 @@
     "id": "pet_dark_serpent",
     "name": "Dark Serpent",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 7,
+    "baseValue": 30000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f1/Dark_Serpent.png/revision/latest",
@@ -4814,8 +4701,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Dark Soul).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_darkness_rose",
@@ -5031,8 +4917,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic Fireplace).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_demonic_hydra",
@@ -5080,8 +4965,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic Peppermint).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_demonium",
@@ -5117,8 +5001,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demonlord).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_demonocity",
@@ -5202,8 +5085,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Diamond Overlord).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_diamond_serpent",
@@ -5239,8 +5121,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Diamond Tamer).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_doggy_pile",
@@ -5282,8 +5163,8 @@
     "id": "pet_dowodle",
     "name": "Dowodle",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 7,
+    "baseValue": 15000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Shiny_Dowodle.png/revision/latest",
@@ -5330,8 +5211,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Dragon Plushie).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_dual_lord",
@@ -5349,8 +5229,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Dual Lord).",
-    "type": "pet",
-    "shinyValue": 1000
+    "type": "pet"
   },
   {
     "id": "pet_ducky",
@@ -5386,8 +5265,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Easter Bunny).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_easter_defender",
@@ -5441,8 +5319,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Easter Guardian).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_easter_hawk",
@@ -5478,8 +5355,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Overlord).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_easter_serpent",
@@ -5515,8 +5391,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Easter Warden).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_eclipse",
@@ -5534,8 +5409,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eclipse).",
-    "type": "pet",
-    "shinyValue": 1.3
+    "type": "pet"
   },
   {
     "id": "pet_egg_carton",
@@ -5613,8 +5487,8 @@
     "id": "pet_electra_hydra",
     "name": "Electra Hydra",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 7,
+    "baseValue": 6000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Electra_Hydra.png/revision/latest",
@@ -5661,8 +5535,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Elephant Plushie).",
-    "type": "pet",
-    "shinyValue": 350
+    "type": "pet"
   },
   {
     "id": "pet_elite_pyramidium",
@@ -5704,8 +5577,8 @@
     "id": "pet_enraged_phoenix",
     "name": "Enraged Phoenix",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 6,
+    "baseValue": 5000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Enraged_Phoenix.png/revision/latest",
@@ -5788,8 +5661,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Contrast).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_eternal_darkness",
@@ -5807,8 +5679,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Darkness).",
-    "type": "pet",
-    "shinyValue": 1.1
+    "type": "pet"
   },
   {
     "id": "pet_eternal_pumpkin",
@@ -5826,8 +5697,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Pumpkin).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_evil_eye",
@@ -5917,8 +5787,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Evil Shock).",
-    "type": "pet",
-    "shinyValue": 350
+    "type": "pet"
   },
   {
     "id": "hat_eye_poppers",
@@ -5948,8 +5817,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Fairy in a Bottle).",
-    "type": "pet",
-    "shinyValue": 100
+    "type": "pet"
   },
   {
     "id": "pet_fancy_serpent",
@@ -6039,8 +5907,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Festive Serpent).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_festivus",
@@ -6058,8 +5925,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Festivus).",
-    "type": "pet",
-    "shinyValue": 2.4
+    "type": "pet"
   },
   {
     "id": "hat_fiery_horns",
@@ -6215,8 +6081,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Flushed).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_flying_pig",
@@ -6354,8 +6219,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Frost Winged Hydra).",
-    "type": "pet",
-    "shinyValue": 1.2
+    "type": "pet"
   },
   {
     "id": "hat_frost_wings",
@@ -6385,8 +6249,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Frostbite).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_frosted_bond",
@@ -6458,8 +6321,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Frosted Dreamer).",
-    "type": "pet",
-    "shinyValue": 350
+    "type": "pet"
   },
   {
     "id": "pet_frosted_duality",
@@ -6477,8 +6339,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Frosted Duality).",
-    "type": "pet",
-    "shinyValue": 8000
+    "type": "pet"
   },
   {
     "id": "pet_frosted_guardian",
@@ -6568,8 +6429,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Galactic Bunny).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_galactic_demon",
@@ -6605,8 +6465,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Galactic Shock).",
-    "type": "pet",
-    "shinyValue": 900
+    "type": "pet"
   },
   {
     "id": "pet_galactic_split",
@@ -6642,8 +6501,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Galaxium).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_gem_dragon",
@@ -6679,8 +6537,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Gem Overlord).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_gem_shock",
@@ -6770,8 +6627,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Giant Fall Turkey).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_gift_mimic",
@@ -6789,8 +6645,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gift Mimic).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_glacial_bond",
@@ -6808,8 +6663,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Glacial Bond).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_glitch",
@@ -6827,8 +6681,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Glitch).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_gloom_shock",
@@ -6912,8 +6765,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gold Marshmallow).",
-    "type": "pet",
-    "shinyValue": 700
+    "type": "pet"
   },
   {
     "id": "pet_gold_overseer",
@@ -6931,8 +6783,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gold Overseer).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_golden_balloon",
@@ -7016,8 +6867,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Golden Pegasus).",
-    "type": "pet",
-    "shinyValue": 350
+    "type": "pet"
   },
   {
     "id": "pet_golden_slime",
@@ -7035,8 +6885,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Golden Slime).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_golden_snowball",
@@ -7090,8 +6939,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Golflord).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_green_hydra",
@@ -7163,8 +7011,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Guardian Elemental).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_gummy_overlord",
@@ -7200,8 +7047,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gummy Pals).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_gummy_winged_hydra",
@@ -7219,8 +7065,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gummy Winged Hydra).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_hallowed_spirit",
@@ -7238,8 +7083,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Hallowed Spirit).",
-    "type": "pet",
-    "shinyValue": 450
+    "type": "pet"
   },
   {
     "id": "pet_haunt",
@@ -7455,8 +7299,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Holy Crab).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_holy_dualcorn",
@@ -7528,8 +7371,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Holy Shock).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_holy_soul",
@@ -7655,8 +7497,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ice Overlord).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_ice_sprite",
@@ -7680,8 +7521,8 @@
     "id": "pet_ice_winged_hydra",
     "name": "Ice Winged Hydra",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 7,
+    "baseValue": 2000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/22/Ice_Winged_Hydra.png/revision/latest",
@@ -7728,8 +7569,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Infernal Master).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_inferno_cube",
@@ -7807,8 +7647,8 @@
     "id": "pet_infernus",
     "name": "Infernus",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 6,
+    "baseValue": 10000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d2/Infernus.png/revision/latest",
@@ -7837,8 +7677,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Iridium Prisma).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_isaac_s_creation_2_0",
@@ -8000,8 +7839,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Leviathan).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_king_pufferfish",
@@ -8019,8 +7857,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (King Pufferfish).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_king_snowman",
@@ -8038,8 +7875,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (King Snowman).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_king_soul",
@@ -8057,8 +7893,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (King Soul).",
-    "type": "pet",
-    "shinyValue": 175
+    "type": "pet"
   },
   {
     "id": "pet_kiwi_dragon",
@@ -8148,8 +7983,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lenny Box).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_light_demon",
@@ -8167,8 +8001,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Light Demon).",
-    "type": "pet",
-    "shinyValue": 600
+    "type": "pet"
   },
   {
     "id": "pet_light_phoenix",
@@ -8204,8 +8037,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (LOL).",
-    "type": "pet",
-    "shinyValue": 1.5
+    "type": "pet"
   },
   {
     "id": "pet_love_birds",
@@ -8241,8 +8073,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Love Soul).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_lovely_marshmallow",
@@ -8332,8 +8163,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lovesick).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_lucid_potion",
@@ -8417,8 +8247,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lucky Dominus).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_lucky_fiend",
@@ -8454,8 +8283,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Horseshoe).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_lucky_jester",
@@ -8527,8 +8355,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lucky Overlord).",
-    "type": "pet",
-    "shinyValue": 175
+    "type": "pet"
   },
   {
     "id": "pet_lucky_phoenix",
@@ -8600,8 +8427,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Tophat).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_lucky_tophat_2_0",
@@ -8619,8 +8445,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Tophat 2.0).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_lucky_wyvern",
@@ -8674,8 +8499,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Luna).",
-    "type": "pet",
-    "shinyValue": 600
+    "type": "pet"
   },
   {
     "id": "pet_lunar_catcher",
@@ -8765,8 +8589,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Magic Bottle).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_magma_hybrid",
@@ -8838,8 +8661,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Marshmallow).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_masked_rabbit",
@@ -8875,8 +8697,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Merry Marshmallow).",
-    "type": "pet",
-    "shinyValue": 1.6
+    "type": "pet"
   },
   {
     "id": "pet_midas",
@@ -8894,8 +8715,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Midas).",
-    "type": "pet",
-    "shinyValue": 3000
+    "type": "pet"
   },
   {
     "id": "pet_minty_hydra",
@@ -8913,8 +8733,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Minty Hydra).",
-    "type": "pet",
-    "shinyValue": 900
+    "type": "pet"
   },
   {
     "id": "pet_minty_serpent",
@@ -8932,8 +8751,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Minty Serpent).",
-    "type": "pet",
-    "shinyValue": 600
+    "type": "pet"
   },
   {
     "id": "pet_mistletoe_fiend",
@@ -8981,8 +8799,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Molten Split).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_monochrome",
@@ -9000,8 +8817,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Monochrome).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "hat_mr_snowman_s_top_hat",
@@ -9085,8 +8901,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Nebula Valkyrie).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_neon_elemental",
@@ -9188,8 +9003,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Night Terror).",
-    "type": "pet",
-    "shinyValue": 2
+    "type": "pet"
   },
   {
     "id": "pet_obsidian_serpent",
@@ -9279,8 +9093,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (OG Box).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_ornamentium",
@@ -9316,8 +9129,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Overseer).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_paragon",
@@ -9341,8 +9153,8 @@
     "id": "pet_partner_serpent",
     "name": "Partner Serpent",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 7,
+    "baseValue": 100,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Partner_Serpent.png/revision/latest",
@@ -9359,8 +9171,8 @@
     "id": "pet_partner_unicorn",
     "name": "Partner Unicorn",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": 7,
+    "baseValue": 100000,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2b/Partner_Unicorn.png/revision/latest",
@@ -9461,8 +9273,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Patriotic Penguin).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_penguin",
@@ -9498,8 +9309,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Peppermint Heart).",
-    "type": "pet",
-    "shinyValue": 700
+    "type": "pet"
   },
   {
     "id": "pet_peppermint_hydra",
@@ -9517,8 +9327,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Peppermint Hydra).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_phoenix_hybrid",
@@ -9626,8 +9435,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Platinum Overlord).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "hat_poseidon",
@@ -9693,8 +9501,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Pufferfish).",
-    "type": "pet",
-    "shinyValue": 600
+    "type": "pet"
   },
   {
     "id": "pet_pumpkin_burst",
@@ -9766,8 +9573,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Queen Kitty).",
-    "type": "pet",
-    "shinyValue": 400
+    "type": "pet"
   },
   {
     "id": "pet_queen_overlord",
@@ -9785,8 +9591,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Queen Overlord).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_queen_snowman",
@@ -9804,8 +9609,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Queen Snowman).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_rabbit_plushie",
@@ -9823,8 +9627,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Rabbit Plushie).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_radiant_protector",
@@ -9842,8 +9645,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Radiant Protector).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_radioactive_bear",
@@ -9951,8 +9753,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Rainbow Master).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_rainbow_overlord",
@@ -10006,8 +9807,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Rainbow Phoenix).",
-    "type": "pet",
-    "shinyValue": 2000
+    "type": "pet"
   },
   {
     "id": "pet_rainbow_serpent",
@@ -10121,8 +9921,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Royalty).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_ruby_god",
@@ -10158,8 +9957,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Rudolph Shock).",
-    "type": "pet",
-    "shinyValue": 2
+    "type": "pet"
   },
   {
     "id": "pet_sakuralord",
@@ -10177,8 +9975,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Sakuralord).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_sandcastle_dragon",
@@ -10214,8 +10011,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Santa Hat).",
-    "type": "pet",
-    "shinyValue": 1000
+    "type": "pet"
   },
   {
     "id": "pet_scorpio",
@@ -10317,8 +10113,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Sea Urchin).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_shade_demon",
@@ -10336,8 +10131,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shade Demon).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_shadow_equinox",
@@ -10373,8 +10167,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow Hunter).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_shadow_imp",
@@ -10446,8 +10239,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow Raven).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "hat_sircfenner",
@@ -10495,8 +10287,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Skull Reaper).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_sky_imp",
@@ -10568,8 +10359,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Soul Flower).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_space_crystal_hexarium",
@@ -10677,8 +10467,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Spirit of Fortune).",
-    "type": "pet",
-    "shinyValue": 100
+    "type": "pet"
   },
   {
     "id": "pet_spirit_of_wealth",
@@ -10696,8 +10485,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Spirit of Wealth).",
-    "type": "pet",
-    "shinyValue": 700
+    "type": "pet"
   },
   {
     "id": "pet_split",
@@ -10769,8 +10557,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Spring Dragon).",
-    "type": "pet",
-    "shinyValue": 900
+    "type": "pet"
   },
   {
     "id": "pet_stargazer",
@@ -10788,8 +10575,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Stargazer).",
-    "type": "pet",
-    "shinyValue": 700
+    "type": "pet"
   },
   {
     "id": "pet_starlord",
@@ -10807,8 +10593,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Starlord).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_stocking",
@@ -10826,8 +10611,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Stocking).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_stuffed_imp",
@@ -10881,8 +10665,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Summer Bond).",
-    "type": "pet",
-    "shinyValue": 1.05
+    "type": "pet"
   },
   {
     "id": "pet_summer_cerberus",
@@ -10900,8 +10683,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Summer Cerberus).",
-    "type": "pet",
-    "shinyValue": 1500
+    "type": "pet"
   },
   {
     "id": "pet_summer_rift",
@@ -10973,8 +10755,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sunlord).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_sunshine",
@@ -11010,8 +10791,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Super Hexarium).",
-    "type": "pet",
-    "shinyValue": 150
+    "type": "pet"
   },
   {
     "id": "pet_sylently_s_pet",
@@ -11047,8 +10827,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Teddy Bear).",
-    "type": "pet",
-    "shinyValue": 300
+    "type": "pet"
   },
   {
     "id": "pet_tetranium",
@@ -11084,8 +10863,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (The Hand).",
-    "type": "pet",
-    "shinyValue": 2
+    "type": "pet"
   },
   {
     "id": "pet_the_keeper",
@@ -11103,8 +10881,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (The Keeper).",
-    "type": "pet",
-    "shinyValue": 1.4
+    "type": "pet"
   },
   {
     "id": "pet_topaz_soul",
@@ -11122,8 +10899,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Topaz Soul).",
-    "type": "pet",
-    "shinyValue": 1.2
+    "type": "pet"
   },
   {
     "id": "pet_tormentor",
@@ -11141,8 +10917,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Tormentor).",
-    "type": "pet",
-    "shinyValue": 600
+    "type": "pet"
   },
   {
     "id": "pet_toxic_cube",
@@ -11178,8 +10953,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Toxic Demon).",
-    "type": "pet",
-    "shinyValue": 800
+    "type": "pet"
   },
   {
     "id": "pet_toxic_elemental",
@@ -11197,8 +10971,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Toxic Elemental).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_toxic_shock",
@@ -11216,8 +10989,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Toxic Shock).",
-    "type": "pet",
-    "shinyValue": 200
+    "type": "pet"
   },
   {
     "id": "pet_toxic_terror",
@@ -11235,8 +11007,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Toxic Terror).",
-    "type": "pet",
-    "shinyValue": 900
+    "type": "pet"
   },
   {
     "id": "pet_toy_serpent",
@@ -11308,8 +11079,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Trick O' Treat).",
-    "type": "pet",
-    "shinyValue": 100
+    "type": "pet"
   },
   {
     "id": "pet_trickster",
@@ -11345,8 +11115,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Trifolium Spirit).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "hat_triton_crown",
@@ -11394,8 +11163,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Twin Snowballs).",
-    "type": "pet",
-    "shinyValue": 100
+    "type": "pet"
   },
   {
     "id": "pet_twitter_dominus",
@@ -11467,8 +11235,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Unicorn Plushie).",
-    "type": "pet",
-    "shinyValue": 1
+    "type": "pet"
   },
   {
     "id": "pet_unlimited_dollar",
@@ -11486,8 +11253,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Unlimited Dollar).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_uranium_hybrid",
@@ -11541,8 +11307,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Valentine Shock).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "pet_valentium",
@@ -11560,8 +11325,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Valentium).",
-    "type": "pet",
-    "shinyValue": 500
+    "type": "pet"
   },
   {
     "id": "pet_vectorlord",
@@ -11633,8 +11397,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Winter Phoenix).",
-    "type": "pet",
-    "shinyValue": 450
+    "type": "pet"
   },
   {
     "id": "pet_wisp_elemental",
@@ -11760,8 +11523,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Witches Pot).",
-    "type": "pet",
-    "shinyValue": 250
+    "type": "pet"
   },
   {
     "id": "hat_workclock_ultimate",
@@ -11857,8 +11619,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Yin Yang).",
-    "type": "pet",
-    "shinyValue": 1.5
+    "type": "pet"
   },
   {
     "id": "pet_zebra",
@@ -14432,8 +14193,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Twitch Golem).",
-    "type": "pet",
-    "shinyValue": 8
+    "type": "pet"
   },
   {
     "id": "pet_twitch_kitty",
