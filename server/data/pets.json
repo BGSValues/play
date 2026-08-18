@@ -86,7 +86,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Alien Kraken).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 160000,
+        "Coins": 422500,
+        "Gems": 458000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_all_seeing_eye",
@@ -211,7 +219,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Angelic Shard).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 37000,
+        "Coins": 148000,
+        "Gems": 166500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_angelic_spirit",
@@ -645,7 +661,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Curse of Kings).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 135000,
+        "Coins": 422500,
+        "Gems": 458000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dark_basilisk",
@@ -664,7 +688,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Basilisk).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 125000,
+        "Coins": 450000,
+        "Gems": 500000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_dark_gryphon",
@@ -683,7 +715,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Gryphon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 195000,
+        "Coins": 675000,
+        "Gems": 750000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dark_guardian",
@@ -737,7 +777,15 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Lord).",
     "type": "pet",
     "shinyValue": 350,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 9000,
+        "Coins": 25550,
+        "Gems": 31425
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dark_lord_shock",
@@ -756,7 +804,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Lord Shock).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 150000,
+        "Coins": 555000,
+        "Gems": 555000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dark_radiance",
@@ -776,7 +832,15 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Radiance).",
     "type": "pet",
     "shinyValue": 350,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 8100,
+        "Coins": 22850,
+        "Gems": 40000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dementor",
@@ -828,7 +892,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demon Heart).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 295000,
+        "Coins": 1015000,
+        "Gems": 1125000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demon_reaper",
@@ -847,7 +919,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demon Reaper).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 118000,
+        "Coins": 422500,
+        "Gems": 458000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demonic_dogcat",
@@ -898,7 +978,15 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic One).",
     "type": "pet",
     "shinyValue": 900,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 47500,
+        "Coins": 275000,
+        "Gems": 275000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demonic_sentinel",
@@ -947,7 +1035,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Developer Trophy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 285000,
+        "Coins": 1015000,
+        "Gems": 1125000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_diamond_ring",
@@ -1113,6 +1209,15 @@
       "mythic": "28",
       "normal": "4,671",
       "shinyMythic": "1"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 61777,
+        "Coins": 256777,
+        "Gems": 278777,
+        "All": 67777
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -1274,7 +1379,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Elite Challenger).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 11000,
+        "Coins": 43000,
+        "Gems": 50500,
+        "All": 17750
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_elite_fallen_angel",
@@ -1323,7 +1437,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Elite Lord Shock).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 23500,
+        "Coins": 95500,
+        "Gems": 112500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_elite_pot_o__gold",
@@ -1372,7 +1494,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Elite Sentinel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 50000,
+        "Coins": 200000,
+        "Gems": 225000,
+        "All": 45000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_elite_wolflord",
@@ -1391,7 +1522,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Elite Wolflord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 15150,
+        "Coins": 55555,
+        "Gems": 70000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_eternal_carrot",
@@ -1486,6 +1625,15 @@
     "existence": {
       "normal": "1,990",
       "shiny": "23"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 7900,
+        "Coins": 23000,
+        "Gems": 32500,
+        "All": 8600
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -1509,6 +1657,14 @@
     "existence": {
       "normal": "118",
       "shiny": "2"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 15555,
+        "Coins": 55555,
+        "Gems": 66666
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -1528,7 +1684,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Fairy Koi).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 145000,
+        "Coins": 553000,
+        "Gems": 599500
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fallen_angel",
@@ -1650,7 +1814,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Galactic Dementor).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 225000,
+        "Coins": 553000,
+        "Gems": 599500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_galactic_paladin",
@@ -1740,7 +1912,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ghost Spirits).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 38200,
+        "Coins": 153225,
+        "Gems": 164210
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_giant_choco_chicken",
@@ -1830,6 +2010,15 @@
     "existence": {
       "normal": "7",
       "shiny": "1"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 3500,
+        "Coins": 8525,
+        "Gems": 17500,
+        "Blocks": 3750
+      },
+      "movementType": "Walk"
     }
   },
   {
@@ -1925,6 +2114,15 @@
       "mythic": "6",
       "normal": "1,180",
       "shinyMythic": "0"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 70000,
+        "Coins": 280000,
+        "Gems": 315000,
+        "All": 77000
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -1944,7 +2142,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Golf Balls).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "All": 187
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gryphon",
@@ -2143,6 +2347,15 @@
       "mythic": "54",
       "normal": "6,303",
       "shinyMythic": "1"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 63600,
+        "Coins": 254400,
+        "Gems": 282800,
+        "All": 64240
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -2162,7 +2375,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Holy Star).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 150000,
+        "Coins": 555000,
+        "Gems": 555000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_immortal_one",
@@ -2249,7 +2470,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Inferno Gem).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 175000,
+        "Coins": 553000,
+        "Gems": 599500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_infinity_gem",
@@ -2304,7 +2533,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Dogcat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 9999,
+        "Coins": 9999,
+        "Gems": 9999
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_king_doggy",
@@ -2397,6 +2634,14 @@
     "existence": {
       "normal": "1397",
       "shiny": "14"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 11150,
+        "Coins": 45000,
+        "Gems": 54355
+      },
+      "movementType": "Walk"
     }
   },
   {
@@ -2416,7 +2661,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Penguin).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 98000,
+        "Coins": 380000,
+        "Gems": 400000,
+        "Blocks": 25000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_king_seal",
@@ -2435,7 +2689,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Seal).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 130000,
+        "Coins": 450000,
+        "Gems": 500000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_king_slime",
@@ -2670,6 +2932,15 @@
       "mythic": "514",
       "normal": "52,600",
       "shinyMythic": "8"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 40500,
+        "Coins": 162000,
+        "Gems": 182250,
+        "All": 45000
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -2695,6 +2966,15 @@
       "mythic": "90",
       "normal": "11,700",
       "shinyMythic": "3"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 18115,
+        "Coins": 80500,
+        "Gems": 91150,
+        "All": 28000
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -2718,6 +2998,15 @@
       "shiny": "0",
       "mythic": "6",
       "shinyMythic": "0"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 101777,
+        "Coins": 420777,
+        "Gems": 455777,
+        "All": 111777
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -2882,6 +3171,15 @@
       "mythic": "3",
       "normal": "467",
       "shinyMythic": "0"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 66400,
+        "Coins": 275560,
+        "Gems": 298800,
+        "All": 73040
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -3028,6 +3326,14 @@
       "mythic": "7",
       "normal": "677",
       "shinyMythic": "0"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 70000,
+        "Coins": 290500,
+        "Gems": 315000
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -3077,7 +3383,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pixie Queen).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 110000,
+        "Coins": 422500,
+        "Gems": 458000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_plasma_wolflord",
@@ -3102,6 +3416,15 @@
       "mythic": "4",
       "normal": "1,165",
       "shinyMythic": "0"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 15500,
+        "Coins": 57800,
+        "Gems": 61500,
+        "All": 18250
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -3160,6 +3483,15 @@
       "mythic": "30",
       "normal": "3,428",
       "shinyMythic": "3"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 58400,
+        "Coins": 233600,
+        "Gems": 262800,
+        "All": 64240
+      },
+      "movementType": "Walk"
     }
   },
   {
@@ -3183,6 +3515,15 @@
     "existence": {
       "normal": "350",
       "shiny": "3"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 3750,
+        "Coins": 11500,
+        "Gems": 17777,
+        "Shells": 3825
+      },
+      "movementType": "Walk"
     }
   },
   {
@@ -3373,7 +3714,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Radiant Shard).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 29500,
+        "Coins": 110000,
+        "Gems": 117500,
+        "All": 39000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_radioactive_radiance",
@@ -3392,7 +3742,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Radioactive Radiance).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 150000,
+        "Coins": 555000,
+        "Gems": 550000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_rainbow_dogcat",
@@ -3448,6 +3806,15 @@
     "existence": {
       "normal": "336",
       "shiny": "4"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 6100,
+        "Coins": 21050,
+        "Gems": 27800,
+        "Stars": 6666
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -3612,7 +3979,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Luminance).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 145000,
+        "Coins": 553000,
+        "Gems": 599500,
+        "All": 147000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_shadow_sundae_champion",
@@ -3632,7 +4008,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Sundae Champion).",
     "type": "pet",
     "shinyValue": 20000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 110000,
+        "Coins": 442500,
+        "Gems": 458000,
+        "All": 112000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_shadow_wolflord",
@@ -3652,7 +4037,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Wolflord).",
     "type": "pet",
     "shinyValue": 35000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 125000,
+        "Coins": 422500,
+        "Gems": 458000,
+        "All": 112000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_shard",
@@ -3881,6 +4275,15 @@
     "existence": {
       "normal": "400",
       "shiny": "4"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 3150,
+        "Coins": 7750,
+        "Gems": 15555,
+        "Blocks": 3333
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -3936,7 +4339,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Space Entity).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 115000,
+        "Coins": 380000,
+        "Gems": 400000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_spring_spirit",
@@ -4100,7 +4511,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Tophat (G)).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 190000,
+        "Coins": 675000,
+        "Gems": 750000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_tophats",
@@ -4186,7 +4605,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (UFO).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 130000,
+        "Coins": 422500,
+        "Gems": 458000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ultimate_clover",
@@ -4209,6 +4636,14 @@
     "existence": {
       "normal": "1,469",
       "shiny": "13"
+    },
+    "stats": {
+      "buffs": {
+        "Bubbles": 9200,
+        "Coins": 31500,
+        "Gems": 42500
+      },
+      "movementType": "Fly"
     }
   },
   {
@@ -4360,7 +4795,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (1B Cake Spirit).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 9150,
+        "Coins": 38500,
+        "Gems": 43100,
+        "All": 5000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_1b_marshmallow",
@@ -4577,7 +5021,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (300m Elemental).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1215,
+        "Coins": 4150,
+        "Gems": 3675,
+        "Shells": 1225
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_300m_serpent",
@@ -4882,7 +5335,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Alien Ghost).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 23000,
+        "Coins": 78950,
+        "Gems": 88800
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_alien_omen",
@@ -4901,7 +5362,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Alien Omen).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 35000,
+        "Coins": 118400,
+        "Gems": 133200
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_alien_overlord",
@@ -4920,7 +5389,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Alien Overlord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 45000,
+        "Coins": 148000,
+        "Gems": 166500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_alien_ufo",
@@ -5198,7 +5675,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Aqua Pegasus).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 850,
+        "Coins": 1115,
+        "Gems": 1450,
+        "Shells": 585
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_astral_sprite",
@@ -5217,7 +5703,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Astral Sprite).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3000,
+        "Coins": 2100,
+        "Gems": 2000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_atlantis_guardian",
@@ -5302,7 +5796,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Atlantis Overlord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2325,
+        "Coins": 6075,
+        "Gems": 8050,
+        "Pearls": 2400
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_atlantis_pegasus",
@@ -5706,7 +6209,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Beta TV).",
     "type": "pet",
     "shinyValue": 25000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 450,
+        "Coins": 1200,
+        "Gems": 1300
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_bgs_bucket",
@@ -5873,7 +6384,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Blue Ducky).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 550,
+        "Coins": 595,
+        "Gems": 635,
+        "Blocks": 555
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_brick_dominus",
@@ -6022,7 +6542,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Bruh Moment).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1337,
+        "Coins": 1337,
+        "Gems": 1337,
+        "All": 1337
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_bruhette",
@@ -6073,7 +6602,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Bunny of Discord).",
     "type": "pet",
     "shinyValue": 1800,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 20000,
+        "Coins": 97000,
+        "Gems": 95000,
+        "All": 15595
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_candy_cane_fox",
@@ -6290,7 +6828,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Candycorn Lord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 6100,
+        "Coins": 17630,
+        "Gems": 20700
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_carrot_defender",
@@ -6374,7 +6920,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Cartoon Hexarium).",
     "type": "pet",
     "shinyValue": 150,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 12250,
+        "Coins": 47210,
+        "Gems": 55250
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_catmouse",
@@ -6490,7 +7044,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Chocolate Bunny).",
     "type": "pet",
     "shinyValue": 600,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2525,
+        "Coins": 6525,
+        "Gems": 7750,
+        "Pearls": 1775
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_chocolate_chicken",
@@ -6509,7 +7072,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Chocolate Chicken).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 675,
+        "Coins": 850,
+        "Gems": 1650
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_chocolate_gift",
@@ -6868,7 +7439,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Clover Burst).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 15500,
+        "Coins": 62000,
+        "Gems": 69750,
+        "All": 13500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_clover_dragon",
@@ -6953,7 +7533,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Clown Emoji).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 8250,
+        "Coins": 25500,
+        "Gems": 43195,
+        "All": 8400
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_clown_hat",
@@ -7173,7 +7762,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Crazy Cat Stack).",
     "type": "pet",
     "shinyValue": 400,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5000,
+        "Coins": 8000,
+        "Gems": 9000,
+        "All": 3250
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_crimson_bell",
@@ -7253,7 +7851,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crimson Eye).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 6250,
+        "Coins": 18700,
+        "Gems": 21600
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_crimson_tetranium",
@@ -7272,7 +7878,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crimson Tetranium).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5890,
+        "Coins": 16110,
+        "Gems": 18550,
+        "All": 6995
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_crystal_acorn",
@@ -7324,7 +7939,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crystal Defender).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3550,
+        "Coins": 7900,
+        "Gems": 8725,
+        "All": 2895
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_crystal_hippogriff",
@@ -7343,7 +7967,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Crystal Hippogriff).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2225,
+        "Coins": 5750,
+        "Gems": 6900,
+        "Magma": 1850
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_cursed_scorpio",
@@ -7689,7 +8322,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demon Dowodle).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 50000,
+        "Coins": 175000,
+        "Gems": 180000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_demon_dweller",
@@ -7708,7 +8349,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demon Dweller).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 33000,
+        "Coins": 118400,
+        "Gems": 133200
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demon_eye",
@@ -7727,7 +8376,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demon Eye).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1250,
+        "Coins": 1655,
+        "Gems": 2420
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demon_shock",
@@ -7746,7 +8403,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demon Shock).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 40000,
+        "Coins": 148000,
+        "Gems": 166500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demon_snake",
@@ -8009,7 +8674,15 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic Peppermint).",
     "type": "pet",
     "shinyValue": 200,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 13500,
+        "Coins": 52150,
+        "Gems": 62970
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_demonium",
@@ -8158,7 +8831,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Diamond Cerberus).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2950,
+        "Coins": 6950,
+        "Gems": 7825,
+        "Magma": 2395
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_diamond_circlet",
@@ -8193,7 +8875,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Diamond Overlord).",
     "type": "pet",
     "shinyValue": 1000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1795,
+        "Coins": 5125,
+        "Gems": 4999,
+        "Blocks": 1150
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_diamond_serpent",
@@ -8212,7 +8903,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Diamond Serpent).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 365,
+        "Coins": 575,
+        "Gems": 795,
+        "Blocks": 166
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_diamond_tamer",
@@ -8529,7 +9229,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Easter Defender).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1250,
+        "Coins": 1555,
+        "Gems": 2105,
+        "All": 950
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_easter_dualcorn",
@@ -8548,7 +9257,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Easter Dualcorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1350,
+        "Coins": 3800,
+        "Gems": 3925,
+        "Pearls": 1375
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_easter_guardian",
@@ -8635,7 +9353,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Overlord).",
     "type": "pet",
     "shinyValue": 500,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 6000,
+        "Coins": 10500,
+        "Gems": 11150,
+        "All": 6000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_easter_serpent",
@@ -8749,7 +9476,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Egg Carton).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 12800,
+        "Coins": 51000,
+        "Gems": 52180,
+        "All": 9350
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_egg_split",
@@ -8768,7 +9504,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Egg Split).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 16100,
+        "Coins": 67000,
+        "Gems": 73150,
+        "All": 14500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_eggsplosion",
@@ -8853,7 +9598,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Electra Hydra).",
     "type": "pet",
     "shinyValue": 15000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 995,
+        "Coins": 3250,
+        "Gems": 2760
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_element_hydra",
@@ -9001,7 +9754,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Enraged Phoenix).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 745,
+        "Coins": 1985,
+        "Gems": 1670,
+        "Candy": 575
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_equinox",
@@ -9120,7 +9882,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Contrast).",
     "type": "pet",
     "shinyValue": 200,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 12625,
+        "Coins": 48610,
+        "Gems": 57630,
+        "All": 9680
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_eternal_darkness",
@@ -9204,7 +9975,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Evil Eye).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 21000,
+        "Coins": 78950,
+        "Gems": 88800
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_evil_marsh",
@@ -9223,7 +10002,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Evil Marsh).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1895,
+        "Coins": 2555,
+        "Gems": 3450
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_evil_orb",
@@ -9357,7 +10144,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Fairy in a Bottle).",
     "type": "pet",
     "shinyValue": 100,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 22250,
+        "Coins": 86480,
+        "Gems": 100500
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fancy_serpent",
@@ -9409,7 +10204,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Fancy Winged Hydra).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1110,
+        "Coins": 1275,
+        "Gems": 1165,
+        "Stars": 1050
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_fangseeker",
@@ -9989,7 +10793,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Frost Shard).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 133000,
+        "Coins": 553000,
+        "Gems": 599500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_frost_winged_hydra",
@@ -10245,7 +11057,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Frosted Guardian).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 37000,
+        "Coins": 148000,
+        "Gems": 166500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_frosted_tetranium",
@@ -10518,7 +11338,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gem Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 9655,
+        "Coins": 34000,
+        "Gems": 40500,
+        "All": 5500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_gem_overlord",
@@ -10571,7 +11400,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gem Shock).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5465,
+        "Coins": 14210,
+        "Gems": 16850,
+        "All": 5895
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ghostarium",
@@ -10690,7 +11528,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Giant Fall Turkey).",
     "type": "pet",
     "shinyValue": 800,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 14500,
+        "Coins": 48125,
+        "Gems": 51005,
+        "All": 11500
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gift_mimic",
@@ -10710,7 +11557,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Gift Mimic).",
     "type": "pet",
     "shinyValue": 500,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 12450,
+        "Coins": 46580,
+        "Gems": 52450
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_glacial_bond",
@@ -10794,7 +11649,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Gloom Shock).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1475,
+        "Coins": 2650,
+        "Gems": 2265,
+        "Magma": 1550
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_gloom_split",
@@ -11038,7 +11902,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Golden Lion).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1525,
+        "Coins": 3250,
+        "Gems": 2400,
+        "Tickets": 1150
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_golden_pegasus",
@@ -11572,7 +12445,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Haunted Terror).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 32500,
+        "Coins": 120000,
+        "Gems": 140000,
+        "All": 28500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_heart_split",
@@ -11591,7 +12473,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Heart Split).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 14860,
+        "Coins": 54110,
+        "Gems": 63650,
+        "All": 12800
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_heavenly_champion",
@@ -11829,7 +12720,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Holy Dualcorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3700,
+        "Coins": 12800,
+        "Gems": 15375
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_holy_guardian",
@@ -11848,7 +12747,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Holy Guardian).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 29600,
+        "Coins": 118400,
+        "Gems": 133200
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_holy_hydra",
@@ -11933,7 +12840,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Holy Soul).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 40000,
+        "Coins": 154000,
+        "Gems": 170500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_honey_comb_bee",
@@ -11952,7 +12867,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Honey Comb Bee).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 725,
+        "Coins": 750,
+        "Gems": 665,
+        "Blocks": 895
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ice_age",
@@ -11971,7 +12895,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Ice Age).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 7475,
+        "Coins": 22950,
+        "Gems": 25680
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ice_blast",
@@ -12087,7 +13019,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Ice Overlord).",
     "type": "pet",
     "shinyValue": 250,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 4150,
+        "Coins": 7210,
+        "Gems": 9750,
+        "All": 2450
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ice_sprite",
@@ -12106,7 +13047,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Ice Sprite).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 19750,
+        "Coins": 78950,
+        "Gems": 88800
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ice_winged_hydra",
@@ -12192,7 +13141,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Infernal Master).",
     "type": "pet",
     "shinyValue": 300,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5000,
+        "Coins": 8000,
+        "Gems": 9000,
+        "Magma": 4250
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_inferno_cube",
@@ -12308,7 +13266,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Infernolord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 50000,
+        "Coins": 175000,
+        "Gems": 180500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_infernus",
@@ -12490,7 +13456,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Jelly Overlord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1205,
+        "Coins": 4560,
+        "Gems": 3725
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_karma",
@@ -12539,7 +13513,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (King Bruh).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 40000,
+        "Coins": 154000,
+        "Gems": 170500
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_king_crab",
@@ -12624,7 +13606,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (King Leviathan).",
     "type": "pet",
     "shinyValue": 150,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 6100,
+        "Coins": 15250,
+        "Gems": 19800,
+        "Magma": 3900
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_king_pufferfish",
@@ -12745,7 +13736,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Kiwi Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5200,
+        "Coins": 15440,
+        "Gems": 18355,
+        "All": 3350
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_kraken_couplet",
@@ -12864,7 +13864,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Lenny Box).",
     "type": "pet",
     "shinyValue": 800,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3885,
+        "Coins": 12750,
+        "Gems": 17150
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_light_demon",
@@ -12917,7 +13925,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Light Phoenix).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5750,
+        "Coins": 17610,
+        "Gems": 18980,
+        "All": 6295
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lol",
@@ -12967,7 +13984,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Love Birds).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 425,
+        "Coins": 555,
+        "Gems": 925,
+        "Blocks": 275
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_love_soul",
@@ -12987,7 +14013,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Love Soul).",
     "type": "pet",
     "shinyValue": 150,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 18650,
+        "Coins": 67200,
+        "Gems": 83125,
+        "All": 16620
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lovely_marshmallow",
@@ -13105,7 +14140,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lovely Raven).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 10000,
+        "Coins": 35750,
+        "Gems": 43100,
+        "All": 5900
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lovesick",
@@ -13366,7 +14410,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Jester).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 12000,
+        "Coins": 48000,
+        "Gems": 50480,
+        "All": 8000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_lucky_magician",
@@ -13485,7 +14538,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Phoenix).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1050,
+        "Coins": 3775,
+        "Gems": 3175,
+        "Shells": 1125
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lucky_pixie",
@@ -13504,7 +14566,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Pixie).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3150,
+        "Coins": 7875,
+        "Gems": 7525
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lucky_squid",
@@ -13777,7 +14847,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Luxurious Orb).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 17125,
+        "Coins": 68500,
+        "Gems": 77050,
+        "All": 15000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_magenta_cube",
@@ -14022,7 +15101,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Merry Marshmallow).",
     "type": "pet",
     "shinyValue": 1600,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 170,
+        "Coins": 300,
+        "Gems": 350
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_midas",
@@ -14138,7 +15225,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Mistletoe Fiend).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 7695,
+        "Coins": 23500,
+        "Gems": 26120
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_mlg",
@@ -14312,7 +15407,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Mystic Pegasus).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1650,
+        "Coins": 4995,
+        "Gems": 3965
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_nebula_valkyrie",
@@ -14362,7 +15465,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Neon Elemental).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 675,
+        "Coins": 2110,
+        "Gems": 1750
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_neon_wyvern",
@@ -14659,7 +15770,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (OG Box).",
     "type": "pet",
     "shinyValue": 800,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 4350,
+        "Coins": 7610,
+        "Gems": 9250,
+        "All": 2250
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_ornamentium",
@@ -15105,7 +16225,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Phoenix Hybrid).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 4450,
+        "Coins": 9995,
+        "Gems": 9550,
+        "All": 3950
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_pink_ducky",
@@ -15468,7 +16597,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Queen Fairy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 37000,
+        "Coins": 148000,
+        "Gems": 166500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_queen_kitty",
@@ -15519,7 +16656,16 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Queen Overlord).",
     "type": "pet",
     "shinyValue": 200,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2125,
+        "Coins": 6375,
+        "Gems": 7350,
+        "Shells": 1515
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_queen_snowman",
@@ -15989,7 +17135,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Rainbow Winged Hydra).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 645,
+        "Coins": 685,
+        "Gems": 605
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_red_crown",
@@ -16485,7 +17639,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow Equinox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 29600,
+        "Coins": 118400,
+        "Gems": 133200,
+        "All": 26650
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_shadow_hunter",
@@ -16571,7 +17734,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow One).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 225000,
+        "Coins": 783000,
+        "Gems": 850000,
+        "All": 210000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_shadow_overlord",
@@ -16590,7 +17762,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shadow Overlord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 37000,
+        "Coins": 148000,
+        "Gems": 166500,
+        "All": 33300
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_shadow_raven",
@@ -16658,7 +17839,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Skelly Winged Hydra).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1475,
+        "Coins": 2105,
+        "Gems": 2850
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_skull_reaper",
@@ -16711,7 +17900,16 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Sky Imp).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2500,
+        "Coins": 5650,
+        "Gems": 5000,
+        "All": 2450
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_slime_cube",
@@ -16763,7 +17961,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Slime Overlord).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2500,
+        "Coins": 3500,
+        "Gems": 4150
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_soul_flower",
@@ -16783,7 +17989,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Soul Flower).",
     "type": "pet",
     "shinyValue": 250,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 6695,
+        "Coins": 13535,
+        "Gems": 14550
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_space_crystal_hexarium",
@@ -16802,7 +18016,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Space Crystal Hexarium).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 40000,
+        "Coins": 130000,
+        "Gems": 140500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_space_crystal_hydra",
@@ -16821,7 +18043,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Space Crystal Hydra).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 12000,
+        "Coins": 12800,
+        "Gems": 15735
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_sparkle_time_valkyrie",
@@ -16947,7 +18177,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Spirit of Wealth).",
     "type": "pet",
     "shinyValue": 700,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 27500,
+        "Coins": 115000,
+        "Gems": 129800,
+        "All": 27500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_split",
@@ -17250,7 +18489,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Summer Bond).",
     "type": "pet",
     "shinyValue": 1050,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 27875,
+        "Coins": 96500,
+        "Gems": 105000,
+        "All": 25500
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_summer_cerberus",
@@ -17597,7 +18845,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (The Hand).",
     "type": "pet",
     "shinyValue": 2000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 11500,
+        "Coins": 37000,
+        "Gems": 51600
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_the_keeper",
@@ -17617,7 +18873,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (The Keeper).",
     "type": "pet",
     "shinyValue": 1400,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 7000,
+        "Coins": 19535,
+        "Gems": 32150
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_topaz_soul",
@@ -17763,7 +19027,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Toxic Elemental).",
     "type": "pet",
     "shinyValue": 500,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 945,
+        "Coins": 2950,
+        "Gems": 2360,
+        "Blocks": 825
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_toxic_shock",
@@ -17944,7 +19217,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Trick O' Treat).",
     "type": "pet",
     "shinyValue": 100,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 8500,
+        "Coins": 31700,
+        "Gems": 33600
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_trickster",
@@ -18210,7 +19491,16 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Unicorn Plushie).",
     "type": "pet",
     "shinyValue": 1000,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 8350,
+        "Coins": 30130,
+        "Gems": 42250,
+        "All": 8000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_unlimited_dollar",
@@ -18627,7 +19917,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wispful Heart).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 125000,
+        "Coins": 422500,
+        "Gems": 458000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_wispful_phoenix",
@@ -18646,7 +19944,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wispful Phoenix).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 29600,
+        "Coins": 118400,
+        "Gems": 133200
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_wispful_spirit",
@@ -18665,7 +19971,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wispful Spirit).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 19750,
+        "Coins": 78950,
+        "Gems": 88800
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_witches_pot",
@@ -18685,7 +19999,15 @@
     "description": "Official Legendary companion pet from BGS Collab Value List (Witches Pot).",
     "type": "pet",
     "shinyValue": 250,
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 11350,
+        "Coins": 43700,
+        "Gems": 49160
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_workclock_ultimate",
@@ -19172,7 +20494,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Apple Rabbit).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 845,
+        "Coins": 1100,
+        "Gems": 1210,
+        "All": 475
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_baby_blue_bee",
@@ -19529,7 +20860,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Bunny Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3250,
+        "Coins": 3950,
+        "Gems": 4350,
+        "All": 2610
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_bunny_ghost",
@@ -19548,7 +20888,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Bunny Ghost).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5175,
+        "Coins": 6460,
+        "Gems": 6725,
+        "All": 4135
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_bunny_wisp",
@@ -19567,7 +20916,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Bunny Wisp).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 4850,
+        "Coins": 6075,
+        "Gems": 6315,
+        "All": 3885
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_butterflynger",
@@ -19716,7 +21074,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Candycorn Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 615,
+        "Coins": 820,
+        "Gems": 800
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_carrot_boi",
@@ -20096,7 +21462,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Dark Golem).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 122,
+        "Coins": 135,
+        "Gems": 115,
+        "Pearls": 71
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_demon_bear",
@@ -20247,7 +21622,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Egg Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 90,
+        "Coins": 75,
+        "Gems": 78,
+        "All": 20
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_emerald_bunny",
@@ -20299,7 +21683,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Emerald Gem).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 375,
+        "Coins": 465,
+        "Gems": 495
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_essence_bunny",
@@ -20448,7 +21840,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Fluffy Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 535,
+        "Coins": 650,
+        "Gems": 510
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fox_plushie",
@@ -20467,7 +21867,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Fox Plushie).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 94,
+        "Coins": 104,
+        "Gems": 90,
+        "Blocks": 52
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_frankenbunny",
@@ -20683,7 +22092,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Ghost Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 185,
+        "Coins": 205,
+        "Gems": 180
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gift_box",
@@ -20735,7 +22152,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Gifted Bat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 36,
+        "Coins": 83,
+        "Gems": 46,
+        "Candy": 10
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gingerbread_house",
@@ -20754,7 +22180,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Gingerbread House).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1410,
+        "Coins": 1750,
+        "Gems": 2100
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gloom_bunny",
@@ -21037,7 +22471,15 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Hell Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 44,
+        "Coins": 52,
+        "Gems": 56
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_holy_unicorn",
@@ -21315,7 +22757,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Lucky Deer).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 60,
+        "Coins": 47,
+        "Gems": 49
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_lucky_koala",
@@ -21466,7 +22916,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Minty Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 33,
+        "Coins": 31,
+        "Gems": 27
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_money_bunny",
@@ -21583,7 +23041,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Neon Crab).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 155,
+        "Coins": 150,
+        "Gems": 145,
+        "Shells": 105
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_nickel",
@@ -21668,7 +23135,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Ocean Deer).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 110,
+        "Coins": 105,
+        "Gems": 108,
+        "Pearls": 35
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_ocean_guard",
@@ -22091,7 +23567,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Popcorn Deer).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 102,
+        "Coins": 95,
+        "Gems": 108,
+        "All": 24
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_porcupine",
@@ -22208,7 +23693,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Pumpkin Boi).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1025,
+        "Coins": 1290,
+        "Gems": 1500,
+        "All": 605
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_red_dino",
@@ -22227,7 +23721,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Red Dino).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 68,
+        "Coins": 72,
+        "Gems": 66,
+        "Stars": 16
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_red_gummy_bear",
@@ -22279,7 +23782,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Rubber Bull).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 132,
+        "Coins": 125,
+        "Gems": 99,
+        "Blocks": 65
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_ruby_bat",
@@ -22524,7 +24036,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shamrock Spirit).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2950,
+        "Coins": 3550,
+        "Gems": 3950,
+        "All": 2310
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_sheepish",
@@ -22737,7 +24258,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Snowy Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 75,
+        "Coins": 78,
+        "Gems": 70
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_space_bull",
@@ -22887,7 +24416,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Sugar Cube).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 144,
+        "Coins": 135,
+        "Gems": 162,
+        "All": 75
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_summer_shark",
@@ -23135,9 +24673,9 @@
       "movementType": "Walk",
       "chance": 49.955,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 3,
-        "Coins": 4
+        "Bubbles": 350,
+        "Coins": 900,
+        "Gems": 800
       }
     },
     "existence": {
@@ -23162,7 +24700,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Uncommon Egg).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 71,
+        "Coins": 58,
+        "Gems": 60
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_unifox",
@@ -23442,7 +24988,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Zero 2).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 65,
+        "Coins": 53,
+        "Gems": 55
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_100k_angel",
@@ -23721,7 +25275,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (700M Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 910,
+        "Coins": 1005,
+        "Gems": 750
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_700m_demon",
@@ -23802,7 +25364,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Amethyst Demon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1095,
+        "Coins": 1485,
+        "Gems": 1655,
+        "All": 870
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_angel",
@@ -23919,7 +25490,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Angelic Demon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5769,
+        "Coins": 8654,
+        "Gems": 10384,
+        "All": 4615
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_angelic_dominus",
@@ -24037,7 +25617,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Angelic Wisp).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 7650,
+        "Coins": 11475,
+        "Gems": 13775,
+        "All": 6125
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_antler_bunny",
@@ -24287,7 +25876,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Balloon Demon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 425,
+        "Coins": 405,
+        "Gems": 445,
+        "Shells": 175
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_beach_boi",
@@ -24504,7 +26102,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Blocky Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 400,
+        "Coins": 590,
+        "Gems": 425,
+        "Blocks": 205
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_blossom_dragon",
@@ -24523,7 +26130,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Blossom Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 645,
+        "Coins": 745,
+        "Gems": 755
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_blue_block",
@@ -24656,7 +26271,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Blue Lollipop).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 325,
+        "Coins": 235,
+        "Gems": 320,
+        "All": 255
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_blue_spirit",
@@ -24756,7 +26380,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Brick Shark).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 155,
+        "Coins": 172,
+        "Gems": 167,
+        "Blocks": 89
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_bunny_ears",
@@ -24889,7 +26522,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Candy Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 325,
+        "Coins": 515,
+        "Gems": 385
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_candy_piggy_stack",
@@ -24908,7 +26549,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Candy Piggy Stack).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 315,
+        "Coins": 585,
+        "Gems": 525
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_candycorn_boi",
@@ -24927,7 +26576,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Candycorn Boi).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1250,
+        "Coins": 1650,
+        "Gems": 1600
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_cartoon_dragon",
@@ -24946,7 +26603,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Cartoon Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1875,
+        "Coins": 4300,
+        "Gems": 3750
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_cartoon_unihorn",
@@ -25031,7 +26696,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Chocolate Demon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 4000,
+        "Coins": 8150,
+        "Gems": 8820,
+        "All": 3650
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_christmas_angel",
@@ -25050,7 +26724,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Christmas Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 28,
+        "Coins": 75,
+        "Gems": 71,
+        "Candy": 23
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_christmas_unicorn",
@@ -25069,7 +26752,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Christmas Unicorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 42,
+        "Coins": 65,
+        "Gems": 65,
+        "Candy": 6
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_clockwork_headphones",
@@ -25169,7 +26861,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Clover Unicorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5777,
+        "Coins": 8777,
+        "Gems": 11500,
+        "All": 4850
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_cocoa_demon",
@@ -25414,7 +27115,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Crystal Unicorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 285,
+        "Coins": 355,
+        "Gems": 585,
+        "Candy": 125
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_cupid",
@@ -25466,7 +27176,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Dark Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 350,
+        "Coins": 315,
+        "Gems": 395,
+        "Pearls": 165
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dark_dragon",
@@ -25485,7 +27204,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Dark Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 16,
+        "Coins": 22,
+        "Gems": 15
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dark_unicrab",
@@ -25504,7 +27231,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Dark Unicrab).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 335,
+        "Coins": 325,
+        "Gems": 405,
+        "Pearls": 195
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_deep_diver",
@@ -25945,7 +27681,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Diamond Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 315,
+        "Coins": 215,
+        "Gems": 280
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dragon_juggler",
@@ -25964,7 +27708,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Dragon Juggler).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1850,
+        "Coins": 4500,
+        "Gems": 2900
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_dragon_split",
@@ -26212,7 +27964,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Egg Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 185,
+        "Coins": 165,
+        "Gems": 195,
+        "All": 55
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_emerald_bat",
@@ -26624,7 +28385,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Fortune Demon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3610,
+        "Coins": 7000,
+        "Gems": 7100,
+        "All": 2820
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_frankencorn",
@@ -26902,7 +28672,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Golden Butterfly).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 285,
+        "Coins": 545,
+        "Gems": 405,
+        "Candy": 175
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_golden_dragon",
@@ -26953,7 +28732,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Gummy Shark).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 235,
+        "Coins": 215,
+        "Gems": 182
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_heartful_angel",
@@ -27129,7 +28916,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Hell Bat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 210,
+        "Coins": 345,
+        "Gems": 185
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_hellish_bunny",
@@ -27181,7 +28976,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Holy Bee).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 495,
+        "Coins": 595,
+        "Gems": 575,
+        "Blocks": 175
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_holy_wyvern",
@@ -27266,7 +29070,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Ice Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1135,
+        "Coins": 1665,
+        "Gems": 2005,
+        "All": 890
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ice_dragon",
@@ -27317,7 +29130,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Icicle Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 9150,
+        "Coins": 13700,
+        "Gems": 16450
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_icicle_demon",
@@ -27402,7 +29223,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Inferno Demon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 195,
+        "Coins": 367,
+        "Gems": 302
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_interstellar_wings",
@@ -27501,7 +29330,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Kelp Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 135,
+        "Coins": 120,
+        "Gems": 105,
+        "Pearls": 25
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_king_lobster",
@@ -27586,7 +29424,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Lavender Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 315,
+        "Coins": 245,
+        "Gems": 290
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_leaf_crown",
@@ -27653,7 +29499,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Lemon Unicorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1245,
+        "Coins": 2535,
+        "Gems": 2195,
+        "All": 1110
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lightning_demon",
@@ -27802,7 +29657,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Love Ducks).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 595,
+        "Coins": 685,
+        "Gems": 725
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_love_messenger",
@@ -27821,7 +29684,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Love Messenger).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 3410,
+        "Coins": 8100,
+        "Gems": 8530,
+        "All": 3000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lovely_unicorn",
@@ -28168,7 +30040,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Lucky Narwhal).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 625,
+        "Coins": 725,
+        "Gems": 725
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_lucky_turtle",
@@ -28350,7 +30230,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Magma Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 565,
+        "Coins": 775,
+        "Gems": 555,
+        "Magma": 385
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_manticore",
@@ -28435,7 +30324,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Money Bag).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5290,
+        "Coins": 8450,
+        "Gems": 10000,
+        "All": 4230
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_money_stack",
@@ -28776,7 +30674,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (One-Eyed Monster).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2200,
+        "Coins": 1700,
+        "Gems": 1600
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_orange_angel",
@@ -29057,7 +30963,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Pastel Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 900,
+        "Coins": 950,
+        "Gems": 915
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_patriotic_angel",
@@ -29272,7 +31186,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Pumpkin Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 255,
+        "Coins": 205,
+        "Gems": 190
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_purple_angel",
@@ -29291,7 +31213,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Purple Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 395,
+        "Coins": 485,
+        "Gems": 380,
+        "Stars": 245
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_purple_unicorn",
@@ -29439,7 +31370,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Rainbow Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 285,
+        "Coins": 280,
+        "Gems": 275
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_red_angel",
@@ -29590,7 +31529,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Red Gummy Shark).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 155,
+        "Coins": 172,
+        "Gems": 163
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_red_sparkle_time",
@@ -29689,7 +31636,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Rubber Unicorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 390,
+        "Coins": 410,
+        "Gems": 415,
+        "Blocks": 162
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ruby_angel",
@@ -29708,7 +31664,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Ruby Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 555,
+        "Coins": 685,
+        "Gems": 725
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_ruby_unicorn",
@@ -29808,7 +31772,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Sandy Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 255,
+        "Coins": 205,
+        "Gems": 180,
+        "Shells": 85
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_sandy_unicorn",
@@ -29875,7 +31848,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Santa Cube).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 8900,
+        "Coins": 13350,
+        "Gems": 16000
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_scarecrow_angel",
@@ -29894,7 +31875,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Scarecrow Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1455,
+        "Coins": 2935,
+        "Gems": 2815,
+        "All": 1510
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_scarecrow_unicorn",
@@ -29913,7 +31903,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Scarecrow Unicorn).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1390,
+        "Coins": 2750,
+        "Gems": 2985,
+        "All": 1455
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_sea_prince",
@@ -30075,7 +32074,15 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Skelly Marshmallow).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1660,
+        "Coins": 3700,
+        "Gems": 2600
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_skull",
@@ -30581,7 +32588,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (T-Rex).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 405,
+        "Coins": 450,
+        "Gems": 475,
+        "Pearls": 215
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_timeless_top_hat",
@@ -30615,7 +32631,16 @@
     },
     "description": "Official Epic companion pet from BGS Collab Value List (Topaz Angel).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1175,
+        "Coins": 1650,
+        "Gems": 1415,
+        "All": 915
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_twilight_dragon",
@@ -31284,7 +33309,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (700M Encryptor).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 695,
+        "Coins": 810,
+        "Gems": 560
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_8_bit_headphones",
@@ -31561,7 +33594,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Arctic Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 165,
+        "Coins": 143,
+        "Gems": 123,
+        "Candy": 75
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_balloon_golem",
@@ -31694,7 +33736,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Blood Crawler).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 280,
+        "Coins": 355,
+        "Gems": 305
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_blue_bull",
@@ -32003,7 +34053,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Chocolate Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 78,
+        "Coins": 91,
+        "Gems": 53
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_clown_dragon",
@@ -32088,7 +34146,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Cocoa Dragon).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 76,
+        "Coins": 105,
+        "Gems": 63,
+        "Candy": 36
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_coral_panda",
@@ -32238,7 +34305,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Dandy Lion).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 175,
+        "Coins": 185,
+        "Gems": 120
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_dare_devil_helmet",
@@ -32581,7 +34656,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Easter Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 655,
+        "Coins": 790,
+        "Gems": 690,
+        "All": 555
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_egg_bear",
@@ -32600,7 +34684,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Egg Bear).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 135,
+        "Coins": 105,
+        "Gems": 95,
+        "All": 37
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_eggy_boi",
@@ -32751,7 +34844,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Flower Pot).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 615,
+        "Coins": 735,
+        "Gems": 590
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_flying_clover",
@@ -32803,7 +34904,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Flying Coin).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 4500,
+        "Coins": 6850,
+        "Gems": 7210,
+        "All": 4000
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_flying_orc",
@@ -32921,7 +35031,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Frost Deer).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 16,
+        "Coins": 5,
+        "Gems": 9
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_frost_dragon",
@@ -33006,7 +35124,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Ghost Deer E).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 6600,
+        "Coins": 9900,
+        "Gems": 10900,
+        "All": 5275
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_gingerbread_tamer",
@@ -33025,7 +35152,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Gingerbread Tamer).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1895,
+        "Coins": 2710,
+        "Gems": 2520
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_gloom_golem",
@@ -33190,7 +35325,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Golem Plushie).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 105,
+        "Coins": 124,
+        "Gems": 92,
+        "Blocks": 78
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_golf_ball",
@@ -33616,7 +35760,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Lava Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 945,
+        "Coins": 1105,
+        "Gems": 900,
+        "All": 625
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_leaf_wizard",
@@ -33650,7 +35803,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Lemon Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 145,
+        "Coins": 205,
+        "Gems": 195
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_lion",
@@ -34189,7 +36350,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Obsidian Wolf).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 155,
+        "Coins": 172,
+        "Gems": 150,
+        "Magma": 80
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_ocean_bat",
@@ -34289,7 +36459,16 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Palm Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 80,
+        "Coins": 55,
+        "Gems": 62,
+        "Shells": 11
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_panda",
@@ -34780,7 +36959,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Sapphire Bat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 14,
+        "Coins": 11,
+        "Gems": 9
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_sapphire_gem",
@@ -35369,7 +37556,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Surprise Gift).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2350,
+        "Coins": 3705,
+        "Gems": 2920
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_sweet_crawler",
@@ -35388,7 +37583,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Sweet Crawler).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 165,
+        "Coins": 143,
+        "Gems": 123
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_unideer",
@@ -35472,7 +37675,15 @@
     },
     "description": "Official Rare companion pet from BGS Collab Value List (Void Fox).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 55,
+        "Coins": 60,
+        "Gems": 40
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_water_crab",
@@ -36142,7 +38353,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Ancient Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 80,
+        "Coins": 105,
+        "Gems": 85,
+        "Pearls": 40
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_angel_doggy",
@@ -36260,7 +38480,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Balloon Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 111,
+        "Coins": 92,
+        "Gems": 88,
+        "Shells": 44
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_balloon_mouse",
@@ -36393,7 +38622,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Beach Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 65,
+        "Coins": 80,
+        "Gems": 65,
+        "Shells": 32
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_beach_panda",
@@ -36576,7 +38814,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Blueberry Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 490,
+        "Coins": 545,
+        "Gems": 535,
+        "All": 265
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_bow_bunny",
@@ -36595,7 +38842,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Bow Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 85,
+        "Coins": 70,
+        "Gems": 70,
+        "All": 34
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_brick_bear",
@@ -36614,7 +38870,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Brick Bear).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 79,
+        "Coins": 87,
+        "Gems": 80,
+        "Blocks": 19
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_brick_doggy",
@@ -36859,7 +39124,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Bunny Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1500,
+        "Coins": 2100,
+        "Gems": 1950,
+        "All": 780
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_bunny_kitty",
@@ -37109,7 +39383,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Cave Bat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 7,
+        "Coins": 9,
+        "Gems": 6
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_cherry_dino",
@@ -37322,7 +39604,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Clover Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1320,
+        "Coins": 1750,
+        "Gems": 1510,
+        "All": 590
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_clown_bee",
@@ -37539,7 +39830,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Coral Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 80,
+        "Coins": 82,
+        "Gems": 81,
+        "Pearls": 39
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_coral_kitty",
@@ -37591,7 +39891,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Crystal Bear).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 245,
+        "Coins": 180,
+        "Gems": 165,
+        "Magma": 95
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_crystal_bunny",
@@ -37813,9 +40122,9 @@
       "movementType": "Walk",
       "chance": 25,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 6,
-        "Coins": 7
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -38042,9 +40351,9 @@
       "movementType": "Walk",
       "chance": 30,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 3,
-        "Coins": 2
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -38510,7 +40819,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Fancy Bear).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 125,
+        "Coins": 110,
+        "Gems": 85,
+        "Stars": 55
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fancy_doggy",
@@ -38562,7 +40880,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Fancy Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1310,
+        "Coins": 1500,
+        "Gems": 1260,
+        "All": 420
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fancy_mouse",
@@ -38581,7 +40908,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Fancy Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 120,
+        "Coins": 115,
+        "Gems": 78,
+        "Stars": 49
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_fedora",
@@ -38615,7 +40951,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Festive Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 270,
+        "Coins": 265,
+        "Gems": 230,
+        "All": 135
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fire_fox",
@@ -38714,7 +41059,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Fluffy Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 360,
+        "Coins": 395,
+        "Gems": 330
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_fox",
@@ -38738,9 +41091,9 @@
       "movementType": "Walk",
       "chance": 20,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 2,
-        "Coins": 2
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -38831,7 +41184,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Frost Bat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 215,
+        "Coins": 235,
+        "Gems": 216
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_frost_kitty",
@@ -38855,9 +41216,9 @@
       "movementType": "Walk",
       "chance": 25,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 6,
-        "Coins": 5
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -38882,7 +41243,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Frost Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 155,
+        "Coins": 150,
+        "Gems": 260
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_ghost_doggy",
@@ -38933,7 +41302,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Ghost Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 150,
+        "Coins": 170,
+        "Gems": 145
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gifted_mouse",
@@ -39083,7 +41460,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Gloom Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 205,
+        "Coins": 155,
+        "Gems": 145,
+        "Magma": 60
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gloom_kitty",
@@ -39155,9 +41541,9 @@
       "movementType": "Walk",
       "chance": 30,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 2,
-        "Coins": 4
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -39182,7 +41568,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Golfer Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1750,
+        "Coins": 2363,
+        "Gems": 2450,
+        "All": 928
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_golfer_kitty",
@@ -39234,7 +41629,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Gourd Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 550,
+        "Coins": 750,
+        "Gems": 650,
+        "All": 380
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_gourd_kitty",
@@ -39352,7 +41756,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Happy Duck).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1700,
+        "Coins": 2300,
+        "Gems": 2400,
+        "All": 890
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "hat_happy_hat",
@@ -39419,7 +41832,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Heart Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1210,
+        "Coins": 1800,
+        "Gems": 1660,
+        "All": 540
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_heartbroken_kitty",
@@ -39537,7 +41959,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Hell Piggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 37,
+        "Coins": 45,
+        "Gems": 36
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_hornet",
@@ -39687,7 +42117,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Icicle Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2800,
+        "Coins": 3650,
+        "Gems": 3925
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_index_reward_pets",
@@ -39706,7 +42144,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Index Reward Pets).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_jackalope_split",
@@ -39758,7 +42204,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Jolly Deer).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 880,
+        "Coins": 1290,
+        "Gems": 990
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_jolly_doggy",
@@ -39874,7 +42328,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Kelp Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 34,
+        "Coins": 39,
+        "Gems": 52,
+        "Pearls": 9
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_kitty",
@@ -39958,7 +42421,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Kitty Ghost).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2495,
+        "Coins": 3245,
+        "Gems": 3495,
+        "All": 1050
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_kitty_katty",
@@ -40075,7 +42547,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Leaf Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 500,
+        "Coins": 700,
+        "Gems": 600,
+        "All": 310
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_leaf_glasses",
@@ -40175,7 +42656,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Leprechaun Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1540,
+        "Coins": 2190,
+        "Gems": 1995,
+        "All": 690
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_lightness",
@@ -40260,7 +42750,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Lucky Bat).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 70,
+        "Coins": 66,
+        "Gems": 60
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lucky_bunny",
@@ -40311,7 +42809,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Lucky Coin).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 275,
+        "Coins": 275,
+        "Gems": 254
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_lucky_doggy",
@@ -40363,7 +42869,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Lucky Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 27,
+        "Coins": 24,
+        "Gems": 35
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_lucky_mouse",
@@ -40415,7 +42929,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Magic Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 215,
+        "Coins": 235,
+        "Gems": 216,
+        "Tickets": 95
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_magma_doggy",
@@ -40434,7 +42957,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Magma Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 5,
+        "Coins": 6,
+        "Gems": 7
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_magma_golem",
@@ -40519,7 +43050,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Meese's).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 80,
+        "Coins": 60,
+        "Gems": 72
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_milk_kitty",
@@ -40538,7 +43077,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Milk Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1250,
+        "Coins": 1340,
+        "Gems": 1060
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "hat_mischief_horns",
@@ -40572,7 +43119,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Mossy Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 65,
+        "Coins": 40,
+        "Gems": 35
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_mossy_mouse",
@@ -40662,9 +43217,9 @@
       "movementType": "Walk",
       "chance": 30,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 1,
-        "Coins": 2
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -40885,7 +43440,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Orange Dominus).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 77,
+        "Coins": 72,
+        "Gems": 71
+      },
+      "movementType": "Fly"
+    }
   },
   {
     "id": "pet_orange_golem",
@@ -40970,7 +43533,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Orange Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 85,
+        "Coins": 90,
+        "Gems": 65,
+        "Stars": 22
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_orbital_doggy",
@@ -41022,7 +43594,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Orbital Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 380,
+        "Coins": 555,
+        "Gems": 370,
+        "All": 195
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_palm_bear",
@@ -41769,7 +44350,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Rubber Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 95,
+        "Coins": 94,
+        "Gems": 85,
+        "Blocks": 42
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_ruby_doggy",
@@ -41919,7 +44509,16 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Sandy Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 64,
+        "Coins": 66,
+        "Gems": 60,
+        "Shells": 16
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_santa_bunny",
@@ -41943,9 +44542,9 @@
       "movementType": "Walk",
       "chance": 40,
       "buffs": {
-        "Bubbles": 3,
-        "Gems": 3,
-        "Coins": 2
+        "Bubbles": 25,
+        "Coins": 50,
+        "Gems": 40
       }
     },
     "existence": {
@@ -42069,7 +44668,16 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Shamrock Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 1650,
+        "Coins": 2250,
+        "Gems": 2250,
+        "All": 850
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_shamrock_kitty",
@@ -42219,7 +44827,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Skelly Kitty).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 180,
+        "Coins": 225,
+        "Gems": 160
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_sky_kitty",
@@ -42370,7 +44986,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Snowy Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 60,
+        "Coins": 37,
+        "Gems": 48
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_snowy_kitty",
@@ -42614,7 +45238,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Strawberry Bunny).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 28,
+        "Coins": 35,
+        "Gems": 29
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_strawberry_doggy",
@@ -42876,7 +45508,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Sweet Mouse).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 28,
+        "Coins": 34,
+        "Gems": 22
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_three",
@@ -43430,7 +46070,15 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wispful Doggy).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 2600,
+        "Coins": 3500,
+        "Gems": 3625
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_wolf",
@@ -43547,7 +46195,15 @@
     },
     "description": "Official Common companion pet from BGS Collab Value List (Yellow Gummy Bear).",
     "type": "pet",
-    "existence": {}
+    "existence": {},
+    "stats": {
+      "buffs": {
+        "Bubbles": 59,
+        "Coins": 66,
+        "Gems": 42
+      },
+      "movementType": "Walk"
+    }
   },
   {
     "id": "pet_yellow_wolf",
