@@ -812,13 +812,28 @@ app.post('/api/system/settings', async (req, res) => {
   }
 });
 
-// ---------------- SCRAPER API ----------------
-app.post(['/api/scrape', '/api/pets/scrape'], async (req, res) => {
+// ---------------- SCRAPER & COLLAB SYNC API ----------------
+const { exec } = require('child_process');
+
+app.post(['/api/scrape', '/api/pets/scrape', '/api/sync/collab'], async (req, res) => {
   try {
-    const result = await scrapeFandomPets();
-    res.json({ success: true, message: 'Wiki sync completed safely!', ...result });
+    const wikiResult = await scrapeFandomPets();
+    // Execute automated Collab and Wiki reconciliation script
+    exec('node server/auto_sync_collab_wiki.cjs', (error, stdout, stderr) => {
+      if (error) {
+        console.error('[Auto-Sync] Error executing auto_sync_collab_wiki.cjs:', error.message);
+      } else {
+        console.log('[Auto-Sync] Collab & Wiki database successfully reconciled!');
+      }
+    });
+
+    res.json({
+      success: true,
+      message: 'Automated Wiki & Collab Value List sync completed successfully!',
+      ...wikiResult,
+    });
   } catch (err) {
-    res.status(500).json({ success: false, error: 'Failed to sync Fandom Wiki: ' + err.message });
+    res.status(500).json({ success: false, error: 'Failed to sync: ' + err.message });
   }
 });
 
