@@ -1,0 +1,4972 @@
+[
+  {
+    "name": "Leviathan",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 67,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "N/A",
+    "normalValue": 67,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "worthless",
+    "normalValue": 69,
+    "normalDemand": 5,
+    "shinyValue": 13,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "69",
+    "normalValue": 13,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Giant Robot",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 69,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "🤵🏿🤵🏿⚰️🤵🏿🤵🏿",
+    "normalValue": 67,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "67",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Soul Heart",
+    "normalValue": 7000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "7,000",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 15000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "15,000",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Pot O' Gold",
+    "normalValue": 6500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "6,500",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 14000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "14,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 350,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Trophy",
+    "normalValue": 15000,
+    "normalDemand": 5,
+    "shinyValue": 9,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "27,500",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 255,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Easter Basket",
+    "normalValue": 7000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "15,500",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 243,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "243🥚 3✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 9000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Lord Shock",
+    "normalValue": 9000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "9,000",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 18000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "18,000",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 312,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Kraken",
+    "normalValue": 6000,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "6,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 12000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "12,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 386,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Patriotic Robot",
+    "normalValue": 7500,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "7,500",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 15000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Sinister Lord",
+    "normalValue": 17500,
+    "normalDemand": 5,
+    "shinyValue": 9,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "17,500",
+    "normalValue": 9,
+    "normalDemand": 5,
+    "shinyValue": 25000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "25,000",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 63,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Radiance",
+    "normalValue": 12500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "12,500",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 20000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "20,000",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 199,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Ultimate Trophy",
+    "normalValue": 4500,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "4,500",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 12500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Holy Bell",
+    "normalValue": 6000,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "10,000",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 593,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Tophat (A)",
+    "normalValue": 3500,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "3,500",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 11000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "11,000",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 138,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Tophat (B)",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "5,000",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Tophat (C)",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Tophat (D)",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Tophat (E)",
+    "normalValue": 8000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "8,000",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Tophat (F)",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "3,000",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 7500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Eternal Heart",
+    "normalValue": 750,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "750",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 2400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,400",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 1990,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Dark Guardian",
+    "normalValue": 2200,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,200",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 9000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Immortal One",
+    "normalValue": 4250,
+    "normalDemand": 5,
+    "shinyValue": 9,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "4,250",
+    "normalValue": 9,
+    "normalDemand": 5,
+    "shinyValue": 20500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "20,500",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 554,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Ultimate Clover",
+    "normalValue": 777,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "🤑",
+    "normalValue": 3333,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "💵",
+    "normalValue": 1469,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Robot 2.0",
+    "normalValue": 20000,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Frost Sentinel",
+    "normalValue": 3500,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Giant Choco Chicken",
+    "normalValue": 4000,
+    "normalDemand": 5,
+    "shinyValue": 10,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "4,000",
+    "normalValue": 10,
+    "normalDemand": 5,
+    "shinyValue": 13500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "10",
+    "normalValue": 13500,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "13,500",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 1005,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Wolflord",
+    "normalValue": 4500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "581🥚 9✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 30000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Godly Gem",
+    "normalValue": 30000,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "30,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 65000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "65,000",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 64,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Immortal Trophy",
+    "normalValue": 4500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "17,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 727,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "727🥚 13✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 2250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Pyramidium",
+    "normalValue": 2250,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,250",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 7250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "7,250",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 1176,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Duality",
+    "normalValue": 1200,
+    "normalDemand": 5,
+    "shinyValue": -67,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,200",
+    "normalValue": -67,
+    "normalDemand": 5,
+    "shinyValue": 4000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "-67",
+    "normalValue": 4000,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Shard",
+    "normalValue": 1600,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,600",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 7500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Plasma Wolflord",
+    "normalValue": 2200,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Radiant One",
+    "normalValue": 4500,
+    "normalDemand": 5,
+    "shinyValue": 9,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Galactic Paladin",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "9,500",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 1483,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,483🥚 27✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 950,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Electric Basilisk",
+    "normalValue": 950,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "950",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 5000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "620🥚 7✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 900,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Ice Basilisk",
+    "normalValue": 900,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "900",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 4750,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "4,750",
+    "normalValue": 1,
+    "normalDemand": 5,
+    "shinyValue": 628,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "628🥚 10✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 850,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Air Basilisk",
+    "normalValue": 850,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "850",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 4000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "641🥚 7✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Fire Basilisk",
+    "normalValue": 600,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "600",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "200",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": 665,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Overlord Plushie",
+    "normalValue": 850,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Vanilla Sundae Champion",
+    "normalValue": 2000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,000",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 7500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Mint Sundae Champion",
+    "normalValue": 1800,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,800",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 6000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Strawberry Sundae Champion",
+    "normalValue": 1500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,500",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 5750,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "5,750",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 450,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Chocolate Sundae Champion",
+    "normalValue": 2500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,500",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 10000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Eternal Cucumber",
+    "normalValue": 1000000,
+    "normalDemand": 5,
+    "shinyValue": 11,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,000,000(200)",
+    "normalValue": 11,
+    "normalDemand": 5,
+    "shinyValue": 1100,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "11",
+    "normalValue": 1100,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,100",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 6038,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Dragonfruit",
+    "normalValue": 2000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Lucid Leaf",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Almighty Pumpkin",
+    "normalValue": 600,
+    "normalDemand": 5,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Koi",
+    "normalValue": 900,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "King Slime",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "100",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "400",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 37200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Candycorn Shard",
+    "normalValue": 750,
+    "normalDemand": 5,
+    "shinyValue": 3000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Sinister Shard",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Angelic Skull",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": 12000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Guardian Skull",
+    "normalValue": 4000,
+    "normalDemand": 5,
+    "shinyValue": 15000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "King Skull",
+    "normalValue": 4000,
+    "normalDemand": 5,
+    "shinyValue": 12000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Sinister Skull",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": 13000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "13,000",
+    "normalValue": 311,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Wolf Skull",
+    "normalValue": 6000,
+    "normalDemand": 5,
+    "shinyValue": 12000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Sinister Lord 2.0",
+    "normalValue": 5500,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "5,500",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 18000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Angelic Spirit",
+    "normalValue": 550,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "550",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 2500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Luminance",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "BGS Plaque",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "70",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "300",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": 90000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Angelic Ghost Spirit",
+    "normalValue": 500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "500",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Demonic Ghost Spirit",
+    "normalValue": 500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,850",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 4989,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Dice Split",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "80",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Gingerbread Shard",
+    "normalValue": 60,
+    "normalDemand": 5,
+    "shinyValue": 1,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "60",
+    "normalValue": 1,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Morning Star",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,300",
+    "normalValue": 1,
+    "normalDemand": 5,
+    "shinyValue": 11500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Soulflake",
+    "normalValue": 700,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "700",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 5000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Archangel",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "250",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 1250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,250",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 7015,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "sircfenner Plushie",
+    "normalValue": 900,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "ObscureEntity Plushie",
+    "normalValue": 800,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "800",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 5000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Sylently Plushie",
+    "normalValue": 950,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Peppermint Leviathan",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Christmas Bell",
+    "normalValue": 150,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "150",
+    "normalValue": 3,
+    "normalDemand": 5,
+    "shinyValue": 1100,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Christmas Robot",
+    "normalValue": 2750,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,750",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 9000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Firecracker",
+    "normalValue": 300,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "New Year Champion",
+    "normalValue": 5500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "467🥚 7✨",
+    "normalValue": 1,
+    "normalDemand": 5,
+    "shinyValue": 1200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1B Trophy",
+    "normalValue": 1200,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "2,078🥚 26✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 11000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Infinity Gem",
+    "normalValue": 11000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "50,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 332,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Diamond Ring",
+    "normalValue": 500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "King Kitty",
+    "normalValue": 15000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "75,000",
+    "normalValue": 7,
+    "normalDemand": 5,
+    "shinyValue": 414,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Love Thief",
+    "normalValue": 650,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "650",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 3750,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "3,750",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 1604,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Harmonic Harp",
+    "normalValue": 600,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Lovely Rose",
+    "normalValue": 225,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "225",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 1200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Shattered Soul",
+    "normalValue": 1250,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "8,750",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 2683,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Prisma Cube",
+    "normalValue": 75,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "75",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Pot O' Doggy",
+    "normalValue": 750,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "3,428🥚 52✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 1500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Godly Shamrock",
+    "normalValue": 1500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Money Mouth",
+    "normalValue": 1500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "6,250",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 1182,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,182🥚 23✨",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 16000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Almighty Hexarium",
+    "normalValue": 16000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "16,000",
+    "normalValue": 8,
+    "normalDemand": 5,
+    "shinyValue": 80000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "80,000",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": 166,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Dream Catcher",
+    "normalValue": 450,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "450",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 2250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Lucky",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 4500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "22,000",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 515,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Easter Spirit",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 1,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Holy Egg",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Eternal Carrot",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,750",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 10080,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Cardinal Bunny",
+    "normalValue": 1200,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Patronus",
+    "normalValue": 1750,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "10,500",
+    "normalValue": 4,
+    "normalDemand": 5,
+    "shinyValue": 1431,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Easter Robot",
+    "normalValue": 6000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Corrupt Glitch",
+    "normalValue": 225,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,350",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 17441,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Hellfire",
+    "normalValue": 550,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Ace",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 0,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "25",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": 100,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Demonic Golf Ball",
+    "normalValue": 175,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "175",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Angelic Golf Ball",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Wisplord",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Ghosdeeri",
+    "normalValue": 2200,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "All Seeing Eye",
+    "normalValue": 1500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Hellshard",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Peppermint Heart",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 1,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Santa Hat",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 4,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "1,000",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Frosted Dreamer",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 2,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "350",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Frosted Shard",
+    "normalValue": 800,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Frosted Duality",
+    "normalValue": 2000,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Shadow Sundae Champion",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Shadow Wolflord",
+    "normalValue": 12500,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "35,000",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Shadow Luminance",
+    "normalValue": 20000,
+    "normalDemand": 5,
+    "shinyValue": 9,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "Shadow One",
+    "normalValue": 30000,
+    "normalDemand": 5,
+    "shinyValue": 10,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "limited-secrets"
+  },
+  {
+    "name": "The Overlord",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "50",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "The OwOlord",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 7,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Dogcat",
+    "normalValue": 900,
+    "normalDemand": 5,
+    "shinyValue": 2500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Sea Star",
+    "normalValue": 550,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Giant Pearl",
+    "normalValue": 700,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Gryphon",
+    "normalValue": 800,
+    "normalDemand": 5,
+    "shinyValue": 3000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Rainbow Dogcat",
+    "normalValue": 500,
+    "normalDemand": 5,
+    "shinyValue": 3,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Rainbow Gryphon",
+    "normalValue": 1500,
+    "normalDemand": 5,
+    "shinyValue": 4000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Fallen Angel",
+    "normalValue": 950,
+    "normalDemand": 5,
+    "shinyValue": 3750,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "King Doggy",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Dark Champion",
+    "normalValue": 1100,
+    "normalDemand": 5,
+    "shinyValue": 3000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Earth Champion",
+    "normalValue": 1500,
+    "normalDemand": 5,
+    "shinyValue": 2500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Fire Champion",
+    "normalValue": 1400,
+    "normalDemand": 5,
+    "shinyValue": 3000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "1,400",
+    "normalValue": 3000,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Sky Champion",
+    "normalValue": 1000,
+    "normalDemand": 5,
+    "shinyValue": 3500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "King Mush",
+    "normalValue": 40,
+    "normalDemand": 5,
+    "shinyValue": 0,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "40",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": 280,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "280",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Eternal Star",
+    "normalValue": 4500,
+    "normalDemand": 5,
+    "shinyValue": 7.5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "7.5",
+    "normalValue": 8500,
+    "normalDemand": 5,
+    "shinyValue": 5,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "8,500",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "Crystal Teddy",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 1,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "permanent-secrets"
+  },
+  {
+    "name": "5⚡ 0✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "O/C",
+    "normalValue": 11,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "1,000,000",
+    "normalValue": 9,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "13⚡ 1✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 1500000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "1,500,000",
+    "normalValue": 11,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "3⚡ 0✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "12⚡ 0✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "💀💀💀",
+    "normalValue": 16,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "🪦🪦🪦",
+    "normalValue": 6,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "1,200,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 17,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "850,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "150,000",
+    "normalValue": 350000,
+    "normalDemand": 5,
+    "shinyValue": 19,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "350,000",
+    "normalValue": 19,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "8,500,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "150k",
+    "normalValue": 35,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "its dogshit",
+    "normalValue": 104,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Other - 50,000Lv1 - 120,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 8,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "40,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 10,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "10⚡ 0✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Potted - 250,000E50 - 1,100,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 6,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "70,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 17,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "550,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 10,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "🪦  🪦 🪦",
+    "normalValue": 32,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "30⚡ 3✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 10000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "15,000,000,000",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 0,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "200,000",
+    "normalValue": 500000,
+    "normalDemand": 5,
+    "shinyValue": 28,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "500,000",
+    "normalValue": 28,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "28⚡1✨⚡",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Lucky Pyramidium",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Mythic Wisplord",
+    "normalValue": 7000,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Mythic Ghosdeeri",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "4⚡",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Mythic All-Seeing Eye",
+    "normalValue": 17500,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "42+⚡",
+    "normalValue": 2,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Mythic Hell Shard",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "3⚡",
+    "normalValue": 0,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Frost Shard",
+    "normalValue": 6000,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-secrets"
+  },
+  {
+    "name": "Dementor",
+    "normalValue": 80000,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Elite Challenger",
+    "normalValue": 10000,
+    "normalDemand": 5,
+    "shinyValue": 25000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "10k",
+    "normalValue": 25000,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "25k",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Elite Fallen Angel",
+    "normalValue": 7000,
+    "normalDemand": 5,
+    "shinyValue": 16000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "7k",
+    "normalValue": 16000,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "16k",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Elite Wolflord",
+    "normalValue": 8000,
+    "normalDemand": 5,
+    "shinyValue": 35000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "8k",
+    "normalValue": 35000,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "35k",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 1,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "200🎉",
+    "normalValue": 1,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "1 Shiny Made!",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 4000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Elite Lord Shock",
+    "normalValue": 4000,
+    "normalDemand": 5,
+    "shinyValue": 30000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "4k",
+    "normalValue": 30000,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "30k",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Elite Pot O' Gold",
+    "normalValue": 2000,
+    "normalDemand": 5,
+    "shinyValue": 25000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "2k",
+    "normalValue": 25000,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Elite Sentinel",
+    "normalValue": 2000,
+    "normalDemand": 5,
+    "shinyValue": 20000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "20k",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "leaderboard-pets-and-miscellaneous-secrets"
+  },
+  {
+    "name": "Dual Lord",
+    "normalValue": 125,
+    "normalDemand": 8,
+    "shinyValue": 1000,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "S.1 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "GOOD",
+    "normalValue": 1000,
+    "normalDemand": 8,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "S.1 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Shade Demon",
+    "normalValue": 80,
+    "normalDemand": 8,
+    "shinyValue": 800,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "S.2 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Light Demon",
+    "normalValue": 70,
+    "normalDemand": 8,
+    "shinyValue": 600,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "S.3 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Pufferfish",
+    "normalValue": 90,
+    "normalDemand": 8,
+    "shinyValue": 600,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "S.4 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Dark Soul",
+    "normalValue": 400,
+    "normalDemand": 8,
+    "shinyValue": 250,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "S.5 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Night Terror",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "S.6 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "AVERAGE",
+    "normalValue": 2000,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "S.6 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Angel Of Darkness",
+    "normalValue": 175,
+    "normalDemand": 5,
+    "shinyValue": 1750,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "S.7 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Yin Yang",
+    "normalValue": 150,
+    "normalDemand": 5,
+    "shinyValue": 1500,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "S.8 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "The Keeper",
+    "normalValue": 140,
+    "normalDemand": 5,
+    "shinyValue": 1400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.9 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Eclipse",
+    "normalValue": 130,
+    "normalDemand": 5,
+    "shinyValue": 1300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.10 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Topaz Soul",
+    "normalValue": 120,
+    "normalDemand": 5,
+    "shinyValue": 1200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.11 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Crimson Bell",
+    "normalValue": 120,
+    "normalDemand": 5,
+    "shinyValue": 1200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.12 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Amethyst Dogcat",
+    "normalValue": 120,
+    "normalDemand": 5,
+    "shinyValue": 1200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.13 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Eternal Darkness",
+    "normalValue": 110,
+    "normalDemand": 5,
+    "shinyValue": 1100,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.14 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Glacial Bond",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.15 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Stocking",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.16 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Starlord",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.17 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Flushed",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.18 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Nebula Valkyrie",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.19 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Monochrome",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.20 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Summer Bond",
+    "normalValue": 105,
+    "normalDemand": 5,
+    "shinyValue": 1050,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "S.21 Prem",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Bruh",
+    "normalValue": 69,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-pass-pets"
+  },
+  {
+    "name": "Note: OLD REWARD PETS GET OPS",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Rudolph Shock",
+    "normalValue": 300,
+    "normalDemand": 5,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Lenny Box",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Elephant Plushie",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 350,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Dragon Plushie",
+    "normalValue": 120,
+    "normalDemand": 8,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Kraken Couplet",
+    "normalValue": 40,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Galactic Shock",
+    "normalValue": 90,
+    "normalDemand": 5,
+    "shinyValue": 900,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Overseer",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Lucky Tophat",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Toxic Demon",
+    "normalValue": 100,
+    "normalDemand": 8,
+    "shinyValue": 800,
+    "shinyDemand": 8,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Molten Split",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Easter Overlord",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Chocolate Chicken",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "BAD",
+    "normalValue": 800,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Toxic terror",
+    "normalValue": 90,
+    "normalDemand": 5,
+    "shinyValue": 900,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Spring Dragon",
+    "normalValue": 90,
+    "normalDemand": 5,
+    "shinyValue": 900,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Spring Spirit",
+    "normalValue": 40,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Rabbit Plushie",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Clown Emoji",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Queen Kitty",
+    "normalValue": 600,
+    "normalDemand": 8,
+    "shinyValue": 400,
+    "shinyDemand": 8,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Unicorn Plushie",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 1000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "LOL",
+    "normalValue": 250,
+    "normalDemand": 8,
+    "shinyValue": 1500,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Autumn Spirit",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Magic Bottle",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Luna",
+    "normalValue": 60,
+    "normalDemand": 5,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "The Hand",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Hallowed Spirit",
+    "normalValue": 45,
+    "normalDemand": 5,
+    "shinyValue": 450,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Bruh Bandit",
+    "normalValue": 5,
+    "normalDemand": 5,
+    "shinyValue": 50,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Gift Mimic",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Queen Snowman",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Comet in a Bottle",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 700,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Fairy in a Bottle",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 100,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Bruhette",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Lucky Tophat 2.0",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Gold Overseer",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Spirit of Wealth",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 700,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Stargazer",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 700,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Carrot Defender",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Easter Warden",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Bunny of Discord",
+    "normalValue": 200,
+    "normalDemand": 5,
+    "shinyValue": 1800,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "reward-shop-challenge-pass-and-quest-pets"
+  },
+  {
+    "name": "Index Reward Pets",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 60,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Crazy Cat Stack",
+    "normalValue": 60,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Gummy Pals",
+    "normalValue": 200,
+    "normalDemand": 8,
+    "shinyValue": 1000,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Teddy Bear",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Holy Crab",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "King Pufferfish",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Rainbow Master",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Infernal Master",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Chromatic Cube",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "index-reward-pets"
+  },
+  {
+    "name": "Dowodle",
+    "normalValue": 15000,
+    "normalDemand": 8,
+    "shinyValue": 50000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Beta TV",
+    "normalValue": 10000,
+    "normalDemand": 8,
+    "shinyValue": 25000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Dark Serpent",
+    "normalValue": 30000,
+    "normalDemand": 8,
+    "shinyValue": 180000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Infernus",
+    "normalValue": 10000,
+    "normalDemand": 8,
+    "shinyValue": 30000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Enraged Phoenix",
+    "normalValue": 5000,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Christmas Elemental",
+    "normalValue": 4000,
+    "normalDemand": 8,
+    "shinyValue": 20000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Electra Hydra",
+    "normalValue": 6000,
+    "normalDemand": 8,
+    "shinyValue": 15000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Merry Marshmallow",
+    "normalValue": 200,
+    "normalDemand": 8,
+    "shinyValue": 1600,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Lucky Dominus",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Candy Winged Hydra",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Toxic Elemental",
+    "normalValue": 75,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Sea Urchin",
+    "normalValue": 75,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Atlantis Guardian",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Demoncore",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "OG Box",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Tormentor",
+    "normalValue": 600,
+    "normalDemand": 5,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Frostbite",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Mythic Frostbite",
+    "normalValue": 300,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Ice Overlord",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Clockwork",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Mythic Clockwork",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Lovesick",
+    "normalValue": 300,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Mythic Lovesick",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Spirit of Fortune",
+    "normalValue": 150,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Mythic Spirit of Fortune",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "robux-and-gamepass-pets"
+  },
+  {
+    "name": "Bubble and Egg Prize Pets",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 35,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Evil Shock",
+    "normalValue": 35,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "1M Eggs Prize",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 30,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Holy Shock",
+    "normalValue": 30,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "King Soul",
+    "normalValue": 350,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "King Leviathan",
+    "normalValue": 300,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Dark Radiance",
+    "normalValue": 650,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Dark Lord",
+    "normalValue": 600,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Demonic One",
+    "normalValue": 110,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Demonic Dogcat",
+    "normalValue": 90,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "bubble-and-egg-prize-pets"
+  },
+  {
+    "name": "Festive Serpent",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Minty Serpent",
+    "normalValue": 80,
+    "normalDemand": 5,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Minty Hydra",
+    "normalValue": 125,
+    "normalDemand": 5,
+    "shinyValue": 900,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Peppermint Hydra",
+    "normalValue": 350,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Winter Phoenix",
+    "normalValue": 65,
+    "normalDemand": 8,
+    "shinyValue": 450,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Marshmallow",
+    "normalValue": 60,
+    "normalDemand": 8,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Gold Marshmallow",
+    "normalValue": 100,
+    "normalDemand": 8,
+    "shinyValue": 700,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Frost Winged Hydra",
+    "normalValue": 200,
+    "normalDemand": 8,
+    "shinyValue": 1200,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Ice Winged Hydra",
+    "normalValue": 2000,
+    "normalDemand": 8,
+    "shinyValue": 2000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Golden Pegasus",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 350,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Golden Hybrid",
+    "normalValue": 500,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Festivus",
+    "normalValue": 700,
+    "normalDemand": 5,
+    "shinyValue": 2400,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Gummy Winged Hydra",
+    "normalValue": 50,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Twitch Golem",
+    "normalValue": 1750,
+    "normalDemand": 8,
+    "shinyValue": 8000,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Partner Serpent",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Partner Unicorn",
+    "normalValue": 100000,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "ogs"
+  },
+  {
+    "name": "Keep In Mind Each Shiny T3 (200-250) is around 10 in secret value!",
+    "normalValue": 2018,
+    "normalDemand": 5,
+    "shinyValue": 5000,
+    "shinyDemand": 8,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "2018 Overlord",
+    "normalValue": 5000,
+    "normalDemand": 8,
+    "shinyValue": 7000,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Diamond Overlord",
+    "normalValue": 600,
+    "normalDemand": 8,
+    "shinyValue": 1000,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "OG T2",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 750,
+    "shinyDemand": 8,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Valentium",
+    "normalValue": 750,
+    "normalDemand": 8,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Lucky Overlord",
+    "normalValue": 450,
+    "normalDemand": 8,
+    "shinyValue": 175,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Queen Overlord",
+    "normalValue": 500,
+    "normalDemand": 8,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Chocolate Bunny",
+    "normalValue": 650,
+    "normalDemand": 8,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Summer Cerberus",
+    "normalValue": 150,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Platinum Overlord",
+    "normalValue": 550,
+    "normalDemand": 8,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Patriotic Penguin",
+    "normalValue": 600,
+    "normalDemand": 8,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "OG T3",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 350,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Super Hexarium",
+    "normalValue": 350,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Diamond Tamer",
+    "normalValue": 30,
+    "normalDemand": 5,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "King Snowman",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Dark Omen",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Valentine Shock",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Radiant Protector",
+    "normalValue": 30,
+    "normalDemand": 8,
+    "shinyValue": 300,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Guardian Elemental",
+    "normalValue": 15,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Toxic Shock",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Galactic Bunny",
+    "normalValue": 15,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Easter Guardian",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Iridium Prisma",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Glitch",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Soul Flower",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Sakuralord",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Galaxium",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Gem Overlord",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Shadow Raven",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Shadow Hunter",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Axolotl Plushie",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "BGS Bucket",
+    "normalValue": 40,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Citrus Overlord",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Eternal Pumpkin",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Trick O' Treat",
+    "normalValue": 10,
+    "normalDemand": 5,
+    "shinyValue": 100,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Witches Pot",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Skull Reaper",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Cartoon Hexarium",
+    "normalValue": 15,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Eternal Contrast",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Twin Snowballs",
+    "normalValue": 10,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Demonic Peppermint",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Demonic Fireplace",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "2020 Overlord",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "1B Marsh",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Royalty",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Love Soul",
+    "normalValue": 15,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Chocolate Gift",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Lucky Horseshoe",
+    "normalValue": 15,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Unlimited Dollar",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Trifolium Spirit",
+    "normalValue": 25,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Easter Bunny",
+    "normalValue": 15,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Sunlord",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Demonlord",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "Golflord",
+    "normalValue": 20,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "t3s"
+  },
+  {
+    "name": "NOTE: The Value / Amount Hatched of old mythic t3s is currently being discussed. Do not take current collab values as 100% accuracy.",
+    "normalValue": null,
+    "normalDemand": 5,
+    "shinyValue": 500,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t3s"
+  },
+  {
+    "name": "Pastel Hexarium",
+    "normalValue": 500,
+    "normalDemand": 5,
+    "shinyValue": null,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t3s"
+  },
+  {
+    "name": "Golford",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 150,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t3s"
+  },
+  {
+    "name": "Wisp Phoenix",
+    "normalValue": 100,
+    "normalDemand": 5,
+    "shinyValue": 100,
+    "shinyDemand": 5,
+    "trend": "Dropping",
+    "origin": "",
+    "sourcePage": "mythic-t3s"
+  },
+  {
+    "name": "Immortal Pumpkin",
+    "normalValue": 300,
+    "normalDemand": 5,
+    "shinyValue": 250,
+    "shinyDemand": 5,
+    "trend": "Dropping",
+    "origin": "",
+    "sourcePage": "mythic-t3s"
+  },
+  {
+    "name": "Fangseeker",
+    "normalValue": 500,
+    "normalDemand": 8,
+    "shinyValue": 450,
+    "shinyDemand": 8,
+    "trend": "Dropping",
+    "origin": "",
+    "sourcePage": "mythic-t3s"
+  },
+  {
+    "name": "Mythic Cursed Scorpio",
+    "normalValue": 90,
+    "normalDemand": 8,
+    "shinyValue": 600,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Blossom Protector",
+    "normalValue": 150,
+    "normalDemand": 8,
+    "shinyValue": 900,
+    "shinyDemand": 8,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Paragon",
+    "normalValue": 100,
+    "normalDemand": 8,
+    "shinyValue": 800,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic CORE",
+    "normalValue": 70,
+    "normalDemand": 5,
+    "shinyValue": 400,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Light Phoenix",
+    "normalValue": 400,
+    "normalDemand": 5,
+    "shinyValue": 200,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Ocelot",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 125,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Prismatic Paragon",
+    "normalValue": 250,
+    "normalDemand": 5,
+    "shinyValue": 125,
+    "shinyDemand": 5,
+    "trend": "Stable",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Lemonade Master",
+    "normalValue": 1000,
+    "normalDemand": 5,
+    "shinyValue": 450,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Flower Queen",
+    "normalValue": 4000,
+    "normalDemand": 5,
+    "shinyValue": 8000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  },
+  {
+    "name": "Mythic Sugar Heart",
+    "normalValue": 3800,
+    "normalDemand": 5,
+    "shinyValue": 7000,
+    "shinyDemand": 5,
+    "trend": "Rising",
+    "origin": "",
+    "sourcePage": "mythic-t2s"
+  }
+]
