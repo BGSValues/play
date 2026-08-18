@@ -441,62 +441,42 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
                   </div>
                 </div>
 
-                {/* BOTTOM ACTION BAR: Status controls & Trade Removal */}
+                {/* BOTTOM ACTION BAR: Status controls & Trade Ledger */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.4rem' }}>
-                  <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
                     {/* Status Management */}
                     {isOpen && (
                       <>
                         <button
-                          style={{ background: 'rgba(255,204,0,0.15)', border: '1px solid rgba(255,204,0,0.4)', color: '#ffcc00', padding: '0.3rem 0.65rem', borderRadius: '8px', fontSize: '0.73rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '3px' }}
+                          style={{ background: 'rgba(255,204,0,0.15)', border: '1px solid rgba(255,204,0,0.4)', color: '#ffcc00', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                           onClick={() => handleMarkStatus(list.id, 'completed')}
                           title="Mark this trade deal as completed"
                         >
-                          <CheckCircle2 size={13} /> Mark Done
+                          <CheckCircle2 size={14} /> Trade Completed
                         </button>
                         <button
-                          style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid rgba(255,23,68,0.4)', color: '#ff1744', padding: '0.3rem 0.65rem', borderRadius: '8px', fontSize: '0.73rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '3px' }}
+                          style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid rgba(255,23,68,0.4)', color: '#ff1744', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                           onClick={() => handleMarkStatus(list.id, 'cancelled')}
                           title="Cancel this trade offer"
                         >
-                          <XCircle size={13} /> Cancel Trade
+                          <XCircle size={14} /> Trade Cancelled
                         </button>
                       </>
                     )}
 
                     {isClosed && (
                       <button
-                        style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid rgba(16,185,129,0.4)', color: '#10b981', padding: '0.3rem 0.65rem', borderRadius: '8px', fontSize: '0.73rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '3px' }}
+                        style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid rgba(16,185,129,0.4)', color: '#10b981', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                         onClick={() => handleMarkStatus(list.id, 'open')}
                       >
-                        Re-open Trade
+                        🔄 Re-open Trade
                       </button>
                     )}
                   </div>
 
-                  {/* USER RIGHT TO REMOVE TRADE */}
-                  {canDelete && (
-                    <button
-                      style={{
-                        background: 'rgba(239, 68, 68, 0.1)',
-                        border: '1px solid rgba(239, 68, 68, 0.35)',
-                        color: '#ef4444',
-                        padding: '0.3rem 0.65rem',
-                        borderRadius: '8px',
-                        fontSize: '0.73rem',
-                        fontWeight: 800,
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        marginLeft: 'auto'
-                      }}
-                      onClick={() => handleDeleteListing(list.id)}
-                      title="Remove this trade from the marketplace"
-                    >
-                      <Trash2 size={13} /> Remove Trade
-                    </button>
-                  )}
+                  <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700, marginLeft: 'auto' }}>
+                    📜 Verified Trade Record #{list.id.slice(-6)}
+                  </div>
                 </div>
               </div>
             );

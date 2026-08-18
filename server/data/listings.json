@@ -1,1 +1,183 @@
-[]
+[
+  {
+    "id": "list_1",
+    "traderName": "tnbURRdXAI",
+    "robloxUsername": "tnbURRdXAI",
+    "discord": "tnb_trader#1234",
+    "tag": "FAIR",
+    "status": "open",
+    "type": "sell",
+    "isVerified": true,
+    "createdAt": "2026-08-18T09:00:00.000Z",
+    "offering": [
+      {
+        "name": "Dominus Astra",
+        "rarity": "Legendary",
+        "value": 250000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9c/Dominus_Astra.png/revision/latest"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Fallen Angel",
+        "rarity": "Legendary",
+        "value": 224655,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d6/Mythic_Fallen_Angel.png/revision/latest"
+      }
+    ]
+  },
+  {
+    "id": "list_2",
+    "traderName": "De4thKid1",
+    "robloxUsername": "De4thKid1",
+    "discord": "de4thkid_bgs",
+    "tag": "OVERPAY",
+    "status": "completed",
+    "type": "sell",
+    "isVerified": true,
+    "createdAt": "2026-08-18T08:50:00.000Z",
+    "offering": [
+      {
+        "name": "Shadow Challenger",
+        "rarity": "Legendary",
+        "value": 223593,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/Shadow_Challenger.png/revision/latest"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Elite Sentinel",
+        "rarity": "Legendary",
+        "value": 222515,
+        "demand": 9,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4d/Elite_Sentinel.png/revision/latest"
+      }
+    ]
+  },
+  {
+    "id": "list_3",
+    "traderName": "aizen_ggz",
+    "robloxUsername": "aizen_ggz",
+    "discord": "aizen#5566",
+    "tag": "FAIR",
+    "status": "open",
+    "type": "sell",
+    "isVerified": true,
+    "createdAt": "2026-08-18T08:40:00.000Z",
+    "offering": [
+      {
+        "name": "Godly Shamrock",
+        "rarity": "Legendary",
+        "value": 222602,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8e/Godly_Shamrock.png/revision/latest"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Kraken",
+        "rarity": "Secret",
+        "value": 200000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fa/Kraken.png/revision/latest"
+      }
+    ]
+  },
+  {
+    "id": "list_4",
+    "traderName": "ignacio3207",
+    "robloxUsername": "ignacio3207",
+    "discord": "ignacio_trade",
+    "tag": "UNDERPAY",
+    "status": "cancelled",
+    "type": "sell",
+    "isVerified": true,
+    "createdAt": "2026-08-18T08:30:00.000Z",
+    "offering": [
+      {
+        "name": "The Overlord",
+        "rarity": "Secret",
+        "value": 220000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Mythic_The_Overlord.png/revision/latest"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Leviathan",
+        "rarity": "Secret",
+        "value": 180000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9a/Leviathan.png/revision/latest"
+      }
+    ]
+  },
+  {
+    "id": "list_5",
+    "traderName": "xStarDust",
+    "robloxUsername": "xStarDust",
+    "discord": "stardust#9090",
+    "tag": "FAIR",
+    "status": "completed",
+    "type": "sell",
+    "isVerified": true,
+    "createdAt": "2026-08-18T08:20:00.000Z",
+    "offering": [
+      {
+        "name": "Wolflord",
+        "rarity": "Secret",
+        "value": 190000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/53/Wolflord.png/revision/latest"
+      },
+      {
+        "name": "Pyramidium",
+        "rarity": "Secret",
+        "value": 170000,
+        "demand": 9,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Pyramidium.png/revision/latest"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "King Dogcat",
+        "rarity": "Secret",
+        "value": 230000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e9/King_Dogcat.png/revision/latest"
+      }
+    ]
+  },
+  {
+    "id": "list_6",
+    "traderName": "Owner_Admin",
+    "robloxUsername": "BGS_Owner_Official",
+    "discord": "Owner#0001",
+    "tag": "OVERPAY",
+    "status": "open",
+    "type": "sell",
+    "isVerified": true,
+    "createdAt": "2026-08-18T08:10:00.000Z",
+    "offering": [
+      {
+        "name": "Lord Shock",
+        "rarity": "Secret",
+        "value": 350000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8b/Lord_Shock.png/revision/latest"
+      }
+    ],
+    "requesting": [
+      {
+        "name": "Dark Lord Shock",
+        "rarity": "Secret",
+        "value": 320000,
+        "demand": 10,
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/07/Dark_Lord_Shock.png/revision/latest"
+      }
+    ]
+  }
+]
