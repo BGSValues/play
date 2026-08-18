@@ -4,7 +4,7 @@ import PetAvatar from './PetAvatar';
 import PetDetailsModal from './PetDetailsModal';
 import { getDemandInfo, getTrendInfo } from '../utils/demandSystem';
 
-const PETS_PER_PAGE = 100;
+const PETS_PER_PAGE = 50;
 
 // Universal BGS Variant Value & Multiplier Helper
 export function getPetVariantValue(item, variant) {
