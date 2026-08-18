@@ -348,7 +348,10 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   const handleBanUser = async (userId, username) => {
     if (!window.confirm(`Are you sure you want to BAN @${username}? Their listings will be removed.`)) return;
     try {
-      const res = await fetch(`/api/admin/users/${userId}/ban`, { method: 'POST' });
+      const res = await fetch(`/api/admin/users/${userId}/ban`, {
+        method: 'POST',
+        headers: { 'x-user-id': currentUser?.id || '' },
+      });
       const data = await res.json();
       if (data.success) {
         setMsg({ type: 'success', text: data.message });
@@ -363,7 +366,10 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
 
   const handleUnbanUser = async (userId, username) => {
     try {
-      const res = await fetch(`/api/admin/users/${userId}/unban`, { method: 'POST' });
+      const res = await fetch(`/api/admin/users/${userId}/unban`, {
+        method: 'POST',
+        headers: { 'x-user-id': currentUser?.id || '' },
+      });
       const data = await res.json();
       if (data.success) {
         setMsg({ type: 'success', text: data.message });
@@ -376,11 +382,16 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
 
   const handleKickUser = async (userId, username) => {
     try {
-      const res = await fetch(`/api/admin/users/${userId}/kick`, { method: 'POST' });
+      const res = await fetch(`/api/admin/users/${userId}/kick`, {
+        method: 'POST',
+        headers: { 'x-user-id': currentUser?.id || '' },
+      });
       const data = await res.json();
       if (data.success) {
         setMsg({ type: 'success', text: data.message });
         fetchUsers();
+      } else {
+        setMsg({ type: 'error', text: data.error });
       }
     } catch {
       setMsg({ type: 'error', text: 'Failed to kick user.' });
@@ -393,7 +404,7 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
     try {
       const res = await fetch(`/api/admin/users/${user.id}/role`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-user-id': currentUser?.id || '' },
         body: JSON.stringify({ role: nextRole, rank: nextRank }),
       });
       const data = await res.json();
@@ -409,11 +420,16 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   const handleDeleteUser = async (userId, username) => {
     if (!window.confirm(`Permanently delete @${username}'s account? This action cannot be undone.`)) return;
     try {
-      const res = await fetch(`/api/admin/users/${userId}`, { method: 'DELETE' });
+      const res = await fetch(`/api/admin/users/${userId}`, {
+        method: 'DELETE',
+        headers: { 'x-user-id': currentUser?.id || '' },
+      });
       const data = await res.json();
       if (data.success) {
         setMsg({ type: 'success', text: data.message });
         fetchUsers();
+      } else {
+        setMsg({ type: 'error', text: data.error });
       }
     } catch {
       setMsg({ type: 'error', text: 'Failed to delete user.' });
@@ -941,53 +957,63 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                       </td>
 
                       <td style={{ padding: '0.75rem 1rem', textAlign: 'right' }}>
-                        <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end' }}>
-                          {user.status === 'banned' ? (
-                            <button
-                              onClick={() => handleUnbanUser(user.id, user.username)}
-                              style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid #10b981', color: '#10b981', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
-                              title="Unban Account"
-                            >
-                              <UserCheck size={14} /> Unban
-                            </button>
-                          ) : (
-                            <button
-                              onClick={() => handleBanUser(user.id, user.username)}
-                              style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid #ff1744', color: '#ff1744', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
-                              title="Ban and delete trades"
-                            >
-                              <UserX size={14} /> Ban
-                            </button>
-                          )}
+                        {user.role === 'owner' ? (
+                          <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ffcc00', display: 'inline-flex', alignItems: 'center', gap: '4px', background: 'rgba(255,204,0,0.1)', padding: '4px 10px', borderRadius: '6px', border: '1px solid rgba(255,204,0,0.3)' }}>
+                            🛡️ Protected Owner
+                          </span>
+                        ) : user.id === currentUser?.id ? (
+                          <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#00e5ff', display: 'inline-flex', alignItems: 'center', gap: '4px', background: 'rgba(0,229,255,0.1)', padding: '4px 10px', borderRadius: '6px', border: '1px solid rgba(0,229,255,0.3)' }}>
+                            👤 You (Active)
+                          </span>
+                        ) : (
+                          <div style={{ display: 'flex', gap: '6px', justifyContent: 'flex-end' }}>
+                            {user.status === 'banned' ? (
+                              <button
+                                onClick={() => handleUnbanUser(user.id, user.username)}
+                                style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid #10b981', color: '#10b981', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                                title="Unban Account"
+                              >
+                                <UserCheck size={14} /> Unban
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => handleBanUser(user.id, user.username)}
+                                style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid #ff1744', color: '#ff1744', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                                title="Ban and delete trades"
+                              >
+                                <UserX size={14} /> Ban
+                              </button>
+                            )}
 
-                          <button
-                            onClick={() => handleKickUser(user.id, user.username)}
-                            style={{ background: 'rgba(234,179,8,0.15)', border: '1px solid #eab308', color: '#eab308', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
-                            title="Force Logout / Kick Session"
-                          >
-                            <LogOut size={14} /> Kick
-                          </button>
-
-                          {isOwner && user.role !== 'owner' && (
                             <button
-                              onClick={() => handleToggleRole(user)}
-                              style={{ background: 'rgba(124,58,237,0.15)', border: '1px solid #7c3aed', color: '#a78bfa', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
-                              title={user.role === 'mod' ? 'Demote to Member' : 'Promote to Moderator'}
+                              onClick={() => handleKickUser(user.id, user.username)}
+                              style={{ background: 'rgba(234,179,8,0.15)', border: '1px solid #eab308', color: '#eab308', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                              title="Force Logout / Kick Session"
                             >
-                              {user.role === 'mod' ? 'Demote' : 'Promote Mod'}
+                              <LogOut size={14} /> Kick
                             </button>
-                          )}
 
-                          {isOwner && user.role !== 'owner' && (
-                            <button
-                              onClick={() => handleDeleteUser(user.id, user.username)}
-                              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid var(--glass-border)', color: '#64748b', padding: '4px 6px', borderRadius: '6px', cursor: 'pointer' }}
-                              title="Delete Account"
-                            >
-                              <Trash2 size={14} />
-                            </button>
-                          )}
-                        </div>
+                            {isOwner && user.role !== 'owner' && (
+                              <button
+                                onClick={() => handleToggleRole(user)}
+                                style={{ background: 'rgba(124,58,237,0.15)', border: '1px solid #7c3aed', color: '#a78bfa', padding: '4px 8px', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer' }}
+                                title={user.role === 'mod' ? 'Demote to Member' : 'Promote to Moderator'}
+                              >
+                                {user.role === 'mod' ? 'Demote' : 'Promote Mod'}
+                              </button>
+                            )}
+
+                            {isOwner && user.role !== 'owner' && (
+                              <button
+                                onClick={() => handleDeleteUser(user.id, user.username)}
+                                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid var(--glass-border)', color: '#64748b', padding: '4px 6px', borderRadius: '6px', cursor: 'pointer' }}
+                                title="Delete Account"
+                              >
+                                <Trash2 size={14} />
+                              </button>
+                            )}
+                          </div>
+                        )}
                       </td>
                     </tr>
                   ))

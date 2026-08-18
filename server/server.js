@@ -275,9 +275,19 @@ app.get('/api/admin/users', async (req, res) => {
 app.post('/api/admin/users/:id/ban', async (req, res) => {
   try {
     const { id } = req.params;
+    const requesterId = req.headers['x-user-id'];
+
     const users = await getData(USERS_FILE);
     const user = users.find((u) => u.id === id);
     if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    if (user.role === 'owner') {
+      return res.status(403).json({ success: false, error: 'Protected Account: Root Owner cannot be banned.' });
+    }
+
+    if (requesterId && requesterId === user.id) {
+      return res.status(400).json({ success: false, error: 'Action Blocked: You cannot ban your own account.' });
+    }
 
     user.status = 'banned';
     user.bannedAt = new Date().toISOString();
@@ -316,9 +326,19 @@ app.post('/api/admin/users/:id/unban', async (req, res) => {
 app.post('/api/admin/users/:id/kick', async (req, res) => {
   try {
     const { id } = req.params;
+    const requesterId = req.headers['x-user-id'];
+
     const users = await getData(USERS_FILE);
     const user = users.find((u) => u.id === id);
     if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    if (user.role === 'owner') {
+      return res.status(403).json({ success: false, error: 'Protected Account: Root Owner cannot be kicked.' });
+    }
+
+    if (requesterId && requesterId === user.id) {
+      return res.status(400).json({ success: false, error: 'Action Blocked: You cannot kick your own account.' });
+    }
 
     user.status = 'kicked';
     user.kickedAt = new Date().toISOString();
@@ -339,6 +359,10 @@ app.put('/api/admin/users/:id/role', async (req, res) => {
     const user = users.find((u) => u.id === id);
     if (!user) return res.status(404).json({ success: false, error: 'User not found' });
 
+    if (user.role === 'owner') {
+      return res.status(403).json({ success: false, error: 'Root Owner role cannot be demoted or changed.' });
+    }
+
     user.role = role || user.role;
     user.rank = rank || (role === 'owner' ? 'Owner & Lead Dev' : role === 'mod' ? 'Head Moderator' : 'Verified Trader');
     await saveData(USERS_FILE, users);
@@ -353,9 +377,19 @@ app.put('/api/admin/users/:id/role', async (req, res) => {
 app.delete('/api/admin/users/:id', async (req, res) => {
   try {
     const { id } = req.params;
+    const requesterId = req.headers['x-user-id'];
+
     const users = await getData(USERS_FILE);
     const user = users.find((u) => u.id === id);
     if (!user) return res.status(404).json({ success: false, error: 'User not found' });
+
+    if (user.role === 'owner') {
+      return res.status(403).json({ success: false, error: 'Protected Account: Root Owner cannot be deleted.' });
+    }
+
+    if (requesterId && requesterId === user.id) {
+      return res.status(400).json({ success: false, error: 'Action Blocked: You cannot delete your own account.' });
+    }
 
     const updatedUsers = users.filter((u) => u.id !== id);
     await saveData(USERS_FILE, updatedUsers);
