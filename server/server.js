@@ -838,6 +838,22 @@ app.post(['/api/scrape', '/api/pets/scrape', '/api/sync/collab', '/api/sync/auto
   }
 });
 
+// ---------------- AUTOMATED RECURRING BACKGROUND SYNC TIMER ----------------
+const AUTO_SYNC_INTERVAL_HOURS = 12;
+setInterval(() => {
+  console.log(`[Auto-Sync Timer] Triggering scheduled ${AUTO_SYNC_INTERVAL_HOURS}-hour value & wiki reconciliation...`);
+  import('child_process').then(({ exec }) => {
+    exec('node server/auto_sync_engine.cjs', (error, stdout) => {
+      if (error) {
+        console.error('[Auto-Sync Timer] Error in scheduled run:', error.message);
+      } else {
+        console.log('[Auto-Sync Timer] Scheduled sync successfully executed:\n', stdout);
+      }
+    });
+  });
+}, AUTO_SYNC_INTERVAL_HOURS * 60 * 60 * 1000);
+
 app.listen(PORT, () => {
   console.log(`[Server] Bubble Gum Simulator API backend running at http://localhost:${PORT}`);
+  console.log(`[Server] Automated sync engine active (runs every ${AUTO_SYNC_INTERVAL_HOURS} hours)`);
 });
