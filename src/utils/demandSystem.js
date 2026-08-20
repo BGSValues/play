@@ -36,7 +36,10 @@ export function getDemandInfo(demand) {
   };
 }
 
-export function getTrendInfo(trend) {
+export function getTrendInfo(trend, value) {
+  if (value === null || value === undefined || value <= 0) {
+    return { label: 'N/A', symbol: '—', color: '#64748b' };
+  }
   const norm = (trend || 'Stable').trim();
   if (norm === 'N/A' || !norm) {
     return { label: 'N/A', symbol: '—', color: '#64748b' };

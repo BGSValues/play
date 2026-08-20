@@ -228,7 +228,7 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
               <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '10px', padding: '0.75rem', textAlign: 'center' }}>
                 <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>Trend</div>
                 {(() => {
-                  const t = getTrendInfo(pet.status);
+                  const t = getTrendInfo(pet.status, currentVal);
                   return (
                     <div style={{ fontSize: '1.1rem', fontWeight: 800, color: t.color, marginTop: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px' }}>
                       <span>{t.symbol}</span> <span>{t.label}</span>

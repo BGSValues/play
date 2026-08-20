@@ -392,7 +392,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   <div className="stat-row">
                     <span className="stat-label">Trend</span>
                     {(() => {
-                      const t = getTrendInfo(item.status);
+                      const t = getTrendInfo(item.status, calculatedValue);
                       return (
                         <span style={{ fontWeight: 800, color: t.color, display: 'flex', alignItems: 'center', gap: '3px' }}>
                           <span>{t.symbol}</span> <span>{t.label}</span>
