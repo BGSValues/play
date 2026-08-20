@@ -201,7 +201,7 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
               <div style={{ background: '#0a0b10', border: '1px solid var(--glass-border)', borderRadius: '10px', padding: '0.75rem', textAlign: 'center' }}>
                 <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>Demand</div>
                 {(() => {
-                  const d = getDemandInfo(pet.demand);
+                  const d = getDemandInfo(currentVal ? pet.demand : null);
                   return (
                     <div
                       style={{

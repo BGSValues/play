@@ -16,12 +16,14 @@ export function getPetVariantValue(item, variant) {
 
   switch (variant) {
     case 'Shiny':
-      return item.customValues?.shiny || item.shinyValue || Math.round(item.baseValue * 2.5);
+      return item.customValues?.shiny || item.shinyValue || (typeof item.baseValue === 'number' ? Math.round(item.baseValue * 2.5) : null);
     case 'Mythic':
-      return item.customValues?.mythic || item.mythicValue || Math.round(item.baseValue * 10);
+      // BGS Collab Standard: Mythic values only exist if explicitly priced on the Collab list
+      return item.customValues?.mythic || item.mythicValue || null;
     case 'ShinyMythic':
     case 'S.Myth':
-      return item.customValues?.shinyMythic || item.shinyMythicValue || Math.round((item.shinyValue || (item.baseValue * 2.5)) * 10);
+      // BGS Collab Standard: Shiny Mythic values only exist if explicitly priced on the Collab list
+      return item.customValues?.shinyMythic || item.shinyMythicValue || null;
     case 'Normal':
     default:
       return item.baseValue;

@@ -231,7 +231,7 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
             <div style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.6rem', textAlign: 'center' }}>
               <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', marginBottom: '2px' }}>Demand</div>
               {(() => {
-                const d = getDemandInfo(pet.demand);
+                const d = getDemandInfo(currentVal ? pet.demand : null);
                 return (
                   <div
                     style={{
