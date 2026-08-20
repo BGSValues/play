@@ -21,6 +21,7 @@ import TradeCalculator from './components/TradeCalculator';
 import AdminPanel from './components/AdminPanel';
 import Marketplace from './components/Marketplace';
 import Guides from './components/Guides';
+import AboutUs from './components/AboutUs';
 import EggsList from './components/EggsList';
 import PetDetailsPage from './components/PetDetailsPage';
 import LoginModal from './components/LoginModal';
@@ -290,6 +291,9 @@ export default function App() {
           <button className={`nav-btn ${activeTab === 'guides' ? 'active' : ''}`} onClick={() => handleTabChange('guides')}>
             <BookOpen size={17} /> Guides
           </button>
+          <button className={`nav-btn ${activeTab === 'about-us' ? 'active' : ''}`} onClick={() => handleTabChange('about-us')}>
+            <Users size={17} /> About Us
+          </button>
         </nav>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
@@ -353,6 +357,7 @@ export default function App() {
           <TradeCalculator pets={pets} sideA={sideA} setSideA={setSideA} sideB={sideB} setSideB={setSideB} />
         )}
         {activeTab === 'guides' && <Guides initialSection={guidesSection} />}
+        {activeTab === 'about-us' && <AboutUs />}
         {activeTab === 'admin' && (
           <AdminPanel
             pets={pets}
