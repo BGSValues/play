@@ -47675,7 +47675,7 @@
     "baseValue": null,
     "demand": null,
     "status": "N/A",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Antlers.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/56/Ornamental_Antlers.png/revision/latest?cb=20201219004211",
     "description": "Equippable Hat accessory in Bubble Gum Simulator (Antlers).",
     "multipliers": null,
     "stats": {
@@ -47738,7 +47738,7 @@
     "baseValue": null,
     "demand": null,
     "status": "N/A",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Hats_by_stat_rating.png",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/37/Hatching_Skull_Reaper_and_Trickster/revision/latest?cb=20201012163127",
     "description": "Equippable Hat accessory in Bubble Gum Simulator (Hats by stat rating).",
     "multipliers": null,
     "stats": {
@@ -48835,7 +48835,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Mythic_Hell_Shard.png/revision/latest",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/RobloxScreenShot20201221_094152268.png/revision/latest?cb=20201222181414",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -48963,7 +48963,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Hats",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Mr._Snowman's_Tophat.png/revision/latest",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Mr._Snowman%27s_Top_Hat.png/revision/latest?cb=20201219004103",
     "multipliers": null,
     "description": "Official Unique companion item from BGS Collab Value List (Mr. Snowman's Tophat).",
     "stats": null,
