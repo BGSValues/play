@@ -814,23 +814,24 @@ app.post('/api/system/settings', async (req, res) => {
   }
 });
 
-// ---------------- SCRAPER & COLLAB SYNC API ----------------
-app.post(['/api/scrape', '/api/pets/scrape', '/api/sync/collab'], async (req, res) => {
+// ---------------- SCRAPER & COLLAB AUTO-SYNC API ----------------
+app.post(['/api/scrape', '/api/pets/scrape', '/api/sync/collab', '/api/sync/auto'], async (req, res) => {
   try {
-    const wikiResult = await scrapeFandomPets();
-    // Execute automated Collab and Wiki reconciliation script
-    exec('node server/auto_sync_collab_wiki.cjs', (error, stdout, stderr) => {
+    const { exec } = await import('child_process');
+    exec('node server/auto_sync_engine.cjs', async (error, stdout, stderr) => {
       if (error) {
-        console.error('[Auto-Sync] Error executing auto_sync_collab_wiki.cjs:', error.message);
-      } else {
-        console.log('[Auto-Sync] Collab & Wiki database successfully reconciled!');
+        console.error('[Auto-Sync] Error executing auto_sync_engine.cjs:', error.message);
+        return res.status(500).json({ success: false, error: error.message });
       }
-    });
-
-    res.json({
-      success: true,
-      message: 'Automated Wiki & Collab Value List sync completed successfully!',
-      ...wikiResult,
+      console.log('[Auto-Sync Output]:\n', stdout);
+      const pets = await getData(PETS_FILE);
+      return res.json({
+        success: true,
+        message: 'Wiki and Collab values synchronized automatically!',
+        totalPets: pets.length,
+        output: stdout,
+        timestamp: new Date().toISOString(),
+      });
     });
   } catch (err) {
     res.status(500).json({ success: false, error: 'Failed to sync: ' + err.message });

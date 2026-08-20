@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist",
     "server": "node server/server.js",
     "scrape": "node server/scraper.js",
+    "sync": "node server/auto_sync_engine.cjs",
     "start": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {

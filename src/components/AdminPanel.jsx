@@ -565,16 +565,19 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
     setScraping(true);
     setMsg(null);
     try {
-      const res = await fetch('/api/pets/scrape', { method: 'POST' });
+      const res = await fetch('/api/sync/auto', { method: 'POST' });
       const data = await res.json();
       if (data.success) {
-        setMsg({ type: 'success', text: `Sync complete! Synced ${data.total} items (${data.updatedRarities || 0} rarities verified, values preserved).` });
+        setMsg({
+          type: 'success',
+          text: `🎉 Auto-Sync Complete! Synchronized ${data.totalPets || 'all'} database pets & hats with latest Wiki and Collab list updates.`
+        });
         if (onRefreshPets) onRefreshPets();
       } else {
-        setMsg({ type: 'error', text: data.error || 'Scrape failed' });
+        setMsg({ type: 'error', text: data.error || 'Auto-Sync failed' });
       }
     } catch (err) {
-      setMsg({ type: 'error', text: 'Server error during Wiki sync.' });
+      setMsg({ type: 'error', text: 'Server error during Auto-Sync.' });
     } finally {
       setScraping(false);
     }
@@ -1099,23 +1102,28 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
               </div>
             </div>
 
-            {/* Sync Wiki Card */}
-            <div className="glass-card" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            {/* Auto-Sync Engine Card */}
+            <div className="glass-card" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', border: '1px solid rgba(0, 229, 255, 0.3)', background: 'linear-gradient(180deg, rgba(0, 229, 255, 0.04) 0%, rgba(10, 11, 16, 0.8) 100%)' }}>
               <div>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Download size={20} color="#00e5ff" /> Sync with Official Fandom Wiki
-                </h3>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                  <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <RefreshCw size={20} color="#00e5ff" className={scraping ? 'spin' : ''} /> Automated Live Sync Engine
+                  </h3>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 900, background: 'rgba(0, 229, 255, 0.2)', border: '1px solid #00e5ff', color: '#00e5ff', padding: '2px 8px', borderRadius: '6px' }}>
+                    WIKI + COLLAB LIST
+                  </span>
+                </div>
                 <p style={{ color: '#94a3b8', fontSize: '0.88rem', margin: '0 0 1.25rem 0', lineHeight: 1.5 }}>
-                  Automatically pull the newest pets, transparent 3D asset renders, and base statistics from the BGS MediaWiki API.
+                  Automatically crawls and reconciles all 16+ Collab Value categories, detects brand new in-game eggs/pets from the BGS Fandom Wiki API, and refreshes demand ratings and hatched existence counts.
                 </p>
               </div>
               <button
                 className="btn-primary"
                 onClick={handleSyncWiki}
                 disabled={scraping}
-                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '0.8rem', background: 'linear-gradient(135deg, #00e5ff, #0284c7)' }}
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '0.8rem', background: 'linear-gradient(135deg, #00e5ff, #7c3aed)', fontWeight: 900, boxShadow: '0 0 20px rgba(0, 229, 255, 0.3)' }}
               >
-                <RefreshCw size={16} className={scraping ? 'spin' : ''} /> {scraping ? 'Syncing MediaWiki...' : 'Run Wiki Scraper Sync'}
+                <RefreshCw size={16} className={scraping ? 'spin' : ''} /> {scraping ? 'Running Automated Sync Pipeline...' : '⚡ Run Full Auto-Sync (Wiki + Collab)'}
               </button>
             </div>
           </div>
