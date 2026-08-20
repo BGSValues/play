@@ -3,8 +3,8 @@
     "id": "pet_1b_trophy",
     "name": "1B Trophy",
     "rarity": "Secret",
-    "baseValue": 1200,
-    "demand": 3,
+    "baseValue": 40000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/02/Mythic_1B_Trophy.png/revision/latest?cb=20210102050027",
@@ -17,7 +17,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (1B Trophy).",
     "existence": {
       "normal": "332",
-      "shiny": "2",
+      "shiny": "0",
       "mythic": "10",
       "shinyMythic": "0"
     },
@@ -51,7 +51,7 @@
     "id": "pet_ace",
     "name": "ACE",
     "rarity": "Secret",
-    "baseValue": 25,
+    "baseValue": 550,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -70,7 +70,7 @@
       "shinyMythic": "9+"
     },
     "customValues": {
-      "shiny": 100,
+      "shiny": 500,
       "mythic": 500,
       "shinyMythic": 1500
     },
@@ -173,8 +173,8 @@
     "id": "pet_almighty_hexarium",
     "name": "Almighty Hexarium",
     "rarity": "Secret",
-    "baseValue": 16000,
-    "demand": 8,
+    "baseValue": 15000000000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3b/Mythic_Almighty_Hexarium.png/revision/latest?cb=20210307010949",
@@ -187,7 +187,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Almighty Hexarium).",
     "existence": {
       "normal": "4,671",
-      "shiny": "62",
+      "shiny": "0",
       "mythic": "0",
       "shinyMythic": "0"
     },
@@ -234,13 +234,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Almighty Pumpkin).",
     "existence": {
-      "normal": "1,499",
-      "shiny": "27",
+      "normal": "3,730",
+      "shiny": "50",
       "mythic": "22",
       "shinyMythic": "2"
     },
     "customValues": {
-      "shiny": 3730,
+      "shiny": 2000,
       "mythic": 3730,
       "shinyMythic": 2000
     },
@@ -302,8 +302,8 @@
     "id": "pet_angelic_spirit",
     "name": "Angelic Spirit",
     "rarity": "Secret",
-    "baseValue": 550,
-    "demand": 4,
+    "baseValue": 150000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2d/Mythic_Angelic_Spirit.png/revision/latest?cb=20201009233058",
@@ -316,12 +316,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Angelic Spirit).",
     "existence": {
       "normal": "699",
-      "shiny": "11",
+      "shiny": "1",
       "mythic": "19",
       "shinyMythic": "1"
     },
     "customValues": {
-      "shiny": 2500,
+      "shiny": 350000,
       "mythic": 19,
       "shinyMythic": 2
     },
@@ -350,7 +350,7 @@
     "id": "pet_archangel",
     "name": "Archangel",
     "rarity": "Secret",
-    "baseValue": 250,
+    "baseValue": 20000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -364,7 +364,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Archangel).",
     "existence": {
       "normal": "1,282",
-      "shiny": "24",
+      "shiny": "3",
       "mythic": "78",
       "shinyMythic": "3"
     },
@@ -434,8 +434,8 @@
     "id": "pet_bgs_plaque",
     "name": "BGS Plaque",
     "rarity": "Secret",
-    "baseValue": 70,
-    "demand": 3,
+    "baseValue": 2000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Mythic_BGS_Plaque.png/revision/latest?cb=20201023232005",
@@ -448,12 +448,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (BGS Plaque).",
     "existence": {
       "normal": "4,950",
-      "shiny": "79",
+      "shiny": "14",
       "mythic": "445",
       "shinyMythic": "14"
     },
     "customValues": {
-      "shiny": 300,
+      "shiny": 5000,
       "mythic": 445,
       "shinyMythic": 5000
     },
@@ -483,7 +483,7 @@
     "id": "pet_candycorn_shard",
     "name": "Candycorn Shard",
     "rarity": "Secret",
-    "baseValue": 750,
+    "baseValue": 45000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -497,7 +497,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Candycorn Shard).",
     "existence": {
       "normal": "321",
-      "shiny": "5",
+      "shiny": "1",
       "mythic": "14",
       "shinyMythic": "1"
     },
@@ -532,7 +532,7 @@
     "id": "pet_cardinal_bunny",
     "name": "Cardinal Bunny",
     "rarity": "Secret",
-    "baseValue": 1200,
+    "baseValue": 35000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -546,7 +546,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Cardinal Bunny).",
     "existence": {
       "normal": "1,431",
-      "shiny": "32",
+      "shiny": "0",
       "mythic": "17",
       "shinyMythic": "0"
     },
@@ -615,8 +615,8 @@
     "id": "pet_christmas_bell",
     "name": "Christmas Bell",
     "rarity": "Secret",
-    "baseValue": 150,
-    "demand": 3,
+    "baseValue": 8500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/87/Mythic_Christmas_Bell.png/revision/latest?cb=20201218225156",
@@ -629,12 +629,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Christmas Bell).",
     "existence": {
       "normal": "968",
-      "shiny": "22",
+      "shiny": "2",
       "mythic": "104",
       "shinyMythic": "2"
     },
     "customValues": {
-      "shiny": 1100,
+      "shiny": 4000,
       "mythic": 104,
       "shinyMythic": 2
     },
@@ -677,8 +677,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Christmas Robot).",
     "existence": {
-      "normal": "5,552",
-      "shiny": "102",
+      "normal": "968",
+      "shiny": "22",
       "mythic": "8",
       "shinyMythic": "0"
     },
@@ -768,8 +768,8 @@
     "id": "pet_corrupt_glitch",
     "name": "Corrupt Glitch",
     "rarity": "Secret",
-    "baseValue": 225,
-    "demand": 4,
+    "baseValue": 2500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/cc/Mythic_Corrupt_Glitch.png/revision/latest?cb=20210430231519",
@@ -782,12 +782,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Corrupt Glitch).",
     "existence": {
       "normal": "2,865",
-      "shiny": "26",
+      "shiny": "3",
       "mythic": "212",
       "shinyMythic": "3"
     },
     "customValues": {
-      "shiny": 1350,
+      "shiny": 4000,
       "mythic": 212,
       "shinyMythic": 5
     },
@@ -844,8 +844,8 @@
     "id": "pet_crystal_teddy",
     "name": "Crystal Teddy",
     "rarity": "Secret",
-    "baseValue": 200,
-    "demand": 1,
+    "baseValue": 5500,
+    "demand": 3,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c0/Mythic_Crystal_Teddy.png/revision/latest?cb=20200605193558",
@@ -857,7 +857,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Crystal Teddy).",
     "existence": {
-      "shiny": "9",
+      "shiny": "0",
       "mythic": "5",
       "shinyMythic": "0",
       "normal": "823"
@@ -1028,7 +1028,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Dark Guardian).",
     "existence": {
       "normal": "1,386",
-      "shiny": "7"
+      "shiny": "20"
     },
     "customValues": {
       "shiny": 9000,
@@ -1375,7 +1375,7 @@
     "id": "pet_diamond_ring",
     "name": "Diamond Ring",
     "rarity": "Secret",
-    "baseValue": 500,
+    "baseValue": 14500,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -1389,7 +1389,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Diamond Ring).",
     "existence": {
       "normal": "414",
-      "shiny": "6",
+      "shiny": "0",
       "mythic": "81",
       "shinyMythic": "0"
     },
@@ -1424,7 +1424,7 @@
     "id": "pet_dice_split",
     "name": "Dice Split",
     "rarity": "Secret",
-    "baseValue": 80,
+    "baseValue": 4500,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -1438,12 +1438,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Dice Split).",
     "existence": {
       "normal": "92,000",
-      "shiny": "1,169",
+      "shiny": "3",
       "mythic": "215",
       "shinyMythic": "3"
     },
     "customValues": {
-      "shiny": 500,
+      "shiny": 12000,
       "mythic": 215,
       "shinyMythic": 2
     },
@@ -1486,11 +1486,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dogcat).",
     "existence": {
-      "shiny": "6",
-      "normal": "657"
+      "shiny": "5",
+      "normal": "356"
     },
     "customValues": {
-      "shiny": 550
+      "shiny": 2500
     },
     "stats": {
       "buffs": {
@@ -1515,8 +1515,8 @@
     "id": "pet_dragonfruit",
     "name": "Dragonfruit",
     "rarity": "Secret",
-    "baseValue": 2000,
-    "demand": 8,
+    "baseValue": 1200000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e4/Mythic_Dragonfruit.png/revision/latest?cb=20200828235307",
@@ -1529,7 +1529,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Dragonfruit).",
     "existence": {
       "normal": "11,700",
-      "shiny": "177",
+      "shiny": "0",
       "mythic": "17",
       "shinyMythic": "0"
     },
@@ -1564,8 +1564,8 @@
     "id": "pet_dream_catcher",
     "name": "Dream Catcher",
     "rarity": "Secret",
-    "baseValue": 450,
-    "demand": 4,
+    "baseValue": 200000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/31/Dream_Catcher.png/revision/latest?cb=20210319205330",
@@ -1578,12 +1578,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Dream Catcher).",
     "existence": {
       "normal": "4,671",
-      "shiny": "62",
+      "shiny": "1",
       "mythic": "✨",
       "shinyMythic": "1"
     },
     "customValues": {
-      "shiny": 2250,
+      "shiny": 500000,
       "mythic": 28,
       "shinyMythic": 2
     },
@@ -1610,7 +1610,7 @@
     "id": "pet_duality",
     "name": "Duality",
     "rarity": "Secret",
-    "baseValue": 1200,
+    "baseValue": 11,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -1624,7 +1624,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Duality).",
     "existence": {
       "normal": "1,273",
-      "shiny": "17",
+      "shiny": "0",
       "mythic": "???+",
       "shinyMythic": "???+"
     },
@@ -1669,7 +1669,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Basket).",
     "existence": {
-      "normal": "312",
+      "normal": "243",
       "shiny": "3"
     },
     "customValues": {
@@ -1712,8 +1712,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Robot).",
     "existence": {
-      "normal": "17,441",
-      "shiny": "197",
+      "normal": "309",
+      "shiny": "7",
       "mythic": "3",
       "shinyMythic": "0"
     },
@@ -1747,8 +1747,8 @@
     "id": "pet_easter_spirit",
     "name": "Easter Spirit",
     "rarity": "Secret",
-    "baseValue": 80,
-    "demand": 1,
+    "baseValue": 7000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1d/Mythic_Easter_Spirit.png/revision/latest?cb=20210402225742",
@@ -1761,14 +1761,14 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Easter Spirit).",
     "existence": {
       "normal": "6,303",
-      "shiny": "121",
+      "shiny": "5",
       "mythic": "193",
       "shinyMythic": "5",
       "eggOrigin": "Holy Egg",
       "note": "Holy Egg"
     },
     "customValues": {
-      "shiny": 450,
+      "shiny": 16000,
       "mythic": 193,
       "shinyMythic": 1
     },
@@ -1818,7 +1818,7 @@
       "movementType": "Fly"
     },
     "customValues": {
-      "shiny": 200,
+      "shiny": 25000,
       "mythic": 200
     },
     "variants": [
@@ -1851,7 +1851,7 @@
       "movementType": "Fly"
     },
     "customValues": {
-      "shiny": 200,
+      "shiny": 16000,
       "mythic": 200
     },
     "variants": [
@@ -1883,7 +1883,7 @@
       "movementType": "Fly"
     },
     "customValues": {
-      "shiny": 200,
+      "shiny": 30000,
       "mythic": 200
     },
     "variants": [
@@ -1916,7 +1916,7 @@
       "movementType": "Walk"
     },
     "customValues": {
-      "shiny": 200,
+      "shiny": 25000,
       "mythic": 200,
       "shinyMythic": 1
     },
@@ -1950,7 +1950,7 @@
       "movementType": "Fly"
     },
     "customValues": {
-      "shiny": 200,
+      "shiny": 20000,
       "mythic": 200
     },
     "variants": [
@@ -1982,7 +1982,7 @@
       "movementType": "Fly"
     },
     "customValues": {
-      "shiny": 200,
+      "shiny": 35000,
       "mythic": 200,
       "shinyMythic": 1
     },
@@ -1996,8 +1996,8 @@
     "id": "pet_eternal_carrot",
     "name": "Eternal Carrot",
     "rarity": "Secret",
-    "baseValue": 400,
-    "demand": 3,
+    "baseValue": 7500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f6/Eternal_Carrot.png/revision/latest?cb=20210402225610",
@@ -2010,12 +2010,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Carrot).",
     "existence": {
       "normal": "2,053",
-      "shiny": "32",
+      "shiny": "3",
       "mythic": "74",
       "shinyMythic": "3"
     },
     "customValues": {
-      "shiny": 1750,
+      "shiny": 20000,
       "mythic": 74,
       "shinyMythic": 2
     },
@@ -2044,8 +2044,8 @@
     "id": "pet_eternal_cucumber",
     "name": "Eternal Cucumber",
     "rarity": "Secret",
-    "baseValue": 1000000,
-    "demand": 11,
+    "baseValue": 15000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/68/Mythic_Eternal_Cucumber.png/revision/latest?cb=20200828230851",
@@ -2058,7 +2058,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Cucumber).",
     "existence": {
       "normal": "1,436",
-      "shiny": "23",
+      "shiny": "1",
       "mythic": "47",
       "shinyMythic": "1"
     },
@@ -2103,8 +2103,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Heart).",
     "existence": {
-      "normal": "1,386",
-      "shiny": "20"
+      "normal": "1,990",
+      "shiny": "23"
     },
     "customValues": {
       "shiny": 2400,
@@ -2141,11 +2141,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Eternal Star).",
     "existence": {
-      "shiny": "9",
-      "normal": "823"
+      "shiny": "2",
+      "normal": "118"
     },
     "customValues": {
-      "shiny": 8500,
+      "shiny": 7.5,
       "mythic": 8500,
       "shinyMythic": 5
     },
@@ -2212,11 +2212,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Fallen Angel).",
     "existence": {
-      "shiny": "3",
-      "normal": "182"
+      "shiny": "15",
+      "normal": "645"
     },
     "customValues": {
-      "shiny": 3000
+      "shiny": 3750
     },
     "stats": {
       "buffs": {
@@ -2241,8 +2241,8 @@
     "id": "pet_firecracker",
     "name": "Firecracker",
     "rarity": "Secret",
-    "baseValue": 300,
-    "demand": 4,
+    "baseValue": 12500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ce/Mythic_Firecracker.png/revision/latest?cb=20210101213413",
@@ -2255,7 +2255,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Firecracker).",
     "existence": {
       "normal": "467",
-      "shiny": "7",
+      "shiny": "1",
       "mythic": "44",
       "shinyMythic": "1"
     },
@@ -2299,8 +2299,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Frost Sentinel).",
     "existence": {
-      "normal": "1,005",
-      "shiny": "15"
+      "normal": "897",
+      "shiny": "9"
     },
     "customValues": {
       "shiny": 11000,
@@ -2362,8 +2362,8 @@
     "id": "pet_frosted_dreamer",
     "name": "Frosted Dreamer",
     "rarity": "Secret",
-    "baseValue": 100,
-    "demand": 2,
+    "baseValue": 700,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9b/Frosted_Dreamer.png/revision/latest?cb=20211224034624",
@@ -2380,7 +2380,7 @@
       "shinyMythic": "???+"
     },
     "customValues": {
-      "shiny": 350,
+      "shiny": 1500,
       "mythic": 350,
       "shinyMythic": 2
     },
@@ -2441,8 +2441,8 @@
     "id": "pet_galactic_paladin",
     "name": "Galactic Paladin",
     "rarity": "Secret",
-    "baseValue": 3000,
-    "demand": 7,
+    "baseValue": 5000,
+    "demand": 6,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e6/Mythic_Galactic_Paladin.png/revision/latest?cb=20200711205149",
@@ -2455,7 +2455,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Galactic Paladin).",
     "existence": {
       "normal": "620",
-      "shiny": "7",
+      "shiny": "1",
       "mythic": "12",
       "shinyMythic": "0"
     },
@@ -2577,8 +2577,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Choco Chicken).",
     "existence": {
-      "normal": "581",
-      "shiny": "9"
+      "normal": "1,005",
+      "shiny": "15"
     },
     "customValues": {
       "shiny": 13500,
@@ -2619,8 +2619,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Pearl).",
     "existence": {
-      "shiny": "7",
-      "normal": "472"
+      "shiny": "6",
+      "normal": "475"
     },
     "customValues": {
       "shiny": 5000,
@@ -2650,7 +2650,7 @@
     "id": "pet_giant_robot",
     "name": "Giant Robot",
     "rarity": "Secret",
-    "baseValue": null,
+    "baseValue": 69,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -2661,8 +2661,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Giant Robot).",
     "existence": {
-      "normal": "400",
-      "shiny": "4",
+      "normal": "7",
+      "shiny": "1",
       "note": "Unobtainable"
     },
     "stats": {
@@ -2688,8 +2688,8 @@
     "id": "pet_gingerbread_shard",
     "name": "Gingerbread Shard",
     "rarity": "Secret",
-    "baseValue": 60,
-    "demand": 1,
+    "baseValue": 500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/ca/Mythic_Gingerbread_Shard.png/revision/latest?cb=20201204230635",
@@ -2702,12 +2702,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Gingerbread Shard).",
     "existence": {
       "normal": "11,500",
-      "shiny": "131",
+      "shiny": "10",
       "mythic": "565",
       "shinyMythic": "10"
     },
     "customValues": {
-      "shiny": 300,
+      "shiny": 1500,
       "mythic": 565,
       "shinyMythic": 1
     },
@@ -2748,8 +2748,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Godly Gem).",
     "existence": {
-      "normal": "727",
-      "shiny": "13"
+      "normal": "64",
+      "shiny": "0"
     },
     "customValues": {
       "shiny": 65000,
@@ -2777,7 +2777,7 @@
     "id": "pet_godly_shamrock",
     "name": "Godly Shamrock",
     "rarity": "Secret",
-    "baseValue": 1500,
+    "baseValue": 10000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -2791,7 +2791,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Godly Shamrock).",
     "existence": {
       "normal": "1,182",
-      "shiny": "23",
+      "shiny": "0",
       "mythic": "6",
       "shinyMythic": "0"
     },
@@ -2882,11 +2882,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Gryphon).",
     "existence": {
-      "shiny": "5",
-      "normal": "608"
+      "shiny": "7",
+      "normal": "472"
     },
     "customValues": {
-      "shiny": 500
+      "shiny": 3000
     },
     "stats": {
       "buffs": {
@@ -2911,7 +2911,7 @@
     "id": "pet_harmonic_harp",
     "name": "Harmonic Harp",
     "rarity": "Secret",
-    "baseValue": 600,
+    "baseValue": 550000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -2925,7 +2925,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Harmonic Harp).",
     "existence": {
       "normal": "52,600",
-      "shiny": "677",
+      "shiny": "0",
       "mythic": "10",
       "shinyMythic": "0"
     },
@@ -2959,8 +2959,8 @@
     "id": "pet_hellfire",
     "name": "Hellfire",
     "rarity": "Secret",
-    "baseValue": 550,
-    "demand": 3,
+    "baseValue": 15500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4e/Hellfire.png/revision/latest?cb=20210430231945",
@@ -2973,7 +2973,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Hellfire).",
     "existence": {
       "normal": "2,865",
-      "shiny": "26",
+      "shiny": "0",
       "mythic": "42",
       "shinyMythic": "0"
     },
@@ -3063,8 +3063,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Holy Bell).",
     "existence": {
-      "normal": "138",
-      "shiny": "3"
+      "normal": "593",
+      "shiny": "6"
     },
     "customValues": {
       "shiny": 10000,
@@ -3092,8 +3092,8 @@
     "id": "pet_holy_egg",
     "name": "Holy Egg",
     "rarity": "Secret",
-    "baseValue": 250,
-    "demand": 2,
+    "baseValue": 12500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Holy_Egg.png/revision/latest?cb=20210402230105",
@@ -3106,7 +3106,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Holy Egg).",
     "existence": {
       "normal": "10,080",
-      "shiny": "209",
+      "shiny": "1",
       "mythic": "54",
       "shinyMythic": "1"
     },
@@ -3177,8 +3177,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Immortal One).",
     "existence": {
-      "normal": "1,469",
-      "shiny": "13"
+      "normal": "554",
+      "shiny": "7"
     },
     "customValues": {
       "shiny": 20500,
@@ -3217,8 +3217,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Immortal Trophy).",
     "existence": {
-      "normal": "1,176",
-      "shiny": "9"
+      "normal": "727",
+      "shiny": "13"
     },
     "customValues": {
       "shiny": 17000,
@@ -3291,8 +3291,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Infinity Gem).",
     "existence": {
-      "normal": "7,890",
-      "shiny": "164",
+      "normal": "332",
+      "shiny": "2",
       "note": "Unobtainable / Unhatched in game"
     },
     "customValues": {
@@ -3389,7 +3389,7 @@
       "ShinyMythic"
     ],
     "existence": {
-      "normal": "252",
+      "normal": "182",
       "shiny": "3"
     }
   },
@@ -3410,8 +3410,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Kitty).",
     "existence": {
-      "normal": "1,604",
-      "shiny": "17",
+      "normal": "414",
+      "shiny": "6",
       "mythic": "6",
       "shinyMythic": "0"
     },
@@ -3456,8 +3456,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (King Mush).",
     "existence": {
-      "shiny": "2",
-      "normal": "118"
+      "shiny": "14",
+      "normal": "1397"
     },
     "customValues": {
       "shiny": 280
@@ -3545,8 +3545,8 @@
     "id": "pet_king_slime",
     "name": "King Slime",
     "rarity": "Secret",
-    "baseValue": 100,
-    "demand": 3,
+    "baseValue": 2000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/82/Mythic_King_Slime.png/revision/latest?cb=20201002222132",
@@ -3559,12 +3559,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (King Slime).",
     "existence": {
       "normal": "1,835",
-      "shiny": "12",
+      "shiny": "2",
       "mythic": "227",
       "shinyMythic": "2"
     },
     "customValues": {
-      "shiny": 400,
+      "shiny": 5000,
       "mythic": 227,
       "shinyMythic": 3
     },
@@ -3607,8 +3607,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Koi).",
     "existence": {
-      "normal": "37,200",
-      "shiny": "372",
+      "normal": "1,499",
+      "shiny": "27",
       "mythic": "12",
       "shinyMythic": "0"
     },
@@ -3654,8 +3654,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Kraken).",
     "existence": {
-      "normal": "331",
-      "shiny": "4"
+      "normal": "386",
+      "shiny": "1"
     },
     "customValues": {
       "shiny": 12000,
@@ -3695,8 +3695,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Leviathan).",
     "existence": {
-      "normal": "7",
-      "shiny": "1",
+      "normal": "13",
+      "shiny": "0",
       "mythic": "7",
       "shinyMythic": "0"
     },
@@ -3735,8 +3735,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Lord Shock).",
     "existence": {
-      "normal": "386",
-      "shiny": "1"
+      "normal": "312",
+      "shiny": "3"
     },
     "customValues": {
       "shiny": 18000,
@@ -3765,8 +3765,8 @@
     "id": "pet_love_thief",
     "name": "Love Thief",
     "rarity": "Secret",
-    "baseValue": 650,
-    "demand": 6,
+    "baseValue": 70000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/62/Love_Thief.png/revision/latest?cb=20210213002949",
@@ -3779,7 +3779,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Love Thief).",
     "existence": {
       "normal": "1,791",
-      "shiny": "23",
+      "shiny": "0",
       "mythic": "17",
       "shinyMythic": "0"
     },
@@ -3813,8 +3813,8 @@
     "id": "pet_lovely_rose",
     "name": "Lovely Rose",
     "rarity": "Secret",
-    "baseValue": 225,
-    "demand": 4,
+    "baseValue": 1250,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/69/Mythic_Lovely_Rose.png/revision/latest?cb=20210213002638",
@@ -3827,12 +3827,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Lovely Rose).",
     "existence": {
       "normal": "2,683",
-      "shiny": "34",
+      "shiny": "8",
       "mythic": "514",
       "shinyMythic": "8"
     },
     "customValues": {
-      "shiny": 1200,
+      "shiny": 2250,
       "mythic": 514,
       "shinyMythic": 2
     },
@@ -3860,8 +3860,8 @@
     "id": "pet_lucid_leaf",
     "name": "Lucid Leaf",
     "rarity": "Secret",
-    "baseValue": 200,
-    "demand": 4,
+    "baseValue": 15000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Mythic_Lucid_Leaf.png/revision/latest?cb=20200912010101",
@@ -3874,7 +3874,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Lucid Leaf).",
     "existence": {
       "normal": "3,730",
-      "shiny": "50",
+      "shiny": "3",
       "mythic": "90",
       "shinyMythic": "3"
     },
@@ -3954,8 +3954,8 @@
     "id": "pet_luminance",
     "name": "Luminance",
     "rarity": "Secret",
-    "baseValue": 3000,
-    "demand": 7,
+    "baseValue": 8500000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/47/Mythic_Luminance.png/revision/latest?cb=20201009233031",
@@ -3968,7 +3968,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Luminance).",
     "existence": {
       "normal": "90,000",
-      "shiny": "898",
+      "shiny": "0",
       "mythic": "6",
       "shinyMythic": "0"
     },
@@ -4033,7 +4033,7 @@
     "id": "pet_money_mouth",
     "name": "Money Mouth",
     "rarity": "Secret",
-    "baseValue": 1500,
+    "baseValue": 30000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -4047,7 +4047,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Money Mouth).",
     "existence": {
       "normal": "166",
-      "shiny": "2",
+      "shiny": "1",
       "mythic": "13",
       "shinyMythic": "1"
     },
@@ -4081,8 +4081,8 @@
     "id": "pet_morning_star",
     "name": "Morning Star",
     "rarity": "Secret",
-    "baseValue": 200,
-    "demand": 4,
+    "baseValue": 7000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Mythic_Morning_Star.png/revision/latest?cb=20201204230700",
@@ -4095,7 +4095,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Morning Star).",
     "existence": {
       "normal": "2,068",
-      "shiny": "41",
+      "shiny": "2",
       "mythic": "69",
       "shinyMythic": "2"
     },
@@ -4143,8 +4143,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (New Year Champion).",
     "existence": {
-      "normal": "2,078",
-      "shiny": "26",
+      "normal": "467",
+      "shiny": "7",
       "mythic": "3",
       "shinyMythic": "0"
     },
@@ -4189,8 +4189,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Overlord Plushie).",
     "existence": {
-      "normal": "396",
-      "shiny": "7",
+      "normal": "2,394",
+      "shiny": "26",
       "mythic": "16",
       "shinyMythic": "1"
     },
@@ -4235,8 +4235,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Patriotic Robot).",
     "existence": {
-      "normal": "63",
-      "shiny": "3"
+      "normal": "331",
+      "shiny": "4"
     },
     "customValues": {
       "shiny": 15000,
@@ -4265,8 +4265,8 @@
     "id": "pet_patronus",
     "name": "Patronus",
     "rarity": "Secret",
-    "baseValue": 1750,
-    "demand": 6,
+    "baseValue": 17500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bd/Mythic_Patronus.png/revision/latest?cb=20210402225428",
@@ -4279,7 +4279,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Patronus).",
     "existence": {
       "normal": "309",
-      "shiny": "7",
+      "shiny": "2",
       "mythic": "13",
       "shinyMythic": "2"
     },
@@ -4325,8 +4325,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Peppermint Leviathan).",
     "existence": {
-      "normal": "9,816",
-      "shiny": "187",
+      "normal": "677",
+      "shiny": "10",
       "mythic": "7",
       "shinyMythic": "0"
     },
@@ -4420,8 +4420,8 @@
     "id": "pet_plasma_wolflord",
     "name": "Plasma Wolflord",
     "rarity": "Secret",
-    "baseValue": 2200,
-    "demand": 7,
+    "baseValue": 1000000,
+    "demand": 9,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Mythic_Plasma_Wolflord.png/revision/latest?cb=20200613042928",
@@ -4434,7 +4434,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Plasma Wolflord).",
     "existence": {
       "normal": "1,487",
-      "shiny": "15",
+      "shiny": "0",
       "mythic": "4",
       "shinyMythic": "1"
     },
@@ -4505,8 +4505,8 @@
     "id": "pet_pot_o__doggy",
     "name": "Pot O' Doggy",
     "rarity": "Secret",
-    "baseValue": 750,
-    "demand": 7,
+    "baseValue": 15000,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Pot_O%27_Doggy.png/revision/latest?cb=20210307011443",
@@ -4519,7 +4519,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Pot O' Doggy).",
     "existence": {
       "normal": "1,180",
-      "shiny": "10",
+      "shiny": "3",
       "mythic": "28",
       "shinyMythic": "0"
     },
@@ -4562,8 +4562,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pot O' Gold).",
     "existence": {
-      "normal": "255",
-      "shiny": "4"
+      "normal": "350",
+      "shiny": "3"
     },
     "customValues": {
       "shiny": 14000,
@@ -4590,8 +4590,8 @@
     "id": "pet_prisma_cube",
     "name": "Prisma Cube",
     "rarity": "Secret",
-    "baseValue": 75,
-    "demand": 2,
+    "baseValue": 1500,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Mythic_Prisma_Cube.png/revision/latest?cb=20210307005856",
@@ -4604,12 +4604,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Prisma Cube).",
     "existence": {
       "normal": "3,428",
-      "shiny": "52",
+      "shiny": "5",
       "mythic": "327",
       "shinyMythic": "5"
     },
     "customValues": {
-      "shiny": 400,
+      "shiny": 2750,
       "mythic": 327,
       "shinyMythic": 2
     },
@@ -4639,8 +4639,8 @@
     "id": "pet_pyramidium",
     "name": "Pyramidium",
     "rarity": "Secret",
-    "baseValue": 2250,
-    "demand": 5,
+    "baseValue": 4500,
+    "demand": 7,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b9/Shiny_Pyramidium.png/revision/latest?cb=20210406174701",
@@ -4652,13 +4652,13 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Pyramidium).",
     "existence": {
-      "normal": "833",
-      "shiny": "10",
+      "normal": "515",
+      "shiny": "8",
       "mythic": "4",
       "shinyMythic": "0"
     },
     "customValues": {
-      "shiny": 7250,
+      "shiny": 22000,
       "mythic": 22000,
       "shinyMythic": 5
     },
@@ -4698,8 +4698,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Radiance).",
     "existence": {
-      "normal": "795",
-      "shiny": "5"
+      "normal": "199",
+      "shiny": "2"
     },
     "customValues": {
       "shiny": 20000,
@@ -4769,8 +4769,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Radiant One).",
     "existence": {
-      "normal": "1,483",
-      "shiny": "27",
+      "normal": "1,487",
+      "shiny": "15",
       "mythic": "5",
       "shinyMythic": "0"
     },
@@ -4872,8 +4872,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Rainbow Dogcat).",
     "existence": {
-      "shiny": "4",
-      "normal": "336"
+      "shiny": "5",
+      "normal": "608"
     },
     "customValues": {
       "shiny": 750,
@@ -4911,11 +4911,11 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Rainbow Gryphon).",
     "existence": {
-      "shiny": "15",
-      "normal": "645"
+      "shiny": "4",
+      "normal": "336"
     },
     "customValues": {
-      "shiny": 950
+      "shiny": 4000
     },
     "stats": {
       "buffs": {
@@ -4997,8 +4997,8 @@
       "Shiny"
     ],
     "existence": {
-      "normal": "897",
-      "shiny": "9"
+      "normal": "116",
+      "shiny": "2"
     }
   },
   {
@@ -5019,7 +5019,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Sea Star).",
     "existence": {
       "shiny": "6",
-      "normal": "475"
+      "normal": "657"
     },
     "customValues": {
       "shiny": 1300,
@@ -5200,8 +5200,8 @@
     "id": "pet_shard",
     "name": "Shard",
     "rarity": "Secret",
-    "baseValue": 1600,
-    "demand": 8,
+    "baseValue": 11,
+    "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/35/Mythic_Shard.png/revision/latest?cb=20200522193409",
@@ -5214,7 +5214,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Shard).",
     "existence": {
       "normal": "1,165",
-      "shiny": "30",
+      "shiny": "0",
       "mythic": "6",
       "shinyMythic": "???+"
     },
@@ -5248,7 +5248,7 @@
     "id": "pet_shattered_soul",
     "name": "Shattered Soul",
     "rarity": "Secret",
-    "baseValue": 1250,
+    "baseValue": 6000,
     "demand": 5,
     "status": "Stable",
     "category": "Hats",
@@ -5257,7 +5257,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Shattered Soul).",
     "existence": {
       "normal": "37,600",
-      "shiny": "610",
+      "shiny": "0",
       "mythic": "32",
       "shinyMythic": "0"
     },
@@ -5302,8 +5302,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sinister Lord).",
     "existence": {
-      "normal": "199",
-      "shiny": "2",
+      "normal": "63",
+      "shiny": "3",
       "mythic": "0",
       "shinyMythic": "0"
     },
@@ -5348,8 +5348,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sinister Lord 2.0).",
     "existence": {
-      "normal": "3,339",
-      "shiny": "41",
+      "normal": "411",
+      "shiny": "5",
       "mythic": "0",
       "shinyMythic": "0"
     },
@@ -5383,7 +5383,7 @@
     "id": "pet_sinister_shard",
     "name": "Sinister Shard",
     "rarity": "Secret",
-    "baseValue": 400,
+    "baseValue": 20000,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -5481,8 +5481,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Soul Heart).",
     "existence": {
-      "normal": "350",
-      "shiny": "3"
+      "normal": "400",
+      "shiny": "4"
     },
     "customValues": {
       "shiny": 15000,
@@ -5509,7 +5509,7 @@
     "id": "pet_soulflake",
     "name": "Soulflake",
     "rarity": "Secret",
-    "baseValue": 700,
+    "baseValue": 12500,
     "demand": 5,
     "status": "Stable",
     "category": "Secret Pets",
@@ -5523,7 +5523,7 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Soulflake).",
     "existence": {
       "normal": "7,015",
-      "shiny": "155",
+      "shiny": "1",
       "mythic": "28",
       "shinyMythic": "1"
     },
@@ -5667,8 +5667,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (The Overlord).",
     "existence": {
-      "shiny": "14",
-      "normal": "759"
+      "shiny": "37",
+      "normal": "2519"
     },
     "customValues": {
       "shiny": 250,
@@ -5710,8 +5710,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (The OwOlord).",
     "existence": {
-      "shiny": "5",
-      "normal": "356"
+      "shiny": "14",
+      "normal": "759"
     },
     "customValues": {
       "shiny": 800,
@@ -5805,8 +5805,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Trophy).",
     "existence": {
-      "normal": "243",
-      "shiny": "3",
+      "normal": "255",
+      "shiny": "4",
       "mythic": "10",
       "shinyMythic": "0"
     },
@@ -5880,8 +5880,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ultimate Clover).",
     "existence": {
-      "normal": "116",
-      "shiny": "2"
+      "normal": "1,469",
+      "shiny": "13"
     },
     "customValues": {
       "shiny": 3333,
@@ -5916,8 +5916,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Ultimate Trophy).",
     "existence": {
-      "normal": "593",
-      "shiny": "6"
+      "normal": "795",
+      "shiny": "5"
     },
     "customValues": {
       "shiny": 12500,
@@ -6001,8 +6001,8 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Wolflord).",
     "existence": {
-      "normal": "64",
-      "shiny": "0",
+      "normal": "581",
+      "shiny": "9",
       "mythic": "4"
     },
     "customValues": {
@@ -6235,7 +6235,7 @@
     "id": "pet_2020_overlord",
     "name": "2020 Overlord",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 500,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -6248,7 +6248,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (2020 Overlord).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 2000,
       "mythic": 1,
       "shinyMythic": 500
     },
@@ -7196,9 +7196,9 @@
     "id": "pet_axolotl_plushie",
     "name": "Axolotl Plushie",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 500,
     "demand": 5,
-    "status": "Stable",
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c0/Mythic_Axolotl_Plushie.png/revision/latest?cb=20200731212020",
     "multipliers": {
@@ -7209,7 +7209,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Axolotl Plushie).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 4500,
       "mythic": 500,
       "shinyMythic": 600
     },
@@ -7394,7 +7394,7 @@
     "rarity": "Legendary",
     "baseValue": 10000,
     "demand": 7,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Beta_TV.gif/revision/latest?cb=20200212135227",
     "multipliers": {
@@ -7423,9 +7423,9 @@
     "id": "pet_bgs_bucket",
     "name": "BGS Bucket",
     "rarity": "Legendary",
-    "baseValue": 40,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 450,
+    "demand": 7,
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1d/Mythic_BGS_Bucket.png/revision/latest?cb=20200814185803",
     "multipliers": {
@@ -7436,7 +7436,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (BGS Bucket).",
     "customValues": {
-      "shiny": 400,
+      "shiny": 4000,
       "mythic": 450,
       "shinyMythic": 600
     },
@@ -8122,8 +8122,8 @@
     "id": "pet_cartoon_hexarium",
     "name": "Cartoon Hexarium",
     "rarity": "Legendary",
-    "baseValue": 15,
-    "demand": 5,
+    "baseValue": 300,
+    "demand": 3,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/36/Mythic_Cartoon_Hexarium.png/revision/latest?cb=20201023231944",
@@ -8135,7 +8135,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Cartoon Hexarium).",
     "customValues": {
-      "shiny": 150,
+      "shiny": 400,
       "mythic": 300,
       "shinyMythic": 400
     },
@@ -8319,7 +8319,7 @@
     "id": "pet_chocolate_gift",
     "name": "Chocolate Gift",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -8332,7 +8332,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Chocolate Gift).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 275,
       "mythic": 400,
       "shinyMythic": 450
     },
@@ -8552,7 +8552,7 @@
     "id": "pet_citrus_overlord",
     "name": "Citrus Overlord",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 600,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -8565,7 +8565,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Citrus Overlord).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 4000,
       "mythic": 600,
       "shinyMythic": 800
     },
@@ -8932,7 +8932,7 @@
     "rarity": "Legendary",
     "baseValue": 60,
     "demand": 5,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/67/Crazy_Cat_Stack.png/revision/latest?cb=20200228214226",
     "multipliers": {
@@ -9730,7 +9730,7 @@
     "id": "pet_demonic_fireplace",
     "name": "Demonic Fireplace",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -9802,7 +9802,7 @@
     "id": "pet_demonic_peppermint",
     "name": "Demonic Peppermint",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -9815,7 +9815,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Demonic Peppermint).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 250,
       "mythic": 400,
       "shinyMythic": 2020
     },
@@ -9874,7 +9874,7 @@
     "id": "pet_demonlord",
     "name": "Demonlord",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 350,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -9887,7 +9887,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demonlord).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 175,
       "mythic": 250,
       "shinyMythic": 150
     },
@@ -10331,7 +10331,7 @@
     "id": "pet_easter_bunny",
     "name": "Easter Bunny",
     "rarity": "Legendary",
-    "baseValue": 15,
+    "baseValue": 350,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -10344,7 +10344,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Easter Bunny).",
     "customValues": {
-      "shiny": 150,
+      "shiny": 200,
       "mythic": 350,
       "shinyMythic": 400
     },
@@ -11047,7 +11047,7 @@
     "id": "pet_eternal_contrast",
     "name": "Eternal Contrast",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -11060,7 +11060,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Contrast).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 1500,
       "mythic": 400,
       "shinyMythic": 2020
     },
@@ -11122,7 +11122,7 @@
     "id": "pet_eternal_pumpkin",
     "name": "Eternal Pumpkin",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -11135,7 +11135,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Eternal Pumpkin).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 500,
       "mythic": 400,
       "shinyMythic": 500
     },
@@ -12060,8 +12060,8 @@
     "id": "pet_frosted_duality",
     "name": "Frosted Duality",
     "rarity": "Legendary",
-    "baseValue": 2000,
-    "demand": 7,
+    "baseValue": 17500,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/87/Frosted_Duality.png/revision/latest?cb=20211224034632",
@@ -12357,9 +12357,9 @@
     "id": "pet_galaxium",
     "name": "Galaxium",
     "rarity": "Legendary",
-    "baseValue": 25,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 800,
+    "demand": 7,
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e1/Mythic_Galaxium.png/revision/latest?cb=20200613041556",
     "multipliers": {
@@ -12370,7 +12370,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Galaxium).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 4000,
       "mythic": 800
     },
     "stats": {
@@ -12430,9 +12430,9 @@
     "id": "pet_gem_overlord",
     "name": "Gem Overlord",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 500,
     "demand": 5,
-    "status": "Stable",
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/24/Mythic_Gem_Overlord.png/revision/latest?cb=20200626201231",
     "multipliers": {
@@ -12443,7 +12443,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Gem Overlord).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 3000,
       "mythic": 500,
       "shinyMythic": 600
     },
@@ -12707,9 +12707,9 @@
     "id": "pet_glitch",
     "name": "Glitch",
     "rarity": "Legendary",
-    "baseValue": 25,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 3000,
+    "demand": 7,
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e2/Mythic_Glitch.png/revision/latest?cb=20200501204959",
     "multipliers": {
@@ -12724,7 +12724,7 @@
       "shinyMythic": "3"
     },
     "customValues": {
-      "shiny": 250,
+      "shiny": 4000,
       "mythic": 3,
       "shinyMythic": 4000
     },
@@ -13327,7 +13327,7 @@
     "rarity": "Legendary",
     "baseValue": 200,
     "demand": 7,
-    "status": "Stable",
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8e/Gummy_Pals.png/revision/latest?cb=20200627060604",
     "multipliers": {
@@ -13361,7 +13361,7 @@
     "rarity": "Legendary",
     "baseValue": 50,
     "demand": 5,
-    "status": "Stable",
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fd/Gummy_Winged_Hydra.png/revision/latest?cb=20190123110204",
     "multipliers": {
@@ -15157,7 +15157,7 @@
     "id": "pet_love_soul",
     "name": "Love Soul",
     "rarity": "Legendary",
-    "baseValue": 15,
+    "baseValue": 650,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -15170,7 +15170,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Love Soul).",
     "customValues": {
-      "shiny": 150,
+      "shiny": 7000,
       "mythic": 650
     },
     "stats": {
@@ -15522,7 +15522,7 @@
     "id": "pet_lucky_horseshoe",
     "name": "Lucky Horseshoe",
     "rarity": "Legendary",
-    "baseValue": 15,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -15535,7 +15535,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lucky Horseshoe).",
     "customValues": {
-      "shiny": 150,
+      "shiny": 200,
       "mythic": 400,
       "shinyMythic": 450
     },
@@ -16314,7 +16314,7 @@
     "rarity": "Legendary",
     "baseValue": 125,
     "demand": 5,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8d/Minty_Hydra.png/revision/latest?cb=20181223123028",
     "multipliers": {
@@ -17095,7 +17095,7 @@
     "rarity": "Legendary",
     "baseValue": 500,
     "demand": 3,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/00/Mythic_Pastel_Hexarium.png/revision/latest?cb=20200605191815",
     "multipliers": {
@@ -17296,8 +17296,8 @@
     "id": "pet_peppermint_heart",
     "name": "Peppermint Heart",
     "rarity": "Legendary",
-    "baseValue": 200,
-    "demand": 1,
+    "baseValue": 1500,
+    "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/80/Pogchamp_Peppermint_Heart.png/revision/latest?cb=20220204025022",
@@ -17312,7 +17312,7 @@
       "normal": "???"
     },
     "customValues": {
-      "shiny": 700,
+      "shiny": 2250,
       "mythic": 700,
       "shinyMythic": 1
     },
@@ -17775,7 +17775,7 @@
     "rarity": "Legendary",
     "baseValue": 600,
     "demand": 7,
-    "status": "Rising",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ad/Queen_Kitty.png/revision/latest?cb=20200731212241",
     "multipliers": {
@@ -18337,7 +18337,7 @@
     "id": "pet_royalty",
     "name": "Royalty",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -18350,7 +18350,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Royalty).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 250,
       "mythic": 400,
       "shinyMythic": 650
     },
@@ -18440,9 +18440,9 @@
     "id": "pet_sakuralord",
     "name": "Sakuralord",
     "rarity": "Legendary",
-    "baseValue": 25,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 1000,
+    "demand": 7,
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e9/ShinySakuralord_%281%29.png/revision/latest?cb=20200902053821",
     "multipliers": {
@@ -18453,7 +18453,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Sakuralord).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 6500,
       "mythic": 1,
       "shinyMythic": 6
     },
@@ -18514,8 +18514,8 @@
     "id": "pet_santa_hat",
     "name": "Santa Hat",
     "rarity": "Legendary",
-    "baseValue": 250,
-    "demand": 4,
+    "baseValue": 5000,
+    "demand": 5,
     "status": "Stable",
     "category": "Hats",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c8/Sant%27as_Hat.png/revision/latest?cb=20220204025203",
@@ -18783,9 +18783,9 @@
     "id": "pet_shadow_hunter",
     "name": "Shadow Hunter",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 1000,
     "demand": 5,
-    "status": "Stable",
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bd/Mythic_Shadow_Hunter.png/revision/latest?cb=20200725025632",
     "multipliers": {
@@ -18796,7 +18796,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow Hunter).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 6500,
       "mythic": 1,
       "shinyMythic": 6
     },
@@ -18932,9 +18932,9 @@
     "id": "pet_shadow_raven",
     "name": "Shadow Raven",
     "rarity": "Legendary",
-    "baseValue": 25,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 2000,
+    "demand": 7,
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/3/3a/Mythic_Shadow_Raven.png/revision/latest?cb=20200711195634",
     "multipliers": {
@@ -18945,7 +18945,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow Raven).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 7000,
       "mythic": 2,
       "shinyMythic": 7
     },
@@ -19002,7 +19002,7 @@
     "id": "pet_skull_reaper",
     "name": "Skull Reaper",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 300,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -19015,7 +19015,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Skull Reaper).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 800,
       "mythic": 300,
       "shinyMythic": 800
     },
@@ -19144,9 +19144,9 @@
     "id": "pet_soul_flower",
     "name": "Soul Flower",
     "rarity": "Legendary",
-    "baseValue": 25,
-    "demand": 5,
-    "status": "Stable",
+    "baseValue": 6000,
+    "demand": 7,
+    "status": "Rising",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/5a/Mythic_Soul_Flower.png/revision/latest?cb=20200515214228",
     "multipliers": {
@@ -19157,7 +19157,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Soul Flower).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 30000,
       "mythic": 6,
       "shinyMythic": 30
     },
@@ -19809,7 +19809,7 @@
     "id": "pet_sunlord",
     "name": "Sunlord",
     "rarity": "Legendary",
-    "baseValue": 20,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -19822,7 +19822,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Sunlord).",
     "customValues": {
-      "shiny": 200,
+      "shiny": 250,
       "mythic": 400,
       "shinyMythic": 500
     },
@@ -20401,7 +20401,7 @@
     "id": "pet_trick_o__treat",
     "name": "Trick O' Treat",
     "rarity": "Legendary",
-    "baseValue": 10,
+    "baseValue": 3000,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -20414,7 +20414,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Trick O' Treat).",
     "customValues": {
-      "shiny": 100,
+      "shiny": 15000,
       "mythic": 3,
       "shinyMythic": 15
     },
@@ -20472,7 +20472,7 @@
     "id": "pet_trifolium_spirit",
     "name": "Trifolium Spirit",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 400,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -20485,7 +20485,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Trifolium Spirit).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 3000,
       "mythic": 400
     },
     "stats": {
@@ -20542,7 +20542,7 @@
     "id": "pet_twin_snowballs",
     "name": "Twin Snowballs",
     "rarity": "Legendary",
-    "baseValue": 10,
+    "baseValue": 300,
     "demand": 3,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -20555,7 +20555,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Twin Snowballs).",
     "customValues": {
-      "shiny": 100,
+      "shiny": 150,
       "mythic": 300,
       "shinyMythic": 400
     },
@@ -20708,7 +20708,7 @@
     "id": "pet_unlimited_dollar",
     "name": "Unlimited Dollar",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 450,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -21215,7 +21215,7 @@
     "id": "pet_witches_pot",
     "name": "Witches Pot",
     "rarity": "Legendary",
-    "baseValue": 25,
+    "baseValue": 550,
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
@@ -21228,7 +21228,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Witches Pot).",
     "customValues": {
-      "shiny": 250,
+      "shiny": 275,
       "mythic": 550,
       "shinyMythic": 800
     },
@@ -43299,7 +43299,7 @@
     "id": "pet_index_reward_pets",
     "name": "Index Reward Pets",
     "rarity": "Common",
-    "baseValue": null,
+    "baseValue": 60,
     "demand": 5,
     "status": "Stable",
     "category": "Common Pets",
@@ -47456,7 +47456,7 @@
       "hats": "3,248"
     },
     "customValues": {
-      "shiny": 500
+      "shiny": 3248
     },
     "variants": [
       "Normal"
@@ -47897,7 +47897,7 @@
       "hats": "366"
     },
     "customValues": {
-      "shiny": null
+      "shiny": 366
     },
     "variants": [
       "Normal"
@@ -47968,7 +47968,7 @@
       "hats": "1,366"
     },
     "customValues": {
-      "shiny": 25000
+      "shiny": 1366
     },
     "variants": [
       "Normal"

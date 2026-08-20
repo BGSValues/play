@@ -7,7 +7,6 @@ const path = require('path');
 const SRC_PETS_PATH = path.join(__dirname, '../src/data/pets.json');
 const SERVER_PETS_PATH = path.join(__dirname, 'data/pets.json');
 
-// Helper to make HTTPS GET requests
 function fetchUrl(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
@@ -117,7 +116,7 @@ async function fetchWikiNewPetsAndEggs() {
 }
 
 // ━━━━ 2. AUTO-CRAWL VALUES & DEMANDS FROM COLLAB VALUE LIST ━━━━
-async function fetchCollabValuePages() {
+async function fetchCollabValuePages(knownNamesSet) {
   console.log('📡 [Collab Sync] Scraping all 16+ Collab Value List categories...');
   const pages = [
     'https://sites.google.com/view/bgs-collab-value-list/values/limited-secrets',
@@ -152,17 +151,12 @@ async function fetchCollabValuePages() {
 
       for (let i = 0; i < spans.length; i++) {
         const token = spans[i];
-        if (['pet name', 'hat name', 'normal', 'shiny', 'mythic', 'demand', 'trend', 'origin', 'values', 'value'].includes(token.toLowerCase())) {
-          continue;
-        }
+        const lowerName = token.toLowerCase().trim();
 
-        const next1 = spans[i + 1];
-        const next2 = spans[i + 2];
-
-        // Valid pet entry candidate
-        if (next1 !== undefined && (parseVal(next1) !== null || next1 === 'N/A' || next1 === '-' || next1.includes('%'))) {
+        // Must match a known pet name
+        if (knownNamesSet.has(lowerName)) {
           const name = token;
-          let normalVal = parseVal(next1);
+          let normalVal = null;
           let normalDemand = 5;
           let shinyVal = null;
           let shinyDemand = 5;
@@ -171,9 +165,33 @@ async function fetchCollabValuePages() {
           let existNormal = null;
           let existShiny = null;
 
-          const lookahead = spans.slice(i + 1, i + 12);
-          for (let j = 0; j < lookahead.length; j++) {
-            const tok = lookahead[j];
+          // Sequential row parsing strictly bound to this pet
+          const rowSlice = spans.slice(i + 1, i + 8);
+          for (let j = 0; j < rowSlice.length; j++) {
+            const tok = rowSlice[j];
+            const lowerTok = tok.toLowerCase().trim();
+
+            // STOP immediately if we hit another pet name
+            if (knownNamesSet.has(lowerTok) && j > 0) {
+              break;
+            }
+
+            // Normal or Shiny Hatched counts (e.g. 400🥚 4✨)
+            if (tok.includes('🥚') || tok.includes('✨')) {
+              if (existNormal === null && existShiny === null) {
+                const normMatch = tok.match(/([0-9,]+)\s*🥚/);
+                const shinyMatch = tok.match(/([0-9,]+)\s*✨/);
+                if (normMatch) existNormal = normMatch[1];
+                if (shinyMatch) existShiny = shinyMatch[1];
+                break; // Stop after capturing this pet's existence count
+              }
+            }
+
+            // Trend
+            if (tok.includes('↔') || tok.includes('⬆') || tok.includes('⬇') || tok.includes('🔥') || tok.includes('🔄')) {
+              trend = parseTrend(tok);
+              continue;
+            }
 
             // Demand numbers (1-11) or words
             if (/^(10|11|[1-9])$/.test(tok)) {
@@ -190,32 +208,24 @@ async function fetchCollabValuePages() {
               }
             }
 
-            // Trends
-            if (tok.includes('↔') || tok.includes('⬆') || tok.includes('⬇') || tok.includes('🔥') || tok.includes('🔄')) {
-              trend = parseTrend(tok);
-            }
-
-            // Origins
+            // Origin / Event badge
             if (tok.startsWith('S.') || tok.includes('Prem') || tok.includes('Pass') || tok.includes('Egg') || tok.includes('Reward') || tok.includes('Event') || tok.includes('Merchant')) {
               origin = tok;
             }
 
-            // Hatched counts (e.g. 52,600🥚 677✨)
-            if (tok.includes('🥚') || tok.includes('✨')) {
-              const normMatch = tok.match(/([0-9,]+)\s*🥚/);
-              const shinyMatch = tok.match(/([0-9,]+)\s*✨/);
-              if (normMatch) existNormal = normMatch[1];
-              if (shinyMatch) existShiny = shinyMatch[1];
-            }
-
-            // Shiny value
-            if (j >= 2 && (parseVal(tok) !== null || tok.includes('%')) && shinyVal === null) {
-              shinyVal = parseVal(tok);
+            // Value Numbers
+            const valNum = parseVal(tok);
+            if (valNum !== null && valNum > 0) {
+              if (normalVal === null) {
+                normalVal = valNum;
+              } else if (shinyVal === null && !/^(10|11|[1-9])$/.test(tok)) {
+                shinyVal = valNum;
+              }
             }
           }
 
-          if (name.length >= 2 && !scrapedItems.has(name.toLowerCase())) {
-            scrapedItems.set(name.toLowerCase(), {
+          if (normalVal !== null || shinyVal !== null || existNormal !== null) {
+            scrapedItems.set(lowerName, {
               name,
               normalVal,
               normalDemand,
@@ -249,8 +259,11 @@ async function runAutoSync() {
   }
 
   const existingMap = new Map();
+  const knownNamesSet = new Set();
   pets.forEach((p, idx) => {
-    existingMap.set(p.name.toLowerCase().trim(), idx);
+    const k = p.name.toLowerCase().trim();
+    existingMap.set(k, idx);
+    knownNamesSet.add(k);
   });
 
   // Step 1: Fetch Wiki Pets to discover newly released pets & eggs
@@ -283,12 +296,13 @@ async function runAutoSync() {
 
       pets.push(newEntry);
       existingMap.set(key, pets.length - 1);
+      knownNamesSet.add(key);
       addedCount++;
     }
   }
 
   // Step 2: Fetch Collab Value List updates
-  const collabData = await fetchCollabValuePages();
+  const collabData = await fetchCollabValuePages(knownNamesSet);
   let updatedValuesCount = 0;
 
   for (const [key, item] of collabData.entries()) {
