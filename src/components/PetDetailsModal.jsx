@@ -17,28 +17,19 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
   const currentVal = getPetVariantValue(pet, selectedVariant);
 
   // ━━━━ OFFICIAL BUBBLE GUM SIMULATOR WIKI FORMULA ━━━━
-  const BGS_WIKI_CONFIG = {
-    minLevel: 1,
-    maxLevel: 25,
-    minEnchant: 0,
-    maxEnchant: 40,
-    maxShadowEnchant: 50,
-    maxLevelEffect: 2.0,
-    maxShadowEnchantEffect: 2.0,
-  };
-
   const calculateWikiStat = (baseStat, variant, lvl, enc) => {
     if (typeof baseStat !== 'number' || isNaN(baseStat)) return baseStat;
     const variantMultiplier = variant === 'Shiny' ? 2 : variant === 'Mythic' ? 1.5 : (variant === 'ShinyMythic' || variant === 'S.Myth') ? 3 : 1;
-    let val = baseStat * variantMultiplier;
+    const initialStat = baseStat * variantMultiplier;
 
     const clampedLvl = Math.min(25, Math.max(1, Number(lvl) || 1));
-    val = val + (val * BGS_WIKI_CONFIG.maxLevelEffect - val) * (clampedLvl - BGS_WIKI_CONFIG.minLevel) / (BGS_WIKI_CONFIG.maxLevel - BGS_WIKI_CONFIG.minLevel);
+    const levelBoost = ((clampedLvl - 1) / 24) * 1.0;
 
     const clampedEnc = Math.min(50, Math.max(0, Number(enc) || 0));
-    val = val + (val * BGS_WIKI_CONFIG.maxShadowEnchantEffect - val) * (clampedEnc - BGS_WIKI_CONFIG.minEnchant) / (BGS_WIKI_CONFIG.maxShadowEnchant - BGS_WIKI_CONFIG.minEnchant);
+    const enchantBoost = (clampedEnc / 40) * 1.0;
 
-    return Math.round(val);
+    const totalMultiplier = 1 + levelBoost + enchantBoost;
+    return Math.floor(initialStat * totalMultiplier);
   };
 
   const buffs = pet.stats?.buffs || {};
