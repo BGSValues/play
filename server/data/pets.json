@@ -14986,37 +14986,6 @@
     "mythicValue": 1000
   },
   {
-    "id": "pet_lenny_box",
-    "name": "Lenny Box",
-    "rarity": "Legendary",
-    "baseValue": 100,
-    "demand": 5,
-    "status": "Rising",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Lenny_Box.png/revision/latest?cb=20191224095251",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Legendary companion pet from BGS Collab Value List (Lenny Box).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 3885,
-        "Coins": 12750,
-        "Gems": 17150
-      },
-      "movementType": "Walk"
-    },
-    "customValues": {
-      "shiny": 800
-    },
-    "variants": [
-      "Normal",
-      "Shiny"
-    ],
-    "shinyValue": 800
-  },
-  {
     "id": "pet_light_demon",
     "name": "Light Demon",
     "rarity": "Legendary",
@@ -15354,35 +15323,6 @@
       "ShinyMythic"
     ],
     "shinyValue": 600
-  },
-  {
-    "id": "pet_lucid_potion",
-    "name": "Lucid Potion",
-    "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "Dropping",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/72/Lucid_Potion.png/revision/latest?cb=20201009233246",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Secret companion pet from BGS Collab Value List (Lucid Potion).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 9500,
-        "Gems": 39800,
-        "Treats": 8250,
-        "Coins": 34565
-      },
-      "movementType": "Fly"
-    },
-    "customValues": null,
-    "variants": [
-      "Normal",
-      "Shiny"
-    ]
   },
   {
     "id": "pet_luckiest_wyvern",
@@ -16888,38 +16828,6 @@
       "Normal",
       "Shiny"
     ]
-  },
-  {
-    "id": "pet_og_box",
-    "name": "OG Box",
-    "rarity": "Legendary",
-    "baseValue": 100,
-    "demand": 3,
-    "status": "Stable",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/88/OG_Box.png/revision/latest?cb=20200725025633",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Legendary companion pet from BGS Collab Value List (OG Box).",
-    "customValues": {
-      "shiny": 800
-    },
-    "stats": {
-      "buffs": {
-        "Bubbles": 4350,
-        "Coins": 7610,
-        "Gems": 9250,
-        "All": 2250
-      },
-      "movementType": "Walk"
-    },
-    "variants": [
-      "Normal",
-      "Shiny"
-    ],
-    "shinyValue": 800
   },
   {
     "id": "pet_ornamentium",
@@ -18778,48 +18686,6 @@
       "Mythic",
       "ShinyMythic"
     ]
-  },
-  {
-    "id": "pet_shadow_hunter",
-    "name": "Shadow Hunter",
-    "rarity": "Legendary",
-    "baseValue": 1000,
-    "demand": 5,
-    "status": "Rising",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/bd/Mythic_Shadow_Hunter.png/revision/latest?cb=20200725025632",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion pet from BGS Collab Value List (Shadow Hunter).",
-    "customValues": {
-      "shiny": 6500,
-      "mythic": 1,
-      "shinyMythic": 6
-    },
-    "stats": {
-      "buffs": {
-        "Bubbles": 8800,
-        "All": 6500,
-        "Gems": 29195,
-        "Coins": 28530
-      },
-      "egg": "Exotic Egg",
-      "movementType": "Fly",
-      "chance": 0.00125
-    },
-    "variants": [
-      "Normal",
-      "Shiny",
-      "Mythic",
-      "ShinyMythic"
-    ],
-    "shinyValue": 200,
-    "mythicValue": 1,
-    "shinyMythicValue": 6
   },
   {
     "id": "pet_shadow_imp",
@@ -42840,37 +42706,6 @@
     ]
   },
   {
-    "id": "pet_gift_box",
-    "name": "Gift Box",
-    "rarity": "Unique",
-    "baseValue": null,
-    "demand": null,
-    "status": "Dropping",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/56/Gift_Box.png/revision/latest?cb=20210213002825",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Common companion pet from BGS Collab Value List (Gift Box).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 2650,
-        "All": 1825,
-        "Gems": 3450,
-        "Coins": 3180
-      },
-      "egg": "Lovely Egg",
-      "movementType": "Walk",
-      "chance": 25
-    },
-    "customValues": null,
-    "variants": [
-      "Normal",
-      "Shiny"
-    ]
-  },
-  {
     "id": "pet_gifted_bat",
     "name": "Gifted Bat",
     "rarity": "Unique",
@@ -48272,5 +48107,393 @@
     "variants": [
       "Normal"
     ]
+  },
+  {
+    "id": "pet_max_shadow_1787242128448",
+    "name": "Max Shadow",
+    "type": "pet",
+    "rarity": "Common",
+    "baseValue": 1,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Common Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Max_Shadow.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Common companion pet from Bubble Gum Simulator (Max Shadow).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized"
+    }
+  },
+  {
+    "id": "pet_frost_1787242128449",
+    "name": "Frost",
+    "type": "pet",
+    "rarity": "Common",
+    "baseValue": 1,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Common Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Frost.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Common companion pet from Bubble Gum Simulator (Frost).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized"
+    }
+  },
+  {
+    "id": "pet_demonic_ghost_1787242128449",
+    "name": "Demonic Ghost",
+    "type": "pet",
+    "rarity": "Legendary",
+    "baseValue": 10,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Legendary Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Demonic_Ghost.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Legendary companion pet from Bubble Gum Simulator (Demonic Ghost).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized"
+    }
+  },
+  {
+    "id": "pet_demonic_ghost_spirit_1787242128449",
+    "name": "Demonic Ghost Spirit",
+    "type": "pet",
+    "rarity": "Secret",
+    "baseValue": 8000,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Secret Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Demonic_Ghost_Spirit.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Secret companion pet from Bubble Gum Simulator (Demonic Ghost Spirit).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized",
+      "shiny": "3"
+    },
+    "customValues": {
+      "shiny": 150000
+    }
+  },
+  {
+    "id": "pet_demonic_golf_ball_1787242128449",
+    "name": "Demonic Golf Ball",
+    "type": "pet",
+    "rarity": "Legendary",
+    "baseValue": 1500,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Legendary Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Demonic_Golf_Ball.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Legendary companion pet from Bubble Gum Simulator (Demonic Golf Ball).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized"
+    },
+    "customValues": {
+      "shiny": 200000
+    }
+  },
+  {
+    "id": "pet_angelic_ghost_spirit_1787242128449",
+    "name": "Angelic Ghost Spirit",
+    "type": "pet",
+    "rarity": "Secret",
+    "baseValue": 5000,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Secret Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Angelic_Ghost_Spirit.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Secret companion pet from Bubble Gum Simulator (Angelic Ghost Spirit).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized",
+      "shiny": "2"
+    }
+  },
+  {
+    "id": "pet_angelic_golf_ball_1787242128449",
+    "name": "Angelic Golf Ball",
+    "type": "pet",
+    "rarity": "Legendary",
+    "baseValue": 2000,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Legendary Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Angelic_Golf_Ball.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Legendary companion pet from Bubble Gum Simulator (Angelic Golf Ball).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized"
+    }
+  },
+  {
+    "id": "pet_angelic_skull_1787242128449",
+    "name": "Angelic Skull",
+    "type": "pet",
+    "rarity": "Legendary",
+    "baseValue": 5000,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Legendary Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Angelic_Skull.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Legendary companion pet from Bubble Gum Simulator (Angelic Skull).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized",
+      "normal": "321",
+      "shiny": "5"
+    },
+    "customValues": {
+      "shiny": 12000
+    }
+  },
+  {
+    "id": "pet_sinister_skull_1787242128449",
+    "name": "Sinister Skull",
+    "type": "pet",
+    "rarity": "Common",
+    "baseValue": 5000,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Common Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Sinister_Skull.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Common companion pet from Bubble Gum Simulator (Sinister Skull).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized",
+      "normal": "311",
+      "shiny": "2"
+    },
+    "customValues": {
+      "shiny": 13000
+    }
+  },
+  {
+    "id": "pet_dark_champion_1787242128449",
+    "name": "Dark Champion",
+    "type": "pet",
+    "rarity": "Secret",
+    "baseValue": 1100,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Secret Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Dark_Champion.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Secret companion pet from Bubble Gum Simulator (Dark Champion).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized",
+      "normal": "252",
+      "shiny": "3"
+    },
+    "customValues": {
+      "shiny": 3000
+    }
+  },
+  {
+    "id": "pet_king_mushroom_1787242128449",
+    "name": "King Mushroom",
+    "type": "pet",
+    "rarity": "Common",
+    "baseValue": 1,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Common Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/King_Mushroom.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Common companion pet from Bubble Gum Simulator (King Mushroom).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized"
+    }
+  },
+  {
+    "id": "pet_king_skull_1787242128449",
+    "name": "King Skull",
+    "type": "pet",
+    "rarity": "Common",
+    "baseValue": 4000,
+    "demand": 5,
+    "status": "Stable",
+    "category": "Common Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/King_Skull.png/revision/latest",
+    "multipliers": {
+      "Normal": 1,
+      "Shiny": 2.5,
+      "Mythic": 10,
+      "ShinyMythic": 25
+    },
+    "description": "Official Common companion pet from Bubble Gum Simulator (King Skull).",
+    "stats": {
+      "buffs": {
+        "Bubbles": 1000,
+        "Coins": 3000,
+        "Gems": 2500,
+        "All": 800
+      },
+      "movementType": "Fly"
+    },
+    "existence": {
+      "note": "Auto-Discovered & Synchronized",
+      "normal": "332",
+      "shiny": "4"
+    },
+    "customValues": {
+      "shiny": 12000
+    }
   }
 ]
