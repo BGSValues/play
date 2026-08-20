@@ -2370,7 +2370,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Ghosdeeri).",
     "existence": {},
     "customValues": {
-      "shiny": 7000
+      "shiny": 7000,
+      "mythic": null,
+      "mythicDemand": 5,
+      "shinyMythic": 4,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
     },
     "stats": {
       "buffs": {
@@ -5520,7 +5525,12 @@
     "description": "Official Secret companion pet from BGS Collab Value List (Wisplord).",
     "existence": {},
     "customValues": {
-      "shiny": 700
+      "shiny": 700,
+      "mythic": 7000,
+      "mythicDemand": 5,
+      "shinyMythic": null,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
     },
     "stats": {
       "buffs": {
@@ -7125,7 +7135,13 @@
       "movementType": "Fly",
       "chance": 0.005
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 150,
+      "mythicDemand": 7,
+      "shinyMythic": 900,
+      "shinyMythicDemand": 7,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -8085,7 +8101,12 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Clockwork).",
     "customValues": {
-      "shiny": 300
+      "shiny": 300,
+      "mythic": 250,
+      "mythicDemand": 5,
+      "shinyMythic": null,
+      "shinyMythicDemand": 2,
+      "mythicTrend": "Stable"
     },
     "stats": {
       "buffs": {
@@ -8303,7 +8324,13 @@
       "movementType": "Fly",
       "chance": 0.005
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 70,
+      "mythicDemand": 5,
+      "shinyMythic": 400,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -8660,7 +8687,13 @@
       "movementType": "Walk",
       "chance": 0.005
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 90,
+      "mythicDemand": 7,
+      "shinyMythic": 600,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -11165,7 +11198,13 @@
       "movementType": "Fly",
       "chance": 0.1
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 4000,
+      "mythicDemand": 5,
+      "shinyMythic": 8000,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -11417,7 +11456,12 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Frostbite).",
     "customValues": {
-      "shiny": 300
+      "shiny": 300,
+      "mythic": 300,
+      "mythicDemand": 5,
+      "shinyMythic": null,
+      "shinyMythicDemand": 3,
+      "mythicTrend": "Stable"
     },
     "stats": {
       "buffs": {
@@ -14508,7 +14552,13 @@
       "movementType": "Fly",
       "chance": 0.002
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 1000,
+      "mythicDemand": 5,
+      "shinyMythic": 450,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -14576,7 +14626,13 @@
       },
       "movementType": "Fly"
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 400,
+      "mythicDemand": 5,
+      "shinyMythic": 200,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -14830,7 +14886,12 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Lovesick).",
     "customValues": {
-      "shiny": 200
+      "shiny": 200,
+      "mythic": 400,
+      "mythicDemand": 5,
+      "shinyMythic": null,
+      "shinyMythicDemand": 1,
+      "mythicTrend": "Stable"
     },
     "stats": {
       "buffs": {
@@ -16346,7 +16407,13 @@
       "movementType": "Walk",
       "chance": 0.005
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 250,
+      "mythicDemand": 5,
+      "shinyMythic": 125,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -16479,7 +16546,13 @@
       },
       "movementType": "Fly"
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 100,
+      "mythicDemand": 7,
+      "shinyMythic": 800,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -17082,7 +17155,13 @@
       "movementType": "Fly",
       "chance": 0.005
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 250,
+      "mythicDemand": 5,
+      "shinyMythic": 125,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",
@@ -18721,7 +18800,12 @@
       "chance": null
     },
     "customValues": {
-      "shiny": 100
+      "shiny": 100,
+      "mythic": 80,
+      "mythicDemand": 5,
+      "shinyMythic": 600,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
     },
     "variants": [
       "Normal",
@@ -19058,7 +19142,13 @@
       "movementType": "Fly",
       "chance": 0.1
     },
-    "customValues": null,
+    "customValues": {
+      "mythic": 3800,
+      "mythicDemand": 5,
+      "shinyMythic": 7000,
+      "shinyMythicDemand": 5,
+      "mythicTrend": "Stable"
+    },
     "variants": [
       "Normal",
       "Shiny",

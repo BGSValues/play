@@ -231,7 +231,12 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
             <div style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.6rem', textAlign: 'center' }}>
               <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', marginBottom: '2px' }}>Demand</div>
               {(() => {
-                const d = getDemandInfo(currentVal ? pet.demand : null);
+                const variantDemand = (selectedVariant === 'Mythic' && pet.customValues?.mythicDemand)
+                  ? pet.customValues.mythicDemand
+                  : ((selectedVariant === 'ShinyMythic' || selectedVariant === 'S.Myth') && pet.customValues?.shinyMythicDemand)
+                  ? pet.customValues.shinyMythicDemand
+                  : pet.demand;
+                const d = getDemandInfo(currentVal ? variantDemand : null);
                 return (
                   <div
                     style={{
@@ -259,7 +264,10 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
             <div style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.6rem', textAlign: 'center' }}>
               <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', marginBottom: '2px' }}>Trend</div>
               {(() => {
-                const t = getTrendInfo(pet.status, currentVal);
+                const variantTrend = (selectedVariant === 'Mythic' && pet.customValues?.mythicTrend)
+                  ? pet.customValues.mythicTrend
+                  : pet.status;
+                const t = getTrendInfo(variantTrend, currentVal);
                 return (
                   <div style={{ fontSize: '0.95rem', fontWeight: 800, color: t.color, marginTop: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
                     <span>{t.symbol}</span> <span>{t.label}</span>
