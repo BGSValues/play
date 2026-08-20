@@ -103,7 +103,8 @@
         "Coins": 422500,
         "Gems": 458000
       },
-      "movementType": "Walk"
+      "movementType": "Walk",
+      "egg": "Alien Egg"
     },
     "customValues": null,
     "variants": [
@@ -6095,7 +6096,7 @@
         "Coins": 154000,
         "Gems": 107500
       },
-      "egg": null,
+      "egg": "Alien Egg",
       "movementType": "Fly",
       "chance": null
     },
@@ -6126,7 +6127,7 @@
         "Gems": 166500,
         "Coins": 148000
       },
-      "egg": null,
+      "egg": "Alien Egg",
       "movementType": "Fly",
       "chance": null
     },
@@ -6159,7 +6160,8 @@
         "Coins": 78950,
         "Gems": 88800
       },
-      "movementType": "Fly"
+      "movementType": "Fly",
+      "egg": "Alien Egg"
     },
     "customValues": null,
     "variants": [
@@ -6192,7 +6194,8 @@
         "Coins": 118400,
         "Gems": 133200
       },
-      "movementType": "Walk"
+      "movementType": "Walk",
+      "egg": "Alien Egg"
     },
     "customValues": null,
     "variants": [
@@ -6225,7 +6228,8 @@
         "Coins": 148000,
         "Gems": 166500
       },
-      "movementType": "Fly"
+      "movementType": "Fly",
+      "egg": "Alien Egg"
     },
     "customValues": null,
     "variants": [
@@ -6256,7 +6260,7 @@
         "Coins": 160000,
         "Gems": 180000
       },
-      "egg": null,
+      "egg": "Alien Egg",
       "movementType": "Fly",
       "chance": null
     },

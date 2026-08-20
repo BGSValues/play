@@ -68,38 +68,42 @@ export default function App() {
 
   const [systemSettings, setSystemSettings] = useState(null);
 
-  // Fetch System Settings & Announcement
-  const fetchSystemSettings = () => {
-    fetch('/api/system/settings')
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.success && data.settings) {
-          setSystemSettings(data.settings);
-        }
-      })
-      .catch(() => {});
-  };
-
+  // ━━━━ 30-SECOND REAL-TIME LIVE AUTO-UPDATE ━━━━
   useEffect(() => {
-    fetchSystemSettings();
-    const interval = setInterval(fetchSystemSettings, 15000);
-    return () => clearInterval(interval);
-  }, []);
+    const refreshData = () => {
+      // 1. Fetch live system settings & global broadcast
+      fetch('/api/system/settings')
+        .then(res => res.json())
+        .then(data => {
+          if (data.success && data.settings) setSystemSettings(data.settings);
+        })
+        .catch(() => {});
 
-  // Real Live Active Trader Session
-  const [activeUsersCount, setActiveUsersCount] = useState(1);
+      // 2. Fetch live updated pet values from backend database
+      fetch('/api/pets')
+        .then(res => res.json())
+        .then(data => {
+          if (data.success && Array.isArray(data.pets) && data.pets.length > 0) {
+            setPets(data.pets);
+          }
+        })
+        .catch(() => {});
 
-  useEffect(() => {
-    // Check real active session count
-    fetch('/api/users')
-      .then(res => res.json())
-      .then(data => {
-        if (data.success && Array.isArray(data.users)) {
-          const activeCount = data.users.filter(u => u.status === 'active').length;
-          setActiveUsersCount(Math.max(1, activeCount));
-        }
-      })
-      .catch(() => setActiveUsersCount(1));
+      // 3. Fetch live active user session count
+      fetch('/api/users')
+        .then(res => res.json())
+        .then(data => {
+          if (data.success && Array.isArray(data.users)) {
+            const activeCount = data.users.filter(u => u.status === 'active').length;
+            setActiveUsersCount(Math.max(1, activeCount));
+          }
+        })
+        .catch(() => {});
+    };
+
+    refreshData();
+    const liveTimer = setInterval(refreshData, 30000); // Recurring 30s auto-refresh
+    return () => clearInterval(liveTimer);
   }, []);
 
   const handleLogin = (userData) => {
