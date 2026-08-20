@@ -638,50 +638,181 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* ━━━━ GUIDES & SHOWCASE SMOOTH ANIMATIONS ━━━━ */
-.guide-section-fade {
-  animation: guideFadeSlide 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes guideFadeSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(20px) scale(0.98);
+/* ━━━━ COMPREHENSIVE MOBILE OPTIMIZATION (PHONES & TABLETS) ━━━━ */
+@media (max-width: 900px) {
+  .app-header {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
+
+  .nav-tabs {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 3px;
+  }
+
+  .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8rem;
+    flex-shrink: 0;
   }
 }
 
-.holo-staff-card {
-  position: relative;
-  background: rgba(14, 16, 24, 0.7);
-  border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  padding: 2rem;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  overflow: hidden;
+@media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .app-header {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .logo-text {
+    font-size: 1.1rem !important;
+  }
+
+  .login-header-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  /* Top Stat Bar - Horizontal Touch Carousel */
+  .top-stats-bar {
+    padding: 0.4rem 0.75rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .top-stats-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Controls & Search */
+  .controls-bar {
+    padding: 0 0.75rem;
+    margin: 0.75rem auto;
+    gap: 0.5rem;
+  }
+
+  .filter-pills {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+
+  .filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.76rem;
+    flex-shrink: 0;
+  }
+
+  /* Mobile 2-Column Pet Grid */
+  .pet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.65rem !important;
+    padding: 0 0.65rem !important;
+  }
+
+  .pet-card {
+    padding: 0.7rem !important;
+    border-radius: 14px !important;
+  }
+
+  .pet-card-image-wrap {
+    height: 105px !important;
+    margin: 0.2rem 0 !important;
+  }
+
+  .pet-name {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .value-multi-select {
+    margin-bottom: 0.5rem !important;
+    padding: 2px !important;
+  }
+
+  .multi-btn {
+    font-size: 0.65rem !important;
+    padding: 3px 0 !important;
+  }
+
+  .stats-table {
+    gap: 0.25rem !important;
+    font-size: 0.73rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .add-to-trade-btn {
+    padding: 0.45rem 0 !important;
+    font-size: 0.73rem !important;
+  }
+
+  /* Mobile Pagination */
+  .pagination-wrap {
+    gap: 4px !important;
+    padding: 1.5rem 0.5rem !important;
+  }
+
+  .page-btn {
+    min-width: 32px !important;
+    height: 32px !important;
+    padding: 0 6px !important;
+    font-size: 0.78rem !important;
+  }
+
+  /* Glass Cards & Containers */
+  .glass-card {
+    padding: 1rem !important;
+    border-radius: 16px !important;
+  }
+
+  /* Modals Full-Width on Mobile */
+  .modal-overlay {
+    padding: 0.5rem !important;
+    align-items: flex-end !important;
+  }
+
+  .modal-content {
+    width: 100% !important;
+    max-height: 90vh !important;
+    border-radius: 20px 20px 0 0 !important;
+    padding: 1.25rem !important;
+  }
 }
 
-.holo-staff-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-  transition: 0.6s;
-}
+@media (max-width: 380px) {
+  .pet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.5rem !important;
+    padding: 0 0.5rem !important;
+  }
 
-.holo-staff-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: rgba(0, 229, 255, 0.5);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 229, 255, 0.15);
-}
+  .pet-card {
+    padding: 0.55rem !important;
+  }
 
-.holo-staff-card:hover::after {
-  left: 100%;
+  .pet-card-image-wrap {
+    height: 90px !important;
+  }
 }
 
