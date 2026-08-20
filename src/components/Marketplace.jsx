@@ -5,7 +5,7 @@ import PetAvatar from './PetAvatar';
 export default function Marketplace({ pets, currentUser, onOpenLogin }) {
   const [listings, setListings] = useState(() => {
     const saved = localStorage.getItem('bgs_listings_v3');
-    return saved ? JSON.parse(saved) : getInitialDemoListings();
+    return saved ? JSON.parse(saved) : [];
   });
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
@@ -19,13 +19,13 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
   const [formDiscord, setFormDiscord] = useState('');
   const [formRoblox, setFormRoblox] = useState('');
 
-  // Fetch from backend API on mount
+  // Fetch real listings from backend API on mount
   const fetchListings = async () => {
     try {
       const res = await fetch('/api/listings');
       if (res.ok) {
         const data = await res.json();
-        if (data.success && Array.isArray(data.listings) && data.listings.length > 0) {
+        if (data.success && Array.isArray(data.listings)) {
           setListings(data.listings);
         }
       }
@@ -42,87 +42,6 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
   useEffect(() => {
     localStorage.setItem('bgs_listings_v3', JSON.stringify(listings));
   }, [listings]);
-
-  function getInitialDemoListings() {
-    return [
-      {
-        id: 'list_1',
-        traderName: 'tnbURRdXAI',
-        robloxUsername: 'tnbURRdXAI',
-        discord: 'tnb_trader#1234',
-        tag: 'FAIR',
-        timeAgo: '2 minutes ago',
-        status: 'open',
-        offering: [
-          { name: 'Dominus Astra', rarity: 'Legendary', value: 250000, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9c/Dominus_Astra.png/revision/latest' },
-        ],
-        requesting: [
-          { name: 'Fallen Angel', rarity: 'Legendary', value: 224655, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d6/Mythic_Fallen_Angel.png/revision/latest' }
-        ],
-      },
-      {
-        id: 'list_2',
-        traderName: 'De4thKid1',
-        robloxUsername: 'De4thKid1',
-        discord: 'de4thkid_bgs',
-        tag: 'OVERPAY',
-        timeAgo: '5 minutes ago',
-        status: 'completed',
-        offering: [
-          { name: 'Shadow Challenger', rarity: 'Legendary', value: 223593, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/Shadow_Challenger.png/revision/latest' }
-        ],
-        requesting: [
-          { name: 'Elite Sentinel', rarity: 'Legendary', value: 222515, demand: 9, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4d/Elite_Sentinel.png/revision/latest' }
-        ],
-      },
-      {
-        id: 'list_3',
-        traderName: 'aizen_ggz',
-        robloxUsername: 'aizen_ggz',
-        discord: 'aizen#5566',
-        tag: 'FAIR',
-        timeAgo: '8 minutes ago',
-        status: 'open',
-        offering: [
-          { name: 'Godly Shamrock', rarity: 'Legendary', value: 222602, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8e/Godly_Shamrock.png/revision/latest' }
-        ],
-        requesting: [
-          { name: 'Kraken', rarity: 'Secret', value: 200000, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/fa/Kraken.png/revision/latest' }
-        ],
-      },
-      {
-        id: 'list_4',
-        traderName: 'ignacio3207',
-        robloxUsername: 'ignacio3207',
-        discord: 'ignacio_trade',
-        tag: 'UNDERPAY',
-        timeAgo: '15 minutes ago',
-        status: 'cancelled',
-        offering: [
-          { name: 'The Overlord', rarity: 'Secret', value: 220000, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/aa/Mythic_The_Overlord.png/revision/latest' }
-        ],
-        requesting: [
-          { name: 'Leviathan', rarity: 'Secret', value: 180000, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9a/Leviathan.png/revision/latest' }
-        ],
-      },
-      {
-        id: 'list_5',
-        traderName: 'xStarDust',
-        robloxUsername: 'xStarDust',
-        discord: 'stardust#9090',
-        tag: 'FAIR',
-        timeAgo: '20 minutes ago',
-        status: 'open',
-        offering: [
-          { name: 'Wolflord', rarity: 'Secret', value: 190000, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/53/Wolflord.png/revision/latest' },
-          { name: 'Pyramidium', rarity: 'Secret', value: 170000, demand: 9, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/64/Pyramidium.png/revision/latest' }
-        ],
-        requesting: [
-          { name: 'King Dogcat', rarity: 'Secret', value: 230000, demand: 10, image: 'https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e9/King_Dogcat.png/revision/latest' }
-        ],
-      },
-    ];
-  }
 
   const calcVal = (items) => items?.reduce((s, i) => s + (typeof i.value === 'number' ? i.value : (typeof i.baseValue === 'number' ? i.baseValue : 0)), 0) || 0;
   const calcDemand = (items) => {
@@ -294,7 +213,28 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
       <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0 1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(580px, 1fr))', gap: '1.25rem' }}>
         {filteredListings.length === 0 ? (
           <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '4rem 1rem', color: '#64748b' }}>
-            <p style={{ fontSize: '1.2rem', fontWeight: 800 }}>No trade offers found matching "{search}"</p>
+            <div style={{ fontSize: '3rem', marginBottom: '0.75rem' }}>🤝</div>
+            <p style={{ fontSize: '1.25rem', fontWeight: 800, color: '#fff', margin: '0 0 0.5rem 0' }}>
+              {search ? `No trade offers found matching "${search}"` : 'No active trade listings yet'}
+            </p>
+            <p style={{ fontSize: '0.9rem', color: '#94a3b8', margin: '0 0 1.5rem 0' }}>
+              {search ? 'Try a different search term or clear the filter.' : 'Be the first trader to post your pet offer to the community marketplace!'}
+            </p>
+            {!search && (
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  if (!currentUser) {
+                    if (onOpenLogin) onOpenLogin();
+                  } else {
+                    setShowCreateModal(true);
+                  }
+                }}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.8rem 1.6rem', fontSize: '0.95rem' }}
+              >
+                <PlusCircle size={18} /> Post the First Trade Offer
+              </button>
+            )}
           </div>
         ) : (
           filteredListings.map((list) => {

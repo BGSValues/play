@@ -86,21 +86,20 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Dynamic Live Active Users Counter (Realistic slow shift, kept between 29 and 45)
-  const [activeUsersCount, setActiveUsersCount] = useState(() => {
-    return Math.floor(Math.random() * 10) + 31; // e.g. 31 to 40 base
-  });
+  // Real Live Active Trader Session
+  const [activeUsersCount, setActiveUsersCount] = useState(1);
 
   useEffect(() => {
-    // Slow, unhurried shift every 25 seconds (+1 or -1)
-    const interval = setInterval(() => {
-      setActiveUsersCount((prev) => {
-        const change = Math.random() > 0.5 ? 1 : -1;
-        const next = prev + change;
-        return Math.min(45, Math.max(29, next));
-      });
-    }, 25000);
-    return () => clearInterval(interval);
+    // Check real active session count
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(data => {
+        if (data.success && Array.isArray(data.users)) {
+          const activeCount = data.users.filter(u => u.status === 'active').length;
+          setActiveUsersCount(Math.max(1, activeCount));
+        }
+      })
+      .catch(() => setActiveUsersCount(1));
   }, []);
 
   const handleLogin = (userData) => {
