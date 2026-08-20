@@ -109,6 +109,21 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
   const [page, setPage] = useState(1);
   const pageSize = 25;
 
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
+  const [profileForm, setProfileForm] = useState({
+    username: currentUser?.username || 'Owner_Admin',
+    robloxUsername: currentUser?.robloxUsername || 'BGS_Owner_Official',
+    discord: currentUser?.discord || '',
+  });
+
+  const [isGrantModalOpen, setIsGrantModalOpen] = useState(false);
+  const [grantForm, setGrantForm] = useState({
+    username: '',
+    robloxUsername: '',
+    role: 'mod',
+    discord: '',
+  });
+
   const [sysSettings, setSysSettings] = useState({
     maintenanceMode: false,
     maintenanceMessage: '',
@@ -606,6 +621,44 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
     }
   };
 
+  const handleSaveAdminProfile = (e) => {
+    e.preventDefault();
+    const updated = {
+      ...currentUser,
+      username: profileForm.username.trim() || currentUser?.username || 'Owner_Admin',
+      robloxUsername: profileForm.robloxUsername.trim() || currentUser?.robloxUsername || 'BGS_Owner_Official',
+      discord: profileForm.discord.trim(),
+    };
+    localStorage.setItem('bgs_user', JSON.stringify(updated));
+    setMsg({ type: 'success', text: `Profile updated! Display Name set to @${updated.username}` });
+    setIsProfileModalOpen(false);
+    window.location.reload();
+  };
+
+  const handleGrantAccessSubmit = (e) => {
+    e.preventDefault();
+    if (!grantForm.username.trim()) {
+      setMsg({ type: 'error', text: 'Username is required to grant access.' });
+      return;
+    }
+    const newStaff = {
+      id: `staff_${Date.now()}`,
+      username: grantForm.username.trim(),
+      robloxUsername: grantForm.robloxUsername.trim() || grantForm.username.trim(),
+      role: grantForm.role || 'mod',
+      discord: grantForm.discord.trim(),
+      reputation: 100,
+      tradesCompleted: 25,
+      status: 'active',
+      createdAt: new Date().toISOString(),
+    };
+    setUsersList((prev) => [newStaff, ...prev.filter((u) => u.username !== newStaff.username)]);
+    const existingStaff = JSON.parse(localStorage.getItem('bgs_staff_users') || '[]');
+    localStorage.setItem('bgs_staff_users', JSON.stringify([newStaff, ...existingStaff]));
+    setMsg({ type: 'success', text: `🎉 Successfully granted ${newStaff.role.toUpperCase()} edit access to @${newStaff.username}!` });
+    setIsGrantModalOpen(false);
+  };
+
   const handleDeletePet = async (id, name) => {
     if (!window.confirm(`Delete "${name}" from database?`)) return;
     try {
@@ -856,8 +909,34 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                   {currentUser.role === 'owner' ? 'Root Owner' : 'Staff Moderator'}
                 </span>
               </div>
-              <p style={{ color: '#94a3b8', fontSize: '0.85rem', margin: '4px 0 0 0' }}>
-                Logged in as <strong style={{ color: '#fff' }}>{currentUser.username}</strong> • Roblox: <strong style={{ color: '#00e5ff' }}>{currentUser.robloxUsername || 'Official'}</strong>
+              <p style={{ color: '#94a3b8', fontSize: '0.85rem', margin: '4px 0 0 0', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                <span>Logged in as <strong style={{ color: '#fff' }}>{currentUser.username}</strong> • Roblox: <strong style={{ color: '#00e5ff' }}>{currentUser.robloxUsername || 'Official'}</strong></span>
+                <button
+                  onClick={() => {
+                    setProfileForm({
+                      username: currentUser?.username || 'Owner_Admin',
+                      robloxUsername: currentUser?.robloxUsername || 'BGS_Owner_Official',
+                      discord: currentUser?.discord || '',
+                    });
+                    setIsProfileModalOpen(true);
+                  }}
+                  style={{
+                    background: 'rgba(255, 204, 0, 0.15)',
+                    border: '1px solid #ffcc00',
+                    color: '#ffcc00',
+                    borderRadius: '6px',
+                    padding: '2px 8px',
+                    fontSize: '0.75rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                  }}
+                  title="Update your custom admin display name and Roblox handle"
+                >
+                  ✏️ Edit Name & Profile
+                </button>
               </p>
             </div>
           </div>
@@ -1369,6 +1448,17 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
 
               <button className="filter-btn" onClick={fetchUsers} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <RefreshCw size={14} className={usersLoading ? 'spin' : ''} /> Refresh
+              </button>
+
+              <button
+                className="btn-primary"
+                onClick={() => {
+                  setGrantForm({ username: '', robloxUsername: '', role: 'mod', discord: '' });
+                  setIsGrantModalOpen(true);
+                }}
+                style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.55rem 1.1rem', fontSize: '0.85rem' }}
+              >
+                <UserCheck size={15} /> ➕ Grant Staff Access
               </button>
             </div>
           </div>
@@ -2469,6 +2559,141 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
                   style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '0.7rem 1.8rem' }}
                 >
                   <Save size={16} /> {loading ? 'Saving Changes...' : editingItem ? 'Save Item Changes' : 'Create & Publish Item'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* ━━━━ EDIT ADMIN PROFILE & NAME MODAL ━━━━ */}
+      {isProfileModalOpen && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(10px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10000, padding: '1rem' }}>
+          <div className="glass-card" style={{ maxWidth: '480px', width: '100%', padding: '2rem', border: '1px solid rgba(255, 204, 0, 0.4)', borderRadius: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+              <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                ✏️ Edit Admin Identity
+              </h3>
+              <button onClick={() => setIsProfileModalOpen(false)} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer' }}>
+                <X size={20} />
+              </button>
+            </div>
+
+            <form onSubmit={handleSaveAdminProfile}>
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Display / Admin Username
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={profileForm.username}
+                  onChange={(e) => setProfileForm({ ...profileForm, username: e.target.value })}
+                  placeholder="e.g. Master_Owner"
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Roblox Username / Handle
+                </label>
+                <input
+                  type="text"
+                  value={profileForm.robloxUsername}
+                  onChange={(e) => setProfileForm({ ...profileForm, robloxUsername: e.target.value })}
+                  placeholder="e.g. RobloxPlayer123"
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Discord Tag (Optional)
+                </label>
+                <input
+                  type="text"
+                  value={profileForm.discord}
+                  onChange={(e) => setProfileForm({ ...profileForm, discord: e.target.value })}
+                  placeholder="e.g. your_discord_tag"
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' }}>
+                <button type="button" className="filter-btn" onClick={() => setIsProfileModalOpen(false)}>
+                  Cancel
+                </button>
+                <button type="submit" className="btn-primary" style={{ padding: '0.75rem 1.5rem', fontWeight: 900 }}>
+                  Save Profile
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* ━━━━ GRANT STAFF / EDIT ACCESS MODAL ━━━━ */}
+      {isGrantModalOpen && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(10px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10000, padding: '1rem' }}>
+          <div className="glass-card" style={{ maxWidth: '480px', width: '100%', padding: '2rem', border: '1px solid rgba(0, 229, 255, 0.4)', borderRadius: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+              <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                ➕ Grant Staff / Edit Access
+              </h3>
+              <button onClick={() => setIsGrantModalOpen(false)} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer' }}>
+                <X size={20} />
+              </button>
+            </div>
+
+            <form onSubmit={handleGrantAccessSubmit}>
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Username to Grant Access
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={grantForm.username}
+                  onChange={(e) => setGrantForm({ ...grantForm, username: e.target.value })}
+                  placeholder="e.g. NewModerator"
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Role & Permissions
+                </label>
+                <select
+                  value={grantForm.role}
+                  onChange={(e) => setGrantForm({ ...grantForm, role: e.target.value })}
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                >
+                  <option value="mod">Staff Moderator 🛡️ (Can Edit Values & Moderate)</option>
+                  <option value="owner">Co-Owner 👑 (Full Root Master Privileges)</option>
+                </select>
+              </div>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', marginBottom: '0.4rem', fontWeight: 700 }}>
+                  Roblox Handle (Optional)
+                </label>
+                <input
+                  type="text"
+                  value={grantForm.robloxUsername}
+                  onChange={(e) => setGrantForm({ ...grantForm, robloxUsername: e.target.value })}
+                  placeholder="e.g. RobloxStaff"
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.75rem 1rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' }}>
+                <button type="button" className="filter-btn" onClick={() => setIsGrantModalOpen(false)}>
+                  Cancel
+                </button>
+                <button type="submit" className="btn-primary" style={{ padding: '0.75rem 1.5rem', fontWeight: 900 }}>
+                  Grant Access
                 </button>
               </div>
             </form>
