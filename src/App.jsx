@@ -67,6 +67,7 @@ export default function App() {
   });
 
   const [systemSettings, setSystemSettings] = useState(null);
+  const [activeUsersCount, setActiveUsersCount] = useState(1);
 
   // ━━━━ 30-SECOND REAL-TIME LIVE AUTO-UPDATE ━━━━
   useEffect(() => {
