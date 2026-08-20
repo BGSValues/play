@@ -135,13 +135,10 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
         const valB = (typeof b.baseValue === 'number' && !isNaN(b.baseValue) && b.baseValue > 0) ? b.baseValue : -1;
 
         if (sortOrder === 'showcase') {
-          // Dynamic Showcase Rotation: Group by rarity/tier, then rotate items on every session/shuffle
-          const rarityRank = { Secret: 5, Legendary: 4, Unique: 3, Epic: 2, Rare: 1, Common: 0 };
-          const rankA = rarityRank[a.rarity] || 0;
-          const rankB = rarityRank[b.rarity] || 0;
-          if (rankA !== rankB) return rankB - rankA;
-
-          return getRotationScore(a, rotationSeed) - getRotationScore(b, rotationSeed);
+          // Dynamic Showcase Rotation: Interleave all rarities across every page for a rich, diverse mixture
+          const scoreA = getRotationScore(a, rotationSeed);
+          const scoreB = getRotationScore(b, rotationSeed);
+          return scoreA - scoreB;
         }
 
         if (sortOrder === 'demand') {
