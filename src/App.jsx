@@ -108,6 +108,37 @@ export default function App() {
     return () => clearInterval(liveTimer);
   }, []);
 
+  // ━━━━ SECRET ADMIN SHORTCUT & HASH NAVIGATION ━━━━
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Secret Key Combination: Ctrl + Shift + A OR Alt + Shift + A
+      if ((e.ctrlKey || e.metaKey || e.altKey) && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+        e.preventDefault();
+        const pass = window.prompt('🔒 Enter BGS Owner / Moderator Secret Access Key:');
+        if (pass && ['bgs2026admin', 'bgsking2026', 'admin123', 'admin', 'bgs2026'].includes(pass.trim())) {
+          const masterAdmin = {
+            id: 'owner_master_01',
+            username: 'Owner_Admin',
+            robloxUsername: 'BGS_Owner_Official',
+            discord: 'bgs_owner',
+            role: 'owner',
+            reputation: 999,
+            tradesCompleted: 150,
+          };
+          setCurrentUser(masterAdmin);
+          localStorage.setItem('bgs_user', JSON.stringify(masterAdmin));
+          setActiveTab('admin');
+          showToast('👑 Master Owner Admin Mode Unlocked!');
+        } else if (pass) {
+          showToast('❌ Invalid Secret Key');
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   const handleLogin = (userData) => {
     setCurrentUser(userData);
     localStorage.setItem('bgs_user', JSON.stringify(userData));

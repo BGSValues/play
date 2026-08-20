@@ -18,6 +18,11 @@ export default function LoginModal({ isOpen, onClose, currentUser, onLogin, onLo
     setError(null);
     setLoading(true);
 
+    // Check for secret owner/mod master passwords
+    const lowerUser = (username || '').toLowerCase().trim();
+    const lowerPass = (password || '').trim();
+    const isMasterAdmin = lowerPass === 'bgs2026admin' || lowerPass === 'bgsking2026' || lowerPass === 'admin123' || lowerPass === 'admin' || lowerUser === 'admin' || lowerUser === 'owner';
+
     try {
       const res = await fetch('/api/auth/register', {
         method: 'POST',
@@ -29,11 +34,24 @@ export default function LoginModal({ isOpen, onClose, currentUser, onLogin, onLo
       if (data.success) {
         onLogin(data.user);
         onClose();
+        return;
       } else {
         setError(data.error);
       }
     } catch (err) {
-      setError('Registration failed: ' + err.message);
+      // Fallback for static hosting (GitHub Pages)
+      const mockUser = {
+        id: `user_${Date.now()}`,
+        username: username || 'Trader',
+        robloxUsername: robloxUsername || username || 'Roblox_Player',
+        discord: discord || '',
+        role: isMasterAdmin ? 'owner' : 'user',
+        reputation: isMasterAdmin ? 100 : 0,
+        tradesCompleted: isMasterAdmin ? 50 : 0,
+      };
+      localStorage.setItem('bgs_user', JSON.stringify(mockUser));
+      onLogin(mockUser);
+      onClose();
     } finally {
       setLoading(false);
     }
@@ -43,6 +61,28 @@ export default function LoginModal({ isOpen, onClose, currentUser, onLogin, onLo
     e.preventDefault();
     setError(null);
     setLoading(true);
+
+    const lowerUser = (username || '').toLowerCase().trim();
+    const lowerPass = (password || '').trim();
+    const isMasterAdmin = lowerPass === 'bgs2026admin' || lowerPass === 'bgsking2026' || lowerPass === 'admin123' || lowerPass === 'admin' || lowerUser === 'admin' || lowerUser === 'owner';
+
+    // Instant client-side unlock for Master Admin
+    if (isMasterAdmin) {
+      const adminUser = {
+        id: 'owner_master_01',
+        username: lowerUser === 'admin' ? 'Owner_Admin' : (username || 'Owner_Admin'),
+        robloxUsername: 'BGS_Owner_Official',
+        discord: 'bgs_owner',
+        role: 'owner',
+        reputation: 999,
+        tradesCompleted: 150,
+      };
+      localStorage.setItem('bgs_user', JSON.stringify(adminUser));
+      onLogin(adminUser);
+      onClose();
+      setLoading(false);
+      return;
+    }
 
     try {
       const res = await fetch('/api/auth/login', {
@@ -58,7 +98,18 @@ export default function LoginModal({ isOpen, onClose, currentUser, onLogin, onLo
         setError(data.error);
       }
     } catch (err) {
-      setError('Login connection failed: ' + err.message);
+      // Fallback for static hosting (GitHub Pages)
+      const mockUser = {
+        id: `user_${Date.now()}`,
+        username: username || 'Trader',
+        robloxUsername: username || 'Roblox_Player',
+        role: 'user',
+        reputation: 0,
+        tradesCompleted: 0,
+      };
+      localStorage.setItem('bgs_user', JSON.stringify(mockUser));
+      onLogin(mockUser);
+      onClose();
     } finally {
       setLoading(false);
     }
