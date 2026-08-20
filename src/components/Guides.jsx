@@ -38,6 +38,7 @@ export default function Guides({ initialSection = 'about' }) {
 
   const navTabs = [
     { id: 'about', label: 'Leadership & Staff', icon: Users, color: '#ffcc00' },
+    { id: 'changelog', label: 'Live Sync & Patch Notes', icon: Sparkles, color: '#10b981' },
     { id: 'stsc', label: 'STSC & Demand Guide', icon: Scale, color: '#00e5ff' },
     { id: 'methodology', label: 'Valuation Methodology', icon: BarChart3, color: '#a78bfa' },
     { id: 'rules', label: 'Anti-Scam & Fair Trade', icon: ShieldCheck, color: '#10b981' },
@@ -339,6 +340,88 @@ export default function Guides({ initialSection = 'about' }) {
                     💬 Community
                   </span>
                 </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ============================================================== */}
+        {/* SECTION: LIVE SYNC & PATCH NOTES                               */}
+        {/* ============================================================== */}
+        {activeSection === 'changelog' && (
+          <div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: '2.2rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                Live <span style={{ color: '#10b981' }}>Sync Feed & Patch Notes</span>
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
+                Continuous automated synchronization logs from the BGS Wiki, Lua Game Data, and Collab Value List.
+              </p>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
+              {/* Event 1: Wiki & Lua Stats Engine */}
+              <div className="glass-card" style={{ padding: '1.75rem', border: '1px solid rgba(0, 229, 255, 0.3)', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '0.75rem' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 900, background: 'rgba(0, 229, 255, 0.12)', border: '1px solid rgba(0, 229, 255, 0.3)', color: '#00e5ff', padding: '3px 10px', borderRadius: '6px', textTransform: 'uppercase' }}>
+                    🔄 REAL-TIME AUTO-SYNC ENGINE
+                  </span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.8rem', fontWeight: 700 }}>Auto-Refreshing Every 30s</span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                  1,575 In-Game Items & 144 Eggs Active
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
+                  Whenever a new pet or egg is added to Bubble Gum Simulator, our background worker automatically extracts its 3D model, hatch probabilities, and multiplier stats directly from the Fandom Wiki and game Lua modules.
+                </p>
+              </div>
+
+              {/* Event 2: Collab List Reconciliation */}
+              <div className="glass-card" style={{ padding: '1.75rem', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '0.75rem' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 900, background: 'rgba(16, 185, 129, 0.12)', border: '1px solid rgba(16, 185, 129, 0.3)', color: '#10b981', padding: '3px 10px', borderRadius: '6px', textTransform: 'uppercase' }}>
+                    📈 COLLAB VALUE SYNCHRONIZATION
+                  </span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.8rem', fontWeight: 700 }}>2026 Trading Consensus</span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                  Strict Collab Pricing Alignment & N/A Flagging
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
+                  All pet prices and demand ratings are matched with genuine entries on the BGS Collab Value List. If a pet does not have an active Collab trade listing, its value is strictly shown as <strong>N/A (—)</strong> to ensure 100% genuine market transparency.
+                </p>
+              </div>
+
+              {/* Event 3: 144 Official Egg Models */}
+              <div className="glass-card" style={{ padding: '1.75rem', border: '1px solid rgba(255, 204, 0, 0.3)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '0.75rem' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 900, background: 'rgba(255, 204, 0, 0.12)', border: '1px solid rgba(255, 204, 0, 0.3)', color: '#ffcc00', padding: '3px 10px', borderRadius: '6px', textTransform: 'uppercase' }}>
+                    🥚 144 IN-GAME EGG ROSTERS
+                  </span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.8rem', fontWeight: 700 }}>Complete 3D In-Game Models</span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                  Full Secret & Legendary Hatch Manifests
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
+                  Every egg card (Alien Egg, Hellish Egg, 1B Egg, Vacation Egg, Cosmic Egg) now links directly to verified 3D game models and displays all hatchable secrets with exact drop chances.
+                </p>
+              </div>
+
+              {/* Event 4: Zero Dupe Policy */}
+              <div className="glass-card" style={{ padding: '1.75rem', border: '1px solid rgba(236, 72, 153, 0.3)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '0.75rem' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 900, background: 'rgba(236, 72, 153, 0.12)', border: '1px solid rgba(236, 72, 153, 0.3)', color: '#ec4899', padding: '3px 10px', borderRadius: '6px', textTransform: 'uppercase' }}>
+                    🛡️ ZERO-DUPE & REPUTATION ENGINE
+                  </span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.8rem', fontWeight: 700 }}>Clean Economy Standard</span>
+                </div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#fff', margin: '0 0 0.5rem 0' }}>
+                  Clean Database Audit
+                </h3>
+                <p style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
+                  Purged scraped wiki table comments, thread artifacts, and duplicate entries. All values reflect clean, un-duped items to preserve true collector worth.
+                </p>
               </div>
             </div>
           </div>
