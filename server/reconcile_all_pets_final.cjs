@@ -5,13 +5,13 @@ const petsPath = path.join(__dirname, '../src/data/pets.json');
 const serverPetsPath = path.join(__dirname, 'data/pets.json');
 let pets = JSON.parse(fs.readFileSync(petsPath, 'utf8'));
 
-// Build lookup map by lowercase trimmed name
 const petMap = new Map();
 pets.forEach((p, idx) => {
   delete p.shinyValue;
   delete p.mythicValue;
   delete p.shinyMythicValue;
   p.customValues = null;
+  p.existence = {};
   petMap.set(p.name.toLowerCase().trim(), idx);
 });
 
@@ -59,7 +59,7 @@ function parseDemand(demStr) {
   return 5;
 }
 
-// 1. Process Limited Secrets & Permanent Secrets (Sets baseValue, normal demand, shiny value, normal/shiny existence)
+// 1. Process Limited Secrets & Permanent Secrets (Normal 🥚 and Shiny ✨)
 const secretFiles = ['full_limited-secrets.html', 'full_permanent-secrets.html'];
 for (const file of secretFiles) {
   const spans = getSpans(file);
@@ -86,9 +86,8 @@ for (const file of secretFiles) {
         }
 
         if (exist && (exist.includes('🥚') || exist.includes('✨'))) {
-          if (!pet.existence) pet.existence = {};
           const nMatch = exist.match(/([0-9,]+)\s*🥚/);
-          const sMatch = exist.match(/([0-9,]+)\s*✨/);
+          const sMatch = exist.match(/([0-9,]+)\s*✨(?!⚡)/);
           if (nMatch) pet.existence.normal = nMatch[1];
           if (sMatch) pet.existence.shiny = sMatch[1];
         }
@@ -97,7 +96,7 @@ for (const file of secretFiles) {
   }
 }
 
-// 2. Process Mythic Secrets (ONLY touches customValues.mythic and customValues.shinyMythic and ⚡ existence)
+// 2. Process Mythic Secrets (Mythic ⚡ and Shiny Mythic ✨⚡)
 const mythicFiles = ['full_mythic-secrets.html'];
 for (const file of mythicFiles) {
   const spans = getSpans(file);
@@ -120,9 +119,8 @@ for (const file of mythicFiles) {
       }
 
       if (existStr && (existStr.includes('⚡') || existStr.includes('✨⚡'))) {
-        if (!pet.existence) pet.existence = {};
-        const mMatch = existStr.match(/([0-9,]+)\s*⚡/);
-        const smMatch = existStr.match(/([0-9,]+)\s*✨⚡/);
+        const mMatch = existStr.match(/([0-9,]+)\s*⚡(?!✨)/);
+        const smMatch = existStr.match(/([0-9,]+)\s*(?:✨⚡|✨\s*⚡)/);
         if (mMatch) pet.existence.mythic = mMatch[1];
         if (smMatch) pet.existence.shinyMythic = smMatch[1];
       }
@@ -130,7 +128,7 @@ for (const file of mythicFiles) {
   }
 }
 
-// 3. Process Bubble Pass, T3s, OGs, Traveling Merchant
+// 3. Process Bubble Pass & Other Categories
 const otherFiles = ['full_bubble-pass-pets.html', 'full_t3s.html', 'full_ogs.html', 'full_traveling-merchant-pets.html', 'full_robux-and-gamepass-pets.html'];
 for (const file of otherFiles) {
   const spans = getSpans(file);
@@ -156,7 +154,7 @@ for (const file of otherFiles) {
   }
 }
 
-// 4. Strictly ensure Tophat pets are Secret companion pets
+// 4. Ensure Tophat pets
 for (const p of pets) {
   if (p.name.startsWith('Tophat (') || p.name.startsWith('Tophat(') || p.name === 'Magic Tophat' || p.name === 'Golden Tophat') {
     p.type = 'pet';
@@ -164,9 +162,6 @@ for (const p of pets) {
     p.category = 'Secret Pets';
     p.description = `Official Secret companion pet from Bubble Gum Simulator (${p.name}).`;
     p.multipliers = { Normal: 1, Shiny: 2.5, Mythic: 10, ShinyMythic: 25 };
-    if (!p.stats) {
-      p.stats = { buffs: { Bubbles: 190000, Coins: 675000, Gems: 750000 }, movementType: 'Walk' };
-    }
   }
 }
 
@@ -175,16 +170,6 @@ if (fs.existsSync(path.dirname(serverPetsPath))) {
   fs.writeFileSync(serverPetsPath, JSON.stringify(pets, null, 2), 'utf8');
 }
 
-console.log('--- STRICT VALIDATION OF SAMPLES ---');
-const testPets = ['Lovely Rose', 'Harmonic Harp', 'Tophat (A)', 'Tophat (G)', 'Soul Heart', 'Lord Shock'];
-for (const n of testPets) {
-  const p = pets.find(x => x.name === n);
-  console.log(n + ':', {
-    type: p?.type,
-    rarity: p?.rarity,
-    baseValue: p?.baseValue,
-    demand: p?.demand + '/11',
-    customValues: p?.customValues,
-    existence: p?.existence
-  });
-}
+console.log('--- VERIFICATION OF GINGERBREAD SHARD ---');
+const gb = pets.find(p => p.name === 'Gingerbread Shard');
+console.log(JSON.stringify(gb, null, 2));
