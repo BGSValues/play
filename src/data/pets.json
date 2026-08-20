@@ -27825,35 +27825,6 @@
     "existence": {}
   },
   {
-    "id": "pet_user_blog_truxxk_hello",
-    "name": "User blog:Truxxk/Hello",
-    "rarity": "Epic",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Epic Pets",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/User_blog%3ATruxxk%2FHello.png",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Epic companion pet from BGS Collab Value List (User blog:Truxxk/Hello).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 180,
-        "Coins": 450,
-        "Gems": 400
-      },
-      "movementType": "Walk"
-    },
-    "customValues": null,
-    "variants": [
-      "Normal",
-      "Shiny"
-    ],
-    "existence": {}
-  },
-  {
     "id": "pet_twilight_dragon",
     "name": "Twilight Dragon",
     "rarity": "Epic",
@@ -41258,35 +41229,6 @@
     "existence": {}
   },
   {
-    "id": "pet_thread_beckaaa__comment_37561754_20190329201318",
-    "name": "Thread:Beckaaa/@comment-37561754-20190329201318",
-    "rarity": "Common",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Common Pets",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/Thread%3ABeckaaa%2F%40comment-37561754-20190329201318.png",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Common companion pet from BGS Collab Value List (Thread:Beckaaa/@comment-37561754-20190329201318).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 25,
-        "Coins": 50,
-        "Gems": 40
-      },
-      "movementType": "Walk"
-    },
-    "customValues": null,
-    "variants": [
-      "Normal",
-      "Shiny"
-    ],
-    "existence": {}
-  },
-  {
     "id": "pet_blossom_deer",
     "name": "Blossom Deer",
     "rarity": "Unique",
@@ -44917,35 +44859,6 @@
     "existence": {}
   },
   {
-    "id": "pet_user_blog_theodorcork_bgs_pets_in_2_year_will_be____",
-    "name": "User blog:TheodorCork/BGS pets in 2 year will be ...",
-    "rarity": "Common",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Common Pets",
-    "image": "https://bubble-gum-simulator.fandom.com/wiki/Special:FilePath/User_blog%3ATheodorCork%2FBGS_pets_in_2_year_will_be_....png",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5
-    },
-    "description": "Official Common companion pet from BGS Collab Value List (User blog:TheodorCork/BGS pets in 2 year will be ...).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 25,
-        "Coins": 50,
-        "Gems": 40
-      },
-      "movementType": "Walk"
-    },
-    "customValues": null,
-    "variants": [
-      "Normal",
-      "Shiny"
-    ],
-    "existence": {}
-  },
-  {
     "id": "pet_tulip_wolf",
     "name": "Tulip Wolf",
     "rarity": "Unique",
@@ -47282,27 +47195,6 @@
     ]
   },
   {
-    "id": "hat_1787027187025_qbrzyx",
-    "name": "Sircfenner",
-    "type": "hat",
-    "rarity": "Legendary",
-    "category": "Hats",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b1/Sircfenner.png/revision/latest?cb=20190329232854",
-    "description": "Equippable Hat accessory in Bubble Gum Simulator (Sircfenner).",
-    "multipliers": null,
-    "stats": {
-      "movementType": "Hat Accessory"
-    },
-    "existence": {},
-    "customValues": null,
-    "variants": [
-      "Normal"
-    ]
-  },
-  {
     "id": "hat_1787027187025_9n4ln3",
     "name": "Snorkel",
     "type": "hat",
@@ -47891,35 +47783,6 @@
     ]
   },
   {
-    "id": "pet_max_shadow_1787242128448",
-    "name": "Max Shadow",
-    "type": "pet",
-    "rarity": "Common",
-    "baseValue": 1,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Common Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Max_Shadow.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Common companion pet from Bubble Gum Simulator (Max Shadow).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1000,
-        "Coins": 3000,
-        "Gems": 2500,
-        "All": 800
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
     "id": "pet_frost_1787242128449",
     "name": "Frost",
     "type": "pet",
@@ -47947,75 +47810,6 @@
     },
     "existence": {},
     "customValues": null
-  },
-  {
-    "id": "pet_demonic_ghost_1787242128449",
-    "name": "Demonic Ghost",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": 10,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Demonic_Ghost.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion pet from Bubble Gum Simulator (Demonic Ghost).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1000,
-        "Coins": 3000,
-        "Gems": 2500,
-        "All": 800
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_demonic_ghost_spirit_1787242128449",
-    "name": "Demonic Ghost Spirit",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": 500,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f6/Demonic_Ghost_Spirit.png/revision/latest?cb=20201023232125",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion pet from Bubble Gum Simulator (Demonic Ghost Spirit).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 38200,
-        "Gems": 164210,
-        "Treats": 42500,
-        "Coins": 153225
-      },
-      "egg": "900M Egg",
-      "movementType": "Fly",
-      "chance": 6.25
-    },
-    "existence": {
-      "normal": "4,989",
-      "shiny": "91",
-      "mythic": "35",
-      "shinyMythic": "3"
-    },
-    "customValues": {
-      "shiny": 1850,
-      "mythic": 8000,
-      "shinyMythic": 150000
-    }
   },
   {
     "id": "pet_demonic_golf_ball_1787242128449",
@@ -48229,35 +48023,6 @@
     }
   },
   {
-    "id": "pet_king_mushroom_1787242128449",
-    "name": "King Mushroom",
-    "type": "pet",
-    "rarity": "Common",
-    "baseValue": 1,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Common Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/King_Mushroom.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Common companion pet from Bubble Gum Simulator (King Mushroom).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1000,
-        "Coins": 3000,
-        "Gems": 2500,
-        "All": 800
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
     "id": "pet_king_skull_1787242128449",
     "name": "King Skull",
     "type": "pet",
@@ -48290,122 +48055,6 @@
     "customValues": {
       "shiny": 332
     }
-  },
-  {
-    "id": "pet_bubble_and_egg_prize_pets_1787242352310",
-    "name": "Bubble and Egg Prize Pets",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 35,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Bubble_and_Egg_Prize_Pets.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Bubble and Egg Prize Pets).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_bad_1787242352310",
-    "name": "BAD",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 100,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/BAD.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (BAD).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_good_1787242352314",
-    "name": "GOOD",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 2500,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/GOOD.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (GOOD).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_average_1787242352314",
-    "name": "AVERAGE",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 600,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/AVERAGE.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (AVERAGE).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
   },
   {
     "id": "hat_tophat__a__1787242352324",
@@ -48981,43 +48630,6 @@
     }
   },
   {
-    "id": "pet_sircfenner_plushie_1787242352326",
-    "name": "sircfenner Plushie",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 900,
-    "demand": 6,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/5/57/Sircfenner_Plushie.png/revision/latest?cb=20201204230212",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (sircfenner Plushie).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {
-      "normal": "1,282",
-      "shiny": "24",
-      "mythic": "14",
-      "shinyMythic": "0"
-    },
-    "customValues": {
-      "shiny": 6000,
-      "mythic": 3500
-    }
-  },
-  {
     "id": "pet_obscureentity_plushie_1787242352326",
     "name": "ObscureEntity Plushie",
     "type": "pet",
@@ -49124,188 +48736,6 @@
     "customValues": {
       "shiny": 7
     }
-  },
-  {
-    "id": "pet_frosted_shard_1787242352327",
-    "name": "Frosted Shard",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 800,
-    "demand": 7,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Frosted_Shard.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (Frosted Shard).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 3500
-    }
-  },
-  {
-    "id": "pet_sirb15muth__2_e50__1787242352332",
-    "name": "SirB15MUTH (2 E50)",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 100,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/SirB15MUTH_(2_E50).png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (SirB15MUTH (2 E50)).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_sirb15muth__e50__1787242352332",
-    "name": "SirB15MUTH (E50)",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 100,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/SirB15MUTH_(E50).png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (SirB15MUTH (E50)).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_o_c_1787242352332",
-    "name": "O/C",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 11,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/O%2FC.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (O/C).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {
-      "mythic": "13",
-      "shinyMythic": "1"
-    },
-    "customValues": {
-      "mythic": 81,
-      "shinyMythic": 5
-    }
-  },
-  {
-    "id": "pet_nxtpurpleroses__potted__1787242352332",
-    "name": "NxtPurpleRoses (Potted)",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 13,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/NxtPurpleRoses_(Potted).png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (NxtPurpleRoses (Potted)).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_sirb15muth__potted____z_fistbr__lvl_1__1787242352332",
-    "name": "SirB15MUTH (Potted) - Z_fistBR (lvl 1)",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 100,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/SirB15MUTH_(Potted)_-_Z_fistBR_(lvl_1).png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (SirB15MUTH (Potted) - Z_fistBR (lvl 1)).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
   },
   {
     "id": "pet_mythic_wisplord_1787242352332",
@@ -49835,35 +49265,6 @@
     "customValues": null
   },
   {
-    "id": "pet_mythic_t3s_1787242352387",
-    "name": "Mythic T3s",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": 500,
-    "demand": 3,
-    "status": "Stable",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Mythic_T3s.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion item from BGS Collab Value List (Mythic T3s).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
     "id": "pet_shadow_hunter_1787242352387",
     "name": "Shadow Hunter",
     "type": "pet",
@@ -49890,35 +49291,6 @@
       "egg": "Exotic Egg",
       "movementType": "Fly",
       "chance": 0.00125
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_golford_1787242352387",
-    "name": "Golford",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": 250,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/Golford.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion item from BGS Collab Value List (Golford).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
     },
     "existence": {},
     "customValues": null
@@ -50085,64 +49457,6 @@
       "ShinyMythic": 25
     },
     "description": "Official Unique companion item from BGS Collab Value List (Mythic Spirit of Fortune).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_og_t2_1787242352402",
-    "name": "OG T2",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/OG_T2.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion item from BGS Collab Value List (OG T2).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_og_t3_1787242352402",
-    "name": "OG T3",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/OG_T3.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion item from BGS Collab Value List (OG T3).",
     "stats": {
       "buffs": {
         "Bubbles": 1200,
