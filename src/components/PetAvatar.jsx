@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const rarityThemes = {
   Secret: { bg: 'linear-gradient(135deg, #b967ff, #ff007f)', glow: 'rgba(185, 103, 255, 0.6)', border: '#ff007f', emoji: '👑' },
@@ -11,6 +11,10 @@ const rarityThemes = {
 
 export default function PetAvatar({ name = 'Pet', rarity = 'Common', image = '', size = 110, className = '' }) {
   const [imgError, setImgError] = useState(false);
+
+  useEffect(() => {
+    setImgError(false);
+  }, [image]);
 
   const theme = rarityThemes[rarity] || rarityThemes.Common;
   const initial = name.charAt(0).toUpperCase();
