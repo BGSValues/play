@@ -48568,35 +48568,6 @@
     "customValues": null
   },
   {
-    "id": "pet_1m_eggs_prize_1787242352310",
-    "name": "1M Eggs Prize",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 30,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1M_Eggs_Prize.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (1M Eggs Prize).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
     "id": "pet_good_1787242352314",
     "name": "GOOD",
     "type": "pet",
@@ -50141,37 +50112,6 @@
     "existence": {},
     "customValues": {
       "shiny": 200
-    }
-  },
-  {
-    "id": "pet_1b_marsh_1787242352387",
-    "name": "1B Marsh",
-    "type": "pet",
-    "rarity": "Legendary",
-    "baseValue": 25,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1B_Marsh.png/revision/latest",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Legendary companion item from BGS Collab Value List (1B Marsh).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 250
     }
   },
   {
