@@ -11,6 +11,7 @@ export default function EggAvatar({ egg, size = 110, className = '' }) {
 
   const rawUrl = egg.image || '';
   const hasImage = Boolean(rawUrl && rawUrl.startsWith('http'));
+  const imageSrc = rawUrl;
 
   const handleError = () => {
     setLoadFailed(true);
