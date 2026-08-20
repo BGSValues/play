@@ -8,7 +8,6 @@ let pets = JSON.parse(fs.readFileSync(petsPath, 'utf8'));
 // Build lookup map by lowercase trimmed name
 const petMap = new Map();
 pets.forEach((p, idx) => {
-  // Wipe legacy corrupted fields
   delete p.shinyValue;
   delete p.mythicValue;
   delete p.shinyMythicValue;
@@ -60,8 +59,8 @@ function parseDemand(demStr) {
   return 5;
 }
 
-// 1. Process Limited Secrets & Permanent Secrets
-const secretFiles = ['full_limited-secrets.html', 'full_permanent-secrets.html', 'copy-of-copy-of-limited-secrets.html', 'copy-of-limited-secrets.html'];
+// 1. Process Limited Secrets & Permanent Secrets (Sets baseValue, normal demand, shiny value, normal/shiny existence)
+const secretFiles = ['full_limited-secrets.html', 'full_permanent-secrets.html'];
 for (const file of secretFiles) {
   const spans = getSpans(file);
   for (let i = 0; i < spans.length; i++) {
@@ -98,8 +97,8 @@ for (const file of secretFiles) {
   }
 }
 
-// 2. Process Mythic Secrets
-const mythicFiles = ['full_mythic-secrets.html', 'copy-of-copy-of-mythic-secrets.html'];
+// 2. Process Mythic Secrets (ONLY touches customValues.mythic and customValues.shinyMythic and ⚡ existence)
+const mythicFiles = ['full_mythic-secrets.html'];
 for (const file of mythicFiles) {
   const spans = getSpans(file);
   for (let i = 0; i < spans.length; i++) {
@@ -131,8 +130,8 @@ for (const file of mythicFiles) {
   }
 }
 
-// 3. Process Bubble Pass & Other Categories
-const otherFiles = ['full_bubble-pass-pets.html', 'full_t3s.html', 'full_ogs.html', 'full_traveling-merchant-pets.html', 'full_robux-and-gamepass-pets.html', 'full_hats.html'];
+// 3. Process Bubble Pass, T3s, OGs, Traveling Merchant
+const otherFiles = ['full_bubble-pass-pets.html', 'full_t3s.html', 'full_ogs.html', 'full_traveling-merchant-pets.html', 'full_robux-and-gamepass-pets.html'];
 for (const file of otherFiles) {
   const spans = getSpans(file);
   for (let i = 0; i < spans.length; i++) {
@@ -157,12 +156,35 @@ for (const file of otherFiles) {
   }
 }
 
-// Save completely clean dataset
+// 4. Strictly ensure Tophat pets are Secret companion pets
+for (const p of pets) {
+  if (p.name.startsWith('Tophat (') || p.name.startsWith('Tophat(') || p.name === 'Magic Tophat' || p.name === 'Golden Tophat') {
+    p.type = 'pet';
+    p.rarity = 'Secret';
+    p.category = 'Secret Pets';
+    p.description = `Official Secret companion pet from Bubble Gum Simulator (${p.name}).`;
+    p.multipliers = { Normal: 1, Shiny: 2.5, Mythic: 10, ShinyMythic: 25 };
+    if (!p.stats) {
+      p.stats = { buffs: { Bubbles: 190000, Coins: 675000, Gems: 750000 }, movementType: 'Walk' };
+    }
+  }
+}
+
 fs.writeFileSync(petsPath, JSON.stringify(pets, null, 2), 'utf8');
 if (fs.existsSync(path.dirname(serverPetsPath))) {
   fs.writeFileSync(serverPetsPath, JSON.stringify(pets, null, 2), 'utf8');
 }
 
-console.log('--- FINAL VALIDATION OF HARMONIC HARP ---');
-const harp = pets.find(p => p.name === 'Harmonic Harp');
-console.log(JSON.stringify(harp, null, 2));
+console.log('--- STRICT VALIDATION OF SAMPLES ---');
+const testPets = ['Lovely Rose', 'Harmonic Harp', 'Tophat (A)', 'Tophat (G)', 'Soul Heart', 'Lord Shock'];
+for (const n of testPets) {
+  const p = pets.find(x => x.name === n);
+  console.log(n + ':', {
+    type: p?.type,
+    rarity: p?.rarity,
+    baseValue: p?.baseValue,
+    demand: p?.demand + '/11',
+    customValues: p?.customValues,
+    existence: p?.existence
+  });
+}

@@ -273,14 +273,17 @@ async function runAutoSync() {
   for (const wp of wikiPets) {
     const key = wp.name.toLowerCase().trim();
     if (!existingMap.has(key)) {
-      const isHat = wp.isHat;
+      const isTophatPet = wp.name.startsWith('Tophat (') || wp.name.startsWith('Tophat(') || wp.name === 'Magic Tophat' || wp.name === 'Golden Tophat';
+      const isHat = !isTophatPet && wp.isHat;
       const cleanId = (isHat ? 'hat_' : 'pet_') + wp.name.toLowerCase().replace(/[^a-z0-9]/g, '_') + '_' + Date.now();
+      const rarity = isTophatPet ? 'Secret' : wp.rarity;
+      const category = isTophatPet ? 'Secret Pets' : (isHat ? 'Hats' : `${rarity} Pets`);
       const newEntry = {
         id: cleanId,
         name: wp.name,
         type: isHat ? 'hat' : 'pet',
-        rarity: wp.rarity,
-        baseValue: wp.rarity === 'Secret' ? 100 : wp.rarity === 'Legendary' ? 10 : 1,
+        rarity: rarity,
+        baseValue: rarity === 'Secret' ? 100 : rarity === 'Legendary' ? 10 : 1,
         demand: 5,
         status: 'Stable',
         category: wp.category,
