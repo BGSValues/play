@@ -4767,7 +4767,7 @@
     "demand": 8,
     "status": "Stable",
     "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ac/Shadow_Sundae_Champion.png/revision/latest?cb=20260718121506",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/Shadow_Sundae_Champion.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -5208,42 +5208,6 @@
     "variants": [
       "Normal",
       "Shiny"
-    ],
-    "existence": {}
-  },
-  {
-    "id": "pet_sundae_champions",
-    "name": "Sundae Champions",
-    "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b4/Mythic_Vanilla_Sundae_Champion.png/revision/latest?cb=20200814192528",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion pet from BGS Collab Value List (Sundae Champions).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 18250,
-        "Gems": 88888,
-        "All": 25910,
-        "Coins": 77777
-      },
-      "egg": "Chocolate Egg",
-      "movementType": "Fly",
-      "chance": 6.66
-    },
-    "customValues": null,
-    "variants": [
-      "Normal",
-      "Shiny",
-      "Mythic",
-      "ShinyMythic"
     ],
     "existence": {}
   },
@@ -48415,12 +48379,12 @@
     "id": "pet_vanilla_sundae_champion_1787242352325",
     "name": "Vanilla Sundae Champion",
     "type": "pet",
-    "rarity": "Secret",
+    "rarity": "Legendary",
     "baseValue": 2000,
     "demand": 7,
     "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/11/Vanilla_Sundae_Champion.png/revision/latest?cb=20200814192510",
+    "category": "Legendary Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/07/Vanilla_Sundae_Champion.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -48430,12 +48394,14 @@
     "description": "Official Secret companion item from BGS Collab Value List (Vanilla Sundae Champion).",
     "stats": {
       "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
+        "Bubbles": 18250,
+        "Coins": 77777,
+        "Gems": 88888,
+        "All": 25910
       },
-      "movementType": "Fly"
+      "egg": "Vacation Egg",
+      "movementType": "Fly",
+      "chance": 0.00000666
     },
     "existence": {
       "normal": "396",
@@ -48445,18 +48411,24 @@
     },
     "customValues": {
       "shiny": 7500
-    }
+    },
+    "variants": [
+      "Normal",
+      "Shiny",
+      "Mythic",
+      "ShinyMythic"
+    ]
   },
   {
     "id": "pet_mint_sundae_champion_1787242352325",
     "name": "Mint Sundae Champion",
     "type": "pet",
-    "rarity": "Secret",
+    "rarity": "Legendary",
     "baseValue": 1800,
     "demand": 5,
     "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/eb/Mint_Sundae_Champion.png/revision/latest?cb=20200814192451",
+    "category": "Legendary Pets",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b5/Mint_Sundae_Champion.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -48466,12 +48438,14 @@
     "description": "Official Secret companion item from BGS Collab Value List (Mint Sundae Champion).",
     "stats": {
       "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
+        "Bubbles": 18250,
+        "Coins": 77777,
+        "Gems": 88888,
+        "All": 25910
       },
-      "movementType": "Fly"
+      "egg": "Vacation Egg",
+      "movementType": "Fly",
+      "chance": 0.00000666
     },
     "existence": {
       "normal": "424",
@@ -48482,7 +48456,13 @@
     "customValues": {
       "shiny": 6000,
       "mythic": 350000
-    }
+    },
+    "variants": [
+      "Normal",
+      "Shiny",
+      "Mythic",
+      "ShinyMythic"
+    ]
   },
   {
     "id": "pet_strawberry_sundae_champion_1787242352325",
@@ -48493,7 +48473,7 @@
     "demand": 5,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Strawberry_Sundae_Champion.png/revision/latest?cb=20200814192556",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Strawberry_Sundae_Champion.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -48504,13 +48484,13 @@
     "stats": {
       "buffs": {
         "Bubbles": 18250,
-        "All": 25910,
+        "Coins": 77777,
         "Gems": 88888,
-        "Coins": 77777
+        "All": 25910
       },
       "egg": "Vacation Egg",
       "movementType": "Fly",
-      "chance": 1.665
+      "chance": 0.00000666
     },
     "existence": {
       "normal": "450",
@@ -48520,7 +48500,13 @@
     },
     "customValues": {
       "shiny": 5750
-    }
+    },
+    "variants": [
+      "Normal",
+      "Shiny",
+      "Mythic",
+      "ShinyMythic"
+    ]
   },
   {
     "id": "pet_chocolate_sundae_champion_1787242352325",
@@ -48531,7 +48517,7 @@
     "demand": 8,
     "status": "Stable",
     "category": "Legendary Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ab/Chocolate_Sundae_Champion.png/revision/latest?cb=20200814192413",
+    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f3/Chocolate_Sundae_Champion.png/revision/latest",
     "multipliers": {
       "Normal": 1,
       "Shiny": 2.5,
@@ -48542,13 +48528,13 @@
     "stats": {
       "buffs": {
         "Bubbles": 18250,
-        "All": 25910,
+        "Coins": 77777,
         "Gems": 88888,
-        "Coins": 77777
+        "All": 25910
       },
       "egg": "Vacation Egg",
       "movementType": "Fly",
-      "chance": 1.665
+      "chance": 0.00000666
     },
     "existence": {
       "normal": "465",
@@ -48558,7 +48544,13 @@
     },
     "customValues": {
       "shiny": 10000
-    }
+    },
+    "variants": [
+      "Normal",
+      "Shiny",
+      "Mythic",
+      "ShinyMythic"
+    ]
   },
   {
     "id": "pet_guardian_skull_1787242352325",

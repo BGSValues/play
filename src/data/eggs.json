@@ -2558,6 +2558,70 @@
     "image": "/eggs/vacationegg.png",
     "pets": [
       {
+        "id": "pet_strawberry_sundae_champion_1787242352325",
+        "name": "Strawberry Sundae Champion",
+        "rarity": "Legendary",
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Strawberry_Sundae_Champion.png/revision/latest",
+        "baseValue": 1500,
+        "shinyValue": 5750,
+        "demand": 5,
+        "chance": 0.00000666,
+        "buffs": {
+          "Bubbles": 18250,
+          "Coins": 77777,
+          "Gems": 88888,
+          "All": 25910
+        }
+      },
+      {
+        "id": "pet_chocolate_sundae_champion_1787242352325",
+        "name": "Chocolate Sundae Champion",
+        "rarity": "Legendary",
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f3/Chocolate_Sundae_Champion.png/revision/latest",
+        "baseValue": 2500,
+        "shinyValue": 10000,
+        "demand": 8,
+        "chance": 0.00000666,
+        "buffs": {
+          "Bubbles": 18250,
+          "Coins": 77777,
+          "Gems": 88888,
+          "All": 25910
+        }
+      },
+      {
+        "id": "pet_vanilla_sundae_champion_1787242352325",
+        "name": "Vanilla Sundae Champion",
+        "rarity": "Legendary",
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/07/Vanilla_Sundae_Champion.png/revision/latest",
+        "baseValue": 2000,
+        "shinyValue": 7500,
+        "demand": 7,
+        "chance": 0.00000666,
+        "buffs": {
+          "Bubbles": 18250,
+          "Coins": 77777,
+          "Gems": 88888,
+          "All": 25910
+        }
+      },
+      {
+        "id": "pet_mint_sundae_champion_1787242352325",
+        "name": "Mint Sundae Champion",
+        "rarity": "Legendary",
+        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b5/Mint_Sundae_Champion.png/revision/latest",
+        "baseValue": 1800,
+        "shinyValue": 6000,
+        "demand": 5,
+        "chance": 0.00000666,
+        "buffs": {
+          "Bubbles": 18250,
+          "Coins": 77777,
+          "Gems": 88888,
+          "All": 25910
+        }
+      },
+      {
         "id": "pet_bgs_bucket",
         "name": "BGS Bucket",
         "rarity": "Legendary",
@@ -2619,38 +2683,6 @@
           "Gems": 1750,
           "Candy": 605,
           "Coins": 3455
-        }
-      },
-      {
-        "id": "pet_strawberry_sundae_champion_1787242352325",
-        "name": "Strawberry Sundae Champion",
-        "rarity": "Legendary",
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/83/Strawberry_Sundae_Champion.png/revision/latest?cb=20200814192556",
-        "baseValue": 1500,
-        "shinyValue": 5750,
-        "demand": 5,
-        "chance": 1.665,
-        "buffs": {
-          "Bubbles": 18250,
-          "All": 25910,
-          "Gems": 88888,
-          "Coins": 77777
-        }
-      },
-      {
-        "id": "pet_chocolate_sundae_champion_1787242352325",
-        "name": "Chocolate Sundae Champion",
-        "rarity": "Legendary",
-        "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ab/Chocolate_Sundae_Champion.png/revision/latest?cb=20200814192413",
-        "baseValue": 2500,
-        "shinyValue": 10000,
-        "demand": 8,
-        "chance": 1.665,
-        "buffs": {
-          "Bubbles": 18250,
-          "All": 25910,
-          "Gems": 88888,
-          "Coins": 77777
         }
       },
       {
