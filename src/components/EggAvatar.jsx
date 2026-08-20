@@ -1,26 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function EggAvatar({ egg, size = 110, className = '' }) {
-  const [useProxy, setUseProxy] = useState(false);
   const [loadFailed, setLoadFailed] = useState(false);
+
+  useEffect(() => {
+    setLoadFailed(false);
+  }, [egg?.image]);
 
   if (!egg) return null;
 
   const rawUrl = egg.image || '';
-  const isHttp = rawUrl.startsWith('http');
-  const hasImage = Boolean(rawUrl);
-
-  // If initial load failed and it was a remote URL, try backend proxy
-  const imageSrc = useProxy && isHttp
-    ? `/api/proxy-image?url=${encodeURIComponent(rawUrl)}`
-    : rawUrl;
+  const hasImage = Boolean(rawUrl && rawUrl.startsWith('http'));
 
   const handleError = () => {
-    if (!useProxy && isHttp) {
-      setUseProxy(true);
-    } else {
-      setLoadFailed(true);
-    }
+    setLoadFailed(true);
   };
 
   return (
