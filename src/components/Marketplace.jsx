@@ -384,27 +384,27 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
                 {/* BOTTOM ACTION BAR: Status controls & Trade Ledger */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.4rem' }}>
                   <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
-                    {/* Status Management */}
-                    {isOpen && (
+                    {/* Status Management — STRICTLY AUTHOR / ADMIN ONLY */}
+                    {isOpen && (isOwn || isStaffOrOwner) && (
                       <>
                         <button
                           style={{ background: 'rgba(255,204,0,0.15)', border: '1px solid rgba(255,204,0,0.4)', color: '#ffcc00', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                           onClick={() => handleMarkStatus(list.id, 'completed')}
-                          title="Mark this trade deal as completed"
+                          title="Mark your trade deal as completed"
                         >
-                          <CheckCircle2 size={14} /> Trade Completed
+                          <CheckCircle2 size={14} /> Mark Completed
                         </button>
                         <button
                           style={{ background: 'rgba(255,23,68,0.15)', border: '1px solid rgba(255,23,68,0.4)', color: '#ff1744', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                           onClick={() => handleMarkStatus(list.id, 'cancelled')}
-                          title="Cancel this trade offer"
+                          title="Cancel your trade offer"
                         >
-                          <XCircle size={14} /> Trade Cancelled
+                          <XCircle size={14} /> Cancel Offer
                         </button>
                       </>
                     )}
 
-                    {isClosed && (
+                    {isClosed && (isOwn || isStaffOrOwner) && (
                       <button
                         style={{ background: 'rgba(16,185,129,0.15)', border: '1px solid rgba(16,185,129,0.4)', color: '#10b981', padding: '0.35rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                         onClick={() => handleMarkStatus(list.id, 'open')}
@@ -413,7 +413,7 @@ export default function Marketplace({ pets, currentUser, onOpenLogin }) {
                       </button>
                     )}
 
-                    {/* STAFF / ADMIN MODERATION: Remove trade one-by-one */}
+                    {/* STAFF / ADMIN MODERATION: Remove trade */}
                     {isStaffOrOwner && (
                       <button
                         style={{
