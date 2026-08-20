@@ -35,21 +35,22 @@ import StarfieldBackground from './components/StarfieldBackground';
 import initialPetsData from './data/pets.json';
 
 export default function App() {
-  const isAdminRoute = window.location.pathname.toLowerCase() === '/admin';
+  const isAdminRoute = window.location.hash === '#admin' || window.location.pathname.toLowerCase().endsWith('/admin');
   const [activeTab, setActiveTab] = useState(isAdminRoute ? 'admin' : 'values');
 
   const [guidesSection, setGuidesSection] = useState('about');
 
-  // Sync browser URL when tab changes so refreshing on public tabs stays on values
+  // Maintain clean repository path on GitHub Pages & Vercel
   const handleTabChange = (newTab, subSection) => {
     setActiveTab(newTab);
     if (subSection) {
       setGuidesSection(subSection);
     }
+    const currentBase = window.location.pathname;
     if (newTab === 'admin') {
-      window.history.replaceState({}, '', '/admin');
+      window.history.replaceState({}, '', `${currentBase}#admin`);
     } else {
-      window.history.replaceState({}, '', '/');
+      window.history.replaceState({}, '', currentBase);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
