@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Search, MapPin, Sparkles, ChevronRight, ArrowLeft, PlusCircle, Award, Layers, DollarSign, Egg } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 import EggAvatar from './EggAvatar';
-import eggsData from '../data/eggs.json';
+import rawEggsData from '../data/eggs.json';
+
+const eggsData = Array.isArray(rawEggsData) ? rawEggsData : [];
 
 export default function EggsList({ onSelectPet, onAddToTrade }) {
   const [search, setSearch] = useState('');
@@ -13,18 +15,21 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
   const locations = ['All', ...new Set(eggsData.map(e => e.location || 'Overworld').filter(Boolean))];
 
   const filteredEggs = eggsData.filter(egg => {
-    const q = search.toLowerCase();
-    const matchSearch = !q || egg.name.toLowerCase().includes(q)
-      || egg.location?.toLowerCase().includes(q)
-      || egg.pets?.some(p => p.name.toLowerCase().includes(q));
+    if (!egg) return false;
+    const q = (search || '').toLowerCase().trim();
+    const eggPets = Array.isArray(egg.pets) ? egg.pets : [];
+    const matchSearch = !q || (egg.name || '').toLowerCase().includes(q)
+      || (egg.location || '').toLowerCase().includes(q)
+      || eggPets.some(p => (p?.name || '').toLowerCase().includes(q));
     const matchLocation = locationFilter === 'All' || egg.location === locationFilter;
     return matchSearch && matchLocation;
   });
 
   // If an Egg is selected, render the dedicated Egg Hatch Details Page
   if (selectedEgg) {
-    const secretCount = selectedEgg.pets.filter(p => p.rarity === 'Secret').length;
-    const legendaryCount = selectedEgg.pets.filter(p => p.rarity === 'Legendary').length;
+    const eggPets = Array.isArray(selectedEgg.pets) ? selectedEgg.pets : [];
+    const secretCount = eggPets.filter(p => p?.rarity === 'Secret').length;
+    const legendaryCount = eggPets.filter(p => p?.rarity === 'Legendary').length;
 
     return (
       <div style={{ maxWidth: '1300px', margin: '0 auto', padding: '1rem 1.5rem 5rem 1.5rem' }}>
@@ -50,7 +55,7 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
               </span>
               {selectedEgg.costAmount > 0 ? (
                 <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ffcc00', background: 'rgba(255,204,0,0.1)', border: '1px solid rgba(255,204,0,0.3)', padding: '2px 8px', borderRadius: '6px' }}>
-                  💰 {selectedEgg.costAmount.toLocaleString()} {selectedEgg.costCurrency}
+                  💰 {selectedEgg.costAmount.toLocaleString()} {selectedEgg.costCurrency || 'Coins'}
                 </span>
               ) : null}
             </div>
@@ -60,7 +65,7 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
             </h1>
 
             <p style={{ color: '#94a3b8', fontSize: '0.9rem', margin: 0 }}>
-              Contains <strong>{selectedEgg.pets.length} hatchable pets</strong> ({secretCount} Secrets 👑, {legendaryCount} Legendary ⚡)
+              Contains <strong>{eggPets.length} hatchable pets</strong> ({secretCount} Secrets 👑, {legendaryCount} Legendary ⚡)
             </p>
           </div>
         </div>
@@ -71,63 +76,67 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
         </h3>
 
         <div className="pet-grid">
-          {selectedEgg.pets.map((pet) => (
-            <div
-              key={pet.id}
-              className="pet-card"
-              onClick={() => {
-                if (onSelectPet) onSelectPet(pet);
-              }}
-              style={{ cursor: 'pointer' }}
-              title="Click to view full pet in-game stats & details"
-            >
-              {/* Rarity & Chance Badge */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '0.3rem' }}>
-                <span className={`rarity-badge rarity-${pet.rarity.toLowerCase()}`} style={{ fontSize: '0.7rem', padding: '2px 8px' }}>
-                  {pet.rarity.toUpperCase()}
-                </span>
-                {pet.chance ? (
-                  <span style={{ fontSize: '0.72rem', color: '#00e5ff', fontWeight: 900 }}>
-                    {pet.chance < 0.001 ? `${(pet.chance * 100).toFixed(6)}%` : `${(pet.chance).toFixed(1)}%`}
-                  </span>
-                ) : null}
-              </div>
-
-              {/* Center 3D Avatar */}
-              <div className="pet-card-image-wrap">
-                <PetAvatar name={pet.name} rarity={pet.rarity} image={pet.image} size={110} />
-              </div>
-
-              {/* Pet Name */}
-              <h3 className="pet-name">{pet.name}</h3>
-
-              {/* Stats Table */}
-              <div className="stats-table" style={{ marginTop: 'auto' }}>
-                <div className="stat-row">
-                  <span className="stat-label">Trade Value</span>
-                  <span className="stat-val-bold">
-                    {pet.baseValue ? `⚡ ${pet.baseValue.toLocaleString()}` : <span style={{ color: '#94a3b8' }}>N/A</span>}
-                  </span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-label">Demand</span>
-                  <span className="stat-val-green">{pet.demand ? `${pet.demand}/11` : '5/11'}</span>
-                </div>
-              </div>
-
-              {/* View Details Button */}
-              <button
-                className="btn-primary"
-                style={{ width: '100%', padding: '0.5rem', fontSize: '0.8rem', justifyContent: 'center', marginTop: '0.5rem' }}
-                onClick={(e) => {
-                  e.stopPropagation();
+          {eggPets.map((pet, pIdx) => {
+            if (!pet) return null;
+            const rarityLower = (pet.rarity || 'common').toLowerCase();
+            return (
+              <div
+                key={pet.id || `p_${pIdx}`}
+                className="pet-card"
+                onClick={() => {
                   if (onSelectPet) onSelectPet(pet);
                 }}
+                style={{ cursor: 'pointer' }}
+                title="Click to view full pet in-game stats & details"
               >
-                View Pet Stats
-              </button>
-            </div>
-          ))}
+                {/* Rarity & Chance Badge */}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '0.3rem' }}>
+                  <span className={`rarity-badge rarity-${rarityLower}`} style={{ fontSize: '0.7rem', padding: '2px 8px' }}>
+                    {(pet.rarity || 'Common').toUpperCase()}
+                  </span>
+                  {pet.chance ? (
+                    <span style={{ fontSize: '0.72rem', color: '#00e5ff', fontWeight: 900 }}>
+                      {pet.chance < 0.001 ? `${(pet.chance * 100).toFixed(6)}%` : `${Number(pet.chance).toFixed(1)}%`}
+                    </span>
+                  ) : null}
+                </div>
+
+                {/* Center 3D Avatar */}
+                <div className="pet-card-image-wrap">
+                  <PetAvatar name={pet.name || 'Pet'} rarity={pet.rarity || 'Common'} image={pet.image || ''} size={110} />
+                </div>
+
+                {/* Pet Name */}
+                <h3 className="pet-name">{pet.name}</h3>
+
+                {/* Stats Table */}
+                <div className="stats-table" style={{ marginTop: 'auto' }}>
+                  <div className="stat-row">
+                    <span className="stat-label">Trade Value</span>
+                    <span className="stat-val-bold">
+                      {pet.baseValue ? `⚡ ${pet.baseValue.toLocaleString()}` : <span style={{ color: '#94a3b8' }}>N/A</span>}
+                    </span>
+                  </div>
+                  <div className="stat-row">
+                    <span className="stat-label">Demand</span>
+                    <span className="stat-val-green">{pet.demand ? `${pet.demand}/11` : '5/11'}</span>
+                  </div>
+                </div>
+
+                {/* View Details Button */}
+                <button
+                  className="btn-primary"
+                  style={{ width: '100%', padding: '0.5rem', fontSize: '0.8rem', justifyContent: 'center', marginTop: '0.5rem' }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (onSelectPet) onSelectPet(pet);
+                  }}
+                >
+                  View Pet Stats
+                </button>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
@@ -182,13 +191,14 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
             <p style={{ fontSize: '1.2rem', fontWeight: 800 }}>No eggs found matching "{search}"</p>
           </div>
         ) : (
-          filteredEggs.map((egg) => {
-            const secretCount = egg.pets.filter(p => p.rarity === 'Secret').length;
-            const legendaryCount = egg.pets.filter(p => p.rarity === 'Legendary').length;
+          filteredEggs.map((egg, eIdx) => {
+            const eggPets = Array.isArray(egg.pets) ? egg.pets : [];
+            const secretCount = eggPets.filter(p => p?.rarity === 'Secret').length;
+            const legendaryCount = eggPets.filter(p => p?.rarity === 'Legendary').length;
 
             return (
               <div
-                key={egg.id}
+                key={egg.id || `egg_${eIdx}`}
                 className="pet-card"
                 onClick={() => setSelectedEgg(egg)}
                 style={{ cursor: 'pointer', transition: 'all 0.2s ease' }}
@@ -226,12 +236,12 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
                 <div className="stats-table" style={{ marginTop: 'auto' }}>
                   <div className="stat-row">
                     <span className="stat-label">Hatchable Pets</span>
-                    <span className="stat-val-bold">{egg.pets.length} Pets</span>
+                    <span className="stat-val-bold">{eggPets.length} Pets</span>
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Egg Cost</span>
                     <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#ffcc00' }}>
-                      {egg.costAmount > 0 ? `${egg.costAmount.toLocaleString()} ${egg.costCurrency}` : 'Free / Event'}
+                      {egg.costAmount > 0 ? `${egg.costAmount.toLocaleString()} ${egg.costCurrency || 'Coins'}` : 'Free / Event'}
                     </span>
                   </div>
                 </div>
@@ -241,7 +251,7 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
                   className="btn-primary"
                   style={{ width: '100%', padding: '0.55rem', fontSize: '0.82rem', justifyContent: 'center', marginTop: '0.6rem', display: 'flex', alignItems: 'center', gap: '4px' }}
                 >
-                  <span>View Pets ({egg.pets.length})</span> <ChevronRight size={14} />
+                  <span>View Pets ({eggPets.length})</span> <ChevronRight size={14} />
                 </button>
               </div>
             );
