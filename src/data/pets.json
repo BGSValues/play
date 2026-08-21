@@ -160,8 +160,8 @@
     "id": "pet_almighty_hexarium",
     "name": "Almighty Hexarium",
     "rarity": "Legendary",
-    "baseValue": 15000000000,
-    "demand": 5,
+    "baseValue": 16000,
+    "demand": 8,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b0/Almighty_Hexarium.png/revision/latest?cb=20210307011337",
@@ -179,8 +179,14 @@
       "shinyMythic": "0"
     },
     "customValues": {
+      "normal": 16000,
+      "normalDemand": 8,
       "shiny": 80000,
-      "mythic": 15000000000
+      "shinyDemand": 6,
+      "mythic": null,
+      "mythicDemand": null,
+      "shinyMythic": null,
+      "shinyMythicDemand": null
     },
     "stats": {
       "buffs": {
@@ -199,7 +205,7 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "tierTag": "Secret"
+    "tierTag": "Limited Secret"
   },
   {
     "id": "pet_almighty_pumpkin",
@@ -3154,7 +3160,10 @@
       "mythic": "0",
       "shinyMythic": "0"
     },
-    "customValues": {},
+    "customValues": {
+      "mythic": null,
+      "shinyMythic": null
+    },
     "stats": {
       "buffs": {
         "Bubbles": 89600,
@@ -5086,7 +5095,10 @@
       "mythic": "0",
       "shinyMythic": "0"
     },
-    "customValues": {},
+    "customValues": {
+      "mythic": null,
+      "shinyMythic": null
+    },
     "stats": {
       "buffs": {
         "Bubbles": 35000,
