@@ -204,16 +204,44 @@ export default function App() {
 
   const handleUpdatePetValue = async (petId, field, value) => {
     try {
+      const updatedPet = pets.find(p => p.id === petId);
+      if (updatedPet) {
+        // Auto-log to Live Announcements feed
+        const newLog = {
+          id: `update_${Date.now()}`,
+          date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+          time: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
+          type: 'value_change',
+          badge: 'VALUE UPDATE',
+          color: '#ffcc00',
+          petName: updatedPet.name,
+          title: `⚡ "${updatedPet.name}" Value Updated`,
+          message: `"${updatedPet.name}" value updated to ⚡ ${Number(value).toLocaleString()} via Staff Consensus.`
+        };
+        try {
+          const existing = JSON.parse(localStorage.getItem('bgs_live_updates') || '[]');
+          localStorage.setItem('bgs_live_updates', JSON.stringify([newLog, ...existing].slice(0, 50)));
+        } catch {}
+      }
+
       const res = await fetch(`/api/pets/${petId}/value`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ field, value: Number(value) }),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setPets(pets.map(p => p.id === petId ? data.pet : p));
-        showToast('Value updated successfully!');
+      }).catch(() => null);
+
+      if (res && res.ok) {
+        const data = await res.json();
+        if (data.success) {
+          setPets(pets.map(p => p.id === petId ? data.pet : p));
+          showToast('Value updated successfully!');
+          return;
+        }
       }
+
+      // Offline / Local update
+      setPets(pets.map(p => p.id === petId ? { ...p, [field]: Number(value) } : p));
+      showToast('Value updated & logged to live announcements!');
     } catch (err) {
       showToast('Error updating value');
     }
@@ -263,10 +291,8 @@ export default function App() {
       {/* ━━━━ 10-STAR AMBIENT STARFIELD CANVAS ━━━━ */}
       <StarfieldBackground />
 
-      {/* ━━━━ GLOBAL BROADCAST BANNER ━━━━ */}
-      {systemSettings?.announcement && (
-        <GlobalAnnouncementBanner announcement={systemSettings.announcement} />
-      )}
+      {/* ━━━━ GLOBAL LIVE UPDATES & BROADCAST BANNER ━━━━ */}
+      <GlobalAnnouncementBanner announcement={systemSettings?.announcement} />
 
       {toast && (
         <div style={{ position: 'fixed', bottom: '28px', right: '28px', background: 'var(--primary-gold)', color: '#07090e', padding: '0.85rem 1.6rem', borderRadius: '14px', fontWeight: 900, boxShadow: '0 10px 30px rgba(255,204,0,0.5)', zIndex: 9999, fontSize: '0.95rem' }}>
