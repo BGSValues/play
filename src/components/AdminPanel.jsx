@@ -35,11 +35,21 @@ import {
 } from 'lucide-react';
 import PetAvatar from './PetAvatar';
 import eggsData from '../data/eggs.json';
+import defaultAboutData from '../data/aboutUsData.json';
 
 export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLogin, onBackToValues }) {
-  const [adminTab, setAdminTab] = useState('pets'); // 'pets' or 'users'
+  const [adminTab, setAdminTab] = useState('pets'); // 'pets', 'users', 'safeguards', 'socials', 'about'
   const [usersList, setUsersList] = useState([]);
   const [usersLoading, setUsersLoading] = useState(false);
+
+  const [aboutForm, setAboutForm] = useState(() => {
+    try {
+      const saved = localStorage.getItem('bgs_about_us_data');
+      return saved ? JSON.parse(saved) : defaultAboutData;
+    } catch {
+      return defaultAboutData;
+    }
+  });
 
   const allEggNames = useMemo(() => {
     const eggSet = new Set();
@@ -647,9 +657,27 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
       discord: profileForm.discord.trim(),
     };
     localStorage.setItem('bgs_user', JSON.stringify(updated));
+
+    // Also auto-sync to About Us dataset so the page immediately shows the new name
+    try {
+      const curAbout = JSON.parse(localStorage.getItem('bgs_about_us_data') || JSON.stringify(defaultAboutData));
+      curAbout.staff = (curAbout.staff || []).map((s) =>
+        s.role === 'owner'
+          ? { ...s, name: updated.username, roblox: updated.robloxUsername, discord: updated.discord }
+          : s
+      );
+      localStorage.setItem('bgs_about_us_data', JSON.stringify(curAbout));
+    } catch {}
+
     setMsg({ type: 'success', text: `Profile updated! Display Name set to @${updated.username}` });
     setIsProfileModalOpen(false);
     window.location.reload();
+  };
+
+  const handleSaveAboutStudio = (e) => {
+    if (e) e.preventDefault();
+    localStorage.setItem('bgs_about_us_data', JSON.stringify(aboutForm));
+    setMsg({ type: 'success', text: '🎉 About Us & Staff Roster customized and published live!' });
   };
 
   const handleGrantAccessSubmit = (e) => {
@@ -1180,6 +1208,48 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
             <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>Socials & Links</div>
             <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '2px' }}>
               Discord • YouTube • X • Roblox Group
+            </div>
+          </div>
+        </button>
+
+        {/* Tab 5: About Us & Staff Customizer Studio */}
+        <button
+          onClick={() => setAdminTab('about')}
+          style={{
+            background: adminTab === 'about'
+              ? 'linear-gradient(135deg, rgba(255, 204, 0, 0.25), rgba(0, 229, 255, 0.15))'
+              : 'rgba(255, 255, 255, 0.02)',
+            border: adminTab === 'about' ? '1px solid #ffcc00' : '1px solid var(--glass-border)',
+            borderRadius: '14px',
+            padding: '1.25rem 1.5rem',
+            cursor: 'pointer',
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '14px',
+            transition: 'all 0.25s ease',
+            boxShadow: adminTab === 'about' ? '0 10px 30px rgba(255, 204, 0, 0.25)' : 'none',
+          }}
+        >
+          <div
+            style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: adminTab === 'about' ? '#ffcc00' : 'rgba(255, 255, 255, 0.05)',
+              color: adminTab === 'about' ? '#000' : '#ffcc00',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
+            <Sparkles size={22} />
+          </div>
+          <div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>About Us & Staff Studio</div>
+            <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '2px' }}>
+              Customize Roster, Names & Guarantees
             </div>
           </div>
         </button>
@@ -2146,6 +2216,188 @@ export default function AdminPanel({ pets, currentUser, onRefreshPets, onOpenLog
               </button>
             </form>
           </div>
+        </div>
+      )}
+
+      {/* ============================================================== */}
+      {/* TAB 5: ABOUT US & STAFF CUSTOMIZER STUDIO                      */}
+      {/* ============================================================== */}
+      {adminTab === 'about' && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+          <form onSubmit={handleSaveAboutStudio}>
+            {/* ━━━━ SECTION A: HERO HEADLINE & BADGE ━━━━ */}
+            <div className="glass-card" style={{ padding: '2rem', marginBottom: '2rem', border: '1px solid rgba(255, 204, 0, 0.4)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.5rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '1rem' }}>
+                <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: 'rgba(255, 204, 0, 0.15)', border: '1px solid #ffcc00', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ffcc00' }}>
+                  <Sparkles size={20} />
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fff', margin: 0 }}>About Us Hero Banner & Subtitle</h3>
+                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Customize the top headline and community mission statement</span>
+                </div>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.25rem', marginBottom: '1.5rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.8rem', color: '#ffcc00', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    Top Glowing Badge Text
+                  </label>
+                  <input
+                    type="text"
+                    value={aboutForm.hero?.badge || ''}
+                    onChange={(e) => setAboutForm({ ...aboutForm, hero: { ...aboutForm.hero, badge: e.target.value } })}
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.7rem', borderRadius: '8px' }}
+                  />
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.8rem', color: '#fff', fontWeight: 800, marginBottom: '0.4rem' }}>
+                    Main Header Title
+                  </label>
+                  <input
+                    type="text"
+                    value={aboutForm.hero?.title || ''}
+                    onChange={(e) => setAboutForm({ ...aboutForm, hero: { ...aboutForm.hero, title: e.target.value } })}
+                    style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.7rem', borderRadius: '8px' }}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', fontWeight: 800, marginBottom: '0.4rem' }}>
+                  Mission & Platform Subtitle Description
+                </label>
+                <textarea
+                  rows="3"
+                  value={aboutForm.hero?.subtitle || ''}
+                  onChange={(e) => setAboutForm({ ...aboutForm, hero: { ...aboutForm.hero, subtitle: e.target.value } })}
+                  style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.7rem', borderRadius: '8px', fontSize: '0.9rem' }}
+                />
+              </div>
+            </div>
+
+            {/* ━━━━ SECTION B: STAFF CARDS CUSTOMIZER ━━━━ */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
+              {(aboutForm.staff || defaultAboutData.staff).map((member, idx) => (
+                <div
+                  key={member.id || idx}
+                  className="glass-card"
+                  style={{
+                    padding: '2rem',
+                    borderRadius: '20px',
+                    border: `1px solid ${member.badgeColor || '#ffcc00'}44`,
+                    background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(10, 11, 16, 0.95) 100%)',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.25rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.75rem' }}>
+                    <span style={{ fontSize: '1.5rem' }}>{member.icon}</span>
+                    <div>
+                      <h4 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fff', margin: 0 }}>
+                        {member.roleBadge || member.role} Card Customizer
+                      </h4>
+                      <span style={{ fontSize: '0.75rem', color: member.badgeColor || '#ffcc00' }}>
+                        ID: {member.id}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Name & Title */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1rem' }}>
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.78rem', color: '#cbd5e1', fontWeight: 800, marginBottom: '0.3rem' }}>
+                        Display Name / Handle
+                      </label>
+                      <input
+                        type="text"
+                        value={member.name || ''}
+                        onChange={(e) => {
+                          const updated = [...aboutForm.staff];
+                          updated[idx] = { ...updated[idx], name: e.target.value };
+                          setAboutForm({ ...aboutForm, staff: updated });
+                        }}
+                        style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px' }}
+                      />
+                    </div>
+
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.78rem', color: '#cbd5e1', fontWeight: 800, marginBottom: '0.3rem' }}>
+                        Role Subtitle Title
+                      </label>
+                      <input
+                        type="text"
+                        value={member.title || ''}
+                        onChange={(e) => {
+                          const updated = [...aboutForm.staff];
+                          updated[idx] = { ...updated[idx], title: e.target.value };
+                          setAboutForm({ ...aboutForm, staff: updated });
+                        }}
+                        style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px' }}
+                      />
+                    </div>
+
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.78rem', color: '#00e5ff', fontWeight: 800, marginBottom: '0.3rem' }}>
+                        Roblox Username
+                      </label>
+                      <input
+                        type="text"
+                        value={member.roblox || ''}
+                        onChange={(e) => {
+                          const updated = [...aboutForm.staff];
+                          updated[idx] = { ...updated[idx], roblox: e.target.value };
+                          setAboutForm({ ...aboutForm, staff: updated });
+                        }}
+                        style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px' }}
+                      />
+                    </div>
+
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.78rem', color: '#a78bfa', fontWeight: 800, marginBottom: '0.3rem' }}>
+                        Discord Handle
+                      </label>
+                      <input
+                        type="text"
+                        value={member.discord || ''}
+                        onChange={(e) => {
+                          const updated = [...aboutForm.staff];
+                          updated[idx] = { ...updated[idx], discord: e.target.value };
+                          setAboutForm({ ...aboutForm, staff: updated });
+                        }}
+                        style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px' }}
+                      />
+                    </div>
+
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.78rem', color: '#94a3b8', fontWeight: 800, marginBottom: '0.3rem' }}>
+                        Bio & Description
+                      </label>
+                      <textarea
+                        rows="3"
+                        value={member.bio || ''}
+                        onChange={(e) => {
+                          const updated = [...aboutForm.staff];
+                          updated[idx] = { ...updated[idx], bio: e.target.value };
+                          setAboutForm({ ...aboutForm, staff: updated });
+                        }}
+                        style={{ width: '100%', background: '#0a0b10', border: '1px solid var(--glass-border)', color: '#fff', padding: '0.65rem', borderRadius: '8px', fontSize: '0.85rem' }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Save Button */}
+            <div style={{ textAlign: 'center' }}>
+              <button
+                type="submit"
+                className="btn-primary"
+                style={{ padding: '1rem 2.5rem', fontSize: '1.1rem', fontWeight: 900, display: 'inline-flex', alignItems: 'center', gap: '10px', boxShadow: '0 10px 40px rgba(255, 204, 0, 0.35)' }}
+              >
+                <Save size={20} /> Save & Publish About Us Page Globally
+              </button>
+            </div>
+          </form>
         </div>
       )}
 

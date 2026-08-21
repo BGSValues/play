@@ -367,7 +367,7 @@ export default function App() {
           <TradeCalculator pets={pets} sideA={sideA} setSideA={setSideA} sideB={sideB} setSideB={setSideB} />
         )}
         {activeTab === 'guides' && <Guides initialSection={guidesSection} />}
-        {activeTab === 'about-us' && <AboutUs />}
+        {activeTab === 'about-us' && <AboutUs currentUser={currentUser} />}
         {activeTab === 'admin' && (
           <AdminPanel
             pets={pets}

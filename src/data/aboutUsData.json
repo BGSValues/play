@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "badge": "OFFICIAL BUBBLE GUM SIMULATOR PLATFORM",
+    "title": "About BGS Values Hub",
+    "subtitle": "Built by passionate Bubble Gum Simulator veterans and active traders to deliver the most accurate, real-time, non-duped valuation lists and trading tools in Roblox.",
+    "stats": [
+      { "label": "Clean Verified Pets", "value": "1,557+", "color": "#ffcc00" },
+      { "label": "3D Egg Rosters", "value": "144 Eggs", "color": "#00e5ff" },
+      { "label": "Collab Tier Consensus", "value": "330+ Tiers", "color": "#10b981" },
+      { "label": "Anti-Exploit Values", "value": "Zero Dupe", "color": "#ec4899" }
+    ]
+  },
+  "staff": [
+    {
+      "id": "owner",
+      "role": "owner",
+      "roleBadge": "OWNER",
+      "title": "Lead Developer & Platform Creator",
+      "name": "Owner_Admin",
+      "roblox": "BGS_Owner_Official",
+      "discord": "bgs_owner",
+      "bio": "Oversees platform development, live sync architecture, algorithm precision, and core consensus pricing.",
+      "avatarColor": "linear-gradient(135deg, #ffcc00, #ff9100)",
+      "badgeColor": "#ffcc00",
+      "icon": "👑"
+    },
+    {
+      "id": "mod",
+      "role": "mod",
+      "roleBadge": "MODERATOR",
+      "title": "Head Community Moderator",
+      "name": "Staff_Mod",
+      "roblox": "Staff_Mod_Roblox",
+      "discord": "staff_mod",
+      "bio": "Manages marketplace security, fair trade reviews, user dispute resolutions, and community standards.",
+      "avatarColor": "linear-gradient(135deg, #7c3aed, #a855f7)",
+      "badgeColor": "#a78bfa",
+      "icon": "🛡️"
+    },
+    {
+      "id": "council",
+      "role": "council",
+      "roleBadge": "COMMUNITY",
+      "title": "Top Traders & Price Advisors",
+      "name": "Community Council",
+      "roblox": "BGS_Community_Traders",
+      "discord": "community_council",
+      "bio": "Senior community traders submitting daily completed trade proof and evaluating real in-game demand trends.",
+      "avatarColor": "linear-gradient(135deg, #00e5ff, #00b0ff)",
+      "badgeColor": "#00e5ff",
+      "icon": "🤝"
+    }
+  ]
+}
