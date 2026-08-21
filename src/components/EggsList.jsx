@@ -119,7 +119,9 @@ export default function EggsList({ onSelectPet, onAddToTrade }) {
                   </div>
                   <div className="stat-row">
                     <span className="stat-label">Demand</span>
-                    <span className="stat-val-green">{pet.demand ? `${pet.demand}/11` : '5/11'}</span>
+                    <span className="stat-val-green">
+                      {pet.baseValue !== null && pet.baseValue !== undefined && pet.demand ? `${pet.demand}/11` : <span style={{ color: '#94a3b8' }}>N/A</span>}
+                    </span>
                   </div>
                 </div>
 

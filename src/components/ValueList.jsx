@@ -49,6 +49,7 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
   const [search, setSearch] = useState('');
   const [rarityFilter, setRarityFilter] = useState('All');
   const [typeFilter, setTypeFilter] = useState('All');
+  const [tierFilter, setTierFilter] = useState('All');
   const [sortOrder, setSortOrder] = useState('showcase');
   const [rotationSeed, setRotationSeed] = useState(() => Math.floor(Math.random() * 100000));
   const [selectedVariants, setSelectedVariants] = useState({});
@@ -130,7 +131,8 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
         const matchesSearch = matchesSearchTerm(item.name, search);
         const matchesType = typeFilter === 'All' ? true : typeFilter === 'Hats' ? isHat : !isHat;
         const matchesRarity = rarityFilter === 'All' ? true : item.rarity === rarityFilter;
-        return matchesSearch && matchesType && matchesRarity;
+        const matchesTier = tierFilter === 'All' ? true : item.tierTag?.toLowerCase().includes(tierFilter.toLowerCase());
+        return matchesSearch && matchesType && matchesRarity && matchesTier;
       })
       .sort((a, b) => {
         const valA = (typeof a.baseValue === 'number' && !isNaN(a.baseValue) && a.baseValue > 0) ? a.baseValue : -1;
@@ -290,6 +292,26 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
             <Shuffle size={15} color="#00e5ff" /> Rotate
           </button>
 
+          {/* COLLAB TIER FILTER */}
+          <select
+            className="filter-btn"
+            style={{ padding: '0.5rem 0.8rem', fontWeight: 800, color: '#00e5ff' }}
+            value={tierFilter}
+            onChange={(e) => {
+              setTierFilter(e.target.value);
+              setCurrentPage(1);
+            }}
+          >
+            <option value="All">All Collab Tiers</option>
+            <option value="Tier 3">⭐ Tier 3 (T3)</option>
+            <option value="Mythic T3">⚡ Mythic T3</option>
+            <option value="Mythic T2">⚡ Mythic T2</option>
+            <option value="OG">👑 OG Secrets</option>
+            <option value="Limited">🎁 Limited Secrets</option>
+            <option value="Bubble Pass">🎟️ Bubble Pass</option>
+            <option value="Secret">🔒 All Secrets</option>
+          </select>
+
           <select
             className="filter-btn"
             style={{ padding: '0.5rem 0.8rem', fontWeight: 800, color: '#a78bfa' }}
@@ -359,11 +381,20 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                     if (onSelectPet) onSelectPet(item);
                     else setSelectedPetForModal(item);
                   }}
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: 'pointer', marginBottom: item.tierTag ? '2px' : '0.5rem' }}
                   title="Click to view full in-game stats & details"
                 >
                   {item.name}
                 </h3>
+
+                {/* Collab Tier Badge */}
+                {item.tierTag && (
+                  <div style={{ marginBottom: '0.4rem', textAlign: 'center' }}>
+                    <span style={{ fontSize: '0.68rem', background: 'rgba(255, 204, 0, 0.12)', border: '1px solid rgba(255, 204, 0, 0.35)', color: '#ffcc00', padding: '1px 7px', borderRadius: '5px', fontWeight: 800, display: 'inline-block' }}>
+                      ⭐ {item.tierTag}
+                    </span>
+                  </div>
+                )}
 
                 {/* Variant Selector (Pets only - Hats don't have Shiny/Mythic variants) */}
                 {!isHat ? (
@@ -391,7 +422,10 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   <div className="stat-row">
                     <span className="stat-label">Trend</span>
                     {(() => {
-                      const t = getTrendInfo(item.status, calculatedValue);
+                      const variantTrend = (currentVariant === 'Mythic' && item.customValues?.mythicTrend)
+                        ? item.customValues.mythicTrend
+                        : item.status;
+                      const t = getTrendInfo(variantTrend, calculatedValue);
                       return (
                         <span style={{ fontWeight: 800, color: t.color, display: 'flex', alignItems: 'center', gap: '3px' }}>
                           <span>{t.symbol}</span> <span>{t.label}</span>
@@ -402,7 +436,12 @@ export default function ValueList({ pets, currentUser, onAddToTrade, onUpdatePet
                   <div className="stat-row">
                     <span className="stat-label">Demand</span>
                     {(() => {
-                      const d = getDemandInfo(item.demand);
+                      const variantDemand = (currentVariant === 'Mythic' && item.customValues?.mythicDemand)
+                        ? item.customValues.mythicDemand
+                        : ((currentVariant === 'ShinyMythic' || currentVariant === 'S.Myth') && item.customValues?.shinyMythicDemand)
+                        ? item.customValues.shinyMythicDemand
+                        : item.demand;
+                      const d = getDemandInfo(calculatedValue !== null ? variantDemand : null);
                       return (
                         <span
                           style={{

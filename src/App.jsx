@@ -68,7 +68,14 @@ export default function App() {
     return saved ? JSON.parse(saved) : null;
   });
 
-  const [systemSettings, setSystemSettings] = useState(null);
+  const [systemSettings, setSystemSettings] = useState(() => {
+    try {
+      const saved = localStorage.getItem('bgs_system_settings');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
   const [activeUsersCount, setActiveUsersCount] = useState(1);
 
   // ━━━━ 30-SECOND REAL-TIME LIVE AUTO-UPDATE ━━━━
@@ -78,7 +85,10 @@ export default function App() {
       fetch('/api/system/settings')
         .then(res => res.json())
         .then(data => {
-          if (data.success && data.settings) setSystemSettings(data.settings);
+          if (data.success && data.settings) {
+            setSystemSettings(data.settings);
+            localStorage.setItem('bgs_system_settings', JSON.stringify(data.settings));
+          }
         })
         .catch(() => {});
 

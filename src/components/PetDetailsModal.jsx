@@ -127,6 +127,11 @@ export default function PetDetailsModal({ isOpen, onClose, pet, onAddToTrade }) 
               <span className={`rarity-badge rarity-${pet.rarity.toLowerCase()}`} style={{ fontSize: '0.75rem', padding: '2px 8px' }}>
                 {pet.rarity.toUpperCase()}
               </span>
+              {pet.tierTag && (
+                <span style={{ fontSize: '0.75rem', background: 'rgba(255, 204, 0, 0.15)', border: '1px solid rgba(255, 204, 0, 0.4)', padding: '2px 8px', borderRadius: '6px', color: '#ffcc00', fontWeight: 800 }}>
+                  ⭐ {pet.tierTag}
+                </span>
+              )}
               <span style={{ fontSize: '0.75rem', background: 'rgba(255,255,255,0.06)', border: '1px solid var(--glass-border)', padding: '2px 8px', borderRadius: '6px', color: '#94a3b8', fontWeight: 700 }}>
                 {movementType === 'Fly' ? '🦅 Flying' : movementType === 'Walk' ? '🐾 Walking' : movementType}
               </span>

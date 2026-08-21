@@ -139,10 +139,15 @@ export default function PetDetailsPage({ pet, onBack, onAddToTrade, onSelectPet 
         {/* Left Column: 3D Avatar, Identity & Trade Values */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           <div className="glass-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem' }}>
+            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', flexWrap: 'wrap', justifyContent: 'center' }}>
               <span className={`rarity-badge rarity-${pet.rarity.toLowerCase()}`} style={{ fontSize: '0.85rem', padding: '4px 12px' }}>
                 {pet.rarity.toUpperCase()}
               </span>
+              {pet.tierTag && (
+                <span style={{ fontSize: '0.85rem', background: 'rgba(255, 204, 0, 0.15)', border: '1px solid rgba(255, 204, 0, 0.4)', padding: '4px 12px', borderRadius: '8px', color: '#ffcc00', fontWeight: 800 }}>
+                  ⭐ {pet.tierTag}
+                </span>
+              )}
               <span style={{ fontSize: '0.85rem', background: 'rgba(255,255,255,0.06)', border: '1px solid var(--glass-border)', padding: '4px 12px', borderRadius: '8px', color: '#94a3b8', fontWeight: 700 }}>
                 {movementType === 'Fly' ? '🦅 Flying' : movementType === 'Walk' ? '🐾 Walking' : movementType}
               </span>

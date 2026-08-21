@@ -41,7 +41,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_ace",
@@ -79,7 +80,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_alien_kraken",
@@ -121,7 +123,7 @@
     "rarity": "Legendary",
     "baseValue": 1500,
     "demand": 8,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/78/All_Seeing_Eye.png/revision/latest?cb=20211023050127",
     "multipliers": {
@@ -151,7 +153,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_almighty_hexarium",
@@ -195,15 +198,16 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_almighty_pumpkin",
     "name": "Almighty Pumpkin",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 600,
+    "demand": 2,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b9/Almighty_Pumpkin.png/revision/latest?cb=20200912013524",
     "multipliers": {
@@ -217,7 +221,7 @@
       "mythic": "22",
       "shinyMythic": "2"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 23000,
@@ -235,7 +239,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_angelic_shard",
@@ -313,7 +318,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_archangel",
@@ -358,7 +364,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_basilisks",
@@ -440,7 +447,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_candycorn_shard",
@@ -483,7 +491,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_cardinal_bunny",
@@ -527,7 +536,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_champions",
@@ -603,7 +613,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_christmas_robot",
@@ -646,7 +657,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_cobalt_guardian",
@@ -753,7 +765,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_crimson_paladin",
@@ -827,7 +840,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_curse_of_kings",
@@ -994,7 +1008,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dark_lord",
@@ -1025,7 +1040,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_dark_lord_shock",
@@ -1085,7 +1101,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_dementor",
@@ -1119,7 +1136,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_demon_heart",
@@ -1219,7 +1237,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_demonic_one",
@@ -1250,7 +1269,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_demonic_sentinel",
@@ -1360,7 +1380,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dice_split",
@@ -1406,7 +1427,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dogcat",
@@ -1425,7 +1447,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Dogcat).",
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 3250,
@@ -1442,7 +1464,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dragonfruit",
@@ -1487,7 +1510,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dream_catcher",
@@ -1530,14 +1554,15 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_duality",
     "name": "Duality",
     "rarity": "Legendary",
     "baseValue": 1200,
-    "demand": 5,
+    "demand": 11,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d4/Duality.png/revision/latest?cb=20200914041917",
@@ -1572,7 +1597,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_easter_basket",
@@ -1610,15 +1636,16 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_easter_robot",
     "name": "Easter Robot",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 6000,
+    "demand": 7,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4f/Easter_Robot.png/revision/latest?cb=20210402225713",
     "multipliers": {
@@ -1634,7 +1661,7 @@
       "mythic": "3",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 165000,
@@ -1651,7 +1678,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_easter_spirit",
@@ -1697,7 +1725,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_challenger",
@@ -1729,7 +1758,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_fallen_angel",
@@ -1763,7 +1793,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_lord_shock",
@@ -1794,7 +1825,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_pot_o__gold",
@@ -1828,7 +1860,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_sentinel",
@@ -1860,7 +1893,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_wolflord",
@@ -1891,7 +1925,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_eternal_carrot",
@@ -1936,7 +1971,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_eternal_cucumber",
@@ -1981,7 +2017,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_eternal_heart",
@@ -2016,7 +2053,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_eternal_star",
@@ -2050,7 +2088,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_fairy_koi",
@@ -2102,7 +2141,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Fallen Angel).",
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 6666,
@@ -2119,7 +2158,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_firecracker",
@@ -2162,7 +2202,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_frost_sentinel",
@@ -2199,7 +2240,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_frost_shard",
@@ -2234,7 +2276,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_frosted_dreamer",
@@ -2242,7 +2285,7 @@
     "rarity": "Legendary",
     "baseValue": 700,
     "demand": 1,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/9b/Frosted_Dreamer.png/revision/latest?cb=20211224034624",
     "multipliers": {
@@ -2274,7 +2317,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_galactic_dementor",
@@ -2350,7 +2394,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_ghosdeeri",
@@ -2358,7 +2403,7 @@
     "rarity": "Secret",
     "baseValue": 2200,
     "demand": 4,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/48/Ghosdeeri.png/revision/latest?cb=20211023050552",
     "multipliers": {
@@ -2375,7 +2420,8 @@
       "mythicDemand": 5,
       "shinyMythic": 4,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Mythic_Ghosdeeri.png/revision/latest?cb=20211023051157"
     },
     "stats": {
       "buffs": {
@@ -2391,7 +2437,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_ghost_spirits",
@@ -2461,7 +2508,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_giant_pearl",
@@ -2502,15 +2550,16 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_giant_robot",
     "name": "Giant Robot",
     "rarity": "Secret",
     "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "demand": 10,
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a2/Giant_Robot.png/revision/latest?cb=20190209054153",
     "multipliers": {
@@ -2531,11 +2580,12 @@
       },
       "movementType": "Walk"
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_gingerbread_shard",
@@ -2581,7 +2631,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_godly_gem",
@@ -2618,7 +2669,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_godly_shamrock",
@@ -2660,7 +2712,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_golf_balls",
@@ -2713,7 +2766,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Gryphon).",
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 5000,
@@ -2730,7 +2783,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_harmonic_harp",
@@ -2774,7 +2828,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_hellfire",
@@ -2818,7 +2873,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_hellshard",
@@ -2826,7 +2882,7 @@
     "rarity": "Secret",
     "baseValue": 3000,
     "demand": 5,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/b/b6/Hellshard.png/revision/latest?cb=20211023050836",
     "multipliers": {
@@ -2854,7 +2910,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_holy_bell",
@@ -2891,7 +2948,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_holy_egg",
@@ -2933,7 +2991,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_holy_star",
@@ -2999,7 +3058,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_immortal_trophy",
@@ -3036,7 +3096,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_inferno_gem",
@@ -3075,9 +3136,9 @@
     "id": "pet_infinity_gem",
     "name": "Infinity Gem",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 11000,
+    "demand": 7,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/09/Infinity_Gem.png/revision/latest?cb=20210101214038",
     "multipliers": {
@@ -3093,7 +3154,7 @@
       "mythic": "0",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 89600,
@@ -3111,7 +3172,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isUnobtainable": true
+    "isUnobtainable": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_king_dogcat",
@@ -3181,7 +3243,8 @@
     "existence": {
       "normal": "182",
       "shiny": "3"
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_king_kitty",
@@ -3224,7 +3287,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_king_mush",
@@ -3258,7 +3322,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_king_penguin",
@@ -3371,15 +3436,16 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_koi",
     "name": "Koi",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 900,
+    "demand": 7,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Koi.png/revision/latest?cb=20200912010023",
     "multipliers": {
@@ -3395,7 +3461,7 @@
       "mythic": "12",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 25555,
@@ -3413,7 +3479,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_kraken",
@@ -3451,15 +3518,16 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_leviathan",
     "name": "Leviathan",
     "rarity": "Legendary",
-    "baseValue": null,
+    "baseValue": 10,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0a/Leviathan.png/revision/latest?cb=20190518054427",
     "multipliers": {
@@ -3481,11 +3549,12 @@
       "movementType": "Fly",
       "chance": 1.25
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lord_shock",
@@ -3523,7 +3592,8 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_love_thief",
@@ -3567,7 +3637,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lovely_rose",
@@ -3611,7 +3682,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lucid_leaf",
@@ -3654,7 +3726,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lucky_pyramidium",
@@ -3735,7 +3808,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_magic_marshmallow",
@@ -3769,7 +3843,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Merchant Pet"
   },
   {
     "id": "pet_money_mouth",
@@ -3813,7 +3888,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_morning_star",
@@ -3858,15 +3934,16 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_new_year_champion",
     "name": "New Year Champion",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 5500,
+    "demand": 8,
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4a/New_Year_Champion.png/revision/latest?cb=20210101213239",
     "multipliers": {
@@ -3882,7 +3959,7 @@
       "mythic": "3",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 66400,
@@ -3897,15 +3974,16 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_overlord_plushie",
     "name": "Overlord Plushie",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 850,
+    "demand": 4,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/73/Overlord_Plushie.png/revision/latest?cb=20200731214422",
     "multipliers": {
@@ -3921,7 +3999,7 @@
       "mythic": "16",
       "shinyMythic": "1"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 17500,
@@ -3938,7 +4016,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_patriotic_robot",
@@ -3976,7 +4055,8 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_patronus",
@@ -4019,15 +4099,16 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_peppermint_leviathan",
     "name": "Peppermint Leviathan",
     "rarity": "Secret",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 3000,
+    "demand": 7,
+    "status": "Stable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c0/Peppermint_Leviathan.png/revision/latest?cb=20201204225855",
     "multipliers": {
@@ -4043,7 +4124,7 @@
       "mythic": "7",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 70000,
@@ -4057,7 +4138,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_phantom",
@@ -4073,7 +4155,7 @@
       "Shiny": 2.5
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Phantom).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 9295,
@@ -4089,7 +4171,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Merchant Pet"
   },
   {
     "id": "pet_pixie_queen",
@@ -4163,7 +4246,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_plushies",
@@ -4241,7 +4325,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_pot_o__gold",
@@ -4277,7 +4362,8 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_prisma_cube",
@@ -4323,7 +4409,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_pyramidium",
@@ -4365,7 +4452,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_radiance",
@@ -4402,7 +4490,8 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_radiant_challenger",
@@ -4475,7 +4564,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_radiant_shard",
@@ -4571,7 +4661,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_rainbow_gryphon",
@@ -4588,7 +4679,7 @@
     },
     "description": "Official Secret companion pet from BGS Collab Value List (Rainbow Gryphon).",
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 6100,
@@ -4601,7 +4692,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_rainbow_leviathan",
@@ -4660,12 +4752,13 @@
       "movementType": "Walk",
       "chance": 1.25
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sea_star",
@@ -4706,7 +4799,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_shadow_challenger",
@@ -4746,7 +4840,7 @@
     "rarity": "Secret",
     "baseValue": 20000,
     "demand": 9,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/85/Shadow_Luminance.png/revision/latest?cb=20260718223950",
     "multipliers": {
@@ -4766,13 +4860,14 @@
       },
       "movementType": "Fly"
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Limited Secret"
   },
   {
     "id": "pet_shadow_sundae_champion",
@@ -4780,7 +4875,7 @@
     "rarity": "Secret",
     "baseValue": 5000,
     "demand": 8,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/Shadow_Sundae_Champion.png/revision/latest",
     "multipliers": {
@@ -4808,7 +4903,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Limited Secret"
   },
   {
     "id": "pet_shadow_wolflord",
@@ -4816,7 +4912,7 @@
     "rarity": "Secret",
     "baseValue": 12500,
     "demand": 8,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1a/Shadow_Wolflord.png/revision/latest?cb=20260718224018",
     "multipliers": {
@@ -4844,14 +4940,15 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Limited Secret"
   },
   {
     "id": "pet_shard",
     "name": "Shard",
     "rarity": "Legendary",
     "baseValue": 1600,
-    "demand": 8,
+    "demand": 11,
     "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/18/Shard.png/revision/latest?cb=20200522193356",
@@ -4886,7 +4983,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_shattered_soul",
@@ -4925,7 +5023,8 @@
       "Normal",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sinister_lord",
@@ -4962,15 +5061,16 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sinister_lord_2_0",
     "name": "Sinister Lord 2.0",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 5500,
+    "demand": 6,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/23/Sinister_Lord_2.0.png/revision/latest?cb=20201002221620",
     "multipliers": {
@@ -4986,7 +5086,7 @@
       "mythic": "0",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 35000,
@@ -5003,7 +5103,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sinister_shard",
@@ -5046,7 +5147,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_skulls",
@@ -5115,7 +5217,8 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_soulflake",
@@ -5157,7 +5260,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_space_entity",
@@ -5217,12 +5321,13 @@
       "movementType": "Fly",
       "chance": null
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_the_overlord",
@@ -5262,7 +5367,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_the_owolord",
@@ -5303,7 +5409,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_tophat__g_",
@@ -5401,7 +5508,8 @@
       "Normal",
       "Shiny"
     ],
-    "isSecretPercentage": true
+    "isSecretPercentage": true,
+    "tierTag": "Secret"
   },
   {
     "id": "pet_ufo",
@@ -5468,7 +5576,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_ultimate_trophy",
@@ -5505,7 +5614,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_wisplord",
@@ -5513,7 +5623,7 @@
     "rarity": "Secret",
     "baseValue": 200,
     "demand": 2,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Secret Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/85/Wisplord.png/revision/latest?cb=20211023051445",
     "multipliers": {
@@ -5530,7 +5640,8 @@
       "mythicDemand": 5,
       "shinyMythic": null,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Mythic_Wisplord.png/revision/latest?cb=20211023051321"
     },
     "stats": {
       "buffs": {
@@ -5546,7 +5657,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_wolflord",
@@ -5581,7 +5693,8 @@
     "variants": [
       "Normal",
       "Shiny"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_1b_cake_spirit",
@@ -5720,7 +5833,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_2018_serpent",
@@ -5825,7 +5939,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_300m_elemental",
@@ -6289,7 +6404,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_ancient_elemental",
@@ -6387,7 +6503,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_angelic_bear",
@@ -6562,7 +6679,7 @@
       "Shiny": 2.5
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Atlantis Guardian).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 1125,
@@ -6578,7 +6695,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_atlantis_hybrid",
@@ -6735,12 +6853,13 @@
       "movementType": "Fly",
       "chance": null
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_autumnal_master",
@@ -6814,7 +6933,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_balloon_dragon",
@@ -7004,7 +7124,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_bgs_bucket",
@@ -7042,7 +7163,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_blocky_hybrid",
@@ -7114,7 +7236,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/8c/Blossom_Protector.png/revision/latest?cb=20200515213718",
     "multipliers": {
@@ -7140,7 +7262,8 @@
       "mythicDemand": 7,
       "shinyMythic": 900,
       "shinyMythicDemand": 7,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Mythic_Blossom_Protector.png/revision/latest?cb=20200515213816"
     },
     "variants": [
       "Normal",
@@ -7148,7 +7271,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_blue_ducky",
@@ -7274,7 +7398,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_candy_cane_fox",
@@ -7462,7 +7587,7 @@
       "Shiny": 2.5
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Candy Winged Hydra).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 755,
@@ -7478,7 +7603,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_candycorn_lord",
@@ -7545,7 +7671,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_cartoon_eggy",
@@ -7616,7 +7743,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_catmouse",
@@ -7746,7 +7874,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_chocolate_chicken",
@@ -7770,12 +7899,13 @@
       },
       "movementType": "Walk"
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_chocolate_gift",
@@ -7813,7 +7943,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_chocolate_trio",
@@ -7878,7 +8009,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_christmas_marshmallow",
@@ -7980,7 +8112,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_circus_stack",
@@ -8050,7 +8183,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_classic_trio",
@@ -8106,7 +8240,8 @@
       "mythicDemand": 5,
       "shinyMythic": null,
       "shinyMythicDemand": 2,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Mythic_Clockwork.png/revision/latest?cb=20210101214117"
     },
     "stats": {
       "buffs": {
@@ -8125,7 +8260,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_clover_burst",
@@ -8256,12 +8392,13 @@
       },
       "movementType": "Fly"
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_comet_in_a_bottle",
@@ -8295,7 +8432,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_core",
@@ -8303,7 +8441,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/15/CORE.png/revision/latest?cb=20200613041710",
     "multipliers": {
@@ -8329,7 +8467,8 @@
       "mythicDemand": 5,
       "shinyMythic": 400,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/41/Mythic_CORE.png/revision/latest?cb=20200613041512"
     },
     "variants": [
       "Normal",
@@ -8337,7 +8476,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_cosmic_rift",
@@ -8433,7 +8573,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_crimson_bell",
@@ -8467,7 +8608,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_crimson_demon",
@@ -8666,7 +8808,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ec/Cursed_Scorpio.png/revision/latest?cb=20200501201938",
     "multipliers": {
@@ -8692,7 +8834,8 @@
       "mythicDemand": 7,
       "shinyMythic": 600,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1e/Mythic_Cursed_Scorpio.png/revision/latest?cb=20200501212331"
     },
     "variants": [
       "Normal",
@@ -8700,7 +8843,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_dark_elemental",
@@ -8798,7 +8942,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_dark_phoenix",
@@ -8862,7 +9007,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_dark_soul",
@@ -8896,7 +9042,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_darkness_rose",
@@ -9172,7 +9319,7 @@
       "Shiny": 2.5
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Demoncore).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 3750,
@@ -9185,7 +9332,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_demonic_bunny",
@@ -9255,7 +9403,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_demonic_hydra",
@@ -9321,7 +9470,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_demonium",
@@ -9393,7 +9543,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_demonocity",
@@ -9519,7 +9670,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_diamond_serpent",
@@ -9583,7 +9735,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_doggy_pile",
@@ -9678,7 +9831,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_dragon_golf_ball",
@@ -9748,7 +9902,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dual_lord",
@@ -9782,7 +9937,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_ducky",
@@ -9852,7 +10008,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_easter_defender",
@@ -9946,7 +10103,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_easter_hawk",
@@ -10010,7 +10168,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_easter_serpent",
@@ -10076,7 +10235,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_eclipse",
@@ -10110,7 +10270,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_egg_carton",
@@ -10274,7 +10435,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_element_hydra",
@@ -10344,7 +10506,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_elite_pyramidium",
@@ -10423,7 +10586,7 @@
       "Shiny": 2.5
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Enraged Phoenix).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 745,
@@ -10437,7 +10600,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_equinox",
@@ -10577,7 +10741,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_eternal_darkness",
@@ -10611,7 +10776,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_eternal_pumpkin",
@@ -10649,7 +10815,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_evil_eye",
@@ -10812,7 +10979,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_fairy_in_a_bottle",
@@ -10843,7 +11011,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_fancy_serpent",
@@ -10943,7 +11112,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_festive_divinity",
@@ -11008,7 +11178,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_festivus",
@@ -11041,7 +11212,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_fire_elemental",
@@ -11177,7 +11349,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/7c/Flower_Queen.png/revision/latest?cb=20200515220655",
     "multipliers": {
@@ -11203,7 +11375,8 @@
       "mythicDemand": 5,
       "shinyMythic": 8000,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e7/Mythic_Flower_Queen.png/revision/latest?cb=20200515220641"
     },
     "variants": [
       "Normal",
@@ -11211,7 +11384,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_flushed",
@@ -11245,7 +11419,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_flying_pig",
@@ -11437,7 +11612,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_frostbite",
@@ -11461,7 +11637,8 @@
       "mythicDemand": 5,
       "shinyMythic": null,
       "shinyMythicDemand": 3,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/96/Mythic_Frostbite.png/revision/latest?cb=20201204230723"
     },
     "stats": {
       "buffs": {
@@ -11477,7 +11654,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_frosted_bond",
@@ -11581,7 +11759,7 @@
     "rarity": "Legendary",
     "baseValue": 17500,
     "demand": 5,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/8/87/Frosted_Duality.png/revision/latest?cb=20211224034632",
     "multipliers": {
@@ -11612,7 +11790,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_frosted_guardian",
@@ -11779,7 +11958,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_galactic_demon",
@@ -11844,7 +12024,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_galactic_split",
@@ -11918,7 +12099,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_gem_dragon",
@@ -11990,7 +12172,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_gem_shock",
@@ -12164,7 +12347,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Merchant Pet"
   },
   {
     "id": "pet_gift_mimic",
@@ -12195,7 +12379,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_glacial_bond",
@@ -12229,7 +12414,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_glitch",
@@ -12267,7 +12453,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_gloom_shock",
@@ -12394,7 +12581,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_gold_overseer",
@@ -12428,7 +12616,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_golden_balloon",
@@ -12476,7 +12665,7 @@
       "Shiny": 2.5
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Golden Hybrid).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 755,
@@ -12491,7 +12680,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_golden_lion",
@@ -12554,7 +12744,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_golden_slime",
@@ -12588,7 +12779,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Merchant Pet"
   },
   {
     "id": "pet_golden_snowball",
@@ -12692,7 +12884,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_green_hydra",
@@ -12825,7 +13018,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_gummy_overlord",
@@ -12891,7 +13085,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_gummy_winged_hydra",
@@ -12925,7 +13120,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_hallowed_spirit",
@@ -12959,7 +13155,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_haunt",
@@ -13348,7 +13545,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_holy_dualcorn",
@@ -13483,7 +13681,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_holy_soul",
@@ -13711,7 +13910,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_ice_sprite",
@@ -13777,7 +13977,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_immortal_pumpkin",
@@ -13815,7 +14016,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_infernal_master",
@@ -13847,7 +14049,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_inferno_cube",
@@ -14007,7 +14210,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_iridium_prisma",
@@ -14041,7 +14245,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_isaac_s_creation_2_0",
@@ -14322,7 +14527,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_king_pufferfish",
@@ -14356,7 +14562,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_king_snowman",
@@ -14390,7 +14597,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_king_soul",
@@ -14424,7 +14632,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Prize Secret"
   },
   {
     "id": "pet_kiwi_dragon",
@@ -14485,12 +14694,13 @@
       "movementType": "Walk",
       "chance": 22
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_krampus",
@@ -14531,7 +14741,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d3/Lemonade_Master.png/revision/latest?cb=20200814190109",
     "multipliers": {
@@ -14557,7 +14767,8 @@
       "mythicDemand": 5,
       "shinyMythic": 450,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c4/Mythic_Lemonade_Master.png/revision/latest?cb=20200814190122"
     },
     "variants": [
       "Normal",
@@ -14565,7 +14776,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_light_demon",
@@ -14599,7 +14811,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_light_phoenix",
@@ -14607,7 +14820,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/4b/Light_Phoenix.png/revision/latest?cb=20200711193607",
     "multipliers": {
@@ -14631,7 +14844,8 @@
       "mythicDemand": 5,
       "shinyMythic": 200,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ad/Mythic_Light_Phoenix.png/revision/latest?cb=20200711193753"
     },
     "variants": [
       "Normal",
@@ -14639,7 +14853,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_lol",
@@ -14671,7 +14886,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_love_birds",
@@ -14737,7 +14953,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_lovely_marshmallow",
@@ -14891,7 +15108,8 @@
       "mythicDemand": 5,
       "shinyMythic": null,
       "shinyMythicDemand": 1,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c9/Mythic_Lovesick.png/revision/latest?cb=20210213003148"
     },
     "stats": {
       "buffs": {
@@ -14910,7 +15128,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_luckiest_wyvern",
@@ -15015,7 +15234,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_lucky_fiend",
@@ -15085,7 +15305,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_lucky_jester",
@@ -15221,7 +15442,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_lucky_phoenix",
@@ -15343,7 +15565,8 @@
     "variants": [
       "Normal"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lucky_tophat_2_0",
@@ -15374,7 +15597,8 @@
     "variants": [
       "Normal"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lucky_wyvern",
@@ -15472,7 +15696,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lunar_catcher",
@@ -15634,7 +15859,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_magma_hybrid",
@@ -15763,7 +15989,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_masked_rabbit",
@@ -15825,7 +16052,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_midas",
@@ -15859,7 +16087,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Merchant Pet"
   },
   {
     "id": "pet_minty_hydra",
@@ -15892,7 +16121,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_minty_serpent",
@@ -15925,7 +16155,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_mistletoe_fiend",
@@ -15992,7 +16223,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_monochrome",
@@ -16026,7 +16258,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_mutant_bear",
@@ -16153,7 +16386,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_neon_elemental",
@@ -16314,7 +16548,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_obsidian_serpent",
@@ -16386,7 +16621,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0d/Ocelot.png/revision/latest?cb=20200725025631",
     "multipliers": {
@@ -16412,7 +16647,8 @@
       "mythicDemand": 5,
       "shinyMythic": 125,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/74/Mythic_Ocelot.png/revision/latest?cb=20200725025631"
     },
     "variants": [
       "Normal",
@@ -16420,7 +16656,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_octopus",
@@ -16520,7 +16757,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_paragon",
@@ -16528,7 +16766,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1e/Paragon.png/revision/latest?cb=20200522190423",
     "multipliers": {
@@ -16551,7 +16789,8 @@
       "mythicDemand": 7,
       "shinyMythic": 800,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Mythic_Paragon.png/revision/latest?cb=20200522190531"
     },
     "variants": [
       "Normal",
@@ -16559,7 +16798,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_partner_serpent",
@@ -16585,12 +16825,13 @@
       "movementType": "Fly",
       "chance": 0.05
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_partner_unicorn",
@@ -16616,12 +16857,13 @@
       "movementType": "Fly",
       "chance": 30
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_pastel_hexarium",
@@ -16659,7 +16901,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_pastel_phoenix",
@@ -16793,7 +17036,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_penguin",
@@ -16833,7 +17077,7 @@
     "rarity": "Legendary",
     "baseValue": 1500,
     "demand": 2,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e5/Peppermint_Heart.png/revision/latest?cb=20250418033140",
     "multipliers": {
@@ -16865,7 +17109,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_peppermint_hydra",
@@ -16898,7 +17143,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_phoenix_hybrid",
@@ -17094,7 +17340,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_prisma",
@@ -17134,7 +17381,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f6/Prismatic_Paragon.png/revision/latest?cb=20200731212347",
     "multipliers": {
@@ -17160,7 +17407,8 @@
       "mythicDemand": 5,
       "shinyMythic": 125,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Mythic_Prismatic_Paragon.png/revision/latest?cb=20200731212208"
     },
     "variants": [
       "Normal",
@@ -17168,7 +17416,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_pufferfish",
@@ -17199,7 +17448,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_pumpkin_burst",
@@ -17334,7 +17584,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_queen_overlord",
@@ -17366,7 +17617,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_queen_snowman",
@@ -17400,7 +17652,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_rabbit_plushie",
@@ -17434,7 +17687,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_radiant_protector",
@@ -17468,7 +17722,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_radioactive_bear",
@@ -17662,7 +17917,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_rainbow_overlord",
@@ -17760,7 +18016,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Merchant Pet"
   },
   {
     "id": "pet_rainbow_serpent",
@@ -17924,7 +18181,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_ruby_god",
@@ -17990,7 +18248,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sakuralord",
@@ -18025,7 +18284,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_sandcastle_dragon",
@@ -18069,7 +18329,7 @@
     "rarity": "Legendary",
     "baseValue": 5000,
     "demand": 5,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e6/Santa_Hat.png/revision/latest?cb=20250418031635",
     "multipliers": null,
@@ -18095,7 +18355,8 @@
       "Normal",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_scorpio",
@@ -18257,7 +18518,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_shade_demon",
@@ -18291,7 +18553,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_shadow_equinox",
@@ -18369,7 +18632,7 @@
     "rarity": "Legendary",
     "baseValue": 30000,
     "demand": 10,
-    "status": "Stable",
+    "status": "Unstable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Shadow_One.png/revision/latest?cb=20260718223829",
     "multipliers": {
@@ -18380,7 +18643,7 @@
     },
     "description": "Official Legendary companion pet from BGS Collab Value List (Shadow One).",
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 225000,
@@ -18395,7 +18658,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Limited Secret"
   },
   {
     "id": "pet_shadow_overlord",
@@ -18467,7 +18731,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_skelly_winged_hydra",
@@ -18534,7 +18799,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_sky_imp",
@@ -18672,7 +18938,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_space_crystal_hexarium",
@@ -18805,7 +19072,8 @@
       "mythicDemand": 5,
       "shinyMythic": 600,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2e/Mythic_Spirit_of_Fortune.png/revision/latest?cb=20210307021858"
     },
     "variants": [
       "Normal",
@@ -18813,7 +19081,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_spirit_of_wealth",
@@ -18845,7 +19114,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_split",
@@ -18975,7 +19245,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_stargazer",
@@ -19009,7 +19280,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_starlord",
@@ -19043,7 +19315,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_stocking",
@@ -19077,7 +19350,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_stuffed_imp",
@@ -19121,7 +19395,7 @@
     "rarity": "Legendary",
     "baseValue": null,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a1/Sugar_Heart.png/revision/latest?cb=20200725025627",
     "multipliers": {
@@ -19147,7 +19421,8 @@
       "mythicDemand": 5,
       "shinyMythic": 7000,
       "shinyMythicDemand": 5,
-      "mythicTrend": "Stable"
+      "mythicTrend": "Stable",
+      "mythicImage": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/de/Mythic_Sugar_Heart.png/revision/latest?cb=20200725025627"
     },
     "variants": [
       "Normal",
@@ -19155,7 +19430,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T2"
   },
   {
     "id": "pet_summer_bond",
@@ -19187,7 +19463,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_summer_cerberus",
@@ -19221,7 +19498,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_summer_rift",
@@ -19355,7 +19633,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_sunshine",
@@ -19422,7 +19701,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_sylently_s_pet",
@@ -19488,7 +19768,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_tetranium",
@@ -19551,7 +19832,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_the_keeper",
@@ -19582,7 +19864,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_topaz_soul",
@@ -19616,7 +19899,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_tormentor",
@@ -19650,7 +19934,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_toxic_cube",
@@ -19716,7 +20001,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_toxic_elemental",
@@ -19748,7 +20034,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_toxic_shock",
@@ -19782,7 +20069,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_toxic_terror",
@@ -19816,7 +20104,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_toy_serpent",
@@ -19955,7 +20244,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_trickster",
@@ -20026,7 +20316,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_twilight_serpent",
@@ -20095,7 +20386,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_twitter_dominus",
@@ -20222,7 +20514,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_unlimited_dollar",
@@ -20260,7 +20553,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_uranium_hybrid",
@@ -20358,7 +20652,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_valentium",
@@ -20392,7 +20687,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Tier 3 Secret (T3)"
   },
   {
     "id": "pet_vectorlord",
@@ -20524,7 +20820,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_wisp_elemental",
@@ -20634,7 +20931,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_wispful_heart",
@@ -20768,7 +21066,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_wraith",
@@ -20892,7 +21191,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_zebra",
@@ -43400,7 +43700,7 @@
     "name": "Index Reward Pets",
     "rarity": "Common",
     "baseValue": null,
-    "demand": 5,
+    "demand": null,
     "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d3/Index_Reward_Pets.png/revision/latest?cb=20200605234945",
@@ -43411,7 +43711,7 @@
       "ShinyMythic": 25
     },
     "description": "Official Common companion pet from BGS Collab Value List (Index Reward Pets).",
-    "customValues": null,
+    "customValues": {},
     "stats": {
       "buffs": {
         "Bubbles": 25,
@@ -43426,7 +43726,8 @@
       "Mythic",
       "ShinyMythic"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Index Reward"
   },
   {
     "id": "pet_kelp_fox",
@@ -45303,7 +45604,8 @@
       "Normal",
       "Shiny"
     ],
-    "existence": {}
+    "existence": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_twitch_kitty",
@@ -45909,7 +46211,8 @@
     },
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187024_x77unf",
@@ -46310,7 +46613,8 @@
     },
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187024_1x3c80",
@@ -47005,7 +47309,8 @@
     },
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187024_yg0n8z",
@@ -47049,7 +47354,8 @@
     },
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187025_rp3x1a",
@@ -47109,10 +47415,11 @@
       "movementType": "Hat Accessory"
     },
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187025_e5fnyk",
@@ -47424,10 +47731,11 @@
       "movementType": "Hat Accessory"
     },
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187025_qyav46",
@@ -47802,10 +48110,11 @@
       "movementType": "Hat Accessory"
     },
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187025_787cek",
@@ -47865,10 +48174,11 @@
       "movementType": "Hat Accessory"
     },
     "existence": {},
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "hat_1787027187025_3iy2e1",
@@ -48205,7 +48515,8 @@
       "shiny": 30,
       "mythic": 1500,
       "shinyMythic": 200000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_angelic_ghost_spirit_1787242128449",
@@ -48244,7 +48555,8 @@
     "customValues": {
       "shiny": 58,
       "mythic": 5000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_angelic_golf_ball_1787242128449",
@@ -48278,16 +48590,17 @@
     "customValues": {
       "shiny": 25,
       "mythic": 2000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_angelic_skull_1787242128449",
     "name": "Angelic Skull",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
+    "baseValue": 5000,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/ed/Angelic_Skull.png/revision/latest?cb=20201002223758",
     "multipliers": {
@@ -48310,16 +48623,17 @@
       "mythic": "2",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sinister_skull_1787242128449",
     "name": "Sinister Skull",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
+    "baseValue": 5000,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/13/Sinister_Skull.png/revision/latest?cb=20201002223214",
     "multipliers": {
@@ -48344,7 +48658,8 @@
       "mythic": "3",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_dark_champion_1787242128449",
@@ -48377,16 +48692,17 @@
     "existence": {},
     "customValues": {
       "shiny": 5
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_king_skull_1787242128449",
     "name": "King Skull",
     "type": "pet",
     "rarity": "Common",
-    "baseValue": null,
+    "baseValue": 4000,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Common Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/03/King_Skull.png/revision/latest?cb=20201002223035",
     "multipliers": {
@@ -48409,7 +48725,8 @@
       "mythic": "2",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "hat_tophat__a__1787242352324",
@@ -48445,7 +48762,8 @@
     },
     "customValues": {
       "shiny": 11000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "hat_tophat__b__1787242352324",
@@ -48476,7 +48794,8 @@
       "chance": 2.5
     },
     "existence": {},
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "hat_tophat__c__1787242352324",
@@ -48512,7 +48831,8 @@
     },
     "customValues": {
       "shiny": 12500
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "hat_tophat__d__1787242352324",
@@ -48543,7 +48863,8 @@
       "chance": 2.5
     },
     "existence": {},
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "hat_tophat__e__1787242352324",
@@ -48571,7 +48892,8 @@
       "movementType": "Walk"
     },
     "existence": {},
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "hat_tophat__f__1787242352324",
@@ -48607,16 +48929,17 @@
     },
     "customValues": {
       "shiny": 7500
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_electric_basilisk_1787242352325",
     "name": "Electric Basilisk",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 950,
+    "demand": 6,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/a3/Electric_Basilisk.png/revision/latest?cb=20200725034054",
     "multipliers": {
@@ -48643,16 +48966,17 @@
       "mythic": "3",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_ice_basilisk_1787242352325",
     "name": "Ice Basilisk",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 900,
+    "demand": 6,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/17/Ice_Basilisk.png/revision/latest?cb=20200725034053",
     "multipliers": {
@@ -48679,7 +49003,8 @@
       "mythic": "8",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_air_basilisk_1787242352325",
@@ -48717,7 +49042,8 @@
       "shiny": 4000,
       "mythic": 1500000,
       "shinyMythic": 11
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_fire_basilisk_1787242352325",
@@ -48756,16 +49082,17 @@
     "customValues": {
       "shiny": 12,
       "mythic": 50000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_vanilla_sundae_champion_1787242352325",
     "name": "Vanilla Sundae Champion",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 2000,
+    "demand": 7,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/07/Vanilla_Sundae_Champion.png/revision/latest",
     "multipliers": {
@@ -48792,13 +49119,14 @@
       "mythic": "3",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_mint_sundae_champion_1787242352325",
@@ -48843,7 +49171,8 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_strawberry_sundae_champion_1787242352325",
@@ -48887,16 +49216,17 @@
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_chocolate_sundae_champion_1787242352325",
     "name": "Chocolate Sundae Champion",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 2500,
+    "demand": 8,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f3/Chocolate_Sundae_Champion.png/revision/latest",
     "multipliers": {
@@ -48923,22 +49253,23 @@
       "mythic": "3",
       "shinyMythic": "0"
     },
-    "customValues": null,
+    "customValues": {},
     "variants": [
       "Normal",
       "Shiny",
       "Mythic",
       "ShinyMythic"
-    ]
+    ],
+    "tierTag": "Secret"
   },
   {
     "id": "pet_guardian_skull_1787242352325",
     "name": "Guardian Skull",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
+    "baseValue": 4000,
     "demand": null,
-    "status": "N/A",
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f4/Guardian_Skull.png/revision/latest?cb=20201002223830",
     "multipliers": {
@@ -48963,7 +49294,8 @@
       "mythic": "5",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_wolf_skull_1787242352325",
@@ -49000,7 +49332,8 @@
     "customValues": {
       "shiny": 6,
       "mythic": 850000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_obscureentity_plushie_1787242352326",
@@ -49039,16 +49372,17 @@
     "customValues": {
       "shiny": 15,
       "mythic": 6000
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sylently_plushie_1787242352326",
     "name": "Sylently Plushie",
     "type": "pet",
     "rarity": "Legendary",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
+    "baseValue": 950,
+    "demand": 8,
+    "status": "Stable",
     "category": "Legendary Pets",
     "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/f/f3/Sylently_Plushie.png/revision/latest?cb=20201204230127",
     "multipliers": {
@@ -49075,7 +49409,8 @@
       "mythic": "15",
       "shinyMythic": "0"
     },
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lucky_1787242352326",
@@ -49106,132 +49441,8 @@
     "existence": {},
     "customValues": {
       "shiny": 7
-    }
-  },
-  {
-    "id": "pet_mythic_wisplord_1787242352332",
-    "name": "Mythic Wisplord",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 7000,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Mythic_Wisplord.png/revision/latest?cb=20211023051321",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
     },
-    "description": "Official Secret companion item from BGS Collab Value List (Mythic Wisplord).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "mythic": 7000
-    }
-  },
-  {
-    "id": "pet_mythic_ghosdeeri_1787242352332",
-    "name": "Mythic Ghosdeeri",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/98/Mythic_Ghosdeeri.png/revision/latest?cb=20211023051157",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (Mythic Ghosdeeri).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {
-      "mythic": "4"
-    },
-    "customValues": null
-  },
-  {
-    "id": "pet_mythic_all_seeing_eye_1787242352333",
-    "name": "Mythic All-Seeing Eye",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": 17500,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/6b/Mythic_All_Seeing_Eye.png/revision/latest?cb=20211023051107",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (Mythic All-Seeing Eye).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "mythic": 17500,
-      "shiny": 42
-    }
-  },
-  {
-    "id": "pet_mythic_hell_shard_1787242352333",
-    "name": "Mythic Hell Shard",
-    "type": "pet",
-    "rarity": "Secret",
-    "baseValue": null,
-    "demand": null,
-    "status": "N/A",
-    "category": "Secret Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/91/RobloxScreenShot20201221_094152268.png/revision/latest?cb=20201222181414",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Secret companion item from BGS Collab Value List (Mythic Hell Shard).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {
-      "mythic": "3"
-    },
-    "customValues": null
+    "tierTag": "Secret"
   },
   {
     "id": "pet_earth_champion_1787242352352",
@@ -49262,7 +49473,8 @@
       "chance": 3.125
     },
     "existence": {},
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_fire_champion_1787242352352",
@@ -49295,7 +49507,8 @@
     "existence": {},
     "customValues": {
       "shiny": 5
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_sky_champion_1787242352352",
@@ -49328,7 +49541,8 @@
     "existence": {},
     "customValues": {
       "shiny": 5
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "hat_mr__snowman_s_tophat_1787242352354",
@@ -49344,317 +49558,8 @@
     "description": "Official Unique companion item from BGS Collab Value List (Mr. Snowman's Tophat).",
     "stats": null,
     "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_mythic_cursed_scorpio_1787242352384",
-    "name": "Mythic Cursed Scorpio",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 90,
-    "demand": 7,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/1/1e/Mythic_Cursed_Scorpio.png/revision/latest?cb=20200501212331",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Cursed Scorpio).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 600
-    }
-  },
-  {
-    "id": "pet_mythic_blossom_protector_1787242352385",
-    "name": "Mythic Blossom Protector",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 150,
-    "demand": 7,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/6/66/Mythic_Blossom_Protector.png/revision/latest?cb=20200515213816",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Blossom Protector).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 900
-    }
-  },
-  {
-    "id": "pet_mythic_paragon_1787242352385",
-    "name": "Mythic Paragon",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 100,
-    "demand": 7,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/70/Mythic_Paragon.png/revision/latest?cb=20200522190531",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Paragon).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 800
-    }
-  },
-  {
-    "id": "pet_mythic_core_1787242352385",
-    "name": "Mythic CORE",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 70,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/4/41/Mythic_CORE.png/revision/latest?cb=20200613041512",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic CORE).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 400
-    }
-  },
-  {
-    "id": "pet_mythic_light_phoenix_1787242352385",
-    "name": "Mythic Light Phoenix",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 400,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/a/ad/Mythic_Light_Phoenix.png/revision/latest?cb=20200711193753",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Light Phoenix).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 200
-    }
-  },
-  {
-    "id": "pet_mythic_ocelot_1787242352385",
-    "name": "Mythic Ocelot",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 250,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/7/74/Mythic_Ocelot.png/revision/latest?cb=20200725025631",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Ocelot).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 125
-    }
-  },
-  {
-    "id": "pet_mythic_prismatic_paragon_1787242352385",
-    "name": "Mythic Prismatic Paragon",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 250,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/0/0f/Mythic_Prismatic_Paragon.png/revision/latest?cb=20200731212208",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Prismatic Paragon).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 125
-    }
-  },
-  {
-    "id": "pet_mythic_lemonade_master_1787242352385",
-    "name": "Mythic Lemonade Master",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 1000,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c4/Mythic_Lemonade_Master.png/revision/latest?cb=20200814190122",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Lemonade Master).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 450
-    }
-  },
-  {
-    "id": "pet_mythic_flower_queen_1787242352385",
-    "name": "Mythic Flower Queen",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 4000,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/e/e7/Mythic_Flower_Queen.png/revision/latest?cb=20200515220641",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Flower Queen).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 8000
-    }
-  },
-  {
-    "id": "pet_mythic_sugar_heart_1787242352385",
-    "name": "Mythic Sugar Heart",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 3800,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/de/Mythic_Sugar_Heart.png/revision/latest?cb=20200725025627",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Sugar Heart).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 7000
-    }
+    "customValues": {},
+    "tierTag": "Secret"
   },
   {
     "id": "pet_shadow_hunter_1787242352387",
@@ -49687,7 +49592,8 @@
     "existence": {},
     "customValues": {
       "shiny": 200
-    }
+    },
+    "tierTag": "Mythic T3"
   },
   {
     "id": "pet_lenny_box_1787242352395",
@@ -49718,7 +49624,8 @@
     "existence": {},
     "customValues": {
       "shiny": 800
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_og_box_1787242352398",
@@ -49749,125 +49656,8 @@
     "existence": {},
     "customValues": {
       "shiny": 800
-    }
-  },
-  {
-    "id": "pet_mythic_frostbite_1787242352398",
-    "name": "Mythic Frostbite",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 300,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/9/96/Mythic_Frostbite.png/revision/latest?cb=20201204230723",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
     },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Frostbite).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_mythic_clockwork_1787242352398",
-    "name": "Mythic Clockwork",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 250,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/d/d7/Mythic_Clockwork.png/revision/latest?cb=20210101214117",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Clockwork).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_mythic_lovesick_1787242352398",
-    "name": "Mythic Lovesick",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 400,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/c/c9/Mythic_Lovesick.png/revision/latest?cb=20210213003148",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Lovesick).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": null
-  },
-  {
-    "id": "pet_mythic_spirit_of_fortune_1787242352398",
-    "name": "Mythic Spirit of Fortune",
-    "type": "pet",
-    "rarity": "Unique",
-    "baseValue": 80,
-    "demand": 5,
-    "status": "Stable",
-    "category": "Unique Pets",
-    "image": "https://static.wikia.nocookie.net/bubble-gum-simulator/images/2/2e/Mythic_Spirit_of_Fortune.png/revision/latest?cb=20210307021858",
-    "multipliers": {
-      "Normal": 1,
-      "Shiny": 2.5,
-      "Mythic": 10,
-      "ShinyMythic": 25
-    },
-    "description": "Official Unique companion item from BGS Collab Value List (Mythic Spirit of Fortune).",
-    "stats": {
-      "buffs": {
-        "Bubbles": 1200,
-        "Coins": 3500,
-        "Gems": 3000,
-        "All": 950
-      },
-      "movementType": "Fly"
-    },
-    "existence": {},
-    "customValues": {
-      "shiny": 600
-    }
+    "tierTag": "Robux & Gamepass"
   },
   {
     "id": "pet_bruh_1787243518411",
@@ -49898,7 +49688,8 @@
       "chance": 0.008
     },
     "existence": {},
-    "customValues": null
+    "customValues": {},
+    "tierTag": "Bubble Pass"
   },
   {
     "id": "pet_bruh_bandit_1787243518411",
@@ -49931,7 +49722,8 @@
     "existence": {},
     "customValues": {
       "shiny": 50
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_bruh_moment_1787243518411",
@@ -49991,7 +49783,8 @@
     "existence": {},
     "customValues": {
       "shiny": 800
-    }
+    },
+    "tierTag": "Secret"
   },
   {
     "id": "pet_lucid_potion_1787243518411",
